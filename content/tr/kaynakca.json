@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ibn-hisam-sire",
+    "yazar": "İbn Hişâm",
+    "eser": "es-Sîretü'n-nebeviyye",
+    "baski": "Wüstenfeld neşri (tarama: Arapça Vikikaynak, «السيرة النبوية لابن هشام.pdf»); sayfa numaraları taramadaki matbu numaradır",
+    "katman": "C",
+    "dil": "ar",
+    "erisim": "https://ar.wikisource.org — yerel kopya: kaynaklar/ibn-hisam/ibn-hisam-sire-vikikaynak.pdf"
+  },
+  {
+    "id": "buhari-sahih",
+    "yazar": "Buhârî",
+    "eser": "el-Câmiu's-sahîh",
+    "baski": "",
+    "katman": "B",
+    "dil": "ar",
+    "erisim": "Atıflar şimdilik Hadislerle İslâm dipnotlarından alındı; asıl metinden (ör. sunnah.com) kontrol edilecek"
+  },
+  {
+    "id": "tdv-dia",
+    "yazar": "Türkiye Diyanet Vakfı",
+    "eser": "TDV İslâm Ansiklopedisi",
+    "baski": "Matbu nüsha; madde, müellif, cilt ve yıl her atıfta ayrıca yazılır",
+    "katman": "D",
+    "dil": "tr",
+    "erisim": "https://islamansiklopedisi.org.tr — yerel kopyalar: kaynaklar/tdv/"
+  },
+  {
+    "id": "hadislerle-islam",
+    "yazar": "Diyanet İşleri Başkanlığı",
+    "eser": "Hadislerle İslâm",
+    "baski": "Diyanet dijital kitaplık PDF sürümü (matbu sayfa numarası yok; konum cilt + dipnot numarasıyla verilir)",
+    "katman": "D",
+    "dil": "tr",
+    "erisim": "https://dijital.diyanet.gov.tr — yerel kopyalar: kaynaklar/Hadislerle_islam/"
+  }
+]

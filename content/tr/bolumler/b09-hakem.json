@@ -1,0 +1,1188 @@
+{
+  "id": "b09-hakem",
+  "sira": 9,
+  "baslik": "Hakem",
+  "ozet": "Kureyş Kâbe'yi yeniden yaparken Hacerülesved yüzünden birbirine girmek üzeredir; kapıdan ilk giren kişi aralarında hakem olur.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b09-s01",
+      "anlatim": [
+        {
+          "metin": "Mekke vadisinin ortasında Kâbe duruyordu: harçsız, üst üste konmuş taşlardan örülmüş, boyu bir insanı aşan duvarlar.",
+          "iddialar": [
+            "i-b09-003"
+          ]
+        },
+        {
+          "metin": "Yıl milâdî 605'ti. Hz. Muhammed (s.a.v.) otuz beş yaşındaydı.",
+          "iddialar": [
+            "i-b09-002",
+            "i-b09-001"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gün ağarırken Mekke vadisi, uzak plan. Çıplak kayalık dağlar, kerpiç ve taş evler. Ortada alçak, çatısız, kaba taşlardan Kâbe; çevresi açık avlu. Minare, kubbe, revak yok. İnsan yok ya da çok uzakta birkaç siluet.",
+        "katmanlar": [],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s01.mp3",
+        "muzik": "acilis-sakin",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s02",
+      "anlatim": [
+        {
+          "metin": "Duvarlar yangın ve sel yüzünden zarar görmüştü.",
+          "iddialar": [
+            "i-b09-004"
+          ]
+        },
+        {
+          "metin": "Üstelik Kâbe'nin içindeki kuyuda saklanan hazine çalınmış, sonra Huzâa'dan Düveyk adında bir azatlının yanında bulunmuştu.",
+          "iddialar": [
+            "i-b09-005"
+          ]
+        },
+        {
+          "metin": "Kureyş, duvarları yükseltip yapının üzerini bir tavanla örtmeye karar verdi.",
+          "iddialar": [
+            "i-b09-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Kâbe duvarına yakın plan: is lekeli, aşınmış, aralarından toprak akmış kaba taşlar. Duvar dibinde kurumuş sel izi. İnsan yok.",
+        "katmanlar": [],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b09-s02.mp3",
+        "muzik": "acilis-sakin",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s03",
+      "anlatim": [
+        {
+          "metin": "O günlerde Rum bir tüccarın gemisi kıyıda karaya vurup parçalandı.",
+          "iddialar": [
+            "i-b09-006"
+          ]
+        },
+        {
+          "metin": "Kureyş geminin kerestesini Kâbe'nin tavanı için aldı.",
+          "iddialar": [
+            "i-b09-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Kızıldeniz kıyısı, öğle ışığı. Kumsalda yan yatmış, parçalanmış ahşap bir gemi; dağılmış kalaslar. Uzakta kalasları taşıyan birkaç küçük siluet, yüzleri seçilmez. Gemi tipi kaynakla netleşmeden ayrıntılı çizilmez.",
+        "katmanlar": [],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s03.mp3",
+        "muzik": "",
+        "ortam": "deniz-dalga"
+      },
+      "sahislar": [],
+      "yer": ""
+    },
+    {
+      "id": "b09-s04",
+      "anlatim": [
+        {
+          "metin": "İşe başlamadan Ebû Vehb b. Amr bir uyarıda bulundu: Kâbe'nin yapımına kazancınızdan yalnızca temiz olanı katın.",
+          "iddialar": [
+            "i-b09-007"
+          ]
+        },
+        {
+          "metin": "Faiz de, kimseden haksızca alınmış mal da, utanç verici yollardan kazanılmış para da oraya girmemeliydi.",
+          "iddialar": [
+            "i-b09-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Kâbe avlusunda toplanmış Kureyş ileri gelenleri, orta-uzak plan; yüzler gölgede. Önlerinde arkadan görünen, konuşan tek bir siluet. Para, kese ya da sikke çizilmez.",
+        "katmanlar": [],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b09-s04.mp3",
+        "muzik": "ciddi-dusuk",
+        "ortam": "avlu-ugultu"
+      },
+      "sahislar": [
+        "ebu-vehb-b-amr"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s05",
+      "anlatim": [
+        {
+          "metin": "Ama Kâbe'yi yıkmaya kimse cesaret edemiyordu.",
+          "iddialar": [
+            "i-b09-008"
+          ]
+        },
+        {
+          "metin": "Sonunda Velîd b. Mugīre kazmayı aldı. \"Allah'ım, biz yalnız hayır istiyoruz\" diyerek ilk taşları o söktü.",
+          "iddialar": [
+            "i-b09-008"
+          ]
+        },
+        {
+          "metin": "Halk o gece bekledi. Velîd'e bir şey olmadığını görünce ertesi gün herkes yıkıma katıldı.",
+          "iddialar": [
+            "i-b09-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Kâbe köşesi, alacakaranlık. Duvarın üstünde tek bir siluet arkadan, havaya kalkmış kazma; kopan taştan toz. Aşağıda geri çekilmiş, uzak duran kalabalık siluetleri. Geçiş: gece mavisi avlu, ardından sabah ışığında duvarlarda çalışan çok sayıda küçük siluet.",
+        "katmanlar": [],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s05.mp3",
+        "muzik": "gerilim-dusuk",
+        "ortam": "kazma-tas"
+      },
+      "sahislar": [
+        "velid-b-mugire"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s06",
+      "anlatim": [
+        {
+          "metin": "Duvarlar sökülüp temele inildiğinde Hz. İbrâhim'in attığı temele ulaştılar: deve hörgüçlerine benzeyen yeşil taşlar.",
+          "iddialar": [
+            "i-b09-009"
+          ]
+        },
+        {
+          "metin": "Daha aşağı inmediler.",
+          "iddialar": [
+            "i-b09-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Yukarıdan bakış: kazılmış zeminde iri, yuvarlak sırtlı, yeşilimsi taşlar; üzerlerinde ince toz. Kenarda yere bırakılmış bir kazma. İnsan yok.",
+        "katmanlar": [],
+        "kamera": "yukaridan-yavas-donus"
+      },
+      "ses": {
+        "anlatim": "b09-s06.mp3",
+        "muzik": "huzur-dusuk",
+        "ortam": "sessiz-ruzgar"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s07",
+      "anlatim": [
+        {
+          "metin": "Yeni duvarların yapımı kabileler arasında paylaştırılmıştı; her kabile kendi payı için taş topladı.",
+          "iddialar": [
+            "i-b09-010"
+          ]
+        },
+        {
+          "metin": "Çalışanlar arasında Resûlullah da vardı; amcası Abbas ile birlikte bu işte bizzat çalışıyordu.",
+          "iddialar": [
+            "i-b09-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: göz hizasından taşlık yokuş ve önde yürüyen Abbas'ın sırtı, omzunda taş; yüzü görünmez. Uzakta yükselen duvarlar ve taş taşıyan küçük siluet grupları. Bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez.",
+        "katmanlar": [],
+        "kamera": "bakis-acisi-yuruyus"
+      },
+      "ses": {
+        "anlatim": "b09-s07.mp3",
+        "muzik": "emek-sicak",
+        "ortam": "insaat-uzak"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "abbas-b-abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s08",
+      "anlatim": [
+        {
+          "metin": "Duvarlar Hacerülesved'in konacağı yere kadar yükseldiğinde iş durdu.",
+          "iddialar": [
+            "i-b09-012"
+          ]
+        },
+        {
+          "metin": "Her kabile bu şerefi kendisi istiyordu. Tartışma büyüdü ve savaş noktasına geldi.",
+          "iddialar": [
+            "i-b09-012"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Yarı yükselmiş Kâbe duvarı; köşede Hacerülesved'in boş yuvası. Önünde birbirine dönük iki kalabalık siluet grubu, orta-uzak plan, yüzler seçilmez. Sert öğle gölgeleri, soğuk ton.",
+        "katmanlar": [],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s08.mp3",
+        "muzik": "gerilim",
+        "ortam": "kalabalik-gergin"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s09",
+      "anlatim": [
+        {
+          "metin": "Abdüddâroğulları kan dolu bir kap getirdi. Adîoğulları ile birlikte ellerini kana batırıp ölümüne ant içtiler; bu yüzden onlara \"kan yalayanlar\" dendi.",
+          "iddialar": [
+            "i-b09-013"
+          ]
+        },
+        {
+          "metin": "Kureyş dört ya da beş gece bu halde bekledi.",
+          "iddialar": [
+            "i-b09-014"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, meşale ışığı. Yere konmuş koyu bir kap, içi görünmez; çevresinde gölgeye gömülmüş, yüzsüz siluetler. Kan gösterilmez. Geçiş: aynı avluda birbirini izleyen birkaç gece; ay, sönen meşaleler, boş duran yarım duvar.",
+        "katmanlar": [],
+        "kamera": "sabit-gecis"
+      },
+      "ses": {
+        "anlatim": "b09-s09.mp3",
+        "muzik": "gerilim",
+        "ortam": "gece-mesale"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s10",
+      "anlatim": [
+        {
+          "metin": "Sonunda Kureyş'in en yaşlısı Ebû Ümeyye b. Mugīre bir teklifte bulundu: mescidin kapısından ilk girecek kişi aralarında hakem olsun.",
+          "iddialar": [
+            "i-b09-015"
+          ]
+        },
+        {
+          "metin": "Teklif kabul edildi ve Benî Şeybe kapısından gelecek kişiyi beklemeye başladılar.",
+          "iddialar": [
+            "i-b09-015",
+            "i-b09-016"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Avluda ayakta duran yaşlı bir adamın arkadan silueti; karşısında dinleyen kalabalık, uzak plan. Kamera kalabalığın arkasından avlunun girişine döner. Kapının o dönemdeki biçimi kaynaklarda yok: anıtsal kapı, kemer ya da süsleme çizilmez; yalnız evler arasında sade bir giriş aralığı ve ışık.",
+        "katmanlar": [],
+        "kamera": "donus-kapiya"
+      },
+      "ses": {
+        "anlatim": "b09-s10.mp3",
+        "muzik": "bekleyis",
+        "ortam": "avlu-sessiz"
+      },
+      "sahislar": [
+        "ebu-umeyye-b-mugire"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s11",
+      "anlatim": [
+        {
+          "metin": "Kapıdan ilk giren Resûlullah oldu.",
+          "iddialar": [
+            "i-b09-017"
+          ]
+        },
+        {
+          "metin": "Onu görünce şöyle dediler: \"Bu el-Emîn'dir, ona razıyız; bu Muhammed'dir.\"",
+          "iddialar": [
+            "i-b09-017"
+          ]
+        },
+        {
+          "metin": "Kureyş, vahiy gelmeden önce de ona el-Emîn, yani güvenilir derdi.",
+          "iddialar": [
+            "i-b09-018"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: kapı eşiğinden avluya giriş. Karşıda bekleyen kalabalık, uzak plan; başlar bu yöne dönüyor, yüz ayrıntısı yok. Gerilimli soğuk ton, sıcak ışığa yumuşar. Bakış sahibinin hiçbir uzvu kadraja girmez. Kapının o dönemdeki biçimi kaynaklarda yok: anıtsal kapı, kemer ya da süsleme çizilmez; yalnız evler arasında sade bir giriş aralığı ve ışık.",
+        "katmanlar": [],
+        "kamera": "bakis-acisi-giris"
+      },
+      "ses": {
+        "anlatim": "b09-s11.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s12",
+      "anlatim": [
+        {
+          "metin": "Resûlullah bir örtü istedi: \"Bana bir örtü getirin.\"",
+          "iddialar": [
+            "i-b09-019"
+          ]
+        },
+        {
+          "metin": "Hacerülesved'i kendi eliyle örtünün üzerine koydu ve her kabilenin örtünün bir kenarından tutmasını istedi. Taşı hep birlikte kaldırdılar.",
+          "iddialar": [
+            "i-b09-019"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Yere serilmiş düz bir kumaş, ortasında koyu renkli taş; taşın üstünde sıcak beyaz-altın bir nur parıltısı (bedeni temsil etmez, yalnızca ışık). Kumaşın kenarlarını tutan farklı kişilere ait eller ve kollar (Kureyş ileri gelenleri; yüzler kadraj dışında). Kumaş birlikte yükselir. Resûlullah'a ait el ya da kol çizilmez; yalnız nur.",
+        "katmanlar": [],
+        "kamera": "yukaridan-yukselis"
+      },
+      "ses": {
+        "anlatim": "b09-s12.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "kumas-hisirti"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s13",
+      "anlatim": [
+        {
+          "metin": "Taş yerinin hizasına gelince Resûlullah onu kendi eliyle yerine koydu; duvar onun üzerine örülmeye devam etti.",
+          "iddialar": [
+            "i-b09-020"
+          ]
+        },
+        {
+          "metin": "Böylece bu şerefe bütün kabileler ortak oldu ve bir çatışma önlendi.",
+          "iddialar": [
+            "i-b09-021"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Kâbe köşesine yakın plan: taş duvardaki yuvaya oturan Hacerülesved, çevresinde sönümlenen sıcak nur. Kamera geri çekilir; avluda dağılmaya başlayan, gerginliği kalkmış siluetler. Ton sıcaklaşır. Resûlullah'a ait el ya da kol çizilmez; yalnız nur.",
+        "katmanlar": [],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s13.mp3",
+        "muzik": "huzur-sicak",
+        "ortam": "avlu-dagilan"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b09-s14",
+      "anlatim": [
+        {
+          "metin": "Kureyş'in yaptığı yeni Kâbe on sekiz arşın yüksekliğindeydi.",
+          "iddialar": [
+            "i-b09-022"
+          ]
+        },
+        {
+          "metin": "Kapısını yerden yükselttiler; istediklerini içeri almak, istemediklerini almamak için.",
+          "iddialar": [
+            "i-b09-023"
+          ]
+        },
+        {
+          "metin": "İmkânları yetmediğinden Hicr denilen kısım ise binanın dışında kaldı.",
+          "iddialar": [
+            "i-b09-024"
+          ]
+        },
+        {
+          "metin": "Kâbe, yeni duvarlarıyla vadinin ortasında yeniden yükseldi.",
+          "iddialar": []
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü, uzak plan: önceki sahnelere göre belirgin şekilde yüksek, damlı Kâbe; yerden yüksekte tek kanatlı kapı. Hicr'in o dönemdeki biçimi ve sınırı kaynaklarda yok; ayrıca çizilmez. Vadinin üzerinde gün batımı ışığı. İnsan yok ya da çok uzakta.",
+        "katmanlar": [],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b09-s14.mp3",
+        "muzik": "kapanis",
+        "ortam": "aksam-ruzgar"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b09-001",
+      "ifade": "Kureyş Kâbe'yi yeniden inşa etmek için toplandığında Hz. Muhammed (s.a.v.) otuz beş yaşındaydı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm yaşı açıkça 35 verir (s. 122). TDV'nin HACERÜLESVED, KUREYŞ, MEKKE ve MUHAMMED maddeleri aynı yaşı aktarır. Kullanılan kaynaklarda başka bir yaş görüşüne rastlanmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 122",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Salim Öğüt, \"HACERÜLESVED\", c. 14, s. 433 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-002",
+      "ifade": "Kureyş'in Kâbe'yi yeniden inşası milâdî 605 yılına denk gelir.",
+      "guc": "guclu",
+      "gerekce": "Klasik kaynak yaşı verir; miladî yıl çağdaş hesaplamadır. TDV KÂBE ve MUHAMMED maddeleri ile Hadislerle İslâm 605 yılını verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, PDF s. 433 (dipnot 1571 ile 1572 arasındaki, kendi dipnotu olmayan cümle)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-003",
+      "ifade": "Kâbe'nin duvarları harçsız üst üste konmuş taşlardandı ve insan boyunu aşıyordu; Kureyş duvarları yükseltip üzerini tavanla örtmek istiyordu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm yapının harçsız taşlardan (رضم) ve insan boyunun üstünde (فوق القامة) olduğunu, Kureyş'in onu yükseltip tavanla örtmek istediğini yazar (s. 122). Hadislerle İslâm da çatı yapıldığını ve duvarların yükseltildiğini aktarır. Kesin yükseklik için kaynaklar farklı ölçü verir (alternatife bakınız); ana metin yalnız \"insan boyunu aşan\" der ve iki bilgiyle de çelişmez.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 122",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1573, 1576 (PDF s. 433)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı rivayetlere göre Kusay b. Kilâb daha önce Kâbe'nin üzerini hurma dallarıyla örtmüştü.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Ezrakî'nin rivayetine göre Hz. İbrâhim'in yaptığı bina 9 zirâ yüksekliğindeydi; Kureyş bu yüksekliği 18 arşına çıkardı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b09-004",
+      "ifade": "Kâbe yangın ve sel yüzünden zarar görmüştü.",
+      "guc": "guclu",
+      "gerekce": "TDV KUREYŞ maddesi yangın ve sel sularını sebep gösterir. Hadislerle İslâm c. 2, buhurdanlıktan sıçrayan kıvılcımla örtünün tutuştuğunu aktarır (dipnot 1572, Abdürrezzâk); c. 6, Kâbe'nin yağmur ve sellerden etkilenerek aşındığını söyler. İbn Hişâm bu sebepleri anmaz; yapının alçaklığını ve hırsızlığı anar.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1572 (PDF s. 433) — yangın",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf) — sel",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-005",
+      "ifade": "Kâbe'nin içindeki kuyuda saklanan hazine çalınmış, Huzâa'dan Benî Müleyh'in azatlısı Düveyk'in yanında bulunmuştu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm hazinenin Düveyk'in yanında bulunduğunu yazar (s. 122, وجد عنده). Hadislerle İslâm ise hazineyi Düveyk'in çaldığını söyler (alternatife bakınız). Ana metin İbn Hişâm'ın ifadesini izler.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 122",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Hadislerle İslâm'a göre hazineyi Huzâalı Düveyk çalmıştı.",
+          "kaynaklar": [
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 2, dipnot 1573 (PDF s. 433)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b09-006",
+      "ifade": "Rum bir tüccara ait gemi deniz kıyısında karaya vurup parçalandı; Kureyş kerestesini Kâbe'nin tavanı için aldı.",
+      "guc": "guclu",
+      "gerekce": "Olay İbn Hişâm'da (s. 122) ve Hadislerle İslâm'da ortaktır. Geminin vurduğu yer İbn Hişâm'da Cidde, Hadislerle İslâm'da (Halebî'ye dayanarak) Şuaybe limanıdır; ana metin yer adı vermeden \"kıyı\" der.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 122",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1574-1575 (PDF s. 433)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'a göre gemi Cidde'de karaya vurdu; Hadislerle İslâm'a göre Mekke'nin Şuaybe limanında parçalandı ve tahtaları Velîd b. Mugīre satın aldı.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 122",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 2, dipnot 1574-1575 (PDF s. 433)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b09-007",
+      "ifade": "Ebû Vehb b. Amr, Kâbe'nin yapımına yalnızca temiz kazanç katılmasını; fahişe kazancı, faiz ve kimseden haksız alınmış malın girmemesini istedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 123) sözü Ebû Vehb'e nispet eder. Elimizdeki çağdaş kaynaklarda bu ayrıntı bulunamadı; tek klasik kaynağa dayanır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 123",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'ın aktardığına göre bazıları bu sözü Velîd b. Mugīre'ye nispet eder.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 123",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b09-008",
+      "ifade": "Kureyş Kâbe'yi yıkmaktan çekindi; Velîd b. Mugīre kazmayı alıp \"Allah'ım, biz yalnız hayır istiyoruz\" diyerek yıkıma ilk o başladı. Halk bir gece bekledi, ona bir şey olmayınca ertesi gün yıkıma katıldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm çekinmeyi s. 122'de, Velîd'in yıkıma başlamasını ve halkın bir gece beklemesini s. 124'te anlatır. Tek klasik kaynağa dayanır; çağdaş kaynaklarda bu ayrıntı bulunamadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 122, 124",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-009",
+      "ifade": "Yıkım Hz. İbrâhim'in attığı temele ulaşınca orada deve hörgücüne benzeyen yeşil taşlar bulundu ve daha aşağı inilmedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, İbn İshak'tan aktarır (s. 124). Tek klasik kaynağa dayanır. Daha aşağı inilmemesinin sebebine dair kısım belirsiz bir aktarıcıya (حدثني بعض من يروي الحديث) dayandığı için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 124",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-010",
+      "ifade": "Kureyş kabileleri Kâbe'nin duvarlarını aralarında paylaştı; her kabile kendi payı için taş topladı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm duvarların kabileler arasında bölüşülmesini s. 123-124'te, her kabilenin taş toplamasını s. 125'te anlatır. Hadislerle İslâm da kabilelerin ayrı ayrı taş topladığını aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 123-125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-011",
+      "ifade": "Hz. Muhammed (s.a.v.) inşaatta amcası Abbas ile birlikte bizzat çalıştı.",
+      "guc": "guclu",
+      "gerekce": "Hadislerle İslâm, Abbas ile birlikte bilfiil çalıştığını söyler. TDV KÂBE maddesi ayrıca Abbas ile birlikte taş taşıdığını yazar; bu ayrıntı tek D kaynağında olduğu için yalnız görselde kullanıldı. Bu konudaki Buhârî rivayetinin (izar hadisi) numarası elimizdeki kaynaklarda bulunamadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, PDF s. 433 (dipnot 1571 ile 1572 arasındaki, kendi dipnotu olmayan cümle)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-012",
+      "ifade": "Duvarlar Hacerülesved'in konacağı yere gelince her kabile taşı kendisi koymak istedi; anlaşmazlık savaş noktasına vardı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 125), TDV HACERÜLESVED ve MUHAMMED maddeleri ve Hadislerle İslâm ortaktır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Salim Öğüt, \"HACERÜLESVED\", c. 14, s. 433 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-013",
+      "ifade": "Abdüddâroğulları kan dolu bir kap getirdi; Adîoğulları ile ellerini bu kana batırarak ölümüne ant içtiler. Bu yüzden onlara \"kan yalayanlar\" (la'akatü'd-dem) denildi.",
+      "guc": "guclu",
+      "gerekce": "Kan kabı ve ölümüne ant İbn Hişâm (s. 125) ile Hadislerle İslâm'da ortaktır; \"la'akatü'd-dem\" adını yalnız İbn Hişâm verir (لعقة الدم).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-014",
+      "ifade": "Kureyş dört ya da beş gece bu halde bekledi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm \"dört ya da beş gece\" der (s. 125); Hadislerle İslâm \"dört beş gün\" der.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-015",
+      "ifade": "Kureyş'in en yaşlısı Ebû Ümeyye b. Mugīre, mescidin kapısından ilk girecek kişinin aralarında hakem olmasını teklif etti; teklif kabul edildi ve gelecek kişiyi beklemeye başladılar.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm teklifi Ebû Ümeyye'ye \"bazı rivayetçilere göre\" (فزعم بعض أهل الرواية) kaydıyla bağlar (s. 125); TDV HACERÜLESVED, KUREYŞ ve MUHAMMED maddeleri bu nispeti benimser. Yöntemi (kapıdan ilk giren hakem olsun) İbn Hişâm, TDV MUHAMMED ve Hadislerle İslâm verir. Kabulü İbn Hişâm \"ففعلوا\" (öyle yaptılar) diye, beklemeyi Hadislerle İslâm aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Salim Öğüt, \"HACERÜLESVED\", c. 14, s. 433 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-016",
+      "ifade": "Söz konusu kapı Benî Şeybe kapısıdır.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm kapının adını vermez, yalnızca \"bu mescidin kapısı\" der (s. 125). Kapının adını TDV MUHAMMED maddesi ve Hadislerle İslâm verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-017",
+      "ifade": "Kapıdan ilk giren Resûlullah oldu; onu görünce \"Bu el-Emîn'dir, ona razıyız; bu Muhammed'dir\" dediler.",
+      "guc": "guclu",
+      "gerekce": "Söz İbn Hişâm'da (s. 125) \"هذا الأمين رضينا هذا محمد\" şeklindedir; Hadislerle İslâm aynı sözü aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-018",
+      "ifade": "Kureyş, vahiy gelmeden önce ona \"el-Emîn\" (güvenilir) derdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm olayın sonunda bunu açıkça kaydeder (s. 125); Hadislerle İslâm da lakabı Kureyş'in verdiğini söyler.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291 ile biten paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-019",
+      "ifade": "Resûlullah bir örtü istedi, Hacerülesved'i kendi eliyle örtünün üzerine koydu ve her kabilenin örtünün bir kenarından tutmasını istedi; taşı hep birlikte kaldırdılar.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm'da \"هلم إلي ثوبا\" sözüyle geçer ve her kabilenin örtünün bir kenarından tuttuğunu söyler (s. 125). TDV HACERÜLESVED ve MUHAMMED maddeleri bütün kabile reislerinin iştirakini anar. Örtüyü tutanların kimliği konusunda farklı bir rivayet vardır (alternatife bakınız).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Salim Öğüt, \"HACERÜLESVED\", c. 14, s. 433 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1578-1580 (PDF s. 434)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir rivayete göre Resûlullah Kureyş'in dört kolundan birer adam istedi; örtünün uçlarını Utbe b. Rebîa, Ebû Zem'a, Ebû Huzeyfe b. Mugīre ve Kays b. Adî tuttu.",
+          "kaynaklar": [
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 2, dipnot 1579 (PDF s. 434)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b09-020",
+      "ifade": "Taş yerinin hizasına gelince Resûlullah onu kendi eliyle yerine koydu, ardından duvar onun üzerine örüldü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 125), TDV HACERÜLESVED ve MUHAMMED maddeleri ve Hadislerle İslâm ortaktır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Salim Öğüt, \"HACERÜLESVED\", c. 14, s. 433 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1580 (PDF s. 434)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-021",
+      "ifade": "Böylece bu şerefe bütün kabileler ortak oldu ve olası bir çatışma önlendi.",
+      "guc": "guclu",
+      "gerekce": "Şerefin herkesle paylaşıldığını ve çatışmanın önlendiğini birlikte TDV MEKKE söyler; TDV KUREYŞ bütün kabile kollarının iştirakiyle çatışmanın önlendiğini yazar; Hadislerle İslâm (dipnot 1577) savaşın önlendiğini aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1577 (PDF s. 433)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-022",
+      "ifade": "Kureyş'in yaptığı Kâbe on sekiz arşın yüksekliğindeydi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, Resûlullah döneminde Kâbe'nin 18 arşın olduğunu kaydeder (s. 126). TDV KÂBE maddesi Kureyş'in yüksekliği 9 arşından 18 arşına çıkardığını yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 126",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-023",
+      "ifade": "Kureyş Kâbe'nin kapısını yerden yükseltti; istediklerini içeri alıp istemediklerini almamak için böyle yaptı.",
+      "guc": "kesin",
+      "gerekce": "Hz. Âişe'nin sorusuna verilen cevapla sahih hadiste geçer (Buhârî, Hac, 42); atıf Hadislerle İslâm dipnotundan alındı. TDV KÂBE maddesi de kapının Kureyş tarafından yükseltildiğini aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Hac, 42 (hadis no. 1584)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1583 (PDF s. 434)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16-17 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b09-024",
+      "ifade": "Kureyş'in imkânı yetmediği için Hicr kısmı binanın dışında bırakıldı.",
+      "guc": "kesin",
+      "gerekce": "Sahih hadiste \"kavmin masrafı karşılayacak imkân bulamadı\" cevabıyla geçer (Buhârî, Hac, 42); atıf Hadislerle İslâm dipnotundan alındı.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Hac, 42 (hadis no. 1584)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 2, dipnot 1583 (PDF s. 434)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

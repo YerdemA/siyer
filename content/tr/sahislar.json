@@ -1,0 +1,47 @@
+[
+  {
+    "id": "hz-muhammed",
+    "ad": "Hz. Muhammed (s.a.v.)",
+    "lakap": "el-Emîn",
+    "yakinlik": "",
+    "ozet": "Kâbe'nin yeniden yapıldığı yıl otuz beş yaşındaydı. Kureyş vahiyden önce de ona el-Emîn, yani güvenilir derdi.",
+    "bolumler": ["b09-hakem"],
+    "iddialar": ["i-b09-001", "i-b09-018"]
+  },
+  {
+    "id": "abbas-b-abdulmuttalib",
+    "ad": "Abbas b. Abdülmuttalib",
+    "lakap": "",
+    "yakinlik": "Amcası",
+    "ozet": "Kâbe'nin yeniden yapımında Resûlullah ile birlikte taş taşıdı.",
+    "bolumler": ["b09-hakem"],
+    "iddialar": ["i-b09-011"]
+  },
+  {
+    "id": "velid-b-mugire",
+    "ad": "Velîd b. Mugīre",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kureyş Kâbe'yi yıkmaktan çekinirken kazmayı alıp yıkıma ilk başlayan kişi.",
+    "bolumler": ["b09-hakem"],
+    "iddialar": ["i-b09-008"]
+  },
+  {
+    "id": "ebu-vehb-b-amr",
+    "ad": "Ebû Vehb b. Amr",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kâbe'nin yapımına yalnızca temiz kazanç katılmasını isteyen Kureyşli.",
+    "bolumler": ["b09-hakem"],
+    "iddialar": ["i-b09-007"]
+  },
+  {
+    "id": "ebu-umeyye-b-mugire",
+    "ad": "Ebû Ümeyye b. Mugīre",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kureyş'in en yaşlısı. Hacerülesved anlaşmazlığında, mescidin kapısından ilk girecek kişinin hakem olmasını teklif etti.",
+    "bolumler": ["b09-hakem"],
+    "iddialar": ["i-b09-015"]
+  }
+]
