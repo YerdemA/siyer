@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "notebook": {
+      "command": "notebooklm-mcp",
+      "args": []
+    },
+    "scrapling": {
+      "command": ".venv/Scripts/scrapling-mcp.exe",
+      "args": []
+    }
+  }
+}
