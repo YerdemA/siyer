@@ -1,0 +1,202 @@
+[
+  {
+    "id": "mekke",
+    "ad": "Mekke",
+    "harita": {
+      "x": 0.46,
+      "y": 0.654
+    },
+    "ozet": "",
+    "bolumler": [
+      "b09-hakem"
+    ],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"MEKKE\", c. 28, s. 555",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "hira",
+    "ad": "Hira (Nur dağı)",
+    "harita": {
+      "x": 0.471,
+      "y": 0.652
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"HİRA\", c. 18, s. 121",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "suaybe",
+    "ad": "Şuaybe",
+    "harita": {
+      "x": 0.424,
+      "y": 0.682
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"MEKKE\", c. 28, s. 555; \"HİCAZ\", c. 17, s. 432",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "nahle",
+    "ad": "Nahle",
+    "harita": {
+      "x": 0.481,
+      "y": 0.66
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"UKÂZ\", c. 42, s. 61; \"TÂİF\", c. 39, s. 444",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "ukaz",
+    "ad": "Ukâz",
+    "harita": {
+      "x": 0.5,
+      "y": 0.662
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"UKÂZ\", c. 42, s. 61",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "taif",
+    "ad": "Tâif",
+    "harita": {
+      "x": 0.535,
+      "y": 0.661
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"TÂİF\", c. 39, s. 443",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "ebva",
+    "ad": "Ebvâ",
+    "harita": {
+      "x": 0.395,
+      "y": 0.573
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"EBVÂ\", c. 10, s. 378",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "yesrib",
+    "ad": "Yesrib (Medine)",
+    "harita": {
+      "x": 0.439,
+      "y": 0.502
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"MEDİNE\", c. 28, s. 305",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "busra",
+    "ad": "Busrâ",
+    "harita": {
+      "x": 0.141,
+      "y": 0.099
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"BUSRÂ\", c. 6, s. 470",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "sam",
+    "ad": "Şam",
+    "harita": {
+      "x": 0.123,
+      "y": 0.05
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"BUSRÂ\", c. 6, s. 470; \"MEKKE\", c. 28, s. 556",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  },
+  {
+    "id": "sana",
+    "ad": "San'a (Yemen)",
+    "harita": {
+      "x": 0.877,
+      "y": 0.957
+    },
+    "ozet": "",
+    "bolumler": [],
+    "iddialar": [],
+    "konumKaynagi": {
+      "eser": "tdv-dia",
+      "konum": "\"FİL VAK‘ASI\", c. 13, s. 70-71; \"MEKKE\", c. 28, s. 556",
+      "dogrulama": "bekliyor",
+      "dogrulayan": "",
+      "tarih": ""
+    }
+  }
+]
