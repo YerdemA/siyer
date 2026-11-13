@@ -51,7 +51,17 @@ flutter {
 // Yayın kapısı (CLAUDE.md): doğrulanmamış atıf ya da eksik katman görseli varken
 // yayın derlemesi başarısız olur. Uygulamaya paketlenen içerik denetlenir
 // (`dart run tools/icerik_esitle.dart` ile kopyalanan app/assets/icerik).
+// Paketlenen içerik content/ ile aynı olsun diye denetimden önce eşitlenir.
+val icerikEsitle by tasks.registering(Exec::class) {
+    group = "build"
+    description = "content/ klasörünü app/assets/icerik altına kopyalar (tools/icerik_esitle.dart)."
+    workingDir = rootProject.projectDir.parentFile.parentFile
+    val dart = listOf("dart", "run", "tools/icerik_esitle.dart")
+    commandLine(if (System.getProperty("os.name").startsWith("Windows")) listOf("cmd", "/c") + dart else dart)
+}
+
 val icerikYayinDenetimi by tasks.registering(Exec::class) {
+    dependsOn(icerikEsitle)
     group = "verification"
     description = "İçeriği yayın kurallarıyla denetler (tools/icerik_dogrula.dart --yayin)."
     val depoKoku = rootProject.projectDir.parentFile.parentFile
