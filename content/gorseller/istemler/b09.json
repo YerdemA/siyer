@@ -307,7 +307,8 @@
       "yeniler": [
         "m07-kabe-yuksek"
       ],
-      "ham": "m07b-kabe-yuksek.png"
+      "ham": "m07b-kabe-yuksek.png",
+      "sapma": "Oran kaynaktan sapıyor: i-b09-022 (TDV KÂBE) 9 → 18 arşın, yani 2 kat; görselde ≈1,6 kat. Erdem kabul etti (2026-11-14, b seçeneği)."
     },
     {
       "id": "m04b-evler-uzak",
@@ -340,7 +341,7 @@
       "isleme": "perde",
       "istem": "Red Sea coast at noon: a calm sea stretching to a flat horizon, a wide sandy beach in the foreground, small low waves at the shoreline, no boats, no ships, no buildings. {yesil_perde_eki}",
       "not": "Gök ayrı katman; ufkun üstü yeşil perde.",
-      "ham": "s03-deniz.png"
+      "ham": ""
     },
     {
       "id": "s03-gemi",
@@ -450,8 +451,8 @@
       "katman": "mesale",
       "isleme": "sigdir",
       "istem": "A simple wooden torch with a cloth-wrapped head, burning with a small flame, standing upright. Fully inside the frame with empty margin. {yesil_perde_eki}",
-      "not": "Alev oynatıcıda ayrıca titretilebilir.",
-      "ham": "s09-mesale.png"
+      "not": "Alev oynatıcıda ayrıca titretilebilir. Katman s09’dan kaldırıldı (Erdem, 2026-11-14): halkadaki figürler zaten meşale tutuyor.",
+      "ham": ""
     },
     {
       "id": "s10-giris",
@@ -492,7 +493,8 @@
         "s03-deniz"
       ],
       "istem": "Red Sea coast at noon seen from the beach: a wide, flat sandy beach fills the lower 40% of the image; a calm sea above it, with the flat horizon slightly above the middle of the image. Small low waves at the shoreline. No boats, no ships, no buildings. {yesil_perde_eki}",
-      "not": "İlk deniz görselinde kumsal yalnız alt %10’daydı; gemi ve taşıyanlar suyun üstünde kalıyordu."
+      "not": "İlk deniz görselinde kumsal yalnız alt %10’daydı; gemi ve taşıyanlar suyun üstünde kalıyordu.",
+      "ham": "s03b-deniz.png"
     },
     {
       "id": "s04b-kalabalik",
@@ -504,7 +506,8 @@
         "s04-kalabalik"
       ],
       "istem": "Far away and small in the frame: a gathering of about fifteen men in simple robes and head cloths standing together in an open courtyard, facing the viewer. Faces are flat dark shapes under the head cloths: no eyes, no noses, no beards, no mouths, no profiles with visible features. No coins, purses or money anywhere. {yesil_perde_eki}",
-      "not": "Önceki deneme orta planda sakal, bıyık ve el-çene ayrıntısı gösterdi; uzaklık ve yüz tarifi değiştirildi."
+      "not": "Önceki deneme orta planda sakal, bıyık ve el-çene ayrıntısı gösterdi; uzaklık ve yüz tarifi değiştirildi.",
+      "ham": "s04b-kalabalik.png"
     },
     {
       "id": "s08b-iki-grup",
@@ -516,7 +519,8 @@
         "s08-iki-grup"
       ],
       "istem": "Far away and small in the frame: two groups of men in robes and head cloths standing apart with an empty gap between them, the groups turned toward each other, tense postures, harsh midday shadows. Faces are flat dark shapes under the head cloths: no eyes, no noses, no beards, no mouths, no profiles with visible features. {yesil_perde_eki}",
-      "not": "Önceki denemede birbirine dönük figürler profilden burun ve sakal gösterdi; uzaklık kaldıraç."
+      "not": "Önceki denemede birbirine dönük figürler profilden burun ve sakal gösterdi; uzaklık kaldıraç.",
+      "ham": "s08b-iki-grup.png"
     }
   ],
   "uretimler": [
@@ -1038,7 +1042,7 @@
       "secilen": true,
       "dosya": "b09-s10-kalabalik.webp",
       "durum": "secildi",
-      "not": "Yüzler gölgeli ve özelliksiz ama burun gölgesi seçilebiliyor; uzak plana küçültüldü. Erdem ayrıca baksın."
+      "not": "Yüzler gölgeli ve özelliksiz ama burun gölgesi seçilebiliyor; uzak plana küçültüldü. Erdem ayrıca baksın. Erdem onayladı (2026-11-14)."
     },
     {
       "istem": "s10-yasli",
@@ -1051,6 +1055,42 @@
       "dosya": "b09-s10-yasli.webp",
       "durum": "secildi",
       "not": "Arkadan; yüz görünmüyor."
+    },
+    {
+      "istem": "s03b-deniz",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "s03b-deniz.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s03-deniz.webp",
+      "durum": "secildi",
+      "not": "Kumsal alt %40; gemi ve taşıyanlar kumsala yerleştirildi. Kıyıda uzak dağlar var."
+    },
+    {
+      "istem": "s04b-kalabalik",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "s04b-kalabalik.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s04-kalabalik.webp",
+      "durum": "secildi",
+      "not": "Uzak, yüz ayrıntısı yok. Evler, dağlar ve zeminle tam sahne geldi; s04’te Kâbe arkasında kalıyor."
+    },
+    {
+      "istem": "s08b-iki-grup",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "s08b-iki-grup.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s08-iki-grup.webp",
+      "durum": "secildi",
+      "not": "Uzak, yüz ayrıntısı yok. Tam sahne; yarım Kâbe gruplar arasındaki boşluğa, kalabalığın önüne alındı."
     }
   ]
 }

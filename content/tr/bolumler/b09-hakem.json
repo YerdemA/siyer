@@ -178,7 +178,7 @@
             "ayar": {
               "gorsel": {
                 "x": 0.42,
-                "y": 0.575,
+                "y": 0.655,
                 "olcek": 0.566
               }
             }
@@ -195,8 +195,8 @@
               "x1": 0.7,
               "x2": 0.95,
               "gorsel": {
-                "x": 0.7,
-                "y": 0.756,
+                "x": 0.8,
+                "y": 0.766,
                 "olcek": 0.2
               }
             }
@@ -271,7 +271,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b09-s04-kalabalik.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.7,
             "ayar": {
@@ -510,7 +510,7 @@
             "derinlik": 0.35,
             "ayar": {
               "gorsel": {
-                "x": 0.502,
+                "x": 0.3,
                 "y": 0.661,
                 "olcek": 0.263
               }
@@ -537,7 +537,14 @@
             "id": "tasiyan-arkadan",
             "dosya": "b09-s07-tasiyan.webp",
             "yerTutucu": "tasiyan-arkadan",
-            "derinlik": 0.95
+            "derinlik": 0.95,
+            "ayar": {
+              "gorsel": {
+                "x": 0.8,
+                "y": 0.5,
+                "olcek": 1.2
+              }
+            }
           },
           {
             "id": "toz",
@@ -604,6 +611,18 @@
             "derinlik": 0.4
           },
           {
+            "id": "kalabalik",
+            "dosya": "b09-s08-iki-grup.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75,
+            "ayar": {
+              "sayi": 22,
+              "y": 0.8,
+              "olcek": 0.08,
+              "grup": "iki"
+            }
+          },
+          {
             "id": "kabe-yarim",
             "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
@@ -615,18 +634,6 @@
                 "y": 0.662,
                 "olcek": 0.394
               }
-            }
-          },
-          {
-            "id": "kalabalik",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.75,
-            "ayar": {
-              "sayi": 22,
-              "y": 0.8,
-              "olcek": 0.08,
-              "grup": "iki"
             }
           }
         ],
@@ -726,12 +733,6 @@
                 "olcek": 0.172
               }
             }
-          },
-          {
-            "id": "mesale",
-            "dosya": "",
-            "yerTutucu": "mesale",
-            "derinlik": 0.8
           }
         ],
         "kamera": "sabit-gecis"
