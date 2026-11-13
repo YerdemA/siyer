@@ -85,4 +85,12 @@ class MetinlerEn extends Metinler {
 
   @override
   String get saat => 'Time of day';
+
+  @override
+  String get tamamlandi => 'Completed';
+
+  @override
+  String kaldiginYer(int no, int toplam) {
+    return 'Scene $no / $toplam · continue where you left off';
+  }
 }

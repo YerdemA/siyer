@@ -17,7 +17,8 @@ final _yonlendirici = GoRouter(
       // ?sahne=7 → doğrudan 7. sahneden başlar (revize için).
       builder: (_, durum) => OynaticiEkrani(
         bolumId: durum.pathParameters['id']!,
-        baslangicSahnesi: int.tryParse(durum.uri.queryParameters['sahne'] ?? '') ?? 1,
+        // Verilmezse kayıtlı ilerlemeden başlanır.
+        baslangicSahnesi: int.tryParse(durum.uri.queryParameters['sahne'] ?? ''),
       ),
     ),
   ],

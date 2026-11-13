@@ -22,5 +22,7 @@
   "bolumYok": "No episodes yet. Run `dart run tools/icerik_esitle.dart` at the repository root to copy the content.",
   "kamera": "Camera",
   "katmanlar": "Layers",
-  "saat": "Time of day"
+  "saat": "Time of day",
+  "tamamlandi": "Completed",
+  "kaldiginYer": "Scene {no} / {toplam} · continue where you left off"
 }

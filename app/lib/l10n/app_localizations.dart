@@ -234,6 +234,18 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Saat'**
   String get saat;
+
+  /// No description provided for @tamamlandi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tamamlandı'**
+  String get tamamlandi;
+
+  /// No description provided for @kaldiginYer.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sahne {no} / {toplam} · kaldığın yerden devam'**
+  String kaldiginYer(int no, int toplam);
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

@@ -84,4 +84,12 @@ class MetinlerTr extends Metinler {
 
   @override
   String get saat => 'Saat';
+
+  @override
+  String get tamamlandi => 'Tamamlandı';
+
+  @override
+  String kaldiginYer(int no, int toplam) {
+    return 'Sahne $no / $toplam · kaldığın yerden devam';
+  }
 }

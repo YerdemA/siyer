@@ -25,5 +25,8 @@
   "bolumYok": "Henüz bölüm yok. İçeriği kopyalamak için depo kökünde `dart run tools/icerik_esitle.dart` çalıştır.",
   "kamera": "Kamera",
   "katmanlar": "Katmanlar",
-  "saat": "Saat"
+  "saat": "Saat",
+  "tamamlandi": "Tamamlandı",
+  "kaldiginYer": "Sahne {no} / {toplam} · kaldığın yerden devam",
+  "@kaldiginYer": { "placeholders": { "no": { "type": "int" }, "toplam": { "type": "int" } } }
 }

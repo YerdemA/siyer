@@ -8,30 +8,42 @@ import 'package:go_router/go_router.dart';
 
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 import 'gorsel_onbellek.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
 
 class OynaticiEkrani extends ConsumerWidget {
-  const OynaticiEkrani({super.key, required this.bolumId, this.baslangicSahnesi = 1});
+  const OynaticiEkrani({super.key, required this.bolumId, this.baslangicSahnesi});
 
   final String bolumId;
 
-  /// 1'den başlar.
-  final int baslangicSahnesi;
+  /// 1'den başlar. Verilmezse kayıtlı ilerlemeden (yoksa baştan) başlanır.
+  final int? baslangicSahnesi;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final m = Metinler.of(context);
     final bolum = ref.watch(bolumProvider(bolumId));
     final kaynakca = ref.watch(kaynakcaProvider);
+    // Yalnız açılışta okunur: oynarken her kayıtta oynatıcı yeniden kurulmasın.
+    final ilerleme = ref.watch(ilerlemeProvider.select((d) => d.whenData((_) => true)));
+    final notifier = ref.read(ilerlemeProvider.notifier);
     return Scaffold(
       backgroundColor: Colors.black,
-      body: switch ((bolum, kaynakca)) {
-        (AsyncData(value: final b), AsyncData(value: final k)) =>
-          Oynatici(bolum: b, kaynakca: k, baslangicSahnesi: baslangicSahnesi),
-        (AsyncError(:final error), _) || (_, AsyncError(:final error)) =>
+      body: switch ((bolum, kaynakca, ilerleme)) {
+        (AsyncData(value: final b), AsyncData(value: final k), AsyncData() || AsyncError()) =>
+          Oynatici(
+            bolum: b,
+            kaynakca: k,
+            baslangicSahnesi: baslangicSahnesi ??
+                ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
+                1,
+            sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
+            bitti: () => notifier.bitir(bolumId),
+          ),
+        (AsyncError(:final error), _, _) || (_, AsyncError(:final error), _) =>
           Center(child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white))),
         _ => const Center(child: CircularProgressIndicator()),
       },
@@ -45,11 +57,19 @@ class Oynatici extends StatefulWidget {
     required this.bolum,
     required this.kaynakca,
     this.baslangicSahnesi = 1,
+    this.sahneDegisti,
+    this.bitti,
   });
 
   final Bolum bolum;
   final Map<String, Eser> kaynakca;
   final int baslangicSahnesi;
+
+  /// Görünen sahne değişince (1'den başlayan numarayla) çağrılır.
+  final ValueChanged<int>? sahneDegisti;
+
+  /// Bölüm sonuna gelinince bir kez çağrılır.
+  final VoidCallback? bitti;
 
   @override
   State<Oynatici> createState() => _OynaticiState();
@@ -107,9 +127,28 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
 
   bool get _bitti => _an >= _plan.toplam;
 
+  int? _bildirilenSahne;
+  bool _bitisBildirildi = false;
+
+  /// İlerleme kaydı build sırasında değil, kare bittikten sonra yapılır.
+  void _ilerlemeBildir(int sahneNo) {
+    final sahneDegisti = sahneNo != _bildirilenSahne;
+    final yeniBitis = _bitti && !_bitisBildirildi;
+    if (!sahneDegisti && !yeniBitis) return;
+    _bildirilenSahne = sahneNo;
+    if (yeniBitis) _bitisBildirildi = true;
+    if (!_bitti) _bitisBildirildi = false;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (sahneDegisti) widget.sahneDegisti?.call(sahneNo);
+      if (yeniBitis) widget.bitti?.call();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final konum = _plan.konum(_an);
+    _ilerlemeBildir(konum.sahne.sira + 1);
     // Bulunulan ve sıradaki sahnenin görselleri önceden yüklenir.
     _gorseller.onYukle(konum.sahne.sahne);
     final sonraki = konum.sahne.sira + 1;
