@@ -39,6 +39,12 @@
         "tur": "yedek",
         "hedef": "Düzeltmeler",
         "uretim": 12
+      },
+      {
+        "tur": 4,
+        "hedef": "Eksik katmanlar ve s14 oranı (a seçeneği)",
+        "uretim": 22,
+        "not": "ChatGPT Go. Toz ve nur oynatıcı efekti olarak kalır."
       }
     ]
   },
@@ -232,6 +238,200 @@
       "katman": "kabe-yakin",
       "istem": "Close-up of a wall of dry-stacked dark stones with thin wooden beams; at the corner a smooth black stone set into a niche at chest height. A soft warm golden-white glow fades around the stone. No hands, no people.",
       "not": "Gerçek görsel gelince yer tutucu 'nur' katmanı kaldırılabilir ya da hafif bırakılır."
+    },
+    {
+      "id": "m01b-gok-gunduz",
+      "tur": 4,
+      "dosya": "mekke-gok-gunduz.webp",
+      "katman": "gok",
+      "isleme": "opak",
+      "istem": "Sky only, clear midday: pale dusty blue, slightly lighter and warmer near the horizon, a few faint thin clouds, no land."
+    },
+    {
+      "id": "m01c-gok-aksam",
+      "tur": 4,
+      "dosya": "mekke-gok-aksam.webp",
+      "katman": "gok",
+      "isleme": "opak",
+      "istem": "Sky only, dusk just after sunset: muted violet-grey at the top fading to dull apricot and rose near the horizon, a few thin dark clouds, no land."
+    },
+    {
+      "id": "m01d-gok-gece",
+      "tur": 4,
+      "dosya": "mekke-gok-gece.webp",
+      "katman": "gok",
+      "isleme": "opak",
+      "istem": "Sky only, night: deep indigo, many small faint stars, a soft lighter haze near the horizon, no moon, no land.",
+      "not": "Ay yok: s09 tarifindeki ayın evresi kaynakta yok; gerekirse oynatıcı çizer."
+    },
+    {
+      "id": "m07b-kabe-yuksek",
+      "tur": 4,
+      "dosya": "kabe-yuksek.webp",
+      "katman": "kabe-yuksek",
+      "isleme": "sigdir",
+      "istem": "The finished cube-shaped stone building, clearly about twice as tall as its earlier low version: its walls are TALLER THAN THEY ARE WIDE. Flat roof, courses of dark stone alternating with thin wooden beams, a single-leaf wooden door set high in the wall with no stairs or steps, no covering cloth, no decoration. Straight vertical walls, sharp square corners. Only a thin strip of ground under it. {yesil_perde_eki}",
+      "not": "m07 basık çıktı (yükseklik alçak hâlin 1,47 katı); Erdem (a) seçeneğini seçti (2026-11-13).",
+      "yeniler": [
+        "m07-kabe-yuksek"
+      ]
+    },
+    {
+      "id": "m04b-evler-uzak",
+      "tur": 4,
+      "dosya": "mekke-evler.webp",
+      "katman": "evler",
+      "isleme": "perde",
+      "istem": "Seen from far away across an open space: a long, low, loose row of small flat-roofed houses of mudbrick and rough stone, single storey, small in the frame, along the foot of the valley; a wide empty gap in the middle of the row. Houses occupy only the middle third of the image height. No people. {yesil_perde_eki}",
+      "not": "Eski evler katmanı ön plan ölçeğindeydi; Kâbe her sahnede küçük görünüyordu.",
+      "yeniler": [
+        "m04-evler"
+      ]
+    },
+    {
+      "id": "s02-kabe-isli",
+      "tur": 4,
+      "dosya": "b09-s02-kabe-isli.webp",
+      "katman": "kabe-yakin",
+      "isleme": "opak",
+      "istem": "Close-up of an old wall of rough, dry-stacked dark stones without mortar: soot stains blackening the stones, worn and cracked surfaces, dry earth washed into the gaps between stones, and a dried flood line with a crust of silt along the base of the wall. No people, no hands.",
+      "not": "Kaynak: TDV KUREYŞ s. 443 (yangın ve sel)."
+    },
+    {
+      "id": "s03-deniz",
+      "tur": 4,
+      "dosya": "b09-s03-deniz.webp",
+      "katman": "deniz",
+      "isleme": "perde",
+      "istem": "Red Sea coast at noon: a calm sea stretching to a flat horizon, a wide sandy beach in the foreground, small low waves at the shoreline, no boats, no ships, no buildings. {yesil_perde_eki}",
+      "not": "Gök ayrı katman; ufkun üstü yeşil perde."
+    },
+    {
+      "id": "s03-gemi",
+      "tur": 4,
+      "dosya": "b09-s03-gemi.webp",
+      "katman": "gemi-enkaz",
+      "isleme": "perde",
+      "istem": "A broken wooden ship hull lying on its side on sand, split open, with loose planks scattered around it. Keep the ship generic and simple: no sails, no rigging, no flags, no carvings, no identifiable ship type. {yesil_perde_eki}",
+      "not": "Gemi tipi kaynakla netleşmedi; ayrıntı çizilmez."
+    },
+    {
+      "id": "s03-tasiyanlar",
+      "tur": 4,
+      "dosya": "b09-s03-tasiyanlar.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "Five very small distant human silhouettes walking in a line, carrying long wooden planks on their shoulders; no facial features at all. {yesil_perde_eki}"
+    },
+    {
+      "id": "s04-kalabalik",
+      "tur": 4,
+      "dosya": "b09-s04-kalabalik.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "A gathering of about fifteen older men in simple robes and head cloths standing in an open courtyard at middle-far distance, facing the viewer, their faces in deep shadow with no visible features. No coins, purses or money anywhere. {yesil_perde_eki}"
+    },
+    {
+      "id": "s04-konusan",
+      "tur": 4,
+      "dosya": "b09-s04-konusan.webp",
+      "katman": "siluet-tek",
+      "isleme": "perde",
+      "istem": "Seen from behind at close range, lower center of the frame: the head, shoulders and upper back of one man in a robe and head cloth, cut off at the waist by the bottom edge, one hand slightly raised as if speaking. His face is not visible at all. {yesil_perde_eki}",
+      "not": "Ebû Vehb b. Amr; yüz kesinlikle görünmez."
+    },
+    {
+      "id": "s05-kalabalik",
+      "tur": 4,
+      "dosya": "b09-s05-kalabalik.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "At dusk, a group of about twelve men in robes standing well back at a distance, hesitant, some turned half away; small in the frame, dark silhouettes against the evening light, no facial features. {yesil_perde_eki}"
+    },
+    {
+      "id": "s05-kazmali",
+      "tur": 4,
+      "dosya": "b09-s05-kazmali.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "istem": "A single small dark silhouette of a man in a robe seen from behind, standing, holding a pickaxe raised above his head, with a little puff of stone dust. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
+      "not": "Velîd b. Muğîre; duvarın üstüne ayar.gorsel ile yerleştirilecek."
+    },
+    {
+      "id": "s06-temel",
+      "tur": 4,
+      "dosya": "b09-s06-temel.webp",
+      "katman": "temel-taslari",
+      "isleme": "opak",
+      "istem": "Top-down view of an excavated pit: large, rounded, humped stones with a greenish tint set closely together in the ground, a thin layer of fine dust on them, dug-out earth around the edges, and a pickaxe lying at one edge. No people, no hands, no feet.",
+      "not": "Taşların biçim ve rengi için kaynağa bakılacak (TDV KÂBE)."
+    },
+    {
+      "id": "s07-gruplar",
+      "tur": 4,
+      "dosya": "b09-s07-gruplar.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "Several very small distant groups of two or three human silhouettes, each carrying stones on their shoulders, spread across the width of the image; no facial features. {yesil_perde_eki}"
+    },
+    {
+      "id": "s08-iki-grup",
+      "tur": 4,
+      "dosya": "b09-s08-iki-grup.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "Two groups of men in robes and head cloths at middle-far distance facing each other across an empty gap in the middle, tense postures, harsh midday shadows; no visible facial features. {yesil_perde_eki}"
+    },
+    {
+      "id": "s09-siluetler",
+      "tur": 4,
+      "dosya": "b09-s09-siluetler.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "At night, a loose ring of dark human silhouettes sunk in shadow, seen at middle distance, lit only faintly from the side by warm torchlight; an empty space in the center of the ring. No facial features, no blood. {yesil_perde_eki}"
+    },
+    {
+      "id": "s09-kap",
+      "tur": 4,
+      "dosya": "b09-s09-kap.webp",
+      "katman": "kap",
+      "isleme": "sigdir",
+      "istem": "A plain dark wide bowl standing on the ground, seen from a low side angle so its inside is not visible, faint warm torchlight on its rim. Nothing inside visible, no liquid, no blood. Fully inside the frame with empty margin. {yesil_perde_eki}"
+    },
+    {
+      "id": "s09-mesale",
+      "tur": 4,
+      "dosya": "b09-s09-mesale.webp",
+      "katman": "mesale",
+      "isleme": "sigdir",
+      "istem": "A simple wooden torch with a cloth-wrapped head, burning with a small flame, standing upright. Fully inside the frame with empty margin. {yesil_perde_eki}",
+      "not": "Alev oynatıcıda ayrıca titretilebilir."
+    },
+    {
+      "id": "s10-giris",
+      "tur": 4,
+      "dosya": "b09-s10-giris.webp",
+      "katman": "kapi-araligi",
+      "isleme": "perde",
+      "istem": "Across an open courtyard: a plain narrow gap between two mudbrick houses with bright daylight coming through it. No arch, no gate, no frame, no decoration. No people. {yesil_perde_eki}",
+      "not": "Kapının o dönemki biçimi kaynakta yok."
+    },
+    {
+      "id": "s10-kalabalik",
+      "tur": 4,
+      "dosya": "b09-s10-kalabalik.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "istem": "A crowd of about eighteen men in robes at far distance, standing and listening, facing the viewer; too far for any facial features, faces in shadow. {yesil_perde_eki}"
+    },
+    {
+      "id": "s10-yasli",
+      "tur": 4,
+      "dosya": "b09-s10-yasli.webp",
+      "katman": "siluet-tek",
+      "isleme": "perde",
+      "istem": "Seen from behind at close range on the left side of the frame: the shoulders and back of an old man in a robe and head cloth, standing upright, cut off by the bottom edge. His face is not visible at all. {yesil_perde_eki}",
+      "not": "Ebû Ümeyye b. Muğîre; yüz görünmez."
     }
   ],
   "uretimler": [
