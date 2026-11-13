@@ -10,6 +10,9 @@
 
 import 'dart:io';
 
+/// İçerik (json), katman görselleri (webp) ve anlatım sesleri.
+const _uzantilar = ['.json', '.webp', '.mp3', '.m4a', '.ogg'];
+
 void main() {
   final kaynak = Directory('content');
   final hedef = Directory('app/assets/icerik');
@@ -19,13 +22,18 @@ void main() {
   }
   if (hedef.existsSync()) hedef.deleteSync(recursive: true);
 
-  // Henüz görsel yokken de klasör bulunmalı; pubspec bu klasörü listeler.
+  // Henüz görsel ya da ses yokken de klasörler bulunmalı; pubspec bunları listeler.
   Directory('${hedef.path}/gorseller').createSync(recursive: true);
+  for (final dil in kaynak.listSync().whereType<Directory>()) {
+    final ad = dil.uri.pathSegments.lastWhere((s) => s.isNotEmpty);
+    if (ad == 'gorseller') continue;
+    Directory('${hedef.path}/$ad/ses').createSync(recursive: true);
+  }
 
   var sayi = 0;
   for (final varlik in kaynak.listSync(recursive: true)) {
     if (varlik is! File) continue;
-    if (!varlik.path.endsWith('.json') && !varlik.path.endsWith('.webp')) continue;
+    if (!_uzantilar.any(varlik.path.toLowerCase().endsWith)) continue;
     // Üretim istemleri uygulamaya girmez.
     if (varlik.path.replaceAll(r'\', '/').contains('gorseller/istemler/')) continue;
     final goreli = varlik.path.substring(kaynak.path.length + 1);

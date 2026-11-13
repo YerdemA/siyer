@@ -7,7 +7,9 @@ import 'model.dart';
 
 /// Şimdilik içerik uygulamayla paketlenir; bölüm indirme geldiğinde yalnız
 /// bu dosya değişir.
-const _kok = 'assets/icerik/tr';
+/// Dil şimdilik sabit; İngilizce gelince bu seçilebilir olur.
+const icerikKoku = 'assets/icerik/tr';
+const _kok = icerikKoku;
 
 Future<Map<String, dynamic>> _json(String yol) async =>
     jsonDecode(await rootBundle.loadString(yol)) as Map<String, dynamic>;

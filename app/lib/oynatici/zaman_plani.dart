@@ -4,9 +4,10 @@ import '../icerik/model.dart';
 
 /// Bir bölümün zaman çizelgesi.
 ///
-/// Anlatım sesi henüz olmadığından her parçanın süresi kelime sayısından
-/// tahmin edilir. Ses dosyaları gelince süreler sesten okunacak; geri kalan
-/// her şey (sahne sınırları, geçişler, altyazı) aynı kalır.
+/// Anlatım sesi olan sahnede süre sesten gelir: sahne başı sessizliği, ses,
+/// sahne sonu sessizliği. Parçaların (altyazı) süresi ses süresine kelime
+/// sayısıyla orantılı paylaştırılır; aradaki duraklar kaydın içindedir. Sesi
+/// olmayan sahnede her parçanın süresi kelime sayısından tahmin edilir.
 class ZamanAyari {
   const ZamanAyari({
     this.kelimeHizi = 2.3,
@@ -40,13 +41,27 @@ class ParcaZamani {
 }
 
 class SahneZamani {
-  const SahneZamani(this.sira, this.sahne, this.bas, this.son, this.parcalar);
+  const SahneZamani(this.sira, this.sahne, this.bas, this.son, this.parcalar,
+      {this.sesBas = 0, this.sesSure});
   final int sira;
   final Sahne sahne;
   final double bas;
   final double son;
   final List<ParcaZamani> parcalar;
+
+  /// Anlatım sesinin bölüm zamanındaki başlangıcı; [sesSure] null ise ses yok.
+  final double sesBas;
+  final double? sesSure;
+
+  bool get sesli => sesSure != null;
   double get sure => son - bas;
+
+  /// [an] anında sesin içindeki konum (saniye); ses dışındaysa null.
+  double? sesKonumu(double an) {
+    final s = sesSure;
+    if (s == null || an < sesBas || an >= sesBas + s) return null;
+    return an - sesBas;
+  }
 }
 
 /// [an] anında ekranda olan: asıl sahne, (geçişteyse) gelen sahne ve altyazı.
@@ -75,29 +90,50 @@ class Konum {
 class ZamanPlani {
   ZamanPlani._(this.sahneler, this.toplam, this.ayar);
 
-  factory ZamanPlani.olustur(Bolum bolum, {ZamanAyari ayar = const ZamanAyari()}) {
+  /// [sesSureleri]: sahne kimliğinden anlatım sesinin süresine (saniye).
+  factory ZamanPlani.olustur(
+    Bolum bolum, {
+    ZamanAyari ayar = const ZamanAyari(),
+    Map<String, double> sesSureleri = const {},
+  }) {
     final sahneler = <SahneZamani>[];
     var t = 0.0;
     for (final (i, sahne) in bolum.sahneler.indexed) {
       final bas = t;
       t += ayar.sahneBasi;
+      final sesBas = t;
+      final sesSure = sesSureleri[sahne.id];
       final parcalar = <ParcaZamani>[];
-      for (final (j, p) in sahne.anlatim.indexed) {
-        if (j > 0) t += ayar.parcaArasi;
-        final sure = parcaSuresi(p.metin, ayar);
-        parcalar.add(ParcaZamani(p, t, t + sure));
-        t += sure;
+      if (sesSure != null && sesSure > 0) {
+        final agirliklar = [for (final p in sahne.anlatim) math.max(1, kelimeSayisi(p.metin))];
+        final toplamAgirlik = agirliklar.fold(0, (a, b) => a + b);
+        for (final (j, p) in sahne.anlatim.indexed) {
+          final sure = sesSure * agirliklar[j] / toplamAgirlik;
+          parcalar.add(ParcaZamani(p, t, t + sure));
+          t += sure;
+        }
+        // Parça yoksa da ses tam çalınsın.
+        t = sesBas + sesSure;
+      } else {
+        for (final (j, p) in sahne.anlatim.indexed) {
+          if (j > 0) t += ayar.parcaArasi;
+          final sure = parcaSuresi(p.metin, ayar);
+          parcalar.add(ParcaZamani(p, t, t + sure));
+          t += sure;
+        }
       }
       t += ayar.sahneSonu;
-      sahneler.add(SahneZamani(i, sahne, bas, t, parcalar));
+      sahneler.add(SahneZamani(i, sahne, bas, t, parcalar,
+          sesBas: sesBas, sesSure: sesSure != null && sesSure > 0 ? sesSure : null));
     }
     return ZamanPlani._(sahneler, t, ayar);
   }
 
-  static double parcaSuresi(String metin, ZamanAyari ayar) {
-    final kelime = metin.trim().split(RegExp(r'\s+')).where((k) => k.isNotEmpty).length;
-    return math.max(ayar.enAzParca, kelime / ayar.kelimeHizi);
-  }
+  static int kelimeSayisi(String metin) =>
+      metin.trim().split(RegExp(r'\s+')).where((k) => k.isNotEmpty).length;
+
+  static double parcaSuresi(String metin, ZamanAyari ayar) =>
+      math.max(ayar.enAzParca, kelimeSayisi(metin) / ayar.kelimeHizi);
 
   final List<SahneZamani> sahneler;
   final double toplam;

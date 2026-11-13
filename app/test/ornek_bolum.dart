@@ -10,6 +10,7 @@ Bolum ornekBolum() => Bolum.fromJson({
       'sahneler': [
         {
           'id': 'b99-s01',
+          'ses': {'anlatim': 'b99-s01.mp3'},
           'anlatim': [
             {'metin': 'bir iki üç', 'iddialar': ['i-b99-001']},
             {'metin': List.filled(23, 'kelime').join(' '), 'iddialar': []},

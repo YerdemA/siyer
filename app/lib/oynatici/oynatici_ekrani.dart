@@ -10,6 +10,7 @@ import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
+import 'anlatim_sesi.dart';
 import 'gorsel_onbellek.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
@@ -30,20 +31,29 @@ class OynaticiEkrani extends ConsumerWidget {
     // Yalnız açılışta okunur: oynarken her kayıtta oynatıcı yeniden kurulmasın.
     final ilerleme = ref.watch(ilerlemeProvider.select((d) => d.whenData((_) => true)));
     final notifier = ref.read(ilerlemeProvider.notifier);
+    // Ses süreleri okunamazsa bölüm sessiz (süreler metinden) oynar.
+    final sureler = ref.watch(sesSureleriProvider(bolumId));
     return Scaffold(
       backgroundColor: Colors.black,
-      body: switch ((bolum, kaynakca, ilerleme)) {
-        (AsyncData(value: final b), AsyncData(value: final k), AsyncData() || AsyncError()) =>
+      body: switch ((bolum, kaynakca, ilerleme, sureler)) {
+        (
+          AsyncData(value: final b),
+          AsyncData(value: final k),
+          AsyncData() || AsyncError(),
+          AsyncData() || AsyncError(),
+        ) =>
           Oynatici(
             bolum: b,
             kaynakca: k,
+            sesSureleri: sureler.value ?? const {},
+            sesFabrikasi: ref.read(anlatimSesiFabrikasi),
             baslangicSahnesi: baslangicSahnesi ??
                 ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
                 1,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
-        (AsyncError(:final error), _, _) || (_, AsyncError(:final error), _) =>
+        (AsyncError(:final error), _, _, _) || (_, AsyncError(:final error), _, _) =>
           Center(child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white))),
         _ => const Center(child: CircularProgressIndicator()),
       },
@@ -59,7 +69,15 @@ class Oynatici extends StatefulWidget {
     this.baslangicSahnesi = 1,
     this.sahneDegisti,
     this.bitti,
+    this.sesSureleri = const {},
+    this.sesFabrikasi,
   });
+
+  /// Sahne kimliğinden anlatım sesinin süresine (saniye); bkz. [sesSureleriProvider].
+  final Map<String, double> sesSureleri;
+
+  /// Verilmezse ses çalınmaz (yalnız zaman planı ve altyazı).
+  final AnlatimSesi Function()? sesFabrikasi;
 
   final Bolum bolum;
   final Map<String, Eser> kaynakca;
@@ -76,7 +94,10 @@ class Oynatici extends StatefulWidget {
 }
 
 class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin {
-  late final ZamanPlani _plan = ZamanPlani.olustur(widget.bolum);
+  late final ZamanPlani _plan = ZamanPlani.olustur(widget.bolum, sesSureleri: widget.sesSureleri);
+  late final AnlatimSesi? _ses = widget.sesSureleri.isEmpty ? null : widget.sesFabrikasi?.call();
+  late final AppLifecycleListener _yasamDongusu;
+  bool _sesIstegiSuruyor = false;
   late final Ticker _ticker;
   Duration _oncekiTik = Duration.zero;
   double _an = 0;
@@ -97,10 +118,16 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     final i = (widget.baslangicSahnesi - 1).clamp(0, _plan.sahneler.length - 1);
     _an = _plan.sahneler[i].bas;
     _ticker = createTicker(_tik)..start();
+    // Uygulama arka plana geçince oynatma (ve ses) durur.
+    _yasamDongusu = AppLifecycleListener(onHide: () {
+      if (mounted && _oynuyor) setState(() => _oynuyor = false);
+    });
   }
 
   @override
   void dispose() {
+    _yasamDongusu.dispose();
+    _ses?.kapat();
     _ticker.dispose();
     _gorseller.dispose();
     SystemChrome.setPreferredOrientations(DeviceOrientation.values);
@@ -111,6 +138,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   void _tik(Duration gecen) {
     final dt = (gecen - _oncekiTik).inMicroseconds / 1e6;
     _oncekiTik = gecen;
+    _sesiEsitle();
     if (!_oynuyor) return;
     setState(() {
       _an = math.min(_an + dt, _plan.toplam);
@@ -126,6 +154,42 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   }
 
   bool get _bitti => _an >= _plan.toplam;
+
+  /// Saat asıl; ses ona uyar. Her karede çağrılır: duraklatma, kaydırma,
+  /// sahne atlama, bölüm sonu ve sahne başı/sonu sessizlikleri buradan yönetilir.
+  void _sesiEsitle() {
+    final ses = _ses;
+    if (ses == null || _sesIstegiSuruyor) return;
+    final s = _plan.sahneler[_plan.sahneSirasi(_an)];
+    switch (sesKarari(
+      oynuyor: _oynuyor,
+      dosya: s.sahne.sesAnlatim,
+      sesKonumu: s.sesKonumu(_an),
+      etkinDosya: ses.etkinDosya,
+      caliyor: ses.caliyor,
+      konum: ses.konum,
+      kaymaSiniriMs: sesKaymaSiniri,
+    )) {
+      case SesBekle():
+        break;
+      case SesDuraklat():
+        _sesIstegi(ses.duraklat());
+      case SesCal(:final dosya, :final konum):
+        _sesIstegi(ses.cal(dosya, konum));
+      case SesAra(:final konum):
+        _sesIstegi(ses.ara(konum));
+    }
+  }
+
+  /// Ses saatten bu kadar (ms) ayrılırsa yeniden konumlanır.
+  static const sesKaymaSiniri = 200;
+
+  void _sesIstegi(Future<void> istek) {
+    _sesIstegiSuruyor = true;
+    istek.catchError((Object hata) {
+      debugPrint('Anlatım sesi hatası: $hata');
+    }).whenComplete(() => _sesIstegiSuruyor = false);
+  }
 
   int? _bildirilenSahne;
   bool _bitisBildirildi = false;
@@ -258,7 +322,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               Flexible(
                 flex: 2,
                 child: Text(
-                  [if (konum.sahne.sahne.gorsel.yerTutucuVar) m.yerTutucuUyari, m.sesYok].join(' '),
+                  [
+                    if (konum.sahne.sahne.gorsel.yerTutucuVar) m.yerTutucuUyari,
+                    if (!konum.sahne.sesli) m.sesYok,
+                  ].join(' '),
                   style: const TextStyle(color: Colors.white54, fontSize: 11),
                   textAlign: TextAlign.end,
                   maxLines: 2,

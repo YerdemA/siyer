@@ -32,7 +32,7 @@ content/tr/
 | `id` | `b03-s02` |
 | `anlatim[]` | `{ "metin": "...", "iddialar": ["i-b03-004"] }` — her anlatım parçası dayandığı iddiaları gösterir |
 | `gorsel` | `{ "tarif": "...", "saat": "gunduz", "katmanlar": [...], "kamera": "yavas-yaklasma" }` — aşağıda |
-| `ses` | `{ "anlatim": "b03-s02.mp3", "muzik": "huzun-01", "ortam": "col-ruzgari" }` |
+| `ses` | `{ "anlatim": "b03-s02.mp3", "muzik": "huzun-01", "ortam": "col-ruzgari" }`  Anlatım sesi dil başınadır: `content/<dil>/ses/<dosya>` (mp3, m4a ya da ogg). Sahne başına bir dosya; süresi uygulama açılınca dosyadan okunur, JSON'a yazılmaz. Dosya yoksa süre metinden tahmin edilir; yayın denetimi bunu hata sayar. |
 | `sahislar[]`, `yer` | `sahislar.json` ve `yerler.json` kimlikleri |
 
 Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listesi dolu olmalıdır. Geçiş cümleleri boş bırakılabilir.

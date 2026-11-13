@@ -420,6 +420,7 @@ BolumOzeti bolumuDenetle(
   // Sahneler
   final kullanilan = <String>{};
   var yerTutucuKatman = 0;
+  var sesYok = 0;
   final sahneler = liste(b, 'sahneler', yol, rapor);
   if (sahneler.isEmpty && b['sahneler'] is List) {
     rapor.yayinHatasi(yol, 'bölümde sahne yok');
@@ -474,6 +475,9 @@ BolumOzeti bolumuDenetle(
     final ses = s['ses'];
     if (ses is! Map<String, dynamic> || metin(ses, 'anlatim').isEmpty) {
       rapor.yayinHatasi(yer, '`ses.anlatim` boş');
+    } else if (!File('${File(yol).parent.parent.path}/ses/${metin(ses, 'anlatim')}').existsSync()) {
+      // Anlatım sesi dil başınadır: content/<dil>/ses/<dosya>.
+      sesYok++;
     }
 
     // Şablon, henüz kaydı olmayan örnek kimliklere gönderme yapabilir.
@@ -493,6 +497,9 @@ BolumOzeti bolumuDenetle(
     }
   }
 
+  if (sesYok > 0) {
+    rapor.yayinHatasi(yol, '$sesYok sahnenin anlatım sesi bulunamadı (süre metinden tahmin edilir)');
+  }
   if (yerTutucuKatman > 0) {
     rapor.yayinHatasi(yol, '$yerTutucuKatman katmanın görseli yok (yer tutucu çizilir)');
   }
