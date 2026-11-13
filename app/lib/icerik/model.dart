@@ -81,6 +81,13 @@ class Gorsel {
   final String saat;
   final List<Katman> katmanlar;
   final String kamera;
+
+  /// Görsel üretilmeyen, oynatıcının kendisi çizdiği efekt katmanları.
+  static const efektler = {'toz', 'nur'};
+
+  /// Görseli henüz gelmemiş (efekt olmayan) katman var mı.
+  bool get yerTutucuVar =>
+      katmanlar.any((k) => k.dosya.isEmpty && !efektler.contains(k.yerTutucu));
 }
 
 class AnlatimParcasi {
@@ -101,6 +108,7 @@ class Sahne {
     required this.anlatim,
     required this.gorsel,
     required this.sesAnlatim,
+    this.sahislar = const [],
   });
 
   factory Sahne.fromJson(Map<String, dynamic> j) {
@@ -114,6 +122,7 @@ class Sahne {
           ? Gorsel.fromJson(j['gorsel'] as Map<String, dynamic>)
           : const Gorsel(tarif: '', saat: 'gunduz', katmanlar: [], kamera: ''),
       sesAnlatim: _metin(ses, 'anlatim'),
+      sahislar: _metinler(j, 'sahislar'),
     );
   }
 
@@ -121,6 +130,9 @@ class Sahne {
   final List<AnlatimParcasi> anlatim;
   final Gorsel gorsel;
   final String sesAnlatim;
+
+  /// Sahnede geçen şahısların `sahislar.json` kimlikleri.
+  final List<String> sahislar;
 }
 
 class Atif {

@@ -26,6 +26,7 @@ Bolum ornekBolum() => Bolum.fromJson({
         },
         {
           'id': 'b99-s02',
+          'sahislar': ['kisi-a'],
           'anlatim': [
             {'metin': 'son cümle', 'iddialar': []},
           ],

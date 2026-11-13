@@ -51,4 +51,25 @@ void main() {
     expect(find.textContaining('Yazar, Eser, s. 1'), findsOneWidget);
     expect(find.textContaining('doğrulama bekliyor'), findsOneWidget);
   });
+
+  testWidgets('yer tutucu uyarısı ve şahıslar düğmesi sahneye göre görünür', (tester) async {
+    await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca)));
+    await tester.pump(const Duration(milliseconds: 100));
+    // 1. sahnede görseli olmayan gök katmanı var (nur efekt sayılmaz); şahıs yok.
+    expect(find.textContaining('Görseller geçici yer tutucudur.'), findsOneWidget);
+    expect(find.byTooltip('Şahıslar'), findsNothing);
+    await tester.tap(find.byTooltip('Sonraki sahne'));
+    await tester.pump();
+    // 2. sahnede katman yok; bir şahıs var.
+    expect(find.textContaining('Görseller geçici yer tutucudur.'), findsNothing);
+    expect(find.byTooltip('Şahıslar'), findsOneWidget);
+  });
+
+  test('efekt katmanları yer tutucu sayılmaz', () {
+    const g = Gorsel(tarif: '', saat: 'gunduz', kamera: '', katmanlar: [
+      Katman(id: 'toz', dosya: '', yerTutucu: 'toz', derinlik: 0.9),
+      Katman(id: 'gok', dosya: 'gok.webp', yerTutucu: 'gok', derinlik: 0),
+    ]);
+    expect(g.yerTutucuVar, isFalse);
+  });
 }

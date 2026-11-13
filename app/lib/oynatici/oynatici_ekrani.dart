@@ -201,6 +201,34 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     );
   }
 
+  /// Sahnede geçen şahıslar; birine dokununca sözlükteki sayfası açılır.
+  /// Oynatma duraklatılır, dönüşte kullanıcı kendisi sürdürür.
+  void _sahislariGoster(BuildContext context, List<String> kimlikler) {
+    setState(() => _oynuyor = false);
+    showModalBottomSheet<void>(
+      context: context,
+      builder: (c) => Consumer(
+        builder: (c, ref, _) {
+          final sahislar = ref.watch(sahislarProvider).value ?? const <Sahis>[];
+          return ListView(
+            shrinkWrap: true,
+            children: [
+              for (final id in kimlikler)
+                ListTile(
+                  leading: const Icon(Icons.person_outline),
+                  title: Text(sahislar.where((s) => s.id == id).firstOrNull?.ad ?? id),
+                  onTap: () {
+                    Navigator.pop(c);
+                    context.push('/sahislar/$id');
+                  },
+                ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
   Widget _kontrolCubugu(BuildContext context, Konum konum) {
     final m = Metinler.of(context);
     const beyaz = Colors.white;
@@ -230,7 +258,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               Flexible(
                 flex: 2,
                 child: Text(
-                  '${m.yerTutucuUyari} ${m.sesYok}',
+                  [if (konum.sahne.sahne.gorsel.yerTutucuVar) m.yerTutucuUyari, m.sesYok].join(' '),
                   style: const TextStyle(color: Colors.white54, fontSize: 11),
                   textAlign: TextAlign.end,
                   maxLines: 2,
@@ -285,6 +313,13 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     icon: const Icon(Icons.subtitles_outlined),
                     onPressed: () => setState(() => _altyazi = !_altyazi),
                   ),
+                  if (konum.sahne.sahne.sahislar.isNotEmpty)
+                    IconButton(
+                      tooltip: m.sahislar,
+                      color: beyaz,
+                      icon: const Icon(Icons.people_outline),
+                      onPressed: () => _sahislariGoster(context, konum.sahne.sahne.sahislar),
+                    ),
                   IconButton(
                     tooltip: m.tarifGoster,
                     color: _tarif ? const Color(0xFFF2C46B) : beyaz,
