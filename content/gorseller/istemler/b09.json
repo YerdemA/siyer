@@ -282,8 +282,8 @@
       "dosya": "mekke-evler.webp",
       "katman": "evler",
       "isleme": "perde",
-      "istem": "Seen from far away across an open space: a long, low, loose row of small flat-roofed houses of mudbrick and rough stone, single storey, small in the frame, along the foot of the valley; a wide empty gap in the middle of the row. Houses occupy only the middle third of the image height. No people. {yesil_perde_eki}",
-      "not": "Eski evler katmanı ön plan ölçeğindeydi; Kâbe her sahnede küçük görünüyordu.",
+      "istem": "Seen from far away across an open space: a long, low, loose row of small flat-roofed houses of mudbrick and rough stone, single storey, small in the frame, along the foot of the valley; a wide empty gap in the middle of the row. Houses occupy only the middle third of the image height. The ground under the houses fades out to the edges of the image so no hard edge shows. No people. {yesil_perde_eki}",
+      "not": "Eski evler katmanı ön plan ölçeğindeydi; Kâbe her sahnede küçük görünüyordu. Önce eski görseli ayar.gorsel ile küçültmek denendi (2026-11-13): katmanın kendi zemin şeridi sert kenarlı bir dikdörtgen gibi görünüyor; yeniden üretim gerekli.",
       "yeniler": [
         "m04-evler"
       ]
@@ -363,8 +363,8 @@
       "dosya": "b09-s06-temel.webp",
       "katman": "temel-taslari",
       "isleme": "opak",
-      "istem": "Top-down view of an excavated pit: large, rounded, humped stones with a greenish tint set closely together in the ground, a thin layer of fine dust on them, dug-out earth around the edges, and a pickaxe lying at one edge. No people, no hands, no feet.",
-      "not": "Taşların biçim ve rengi için kaynağa bakılacak (TDV KÂBE)."
+      "istem": "Top-down view of an excavated pit: large greenish stones with rounded backs shaped like camel humps set closely together in the ground, a thin layer of fine dust on them, dug-out earth around the edges, and a pickaxe lying at one edge. No people, no hands, no feet.",
+      "not": "Kaynak: i-b09-009 (İbn Hişâm s. 124: deve hörgücüne benzeyen yeşil taşlar)."
     },
     {
       "id": "s07-gruplar",
