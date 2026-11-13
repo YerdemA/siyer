@@ -1,0 +1,49 @@
+{
+  "id": "b03-dogum",
+  "sira": 3,
+  "baslik": "Doğum",
+  "ozet": "Fil Vakası'nın ardından Mekke'de bir yetim dünyaya gelir.",
+  "durum": "taslak",
+  "uzmanOkumasi": { "okuyan": "", "tarih": "" },
+  "sahneler": [
+    {
+      "id": "b03-s01",
+      "anlatim": [
+        {
+          "metin": "Mekke, Ebrehe'nin ordusunun dağıldığı o yılı uzun süre unutmayacaktı.",
+          "iddialar": []
+        },
+        {
+          "metin": "Aynı yıl, Abdülmuttalib'in gelini Âmine bir erkek çocuk dünyaya getirdi.",
+          "iddialar": ["i-b03-001"]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak vakti Mekke vadisi, uzak plan. Kerpiç ve taş evler, ortada Kâbe. İnsan figürü yok ya da çok uzakta siluet.",
+        "katmanlar": [],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": { "anlatim": "b03-s01.mp3", "muzik": "", "ortam": "safak-ruzgar" },
+      "sahislar": ["amine", "abdulmuttalib"],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b03-001",
+      "ifade": "Hz. Muhammed (s.a.v.) Fil Vakası'nın yaşandığı yıl Mekke'de doğmuştur.",
+      "guc": "guclu",
+      "gerekce": "DOLDURULACAK: kaynakların değerlendirmesi not defterinden okunduktan sonra yazılır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}
