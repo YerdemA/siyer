@@ -53,7 +53,7 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 | Alan | Açıklama |
 |---|---|
 | `eser` | `kaynakca.json` kimliği (ör. `ibn-hisam-sire`) |
-| `konum` | `c. 1, s. 158` ya da `Bed'ü'l-vahy, 3` |
+| `konum` | `c. 1, s. 158` ya da `Bed'ü'l-vahy, 3`. Ansiklopedide madde adı tırnak içinde: `Salim Öğüt, "HACERÜLESVED", c. 14, s. 433`; farklı maddeler ayrı kaynak sayılır. Matbu sayfası olmayan dijital baskıda: `c. 2, dipnot 1578 (PDF s. 434)` |
 | `dogrulama` | `bekliyor` / `dogrulandi` |
 | `dogrulayan`, `tarih` | `dogrulandi` ise zorunlu |
 

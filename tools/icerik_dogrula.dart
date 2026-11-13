@@ -21,6 +21,7 @@ const katmanlar = ['A', 'B', 'C', 'D', 'E'];
 
 final bolumIdDeseni = RegExp(r'^b(\d{2})-[a-z0-9]+(-[a-z0-9]+)*$');
 final tarihDeseni = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+final maddeDeseni = RegExp(r'"([^"]+)"');
 
 class Rapor {
   Rapor(this.yayin);
@@ -447,9 +448,11 @@ BolumOzeti bolumuDenetle(
       rapor.yayinHatasi(yer, '`ses.anlatim` boş');
     }
 
+    // Şablon, henüz kaydı olmayan örnek kimliklere gönderme yapabilir.
+    final tanimsiz = sablon ? rapor.uyari : rapor.hata;
     for (final sahis in liste(s, 'sahislar', yer, rapor, zorunlu: false)) {
       if (icerik.sahislar != null && !icerik.sahislar!.contains(sahis)) {
-        rapor.hata(yer, 'tanımsız şahıs: $sahis');
+        tanimsiz(yer, 'tanımsız şahıs: $sahis');
       }
     }
     final yerId = s['yer'];
@@ -457,7 +460,7 @@ BolumOzeti bolumuDenetle(
       if (yerId is! String) {
         rapor.hata(yer, '`yer` bir kimlik (metin) olmalı');
       } else if (icerik.yerler != null && !icerik.yerler!.contains(yerId)) {
-        rapor.hata(yer, 'tanımsız yer: $yerId');
+        tanimsiz(yer, 'tanımsız yer: $yerId');
       }
     }
   }
@@ -526,7 +529,12 @@ int kaynaklariDenetle(
         rapor.hata(kYer, 'eser kaynakçada yok: $eser');
         katmanBilinir = false;
       } else {
-        katmanaGore.putIfAbsent(katman, () => {}).add(eser);
+        // Ansiklopedi gibi çok maddeli eserlerde her madde ayrı kaynak sayılır;
+        // madde adı konumda tırnak içinde yazılır: Müellif, "MADDE", c., s.
+        final madde = maddeDeseni.firstMatch(metin(k, 'konum'))?.group(1);
+        katmanaGore
+            .putIfAbsent(katman, () => {})
+            .add(madde == null ? eser : '$eser|$madde');
       }
     }
     final dogrulama = metin(k, 'dogrulama');
