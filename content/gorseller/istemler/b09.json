@@ -125,7 +125,90 @@
       "dosya": "b09-s11-cerceve.webp",
       "katman": "kapi-cercevesi",
       "istem": "First-person view from a simple narrow gap between two mudbrick house walls, looking out into a sunlit open courtyard; the walls frame the left and right edges in shadow. No arch, no monumental gate. No hands, arms, feet or body of the viewer. The courtyard is empty in the center: no building, no cube-shaped structure, no people. {yesil_perde_eki}",
-      "not": "Kapının o dönemki biçimi kaynakta yok; sade aralık. Üretilen görsel avluyu da içerdi; yalnız iki yandaki duvarlar elle maskelenip çerçeve katmanı yapıldı."
+      "not": "Kapının o dönemki biçimi kaynakta yok; sade aralık. Üretilen görsel avluyu da içerdi; yalnız iki yandaki duvarlar elle maskelenip çerçeve katmanı yapıldı.",
+      "maske": {
+        "aciklama": "gorsel-ham/b09/s11-giris.png önce varsayılan ayarla (kırparak) gorsel_katman.py ile çevrilir; sonra yalnız bu iki çokgenin içi bırakılır (alfa = min(perde alfası, çokgen)), kenar 1.5 px Gauss ile yumuşatılır. Koordinatlar ham 1536×1024 görselde; katmana dönüşüm x·1.5, y·1.5−120.",
+        "sol": [
+          [
+            0,
+            0
+          ],
+          [
+            330,
+            0
+          ],
+          [
+            330,
+            350
+          ],
+          [
+            252,
+            350
+          ],
+          [
+            250,
+            620
+          ],
+          [
+            240,
+            700
+          ],
+          [
+            250,
+            800
+          ],
+          [
+            320,
+            860
+          ],
+          [
+            325,
+            1024
+          ],
+          [
+            0,
+            1024
+          ]
+        ],
+        "sag": [
+          [
+            1536,
+            0
+          ],
+          [
+            1190,
+            0
+          ],
+          [
+            1190,
+            380
+          ],
+          [
+            1290,
+            380
+          ],
+          [
+            1290,
+            800
+          ],
+          [
+            1240,
+            850
+          ],
+          [
+            1170,
+            880
+          ],
+          [
+            1170,
+            1024
+          ],
+          [
+            1536,
+            1024
+          ]
+        ]
+      }
     },
     {
       "id": "s11-kalabalik",
