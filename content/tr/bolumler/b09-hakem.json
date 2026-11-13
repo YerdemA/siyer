@@ -58,7 +58,14 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "toz",
@@ -241,7 +248,14 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.5
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "kalabalik",
@@ -334,7 +348,12 @@
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55,
             "ayar": {
-              "olcek": 1.6
+              "olcek": 1.6,
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.667,
+                "olcek": 0.43
+              }
             }
           },
           {
@@ -466,7 +485,14 @@
             "id": "kabe-yarim",
             "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.661,
+                "olcek": 0.263
+              }
+            }
           },
           {
             "id": "kalabalik",
@@ -561,7 +587,12 @@
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.55,
             "ayar": {
-              "olcek": 1.5
+              "olcek": 1.5,
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.662,
+                "olcek": 0.394
+              }
             }
           },
           {
@@ -637,7 +668,12 @@
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.5,
             "ayar": {
-              "olcek": 1.5
+              "olcek": 1.5,
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.662,
+                "olcek": 0.394
+              }
             }
           },
           {
@@ -798,7 +834,12 @@
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.5,
             "ayar": {
-              "olcek": 1.4
+              "olcek": 1.4,
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.662,
+                "olcek": 0.368
+              }
             }
           },
           {
@@ -998,7 +1039,14 @@
             "id": "kabe-yuksek",
             "dosya": "kabe-yuksek.webp",
             "yerTutucu": "kabe-yuksek",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.476,
+                "y": 0.643,
+                "olcek": 0.241
+              }
+            }
           },
           {
             "id": "toz",
