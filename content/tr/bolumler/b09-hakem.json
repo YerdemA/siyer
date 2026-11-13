@@ -28,7 +28,45 @@
       ],
       "gorsel": {
         "tarif": "Gün ağarırken Mekke vadisi, uzak plan. Çıplak kayalık dağlar, kerpiç ve taş evler. Ortada alçak, çatısız, kaba taşlardan Kâbe; çevresi açık avlu. Minare, kubbe, revak yok. İnsan yok ya da çok uzakta birkaç siluet.",
-        "katmanlar": [],
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yavas-yaklasma"
       },
       "ses": {
@@ -65,7 +103,24 @@
       ],
       "gorsel": {
         "tarif": "Kâbe duvarına yakın plan: is lekeli, aşınmış, aralarından toprak akmış kaba taşlar. Duvar dibinde kurumuş sel izi. İnsan yok.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "kabe-yakin",
+            "dosya": "",
+            "yerTutucu": "kabe-yakin",
+            "derinlik": 0.5,
+            "ayar": {
+              "isli": true
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yatay-kayma"
       },
       "ses": {
@@ -94,7 +149,40 @@
       ],
       "gorsel": {
         "tarif": "Kızıldeniz kıyısı, öğle ışığı. Kumsalda yan yatmış, parçalanmış ahşap bir gemi; dağılmış kalaslar. Uzakta kalasları taşıyan birkaç küçük siluet, yüzleri seçilmez. Gemi tipi kaynakla netleşmeden ayrıntılı çizilmez.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "deniz",
+            "dosya": "",
+            "yerTutucu": "deniz",
+            "derinlik": 0.3
+          },
+          {
+            "id": "gemi-enkaz",
+            "dosya": "",
+            "yerTutucu": "gemi-enkaz",
+            "derinlik": 0.6
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.5,
+            "ayar": {
+              "sayi": 5,
+              "y": 0.8,
+              "olcek": 0.05,
+              "x1": 0.7,
+              "x2": 0.95
+            }
+          }
+        ],
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
@@ -123,7 +211,61 @@
       ],
       "gorsel": {
         "tarif": "Kâbe avlusunda toplanmış Kureyş ileri gelenleri, orta-uzak plan; yüzler gölgede. Önlerinde arkadan görünen, konuşan tek bir siluet. Para, kese ya da sikke çizilmez.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.5
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 16,
+              "y": 0.8,
+              "olcek": 0.08
+            }
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.9,
+            "ayar": {
+              "x": 0.5,
+              "y": 1.02,
+              "olcek": 0.42
+            }
+          }
+        ],
         "kamera": "sabit"
       },
       "ses": {
@@ -160,7 +302,73 @@
       ],
       "gorsel": {
         "tarif": "Kâbe köşesi, alacakaranlık. Duvarın üstünde tek bir siluet arkadan, havaya kalkmış kazma; kopan taştan toz. Aşağıda geri çekilmiş, uzak duran kalabalık siluetleri. Geçiş: gece mavisi avlu, ardından sabah ışığında duvarlarda çalışan çok sayıda küçük siluet.",
-        "katmanlar": [],
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "olcek": 1.6
+            }
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.5,
+              "y": 0.67,
+              "olcek": 0.12,
+              "kazma": true
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75,
+            "ayar": {
+              "sayi": 12,
+              "y": 0.8,
+              "olcek": 0.07,
+              "x1": 0.05,
+              "x2": 0.3
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yavas-yaklasma"
       },
       "ses": {
@@ -191,7 +399,21 @@
       ],
       "gorsel": {
         "tarif": "Yukarıdan bakış: kazılmış zeminde iri, yuvarlak sırtlı, yeşilimsi taşlar; üzerlerinde ince toz. Kenarda yere bırakılmış bir kazma. İnsan yok.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "temel-taslari",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.5
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yukaridan-yavas-donus"
       },
       "ses": {
@@ -220,7 +442,62 @@
       ],
       "gorsel": {
         "tarif": "Onun gözünden: göz hizasından taşlık yokuş ve önde yürüyen Abbas'ın sırtı, omzunda taş; yüzü görünmez. Uzakta yükselen duvarlar ve taş taşıyan küçük siluet grupları. Bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kabe-yarim",
+            "dosya": "",
+            "yerTutucu": "kabe-yarim",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.4,
+            "ayar": {
+              "sayi": 10,
+              "y": 0.73,
+              "olcek": 0.03
+            }
+          },
+          {
+            "id": "yokus",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.7
+          },
+          {
+            "id": "tasiyan-arkadan",
+            "dosya": "",
+            "yerTutucu": "tasiyan-arkadan",
+            "derinlik": 0.95
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
@@ -252,7 +529,54 @@
       ],
       "gorsel": {
         "tarif": "Yarı yükselmiş Kâbe duvarı; köşede Hacerülesved'in boş yuvası. Önünde birbirine dönük iki kalabalık siluet grubu, orta-uzak plan, yüzler seçilmez. Sert öğle gölgeleri, soğuk ton.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yarim",
+            "dosya": "",
+            "yerTutucu": "kabe-yarim",
+            "derinlik": 0.55,
+            "ayar": {
+              "olcek": 1.5
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75,
+            "ayar": {
+              "sayi": 22,
+              "y": 0.8,
+              "olcek": 0.08,
+              "grup": "iki"
+            }
+          }
+        ],
         "kamera": "yavas-yaklasma"
       },
       "ses": {
@@ -281,7 +605,65 @@
       ],
       "gorsel": {
         "tarif": "Gece, meşale ışığı. Yere konmuş koyu bir kap, içi görünmez; çevresinde gölgeye gömülmüş, yüzsüz siluetler. Kan gösterilmez. Geçiş: aynı avluda birbirini izleyen birkaç gece; ay, sönen meşaleler, boş duran yarım duvar.",
-        "katmanlar": [],
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yarim",
+            "dosya": "",
+            "yerTutucu": "kabe-yarim",
+            "derinlik": 0.5,
+            "ayar": {
+              "olcek": 1.5
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 14,
+              "y": 0.74,
+              "olcek": 0.09
+            }
+          },
+          {
+            "id": "kap",
+            "dosya": "",
+            "yerTutucu": "kap",
+            "derinlik": 0.85
+          },
+          {
+            "id": "mesale",
+            "dosya": "",
+            "yerTutucu": "mesale",
+            "derinlik": 0.8
+          }
+        ],
         "kamera": "sabit-gecis"
       },
       "ses": {
@@ -311,7 +693,43 @@
       ],
       "gorsel": {
         "tarif": "Avluda ayakta duran yaşlı bir adamın arkadan silueti; karşısında dinleyen kalabalık, uzak plan. Kamera kalabalığın arkasından avlunun girişine döner. Kapının o dönemdeki biçimi kaynaklarda yok: anıtsal kapı, kemer ya da süsleme çizilmez; yalnız evler arasında sade bir giriş aralığı ve ışık.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kapi-araligi",
+            "dosya": "",
+            "yerTutucu": "kapi-araligi",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 18,
+              "y": 0.8,
+              "olcek": 0.1
+            }
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.9,
+            "ayar": {
+              "x": 0.22,
+              "y": 1.05,
+              "olcek": 0.45
+            }
+          }
+        ],
         "kamera": "donus-kapiya"
       },
       "ses": {
@@ -348,7 +766,59 @@
       ],
       "gorsel": {
         "tarif": "Onun gözünden: kapı eşiğinden avluya giriş. Karşıda bekleyen kalabalık, uzak plan; başlar bu yöne dönüyor, yüz ayrıntısı yok. Gerilimli soğuk ton, sıcak ışığa yumuşar. Bakış sahibinin hiçbir uzvu kadraja girmez. Kapının o dönemdeki biçimi kaynaklarda yok: anıtsal kapı, kemer ya da süsleme çizilmez; yalnız evler arasında sade bir giriş aralığı ve ışık.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yarim",
+            "dosya": "",
+            "yerTutucu": "kabe-yarim",
+            "derinlik": 0.5,
+            "ayar": {
+              "olcek": 1.4
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65,
+            "ayar": {
+              "sayi": 20,
+              "y": 0.76,
+              "olcek": 0.07
+            }
+          },
+          {
+            "id": "kapi-cercevesi",
+            "dosya": "",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 1.0
+          }
+        ],
         "kamera": "bakis-acisi-giris"
       },
       "ses": {
@@ -379,7 +849,26 @@
       ],
       "gorsel": {
         "tarif": "Yere serilmiş düz bir kumaş, ortasında koyu renkli taş; taşın üstünde sıcak beyaz-altın bir nur parıltısı (bedeni temsil etmez, yalnızca ışık). Kumaşın kenarlarını tutan farklı kişilere ait eller ve kollar (Kureyş ileri gelenleri; yüzler kadraj dışında). Kumaş birlikte yükselir. Resûlullah'a ait el ya da kol çizilmez; yalnız nur.",
-        "katmanlar": [],
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "kumas-tas",
+            "dosya": "",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.5,
+              "y": 0.55,
+              "r": 0.16
+            }
+          }
+        ],
         "kamera": "yukaridan-yukselis"
       },
       "ses": {
@@ -410,7 +899,35 @@
       ],
       "gorsel": {
         "tarif": "Kâbe köşesine yakın plan: taş duvardaki yuvaya oturan Hacerülesved, çevresinde sönümlenen sıcak nur. Kamera geri çekilir; avluda dağılmaya başlayan, gerginliği kalkmış siluetler. Ton sıcaklaşır. Resûlullah'a ait el ya da kol çizilmez; yalnız nur.",
-        "katmanlar": [],
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "kabe-yakin",
+            "dosya": "",
+            "yerTutucu": "kabe-yakin",
+            "derinlik": 0.5,
+            "ayar": {
+              "hacer": true
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.5,
+            "ayar": {
+              "x": 0.5,
+              "y": 0.5,
+              "r": 0.14
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
@@ -451,7 +968,45 @@
       ],
       "gorsel": {
         "tarif": "Akşamüstü, uzak plan: önceki sahnelere göre belirgin şekilde yüksek, damlı Kâbe; yerden yüksekte tek kanatlı kapı. Hicr'in o dönemdeki biçimi ve sınırı kaynaklarda yok; ayrıca çizilmez. Vadinin üzerinde gün batımı ışığı. İnsan yok ya da çok uzakta.",
-        "katmanlar": [],
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yuksek",
+            "dosya": "",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.55
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
