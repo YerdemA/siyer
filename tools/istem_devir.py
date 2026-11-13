@@ -57,7 +57,8 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "",
         "**Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.",
         "",
-        "**Görsel kötü çıkarsa** (yüz görünüyor, fazladan el var, yazı çıkmış, yeşil zemin düz değil) aynı sohbette şunu yaz ve yenisini indir: "
+        "**Görsel kötü çıkarsa** (yüz görünüyor, fazladan el var, yazı çıkmış, yeşil zemin düz değil, nur istenmeyen yerde altın-beyaz parıltı var) "
+        "aynı sohbette şunu yaz ve yenisini indir: "
         "`Regenerate this one: <sorun>. Keep everything else.`",
         "",
         "**Kota dolarsa** kaldığın mesaj numarasını not et; ertesi gün aynı sohbetten devam et.",
@@ -71,9 +72,14 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     ]
     for n, k in enumerate(istemler, 1):
         sahne = k["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
+        # Sıcak altın-beyaz yalnız nura ayrılmıştır (docs/GORSEL_USLUP.md → Renk ve ışık).
+        nur_ister = "golden-white" in k["istem"]
+        nur_yasak = "" if nur_ister else (
+            " No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral."
+        )
         metin = (
             f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
-            f"muted earth palette. Not photorealistic, not a 3D render. {sahne}\n\n{KISA_YASAK}"
+            f"muted earth palette. Not photorealistic, not a 3D render. {sahne}\n\n{KISA_YASAK}{nur_yasak}"
         )
         notlar = []
         isleme = k.get("isleme") or ("opak" if k.get("katman") == "gok" else "perde")
