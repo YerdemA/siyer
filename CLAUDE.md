@@ -29,7 +29,7 @@ Bu kurallar teknik tercihlerden önce gelir. Emin olmadığında dur ve Erdem'e 
 - **Flutter** (stable), önce Android; iOS'u bozacak platforma özel kod yazma.
 - İçerik koddan ayrıdır: `content/<dil>/...` altında JSON. Şema: `docs/ICERIK_SEMASI.md`.
 - Bölümler video dosyası değil, uygulama içinde oynatılan sahnelerdir: katmanlı görseller (WebP) + JSON zaman çizelgesi + dil başına anlatım sesi. Böylece yeni dil yalnızca ses ve metin ekler. (Pilot bölümde doğrulanacak; sorun çıkarsa videoya dönülür.)
-- Önerilen paketler (ilk kurulumda Erdem onaylar): `flutter_riverpod`, `go_router`, `just_audio`, `shared_preferences`, `flutter_map`.
+- Paketler (Erdem onayladı): `flutter_riverpod`, `go_router`, `just_audio`, `shared_preferences`, `flutter_localizations` + `intl`. Harita gerçek harita değil, parşömen illüstrasyonu üzerinde yaklaşık konumlar; harita paketi kullanılmaz.
 - Kararsız kalınan mimari tercihlerde en basit çözümü seç; tek kişilik proje.
 
 ## Klasör yapısı

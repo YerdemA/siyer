@@ -9,6 +9,7 @@ import 'package:go_router/go_router.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../l10n/app_localizations.dart';
+import 'gorsel_onbellek.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
 
@@ -63,6 +64,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   bool _kontroller = true;
   bool _tarif = false;
   bool _altyazi = true;
+  final _gorseller = GorselOnbellek();
 
   @override
   void initState() {
@@ -80,6 +82,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   @override
   void dispose() {
     _ticker.dispose();
+    _gorseller.dispose();
     SystemChrome.setPreferredOrientations(DeviceOrientation.values);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     super.dispose();
@@ -107,6 +110,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     final konum = _plan.konum(_an);
+    // Bulunulan ve sıradaki sahnenin görselleri önceden yüklenir.
+    _gorseller.onYukle(konum.sahne.sahne);
+    final sonraki = konum.sahne.sira + 1;
+    if (sonraki < _plan.sahneler.length) _gorseller.onYukle(_plan.sahneler[sonraki].sahne);
     return Center(
       child: AspectRatio(
         aspectRatio: 16 / 9,
@@ -121,6 +128,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                   sahne: konum.sahne.sahne,
                   ilerleme: konum.ilerleme,
                   zaman: _an,
+                  gorseller: _gorseller,
                 ),
               ),
               if (konum.gelen != null)
@@ -131,6 +139,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                       sahne: konum.gelen!.sahne,
                       ilerleme: konum.gelenIlerleme,
                       zaman: _an,
+                      gorseller: _gorseller,
                     ),
                   ),
                 ),

@@ -414,6 +414,7 @@ BolumOzeti bolumuDenetle(
 
   // Sahneler
   final kullanilan = <String>{};
+  var yerTutucuKatman = 0;
   final sahneler = liste(b, 'sahneler', yol, rapor);
   if (sahneler.isEmpty && b['sahneler'] is List) {
     rapor.yayinHatasi(yol, 'bölümde sahne yok');
@@ -449,6 +450,19 @@ BolumOzeti bolumuDenetle(
     if (gorsel is! Map<String, dynamic> || metin(gorsel, 'tarif').isEmpty) {
       rapor.yayinHatasi(yer, '`gorsel.tarif` boş');
     }
+    if (gorsel is Map<String, dynamic>) {
+      // Görseller dilden bağımsızdır: content/<dil>/bolumler/x.json → content/gorseller/
+      final gorselKlasoru = File(yol).parent.parent.parent.path;
+      for (final k in liste(gorsel, 'katmanlar', yer, rapor, zorunlu: false)) {
+        if (k is! Map<String, dynamic>) continue;
+        final dosya = metin(k, 'dosya');
+        if (dosya.isEmpty) {
+          yerTutucuKatman++;
+        } else if (!File('$gorselKlasoru/gorseller/$dosya').existsSync()) {
+          rapor.yayinHatasi(yer, 'katman görseli bulunamadı: gorseller/$dosya');
+        }
+      }
+    }
     final ses = s['ses'];
     if (ses is! Map<String, dynamic> || metin(ses, 'anlatim').isEmpty) {
       rapor.yayinHatasi(yer, '`ses.anlatim` boş');
@@ -469,6 +483,10 @@ BolumOzeti bolumuDenetle(
         tanimsiz(yer, 'tanımsız yer: $yerId');
       }
     }
+  }
+
+  if (yerTutucuKatman > 0) {
+    rapor.yayinHatasi(yol, '$yerTutucuKatman katmanın görseli yok (yer tutucu çizilir)');
   }
 
   for (final iid in ozet.iddialar.difference(kullanilan)) {

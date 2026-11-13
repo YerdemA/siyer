@@ -19,9 +19,13 @@ void main() {
   }
   if (hedef.existsSync()) hedef.deleteSync(recursive: true);
 
+  // Henüz görsel yokken de klasör bulunmalı; pubspec bu klasörü listeler.
+  Directory('${hedef.path}/gorseller').createSync(recursive: true);
+
   var sayi = 0;
   for (final varlik in kaynak.listSync(recursive: true)) {
-    if (varlik is! File || !varlik.path.endsWith('.json')) continue;
+    if (varlik is! File) continue;
+    if (!varlik.path.endsWith('.json') && !varlik.path.endsWith('.webp')) continue;
     final goreli = varlik.path.substring(kaynak.path.length + 1);
     final yeni = File('${hedef.path}/$goreli');
     yeni.parent.createSync(recursive: true);
