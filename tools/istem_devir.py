@@ -2,7 +2,7 @@
 verilecek tek parça devir metni üretir.
 
 Kullanım (depo kökünden):
-  .venv\\Scripts\\python.exe -I tools/istem_devir.py content/gorseller/istemler/b09.json [--varyant 2] [--atla u01,...] [--chatgpt]
+  .venv\\Scripts\\python.exe -I tools/istem_devir.py content/gorseller/istemler/b09.json [--varyant 2] [--atla u01,...] [--tur 4] [--chatgpt]
 
 --chatgpt: Higgsfield yerine tek bir ChatGPT sohbetine sırayla yapıştırılacak
 mesajlar (<ad>-chatgpt.md).
@@ -52,8 +52,10 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "**Hazırlık:** ChatGPT'de yeni bir sohbet aç. Üslup referansı olarak seçilen görseli (u01-d) ekle ve **Mesaj 0**'ı gönder.",
         f"Referans dosyası: Higgsfield galerisindeki iş `{uslup['referans']['is_id']}` ya da Claude Code'un verdiği `u01d.png`.",
         "",
-        "**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli indir (`İndirilenler\\siyer` klasörüne). "
-        "Atladığın ya da tekrar ürettirdiğin olursa Claude Code'a söyle; dosyalar indirme sırasına göre eşleştirilir.",
+        "**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\\siyer` klasörüne, "
+        "mesaj başlığındaki kimlikle kaydet (ör. `s03-deniz.png`). Atladığın olursa Claude Code'a söyle.",
+        "",
+        "**Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.",
         "",
         "**Görsel kötü çıkarsa** (yüz görünüyor, fazladan el var, yazı çıkmış, yeşil zemin düz değil) aynı sohbette şunu yaz ve yenisini indir: "
         "`Regenerate this one: <sorun>. Keep everything else.`",
@@ -74,10 +76,12 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
             f"muted earth palette. Not photorealistic, not a 3D render. {sahne}\n\n{KISA_YASAK}"
         )
         notlar = []
-        if "yesil_perde_eki" in k["istem"]:
-            notlar.append("yeşil perde")
-        if k.get("katman") == "gok":
-            notlar.append("tam dolu, perde yok")
+        isleme = k.get("isleme") or ("opak" if k.get("katman") == "gok" else "perde")
+        notlar.append({
+            "perde": "yeşil perde, zemin düz yeşil olmalı",
+            "opak": "tam dolu görsel, perde yok",
+            "sigdir": "yeşil perde; nesne kenarlara değmemeli",
+        }.get(isleme, isleme))
         if k.get("not"):
             notlar.append(k["not"])
         satirlar += [f"## Mesaj {n}: {k['id']}", ""]
@@ -101,6 +105,8 @@ def main(argv: list[str]) -> int:
             varyant = int(argv[i + 1])
         if a == "--atla":
             atla = set(argv[i + 1].split(","))
+        if a == "--tur":
+            turlar = set(argv[i + 1].split(","))
     yollar = [y for y in yollar if y.endswith(".json")]
 
     kaynak = Path(yollar[0])
@@ -108,6 +114,8 @@ def main(argv: list[str]) -> int:
     uslup = veri["uslup"]
     ref = uslup["referans"]["is_id"]
     istemler = [k for k in veri["istemler"] if k["id"] not in atla]
+    if "--tur" in argv:
+        istemler = [k for k in istemler if str(k.get("tur")) in turlar]
 
     if "--chatgpt" in argv:
         cikti = chatgpt(veri, istemler, kaynak)
