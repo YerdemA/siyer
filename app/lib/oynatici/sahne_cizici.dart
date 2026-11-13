@@ -26,6 +26,26 @@ class SahneCizici extends CustomPainter {
   /// (docs/GORSEL_USLUP.md → Kadraj); kamera yaklaşınca kenar boş kalmaz.
   static const tasma = 0.1;
 
+  /// Görselin çizileceği alan. `ayar.gorsel` yoksa kadraj + taşma payı;
+  /// varsa görsel o merkeze ve genişliğe, kendi [oran]ıyla (en/boy) yerleşir.
+  static Rect gorselAlani(Katman katman, Size size, double oran) {
+    final y = katman.gorselYerlesim;
+    if (y == null) {
+      return Rect.fromLTRB(
+        -tasma * size.width,
+        -tasma * size.height,
+        (1 + tasma) * size.width,
+        (1 + tasma) * size.height,
+      );
+    }
+    final gen = y.olcek * size.width;
+    return Rect.fromCenter(
+      center: Offset(y.x * size.width, y.y * size.height),
+      width: gen,
+      height: gen / oran,
+    );
+  }
+
   @override
   void paint(Canvas canvas, Size size) {
     final g = sahne.gorsel;
@@ -47,11 +67,10 @@ class SahneCizici extends CustomPainter {
       if (gorsel != null) {
         paintImage(
           canvas: canvas,
-          rect: Rect.fromLTRB(
-            -tasma * size.width,
-            -tasma * size.height,
-            (1 + tasma) * size.width,
-            (1 + tasma) * size.height,
+          rect: gorselAlani(
+            katman,
+            size,
+            gorsel.width / gorsel.height,
           ),
           image: gorsel,
           fit: BoxFit.cover,

@@ -41,6 +41,25 @@ class Katman {
   bool bayrak(String ad) => ayar[ad] == true;
   String yazi(String ad, String varsayilan) =>
       ayar[ad] is String ? ayar[ad] as String : varsayilan;
+
+  /// `ayar.gorsel`: tek nesne görselinin (ör. Kâbe) kadrajdaki yeri. Yoksa
+  /// görsel tam kadraja (taşma payıyla) yayılır.
+  GorselYerlesim? get gorselYerlesim {
+    final g = ayar['gorsel'];
+    if (g is! Map<String, dynamic>) return null;
+    double s(String ad, double v) => (g[ad] as num?)?.toDouble() ?? v;
+    return GorselYerlesim(x: s('x', 0.5), y: s('y', 0.5), olcek: s('olcek', 1));
+  }
+}
+
+/// [x], [y]: görselin merkezinin kadrajdaki yeri (0–1). [olcek]: görselin
+/// genişliği, kadraj genişliğine oranla; yükseklik görselin oranından gelir.
+class GorselYerlesim {
+  const GorselYerlesim({required this.x, required this.y, required this.olcek});
+
+  final double x;
+  final double y;
+  final double olcek;
 }
 
 class Gorsel {

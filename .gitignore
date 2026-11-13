@@ -22,3 +22,6 @@ key.properties
 .claude/settings.local.json
 .env
 app/assets/icerik/
+
+# Üretilen görsellerin ham hâlleri (yeniden dönüştürme için)
+gorsel-ham/

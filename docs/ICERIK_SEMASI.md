@@ -44,6 +44,7 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
   - `dosya`: katmanın WebP görseli (şeffaf arka planlı), `content/gorseller/` altındaki dosya adı (ör. `b09-s01-daglar.webp`). Görseller dilden bağımsızdır. Boşsa ya da dosya bulunamazsa oynatıcı `yerTutucu` tipine göre geçici bir çizim yapar. Görsel 16:9 kadrajdan her yöne %10 taşar (toplam %120).
   - `derinlik`: 0 (en uzak, gökyüzü) – 1 (en yakın). Kamera hareketi yakın katmanları daha çok kaydırır (parallax).
   - `ayar`: yer tutucuya özel isteğe bağlı ayarlar (konum, ölçek, sayı). Gerçek görsel gelince gereksizleşir.
+    - İstisna `ayar.gorsel`: `{ "x", "y", "olcek" }`. Tek nesne görselini (ör. Kâbe) tam kadraj yerine yerleştirir: görselin merkezi kadrajda (`x`, `y`) noktasına (0–1) gelir, genişliği kadraj genişliğinin `olcek` katıdır, yüksekliği görselin oranından gelir. Böyle görseller `tools/gorsel_katman.py --sigdir` ile kırpılmadan hazırlanır.
 - `kamera`: `yavas-yaklasma`, `yavas-uzaklasma`, `yatay-kayma`, `sabit`, `sabit-gecis`, `yukaridan-yavas-donus`, `yukaridan-yukselis`, `bakis-acisi-yuruyus`, `bakis-acisi-giris`, `donus-kapiya`. Tanımları: `app/lib/oynatici/kamera.dart`.
 
 ### İddia

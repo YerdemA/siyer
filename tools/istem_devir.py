@@ -30,8 +30,9 @@ KISA_YASAK = (
 
 def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     """Tek ChatGPT sohbeti için: ilk mesaj üslubu ve kuralları sabitler, sonraki
-    her mesaj tek görsel ister. ChatGPT 16:9 vermez; 3:2 yatay istenir, betik
-    üstten ve alttan kırpar, bu yüzden ana öğe orta bantta tutulur."""
+    her mesaj tek görsel ister. ChatGPT 16:9 vermez; 3:2 yatay istenir. 16:9'a
+    kırpma ve %10 taşma payıyla 1536×1024 görselin dinlenik kadrajda görünen
+    kısmı yaklaşık x 128–1408, y 152–872'dir (yanlardan %8, üst/alttan %15)."""
     uslup = veri["uslup"]
     ilk = (
         "I am making a respectful documentary motion comic about 7th-century Mecca. "
@@ -39,8 +40,10 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "Use it only for style, not composition.\n\n"
         f"Style: {uslup['istem'].replace('Cinematic 16:9 framing.', 'Cinematic wide framing.')}\n\n"
         f"Strict rules for every image: {uslup['yasaklar']}\n\n"
-        "Format for every image: landscape 3:2. Keep all important content inside the middle horizontal band; "
-        "the top and bottom 10% will be cropped. Generate exactly one image per message. "
+        "Format for every image: landscape 3:2. Edges will be cropped: about 15% at the top, 15% at the bottom "
+        "and 8% on each side. Keep every important element (people, hands, faces turned away, key objects) well inside "
+        "that central area; a single isolated object must sit fully inside the frame with empty margin around it. "
+        "Generate exactly one image per message. "
         "Do not reply with text beyond one short line. Reply 'Ready' now; I will send the scenes one by one."
     )
     satirlar = [

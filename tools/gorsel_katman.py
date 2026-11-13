@@ -1,12 +1,14 @@
 """Üretilen görseli oynatıcı katmanına çevirir.
 
 Kullanım (depo kökünden, projenin sanal ortamıyla):
-  .venv\\Scripts\\python.exe -I tools/gorsel_katman.py <girdi> <cikti.webp> [--opak | --mavi]
+  .venv\\Scripts\\python.exe -I tools/gorsel_katman.py <girdi> <cikti.webp> [--opak | --mavi] [--sigdir]
 
 - Varsayılan: yeşil perde (#00B140) zemini silinir, kenarlar yumuşatılır ve
   konunun üzerine yansıyan yeşil temizlenir; şeffaf WebP yazılır.
 - --mavi: mavi perde (#0047BB); konu yeşil içeriyorsa kullanılır.
 - --opak: zemin silinmez (gök gibi tam dolu katmanlar).
+- --sigdir: kırpmadan sığdırır, kalan yer şeffaf kalır. Kâbe gibi tek nesne
+  katmanları için; oynatıcıda `ayar.gorsel` ile konumlanırlar.
 
 Çıktı 2304×1296 olur: 16:9 kadraj + her yönde %10 taşma (docs/GORSEL_USLUP.md).
 Görsel bu orana ortadan kırpılarak (cover) ölçeklenir. Çıktı yolu verilmezse
@@ -33,6 +35,16 @@ def kirp_olcekle(img: Image.Image) -> Image.Image:
     sol = (yeni.width - hg) // 2
     ust = (yeni.height - hy) // 2
     return yeni.crop((sol, ust, sol + hg, ust + hy))
+
+
+def sigdir(img: Image.Image) -> Image.Image:
+    """Perde silindikten sonra (RGBA) kırpmadan ortalar; taşan yer şeffaf."""
+    hg, hy = HEDEF
+    oran = min(hg / img.width, hy / img.height)
+    yeni = img.resize((round(img.width * oran), round(img.height * oran)), Image.LANCZOS)
+    tuval = Image.new("RGBA", HEDEF, (0, 0, 0, 0))
+    tuval.paste(yeni, ((hg - yeni.width) // 2, (hy - yeni.height) // 2))
+    return tuval
 
 
 def perde_sil(img: Image.Image, perde: str = "yesil") -> Image.Image:
@@ -63,11 +75,16 @@ def main(argv: list[str]) -> int:
         print("Çıktı .webp olmalı.")
         return 2
 
-    img = kirp_olcekle(Image.open(girdi))
+    sigdirilsin = "--sigdir" in argv
+    img = Image.open(girdi)
+    if not sigdirilsin:
+        img = kirp_olcekle(img)
     if opak:
         img = img.convert("RGB")
     else:
         img = perde_sil(img, perde)
+        if sigdirilsin:
+            img = sigdir(img)
         seffaf = (np.asarray(img)[..., 3] < 8).mean()
         if seffaf < 0.05:
             print(f"UYARI: görselin yalnız %{seffaf * 100:.0f}'i silindi; {perde} perde zemin yok gibi.")
