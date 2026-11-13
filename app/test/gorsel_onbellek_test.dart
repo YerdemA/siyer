@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
@@ -28,10 +29,16 @@ void main() {
     final paket = _SahtePaket();
     final onbellek = GorselOnbellek(paket: paket);
     var haber = 0;
-    onbellek.addListener(() => haber++);
+    final hazir = Completer<void>();
+    onbellek.addListener(() {
+      haber++;
+      if (!hazir.isCompleted) hazir.complete();
+    });
 
     expect(onbellek.al('var.webp'), isNull, reason: 'henüz yüklenmedi');
-    await pumpEventQueue();
+    // Görsel çözme motorda gerçek zamanlı sürer; olay kuyruğunu boşaltmak
+    // yük altında yetmiyordu (aralıklı düşen test). Bildirim beklenir.
+    await hazir.future.timeout(const Duration(seconds: 10));
     expect(onbellek.al('var.webp'), isNotNull);
     expect(haber, 1);
     expect(paket.yuklenen, ['${GorselOnbellek.kok}/var.webp'], reason: 'bir kez yüklenir');
