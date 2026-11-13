@@ -2,7 +2,11 @@
   "bolum": "b09-hakem",
   "aciklama": "Bölüm 9 görsellerinin üretim istemleri ve kaydı (docs/GORSEL_USLUP.md → Tutarlılık). Her üretimde `uretimler` listesine araç, model, tarih ve seçilen dosya eklenir. İstemler İngilizce; modeller İngilizceyi daha iyi izliyor.",
   "uslup": {
-    "istem": "Hand-painted digital illustration for a documentary motion comic. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Soft painterly brushwork with subtle paper grain, gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Mecca, Hijaz, around 605 CE — a narrow valley among bare, rocky, almost treeless mountains; small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Mecca, Hijaz, around 605 CE — a narrow valley among bare, rocky, almost treeless mountains; small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
     "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. No visible faces: people appear only as distant silhouettes, from behind, or as hands and fabric details. Never depict the Prophet in any form — no figure, silhouette, shadow, hand or foot; his presence is only a soft warm golden-white light. No angels. No blood.",
     "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
     "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
@@ -15,10 +19,27 @@
   "deneme_plani": {
     "aciklama": "Higgsfield 3 günlük deneme: ~100 kredi ≈ 50 Nano Banana Pro görseli (2K). Sıra önemli: önce üslup, sonra mekân kartları, sonra zor sahneler.",
     "turlar": [
-      { "tur": 1, "hedef": "Üslup seçimi", "uretim": 8, "not": "u01 dört varyantla iki kez; Erdem birini seçer, seçilen görsel sonraki her üretime referans olarak verilir." },
-      { "tur": 2, "hedef": "Mekân kartları (tekrar kullanılan katmanlar)", "uretim": 14 },
-      { "tur": 3, "hedef": "Temsil kuralını en çok zorlayan sahneler: s07, s11, s12, s13", "uretim": 16 },
-      { "tur": "yedek", "hedef": "Düzeltmeler", "uretim": 12 }
+      {
+        "tur": 1,
+        "hedef": "Üslup seçimi",
+        "uretim": 8,
+        "not": "u01 dört varyantla iki kez; Erdem birini seçer, seçilen görsel sonraki her üretime referans olarak verilir."
+      },
+      {
+        "tur": 2,
+        "hedef": "Mekân kartları (tekrar kullanılan katmanlar)",
+        "uretim": 14
+      },
+      {
+        "tur": 3,
+        "hedef": "Temsil kuralını en çok zorlayan sahneler: s07, s11, s12, s13",
+        "uretim": 16
+      },
+      {
+        "tur": "yedek",
+        "hedef": "Düzeltmeler",
+        "uretim": 12
+      }
     ]
   },
   "istemler": [
@@ -64,7 +85,7 @@
       "tur": 2,
       "dosya": "kabe-alcak.webp",
       "katman": "kabe-alcak",
-      "istem": "A small, low, plain cube-shaped building of dry-stacked dark grey stones without mortar, walls only slightly taller than a person, no roof, no covering cloth, no decoration, seen from a three-quarter angle. Soot stains and flood marks at the base. {yesil_perde_eki}",
+      "istem": "A small, low, plain cube-shaped building of dry-stacked dark grey stones without mortar, walls only slightly taller than a person, no roof, no covering cloth, no decoration, seen from a three-quarter angle. Strictly a cube: straight vertical walls and sharp square corners, not round. Soot stains and flood marks at the base. {yesil_perde_eki}",
       "kaynak": "İbn Hişâm s. 122 (harçsız, insan boyunun üstünde, çatısız); TDV KUREYŞ s. 443 (yangın ve sel)."
     },
     {
@@ -80,7 +101,7 @@
       "tur": 2,
       "dosya": "kabe-yuksek.webp",
       "katman": "kabe-yuksek",
-      "istem": "The finished cube-shaped stone building, now about twice as tall as before, with a flat roof, courses of dark stone and thin wooden beams, a single-leaf wooden door set high above the ground, no covering cloth, no decoration. Beside it, an open semicircular area left outside the building, its edge only faintly suggested. {yesil_perde_eki}",
+      "istem": "The finished cube-shaped stone building, now about twice as tall as before, with a flat roof, courses of dark stone and thin wooden beams, a single-leaf wooden door set high above the ground, no covering cloth, no decoration. Beside it, an open semicircular area left outside the building, its edge only faintly suggested. No stairs or steps of any kind; the door simply sits high in the bare wall. {yesil_perde_eki}",
       "kaynak": "İbn Hişâm s. 126 (18 arşın); TDV KÂBE s. 16-17 (yüksek, tek kanatlı kapı); Buhârî, Hac, 42 (Hicr dışarıda)."
     },
     {
@@ -96,22 +117,22 @@
       "tur": 3,
       "dosya": "b09-s07-yokus.webp",
       "katman": "yokus",
-      "istem": "Eye-level view up a gentle stony path toward a construction site in the distance, loose stones and dust on the ground; no hands, arms, feet or body of the viewer in frame. {yesil_perde_eki}"
+      "istem": "Eye-level view up a gentle stony path toward a construction site in the distance, loose stones and dust on the ground; no hands, arms, feet or body of the viewer in frame. Only the path, ground and loose stones: no buildings, no walls, no scaffolding. {yesil_perde_eki}"
     },
     {
       "id": "s11-giris",
       "tur": 3,
-      "dosya": "b09-s11-giris.webp",
+      "dosya": "b09-s11-cerceve.webp",
       "katman": "kapi-cercevesi",
-      "istem": "First-person view from a simple narrow gap between two mudbrick house walls, looking out into a sunlit open courtyard; the walls frame the left and right edges in shadow. No arch, no monumental gate. No hands, arms, feet or body of the viewer. {yesil_perde_eki}",
-      "not": "Kapının o dönemki biçimi kaynakta yok; sade aralık."
+      "istem": "First-person view from a simple narrow gap between two mudbrick house walls, looking out into a sunlit open courtyard; the walls frame the left and right edges in shadow. No arch, no monumental gate. No hands, arms, feet or body of the viewer. The courtyard is empty in the center: no building, no cube-shaped structure, no people. {yesil_perde_eki}",
+      "not": "Kapının o dönemki biçimi kaynakta yok; sade aralık. Üretilen görsel avluyu da içerdi; yalnız iki yandaki duvarlar elle maskelenip çerçeve katmanı yapıldı."
     },
     {
       "id": "s11-kalabalik",
       "tur": 3,
       "dosya": "b09-s11-kalabalik.webp",
       "katman": "kalabalik",
-      "istem": "A crowd of men in simple robes and head cloths standing in a courtyard at middle distance, many turning toward the viewer, faces not visible — in shadow, turned away or too far to see any features. {yesil_perde_eki}"
+      "istem": "A crowd of men in simple robes and head cloths standing in a courtyard at middle distance, many turning toward the viewer, faces not visible — in shadow, turned away or too far to see any features. Only the people: no building, no cube-shaped structure, no houses behind them. {yesil_perde_eki}"
     },
     {
       "id": "s12-kumas",
@@ -130,5 +151,274 @@
       "not": "Gerçek görsel gelince yer tutucu 'nur' katmanı kaldırılabilir ya da hafif bırakılır."
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "u01",
+      "varyant": "a (elle boyanmış dijital)",
+      "arac": "Higgsfield",
+      "model": "nano_banana_pro istendi, iş kaydı nano_banana_2 diyor",
+      "tarih": "2026-11-13",
+      "is_id": "724e9587-420f-40de-8b7a-4bdce54ceec6",
+      "secilen": false,
+      "not": "Ön planda arkadan iki-üç büyük siluet; yüz yok."
+    },
+    {
+      "istem": "u01",
+      "varyant": "b (guaj)",
+      "arac": "Higgsfield",
+      "model": "nano_banana_pro istendi, iş kaydı nano_banana_2 diyor",
+      "tarih": "2026-11-13",
+      "is_id": "7d177f20-3b30-47c1-aa16-ce891a6cc457",
+      "secilen": false,
+      "not": "Üst ve altta siyah sinema bandı var; kırpılmalı."
+    },
+    {
+      "istem": "u01",
+      "varyant": "c (mürekkep ve suluboya)",
+      "arac": "Higgsfield",
+      "model": "nano_banana_pro istendi, iş kaydı nano_banana_2 diyor",
+      "tarih": "2026-11-13",
+      "is_id": "83a4d9ba-1c58-4a85-a220-8edc7e6c41a2",
+      "secilen": false,
+      "not": "Kâğıt kenar boşluğu ve çerçeve çizgisi var; kırpılmalı."
+    },
+    {
+      "istem": "u01",
+      "varyant": "d (kâğıt kesik)",
+      "arac": "Higgsfield",
+      "model": "nano_banana_pro istendi, iş kaydı nano_banana_2 diyor",
+      "tarih": "2026-11-13",
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "secilen": true,
+      "not": "Erdem seçti (2026-11-13); sonraki üretimlere üslup referansı. Derinlik düzlemleri katmanlara en uygun olanı; yapı yuvarlak köşeli, küpten çok kuyuya benziyor — Kâbe istemlerinde 'sharp square corners' vurgulanmalı."
+    },
+    {
+      "istem": "m01-gok-safak",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m01-gok-safak.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "mekke-gok-safak.webp",
+      "durum": "secildi",
+      "not": "Kırpılınca kadrajda çoğunlukla lacivert kalıyor; kayısı tonu dağların arkasında."
+    },
+    {
+      "istem": "m02-daglar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m02-daglar.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "mekke-daglar.webp",
+      "durum": "secildi",
+      "not": "Alt kenar da yeşil perde; zemin katmanı örtüyor."
+    },
+    {
+      "istem": "m03-zemin",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m03-zemin.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "mekke-zemin.webp",
+      "durum": "secildi",
+      "not": ""
+    },
+    {
+      "istem": "m04-evler",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m04-evler.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "mekke-evler.webp",
+      "durum": "secildi",
+      "not": "Evler sıra değil avlu çevresinde, ön planda; ortadaki boşluk var."
+    },
+    {
+      "istem": "m05-kabe-alcak",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m05-kabe-alcak.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "kabe-alcak.webp",
+      "durum": "secildi",
+      "not": "Kapı açıklığı model ekledi (istemde yoktu)."
+    },
+    {
+      "istem": "m06-kabe-yarim",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m06-kabe-yarim.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "kabe-yarim.webp",
+      "durum": "secildi",
+      "not": "Köşedeki göğüs hizası boşluk belirgin değil; s13 ile birlikte bakılmalı."
+    },
+    {
+      "istem": "s07-tasiyan",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s07-tasiyan.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s07-tasiyan.webp",
+      "durum": "secildi",
+      "not": "Yüz görünmüyor. Kırpmada başın üstü kesiliyor; yakın plan için kabul edilebilir."
+    },
+    {
+      "istem": "m07-kabe-yuksek",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m07-kabe-yuksek.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Kapıya çıkan taş merdiven kaynakta yok; istemde merdiven yasaklandı, yeniden üretilecek."
+    },
+    {
+      "istem": "s07-yokus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s07-yokus.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Uzakta iskeleli yapı ve ev çizilmiş; bunlar ayrı katman. İstem daraltıldı."
+    },
+    {
+      "istem": "s11-giris",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s11-giris.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Ortada bitmiş, merdivenli Kâbe var (sahnede kabe-yarim ayrı katman); üslup fotogerçekçi."
+    },
+    {
+      "istem": "s11-kalabalik",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s11-kalabalik.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Arkada bitmiş Kâbe ve evler var; yüz görünmüyor (hepsi arkası dönük). Üslup fotogerçekçi."
+    },
+    {
+      "istem": "s12-kumas",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s12-kumas.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Temsil açısından doğru: tam dört el, başka beden yok, nur var. Ama üslup fotogerçekçi, kâğıt kesik değil."
+    },
+    {
+      "istem": "s13-hacer",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s13-hacer.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "reddedildi",
+      "not": "Temsil açısından doğru; üslup fotogerçekçi; taş yumurta biçiminde ve pullu dokuda."
+    },
+    {
+      "istem": "m07-kabe-yuksek",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "m07-kabe-yuksek.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "kabe-yuksek.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. Merdiven yok, kapı yüksekte. Hicr yarım dairesi seçilmiyor; yalnız düz bir zemin lekesi."
+    },
+    {
+      "istem": "s07-yokus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s07-yokus.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s07-yokus.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. Yalnız yol ve taşlar."
+    },
+    {
+      "istem": "s11-giris",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s11-giris.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s11-cerceve.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. Avlu boş, kemer yok. Arka plan (dağ, ev, zemin) maskelenip atıldı; yalnız iki yan duvar kaldı."
+    },
+    {
+      "istem": "s11-kalabalik",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s11-kalabalik.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s11-kalabalik.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. Bu yöne dönük arka sıradakilerin yüzleri gölgeli ve özelliksiz (göz, burun yok); Erdem ayrıca baksın. Kendi zemini var, arkadaki zemin ve evleri örter."
+    },
+    {
+      "istem": "s12-kumas",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s12-kumas.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s12-kumas.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. Tam dört el, başka beden yok; taşın üstünde nur. Kâğıt kesik üslup."
+    },
+    {
+      "istem": "s13-hacer",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-13",
+      "kaynak_dosya": "s13-hacer.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b09-s13-hacer.webp",
+      "durum": "secildi",
+      "not": "İkinci deneme, yeni sohbet. El ya da kişi yok; nur yuvada. Sahnede ayrıca nur katmanı var, birlikte fazla parlak olabilir."
+    }
+  ]
 }

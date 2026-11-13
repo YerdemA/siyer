@@ -32,31 +32,31 @@
         "katmanlar": [
           {
             "id": "gok",
-            "dosya": "",
+            "dosya": "mekke-gok-safak.webp",
             "yerTutucu": "gok",
             "derinlik": 0.0
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-alcak",
-            "dosya": "",
+            "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55
           },
@@ -221,25 +221,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-alcak",
-            "dosya": "",
+            "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.5
           },
@@ -312,25 +312,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-alcak",
-            "dosya": "",
+            "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55,
             "ayar": {
@@ -452,19 +452,19 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.3
           },
           {
             "id": "kabe-yarim",
-            "dosya": "",
+            "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.35
           },
@@ -481,13 +481,13 @@
           },
           {
             "id": "yokus",
-            "dosya": "",
+            "dosya": "b09-s07-yokus.webp",
             "yerTutucu": "yokus",
             "derinlik": 0.7
           },
           {
             "id": "tasiyan-arkadan",
-            "dosya": "",
+            "dosya": "b09-s07-tasiyan.webp",
             "yerTutucu": "tasiyan-arkadan",
             "derinlik": 0.95
           },
@@ -539,25 +539,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-yarim",
-            "dosya": "",
+            "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.55,
             "ayar": {
@@ -615,25 +615,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-yarim",
-            "dosya": "",
+            "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.5,
             "ayar": {
@@ -776,25 +776,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-yarim",
-            "dosya": "",
+            "dosya": "kabe-yarim.webp",
             "yerTutucu": "kabe-yarim",
             "derinlik": 0.5,
             "ayar": {
@@ -803,7 +803,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b09-s11-kalabalik.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.65,
             "ayar": {
@@ -814,7 +814,7 @@
           },
           {
             "id": "kapi-cercevesi",
-            "dosya": "",
+            "dosya": "b09-s11-cerceve.webp",
             "yerTutucu": "kapi-cercevesi",
             "derinlik": 1.0
           }
@@ -853,7 +853,7 @@
         "katmanlar": [
           {
             "id": "kumas-tas",
-            "dosya": "",
+            "dosya": "b09-s12-kumas.webp",
             "yerTutucu": "kumas-tas",
             "derinlik": 0.6
           },
@@ -903,7 +903,7 @@
         "katmanlar": [
           {
             "id": "kabe-yakin",
-            "dosya": "",
+            "dosya": "b09-s13-hacer.webp",
             "yerTutucu": "kabe-yakin",
             "derinlik": 0.5,
             "ayar": {
@@ -978,25 +978,25 @@
           },
           {
             "id": "daglar",
-            "dosya": "",
+            "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.15
           },
           {
             "id": "zemin",
-            "dosya": "",
+            "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.35
           },
           {
             "id": "evler",
-            "dosya": "",
+            "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
             "id": "kabe-yuksek",
-            "dosya": "",
+            "dosya": "kabe-yuksek.webp",
             "yerTutucu": "kabe-yuksek",
             "derinlik": 0.55
           },
