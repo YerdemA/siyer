@@ -55,8 +55,13 @@ def perde_sil(img: Image.Image, perde: str = "yesil") -> Image.Image:
     perde_kanal, diger1, diger2 = (b, r, g) if perde == "mavi" else (g, r, b)
     baskinlik = perde_kanal - np.maximum(diger1, diger2)
     alfa = 1 - np.clip((baskinlik - OPAK_ESIK) / (SEFFAF_ESIK - OPAK_ESIK), 0, 1)
-    # Perde rengi yansımasını temizle: perde kanalı, diğer ikisinin büyüğünü aşmasın.
-    temiz = np.where(baskinlik > 0, np.maximum(diger1, diger2), perde_kanal)
+    # Perde rengi yansımasını temizle (ortalama yöntemi): perde kanalı, diğer
+    # ikisinin ortalamasını aşmasın. Kumla perdenin karıştığı kenar tonları
+    # (ör. 152,154,72) baskınlık eşiğinin altında kalıp opak olduğundan, yalnız
+    # büyüğüyle sınırlamak zeytin yeşili bir şerit bırakıyordu.
+    # Sarılar (G yüksek ama R'nin altında) etkilenmesin diye yalnız perde kanalı
+    # diğerlerine yetişen ya da onları geçen piksellerde uygulanır.
+    temiz = np.where(baskinlik > -20, np.minimum(perde_kanal, (diger1 + diger2) // 2), perde_kanal)
     kanallar = [r, g, temiz] if perde == "mavi" else [r, temiz, b]
     rgba = np.dstack([*kanallar, (alfa * 255).round()]).clip(0, 255).astype(np.uint8)
     return Image.fromarray(rgba, "RGBA")
