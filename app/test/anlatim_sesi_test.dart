@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:siyer/icerik/depo.dart';
 import 'package:siyer/icerik/model.dart';
 import 'package:siyer/l10n/app_localizations.dart';
 import 'package:siyer/oynatici/anlatim_sesi.dart';
@@ -161,6 +163,33 @@ void main() {
       )));
       await tester.pump();
       expect(find.textContaining('Anlatım sesi henüz yok'), findsOneWidget);
+    });
+  });
+
+  group('sesSureleriProvider', () {
+    ProviderContainer kap(Set<String> varliklar, List<int> sayac) => ProviderContainer(overrides: [
+          bolumProvider('b99-deneme').overrideWith((_) async => ornekBolum()),
+          varliklarProvider.overrideWith((_) async => varliklar),
+          anlatimSesiFabrikasi.overrideWithValue(() {
+            sayac.add(1);
+            return _SahteSes();
+          }),
+        ]);
+
+    test('pakette ses dosyası yoksa hiç ses oynatıcısı kurulmaz', () async {
+      final sayac = <int>[];
+      final c = kap({}, sayac);
+      addTearDown(c.dispose);
+      expect(await c.read(sesSureleriProvider('b99-deneme').future), isEmpty);
+      expect(sayac, isEmpty);
+    });
+
+    test('pakette olan dosyanın süresi okunur', () async {
+      final sayac = <int>[];
+      final c = kap({'$icerikKoku/ses/b99-s01.mp3'}, sayac);
+      addTearDown(c.dispose);
+      expect(await c.read(sesSureleriProvider('b99-deneme').future), {'b99-s01': 4.0});
+      expect(sayac, hasLength(1));
     });
   });
 }

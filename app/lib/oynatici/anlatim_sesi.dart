@@ -86,11 +86,18 @@ final anlatimSesiFabrikasi = Provider<AnlatimSesi Function()>((ref) => JustAudio
 final sesSureleriProvider =
     FutureProvider.autoDispose.family<Map<String, double>, String>((ref, bolumId) async {
   final bolum = await ref.watch(bolumProvider(bolumId).future);
-  final ses = ref.read(anlatimSesiFabrikasi)();
+  // Yalnız pakette olan dosyalar denenir: eksik dosyayı denemek platforma göre
+  // saniyeler sürebilir ve bölüm açılışını bekletir.
+  final varliklar = await ref.watch(varliklarProvider.future);
+  final sahneler = [
+    for (final s in bolum.sahneler)
+      if (s.sesAnlatim.isNotEmpty && varliklar.contains('$icerikKoku/ses/${s.sesAnlatim}')) s,
+  ];
   final sonuc = <String, double>{};
+  if (sahneler.isEmpty) return sonuc;
+  final ses = ref.read(anlatimSesiFabrikasi)();
   try {
-    for (final s in bolum.sahneler) {
-      if (s.sesAnlatim.isEmpty) continue;
+    for (final s in sahneler) {
       final d = await ses.sure(s.sesAnlatim);
       if (d != null && d > Duration.zero) sonuc[s.id] = d.inMicroseconds / 1e6;
     }

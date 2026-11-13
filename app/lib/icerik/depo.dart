@@ -18,11 +18,15 @@ final bolumProvider = FutureProvider.family<Bolum, String>(
   (ref, id) async => Bolum.fromJson(await _json('$_kok/bolumler/$id.json')),
 );
 
+/// Uygulamaya paketlenmiş bütün dosya yolları.
+final varliklarProvider = FutureProvider<Set<String>>((ref) async {
+  final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+  return manifest.listAssets().toSet();
+});
+
 /// Sıraya dizilmiş bölümler (adı `_` ile başlayan şablonlar hariç).
 final bolumListesiProvider = FutureProvider<List<Bolum>>((ref) async {
-  final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-  final yollar = manifest
-      .listAssets()
+  final yollar = (await ref.watch(varliklarProvider.future))
       .where((y) => y.startsWith('$_kok/bolumler/') && y.endsWith('.json'))
       .where((y) => !y.split('/').last.startsWith('_'));
   final bolumler = [for (final y in yollar) Bolum.fromJson(await _json(y))]
