@@ -16,7 +16,26 @@ class BolumListesi extends ConsumerWidget {
     // İlerleme okunamazsa liste yine gösterilir; yalnız ilerleme bilgisi eksik kalır.
     final ilerleme = ref.watch(ilerlemeProvider).value ?? const {};
     return Scaffold(
-      appBar: AppBar(title: Text(m.bolumler)),
+      appBar: AppBar(
+        title: Text(m.bolumler),
+        actions: [
+          IconButton(
+            tooltip: m.zamanCizelgesi,
+            icon: const Icon(Icons.timeline),
+            onPressed: () => context.push('/zaman'),
+          ),
+          IconButton(
+            tooltip: m.sahislar,
+            icon: const Icon(Icons.people_outline),
+            onPressed: () => context.push('/sahislar'),
+          ),
+          IconButton(
+            tooltip: m.ayarlar,
+            icon: const Icon(Icons.settings_outlined),
+            onPressed: () => context.push('/ayarlar'),
+          ),
+        ],
+      ),
       body: bolumler.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),

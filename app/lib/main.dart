@@ -3,7 +3,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'ekranlar/ayarlar.dart';
 import 'ekranlar/bolum_listesi.dart';
+import 'ekranlar/sahislar.dart';
+import 'ekranlar/zaman_cizelgesi.dart';
 import 'l10n/app_localizations.dart';
 import 'oynatici/oynatici_ekrani.dart';
 
@@ -12,6 +15,13 @@ void main() => runApp(const ProviderScope(child: Uygulama()));
 final _yonlendirici = GoRouter(
   routes: [
     GoRoute(path: '/', builder: (_, _) => const BolumListesi()),
+    GoRoute(path: '/ayarlar', builder: (_, _) => const AyarlarEkrani()),
+    GoRoute(path: '/sahislar', builder: (_, _) => const SahislarEkrani()),
+    GoRoute(
+      path: '/sahislar/:id',
+      builder: (_, durum) => SahisEkrani(sahisId: durum.pathParameters['id']!),
+    ),
+    GoRoute(path: '/zaman', builder: (_, _) => const ZamanCizelgesiEkrani()),
     GoRoute(
       path: '/bolum/:id',
       // ?sahne=7 → doğrudan 7. sahneden başlar (revize için).

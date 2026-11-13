@@ -93,4 +93,60 @@ class MetinlerEn extends Metinler {
   String kaldiginYer(int no, int toplam) {
     return 'Scene $no / $toplam · continue where you left off';
   }
+
+  @override
+  String get ayarlar => 'Settings';
+
+  @override
+  String get kaynakca => 'Bibliography';
+
+  @override
+  String kaynakKatmani(String katman) {
+    return 'Source tier $katman';
+  }
+
+  @override
+  String get sahislar => 'People';
+
+  @override
+  String get zamanCizelgesi => 'Timeline';
+
+  @override
+  String get kaynakBekliyor => 'Source pending';
+
+  @override
+  String get ilerlemeyiSifirla => 'Reset progress';
+
+  @override
+  String get ilerlemeSifirlaOnay =>
+      'Progress in all episodes will be deleted. Are you sure?';
+
+  @override
+  String get iptal => 'Cancel';
+
+  @override
+  String get sifirla => 'Reset';
+
+  @override
+  String get hakkinda => 'About';
+
+  @override
+  String get hakkindaMetni =>
+      'Free of charge. No accounts, no ads, no analytics; your progress is stored only on this device. Every historical statement in the app is tied to a source; sources are listed at the end of each episode and in the bibliography below.';
+
+  @override
+  String get bulunamadi => 'Entry not found.';
+
+  @override
+  String yil(int yil) {
+    return '$yil';
+  }
+
+  @override
+  String yilYaklasik(int yil) {
+    return 'c. $yil';
+  }
+
+  @override
+  String get bolumeGit => 'Go to episode';
 }

@@ -191,14 +191,104 @@ class Bolum {
 
 /// kaynakca.json kaydı.
 class Eser {
-  const Eser({required this.id, required this.yazar, required this.ad});
+  const Eser({
+    required this.id,
+    required this.yazar,
+    required this.ad,
+    this.baski = '',
+    this.katman = '',
+    this.dil = '',
+    this.erisim = '',
+  });
 
-  factory Eser.fromJson(Map<String, dynamic> j) =>
-      Eser(id: _metin(j, 'id'), yazar: _metin(j, 'yazar'), ad: _metin(j, 'eser'));
+  factory Eser.fromJson(Map<String, dynamic> j) => Eser(
+        id: _metin(j, 'id'),
+        yazar: _metin(j, 'yazar'),
+        ad: _metin(j, 'eser'),
+        baski: _metin(j, 'baski'),
+        katman: _metin(j, 'katman'),
+        dil: _metin(j, 'dil'),
+        erisim: _metin(j, 'erisim'),
+      );
 
   final String id;
   final String yazar;
   final String ad;
+  final String baski;
+
+  /// Kaynak katmanı (A–E), docs/KAYNAKLAR.md.
+  final String katman;
+  final String dil;
+
+  /// Erişim notu; yerel kopya yolu gibi geliştirici bilgisi de içerebilir.
+  final String erisim;
 
   String get kunye => yazar.isEmpty ? ad : '$yazar, $ad';
+
+  /// Erişim notundaki ilk web adresi; kullanıcıya yalnız bu gösterilir.
+  String get webAdresi => RegExp(r'https?://\S+').firstMatch(erisim)?.group(0) ?? '';
 }
+
+class Sahis {
+  const Sahis({
+    required this.id,
+    required this.ad,
+    this.lakap = '',
+    this.yakinlik = '',
+    this.ozet = '',
+    this.bolumler = const [],
+    this.iddialar = const [],
+  });
+
+  factory Sahis.fromJson(Map<String, dynamic> j) => Sahis(
+        id: _metin(j, 'id'),
+        ad: _metin(j, 'ad'),
+        lakap: _metin(j, 'lakap'),
+        yakinlik: _metin(j, 'yakinlik'),
+        ozet: _metin(j, 'ozet'),
+        bolumler: _metinler(j, 'bolumler'),
+        iddialar: _metinler(j, 'iddialar'),
+      );
+
+  final String id;
+  final String ad;
+  final String lakap;
+  final String yakinlik;
+
+  /// Tarihî bilgi içerir; [iddialar] boşsa kaynaksız sayılır.
+  final String ozet;
+  final List<String> bolumler;
+  final List<String> iddialar;
+}
+
+class ZamanOlayi {
+  const ZamanOlayi({
+    required this.id,
+    required this.yil,
+    required this.olay,
+    this.yaklasik = false,
+    this.bolum = '',
+    this.iddia = '',
+  });
+
+  factory ZamanOlayi.fromJson(Map<String, dynamic> j) => ZamanOlayi(
+        id: _metin(j, 'id'),
+        yil: (j['yil'] as num?)?.toInt() ?? 0,
+        yaklasik: j['yaklasik'] == true,
+        olay: _metin(j, 'olay'),
+        bolum: _metin(j, 'bolum'),
+        iddia: _metin(j, 'iddia'),
+      );
+
+  final String id;
+
+  /// Milâdî.
+  final int yil;
+  final bool yaklasik;
+  final String olay;
+  final String bolum;
+  final String iddia;
+}
+
+List<String> _metinler(Map<String, dynamic> j, String alan) =>
+    (j[alan] as List<dynamic>? ?? const []).whereType<String>().toList();

@@ -246,6 +246,102 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Sahne {no} / {toplam} · kaldığın yerden devam'**
   String kaldiginYer(int no, int toplam);
+
+  /// No description provided for @ayarlar.
+  ///
+  /// In tr, this message translates to:
+  /// **'Ayarlar'**
+  String get ayarlar;
+
+  /// No description provided for @kaynakca.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kaynakça'**
+  String get kaynakca;
+
+  /// No description provided for @kaynakKatmani.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kaynak katmanı {katman}'**
+  String kaynakKatmani(String katman);
+
+  /// No description provided for @sahislar.
+  ///
+  /// In tr, this message translates to:
+  /// **'Şahıslar'**
+  String get sahislar;
+
+  /// No description provided for @zamanCizelgesi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Zaman çizelgesi'**
+  String get zamanCizelgesi;
+
+  /// No description provided for @kaynakBekliyor.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kaynak bekliyor'**
+  String get kaynakBekliyor;
+
+  /// No description provided for @ilerlemeyiSifirla.
+  ///
+  /// In tr, this message translates to:
+  /// **'İlerlemeyi sıfırla'**
+  String get ilerlemeyiSifirla;
+
+  /// No description provided for @ilerlemeSifirlaOnay.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bütün bölümlerdeki ilerleme silinecek. Emin misin?'**
+  String get ilerlemeSifirlaOnay;
+
+  /// No description provided for @iptal.
+  ///
+  /// In tr, this message translates to:
+  /// **'İptal'**
+  String get iptal;
+
+  /// No description provided for @sifirla.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sıfırla'**
+  String get sifirla;
+
+  /// No description provided for @hakkinda.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hakkında'**
+  String get hakkinda;
+
+  /// No description provided for @hakkindaMetni.
+  ///
+  /// In tr, this message translates to:
+  /// **'Ücretsizdir. Hesap, reklam ve analitik yoktur; ilerlemen yalnız bu cihazda saklanır. Uygulamadaki her tarihî bilgi kaynağına bağlıdır; kaynaklar bölüm sonlarında ve aşağıdaki kaynakçada listelenir.'**
+  String get hakkindaMetni;
+
+  /// No description provided for @bulunamadi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kayıt bulunamadı.'**
+  String get bulunamadi;
+
+  /// No description provided for @yil.
+  ///
+  /// In tr, this message translates to:
+  /// **'{yil}'**
+  String yil(int yil);
+
+  /// No description provided for @yilYaklasik.
+  ///
+  /// In tr, this message translates to:
+  /// **'yakl. {yil}'**
+  String yilYaklasik(int yil);
+
+  /// No description provided for @bolumeGit.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüme git'**
+  String get bolumeGit;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

@@ -24,5 +24,21 @@
   "katmanlar": "Layers",
   "saat": "Time of day",
   "tamamlandi": "Completed",
-  "kaldiginYer": "Scene {no} / {toplam} · continue where you left off"
+  "kaldiginYer": "Scene {no} / {toplam} · continue where you left off",
+  "ayarlar": "Settings",
+  "kaynakca": "Bibliography",
+  "kaynakKatmani": "Source tier {katman}",
+  "sahislar": "People",
+  "zamanCizelgesi": "Timeline",
+  "kaynakBekliyor": "Source pending",
+  "ilerlemeyiSifirla": "Reset progress",
+  "ilerlemeSifirlaOnay": "Progress in all episodes will be deleted. Are you sure?",
+  "iptal": "Cancel",
+  "sifirla": "Reset",
+  "hakkinda": "About",
+  "hakkindaMetni": "Free of charge. No accounts, no ads, no analytics; your progress is stored only on this device. Every historical statement in the app is tied to a source; sources are listed at the end of each episode and in the bibliography below.",
+  "bulunamadi": "Entry not found.",
+  "yil": "{yil}",
+  "yilYaklasik": "c. {yil}",
+  "bolumeGit": "Go to episode"
 }

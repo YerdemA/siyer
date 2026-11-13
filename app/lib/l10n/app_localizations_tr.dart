@@ -92,4 +92,60 @@ class MetinlerTr extends Metinler {
   String kaldiginYer(int no, int toplam) {
     return 'Sahne $no / $toplam · kaldığın yerden devam';
   }
+
+  @override
+  String get ayarlar => 'Ayarlar';
+
+  @override
+  String get kaynakca => 'Kaynakça';
+
+  @override
+  String kaynakKatmani(String katman) {
+    return 'Kaynak katmanı $katman';
+  }
+
+  @override
+  String get sahislar => 'Şahıslar';
+
+  @override
+  String get zamanCizelgesi => 'Zaman çizelgesi';
+
+  @override
+  String get kaynakBekliyor => 'Kaynak bekliyor';
+
+  @override
+  String get ilerlemeyiSifirla => 'İlerlemeyi sıfırla';
+
+  @override
+  String get ilerlemeSifirlaOnay =>
+      'Bütün bölümlerdeki ilerleme silinecek. Emin misin?';
+
+  @override
+  String get iptal => 'İptal';
+
+  @override
+  String get sifirla => 'Sıfırla';
+
+  @override
+  String get hakkinda => 'Hakkında';
+
+  @override
+  String get hakkindaMetni =>
+      'Ücretsizdir. Hesap, reklam ve analitik yoktur; ilerlemen yalnız bu cihazda saklanır. Uygulamadaki her tarihî bilgi kaynağına bağlıdır; kaynaklar bölüm sonlarında ve aşağıdaki kaynakçada listelenir.';
+
+  @override
+  String get bulunamadi => 'Kayıt bulunamadı.';
+
+  @override
+  String yil(int yil) {
+    return '$yil';
+  }
+
+  @override
+  String yilYaklasik(int yil) {
+    return 'yakl. $yil';
+  }
+
+  @override
+  String get bolumeGit => 'Bölüme git';
 }

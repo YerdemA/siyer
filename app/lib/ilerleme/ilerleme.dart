@@ -60,6 +60,15 @@ class IlerlemeDeposu extends AsyncNotifier<Map<String, BolumIlerlemesi>> {
 
   Future<void> bitir(String bolumId) => _guncelle(bolumId, (e) => e.kopya(bitti: true));
 
+  /// Bütün bölümlerin ilerlemesini siler.
+  Future<void> sifirla() async {
+    final p = await SharedPreferences.getInstance();
+    for (final a in p.getKeys().where((a) => a.startsWith(onek)).toList()) {
+      await p.remove(a);
+    }
+    state = const AsyncData({});
+  }
+
   Future<void> _guncelle(String bolumId, BolumIlerlemesi Function(BolumIlerlemesi) f) async {
     final mevcut = state.value ?? await future;
     final eski = mevcut[bolumId] ?? const BolumIlerlemesi();

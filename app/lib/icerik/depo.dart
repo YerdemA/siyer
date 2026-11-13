@@ -28,11 +28,31 @@ final bolumListesiProvider = FutureProvider<List<Bolum>>((ref) async {
   return bolumler;
 });
 
+Future<List<Map<String, dynamic>>> _liste(String yol) async =>
+    (jsonDecode(await rootBundle.loadString(yol)) as List<dynamic>)
+        .whereType<Map<String, dynamic>>()
+        .toList();
+
 final kaynakcaProvider = FutureProvider<Map<String, Eser>>((ref) async {
-  final liste = jsonDecode(await rootBundle.loadString('$_kok/kaynakca.json'))
-      as List<dynamic>;
   return {
-    for (final j in liste.whereType<Map<String, dynamic>>())
-      (j['id'] as String? ?? ''): Eser.fromJson(j),
+    for (final j in await _liste('$_kok/kaynakca.json')) (j['id'] as String? ?? ''): Eser.fromJson(j),
   };
+});
+
+final sahislarProvider = FutureProvider<List<Sahis>>(
+  (ref) async => (await _liste('$_kok/sahislar.json')).map(Sahis.fromJson).toList(),
+);
+
+/// Yıla göre sıralı.
+final zamanCizelgesiProvider = FutureProvider<List<ZamanOlayi>>((ref) async {
+  final l = (await _liste('$_kok/zaman-cizelgesi.json')).map(ZamanOlayi.fromJson).toList()
+    ..sort((a, b) => a.yil.compareTo(b.yil));
+  return l;
+});
+
+/// Bütün bölümlerdeki iddialar, kimliğe göre. Sözlük ve zaman çizelgesi
+/// kayıtlarının atıfları buradan okunur.
+final iddiaDiziniProvider = FutureProvider<Map<String, Iddia>>((ref) async {
+  final bolumler = await ref.watch(bolumListesiProvider.future);
+  return {for (final b in bolumler) for (final i in b.iddialar) i.id: i};
 });
