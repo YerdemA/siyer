@@ -296,12 +296,18 @@ DilIcerigi diliDenetle(Directory klasor, String dil, Rapor rapor) {
   for (final (i, y) in nesneler(yerler ?? const [], yerlerYolu, rapor)) {
     final yer = '$yerlerYolu[${metin(y, 'id').isEmpty ? i : metin(y, 'id')}]';
     if (metin(y, 'ad').isEmpty) rapor.hata(yer, '`ad` boş');
-    final enlem = y['enlem'], boylam = y['boylam'];
-    if (enlem is! num || enlem < -90 || enlem > 90) {
-      rapor.hata(yer, '`enlem` -90 ile 90 arasında sayı olmalı');
-    }
-    if (boylam is! num || boylam < -180 || boylam > 180) {
-      rapor.hata(yer, '`boylam` -180 ile 180 arasında sayı olmalı');
+    // Harita gerçek harita değil, parşömen illüstrasyonu: konum, parşömen
+    // üzerinde 0–1 aralığında göreli ve yaklaşıktır.
+    final harita = y['harita'];
+    if (harita is! Map<String, dynamic>) {
+      rapor.hata(yer, '`harita` {x, y} nesnesi olmalı');
+    } else {
+      for (final eksen in ['x', 'y']) {
+        final v = harita[eksen];
+        if (v is! num || v < 0 || v > 1) {
+          rapor.hata(yer, '`harita.$eksen` 0 ile 1 arasında sayı olmalı');
+        }
+      }
     }
     bagDenetle(y, yer);
   }

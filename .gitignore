@@ -21,3 +21,4 @@ key.properties
 # Yerel ayarlar
 .claude/settings.local.json
 .env
+app/assets/icerik/

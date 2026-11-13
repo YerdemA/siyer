@@ -31,11 +31,20 @@ content/tr/
 |---|---|
 | `id` | `b03-s02` |
 | `anlatim[]` | `{ "metin": "...", "iddialar": ["i-b03-004"] }` — her anlatım parçası dayandığı iddiaları gösterir |
-| `gorsel` | `{ "tarif": "...", "katmanlar": [], "kamera": "yavas-yaklasma" }` |
+| `gorsel` | `{ "tarif": "...", "saat": "gunduz", "katmanlar": [...], "kamera": "yavas-yaklasma" }` — aşağıda |
 | `ses` | `{ "anlatim": "b03-s02.mp3", "muzik": "huzun-01", "ortam": "col-ruzgari" }` |
 | `sahislar[]`, `yer` | `sahislar.json` ve `yerler.json` kimlikleri |
 
 Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listesi dolu olmalıdır. Geçiş cümleleri boş bırakılabilir.
+
+### Görsel ve katmanlar
+
+- `saat`: `safak` / `gunduz` / `aksam` / `gece` — ışık ve renk tonu.
+- `katmanlar[]`: uzaktan yakına sıralı. `{ "id", "dosya", "yerTutucu", "derinlik", "ayar" }`
+  - `dosya`: katmanın WebP görseli (şeffaf arka planlı). Boşsa oynatıcı `yerTutucu` tipine göre geçici bir çizim yapar.
+  - `derinlik`: 0 (en uzak, gökyüzü) – 1 (en yakın). Kamera hareketi yakın katmanları daha çok kaydırır (parallax).
+  - `ayar`: yer tutucuya özel isteğe bağlı ayarlar (konum, ölçek, sayı). Gerçek görsel gelince gereksizleşir.
+- `kamera`: `yavas-yaklasma`, `yavas-uzaklasma`, `yatay-kayma`, `sabit`, `sabit-gecis`, `yukaridan-yavas-donus`, `yukaridan-yukselis`, `bakis-acisi-yuruyus`, `bakis-acisi-giris`, `donus-kapiya`. Tanımları: `app/lib/oynatici/kamera.dart`.
 
 ### İddia
 
@@ -61,7 +70,7 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 
 - `kaynakca.json`: `{ id, yazar, eser, baski, katman (A–E), dil, erisim }`
 - `sahislar.json`: `{ id, ad, lakap, yakinlik, ozet, bolumler[], iddialar[] }`
-- `yerler.json`: `{ id, ad, enlem, boylam, ozet, bolumler[] }` — koordinatlar da kaynaklı olmalı
+- `yerler.json`: `{ id, ad, harita: { x, y }, ozet, bolumler[], iddialar[] }` — harita gerçek harita değil, ahşap/parşömen illüstrasyonudur. `x`, `y` parşömen üzerindeki yaklaşık konumdur (0–1, sol üst köşe 0,0). Konum göreli olduğundan atıf gerektirmez, ama yerlerin birbirine göre durumu (ör. Cidde'nin Mekke'nin batısında, kıyıda olması) kaynaklarla çelişmemelidir. `ozet` içindeki tarihî bilgi `iddialar` ile bağlanır.
 - `zaman-cizelgesi.json`: `{ id, yil (miladî, yaklaşık ise "yaklasik": true), hicriOncesi, olay, bolum, iddia }`
 
 ## Doğrulama betiği (`tools/icerik_dogrula.dart`)

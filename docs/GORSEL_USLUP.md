@@ -21,6 +21,17 @@ Hareketli illüstrasyon (motion comic): resim gibi sabit kareler, katmanlar aras
 - Mekke: Çıplak, kayalık dağlar arasında dar bir vadi; yeşillik yok denecek kadar az.
 - Kıyafet, çadır, kervan, silah ayrıntıları için kaynaklara ve müze/arkeoloji referanslarına bakılır. Emin olunmayan ayrıntı çizilmez, kadraj dışında bırakılır.
 
+## Kadraj
+
+- Oran 16:9, yatay.
+- Alt %25 altyazıya ayrılır: sahnenin anlatılan öğesi (kişi, nesne, Kâbe'nin ilgili köşesi) bu alana düşmez.
+- Kamera yaklaşınca kenarlar boş görünmesin diye her katman kadrajdan ~%20 taşacak genişlikte üretilir.
+- Her sahne ayrı katmanlar halinde üretilir (gök, uzak dağlar, zemin, yapılar, kişiler, ön plan), şeffaf arka planlı WebP. Derinlik ve kamera hareketi bu katmanlardan doğar.
+
+## Harita
+
+Gerçek harita değil: ahşap/parşömen dokusu üzerinde elle çizilmiş görünümlü bir illüstrasyon. Yerler yaklaşık konumlarıyla işaretlenir (`yerler.json` → `harita.x/y`).
+
 ## Renk ve ışık
 
 - Ana palet: kum, toprak, koyu lacivert gece, şafak turuncusu. Doygunluk düşük.
