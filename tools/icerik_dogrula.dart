@@ -85,6 +85,8 @@ void main(List<String> args) {
           .listSync()
           .whereType<Directory>()
           .map((d) => d.uri.pathSegments.lastWhere((s) => s.isNotEmpty))
+          // `gorseller/` dilden bağımsız görsellerdir, dil klasörü değil.
+          .where((ad) => ad != 'gorseller')
           .toList()
         ..sort();
   if (diller.isEmpty) rapor.hata(kok, 'dil klasörü yok (ör. content/tr)');

@@ -1,0 +1,134 @@
+{
+  "bolum": "b09-hakem",
+  "aciklama": "Bölüm 9 görsellerinin üretim istemleri ve kaydı (docs/GORSEL_USLUP.md → Tutarlılık). Her üretimde `uretimler` listesine araç, model, tarih ve seçilen dosya eklenir. İstemler İngilizce; modeller İngilizceyi daha iyi izliyor.",
+  "uslup": {
+    "istem": "Hand-painted digital illustration for a documentary motion comic. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Soft painterly brushwork with subtle paper grain, gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Mecca, Hijaz, around 605 CE — a narrow valley among bare, rocky, almost treeless mountains; small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. No visible faces: people appear only as distant silhouettes, from behind, or as hands and fabric details. Never depict the Prophet in any form — no figure, silhouette, shadow, hand or foot; his presence is only a soft warm golden-white light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra bilgisayarda silinip şeffaf WebP yapılır. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Kâbe örtüsü (kisve): 605'teki durumu kaynakla netleşmedi. Yapım sahnelerinde örtüsüz; s01'de Kâbe yalnız uzak planda.",
+      "Kâbe çevresindeki putlar: görünüşleri kaynakla netleşene kadar çizilmez.",
+      "Benî Şeybe kapısının biçimi ve Hicr'in sınırı: kaynakta yok."
+    ]
+  },
+  "deneme_plani": {
+    "aciklama": "Higgsfield 3 günlük deneme: ~100 kredi ≈ 50 Nano Banana Pro görseli (2K). Sıra önemli: önce üslup, sonra mekân kartları, sonra zor sahneler.",
+    "turlar": [
+      { "tur": 1, "hedef": "Üslup seçimi", "uretim": 8, "not": "u01 dört varyantla iki kez; Erdem birini seçer, seçilen görsel sonraki her üretime referans olarak verilir." },
+      { "tur": 2, "hedef": "Mekân kartları (tekrar kullanılan katmanlar)", "uretim": 14 },
+      { "tur": 3, "hedef": "Temsil kuralını en çok zorlayan sahneler: s07, s11, s12, s13", "uretim": 16 },
+      { "tur": "yedek", "hedef": "Düzeltmeler", "uretim": 12 }
+    ]
+  },
+  "istemler": [
+    {
+      "id": "u01",
+      "tur": 1,
+      "dosya": "",
+      "amac": "Üslup denemesi: tek parça anahtar kare (katmansız). Dört varyant: (a) bu istem, (b) 'gouache', (c) 'ink and watercolor', (d) 'flat shapes, paper cut-out depth'.",
+      "istem": "Wide establishing shot at dawn: the Mecca valley seen from a slight height, bare rocky mountains in layered haze, scattered low flat-roofed mudbrick houses, and in the open center a small, low, plain cube-shaped structure of dry-stacked dark stones without mortar, barely taller than a person, no roof covering. Tiny distant silhouettes, no faces."
+    },
+    {
+      "id": "m01-gok-safak",
+      "tur": 2,
+      "dosya": "mekke-gok-safak.webp",
+      "katman": "gok",
+      "istem": "Sky only, dawn: deep indigo at the top fading to soft apricot near the horizon, a few thin high clouds, no land."
+    },
+    {
+      "id": "m02-daglar",
+      "tur": 2,
+      "dosya": "mekke-daglar.webp",
+      "katman": "daglar",
+      "istem": "Two overlapping ranges of bare, jagged, rocky desert mountains seen from the valley floor, the far range paler with haze, no vegetation, no buildings. {yesil_perde_eki}",
+      "not": "Gök yerine yeşil perde; dağların üst kenarı temiz kesilsin."
+    },
+    {
+      "id": "m03-zemin",
+      "tur": 2,
+      "dosya": "mekke-zemin.webp",
+      "katman": "zemin",
+      "istem": "Valley floor only: packed sand and gravel ground receding toward the horizon, scattered small stones, a dry stream bed trace. {yesil_perde_eki}"
+    },
+    {
+      "id": "m04-evler",
+      "tur": 2,
+      "dosya": "mekke-evler.webp",
+      "katman": "evler",
+      "istem": "A loose row of small flat-roofed houses of mudbrick and rough stone along the valley, simple wooden doors, a few low walls; an empty open space in the center of the row. No people. {yesil_perde_eki}",
+      "not": "Ortadaki boşluk Kâbe ve avlu için."
+    },
+    {
+      "id": "m05-kabe-alcak",
+      "tur": 2,
+      "dosya": "kabe-alcak.webp",
+      "katman": "kabe-alcak",
+      "istem": "A small, low, plain cube-shaped building of dry-stacked dark grey stones without mortar, walls only slightly taller than a person, no roof, no covering cloth, no decoration, seen from a three-quarter angle. Soot stains and flood marks at the base. {yesil_perde_eki}",
+      "kaynak": "İbn Hişâm s. 122 (harçsız, insan boyunun üstünde, çatısız); TDV KUREYŞ s. 443 (yangın ve sel)."
+    },
+    {
+      "id": "m06-kabe-yarim",
+      "tur": 2,
+      "dosya": "kabe-yarim.webp",
+      "katman": "kabe-yarim",
+      "istem": "The same cube-shaped stone building under reconstruction: walls rising unevenly, courses of dark stone alternating with thin wooden beams, an empty notch at one corner at chest height, piles of stones and timber at the base. No people. {yesil_perde_eki}",
+      "kaynak": "TDV KÂBE s. 16 (bir sıra taş, bir sıra ahşap hatıl). Köşedeki boşluk Hacerülesved'in yeri."
+    },
+    {
+      "id": "m07-kabe-yuksek",
+      "tur": 2,
+      "dosya": "kabe-yuksek.webp",
+      "katman": "kabe-yuksek",
+      "istem": "The finished cube-shaped stone building, now about twice as tall as before, with a flat roof, courses of dark stone and thin wooden beams, a single-leaf wooden door set high above the ground, no covering cloth, no decoration. Beside it, an open semicircular area left outside the building, its edge only faintly suggested. {yesil_perde_eki}",
+      "kaynak": "İbn Hişâm s. 126 (18 arşın); TDV KÂBE s. 16-17 (yüksek, tek kanatlı kapı); Buhârî, Hac, 42 (Hicr dışarıda)."
+    },
+    {
+      "id": "s07-tasiyan",
+      "tur": 3,
+      "dosya": "b09-s07-tasiyan.webp",
+      "katman": "tasiyan-arkadan",
+      "istem": "Seen from behind at close range: a man in a simple undyed wool robe and head cloth walking up a stony slope, carrying a rough stone on his right shoulder; his face is not visible at all. {yesil_perde_eki}",
+      "not": "Abbas. Yüz kesinlikle görünmez. Sahne onun gözünden: kadrajda bakan kişinin hiçbir uzvu yok."
+    },
+    {
+      "id": "s07-yokus",
+      "tur": 3,
+      "dosya": "b09-s07-yokus.webp",
+      "katman": "yokus",
+      "istem": "Eye-level view up a gentle stony path toward a construction site in the distance, loose stones and dust on the ground; no hands, arms, feet or body of the viewer in frame. {yesil_perde_eki}"
+    },
+    {
+      "id": "s11-giris",
+      "tur": 3,
+      "dosya": "b09-s11-giris.webp",
+      "katman": "kapi-cercevesi",
+      "istem": "First-person view from a simple narrow gap between two mudbrick house walls, looking out into a sunlit open courtyard; the walls frame the left and right edges in shadow. No arch, no monumental gate. No hands, arms, feet or body of the viewer. {yesil_perde_eki}",
+      "not": "Kapının o dönemki biçimi kaynakta yok; sade aralık."
+    },
+    {
+      "id": "s11-kalabalik",
+      "tur": 3,
+      "dosya": "b09-s11-kalabalik.webp",
+      "katman": "kalabalik",
+      "istem": "A crowd of men in simple robes and head cloths standing in a courtyard at middle distance, many turning toward the viewer, faces not visible — in shadow, turned away or too far to see any features. {yesil_perde_eki}"
+    },
+    {
+      "id": "s12-kumas",
+      "tur": 3,
+      "dosya": "b09-s12-kumas.webp",
+      "katman": "kumas-tas",
+      "istem": "Top-down view of a plain undyed cloth spread on a stone floor, a smooth black stone resting at its center; four men's hands and forearms reach in from the four edges of the frame, each gripping one corner of the cloth. A soft warm golden-white glow rests over the stone, as if from an unseen light. Only these four pairs of hands; no other hand, arm or body anywhere.",
+      "not": "Resûlullah'a ait el ya da kol çizilmez; yalnız nur. Yapay zekâ beşinci bir el eklemeye meyilli; elle kontrol."
+    },
+    {
+      "id": "s13-hacer",
+      "tur": 3,
+      "dosya": "b09-s13-hacer.webp",
+      "katman": "kabe-yakin",
+      "istem": "Close-up of a wall of dry-stacked dark stones with thin wooden beams; at the corner a smooth black stone set into a niche at chest height. A soft warm golden-white glow fades around the stone. No hands, no people.",
+      "not": "Gerçek görsel gelince yer tutucu 'nur' katmanı kaldırılabilir ya da hafif bırakılır."
+    }
+  ],
+  "uretimler": []
+}

@@ -26,6 +26,8 @@ void main() {
   for (final varlik in kaynak.listSync(recursive: true)) {
     if (varlik is! File) continue;
     if (!varlik.path.endsWith('.json') && !varlik.path.endsWith('.webp')) continue;
+    // Üretim istemleri uygulamaya girmez.
+    if (varlik.path.replaceAll(r'\', '/').contains('gorseller/istemler/')) continue;
     final goreli = varlik.path.substring(kaynak.path.length + 1);
     final yeni = File('${hedef.path}/$goreli');
     yeni.parent.createSync(recursive: true);

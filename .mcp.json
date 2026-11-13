@@ -7,6 +7,10 @@
     "scrapling": {
       "command": ".venv/Scripts/scrapling-mcp.exe",
       "args": []
+    },
+    "higgsfield": {
+      "type": "http",
+      "url": "https://mcp.higgsfield.ai/mcp"
     }
   }
 }
