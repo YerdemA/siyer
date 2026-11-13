@@ -47,3 +47,20 @@ kotlin {
 flutter {
     source = "../.."
 }
+
+// Yayın kapısı (CLAUDE.md): doğrulanmamış atıf ya da eksik katman görseli varken
+// yayın derlemesi başarısız olur. Uygulamaya paketlenen içerik denetlenir
+// (`dart run tools/icerik_esitle.dart` ile kopyalanan app/assets/icerik).
+val icerikYayinDenetimi by tasks.registering(Exec::class) {
+    group = "verification"
+    description = "İçeriği yayın kurallarıyla denetler (tools/icerik_dogrula.dart --yayin)."
+    val depoKoku = rootProject.projectDir.parentFile.parentFile
+    workingDir = depoKoku
+    val dart = listOf("dart", "run", "tools/icerik_dogrula.dart", "--yayin", "--kok", "app/assets/icerik")
+    // Windows'ta dart bir .bat dosyasıdır; doğrudan çalıştırılamaz.
+    commandLine(if (System.getProperty("os.name").startsWith("Windows")) listOf("cmd", "/c") + dart else dart)
+}
+
+tasks.matching { it.name == "preReleaseBuild" }.configureEach {
+    dependsOn(icerikYayinDenetimi)
+}

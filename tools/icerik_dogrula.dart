@@ -16,6 +16,9 @@ import 'dart:convert';
 import 'dart:io';
 
 const durumlar = ['taslak', 'kaynak-dogrulandi', 'uzman-okudu', 'yayinda'];
+
+/// Görsel üretilmeyen, oynatıcının çizdiği katmanlar.
+const efektKatmanlari = {'toz', 'nur'};
 const gucler = ['kesin', 'guclu', 'ihtilafli', 'zayif'];
 const katmanlar = ['A', 'B', 'C', 'D', 'E'];
 
@@ -459,6 +462,9 @@ BolumOzeti bolumuDenetle(
         if (k is! Map<String, dynamic>) continue;
         final dosya = metin(k, 'dosya');
         if (dosya.isEmpty) {
+          // Efekt katmanlarını oynatıcı kendisi çizer; görsel beklenmez
+          // (app/lib/icerik/model.dart → Gorsel.efektler ile aynı liste).
+          if (efektKatmanlari.contains(metin(k, 'yerTutucu'))) continue;
           yerTutucuKatman++;
         } else if (!File('$gorselKlasoru/gorseller/$dosya').existsSync()) {
           rapor.yayinHatasi(yer, 'katman görseli bulunamadı: gorseller/$dosya');
