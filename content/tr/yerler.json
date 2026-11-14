@@ -8,6 +8,7 @@
     },
     "ozet": "",
     "bolumler": [
+      "b01-cahiliye-mekkesi",
       "b09-hakem",
       "b10-hira"
     ],
@@ -177,7 +178,9 @@
       "y": 0.05
     },
     "ozet": "",
-    "bolumler": [],
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
     "iddialar": [],
     "konumKaynagi": {
       "eser": "tdv-dia",
@@ -195,7 +198,9 @@
       "y": 0.957
     },
     "ozet": "",
-    "bolumler": [],
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
     "iddialar": [],
     "konumKaynagi": {
       "eser": "tdv-dia",

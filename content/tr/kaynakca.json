@@ -1,5 +1,14 @@
 [
   {
+    "id": "kuran-meal-dv",
+    "yazar": "Türkiye Diyanet Vakfı",
+    "eser": "Kur'ân-ı Kerîm ve Açıklamalı Meali",
+    "baski": "Diyanet Kur'an Platformu, \"Diyanet Vakfı\" meali (sitenin varsayılan meali); âyet ve mushaf sayfası atıfta yazılır",
+    "katman": "A",
+    "dil": "tr",
+    "erisim": "https://kuran.diyanet.gov.tr — yerel kopya: kaynaklar/kuran/kuran-meal-diyanet-vakfi.md (erişim 14.11.2026)"
+  },
+  {
     "id": "ibn-hisam-sire",
     "yazar": "İbn Hişâm",
     "eser": "es-Sîretü'n-nebeviyye",
@@ -15,7 +24,7 @@
     "baski": "",
     "katman": "B",
     "dil": "ar",
-    "erisim": "Atıflar şimdilik Hadislerle İslâm dipnotlarından alındı; asıl metinden (ör. sunnah.com) kontrol edilecek"
+    "erisim": "Atıflar şimdilik ikincil kaynaklardan alındı (Hadislerle İslâm dipnotları, TDV İslâm Ansiklopedisi maddeleri); asıl metinden (ör. sunnah.com) kontrol edilecek"
   },
   {
     "id": "tdv-dia",

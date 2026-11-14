@@ -1,0 +1,1668 @@
+{
+  "id": "b01-cahiliye-mekkesi",
+  "sira": 1,
+  "baslik": "Câhiliye Mekke'si",
+  "ozet": "Hz. İbrâhim'in yerleştirdiği ıssız vadiden Kureyş'in ticaret şehrine: Kâbe'nin kuruluşu, putperestliğin girişi ve Kusay'ın Mekke'si.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b01-s01",
+      "anlatim": [
+        {
+          "metin": "Mekke, dağlarla çevrili bir vadide kurulmuştur.",
+          "iddialar": [
+            "i-b01-001"
+          ]
+        },
+        {
+          "metin": "Çevresi kurak ve çöl gibidir; bitki örtüsü cılızdır. Kur'an bu yeri «ziraat yapılmayan bir vâdi» diye anar.",
+          "iddialar": [
+            "i-b01-001"
+          ]
+        },
+        {
+          "metin": "Bu bölüm, o vadinin ve ortasındaki evin hikâyesidir.",
+          "iddialar": []
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, yüksekten geniş plan: dağlar arasında kurak bir vadi; seyrek dikenli çalılar. Vadinin ortası boş; henüz ev yok. İnsan yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yukaridan-yukselis"
+      },
+      "ses": {
+        "anlatim": "b01-s01.mp3",
+        "muzik": "acilis-01",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s02",
+      "anlatim": [
+        {
+          "metin": "Bir zamanlar Hz. İbrâhim, eşi Hâcer'i ve küçük oğlu İsmâil'i bu ıssız vadiye getirdi.",
+          "iddialar": [
+            "i-b01-002"
+          ]
+        },
+        {
+          "metin": "Kur'an onun duasını şöyle aktarır: «Ey Rabbimiz! Ey sahibimiz! Namazı dosdoğru kılmaları için ben, neslimden bir kısmını senin Beyt-i Harem'inin (Kâbe'nin) yanında, ziraat yapılmayan bir vâdiye yerleştirdim.»",
+          "iddialar": [
+            "i-b01-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, alçak açı: boş, kurak vadi tabanı ve dağlar; ufukta ilk ışık. Hz. İbrâhim, Hâcer ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, ayak izi) çizilmez; yalnız mekân. Işık sıcak ama altın-beyaz değil. İnsan yok.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.45
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s02.mp3",
+        "muzik": "dua-01",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-ibrahim",
+        "hacer",
+        "hz-ismail"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s03",
+      "anlatim": [
+        {
+          "metin": "Zemzem suyu sayesinde bu çorak vadide hayat başladı.",
+          "iddialar": [
+            "i-b01-003"
+          ]
+        },
+        {
+          "metin": "Yemenli Cürhüm kabilesi, Hâcer'den izin alarak vadiye yerleşti.",
+          "iddialar": [
+            "i-b01-003"
+          ]
+        },
+        {
+          "metin": "Hz. İsmâil büyüdüğünde Cürhüm'den evlendi ve kabileyle akraba oldu.",
+          "iddialar": [
+            "i-b01-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, uzak plan: vadinin girişinden ağır ağır gelen küçük bir kervan; develer ve yüzsüz, çok küçük siluetler. Su kuyusu ayrıntısı çizilmez. Hâcer ve Hz. İsmâil çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "sayi": 6,
+              "y": 0.72,
+              "olcek": 0.04,
+              "x1": 0.15,
+              "x2": 0.4
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b01-s03.mp3",
+        "muzik": "acilis-01",
+        "ortam": "kervan-uzak"
+      },
+      "sahislar": [
+        "hacer",
+        "hz-ismail"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s04",
+      "anlatim": [
+        {
+          "metin": "Yıllar sonra Hz. İbrâhim oğlunu görmeye geldi.",
+          "iddialar": [
+            "i-b01-004"
+          ]
+        },
+        {
+          "metin": "İkisi birlikte Kâbe'nin temellerini yükselttiler.",
+          "iddialar": [
+            "i-b01-004"
+          ]
+        },
+        {
+          "metin": "Kur'an o anı onların duasıyla anlatır: «Ey Rabbimiz! Bizden bunu kabul buyur; şüphesiz sen işitensin, bilensin.»",
+          "iddialar": [
+            "i-b01-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, yakın plan: vadi tabanında harçsız üst üste konmuş birkaç sıra kaba taştan alçak bir temel. Hz. İbrâhim ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, el) çizilmez; taşı taşıyan kimse görünmez. Bitmiş bina, kapı, örtü yok. İnsan yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.4
+          },
+          {
+            "id": "temel",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.7
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s04.mp3",
+        "muzik": "dua-01",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "hz-ibrahim",
+        "hz-ismail"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s05",
+      "anlatim": [
+        {
+          "metin": "Hz. İbrâhim'den sonra Kâbe uzun zaman yalnız Allah'a ibadet için ziyaret edildi.",
+          "iddialar": [
+            "i-b01-005"
+          ]
+        },
+        {
+          "metin": "Ama Cürhümlüler zamanla bu yoldan saptılar.",
+          "iddialar": [
+            "i-b01-006"
+          ]
+        },
+        {
+          "metin": "Sonra Huzâa kabilesi, Kinâne kabilesiyle birlikte Cürhüm'ü yendi ve Mekke'nin yönetimini ele geçirdi.",
+          "iddialar": [
+            "i-b01-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, uzak plan: vadinin ortasında alçak, sade, üstü açık Kâbe. Gökte koyulaşan renkler. Uzakta yüzsüz, küçük siluetler. Kusay öncesi: kerpiç evler çizilmez; Kâbe çevresi açık.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s05.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s06",
+      "anlatim": [
+        {
+          "metin": "Huzâa'dan Amr b. Luhay, Mekke'nin ve Kâbe'nin idaresini eline alınca tevhid geleneğini bozdu ve putperestliği yaydı.",
+          "iddialar": [
+            "i-b01-007"
+          ]
+        },
+        {
+          "metin": "Rivayete göre Hz. İsmâil'in dinini ilk değiştiren ve putları diken oydu.",
+          "iddialar": [
+            "i-b01-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece: karanlıkta Kâbe koyu bir kütle; önünde uzayan, şekli belirsiz gölgeler. Putların kendisi çizilmez (görünüşleri kaynakla netleşmedi), yalnız gölgeleri. Amr b. Luhay çizilmez. Kusay öncesi: kerpiç evler çizilmez; Kâbe çevresi açık. İnsan yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b01-s06.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "amr-b-luhay"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s07",
+      "anlatim": [
+        {
+          "metin": "Hz. Muhammed'in (s.a.v.) mensup olduğu Kureyş kabilesi ise uzun süre Mekke'nin dışında, dağınık hâlde yaşamıştı.",
+          "iddialar": [
+            "i-b01-010"
+          ]
+        },
+        {
+          "metin": "Beşinci yüzyılda Kureyş'ten Kusay b. Kilâb, Kinâne ve Kudâa kabilelerinin yardımıyla Huzâa'ya karşı savaştı.",
+          "iddialar": [
+            "i-b01-010"
+          ]
+        },
+        {
+          "metin": "Çarpışmanın ardından taraflar bir hakeme başvurdu. Hakem, Kâbe'ye ve Mekke'ye Kusay'ın daha layık olduğuna hükmetti.",
+          "iddialar": [
+            "i-b01-011"
+          ]
+        },
+        {
+          "metin": "Böylece Mekke'nin ve Kâbe'nin yönetimi Kureyş'e geçti.",
+          "iddialar": [
+            "i-b01-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gün batımı, uzak plan: vadinin dışında dağınık çadırlar; vadiye doğru inen yüzsüz, küçük siluet grupları. Savaş sahnesi, kan ve silah ayrıntısı yok; yalnız toz.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "sayi": 8,
+              "y": 0.74,
+              "olcek": 0.04,
+              "x1": 0.2,
+              "x2": 0.8
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b01-s07.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "kusay-b-kilab"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s08",
+      "anlatim": [
+        {
+          "metin": "Kusay, dağınık Kureyş'i Kâbe'nin çevresine yerleştirdi ve Mekke'yi kabilenin kolları arasında paylaştırdı.",
+          "iddialar": [
+            "i-b01-012"
+          ]
+        },
+        {
+          "metin": "Kureyş böylece yarı göçebe hayattan yerleşik hayata geçti.",
+          "iddialar": [
+            "i-b01-012"
+          ]
+        },
+        {
+          "metin": "Kusay, Kâbe'nin kuzeyinde, kapısı Kâbe'ye açılan bir meclis binası yaptırdı: Dârünnedve.",
+          "iddialar": [
+            "i-b01-013"
+          ]
+        },
+        {
+          "metin": "Savaş, barış, nikâh gibi önemli işler orada görüşülürdü. Meclise Kusayoğulları ile kırk yaşını geçmiş boy başkanları katılabilirdi.",
+          "iddialar": [
+            "i-b01-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, orta plan: Kâbe'nin çevresinde sıklaşmış evler; birinin kapısı Kâbe'ye bakar (Dârünnedve; sade ve süssüz). Kapı önünde arkası dönük birkaç yüzsüz siluet. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 4,
+              "y": 0.8,
+              "olcek": 0.06,
+              "x1": 0.25,
+              "x2": 0.4
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s08.mp3",
+        "muzik": "sehir-01",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "kusay-b-kilab"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s09",
+      "anlatim": [
+        {
+          "metin": "Kâbe'nin muhafızlığı, hacılara su ve yemek sağlamak, sancak taşımak gibi şerefli görevler de Kusay'daydı.",
+          "iddialar": [
+            "i-b01-014"
+          ]
+        },
+        {
+          "metin": "Bu görevler ondan sonra büyük oğlu Abdüddâr'a geçti. Abdümenâfoğulları da görevleri isteyince Kureyş'in kolları iki karşıt ittifak kurdu.",
+          "iddialar": [
+            "i-b01-014"
+          ]
+        },
+        {
+          "metin": "Taraflar çatışmanın eşiğine geldi. Sonunda uzlaşmadan yana olanlar ağır bastı ve görevler iki aile arasında paylaştırıldı.",
+          "iddialar": [
+            "i-b01-014"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Kâbe avlusu, uzak plan: avlunun iki yanında karşı karşıya duran iki ayrı grup yüzsüz siluet; aralarında boşluk. Mekân ayrıntısı en aza indirilir. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 8,
+              "y": 0.8,
+              "olcek": 0.05,
+              "x1": 0.15,
+              "x2": 0.85
+            }
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b01-s09.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "kusay-b-kilab"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s10",
+      "anlatim": [
+        {
+          "metin": "Zamanla Kâbe'nin içine ve çevresine putlar dikildi; Kureyş zamanında sayılarının üç yüz altmışı bulduğu rivayet edilir.",
+          "iddialar": [
+            "i-b01-008"
+          ]
+        },
+        {
+          "metin": "En büyükleri Hübel'di.",
+          "iddialar": [
+            "i-b01-008"
+          ]
+        },
+        {
+          "metin": "Yine de Mekkeliler Kâbe'yi hiçbir puta mal etmediler; onu hep Allah'ın evi saydılar.",
+          "iddialar": [
+            "i-b01-008"
+          ]
+        },
+        {
+          "metin": "Hz. İbrâhim'in dinine bağlı kalan Hanîfler ise putlardan uzak durarak Kâbe'yi ziyaret etmeye devam etti.",
+          "iddialar": [
+            "i-b01-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, orta plan: Kâbe avlusu; Kâbe'nin çevresinde yere düşmüş çok sayıda dik gölge (putlar çizilmez). Avlunun kenarında, arkası dönük, tek başına duran yüzsüz bir siluet. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.8,
+            "ayar": {
+              "x": 0.78,
+              "y": 0.8,
+              "olcek": 0.12
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b01-s10.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s11",
+      "anlatim": [
+        {
+          "metin": "Mekke'nin toprağı ekime elverişli değildi; Kureyş geçimini ticaretten sağlıyordu.",
+          "iddialar": [
+            "i-b01-015"
+          ]
+        },
+        {
+          "metin": "Kâbe'nin çevresi dokunulmaz sayıldığından insanlar Mekke'ye korkmadan gelebiliyordu; bu da şehrin ticaretini büyüttü.",
+          "iddialar": [
+            "i-b01-015"
+          ]
+        },
+        {
+          "metin": "Efendimiz'in büyük dedesi Hâşim ve kardeşleri, komşu devletlerle ve yol üzerindeki kabilelerle antlaşmalar yaptılar.",
+          "iddialar": [
+            "i-b01-016"
+          ]
+        },
+        {
+          "metin": "Böylece Kureyş kervanları kışın Yemen ve Habeşistan'a, yazın Suriye ve Anadolu'ya güven içinde gidip gelmeye başladı.",
+          "iddialar": [
+            "i-b01-016"
+          ]
+        },
+        {
+          "metin": "Kur'an bu yolculukları şöyle anar: «Kureyş'e kolaylaştırıldığı, evet, kış ve yaz seyahatleri onlara kolaylaştırıldığı için onlar, kendilerini açlıktan doyuran ve her çeşit korkudan emin kılan şu evin Rabbine kulluk etsinler.»",
+          "iddialar": [
+            "i-b01-017"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, uzak plan: Mekke'den çıkıp dağların arasından uzaklaşan uzun bir deve kervanı; yüzsüz, küçük siluetler.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "sayi": 10,
+              "y": 0.72,
+              "olcek": 0.035,
+              "x1": 0.45,
+              "x2": 0.95
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b01-s11.mp3",
+        "muzik": "yolculuk-01",
+        "ortam": "kervan-uzak"
+      },
+      "sahislar": [
+        "hasim-b-abdumenaf"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s12",
+      "anlatim": [
+        {
+          "metin": "Arap kabile toplumunda, özellikle çölde yaşayan bedevîler arasında, insanları birbirine bağlayan kan bağıydı.",
+          "iddialar": [
+            "i-b01-018"
+          ]
+        },
+        {
+          "metin": "Herkes kendi kabilesini körü körüne tutardı; suç kişinin değil kabilenin sayılır, kan davaları sürüp giderdi.",
+          "iddialar": [
+            "i-b01-018"
+          ]
+        },
+        {
+          "metin": "Kabilesinden ayrılan biri ise antlaşmayla başka bir kabileye sığınabilir ya da onun müttefiki olabilirdi.",
+          "iddialar": [
+            "i-b01-018"
+          ]
+        },
+        {
+          "metin": "Yıllar sonra Müslüman olan Ca'fer b. Ebû Tâlib, Habeş hükümdarına o günleri anlatırken putlara taptıklarını, akrabalık bağlarını kopardıklarını, komşuya kötülük ettiklerini ve güçlünün zayıfı ezdiğini söyleyecekti.",
+          "iddialar": [
+            "i-b01-019"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, çölde bir kabile konağı: birkaç çadır, uzakta bir ateşin çevresinde toplanmış, birbirine sırt dönmüş iki küçük siluet grubu. Silah ve kan ayrıntısı yok; yüz yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7,
+            "ayar": {
+              "sayi": 6,
+              "y": 0.78,
+              "olcek": 0.05,
+              "x1": 0.3,
+              "x2": 0.7
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s12.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "col-gece"
+      },
+      "sahislar": [
+        "cafer-b-ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b01-s13",
+      "anlatim": [
+        {
+          "metin": "Resûlullah yıllar sonra, «İnsanların Câhiliye devrinde hayırlı olanları İslâm devrinde de hayırlıdır» diyecekti.",
+          "iddialar": [
+            "i-b01-020"
+          ]
+        },
+        {
+          "metin": "Bir sahâbîye de o günlerde yaptığı iyilikleri, misafiri ağırlamayı, yetime ikram etmeyi, komşuya iyi davranmayı sürdürmesini öğütleyecekti.",
+          "iddialar": [
+            "i-b01-022"
+          ]
+        },
+        {
+          "metin": "Bu Mekke'de Hâşimoğulları'nın lideri, Hâşim'in oğlu Abdülmuttalib'di. Kureyş aralarındaki meselelerde onun görüşüne başvururdu.",
+          "iddialar": [
+            "i-b01-021"
+          ]
+        },
+        {
+          "metin": "Cürhümlülerin kapatıp yerini belirsiz bıraktığı Zemzem kuyusunu yeniden açmıştı; hacılara su ve yemek sağlama görevi de ondaydı.",
+          "iddialar": [
+            "i-b01-021"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü, uzak plan: Mekke vadisi; ortada alçak Kâbe, çevresinde evler, dumanı tüten ocaklar. Kâbe avlusunun kenarında, arkadan görülen tek, yaşlı bir siluet (Abdülmuttalib); yüzü görünmez. Altın-beyaz ışık yok. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.75,
+            "ayar": {
+              "x": 0.3,
+              "y": 0.82,
+              "olcek": 0.12
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b01-s13.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b01-001",
+      "ifade": "Mekke dağlarla çevrili bir vadide kurulmuştur; çevresi kurak ve çöl karakterlidir, bitki örtüsü cılızdır. Kur'an bu vadiyi ziraat yapılmayan bir vadi olarak niteler.",
+      "guc": "guclu",
+      "gerekce": "MEKKE maddesi vadiyi, çevresindeki dağları (Ebûkubeys, Kuaykıân, Sevr, Nur, Sebîr), çöl karakterli araziyi ve cılız bitki örtüsünü anlatır, Kur'an'daki nitelemeyi (İbrâhîm 14/37) anar. Âyetin meali Diyanet Kur'an Platformu'ndan (Diyanet Vakfı meali) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 555 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "İbrâhîm 14/37 (mushaf s. 259)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 971 (PDF s. 311)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-002",
+      "ifade": "Hz. İbrâhim, eşi Hâcer'i ve küçük oğlu İsmâil'i Kâbe'nin bulunduğu bu ıssız vadiye getirip yerleştirdi ve onlar için dua etti.",
+      "guc": "guclu",
+      "gerekce": "Çekirdek Kur'an'dadır: Hz. İbrâhim neslinden bir kısmını Beyt-i Harem'in yanında, ziraat yapılmayan bir vadiye yerleştirdiğini söyleyerek dua eder (İbrâhîm 14/37; alıntı Diyanet Vakfı mealinden birebir). Âyet isim vermez. İsmâil'in getirilişi MEKKE maddesinde, Hâcer'le birlikte getirilişi Hadislerle İslâm'da anlatılır. Politika 2.1 istisnası: Hâcer'in adı yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır.",
+      "kaynaklar": [
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "İbrâhîm 14/37 (mushaf s. 259)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 971 (PDF s. 311)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-003",
+      "ifade": "Zemzem suyunun hayat verdiği vadiye, Yemen'den gelen Cürhüm kabilesi Hâcer'in izniyle yerleşti; Hz. İsmâil büyüyünce Cürhüm'den evlendi ve kabileyle akraba oldu.",
+      "guc": "guclu",
+      "gerekce": "Hadislerle İslâm Cürhüm'ün Hâcer'in izniyle yerleştiğini ve kızlarını İsmâil'le evlendirdiğini anlatır; anlatımın sonundaki dipnot 972 Buhârî, Enbiyâ 9'a (B3364) atıf yapar. MEKKE maddesi, rivayetlerin çoğuna göre anayurdu Yemen olan Cürhümlüler'in Zemzem bulunduktan sonra Mekke'ye yerleştiğini yazar. Politika 2.1 istisnası: Hâcer'in izni ve evlilik ayrıntısı yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır.",
+      "kaynaklar": [
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 972 (PDF s. 312)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-004",
+      "ifade": "Hz. İbrâhim oğlunu ziyarete geldiğinde, Hz. İbrâhim ile Hz. İsmâil Kâbe'nin temellerini birlikte yükselttiler.",
+      "guc": "kesin",
+      "gerekce": "Bakara 2/127 (Diyanet Vakfı meali) İbrâhim ile İsmâil'in Beytullah'ın temellerini yükselttiğini ve dualarını bildirir. Hadislerle İslâm ziyareti ve birlikte inşayı anlatır, dipnot 972'de Bakara 2/127 ile Buhârî, Enbiyâ, 9 (B3364) atfını verir. Buhârî kaydı bağımsız görülmedi, yalnız bu dipnottan alındı; asıl metinden kontrol edilecek. KÂBE maddesi âyetleri aktarır.",
+      "kaynaklar": [
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "Bakara 2/127 (mushaf s. 19)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "buhari-sahih",
+          "konum": "Enbiyâ, 9 (hadis no. 3364) — Hadislerle İslâm c. 7 dipnot 972'de görüldüğü haliyle",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 972 (PDF s. 312)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 15 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-005",
+      "ifade": "Kâbe'yi ziyaret, Hz. İbrâhim zamanından putperestliğin yayılışına kadar tek Allah inancına uygun olarak sürdü.",
+      "guc": "guclu",
+      "gerekce": "KÂBE maddesi bunu açıkça yazar. Hadislerle İslâm Cürhüm'ün önceleri Hz. İsmâil'in tebliğ ettiği dine bağlı kaldığını söyler (dipnot 973).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 973 (PDF s. 312)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-006",
+      "ifade": "Cürhümlüler zamanla bu dinden saptılar; Arim selinden sonra bölgeye gelen Huzâa kabilesi, Kinâne ile birlikte Cürhüm'ü yenerek Mekke'nin yönetimini ele geçirdi.",
+      "guc": "guclu",
+      "gerekce": "MEKKE maddesi ve Hadislerle İslâm aynı sırayı verir. Hadislerle İslâm dipnot 973 ile \"Cürhüm\", DİA, VIII, 138'e atıf yapar.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 973 (PDF s. 312)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-007",
+      "ifade": "Huzâa kabilesinden Amr b. Luhay, Mekke ve Kâbe'nin idaresini eline alınca tevhid geleneğini bozup putperestliği yaydı; Hz. İsmâil'in dinini ilk değiştiren ve putları diken kişi oydu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 50-51) Ebû Hüreyre'den Amr b. Luhay'ın İsmâil'in dinini ilk değiştiren ve putları diken kişi olduğunu bildiren rivayeti aktarır (isnad s. 50'nin sonunda başlar; tarama OCR'ı düzeltilmemiş, taramada okunmadı). MEKKE maddesi ve Hadislerle İslâm putperestliği onun yaydığını yazar. Aynı yerde iki ek anlatım vardır, dipnotta verildi: Hübel'in Şam'dan getirilişi (İbn Hişâm bunu \"bazı ilim ehli\"nden aktarır) ve İbn İshâk'ın taşa tapmanın kökenine dair açıklaması.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 50-51",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, PDF s. 312",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'ın bazı ilim ehlinden aktardığına göre Amr b. Luhay Şam'ın Belkâ bölgesine gitmiş, oradakilerin taptığı putlardan Hübel'i isteyip Mekke'ye getirmiş ve insanlara ona tapmalarını emretmiştir.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 51",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "İbn İshâk'a göre taşa tapma, Mekke'den ayrılan İsmâiloğulları'nın Harem'e saygıdan yanlarına oradan taş almaları, gittikleri yerde onun çevresinde Kâbe'yi tavaf eder gibi dolaşmalarıyla başladı; zamanla Hz. İbrâhim'in dinini unutup putlara taptılar.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 51",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b01-008",
+      "ifade": "Kureyş döneminde Kâbe'nin içine ve çevresine putlar dikiliyordu; sayılarının 360'ı bulduğu rivayet edilir, en büyükleri Hübel'di. Buna rağmen Mekkeliler Kâbe'yi hiçbir puta nisbet etmeyip hep Beytullah (Allah'ın evi) olarak gördüler.",
+      "guc": "guclu",
+      "gerekce": "KUREYŞ maddesi Kureyşliler'in putlarını Kâbe'nin içine ve çevresine yerleştirdiğini, sayılarının 360'ı bulduğunun \"rivayet edildiğini\" ve Hübel'in en büyük put olduğunu yazar; MEKKE maddesi aynı sayıyı verir. KÂBE maddesi müşriklerin Kâbe'yi putlara nisbet etmeyip Beytullah olarak gördüğünü yazar. Anlatım sayıyı \"rivayet edilir\" ihtiyatıyla verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-009",
+      "ifade": "Hz. İbrâhim'in dinine bağlı Hanîfler, Kâbe'yi putperest anlayışın dışında ziyaret etmeye devam ettiler.",
+      "guc": "guclu",
+      "gerekce": "KÂBE maddesi bunu yazar; MEKKE maddesi putperest şehirde tevhid inancına sahip Hanîflerin bulunduğunu belirtir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 16 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-010",
+      "ifade": "Hz. Muhammed'in (s.a.v.) mensup olduğu Kureyş kabilesi uzun süre Mekke dışında dağınık yaşadı; V. yüzyılda Kusay b. Kilâb, Kinâne ve Kudâa kabilelerinin yardımıyla Huzâa ile savaştı ve Mekke ile Kâbe'nin yönetimi Kureyş'e geçti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 79-80) Kusay'ın Kureyş, Kinâne ve Kudâa ile Huzâa ve Benî Bekr'e karşı savaşını anlatır. KUREYŞ ve MEKKE maddeleri aynı bilgiyi verir ve tarihi \"V. yüzyılın ilk yarısı\" diye koyar; KÂBE maddesi yönetimin Kusay zamanında Kureyş'e geçtiğini yazar. İbn Hişâm (s. 76) Huzâa'nın ileri sürdüğü bir rivayeti de anar, İbn İshâk ona çekinceyle yer verir; dipnotta verildi.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 79-80",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 442 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 19 (İstanbul 2001)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Huzâa'nın ileri sürdüğüne göre Kusay'ın kayınpederi Huleyl, kızından olan torunlarının çoğaldığını görünce Kâbe'ye ve Mekke'nin yönetimine Kusay'ın daha layık olduğunu vasiyet etmişti. İbn İshâk bunu Huzâa dışında kimseden duymadığını söyler.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 76",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b01-011",
+      "ifade": "Çarpışmanın ardından taraflar bir hakeme başvurdu; hakem, Kâbe'ye ve Mekke'nin yönetimine Kusay'ın Huzâa'dan daha layık olduğuna hükmetti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 79) iki tarafın Ya'mur b. Avf'ı hakem yaptığını ve onun Kusay lehine hükmettiğini anlatır (tarama OCR'ı düzeltilmemiş). C katmanı tek kaynak; kullanılan kaynaklarda aksi görüş yok.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 79-80",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-012",
+      "ifade": "Kusay, dağınık Kureyş kollarını Kâbe çevresine yerleştirip Mekke'yi aralarında paylaştırdı; böylece Kureyş yarı göçebe hayattan yerleşik hayata geçti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 80) ve KUREYŞ maddesi yerleşimi ve paylaşımı anlatır; yerleşik hayata geçiş KUREYŞ s. 443 ve MEKKE s. 556'dadır. DÂRÜNNEDVE maddesi ve Hadislerle İslâm (dipnot 974: \"Mekke\", DİA, XXVIII, 556) aynı bilgiyi verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 80",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 442-443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"DÂRÜNNEDVE\", c. 8, s. 555 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 974 (PDF s. 312)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-013",
+      "ifade": "Kusay, yaklaşık 440 yılında Kâbe'nin kuzeyinde, kapısı Kâbe'ye açılan Dârünnedve'yi yaptırdı; Kureyş savaş, barış ve nikâh gibi önemli işlerini burada görüşürdü. Meclise Kusayoğulları ile kırk yaşını geçmiş boy başkanları katılabilirdi.",
+      "guc": "guclu",
+      "gerekce": "DÂRÜNNEDVE maddesi tarihi \"yaklaşık 440\" diye, yeri, kapının yönünü ve meclisin işleyişini verir. İbn Hişâm (s. 80) kapısının Kâbe'ye açıldığını ve Kureyş'in işlerini orada karara bağladığını aktarır. MEKKE maddesi kırk yaş şartını tekrarlar. Kervan kararlarının yeri (Dârünnedve mi, Kusay'ın evi mi) maddede belirsiz olduğu için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 80",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"DÂRÜNNEDVE\", c. 8, s. 555-556 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-014",
+      "ifade": "Kusay'dan sonra Kâbe ve Mekke ile ilgili görevler büyük oğlu Abdüddâr'a geçti; Abdümenâfoğulları bu görevleri isteyince Kureyş kolları Mutayyebûn ve Ahlâf adıyla karşıt ittifaklar kurdu. Çatışmanın eşiğinde uzlaşıldı: Kâbe muhafızlığı (hicâbe), sancak (livâ) ve Dârünnedve Abdüddâroğulları'nda kaldı; hacılara su ve yemek sağlama (sikâye, rifâde) ile kumandanlık (kıyâde) Abdümenâfoğulları'na verildi.",
+      "guc": "ihtilafli",
+      "gerekce": "KUREYŞ maddesi çekişmeyi ve uzlaşmayı ayrıntılı verir (Âmir b. Lüey ve Muhârib b. Fihr kollarının tarafsız kaldığını da yazar). MEKKE maddesi aynı paylaşımı verir ama Mekkelilerin \"üç gruba\" ayrıldığını söyler; anlatım sayı vermez. KÂBE maddesi ise görevleri Kusay'ın sağlığında iki oğlu arasında kendisinin paylaştırdığını yazar; dipnotta verildi. Varılan paylaşım üç maddede aynıdır. Ana metin iki maddenin (KUREYŞ, MEKKE) ortak çerçevesini izler.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 442-443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir başka anlatıma göre Kusay ömrünün sonuna doğru görevleri iki oğlu arasında kendisi paylaştırdı: hicâbe, Dârünnedve ve livâ Abdüddâr'a; sikâye, rifâde ve kıyâde Abdümenâf'a verildi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Sadettin Ünal, \"KÂBE\" (bölüm 1), c. 24, s. 19 (İstanbul 2001)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b01-015",
+      "ifade": "Mekke tarıma elverişli olmadığından Kureyş geçimini ticaretle sağlıyordu; Mekke'nin saldırı korkusu olmadan gelinebilen kutsal bir yer (harem) oluşu şehrin ticaret merkezi olarak gelişmesine imkân verdi.",
+      "guc": "guclu",
+      "gerekce": "KUREYŞ ve MEKKE maddeleri aynı bilgiyi verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-016",
+      "ifade": "Hz. Muhammed'in (s.a.v.) büyük dedesi Hâşim b. Abdümenâf ve kardeşleri komşu devletlerle ticaret antlaşmaları, ticaret yolu üzerindeki kabilelerle saldırmazlık antlaşmaları yaptılar; Kureyş bu sayede kışın Yemen ve Habeşistan'a, yazın Suriye ve Anadolu'ya güven içinde ticaret yolculukları yapmaya başladı.",
+      "guc": "guclu",
+      "gerekce": "KUREYŞ maddesi antlaşmaları Hâşim ile kardeşleri Muttalib, Abdüşems ve Nevfel'e birlikte nisbet eder, yolculukların yönlerini verir. MEKKE maddesi Hâşim'in antlaşmalarla ticareti genişlettiğini, yönleri ve Hâşim'in Hz. Muhammed'in büyük dedesi olduğunu yazar. HÂŞİM maddesi yolculukların ilk defa Hâşim tarafından düzenlendiğini söyler; bu ayrıntı tek D kaynakta, klasik dayanağı gösterilmeden geçtiği için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "İbrahim Sarıçam – Mustafa Öz, \"HÂŞİM (Benî Hâşim)\", c. 16, s. 403 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-017",
+      "ifade": "Kur'an'daki Kureyş sûresi, kış ve yaz yolculukları kolaylaştırılan Kureyş'e, kendilerini açlıktan doyuran ve korkudan emin kılan Kâbe'nin Rabbine kulluk etmelerini söyler.",
+      "guc": "kesin",
+      "gerekce": "Kureyş 106/1-4; anlatımdaki alıntı Diyanet Vakfı mealinden birebir. KUREYŞ maddesi bu yolculukların (îlâf) sûrenin konusu olduğunu belirtir.",
+      "kaynaklar": [
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "Kureyş 106/1-4 (mushaf s. 602)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-018",
+      "ifade": "Arap kabile toplumunda, özellikle bedevîler arasında, toplumsal bağ kan bağına dayanırdı; herkes kendi kabilesine körü körüne bağlıydı (asabiyet), suçun bireyselliği kabul edilmez, kan davaları sürüp giderdi. Kabilesinden ayrılan biri antlaşmayla başka bir kabileye sığınabilir (câr) ya da onun müttefiki (halîf) olabilirdi.",
+      "guc": "guclu",
+      "gerekce": "Hadislerle İslâm bu yapıyı bedevî kabileler için anlatır (şehirli hadarîleri ayrı tutar). CÂHİLİYE maddesi \"Câhiliye davası\"nı, yani kabilenin haklı haksız demeden çağıranın yardımına koşmasını ve kan davasını genel olarak anlatır.",
+      "kaynaklar": [
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, dipnot 980, 983 (PDF s. 314)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"CÂHİLİYE\", c. 7, s. 18 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-019",
+      "ifade": "Sonradan Müslüman olan Ca'fer b. Ebû Tâlib, Habeş hükümdarına İslâm'dan önceki hallerini anlatırken putlara taptıklarını, akrabalık bağlarını kopardıklarını, komşuya kötülük ettiklerini ve güçlülerin zayıfları ezdiğini söyledi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 219) Ca'fer'in Necâşî'ye konuşmasını aktarır (tarama OCR'ı düzeltilmemiş; sayfa başındaki basılı numara taramadan kontrol edilmeli). CÂHİLİYE maddesi aynı sözleri İbn Hişâm, I, 335-336 atfıyla Türkçe verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 219",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"CÂHİLİYE\", c. 7, s. 18 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-020",
+      "ifade": "Hz. Muhammed (s.a.v.), \"İnsanların Câhiliye devrinde hayırlı olanları İslâm devrinde de hayırlıdır\" demiştir.",
+      "guc": "kesin",
+      "gerekce": "CÂHİLİYE maddesi hadisi Buhârî, Enbiyâ 8 ve Menâkıb 1 atfıyla bu Türkçe metinle verir. Buhârî atfı yalnız bu maddede görüldü, hadis numarası yok; tam metin ve numara asıl eserden kontrol edilecek. Anlatımdaki metin maddedeki haliyledir.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Enbiyâ, 8; Menâkıb, 1 — CÂHİLİYE maddesinde görüldüğü haliyle",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"CÂHİLİYE\", c. 7, s. 18 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-021",
+      "ifade": "Hâşim'in oğlu Abdülmuttalib, Cürhümlüler'in kapatıp yerini belirsiz bıraktığı Zemzem Kuyusu'nu yeniden halkın hizmetine sundu; hacılara su ve yemek sağlama (sikâye, rifâde) görevleri ona geçti; Kureyş aralarındaki meselelerde onun görüşüne başvururdu.",
+      "guc": "guclu",
+      "gerekce": "HÂŞİM maddesi bu bilgileri birlikte verir; KUREYŞ maddesi sikâye ve rifâdenin Hâşim'den oğlu Abdülmuttalib'e geçtiğini yazar; MEKKE maddesi Hâşimoğulları'nın lideri Abdülmuttalib'in Zemzem'i yeniden açması sebebiyle seçkin bir konumda olduğunu yazar. Zemzem'in yeniden açılışının ayrıntıları sonraki bölümlerde anlatılacak.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "İbrahim Sarıçam – Mustafa Öz, \"HÂŞİM (Benî Hâşim)\", c. 16, s. 403-404 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 442-443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b01-022",
+      "ifade": "Hz. Muhammed (s.a.v.), Câhiliye'de yaptığı iyilikleri sürdürmesini isteyerek Sâib adlı bir sahâbîye misafiri ağırlamasını, yetime ikram etmesini ve komşusuna iyi davranmasını öğütledi.",
+      "guc": "guclu",
+      "gerekce": "CÂHİLİYE maddesi bu sözü Müsned, III, 425 atfıyla Türkçe verir. Müsned kaynakçada yok; söz şimdilik yalnız bu maddeden görüldü. Politika 2.1 istisnası: söz yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır. Klasik dayanağı (Müsned, III, 425) maddede gösterilmiştir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"CÂHİLİYE\", c. 7, s. 18 (İstanbul 1993)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

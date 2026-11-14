@@ -6,6 +6,7 @@
     "yakinlik": "",
     "ozet": "Kâbe'nin yeniden yapıldığı yıl otuz beş yaşındaydı. Kureyş vahiyden önce de ona el-Emîn, yani güvenilir derdi.",
     "bolumler": [
+      "b01-cahiliye-mekkesi",
       "b09-hakem",
       "b10-hira"
     ],
@@ -71,11 +72,13 @@
     "ad": "Abdülmuttalib",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) dedesi",
-    "ozet": "Zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+    "ozet": "Zemzem kuyusunu yeniden açtı, hacılara su ve yemek sağlama görevini üstlendi; Kureyş ona danışırdı. Zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
     "bolumler": [
+      "b01-cahiliye-mekkesi",
       "b10-hira"
     ],
     "iddialar": [
+      "i-b01-021",
       "i-b10-002"
     ]
   },
@@ -91,6 +94,102 @@
     "iddialar": [
       "i-b10-006",
       "i-b10-010"
+    ]
+  },
+  {
+    "id": "hz-ibrahim",
+    "ad": "Hz. İbrâhim",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Eşi Hâcer'i ve oğlu İsmâil'i Mekke vadisine yerleştirdi; oğluyla birlikte Kâbe'nin temellerini yükseltti.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-002",
+      "i-b01-004"
+    ]
+  },
+  {
+    "id": "hz-ismail",
+    "ad": "Hz. İsmâil",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Hz. İbrâhim'in oğlu. Mekke'de Cürhümlülerle akraba oldu; babasıyla birlikte Kâbe'nin temellerini yükseltti.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-003",
+      "i-b01-004"
+    ]
+  },
+  {
+    "id": "hacer",
+    "ad": "Hâcer",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Hz. İbrâhim'in eşi, Hz. İsmâil'in annesi. Cürhüm kabilesinin Mekke'ye yerleşmesine izin verdi.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-002",
+      "i-b01-003"
+    ]
+  },
+  {
+    "id": "amr-b-luhay",
+    "ad": "Amr b. Luhay",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Huzâa kabilesinden. Mekke'nin ve Kâbe'nin idaresini ele alınca putperestliği yaydı.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-007"
+    ]
+  },
+  {
+    "id": "kusay-b-kilab",
+    "ad": "Kusay b. Kilâb",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kureyş'i Mekke'de toplayıp Mekke'nin ve Kâbe'nin yönetimini Kureyş'e kazandırdı; Dârünnedve'yi yaptırdı.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-010",
+      "i-b01-012",
+      "i-b01-013"
+    ]
+  },
+  {
+    "id": "hasim-b-abdumenaf",
+    "ad": "Hâşim b. Abdümenâf",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) büyük dedesi",
+    "ozet": "Kardeşleriyle birlikte komşu devletlerle ve ticaret yolu üzerindeki kabilelerle antlaşmalar yaptı; Kureyş'in kış ve yaz ticaret yolculukları bu sayede güvenli hâle geldi.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-016"
+    ]
+  },
+  {
+    "id": "cafer-b-ebu-talib",
+    "ad": "Ca'fer b. Ebû Tâlib",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Habeş hükümdarına İslâm'dan önceki Mekke toplumunu anlattı.",
+    "bolumler": [
+      "b01-cahiliye-mekkesi"
+    ],
+    "iddialar": [
+      "i-b01-019"
     ]
   }
 ]
