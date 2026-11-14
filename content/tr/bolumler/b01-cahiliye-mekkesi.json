@@ -481,7 +481,90 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan: iki taraf, aralarında boş alanla karşı karşıya duruyor; hakem kararı beklenir. Silah ve çarpışma yok.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-aksam.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "kalabalik",
+                "dosya": "b01-iki-ittifak.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.7,
+                "ayar": {
+                  "sayi": 8,
+                  "y": 0.8,
+                  "olcek": 0.05,
+                  "x1": 0.15,
+                  "x2": 0.85,
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.36,
+                    "olcek": 1.25
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Uzak plan: vadinin ortasında hurma dallarıyla örtülü alçak Kâbe; yönetim Kureyş'e geçti.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-aksam.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "kabe-ortulu",
+                "dosya": "kabe-ortulu.webp",
+                "yerTutucu": "kabe-alcak",
+                "derinlik": 0.55,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.501,
+                    "y": 0.665,
+                    "olcek": 0.269
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s07.mp3",
@@ -581,7 +664,65 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Yakın plan: Dârünnedve'nin kapısı ve önünde toplanan Kureyşliler; kapı sağdaki Kâbe'ye bakar.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "kabe-ortulu",
+                "dosya": "kabe-ortulu.webp",
+                "yerTutucu": "kabe-alcak",
+                "derinlik": 0.55,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.88,
+                    "y": 0.6,
+                    "olcek": 0.32
+                  }
+                }
+              },
+              {
+                "id": "kalabalik",
+                "dosya": "b01-darunnedve.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.7,
+                "ayar": {
+                  "sayi": 4,
+                  "y": 0.8,
+                  "olcek": 0.06,
+                  "x1": 0.25,
+                  "x2": 0.4,
+                  "gorsel": {
+                    "x": 0.75,
+                    "y": 0.12,
+                    "olcek": 1.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s08.mp3",
@@ -870,7 +1011,89 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan: kervanın önü; yüklü develer ve yürüyen tüccarlar sağa doğru ilerler.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-safak.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "kalabalik",
+                "dosya": "b01-kervan-cikis.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "sayi": 10,
+                  "y": 0.72,
+                  "olcek": 0.035,
+                  "x1": 0.45,
+                  "x2": 0.95,
+                  "gorsel": {
+                    "x": 0.75,
+                    "y": 0.05,
+                    "olcek": 2.2
+                  }
+                }
+              },
+              {
+                "id": "toz",
+                "dosya": "",
+                "yerTutucu": "toz",
+                "derinlik": 0.9
+              }
+            ]
+          },
+          {
+            "parca": 4,
+            "tarif": "Uzak plan: Mekke vadisi ve evler; kervan yolu ufka uzanır.",
+            "kamera": "yukaridan-yukselis",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-safak.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "evler",
+                "dosya": "mekke-evler.webp",
+                "yerTutucu": "evler",
+                "derinlik": 0.4
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s11.mp3",
