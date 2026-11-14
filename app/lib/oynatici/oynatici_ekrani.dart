@@ -16,12 +16,24 @@ import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
 
 class OynaticiEkrani extends ConsumerWidget {
-  const OynaticiEkrani({super.key, required this.bolumId, this.baslangicSahnesi});
+  const OynaticiEkrani({
+    super.key,
+    required this.bolumId,
+    this.baslangicSahnesi,
+    this.baslangicCekimi = 1,
+    this.duraklatilmis = false,
+  });
 
   final String bolumId;
 
   /// 1'den başlar. Verilmezse kayıtlı ilerlemeden (yoksa baştan) başlanır.
   final int? baslangicSahnesi;
+
+  /// Revize için: sahnenin kaçıncı çekiminden (1'den) başlanacağı.
+  final int baslangicCekimi;
+
+  /// Revize için: oynatma durmuş açılır (ekran görüntüsü).
+  final bool duraklatilmis;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -50,6 +62,8 @@ class OynaticiEkrani extends ConsumerWidget {
             baslangicSahnesi: baslangicSahnesi ??
                 ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
                 1,
+            baslangicCekimi: baslangicCekimi,
+            duraklatilmis: duraklatilmis,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
@@ -67,6 +81,8 @@ class Oynatici extends StatefulWidget {
     required this.bolum,
     required this.kaynakca,
     this.baslangicSahnesi = 1,
+    this.baslangicCekimi = 1,
+    this.duraklatilmis = false,
     this.sahneDegisti,
     this.bitti,
     this.sesSureleri = const {},
@@ -82,6 +98,8 @@ class Oynatici extends StatefulWidget {
   final Bolum bolum;
   final Map<String, Eser> kaynakca;
   final int baslangicSahnesi;
+  final int baslangicCekimi;
+  final bool duraklatilmis;
 
   /// Görünen sahne değişince (1'den başlayan numarayla) çağrılır.
   final ValueChanged<int>? sahneDegisti;
@@ -116,7 +134,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     ]);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     final i = (widget.baslangicSahnesi - 1).clamp(0, _plan.sahneler.length - 1);
-    _an = _plan.sahneler[i].bas;
+    _an = widget.baslangicCekimi > 1
+        ? _plan.cekimBasi(i, widget.baslangicCekimi - 1)
+        : _plan.sahneler[i].bas;
+    _oynuyor = !widget.duraklatilmis;
     _ticker = createTicker(_tik)..start();
     // Uygulama arka plana geçince oynatma (ve ses) durur.
     _yasamDongusu = AppLifecycleListener(onHide: () {
@@ -228,26 +249,26 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
             children: [
               CustomPaint(
                 painter: SahneCizici(
-                  sahne: konum.sahne.sahne,
-                  ilerleme: konum.ilerleme,
+                  gorsel: konum.cekim.gorsel,
+                  ilerleme: konum.cekimIlerleme,
                   zaman: _an,
                   gorseller: _gorseller,
                 ),
               ),
-              if (konum.gelen != null)
+              if (konum.gelenCekim != null)
                 Opacity(
                   opacity: konum.gecisOrani,
                   child: CustomPaint(
                     painter: SahneCizici(
-                      sahne: konum.gelen!.sahne,
-                      ilerleme: konum.gelenIlerleme,
+                      gorsel: konum.gelenCekim!.gorsel,
+                      ilerleme: konum.gelenCekimIlerleme,
                       zaman: _an,
                       gorseller: _gorseller,
                     ),
                   ),
                 ),
               if (_altyazi && konum.parca != null) _Altyazi(parca: konum.parca!, an: _an),
-              if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne),
+              if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
               if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
               if (_bitti)
                 _BolumSonu(
@@ -323,7 +344,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                 flex: 2,
                 child: Text(
                   [
-                    if (konum.sahne.sahne.gorsel.yerTutucuVar) m.yerTutucuUyari,
+                    if (konum.cekim.gorsel.yerTutucuVar) m.yerTutucuUyari,
                     if (!konum.sahne.sesli) m.sesYok,
                   ].join(' '),
                   style: const TextStyle(color: Colors.white54, fontSize: 11),
@@ -504,14 +525,16 @@ class _Altyazi extends StatelessWidget {
 
 /// Revize için: sahnenin içerikteki görsel tarifi, kamerası ve katmanları.
 class _TarifPaneli extends StatelessWidget {
-  const _TarifPaneli({required this.sahne});
+  const _TarifPaneli({required this.sahne, required this.cekim});
 
   final Sahne sahne;
+  final CekimZamani cekim;
 
   @override
   Widget build(BuildContext context) {
     final m = Metinler.of(context);
-    final g = sahne.gorsel;
+    final g = cekim.gorsel;
+    final cekimSayisi = sahne.cekimler.length;
     const stil = TextStyle(color: Colors.white, fontSize: 12, height: 1.35);
     return Positioned(
       left: 12,
@@ -530,7 +553,7 @@ class _TarifPaneli extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(sahne.id, style: const TextStyle(color: Color(0xFFF2C46B), fontWeight: FontWeight.bold)),
+              Text(cekimSayisi > 1 ? '${sahne.id} · ${cekim.sira + 1}/$cekimSayisi' : sahne.id, style: const TextStyle(color: Color(0xFFF2C46B), fontWeight: FontWeight.bold)),
               const SizedBox(height: 4),
               Text(g.tarif),
               const SizedBox(height: 6),

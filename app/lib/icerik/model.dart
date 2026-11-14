@@ -68,19 +68,37 @@ class Gorsel {
     required this.saat,
     required this.katmanlar,
     required this.kamera,
+    this.parca = 0,
+    this.cekimler = const [],
   });
 
-  factory Gorsel.fromJson(Map<String, dynamic> j) => Gorsel(
-        tarif: _metin(j, 'tarif'),
-        saat: _metin(j, 'saat').isEmpty ? 'gunduz' : _metin(j, 'saat'),
-        katmanlar: _nesneler(j, 'katmanlar').map(Katman.fromJson).toList(),
-        kamera: _metin(j, 'kamera'),
-      );
+  /// [ustSaat]: çekimde `saat` verilmezse sahnenin saati kullanılır.
+  factory Gorsel.fromJson(Map<String, dynamic> j, {String ustSaat = 'gunduz'}) {
+    final saat = _metin(j, 'saat').isEmpty ? ustSaat : _metin(j, 'saat');
+    return Gorsel(
+      tarif: _metin(j, 'tarif'),
+      saat: saat,
+      katmanlar: _nesneler(j, 'katmanlar').map(Katman.fromJson).toList(),
+      kamera: _metin(j, 'kamera'),
+      parca: (j['parca'] as num?)?.toInt() ?? 0,
+      cekimler: [
+        for (final c in _nesneler(j, 'cekimler')) Gorsel.fromJson(c, ustSaat: saat),
+      ],
+    );
+  }
 
   final String tarif;
   final String saat;
   final List<Katman> katmanlar;
   final String kamera;
+
+  /// Çekimin başladığı anlatım parçasının sırası (0'dan). Sahnenin ana
+  /// görselinde 0'dır.
+  final int parca;
+
+  /// Sahnenin ana görselinden sonra gelen çekimler (docs/ICERIK_SEMASI.md).
+  /// Her biri kendi `parca`sında başlar, kendi kamera hareketini yapar.
+  final List<Gorsel> cekimler;
 
   /// Görsel üretilmeyen, oynatıcının kendisi çizdiği efekt katmanları.
   static const efektler = {'toz', 'nur'};
@@ -133,6 +151,9 @@ class Sahne {
 
   /// Sahnede geçen şahısların `sahislar.json` kimlikleri.
   final List<String> sahislar;
+
+  /// Ana görsel ve ardından gelen çekimler, oynatılma sırasıyla.
+  List<Gorsel> get cekimler => [gorsel, ...gorsel.cekimler];
 }
 
 class Atif {

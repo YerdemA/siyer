@@ -47,6 +47,11 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
   - `ayar`: yer tutucuya özel isteğe bağlı ayarlar (konum, ölçek, sayı). Gerçek görsel gelince gereksizleşir.
     - İstisna `ayar.gorsel`: `{ "x", "y", "olcek" }`. Tek nesne görselini (ör. Kâbe) tam kadraj yerine yerleştirir: görselin merkezi kadrajda (`x`, `y`) noktasına (0–1) gelir, genişliği kadraj genişliğinin `olcek` katıdır, yüksekliği görselin oranından gelir. Böyle görseller `tools/gorsel_katman.py --sigdir` ile kırpılmadan hazırlanır.
 - `kamera`: `yavas-yaklasma`, `yavas-uzaklasma`, `yatay-kayma`, `sabit`, `sabit-gecis`, `yukaridan-yavas-donus`, `yukaridan-yukselis`, `bakis-acisi-yuruyus`, `bakis-acisi-giris`, `donus-kapiya`. Tanımları: `app/lib/oynatici/kamera.dart`.
+- `cekimler[]` (isteğe bağlı): Uzun sahnede görüntü tek kalmasın diye ana görselden sonra gelen çekimler. Her biri `{ "parca", "tarif", "saat", "katmanlar", "kamera" }`. `gorsel`'in kendisi ilk çekimdir.
+  - `parca`: Çekimin başladığı anlatım parçasının sırası (0'dan sayılır; 1 ile parça sayısı − 1 arasında olmalı, çekimden çekime artmalı). Çekim o cümle başlarken tam görünür; 0,8 sn'lik çapraz geçiş cümleden hemen önce biter. Sesli sahnede de aynı kural geçerlidir, parça süreleri sesten gelir.
+  - `saat` verilmezse sahnenin saati kullanılır. Kamera her çekimde baştan başlar.
+  - Önceki çekime geçiş süresinden yakın düşen ya da sahne sonuna sığmayan çekim oynatıcıda atlanır; doğrulama betiği geçersiz `parca`'yı hata sayar.
+  - Revize için: `#/bolum/<id>?sahne=3&cekim=2&dur=1` 3. sahnenin 2. çekiminde durmuş açılır.
 
 ### İddia
 

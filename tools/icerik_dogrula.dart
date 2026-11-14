@@ -459,16 +459,35 @@ BolumOzeti bolumuDenetle(
     if (gorsel is Map<String, dynamic>) {
       // Görseller dilden bağımsızdır: content/<dil>/bolumler/x.json → content/gorseller/
       final gorselKlasoru = File(yol).parent.parent.parent.path;
-      for (final k in liste(gorsel, 'katmanlar', yer, rapor, zorunlu: false)) {
-        if (k is! Map<String, dynamic>) continue;
-        final dosya = metin(k, 'dosya');
-        if (dosya.isEmpty) {
-          // Efekt katmanlarını oynatıcı kendisi çizer; görsel beklenmez
-          // (app/lib/icerik/model.dart → Gorsel.efektler ile aynı liste).
-          if (efektKatmanlari.contains(metin(k, 'yerTutucu'))) continue;
-          yerTutucuKatman++;
-        } else if (!File('$gorselKlasoru/gorseller/$dosya').existsSync()) {
-          rapor.yayinHatasi(yer, 'katman görseli bulunamadı: gorseller/$dosya');
+      // Ana görsel ve çekimleri (docs/ICERIK_SEMASI.md → Çekimler).
+      final cekimler = <(String, Map<String, dynamic>)>[(yer, gorsel)];
+      final parcaSayisi = anlatim.length;
+      var oncekiParca = 0;
+      for (final (j, c) in nesneler(liste(gorsel, 'cekimler', yer, rapor, zorunlu: false), '$yer cekimler', rapor)) {
+        final cYer = '$yer cekimler[$j]';
+        final parca = c['parca'];
+        if (parca is! int || parca < 1 || parca >= parcaSayisi) {
+          rapor.hata(cYer, '`parca` 1 ile ${parcaSayisi - 1} arasında bir sayı olmalı: $parca');
+        } else if (parca <= oncekiParca) {
+          rapor.hata(cYer, '`parca` öncekinden büyük olmalı: $parca');
+        } else {
+          oncekiParca = parca;
+        }
+        if (metin(c, 'tarif').isEmpty) rapor.yayinHatasi(cYer, '`tarif` boş');
+        cekimler.add((cYer, c));
+      }
+      for (final (gYer, g) in cekimler) {
+        for (final k in liste(g, 'katmanlar', gYer, rapor, zorunlu: false)) {
+          if (k is! Map<String, dynamic>) continue;
+          final dosya = metin(k, 'dosya');
+          if (dosya.isEmpty) {
+            // Efekt katmanlarını oynatıcı kendisi çizer; görsel beklenmez
+            // (app/lib/icerik/model.dart → Gorsel.efektler ile aynı liste).
+            if (efektKatmanlari.contains(metin(k, 'yerTutucu'))) continue;
+            yerTutucuKatman++;
+          } else if (!File('$gorselKlasoru/gorseller/$dosya').existsSync()) {
+            rapor.yayinHatasi(gYer, 'katman görseli bulunamadı: gorseller/$dosya');
+          }
         }
       }
     }

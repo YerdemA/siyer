@@ -16,6 +16,7 @@ class ZamanAyari {
     this.sahneBasi = 0.8,
     this.sahneSonu = 1.2,
     this.gecis = 0.9,
+    this.cekimGecisi = 0.8,
   });
 
   /// Saniyede okunan kelime (sakin belgesel anlatımı ≈ 140 kelime/dk).
@@ -31,6 +32,10 @@ class ZamanAyari {
 
   /// Sahneler arası çapraz geçiş süresi (bir sonraki sahnenin içine taşar).
   final double gecis;
+
+  /// Sahne içinde çekimler arası çapraz geçiş; çekimin başladığı parçadan
+  /// hemen önce biter.
+  final double cekimGecisi;
 }
 
 class ParcaZamani {
@@ -40,14 +45,28 @@ class ParcaZamani {
   final double son;
 }
 
+/// Sahne içindeki bir çekim: [bas] anında tam görünür (geçişi [bas]'tan
+/// önce biter), [son]'da yerini sonrakine bırakır.
+class CekimZamani {
+  const CekimZamani(this.sira, this.gorsel, this.bas, this.son);
+  final int sira;
+  final Gorsel gorsel;
+  final double bas;
+  final double son;
+}
+
 class SahneZamani {
-  const SahneZamani(this.sira, this.sahne, this.bas, this.son, this.parcalar,
-      {this.sesBas = 0, this.sesSure});
+  SahneZamani(this.sira, this.sahne, this.bas, this.son, this.parcalar,
+      {this.sesBas = 0, this.sesSure, List<CekimZamani>? cekimler})
+      : cekimler = cekimler ?? [CekimZamani(0, sahne.gorsel, bas, son)];
   final int sira;
   final Sahne sahne;
   final double bas;
   final double son;
   final List<ParcaZamani> parcalar;
+
+  /// En az bir öğe: ana görsel. Çekim tanımlanmadıysa tek öğedir.
+  final List<CekimZamani> cekimler;
 
   /// Anlatım sesinin bölüm zamanındaki başlangıcı; [sesSure] null ise ses yok.
   final double sesBas;
@@ -73,6 +92,10 @@ class Konum {
     this.gelenIlerleme = 0,
     this.gecisOrani = 0,
     this.parca,
+    required this.cekim,
+    this.cekimIlerleme = 0,
+    this.gelenCekim,
+    this.gelenCekimIlerleme = 0,
   });
 
   final SahneZamani sahne;
@@ -82,9 +105,18 @@ class Konum {
   final SahneZamani? gelen;
   final double gelenIlerleme;
 
-  /// 0 = yalnız [sahne], 1 = tamamen [gelen].
+  /// 0 = yalnız [cekim], 1 = tamamen [gelenCekim] (sahne ya da çekim geçişi).
   final double gecisOrani;
   final ParcaZamani? parca;
+
+  /// Ekranda çizilen çekim ve kendi süresi içindeki ilerlemesi (kamera).
+  final CekimZamani cekim;
+  final double cekimIlerleme;
+
+  /// Geçişteyse gelen çekim: aynı sahnenin sonraki çekimi ya da sonraki
+  /// sahnenin ilk çekimi.
+  final CekimZamani? gelenCekim;
+  final double gelenCekimIlerleme;
 }
 
 class ZamanPlani {
@@ -124,9 +156,31 @@ class ZamanPlani {
       }
       t += ayar.sahneSonu;
       sahneler.add(SahneZamani(i, sahne, bas, t, parcalar,
-          sesBas: sesBas, sesSure: sesSure != null && sesSure > 0 ? sesSure : null));
+          sesBas: sesBas,
+          sesSure: sesSure != null && sesSure > 0 ? sesSure : null,
+          cekimler: _cekimler(sahne, bas, t, parcalar, ayar)));
     }
     return ZamanPlani._(sahneler, t, ayar);
+  }
+
+  /// Çekim başları: ana görsel sahne başında, diğerleri kendi parçalarının
+  /// başında. Geçerli parçası olmayan ya da öncekine geçiş süresinden yakın
+  /// düşen çekim atlanır; böylece geçişler üst üste binmez.
+  static List<CekimZamani> _cekimler(
+      Sahne sahne, double bas, double son, List<ParcaZamani> parcalar, ZamanAyari ayar) {
+    final baslar = <(Gorsel, double)>[(sahne.gorsel, bas)];
+    for (final c in sahne.gorsel.cekimler) {
+      if (c.parca <= 0 || c.parca >= parcalar.length) continue;
+      final b = parcalar[c.parca].bas;
+      // Sahne sonu geçişine de yer kalsın.
+      if (b - ayar.cekimGecisi < baslar.last.$2 + ayar.cekimGecisi) continue;
+      if (b > son - ayar.gecis - ayar.cekimGecisi) continue;
+      baslar.add((c, b));
+    }
+    return [
+      for (final (k, (g, b)) in baslar.indexed)
+        CekimZamani(k, g, b, k + 1 < baslar.length ? baslar[k + 1].$2 : son),
+    ];
   }
 
   static int kelimeSayisi(String metin) =>
@@ -156,6 +210,20 @@ class ZamanPlani {
     return ((an - bas) / (son - bas)).clamp(0.0, 1.0);
   }
 
+  /// Çekimin kamera ilerlemesi: görünmeye başladığı andan (geçiş dahil)
+  /// bittiği ana kadar 0–1. Tek çekimli sahnede sahne ilerlemesiyle aynıdır.
+  double _cekimIlerleme(SahneZamani s, CekimZamani c, double an) {
+    final bas = c.sira == 0 ? gorunurAralik(s).$1 : c.bas - ayar.cekimGecisi;
+    if (c.son <= bas) return 1;
+    return ((an - bas) / (c.son - bas)).clamp(0.0, 1.0);
+  }
+
+  /// Sahnenin [cekim]. çekiminin başladığı an (`?cekim=` ile atlamak için).
+  double cekimBasi(int sahneSirasi, int cekim) {
+    final s = sahneler[sahneSirasi.clamp(0, sahneler.length - 1)];
+    return s.cekimler[cekim.clamp(0, s.cekimler.length - 1)].bas;
+  }
+
   Konum konum(double an) {
     an = an.clamp(0.0, toplam);
     final asil = sahneler[sahneSirasi(an)];
@@ -163,9 +231,15 @@ class ZamanPlani {
     for (final p in asil.parcalar) {
       if (an >= p.bas && an < p.son) parca = p;
     }
+    var cekim = asil.cekimler.first;
+    for (final c in asil.cekimler) {
+      if (an >= c.bas) cekim = c;
+    }
+    final cekimIlerleme = _cekimIlerleme(asil, cekim, an);
     final sonraki = asil.sira + 1 < sahneler.length ? sahneler[asil.sira + 1] : null;
     final gecisBasi = asil.son - ayar.gecis;
     if (sonraki != null && an >= gecisBasi) {
+      final gelenCekim = sonraki.cekimler.first;
       return Konum(
         sahne: asil,
         ilerleme: _ilerleme(asil, an),
@@ -173,8 +247,35 @@ class ZamanPlani {
         gelenIlerleme: _ilerleme(sonraki, an),
         gecisOrani: ((an - gecisBasi) / ayar.gecis).clamp(0.0, 1.0),
         parca: parca,
+        cekim: cekim,
+        cekimIlerleme: cekimIlerleme,
+        gelenCekim: gelenCekim,
+        gelenCekimIlerleme: _cekimIlerleme(sonraki, gelenCekim, an),
       );
     }
-    return Konum(sahne: asil, ilerleme: _ilerleme(asil, an), parca: parca);
+    final ci = cekim.sira + 1;
+    if (ci < asil.cekimler.length) {
+      final gelenCekim = asil.cekimler[ci];
+      final cekimGecisBasi = gelenCekim.bas - ayar.cekimGecisi;
+      if (an >= cekimGecisBasi) {
+        return Konum(
+          sahne: asil,
+          ilerleme: _ilerleme(asil, an),
+          gecisOrani: ((an - cekimGecisBasi) / ayar.cekimGecisi).clamp(0.0, 1.0),
+          parca: parca,
+          cekim: cekim,
+          cekimIlerleme: cekimIlerleme,
+          gelenCekim: gelenCekim,
+          gelenCekimIlerleme: _cekimIlerleme(asil, gelenCekim, an),
+        );
+      }
+    }
+    return Konum(
+      sahne: asil,
+      ilerleme: _ilerleme(asil, an),
+      parca: parca,
+      cekim: cekim,
+      cekimIlerleme: cekimIlerleme,
+    );
   }
 }

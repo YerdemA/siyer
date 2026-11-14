@@ -5,17 +5,17 @@ import 'gorsel_onbellek.dart';
 import 'kamera.dart';
 import 'yer_tutucu.dart';
 
-/// Bir sahneyi, kamera hareketini katmanlara derinlikleriyle orantılı
-/// uygulayarak çizer (parallax).
+/// Bir sahnenin bir çekimini, kamera hareketini katmanlara derinlikleriyle
+/// orantılı uygulayarak çizer (parallax).
 class SahneCizici extends CustomPainter {
   SahneCizici({
-    required this.sahne,
+    required this.gorsel,
     required this.ilerleme,
     required this.zaman,
     this.gorseller,
   }) : super(repaint: gorseller);
 
-  final Sahne sahne;
+  final Gorsel gorsel;
   final double ilerleme;
   final double zaman;
 
@@ -48,7 +48,7 @@ class SahneCizici extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final g = sahne.gorsel;
+    final g = gorsel;
     final kamera = kameraHesapla(g.kamera, ilerleme, zaman);
     canvas.clipRect(Offset.zero & size);
     for (final katman in g.katmanlar) {
@@ -63,16 +63,16 @@ class SahneCizici extends CustomPainter {
       canvas.rotate(kamera.donus * etki);
       canvas.scale(1 + (kamera.yakinlik - 1) * etki);
       canvas.translate(-size.width / 2, -size.height / 2);
-      final gorsel = gorseller?.al(katman.dosya);
-      if (gorsel != null) {
+      final resim = gorseller?.al(katman.dosya);
+      if (resim != null) {
         paintImage(
           canvas: canvas,
           rect: gorselAlani(
             katman,
             size,
-            gorsel.width / gorsel.height,
+            resim.width / resim.height,
           ),
-          image: gorsel,
+          image: resim,
           fit: BoxFit.cover,
           filterQuality: FilterQuality.medium,
         );
@@ -85,7 +85,7 @@ class SahneCizici extends CustomPainter {
 
   @override
   bool shouldRepaint(SahneCizici eski) =>
-      eski.sahne != sahne ||
+      eski.gorsel != gorsel ||
       eski.ilerleme != ilerleme ||
       eski.zaman != zaman ||
       eski.gorseller != gorseller;

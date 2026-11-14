@@ -31,6 +31,9 @@ final _yonlendirici = GoRouter(
         bolumId: durum.pathParameters['id']!,
         // Verilmezse kayıtlı ilerlemeden başlanır.
         baslangicSahnesi: int.tryParse(durum.uri.queryParameters['sahne'] ?? ''),
+        // ?cekim=2 → sahnenin 2. çekiminden; ?dur=1 → durmuş açılır.
+        baslangicCekimi: int.tryParse(durum.uri.queryParameters['cekim'] ?? '') ?? 1,
+        duraklatilmis: durum.uri.queryParameters['dur'] == '1',
       ),
     ),
   ],

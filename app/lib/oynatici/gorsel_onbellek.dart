@@ -33,10 +33,13 @@ class GorselOnbellek extends ChangeNotifier {
 
   bool bulunamadi(String dosya) => _bulunamadi.contains(dosya);
 
-  /// Sahneye girmeden önce görsellerini yüklemeye başlar.
+  /// Sahneye girmeden önce bütün çekimlerinin görsellerini yüklemeye başlar;
+  /// çekim değişince yer tutucu görünmesin.
   void onYukle(Sahne sahne) {
-    for (final k in sahne.gorsel.katmanlar) {
-      al(k.dosya);
+    for (final c in sahne.cekimler) {
+      for (final k in c.katmanlar) {
+        al(k.dosya);
+      }
     }
   }
 
