@@ -16,7 +16,8 @@
       "Dârünnedve'nin biçimi: kaynakta yalnız yeri ve kapının Kâbe'ye bakması var; sade, süssüz bir ev olarak çizilir.",
       "Kervan yükleri, çadır biçimleri: ayrıntı verilmez, uzak plan."
     ],
-    "kabe_notu": "Kâbe katmanları: Kusay öncesi ve Abdülmuttalib dönemi sahneleri b09'daki çatısız kabe-alcak'ı kullanır (İbn Hişâm s. 122: çatısız). Kusay dönemi (s08-s10) için KÂBE c. 24 s. 16'ya göre üstü hurma dallarıyla örtülmüş kabe-ortulu üretilir. İki kaynak farklı dönemleri anlattığı için ikisi de kullanılır."
+    "kabe_notu": "Kâbe katmanları: Kusay öncesi ve Abdülmuttalib dönemi sahneleri b09'daki çatısız kabe-alcak'ı kullanır (İbn Hişâm s. 122: çatısız). Kusay dönemi (s08-s10) için KÂBE c. 24 s. 16'ya göre üstü hurma dallarıyla örtülmüş kabe-ortulu üretilir. İki kaynak farklı dönemleri anlattığı için ikisi de kullanılır.",
+    "cekim_kurali": "Tur 2 yakın plan katmanları sahnenin uzak görselinin üstüne çekim olarak eklenir: `cekim.kadraj` ana katmanları tutarlı büyütür (arka plandaki dağ, ev, Kâbe aynı kalır), `cekim.gizle` uzak plandaki küçük figürleri çıkarır. Giysi ve renk tutarlılığı için uzak görsel `ekle` ile mesaja eklenir."
   },
   "istemler": [
     {
@@ -150,6 +151,328 @@
       "istem": "A single elderly man in a simple robe and a head cloth that covers the sides of his head, standing still, seen strictly from behind, one hand resting on a walking staff; no part of his face, cheek or beard visible. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
       "kaynak": "HÂŞİM s. 403-404; MEKKE s. 557.",
       "not": "Abdülmuttalib; b10'da yanak ve sakal kenarı seçilmişti, burada görünmesin. Yerleşim ayar.gorsel ile."
+    },
+    {
+      "id": "b01-s01-kurak",
+      "tur": 2,
+      "dosya": "b01-s01-kurak.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s01"
+      ],
+      "cekim": {
+        "sahne": "b01-s01",
+        "parca": 1,
+        "kamera": "yatay-kayma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.62,
+          "yakinlik": 1.3
+        }
+      },
+      "istem": "Close foreground: a few dry, thorny desert shrubs and scattered stones on cracked sandy ground, filling only the bottom third of the frame; nothing above them. No people, no animals, no water. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s01 parça 1 (kurak, ekime elverişsiz vadi)."
+    },
+    {
+      "id": "b01-s03-curhum",
+      "tur": 2,
+      "dosya": "b01-s03-curhum.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s03"
+      ],
+      "cekim": {
+        "sahne": "b01-s03",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.25,
+          "y": 0.72,
+          "yakinlik": 1.6
+        },
+        "gizle": [
+          "kalabalik"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-curhum-kervan.png",
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. Men of a Yemeni tribe arriving in a bare valley and setting up low dark tents: one man drives a tent peg, another unloads a cloth bundle from a kneeling camel, a third holds a tent pole. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. No women, no children, no well, no water. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s03 parça 1 (Cürhüm vadiye yerleşti). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı.",
+      "not": "Hâcer ve Hz. İsmâil çizilmez: kadın, çocuk ya da kuyu çıkarsa yeniden ürettir."
+    },
+    {
+      "id": "b01-s04-tas",
+      "tur": 2,
+      "dosya": "b01-s04-tas.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s04"
+      ],
+      "cekim": {
+        "sahne": "b01-s04",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.7,
+          "yakinlik": 1.5
+        },
+        "gizle": [
+          "temel"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-temel.png",
+      "istem": "Close-up: the lower courses of a wall of large rough grey stones laid without mortar, rising from sandy ground across the lower half of the frame; a few loose stones at its base and a little dust in the air. No people, no hands, no tools, no shadows of people. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s04 parça 1 (temellerin yükseltilmesi); taş biçimi b01-temel ile aynı.",
+      "not": "Peygamberler çizilmez: kişi, el, gölge ya da ayak izi çıkarsa yeniden ürettir."
+    },
+    {
+      "id": "b01-s05-huzaa",
+      "tur": 2,
+      "dosya": "b01-s05-huzaa.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s05"
+      ],
+      "cekim": {
+        "sahne": "b01-s05",
+        "parca": 2,
+        "kamera": "yatay-kayma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.66,
+          "yakinlik": 1.3
+        }
+      },
+      "istem": "Medium-wide: a column of tribesmen of Khuza'a and Kinana arriving on foot and on camels, walking toward the right across open ground, spears held upright; determined, no fighting, no blood. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s05 parça 2 (Huzâa, Kinâne ile Cürhüm'ü yendi). Savaş çizilmez. Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s06-amr",
+      "tur": 2,
+      "dosya": "b01-s06-amr.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s06"
+      ],
+      "cekim": {
+        "sahne": "b01-s06",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.62,
+          "yakinlik": 1.5
+        }
+      },
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. A man of authority (Amr ibn Luhayy) standing in the left third of the frame in three-quarter view, looking toward the right; his robe and head cloth finer than ordinary people's. On the ground before him fall long dark shadows of tall upright shapes standing outside the frame. Do not show the idols themselves. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s06 parça 1 (putları ilk diken Amr b. Luhay, rivayet). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı. Putların görünüşü kaynakla netleşmedi; yalnız gölgeleri.",
+      "not": "Putun kendisi çıkarsa yeniden ürettir."
+    },
+    {
+      "id": "b01-s07-hakem",
+      "tur": 2,
+      "dosya": "b01-s07-hakem.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s07"
+      ],
+      "cekim": {
+        "sahne": "b01-s07",
+        "parca": 2,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.7,
+          "yakinlik": 1.5
+        },
+        "gizle": [
+          "kalabalik"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-cadirlar.png",
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. An older arbiter (Ya'mur ibn Awf) standing at the center between two groups of men and raising one open hand as he gives his judgment; the two groups stand at the left and right edges, listening. No weapons raised. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s07 parça 2; hakem İbn Hişâm s. 79'a dayanan iddiada. Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s08-nedve-ic",
+      "tur": 2,
+      "dosya": "b01-s08-nedve-ic.webp",
+      "katman": "yakin",
+      "isleme": "opak",
+      "sahneler": [
+        "b01-s08"
+      ],
+      "cekim": {
+        "sahne": "b01-s08",
+        "parca": 3,
+        "kamera": "yavas-yaklasma"
+      },
+      "ekle": "gorsel-ham/b01/b01-darunnedve.png",
+      "istem": "Inside a plain mud-brick council house: elders of Quraysh, men over forty, sitting on mats in a circle along the walls; one speaks with an open hand, the others listen. Daylight comes through a doorway on the right. Plain walls, no decoration, no furniture. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. Fill the whole frame; no green background.",
+      "kaynak": "Anlatım b01-s08 parça 3 (Dârünnedve'de görüşülen işler, kırk yaş şartı). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s09-gruplar",
+      "tur": 2,
+      "dosya": "b01-s09-gruplar.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s09"
+      ],
+      "cekim": {
+        "sahne": "b01-s09",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.7,
+          "yakinlik": 1.4
+        },
+        "gizle": [
+          "kalabalik"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-iki-ittifak.png",
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. Two groups of Quraysh men facing each other, tense: the sons of Abd al-Dar on the left, the sons of Abd Manaf on the right; one man on each side steps forward. Leave the center of the frame empty. No weapons drawn. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s09 parça 1 (Abdüddâroğulları ile Abdümenâfoğulları). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s10-hanif",
+      "tur": 2,
+      "dosya": "b01-s10-hanif.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s10"
+      ],
+      "cekim": {
+        "sahne": "b01-s10",
+        "parca": 3,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.6,
+          "y": 0.6,
+          "yakinlik": 1.4
+        },
+        "gizle": [
+          "siluet-tek"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-hanif.png",
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. A man of Mecca who keeps away from the idols (a hanif), in the right third of the frame, seen in three-quarter view from the side and looking left; calm and thoughtful, head slightly lowered, wearing the same head cloth and plain robe as in the attached image. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s10 parça 3 (Hanîfler). Belirli bir kişi değil; isim verilmez. Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s11-kervan",
+      "tur": 2,
+      "dosya": "b01-s11-kervan.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s11"
+      ],
+      "cekim": {
+        "sahne": "b01-s11",
+        "parca": 2,
+        "kamera": "yatay-kayma",
+        "kadraj": {
+          "x": 0.3,
+          "y": 0.72,
+          "yakinlik": 1.5
+        },
+        "gizle": [
+          "kalabalik"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-kervan-cikis.png",
+      "istem": "Medium shot: Quraysh traders leading a line of loaded camels toward the right; a man in front holds the lead rope, another walks beside a camel; loads are bundles wrapped in cloth and rope. Figures cut at the knees by the lower edge. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s11 parça 2 (Hâşim'in antlaşmaları, ticaret). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı.",
+      "not": "Yük ayrıntısı verilmez."
+    },
+    {
+      "id": "b01-s12-ates",
+      "tur": 2,
+      "dosya": "b01-s12-ates.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s12"
+      ],
+      "cekim": {
+        "sahne": "b01-s12",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.8,
+          "yakinlik": 1.5
+        },
+        "gizle": [
+          "kalabalik"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-konak.png",
+      "istem": "Night, medium shot: men of a desert tribe sitting close together around a small fire, wrapped in cloaks, faces lit warm orange from below; one man speaks, the others listen. Figures cut at the chest by the lower edge. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. No weapons, no blood. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s12 parça 1 (kabile bağı). Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
+    },
+    {
+      "id": "b01-s13-abdulmuttalib",
+      "tur": 2,
+      "dosya": "b01-s13-abdulmuttalib.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s13"
+      ],
+      "cekim": {
+        "sahne": "b01-s13",
+        "parca": 1,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.35,
+          "y": 0.6,
+          "yakinlik": 1.4
+        },
+        "gizle": [
+          "siluet-tek"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-abdulmuttalib-avlu.png",
+      "istem": "Medium close shot of Abd al-Muttalib, leader of the Banu Hashim of Mecca, in the left third of the frame: an elderly, dignified man with a grey beard, in three-quarter view looking right, wearing the same cream head cloth with a dark cord, rust-red shawl and brown robe and holding the same wooden staff as in the attached image; calm, respected bearing. Face visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expression; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s13 parça 1. Yaş: TDV ABDÜLMUTTALİB (yaygın rivayete göre seksen iki yaşında öldü); giysiler uzak çekimdeki görselden. Yüz ayrıntısı kaynakta yok."
+    },
+    {
+      "id": "b01-s13-zemzem",
+      "tur": 2,
+      "dosya": "b01-s13-zemzem.webp",
+      "katman": "yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s13"
+      ],
+      "cekim": {
+        "sahne": "b01-s13",
+        "parca": 2,
+        "kamera": "yavas-yaklasma",
+        "kadraj": {
+          "x": 0.5,
+          "y": 0.66,
+          "yakinlik": 1.5
+        },
+        "gizle": [
+          "siluet-tek"
+        ]
+      },
+      "ekle": "gorsel-ham/b01/b01-abdulmuttalib-avlu.png",
+      "istem": "Medium shot: figures cut at the waist or knees by the lower edge of the frame, heads in the upper-middle part. A group of men re-opening an old, filled-in well: two dig with simple wooden shovels, one lifts a basket of earth, and the rough stones of the well rim are being uncovered; an elderly man in the same clothing as in the attached image watches and directs them. No water spraying, no light. Faces are visible and simply drawn in the same flat paper cut-out style: plain shapes, calm dignified expressions, adult men with short dark beards; not photorealistic, no caricature. {yesil_perde_eki}",
+      "kaynak": "Anlatım b01-s13 parça 2 (Abdülmuttalib Zemzem'i yeniden açtı). Kazı ayrıntısı genel. Görünüş kaynakta betimlenmiyor; sade ve dönemine uygun, belirgin özellik uydurulmadı."
     }
   ],
   "uretimler": []

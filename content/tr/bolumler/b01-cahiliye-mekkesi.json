@@ -107,7 +107,20 @@
             "derinlik": 0.45
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Vadinin dibine yakın bakış: çıplak kum ve taş; ekin yok.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "katmanlar": []
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s02.mp3",
@@ -261,7 +274,23 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Temellerden yukarı, dağlara ve göğe doğru bakış.",
+            "kamera": "yukaridan-yukselis",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.35,
+              "yakinlik": 1.35
+            },
+            "gizle": [
+              "temel"
+            ],
+            "katmanlar": []
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s04.mp3",
@@ -668,59 +697,14 @@
         "cekimler": [
           {
             "parca": 2,
-            "tarif": "Yakın plan: Dârünnedve'nin kapısı ve önünde toplanan Kureyşliler; kapı sağdaki Kâbe'ye bakar.",
+            "tarif": "Yakın plan: Dârünnedve'nin kapısı ve önündeki Kureyşliler; kapı sağdaki Kâbe'ye bakar.",
             "kamera": "yavas-yaklasma",
-            "katmanlar": [
-              {
-                "id": "gok",
-                "dosya": "mekke-gok-gunduz.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
-                "id": "daglar",
-                "dosya": "mekke-daglar.webp",
-                "yerTutucu": "daglar",
-                "derinlik": 0.15
-              },
-              {
-                "id": "zemin",
-                "dosya": "mekke-zemin.webp",
-                "yerTutucu": "zemin",
-                "derinlik": 0.35
-              },
-              {
-                "id": "kabe-ortulu",
-                "dosya": "kabe-ortulu.webp",
-                "yerTutucu": "kabe-alcak",
-                "derinlik": 0.55,
-                "ayar": {
-                  "gorsel": {
-                    "x": 0.88,
-                    "y": 0.6,
-                    "olcek": 0.32
-                  }
-                }
-              },
-              {
-                "id": "kalabalik",
-                "dosya": "b01-darunnedve.webp",
-                "yerTutucu": "kalabalik",
-                "derinlik": 0.7,
-                "ayar": {
-                  "sayi": 4,
-                  "y": 0.8,
-                  "olcek": 0.06,
-                  "x1": 0.25,
-                  "x2": 0.4,
-                  "gorsel": {
-                    "x": 0.75,
-                    "y": 0.12,
-                    "olcek": 1.9
-                  }
-                }
-              }
-            ]
+            "kadraj": {
+              "x": 0.25,
+              "y": 0.62,
+              "yakinlik": 1.9
+            },
+            "katmanlar": []
           }
         ]
       },
@@ -816,7 +800,23 @@
             }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Uzlaşma: iki grubun arasındaki Kâbe yakından.",
+            "kamera": "yavas-uzaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.7
+            },
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": []
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s09.mp3",
@@ -914,7 +914,23 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Kâbe yakından; putlar çizilmez.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.9
+            },
+            "gizle": [
+              "siluet-tek"
+            ],
+            "katmanlar": []
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s10.mp3",
@@ -1015,83 +1031,39 @@
         "cekimler": [
           {
             "parca": 2,
-            "tarif": "Orta plan: kervanın önü; yüklü develer ve yürüyen tüccarlar sağa doğru ilerler.",
+            "tarif": "Orta plan: kervanın önü; arkada aynı evler.",
             "kamera": "yatay-kayma",
-            "katmanlar": [
-              {
-                "id": "gok",
-                "dosya": "mekke-gok-safak.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
-                "id": "daglar",
-                "dosya": "mekke-daglar.webp",
-                "yerTutucu": "daglar",
-                "derinlik": 0.15
-              },
-              {
-                "id": "zemin",
-                "dosya": "mekke-zemin.webp",
-                "yerTutucu": "zemin",
-                "derinlik": 0.35
-              },
-              {
-                "id": "kalabalik",
-                "dosya": "b01-kervan-cikis.webp",
-                "yerTutucu": "kalabalik",
-                "derinlik": 0.6,
-                "ayar": {
-                  "sayi": 10,
-                  "y": 0.72,
-                  "olcek": 0.035,
-                  "x1": 0.45,
-                  "x2": 0.95,
-                  "gorsel": {
-                    "x": 0.75,
-                    "y": 0.05,
-                    "olcek": 2.2
-                  }
-                }
-              },
-              {
-                "id": "toz",
-                "dosya": "",
-                "yerTutucu": "toz",
-                "derinlik": 0.9
-              }
-            ]
+            "kadraj": {
+              "x": 0.3,
+              "y": 0.74,
+              "yakinlik": 1.8
+            },
+            "katmanlar": []
+          },
+          {
+            "parca": 3,
+            "tarif": "Uzak plan: kervan yolu ufka uzanır.",
+            "kamera": "yatay-kayma",
+            "kadraj": {
+              "x": 0.85,
+              "y": 0.62,
+              "yakinlik": 1.4
+            },
+            "katmanlar": []
           },
           {
             "parca": 4,
-            "tarif": "Uzak plan: Mekke vadisi ve evler; kervan yolu ufka uzanır.",
+            "tarif": "Geniş plan: Mekke vadisi ve evler; kervan çıkmış.",
             "kamera": "yukaridan-yukselis",
-            "katmanlar": [
-              {
-                "id": "gok",
-                "dosya": "mekke-gok-safak.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
-                "id": "daglar",
-                "dosya": "mekke-daglar.webp",
-                "yerTutucu": "daglar",
-                "derinlik": 0.15
-              },
-              {
-                "id": "zemin",
-                "dosya": "mekke-zemin.webp",
-                "yerTutucu": "zemin",
-                "derinlik": 0.35
-              },
-              {
-                "id": "evler",
-                "dosya": "mekke-evler.webp",
-                "yerTutucu": "evler",
-                "derinlik": 0.4
-              }
-            ]
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.5,
+              "yakinlik": 1.0
+            },
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": []
           }
         ]
       },
@@ -1174,7 +1146,31 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Sağdaki çadırlara yakın bakış.",
+            "kamera": "yatay-kayma",
+            "kadraj": {
+              "x": 0.8,
+              "y": 0.78,
+              "yakinlik": 1.6
+            },
+            "katmanlar": []
+          },
+          {
+            "parca": 3,
+            "tarif": "Ateşin başı yakından.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.8,
+              "yakinlik": 1.8
+            },
+            "katmanlar": []
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s12.mp3",
