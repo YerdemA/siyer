@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kurallar `CLAUDE.md`'de, ayrıntılar `docs/` altında; bu dosya yalnız **nerede olduğumuzu** anlatır.
 
-**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 2'si taslak hâlinde yazıldı (b09, b10); b09'un görselleri tamam, b10'un görselleri de bağlandı. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
+**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 3'ü taslak hâlinde yazıldı (b01, b09, b10); b09'un görselleri tamam, b10'un görselleri de bağlandı. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
 
 ---
 
@@ -38,12 +38,13 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 | Dosya | Durum |
 |---|---|
+| `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 22 iddia, 60 atıf (doğrulama bekliyor); 9 katman yer tutucu |
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
 | `bolumler/b10-hira.json` | Taslak: 12 sahne, 12 iddia, 35 atıf (doğrulama bekliyor); bütün görsel katmanları hazır |
-| `sahislar.json` | 7 kayıt |
+| `sahislar.json` | 14 kayıt |
 | `yerler.json` | 11 yer, yaklaşık konum + `konumKaynagi` (TDV, doğrulama bekliyor). Benî Sa'd yurdu kaynakta konum olmadığı için yok |
-| `zaman-cizelgesi.json` | 2 kayıt (605 Kâbe inşası, ~605 Hira inzivâsı) |
-| `kaynakca.json` | 4 eser: İbn Hişâm, Buhârî, TDV İA, Hadislerle İslâm |
+| `zaman-cizelgesi.json` | 3 kayıt (~440 Dârünnedve, 605 Kâbe inşası, ~605 Hira inzivâsı) |
+| `kaynakca.json` | 5 eser: Kur'an meali (Diyanet Vakfı), İbn Hişâm, Buhârî, TDV İA, Hadislerle İslâm |
 | `content/gorseller/` | 32 WebP katman (b09 + ortak Mekke/Kâbe katmanları) |
 | `content/gorseller/istemler/` | b09 ve b10 istem kayıtları (`b09.json`, `b10.json`) + ChatGPT mesaj dosyaları |
 
@@ -80,12 +81,15 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 Sahibi parantez içinde.
 
-1. **Atıf doğrulaması** (Erdem): b09'da 67, b10'da 35 atıf. b10 teslim notu: `b10-hira.json` iddialarının `gerekce` alanları.
+1. **Atıf doğrulaması** (Erdem): b01'de 60, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
+   - b01: i-b01-022 (Sâib'e öğüt) tek D kaynakla, istisna 2.1; doğrulama betiği uyarı veriyor. Kabul ya da çıkarma kararı Erdem'de.
+   - b01 görsel: Kusay sonrası sahneler (s08-s10, s13) üstü hurma dallarıyla örtülü Kâbe ister; şimdilik kabe-alcak.
+   b10 teslim notu: `b10-hira.json` iddialarının `gerekce` alanları.
    - İbn Hişâm sayfaları tarama sıra numarası; taramadan görülmeli.
    - MUHAMMED (c. 30) s. 410, Hadislerle İslâm dipnotundan alındı; matbu nüshada bakılmalı.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
 2. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
-3. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b01 → b08. Her bölümde atıflar yerel kaynaklardan.
+3. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b02 → b08. b01 yazıldı (2026-11-14). Her bölümde atıflar yerel kaynaklardan.
 4. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
 
 ---
@@ -119,6 +123,7 @@ Sahibi parantez içinde.
 
 ## 6. Çalışma notları (yeni oturum için)
 
+- **Kur'an meali:** Diyanet sitesi (Flutter uygulaması) meal seçimini otomasyona açmıyor; `browser_fetch_once` varsayılan "Diyanet Vakfı" mealini verir. b01 ve sonrası bu meali kullanır (`kuran-meal-dv`); eski yerel dosya Başkanlık meali.
 - **Kaynak bulma yöntemi:**
   1. Not defterine toplu soru sor, ama cevabı yalnız yol gösterici say.
   2. Atfı şuradan oku: `kaynaklar/tdv-metin/*.md` (künye dosya başında, sayfa için `kaynaklar/tdv/dizin.csv` ve matbu PDF), `kaynaklar/ibn-hisam/…-ocr.md` (Arapça, düzeltilmemiş OCR; tarama sayfa no = atıf sayfası), `kaynaklar/Hadislerle_islam/*.pdf` (`pdftotext` ile; bu PDF'lerde "i/ı" harfleri metne çıkmıyor).
@@ -167,7 +172,7 @@ MVP = peygamberlik öncesi dönem, 10 bölüm, Türkçe, Android.
 
 | Bölüm | Taslak | Görsel | Atıf doğrulama | Ses | Uzman |
 |---|---|---|---|---|---|
-| b01 Câhiliye Mekke'si | – | – | – | – | – |
+| b01 Câhiliye Mekke'si | ✓ | – | 0/60 | – | – |
 | b02 Fil Vakası | – | – | – | – | – |
 | b03 Doğum | – | – | – | – | – |
 | b04 Süt Annenin Yurdu | – | – | – | – | – |
