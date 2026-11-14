@@ -20,6 +20,11 @@ class BolumListesi extends ConsumerWidget {
         title: Text(m.bolumler),
         actions: [
           IconButton(
+            tooltip: m.harita,
+            icon: const Icon(Icons.map_outlined),
+            onPressed: () => context.push('/harita'),
+          ),
+          IconButton(
             tooltip: m.zamanCizelgesi,
             icon: const Icon(Icons.timeline),
             onPressed: () => context.push('/zaman'),

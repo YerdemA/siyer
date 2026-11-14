@@ -302,5 +302,41 @@ class ZamanOlayi {
   final String iddia;
 }
 
+class Yer {
+  const Yer({
+    required this.id,
+    required this.ad,
+    required this.x,
+    required this.y,
+    this.ozet = '',
+    this.bolumler = const [],
+    this.iddialar = const [],
+  });
+
+  factory Yer.fromJson(Map<String, dynamic> j) {
+    final h = j['harita'] is Map<String, dynamic> ? j['harita'] as Map<String, dynamic> : const {};
+    double eksen(String a) => ((h[a] as num?)?.toDouble() ?? 0.5).clamp(0.0, 1.0);
+    return Yer(
+      id: _metin(j, 'id'),
+      ad: _metin(j, 'ad'),
+      x: eksen('x'),
+      y: eksen('y'),
+      ozet: _metin(j, 'ozet'),
+      bolumler: _metinler(j, 'bolumler'),
+      iddialar: _metinler(j, 'iddialar'),
+    );
+  }
+
+  final String id;
+  final String ad;
+
+  /// Parşömen üzerinde yaklaşık konum (0–1, sol üst 0,0).
+  final double x;
+  final double y;
+  final String ozet;
+  final List<String> bolumler;
+  final List<String> iddialar;
+}
+
 List<String> _metinler(Map<String, dynamic> j, String alan) =>
     (j[alan] as List<dynamic>? ?? const []).whereType<String>().toList();

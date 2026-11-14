@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import 'ekranlar/ayarlar.dart';
 import 'ekranlar/bolum_listesi.dart';
+import 'ekranlar/harita.dart';
 import 'ekranlar/sahislar.dart';
 import 'ekranlar/zaman_cizelgesi.dart';
 import 'l10n/app_localizations.dart';
@@ -21,6 +22,7 @@ final _yonlendirici = GoRouter(
       path: '/sahislar/:id',
       builder: (_, durum) => SahisEkrani(sahisId: durum.pathParameters['id']!),
     ),
+    GoRoute(path: '/harita', builder: (_, _) => const HaritaEkrani()),
     GoRoute(path: '/zaman', builder: (_, _) => const ZamanCizelgesiEkrani()),
     GoRoute(
       path: '/bolum/:id',

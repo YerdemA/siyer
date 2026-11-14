@@ -148,4 +148,10 @@ class MetinlerTr extends Metinler {
 
   @override
   String get bolumeGit => 'Bölüme git';
+
+  @override
+  String get harita => 'Harita';
+
+  @override
+  String get konumYaklasik => 'Konum yaklaşıktır; harita ölçekli değildir.';
 }

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:siyer/ekranlar/ayarlar.dart';
+import 'package:siyer/ekranlar/harita.dart';
 import 'package:siyer/ekranlar/sahislar.dart';
 import 'package:siyer/ekranlar/zaman_cizelgesi.dart';
 import 'package:siyer/icerik/depo.dart';
@@ -38,6 +39,10 @@ Widget _sar(Widget w) => ProviderScope(
         iddiaDiziniProvider.overrideWith((_) async => _iddialar),
         sahislarProvider.overrideWith((_) async => _sahislar),
         bolumListesiProvider.overrideWith((_) async => const []),
+        yerlerProvider.overrideWith((_) async => const [
+              Yer(id: 'mekke', ad: 'Mekke', x: 0.46, y: 0.65),
+              Yer(id: 'taif', ad: 'Tâif', x: 0.53, y: 0.66),
+            ]),
         zamanCizelgesiProvider.overrideWith((_) async => const [
               ZamanOlayi(id: 'z-1', yil: 570, yaklasik: true, olay: 'Birinci olay.', iddia: 'i-1'),
               ZamanOlayi(id: 'z-2', yil: 605, olay: 'İkinci olay.'),
@@ -104,5 +109,31 @@ void main() {
     await tester.pumpAndSettle();
     final p = await SharedPreferences.getInstance();
     expect(p.getKeys().where((k) => k.startsWith(IlerlemeDeposu.onek)), isEmpty);
+  });
+
+  testWidgets('harita yerleri gösterir, dokununca yaklaşık konum notu açılır', (tester) async {
+    await tester.pumpWidget(_sar(const HaritaEkrani()));
+    await tester.pumpAndSettle();
+    expect(find.text('Mekke'), findsOneWidget);
+    expect(find.text('Tâif'), findsOneWidget);
+    await tester.tap(find.text('Tâif'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Konum yaklaşıktır'), findsOneWidget);
+  });
+
+  test('yakın yerlerin etiketleri birbirine binmez', () {
+    const yerler = [
+      Yer(id: 'a', ad: 'Mekke', x: 0.46, y: 0.654),
+      Yer(id: 'b', ad: 'Hira (Nur dağı)', x: 0.471, y: 0.652),
+      Yer(id: 'c', ad: 'Nahle', x: 0.481, y: 0.66),
+      Yer(id: 'd', ad: 'Ukâz', x: 0.5, y: 0.662),
+      Yer(id: 'e', ad: 'Tâif', x: 0.535, y: 0.661),
+    ];
+    final y = etiketYerlesimi(yerler, const Size(720, 960));
+    for (var i = 0; i < y.length; i++) {
+      for (var j = i + 1; j < y.length; j++) {
+        expect(y[i].etiket.overlaps(y[j].etiket), isFalse, reason: '${y[i].yer.ad} / ${y[j].yer.ad}');
+      }
+    }
   });
 }

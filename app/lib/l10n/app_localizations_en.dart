@@ -149,4 +149,11 @@ class MetinlerEn extends Metinler {
 
   @override
   String get bolumeGit => 'Go to episode';
+
+  @override
+  String get harita => 'Map';
+
+  @override
+  String get konumYaklasik =>
+      'Locations are approximate; the map is not to scale.';
 }

@@ -49,6 +49,10 @@ final sahislarProvider = FutureProvider<List<Sahis>>(
   (ref) async => (await _liste('$_kok/sahislar.json')).map(Sahis.fromJson).toList(),
 );
 
+final yerlerProvider = FutureProvider<List<Yer>>(
+  (ref) async => (await _liste('$_kok/yerler.json')).map(Yer.fromJson).toList(),
+);
+
 /// Yıla göre sıralı.
 final zamanCizelgesiProvider = FutureProvider<List<ZamanOlayi>>((ref) async {
   final l = (await _liste('$_kok/zaman-cizelgesi.json')).map(ZamanOlayi.fromJson).toList()

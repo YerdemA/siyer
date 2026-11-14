@@ -47,5 +47,7 @@
   "@yil": { "placeholders": { "yil": { "type": "int" } } },
   "yilYaklasik": "yakl. {yil}",
   "@yilYaklasik": { "placeholders": { "yil": { "type": "int" } } },
-  "bolumeGit": "Bölüme git"
+  "bolumeGit": "Bölüme git",
+  "harita": "Harita",
+  "konumYaklasik": "Konum yaklaşıktır; harita ölçekli değildir."
 }

@@ -342,6 +342,18 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Bölüme git'**
   String get bolumeGit;
+
+  /// No description provided for @harita.
+  ///
+  /// In tr, this message translates to:
+  /// **'Harita'**
+  String get harita;
+
+  /// No description provided for @konumYaklasik.
+  ///
+  /// In tr, this message translates to:
+  /// **'Konum yaklaşıktır; harita ölçekli değildir.'**
+  String get konumYaklasik;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

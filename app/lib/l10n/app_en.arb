@@ -40,5 +40,7 @@
   "bulunamadi": "Entry not found.",
   "yil": "{yil}",
   "yilYaklasik": "c. {yil}",
-  "bolumeGit": "Go to episode"
+  "bolumeGit": "Go to episode",
+  "harita": "Map",
+  "konumYaklasik": "Locations are approximate; the map is not to scale."
 }
