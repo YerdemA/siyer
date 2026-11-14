@@ -1,0 +1,1041 @@
+{
+  "id": "b10-hira",
+  "sira": 10,
+  "baslik": "Hira'nın Eşiği",
+  "ozet": "Kâbe'nin onarımından sonraki yıllar: sadık rüyalar, yalnızlık ve Hira'daki inzivâ. Bölüm ilk vahiyden hemen önce biter.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b10-s01",
+      "anlatim": [
+        {
+          "metin": "Kâbe'nin onarımından sonraki yıllarda Hz. Muhammed (s.a.v.), Allah'a nasıl kulluk edileceğini giderek daha çok düşünüyordu.",
+          "iddialar": [
+            "i-b10-001"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü Mekke vadisi, uzak plan. Ortada yeniden yapılmış, yüksek Kâbe; çevresinde kerpiç ve taş evler, çıplak dağlar. Uzakta birkaç küçük siluet; yüz yok. Minare, kubbe, revak yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yuksek",
+            "dosya": "kabe-yuksek.webp",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.626,
+                "olcek": 0.272
+              }
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s01.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s02",
+      "anlatim": [
+        {
+          "metin": "Putlara tapmanın kimseye bir yarar getirmediğini görmüştü.",
+          "iddialar": [
+            "i-b10-001"
+          ]
+        },
+        {
+          "metin": "Kaynaklar, onun Hz. İbrâhim'in tek Allah inancına bağlı kalmaya çalışan hanîfler gibi düşündüğünü tahmin eder.",
+          "iddialar": [
+            "i-b10-001"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gece, Kâbe avlusunun kenarından uzak bir bakış: Kâbe karanlıkta koyu bir kütle; önünde, yüz seçilmeyen birkaç siluet. Putlar çizilmez (görünüşleri kaynakla netleşmedi); yalnız gölgeler.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yuksek",
+            "dosya": "kabe-yuksek.webp",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.626,
+                "olcek": 0.272
+              }
+            }
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b10-s02.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s03",
+      "anlatim": [
+        {
+          "metin": "Mekke'de, yılın belirli aylarında inzivâya çekilen bazı kimseler vardı. Kureyş buna tahannüs derdi.",
+          "iddialar": [
+            "i-b10-002"
+          ]
+        },
+        {
+          "metin": "Dedesi Abdülmuttalib de zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+          "iddialar": [
+            "i-b10-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafakta çıplak, kayalık bir dağ yamacı. Yamacın ortasında tek bir yaşlı adamın arkadan silueti, yukarı doğru yürüyor; yüzü görünmez. Uzak plan.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.55,
+              "y": 0.72,
+              "olcek": 0.14
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b10-s03.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s04",
+      "anlatim": [
+        {
+          "metin": "Hira, Mekke'nin kuzeydoğusunda yükselen bir dağdır.",
+          "iddialar": [
+            "i-b10-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Mekke vadisinden kuzeydoğuya bakış, gündüz. Çevresindeki dağlardan daha dik ve sivri, çıplak kayalık bir tepe uzakta seçilir (HİRA maddesi: dik, sivri, çıplak ve kaygan kayalar). Bitki örtüsü yok denecek kadar az.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "hira-dagi",
+            "dosya": "",
+            "yerTutucu": "daglar",
+            "derinlik": 0.3
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.45
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s04.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s05",
+      "anlatim": [
+        {
+          "metin": "Hz. Âişe'nin anlattığına göre, vahiy uykuda görülen sadık rüyalarla başladı; gördüğü her rüya sabah aydınlığı gibi aynen çıkardı.",
+          "iddialar": [
+            "i-b10-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Karanlık bir oda; dar bir pencere aralığından gecenin laciverdi yavaşça sabahın açık ışığına döner. İnsan yok. Işık sıcak ama altın-beyaz değil (nur tonu kullanılmaz).",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kapi-cercevesi",
+            "dosya": "",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "sabit-gecis"
+      },
+      "ses": {
+        "anlatim": "b10-s05.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s06",
+      "anlatim": [
+        {
+          "metin": "Sonra ona yalnızlık sevdirildi.",
+          "iddialar": [
+            "i-b10-005"
+          ]
+        },
+        {
+          "metin": "Her yıl ramazan ayı gelince bir ay boyunca şehri ardında bırakır, Hira'ya çıkardı.",
+          "iddialar": [
+            "i-b10-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gün batımında kayalık, dik bir patikadan yukarı tırmanış; aşağıda uzaklaşan Mekke vadisi. Yüksek, düzensiz kaya basamakları.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "yokus",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "bakis-acisi-yuruyus"
+      },
+      "ses": {
+        "anlatim": "b10-s06.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s07",
+      "anlatim": [
+        {
+          "metin": "Orada, ailesinin yanına dönmeden geceler boyu ibadet ederdi.",
+          "iddialar": [
+            "i-b10-005"
+          ]
+        },
+        {
+          "metin": "Kaynaklar bu ibadeti tahannüs diye anar; kelime, Hz. İbrâhim'in yoluna, hanîfliğe yönelmek diye açıklanır.",
+          "iddialar": [
+            "i-b10-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Mağaranın içinden dışarı bakış: üst üste yığılmış kaya blokları arasında, iki yanı açık, tünele benzeyen dar bir boşluk (HİRA maddesi). Açıklıktan yıldızlı gece göğü ve aşağıda karanlık vadi. Işık yalnız yıldızlardan.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.25
+          },
+          {
+            "id": "magara",
+            "dosya": "",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.95
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s07.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s08",
+      "anlatim": [
+        {
+          "metin": "Yanına azık alırdı. Azığı bitince Hz. Hatice'nin yanına döner, bir o kadar süre için yine azık alırdı.",
+          "iddialar": [
+            "i-b10-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Bir evin aralık kapısı, içeriden süzülen ışık. Kapıda, arkası dönük bir kadın silueti; elinde düğümlenmiş sade bir bez bohça. Yüzü görünmez.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.8,
+            "ayar": {
+              "x": 0.3,
+              "y": 0.85,
+              "olcek": 0.4
+            }
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b10-s08.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s09",
+      "anlatim": [
+        {
+          "metin": "Hira'da kaldığı o ay, yanına gelen yoksulları doyururdu.",
+          "iddialar": [
+            "i-b10-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Dağ yamacında, uzak plan: patikadan yukarı tırmanan birkaç küçük, yüzsüz siluet; birinin elinde boş bir kap. Mağara görünmez; yalnız dağ ve patika.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "yokus",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.5
+          },
+          {
+            "id": "kalabalik",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "sayi": 4,
+              "y": 0.7,
+              "olcek": 0.05,
+              "x1": 0.35,
+              "x2": 0.6
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b10-s09.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s10",
+      "anlatim": [
+        {
+          "metin": "Ay bitince evine gitmeden önce Kâbe'ye uğrar, yedi kez ya da dilediği kadar tavaf eder, sonra evine dönerdi.",
+          "iddialar": [
+            "i-b10-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Şafakta Kâbe avlusuna giriş; yüksek Kâbe yaklaşır. Avlu neredeyse boş, uzakta bir iki yüzsüz siluet.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-yuksek",
+            "dosya": "kabe-yuksek.webp",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.502,
+                "y": 0.626,
+                "olcek": 0.272
+              }
+            }
+          }
+        ],
+        "kamera": "bakis-acisi-giris"
+      },
+      "ses": {
+        "anlatim": "b10-s10.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s11",
+      "anlatim": [
+        {
+          "metin": "Zaman zaman Hz. Hatice de onunla birlikte Hira'ya çıkardı.",
+          "iddialar": [
+            "i-b10-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gün batımında dağ patikası; birkaç adım önde, arkası dönük bir kadın silueti yukarı yürüyor. Yüzü görünmez.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "yokus",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.6
+          },
+          {
+            "id": "siluet-tek",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.8,
+            "ayar": {
+              "x": 0.45,
+              "y": 0.78,
+              "olcek": 0.3
+            }
+          }
+        ],
+        "kamera": "bakis-acisi-yuruyus"
+      },
+      "ses": {
+        "anlatim": "b10-s11.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice"
+      ],
+      "yer": "hira"
+    },
+    {
+      "id": "b10-s12",
+      "anlatim": [
+        {
+          "metin": "Yıllar böyle geçti.",
+          "iddialar": [
+            "i-b10-007"
+          ]
+        },
+        {
+          "metin": "Ve bir ramazan gecesi, yine Hira'daydı.",
+          "iddialar": [
+            "i-b10-012"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Mağaranın ağzından yıldızlı, derin bir gece; tam sessizlik. Kamera çok yavaş açıklığa yaklaşır ve görüntü karanlıkta kalır. Nur, melek ya da ışık patlaması yok: bölüm eşikte biter.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.25
+          },
+          {
+            "id": "magara",
+            "dosya": "",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.95
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s12.mp3",
+        "muzik": "esik",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "hira"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b10-001",
+      "ifade": "Kâbe'nin onarımından sonra Hz. Muhammed (s.a.v.) Allah'a nasıl ibadet edileceğini araştırmaya giderek daha çok yöneldi; putlara tapmanın faydasızlığını anlamıştı.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED maddesi Kâbe'nin tamirinden sonra Allah'a nasıl ibadet edileceğini araştırmaya yöneldiğini, putlara tapmanın faydasızlığını anladığını yazar; Hanîfler gibi düşündüğünü ise \"muhtemelen\" diyerek ihtiyatla verir (anlatım bu ihtiyatı korur). Sayfa (s. 410), Hadislerle İslâm'ın aynı pasaja verdiği dipnottan (c. 6, dipnot 2424: \"Muhammed\", DİA, XXX, 410) alınmıştır; matbu PDF'te görülmedi. Hadislerle İslâm aynı tabloyu bağımsız anlatır.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 410 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 617 (dipnot 2423–2424 arası ve Hz. Âişe rivayeti)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-002",
+      "ifade": "Mekke'de bazı kimseler yılın belirli aylarında inzivâya çekilirdi; Kureyş Câhiliye'de buna tahannüs derdi. Hz. Muhammed'in dedesi Abdülmuttalib de zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, Ubeyd b. Umeyr'den Hira'daki mücâverenin Kureyş'in Câhiliye'de yaptığı tahannüs olduğunu aktarır (s. 152; tarama OCR'ı düzeltilmemiş, yer bulmak için okundu). HİRA maddesi receb ve ramazan gibi aylarda inzivâya çekilen hanîflerden ve Abdülmuttalib'in Hira'ya çekilmesinden söz eder (İbn Hişâm, I, 50 vd. atfıyla). ABDÜLMUTTALİB maddesi de aynı bilgiyi verir. İbn Hişâm s. 152 yalnız tahannüs kısmını karşılar; Abdülmuttalib kısmı iki D kaynağına (HİRA, ABDÜLMUTTALİB) dayanır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "H. Ahmet Sezikli, \"ABDÜLMUTTALİB\", c. 1, s. 273 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-003",
+      "ifade": "Hira dağı Mekke'nin kuzeydoğusundadır.",
+      "guc": "guclu",
+      "gerekce": "HİRA maddesi dağın Mekke'nin kuzeydoğusunda, Kâbe'ye yaklaşık 5 km uzakta olduğunu yazar; MEKKE maddesi vadinin kuzeydoğusunda Nur (Hira) dağını sayar.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 555 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-004",
+      "ifade": "Vahiy, Hz. Muhammed'e (s.a.v.) uykuda görülen sadık rüyalarla başladı; gördüğü her rüya sabah aydınlığı gibi aynen çıkardı.",
+      "guc": "kesin",
+      "gerekce": "Hz. Âişe'nin rivayeti Buhârî'de (Bed'ü'l-vahy, 1; Ta'bîr, 1) ve İbn Hişâm'da (s. 151, Zührî–Urve–Âişe) yer alır. Hadislerle İslâm metni Türkçe olarak iki yerde verir. Hadis numaraları Hadislerle İslâm'da görüldüğü haliyledir: 3 numarası c. 1, PDF s. 427'deki satır içi atıfta; 6982 numarası c. 1, dipnot 1571 ve satır içi (B6982 Buhârî, Ta'bîr, 1) atfında. Not: HİRA maddesi (s. 121) sadık rüyaların altı ay içinde görüldüğünü yazar ama klasik dayanak göstermez; ana metne alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Bed'ü'l-vahy, 1 (hadis no. 3)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "buhari-sahih",
+          "konum": "Ta'bîr, 1 (hadis no. 6982)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 151",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 427 (Hz. Âişe rivayeti; satır içi atıf: B3 Buhârî, Bed'ü'l-vahy, 1)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-005",
+      "ifade": "Sadık rüyalardan sonra ona yalnızlık sevdirildi; Hira dağındaki mağarada, ailesinin yanına dönmeden geceler boyu ibadet ederdi.",
+      "guc": "kesin",
+      "gerekce": "Aynı Hz. Âişe rivayetinin devamı: Buhârî, Bed'ü'l-vahy, 1; İbn Hişâm s. 151 (\"Allah ona yalnızlığı sevdirdi\"). Sıra rivayettekidir: önce rüyalar, sonra yalnızlık. Çerçeve farkı: Âişe rivayeti Hira'ya çekilişi rüyalardan sonraya koyar; İbn Hişâm (s. 152, Ubeyd b. Umeyr) her yıl bir ay mücâvereden, MUHAMMED maddesi risâletin birkaç yıl öncesinden başlayan inzivâdan söz eder. Anlatım iki çerçeveyi yan yana verir, süre belirtmez.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Bed'ü'l-vahy, 1 (hadis no. 3)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 151 (yalnız 'yalnızlık sevdirildi' kısmı)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 617 (dipnot 2423–2424 arası ve Hz. Âişe rivayeti)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-006",
+      "ifade": "Hira'ya giderken yanına azık alır, azığı bitince Hz. Hatice'nin yanına dönüp bir o kadar süre için yine azık alırdı.",
+      "guc": "kesin",
+      "gerekce": "Hz. Âişe rivayetinin devamı (Buhârî, Bed'ü'l-vahy, 1); 'bir o kadar süre' ifadesi Hadislerle İslâm c. 1, s. 427'dedir. 'Azığı bitince' ayrıntısı HİRA maddesindendir (s. 121: 'bunlar tükenince evinden yenisini tedarik edip').",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Bed'ü'l-vahy, 1 (hadis no. 3)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 427 (Hz. Âişe rivayeti; satır içi atıf: B3 Buhârî, Bed'ü'l-vahy, 1)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 617 (dipnot 2423–2424 arası ve Hz. Âişe rivayeti)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-007",
+      "ifade": "Her yıl bir ay, ramazan ayında, Hira'da kalırdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 152) Ubeyd b. Umeyr'den her yıl bir ay Hira'da mücâvere ettiğini ve peygamberliğin geldiği ayın ramazan olduğunu aktarır. HİRA maddesi ramazan aylarında çekildiğini yazar; Hadislerle İslâm \"ramazan ayı boyunca yaşanan bu inzivâ\" der.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 618 (dipnot 2427–2428)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-008",
+      "ifade": "Hira'da kaldığı ay yanına gelen yoksulları doyururdu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, Ubeyd b. Umeyr'den \"o ay her yıl yanına gelen yoksulları doyururdu\" diye aktarır (s. 152). Tek klasik kanaldır; kullanılan kaynaklarda aksi bir görüş ya da zayıflık değerlendirmesi yoktur. MUHAMMED maddesi yardımın yerini farklı verir (şehre inişte); alternatif rivayet olarak kaydedildi.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Yiyeceği tükenince şehre iner, fakirlere yardım eder, Kâbe'yi tavaf edip yiyecek alarak mağaraya dönerdi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 410 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b10-009",
+      "ifade": "İnzivâsı bitince evine girmeden önce Kâbe'ye gider, yedi kez ya da dilediği kadar tavaf eder, sonra evine dönerdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 152 (Ubeyd b. Umeyr). HİRA maddesi aynı âdeti İbn Hişâm I, 252'ye atıfla verir; MUHAMMED maddesi de tavafı anar. Üçü de aynı klasik kanala (İbn İshak, Ubeyd b. Umeyr) dayanır; aksi görüş bulunmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 410 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-010",
+      "ifade": "Zaman zaman Hz. Hatice'yi de yanında Hira'ya götürürdü.",
+      "guc": "guclu",
+      "gerekce": "HİRA maddesi (Taberî, II, 300 atfıyla) ve MUHAMMED maddesi zaman zaman Hatice'yi yanına aldığını yazar. İbn Hişâm peygamberliğin geldiği ramazanda yanında ailesiyle Hira'ya çıktığını aktarır (s. 152).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 410 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-011",
+      "ifade": "Kaynaklar bu ibadeti tahannüs diye anar; kelime, tehannüf, yani hanîfliğe (Hz. İbrâhim'in yoluna) yönelmek gibi açıklanır.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, Arapların tahannüs ile tehannüfü aynı anlamda kullandığını, \"ف\" yerine \"ث\" getirdiklerini açıklar (s. 152). HANÎF maddesi \"tehannüf İslâm'a dönmek demektir; tehannüs fiili de bunun gibidir\" der. Hadislerle İslâm (c. 6, s. 618) bazı âlimlerin kelimeyi \"hanîfleşme\" diye anladığını yazar (dipnot 2428: İbn Hişâm).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 36 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 618 (dipnot 2427–2428)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-012",
+      "ifade": "Vahiy, bir ramazan ayında, bir gece Hira'dayken geldi.",
+      "guc": "guclu",
+      "gerekce": "Hz. Âişe rivayeti vahyin Hira mağarasındayken geldiğini söyler (Buhârî, Bed'ü'l-vahy, 1). İbn Hişâm ve HİRA maddesi bunun ramazan ayında olduğunu yazar. 'Gece' İbn Hişâm'da (s. 152, 'o gece') ve HİRA'da ('bir gece') geçer. Bölüm bu eşikte biter; vahyin kendisi anlatılmaz.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Bed'ü'l-vahy, 1 (hadis no. 3)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 152",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Fuat Günel, \"HİRA\", c. 18, s. 121 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

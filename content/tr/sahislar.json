@@ -5,8 +5,14 @@
     "lakap": "el-Emîn",
     "yakinlik": "",
     "ozet": "Kâbe'nin yeniden yapıldığı yıl otuz beş yaşındaydı. Kureyş vahiyden önce de ona el-Emîn, yani güvenilir derdi.",
-    "bolumler": ["b09-hakem"],
-    "iddialar": ["i-b09-001", "i-b09-018"]
+    "bolumler": [
+      "b09-hakem",
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b09-001",
+      "i-b09-018"
+    ]
   },
   {
     "id": "abbas-b-abdulmuttalib",
@@ -14,8 +20,12 @@
     "lakap": "",
     "yakinlik": "Amcası",
     "ozet": "Kâbe'nin yeniden yapımında Resûlullah ile birlikte taş taşıdı.",
-    "bolumler": ["b09-hakem"],
-    "iddialar": ["i-b09-011"]
+    "bolumler": [
+      "b09-hakem"
+    ],
+    "iddialar": [
+      "i-b09-011"
+    ]
   },
   {
     "id": "velid-b-mugire",
@@ -23,8 +33,12 @@
     "lakap": "",
     "yakinlik": "",
     "ozet": "Kureyş Kâbe'yi yıkmaktan çekinirken kazmayı alıp yıkıma ilk başlayan kişi.",
-    "bolumler": ["b09-hakem"],
-    "iddialar": ["i-b09-008"]
+    "bolumler": [
+      "b09-hakem"
+    ],
+    "iddialar": [
+      "i-b09-008"
+    ]
   },
   {
     "id": "ebu-vehb-b-amr",
@@ -32,8 +46,12 @@
     "lakap": "",
     "yakinlik": "",
     "ozet": "Kâbe'nin yapımına yalnızca temiz kazanç katılmasını isteyen Kureyşli.",
-    "bolumler": ["b09-hakem"],
-    "iddialar": ["i-b09-007"]
+    "bolumler": [
+      "b09-hakem"
+    ],
+    "iddialar": [
+      "i-b09-007"
+    ]
   },
   {
     "id": "ebu-umeyye-b-mugire",
@@ -41,7 +59,38 @@
     "lakap": "",
     "yakinlik": "",
     "ozet": "Kureyş'in en yaşlısı. Hacerülesved anlaşmazlığında, mescidin kapısından ilk girecek kişinin hakem olmasını teklif etti.",
-    "bolumler": ["b09-hakem"],
-    "iddialar": ["i-b09-015"]
+    "bolumler": [
+      "b09-hakem"
+    ],
+    "iddialar": [
+      "i-b09-015"
+    ]
+  },
+  {
+    "id": "abdulmuttalib",
+    "ad": "Abdülmuttalib",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) dedesi",
+    "ozet": "Zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-002"
+    ]
+  },
+  {
+    "id": "hatice",
+    "ad": "Hz. Hatice",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) eşi",
+    "ozet": "Efendimiz Hira'da inzivâya çekildiği yıllarda azığını ondan alırdı; Hatice zaman zaman onunla birlikte Hira'ya çıkardı.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-006",
+      "i-b10-010"
+    ]
   }
 ]

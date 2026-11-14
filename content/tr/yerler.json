@@ -8,7 +8,8 @@
     },
     "ozet": "",
     "bolumler": [
-      "b09-hakem"
+      "b09-hakem",
+      "b10-hira"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -26,9 +27,14 @@
       "x": 0.471,
       "y": 0.652
     },
-    "ozet": "",
-    "bolumler": [],
-    "iddialar": [],
+    "ozet": "Mekke'nin kuzeydoğusundaki dağ. Efendimiz her yıl ramazan ayında buradaki mağarada inzivâya çekilirdi.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-003",
+      "i-b10-007"
+    ],
     "konumKaynagi": {
       "eser": "tdv-dia",
       "konum": "\"HİRA\", c. 18, s. 121",
