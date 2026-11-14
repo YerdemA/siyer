@@ -16,7 +16,7 @@ Web siteleri, forumlar, sosyal medya, kaynağı belirsiz derlemeler ve yapay zek
 
 ## 2. Bir iddianın uygulamaya girme şartı
 
-1. En az bir A, B ya da C katmanı kaynağı; yoksa en az iki D kaynağı.
+1. En az bir A, B ya da C katmanı kaynağı; yoksa en az iki D kaynağı. İstisna (Erdem, 2026-11-14): yaygın kabul görmüş ve hiçbir kaynakta zayıf bulunmamış bir rivayet, tek bir güçlü kaynağa da dayanabilir; o kaynak D katmanındaysa kendi klasik dayanağını (ör. "İbn Hişâm, I, 252") göstermelidir. Bu durum iddianın `gerekce` alanına açıkça yazılır.
 2. Atıf eksiksiz: eser, cilt/sayfa (ya da kitap/bab/hadis no), kullanılan baskı.
 3. Erdem atıfı kaynağın kendisinden görmüş ve `dogrulandi` olarak işaretlemiş.
 4. Yayın öncesi uzman okumasından geçmiş (bkz. bölüm 6).
