@@ -13,7 +13,7 @@ Bölümler Hz. Peygamber'in hayatındaki dönüm noktalarına göre ayrılır. A
 | 5 | b05-yetimlik | Yetimlik | Annesi Âmine'nin vefatı, dedesi Abdülmuttalib |
 | 6 | b06-ebu-talib | Ebû Tâlib'in Himayesi | Amcasının yanında büyümesi, Şam yolculuğu |
 | 7 | b07-genclik | Gençlik | Ficâr savaşları ve Hilfü'l-Fudûl |
-| 8 | b08-el-emin | el-Emîn | Ticaret hayatı ve Hz. Hatice ile evlilik |
+| 8 | b08-el-emin | el-Emîn | Ticaret hayatı, Hz. Hatice ile evlilik; aile hayatı: çocukları, Zeyd b. Hârise'nin ve Hz. Ali'nin eve katılması |
 | 9 | b09-hakem | Hakem | Kâbe'nin onarımı ve Hacerülesved hakemliği |
 | 10 | b10-hira | Hira'nın Eşiği | İnzivâ ve sadık rüyalar; ilk vahiyden hemen önce biter |
 

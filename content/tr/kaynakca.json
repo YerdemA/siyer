@@ -27,6 +27,15 @@
     "erisim": "Atıflar şimdilik ikincil kaynaklardan alındı (Hadislerle İslâm dipnotları, TDV İslâm Ansiklopedisi maddeleri); asıl metinden (ör. sunnah.com) kontrol edilecek"
   },
   {
+    "id": "muslim-sahih",
+    "yazar": "Müslim",
+    "eser": "el-Câmiu's-sahîh",
+    "baski": "",
+    "katman": "B",
+    "dil": "ar",
+    "erisim": "Atıflar şimdilik sunnah.com'daki metin ve numaralandırmadan alındı (kitap adı, kitap içi sıra, hadis no.) (yerel kopya: kaynaklar/sunnah/README.md, erişim 14.11.2026); matbu nüshadan kontrol edilecek"
+  },
+  {
     "id": "tdv-dia",
     "yazar": "Türkiye Diyanet Vakfı",
     "eser": "TDV İslâm Ansiklopedisi",
