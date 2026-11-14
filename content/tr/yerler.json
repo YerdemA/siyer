@@ -11,7 +11,8 @@
       "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
       "b09-hakem",
-      "b10-hira"
+      "b10-hira",
+      "b03-dogum"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -145,7 +146,9 @@
       "y": 0.502
     },
     "ozet": "",
-    "bolumler": [],
+    "bolumler": [
+      "b03-dogum"
+    ],
     "iddialar": [],
     "konumKaynagi": {
       "eser": "tdv-dia",

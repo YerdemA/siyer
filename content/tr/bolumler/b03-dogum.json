@@ -1,0 +1,1230 @@
+{
+  "id": "b03-dogum",
+  "sira": 3,
+  "baslik": "Doğum",
+  "ozet": "Nesebi; Abdülmuttalib'in adağı ve yüz deve; Abdullah ile Âmine'nin evliliği; Abdullah'ın vefatı ve Fil Yılı'nda doğum. Bölüm süt anne arayışıyla biter.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b03-s01",
+      "anlatim": [
+        {
+          "metin": "Hz. Muhammed (s.a.v.), Abdullah'ın oğlu, Abdülmuttalib'in torunudur. Soyu Hâşim, Abdümenâf ve Kusay üzerinden Kureyş'e uzanır.",
+          "iddialar": [
+            "i-b03-001"
+          ]
+        },
+        {
+          "metin": "Resûlullah yıllar sonra şöyle buyuracaktı: «Allah İsmâil'in soyundan Kinâne'yi seçti; Kinâne'den Kureyş'i seçti; Kureyş'ten Hâşimoğulları'nı seçti; Hâşimoğulları'ndan da beni seçti.»",
+          "iddialar": [
+            "i-b03-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, Mekke vadisi uzak plan: dağlar arasında alçak, çatısız Kâbe ve evler; insan yok. Işık sıcak ama altın-beyaz değil. Kan yok. Nur tonu yok.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s01.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s02",
+      "anlatim": [
+        {
+          "metin": "Hikâye bir adakla başlar. Rivayete göre Abdülmuttalib, Zemzem kuyusunu kazarken Kureyş'ten tepki görünce bir adakta bulunmuştu: On oğlu olur da kendisini koruyacak yaşa gelirlerse, birini Kâbe'nin yanında Allah'a kurban edecekti.",
+          "iddialar": [
+            "i-b03-003"
+          ]
+        },
+        {
+          "metin": "Oğulları on olup onu koruyacak yaşa geldiklerinde Abdülmuttalib onlara adağını anlattı; onlar da kabul ettiler.",
+          "iddialar": [
+            "i-b03-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de açık bir avlu, orta plan: Abdülmuttalib karşısında farklı yaşlarda on oğlu; yüzler sade. Yaş ve görünüş ayrıntısı kaynakta yok; Abdullah ayrıca belirtilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "on-ogul",
+            "dosya": "b03-on-ogul.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b03-s02.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s03",
+      "anlatim": [
+        {
+          "metin": "O günün âdetine göre Kâbe'nin içindeki Hübel putunun yanında oklarla kura çekildi. Kura, rivayete göre babasının en çok sevdiği oğlu Abdullah'a çıktı.",
+          "iddialar": [
+            "i-b03-004"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib onu kurban etmek üzere götürünce Kureyş toplantı yerlerinden kalkıp geldi ve onu durdurdu: Bunu yaparsa insanlar oğullarını kurban etmeye getirmeyi âdet edinirdi.",
+          "iddialar": [
+            "i-b03-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Kâbe'nin önünde orta plan: Abdülmuttalib ve arkadan görünen genç Abdullah; çevrelerinde ellerini kaldırıp itiraz eden Kureyşliler. Bıçak, kesim ya da put gösterilmez. Abdullah ve Âmine'nin yüzü gösterilmez: arkadan, siluet ya da uzak plan. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "kureys-itiraz",
+            "dosya": "b03-kureys-itiraz.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s03.mp3",
+        "muzik": "gerilim",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "abdullah"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s04",
+      "anlatim": [
+        {
+          "metin": "Kureyş ona, gaipten haber verdiğine inanılan bir kadına danışmasını önerdi. Önce Medine'ye gittiler; rivayete göre kadını Hayber'de buldular.",
+          "iddialar": [
+            "i-b03-005"
+          ]
+        },
+        {
+          "metin": "Kadın, aralarında diyetin kaç deve olduğunu sordu; on deve dediler. Abdullah ile on deve arasında kura çekilecek, kura Abdullah'a çıktıkça, Rableri razı olana dek develer artırılacaktı.",
+          "iddialar": [
+            "i-b03-005"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çölde Hayber'e giden yol, uzak plan: deveyle yolculuk eden küçük bir Kureyş kafilesi. Kadın gösterilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "kafile",
+            "dosya": "b03-hayber-kafile.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b03-s04.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ]
+    },
+    {
+      "id": "b03-s05",
+      "anlatim": [
+        {
+          "metin": "Mekke'ye dönüp kura çekmeye başladılar. Kura her seferinde Abdullah'a çıktı; develer onar onar arttı.",
+          "iddialar": [
+            "i-b03-006"
+          ]
+        },
+        {
+          "metin": "Develer yüze ulaşınca kura develere çıktı. Abdülmuttalib üç kez daha çekmekte direndi; üçünde de kura develere çıktı.",
+          "iddialar": [
+            "i-b03-006"
+          ]
+        },
+        {
+          "metin": "Yüz deve kurban edildi ve Abdullah kurtuldu.",
+          "iddialar": [
+            "i-b03-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Kâbe'ye yakın açıklıkta uzak plan: sıra sıra toplanmış çok sayıda deve; kenarda Abdülmuttalib ve arkadan Abdullah. Kesim gösterilmez. Abdullah ve Âmine'nin yüzü gösterilmez: arkadan, siluet ya da uzak plan. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "yuz-deve",
+            "dosya": "b03-yuz-deve.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s05.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "abdullah"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s06",
+      "anlatim": [
+        {
+          "metin": "Abdülmuttalib oradan, oğlu Abdullah'ın elinden tutup onu Zühreoğulları'nın büyüğü Vehb b. Abdümenâf'a götürdü ve onun kızı Âmine ile evlendirdi.",
+          "iddialar": [
+            "i-b03-007"
+          ]
+        },
+        {
+          "metin": "Âmine o gün soy ve konum bakımından Kureyş'in en seçkin kadınıydı.",
+          "iddialar": [
+            "i-b03-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Mekke'de bir evin kapısı önünde orta plan: Abdülmuttalib ve arkadan Abdullah, karşılarında ev sahibi Vehb. Âmine kadrajda yok. Abdullah'ın yüzü gösterilmez. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "vehb-kapi",
+            "dosya": "b03-vehb-kapi.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s06.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "abdullah",
+        "vehb-b-abdumenaf",
+        "amine"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s07",
+      "anlatim": [
+        {
+          "metin": "Resûlullah'ın anlattığına göre annesi hamileyken bir rüya görmüştü. Rivayetlere göre doğacak çocuğa Muhammed (bir rivayette Ahmed) adını vermesi söylenmişti.",
+          "iddialar": [
+            "i-b03-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, bir evin içi: yere serilmiş yatak, üzerinde örtüye bürünmüş, yüzü görünmeyen uyuyan bir kadın (Âmine), arkadan. Pencereden ay ışığı. Nur ya da parıltı çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "ev-ici",
+            "dosya": "b03-ev-ici-gece.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.5
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b03-s07.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "amine"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s08",
+      "anlatim": [
+        {
+          "metin": "Abdullah ticaret için Şam'a gitti. Dönüşte Yesrib'de hastalandı, babasının dayıları Neccâroğulları'nın yanında vefat etti ve oraya defnedildi.",
+          "iddialar": [
+            "i-b03-010"
+          ]
+        },
+        {
+          "metin": "Tercih edilen rivayete göre bu, Âmine hamileyken olmuştu; Efendimiz babasını görmeden dünyaya gelecekti.",
+          "iddialar": [
+            "i-b03-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, çölde kuzeye uzanan kervan yolu, uzak plan: ufka doğru uzaklaşan küçük bir kervan; tek bir yolcu arkadan (Abdullah). Abdullah ve Âmine'nin yüzü gösterilmez: arkadan, siluet ya da uzak plan. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kervan-yolu",
+            "dosya": "b03-kervan-yolu.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kervan",
+            "dosya": "b03-kervan-uzak.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b03-s08.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "abdullah"
+      ]
+    },
+    {
+      "id": "b03-s09",
+      "anlatim": [
+        {
+          "metin": "Kur'an bu yetimliğe şöyle işaret eder: «O, seni yetim bulup barındırmadı mı?»",
+          "iddialar": [
+            "i-b03-011",
+            "i-b03-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, Yesrib'de bir evin avlusunda sade bir mezar, uzak plan (i-b03-010); insan yok. Mezarın biçimi kaynakta yok; sade tutulur. Kan yok. Nur tonu yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "yesrib-mezar",
+            "dosya": "b03-yesrib-mezar.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.4
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s09.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "abdullah"
+      ],
+      "yer": "yesrib"
+    },
+    {
+      "id": "b03-s10",
+      "anlatim": [
+        {
+          "metin": "Efendimiz, Fil Yılı'nda, Rebîülevvel ayının on ikisinde Mekke'de dünyaya geldi.",
+          "iddialar": [
+            "i-b03-012"
+          ]
+        },
+        {
+          "metin": "Resûlullah yıllar sonra kendisine pazartesi orucu sorulduğunda şöyle buyuracaktı: «O, doğduğum gündür; peygamber olarak gönderildiğim ya da bana (vahiy) indirildiği gündür.»",
+          "iddialar": [
+            "i-b03-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de evlerin arasında tek bir evin dışı, orta plan; sakin bir gün; kapı aralığı karanlık değil, sıradan gün ışığı. Olağanüstü ışık ya da parıltı çizilmez (o ayrıntı dipnottaki rivayette). İnsan yok; çocuk ve anne gösterilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "dogum-evi",
+            "dosya": "b03-dogum-evi.webp",
+            "yerTutucu": "kapi-araligi",
+            "derinlik": 0.55
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s10.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "amine"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s11",
+      "anlatim": [
+        {
+          "metin": "Âmine, Abdülmuttalib'e haber gönderdi: «Sana bir oğlan doğdu, gel ona bak.»",
+          "iddialar": [
+            "i-b03-014"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib geldi. Âmine ona, çocuğa hangi adı vermesinin söylendiğini anlattı. Çocuğun adı Muhammed kondu.",
+          "iddialar": [
+            "i-b03-014",
+            "i-b03-016"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, evin kapısı önünde orta plan: kapıya gelmiş Abdülmuttalib; Âmine kadrajda yok ya da kapı gölgesinde yüzsüz. Bebek gösterilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "abdulmuttalib-kapi",
+            "dosya": "b03-abdulmuttalib-kapi.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s11.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "amine",
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b03-s12",
+      "anlatim": [
+        {
+          "metin": "Rivayete göre Abdülmuttalib onu alıp Kâbe'ye girdi; orada Allah'a dua edip O'nun verdiği nimete şükretti.",
+          "iddialar": [
+            "i-b03-015"
+          ]
+        },
+        {
+          "metin": "Sonra onu annesine geri verdi ve ona bir süt anne aramaya başladı.",
+          "iddialar": [
+            "i-b03-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Kâbe'nin kapısı, orta plan: Abdülmuttalib arkadan, kapıdan içeri girerken; kolları önünde, kucağındaki görünmez. Bebek, bohça, ışık çizilmez (kaynakta Kâbe'nin içine girer; iç mekân gösterilmez). Kâbe alçak ve çatısız. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "abdulmuttalib-kabe",
+            "dosya": "b03-abdulmuttalib-kabe.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b03-s12.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b03-001",
+      "ifade": "Hz. Muhammed (s.a.v.), Abdullah'ın oğlu, Abdülmuttalib'in torunudur; Abdülmuttalib'in asıl adı Şeybe'dir ve soyu Hâşim, Abdümenâf ve Kusay üzerinden Kureyş'e uzanır.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 3 (nesep zinciri; Vikikaynak'ta bu sayfa düzeltilmiş metin). MUHAMMED maddesi aynı nesebi verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 3",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 406 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-002",
+      "ifade": "Resûlullah şöyle buyurdu: \"Allah İsmâil'in soyundan Kinâne'yi seçti; Kinâne'den Kureyş'i seçti; Kureyş'ten Hâşimoğulları'nı seçti; Hâşimoğulları'ndan da beni seçti.\"",
+      "guc": "kesin",
+      "gerekce": "Müslim 2276 (Vâsile b. el-Eska'), sunnah.com'da Kitâbü'l-Fezâil, kitap içi 1. Türkçe bizim çevirimizdir ('innallâhe'stafâ Kinânete min veledi İsmâîl...'); Erdem bir Türkçe tercümeyle karşılaştırmalı. MUHAMMED maddesinin 2. bölümü (Kandemir) hadisi Müslim, Fezâil, 1'e atıfla, Tirmizî'deki geniş lafzıyla verir.",
+      "kaynaklar": [
+        {
+          "eser": "muslim-sahih",
+          "konum": "Fezâil (sunnah.com kitap içi sıra 1), hadis no. 2276",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"MUHAMMED\" (bölüm 2), c. 30, s. 421 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-003",
+      "ifade": "Rivayete göre Abdülmuttalib, Zemzem kuyusunu kazarken Kureyş'ten tepki görünce, on oğlu olup kendisini koruyacak yaşa gelirlerse birini Kâbe'nin yanında Allah'a kurban etmeyi adamıştı. Oğulları on olunca onlara adağını anlattı, onlar da kabul ettiler.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 97 ('Abdülmuttalib'in oğlunu kurban etme adağı'); İbn İshak haberi 'iddia ettiklerine göre, Allah bilir' kaydıyla verir, anlatımda 'rivayete göre' denir. ABDULLAH (s. 75) ve MUHAMMED maddeleri adağı ve sebebini aynı biçimde verir; ABDULLAH bütün kaynakların kurban hadisesinden bahsettiğini yazar. İbn Hişâm sayfaları taramanın matbu numarasıdır ve taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 97",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-004",
+      "ifade": "Oğulları arasında, o günün âdetine göre Kâbe'nin içindeki Hübel putunun yanında oklarla kura çekildi. Kura, rivayete göre babasının en çok sevdiği oğlu Abdullah'a çıktı. Abdülmuttalib onu kurban etmek üzere götürünce Kureyş toplantı yerlerinden kalkıp onu durdurdu: Bunu yaparsa insanlar oğullarını kurban etmeye getirmeyi âdet edinirdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 97-98. ABDULLAH (s. 75) kızlarının, dayılarının ya da Kureyş'in ileri gelenlerinin karşı çıktığını ve bunun kötü bir âdet olabileceğini hatırlattıklarını yazar. Bıçak ve kurban girişiminin ayrıntısı anlatıma alınmadı. 'En çok sevdiği' ifadesi İbn Hişâm'da 'iddia ettiklerine göre' kaydıyla geçer.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 97-98",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn İshak Abdullah'ı babasının en küçük oğlu olarak anar; Hamza ile Abbas ondan küçük olduğu için bazı yazarlar rivayete itiraz etmiştir. Süheylî doğru ifadenin 'annesinin en küçük oğlu' olabileceğini söyler.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 98",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75-76 (İstanbul 1988)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Abdülmuttalib'i durdurduğu anlatılanlar kaynaklarda farklıdır: İbn İshak Kureyş'i, Abdülmuttalib'in oğullarını ve Mahzûmoğulları'ndan Muğîre b. Abdullah'ı anar; ABDULLAH maddesi onun kızlarını, Abdullah'ın dayılarını ya da Kureyş'in ileri gelenlerini, MUHAMMED maddesi 'başta kızları olmak üzere' pek çok kimseyi sayar.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 98",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75 (İstanbul 1988)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b03-005",
+      "ifade": "Kureyş, Abdülmuttalib'e gaipten haber verdiğine inanılan bir kadına (arrâfe) danışmasını önerdi. Önce Medine'ye gittiler; rivayete göre kadını Hayber'de buldular. Kadın aralarında diyetin kaç deve olduğunu sordu; on deve dediler. Abdullah ile on deve arasında kura çekilecek, kura Abdullah'a çıktıkça, Rableri razı olana dek develer artırılacaktı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 98-99. ABDULLAH (s. 75) çözümün kaynakların çoğuna göre Medineli bir arrâfe tarafından teklif edildiğini yazar. Develerin onar onar artırılması kadının sözünde değil, Mekke'deki uygulamada geçer (s. 99); kadının Hayber'de bulunması 'iddia ettiklerine göre' kaydıyladır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 98-99",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-006",
+      "ifade": "Kura her seferinde Abdullah'a çıktı; develer yüze ulaşınca develere çıktı. Abdülmuttalib üç kez daha çekmekte direndi, üçünde de kura develere çıktı. Yüz deve kurban edildi ve Abdullah kurtuldu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 99-100. ABDULLAH (s. 75) ve MUHAMMED maddeleri yüz deve kurban edilerek Abdullah'ın kurtarıldığını yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 99-100",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 75 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-007",
+      "ifade": "Abdülmuttalib oradan oğlu Abdullah'ın elinden tutup onu Zühreoğulları'nın büyüğü Vehb b. Abdümenâf'a götürdü ve onun kızı Âmine ile evlendirdi. Âmine o gün soy ve konum bakımından Kureyş'in en seçkin kadınıydı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 100. ÂMİNE (s. 63) babasının Benî Zühre'den olduğunu, Abdülmuttalib'in onu Vehb'den (ya da amcası Vüheyb'den) istediğini ve seçkin bir aileden geldiğine dair rivayetlerin yerinde olduğunu yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 100",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 63-64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-009",
+      "ifade": "Resûlullah'ın anlattığına göre annesi hamileyken bir rüya görmüştü. Rivayetlere göre doğacak çocuğa Muhammed (bir rivayette Ahmed) adını vermesi söylenmişti.",
+      "guc": "ihtilafli",
+      "gerekce": "MUHAMMED (s. 407) Hz. Peygamber'in, annesinin bir rüya gördüğünü ve doğacak çocuğa Muhammed veya Ahmed adını vermesinin telkin edildiğini anlattığı rivayeti Müsned (IV, 127-128) ve İbn Sa'd'a, Arnaût'un değerlendirmesiyle dayandırır. ÂMİNE (s. 64) rüya hadisinin sahih olarak nakledildiğini yazar; Müsned rivayetlerinde ad telkininden değil, ya hiç konu verilmeden ya da nurdan söz edilir. İbn Hişâm s. 102 'rüya' kelimesini kullanmaz; Âmine'nin 'kendisine gelindiğini, ona bu ümmetin efendisine hamile olduğunun ve adını Muhammed koymasının söylendiğini' anlattığını en ağır çekinceyle ('insanların anlattıklarına göre iddia ederler, Allah bilir') verir. Doğum öncesi olağanüstü hadiseler politika §3 gereği ihtiyatla verildi; anlatımda 'anlattığına göre' ve 'rivayetlere göre' denir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 102",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Rivayetlerin bir kısmına göre Âmine hamileyken kendisinden çıkan bir nurla Şam'daki Busrâ'nın saraylarını gördü. Hamilelik dönemindeki olağanüstü olaylara dair rivayetler eski müelliflerce ihtiyatla karşılanmış, yeni araştırmacılarca tenkit edilmiş; rüya hadisinin nurdan söz eden kısmının metne sonradan eklendiğini ileri sürenler olmuştur. ÂMİNE maddesine göre ise bu kısım sahih rivayetin parçası olsa bile rüyaya dayalı olduğundan yadırganacak bir yanı yoktur.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 102",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b03-010",
+      "ifade": "Abdullah ticaret için Şam'a gitti; dönüşte Yesrib'de (Medine) hastalandı, babasının dayıları Neccâroğulları'nın yanında vefat etti ve orada bir evin avlusuna defnedildi. Tercih edilen rivayete göre bu, Âmine hamileyken oldu; Efendimiz babasını görmeden dünyaya geldi.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 102 Abdullah'ın Âmine hamileyken öldüğünü yazar; yola çıkış zamanını hiçbir kaynak vermez. ABDULLAH (s. 76) tercih edilen rivayete göre Şam (Gazze) dönüşünde Medine'de Neccâroğulları yanında öldüğünü, bir evin avlusuna defnedildiğini ve ilk kaynakların ölümün doğumdan önce olduğunu tercih ettiğini yazar; MUHAMMED (s. 407) yaygın rivayeti verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 102",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 76 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı rivayetlere göre Abdullah, Hz. Peygamber yirmi sekiz aylıkken vefat etmiştir.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 76 (İstanbul 1988)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b03-011",
+      "ifade": "Kur'an bu yetimliğe şöyle işaret eder: \"O, seni yetim bulup barındırmadı mı?\"",
+      "guc": "kesin",
+      "gerekce": "Duhâ 93/6, Diyanet Vakfı meali (yerel kopya, mushaf s. 596). ABDULLAH (s. 76) Abdullah'ın Hz. Peygamber'i yetim bırakarak öldüğünü bu âyete bağlar.",
+      "kaynaklar": [
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "Duhâ 93/6 (mushaf s. 596)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ABDULLAH\", c. 1, s. 76 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-012",
+      "ifade": "Hz. Muhammed (s.a.v.) Fil Yılı'nda, Rebîülevvel ayının on ikisinde Mekke'de doğdu.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 102 (İbn İshak: pazartesi, Rebîülevvel'in on iki gecesi geçmişken, Fil Yılı); aynı sayfada Kays b. Mahreme 'Resûlullah ile ben Fil Yılı'nda doğduk' der. MEVLİD (s. 475) tarihçilerin çoğuna göre Fil Yılı'nda, genellikle kabul edildiğine göre 12 Rebîülevvel'de ve gündüz doğduğunu yazar; MUHAMMED (s. 406-407) Fil Vakası'ndan elli ya da elli beş gün sonra 12 Rebîülevvel diye verir. Gün ve milâdî yıl kaynaklar arasında farklı olduğu için 'ihtilafli'; ana metin genel kabulü verir, milâdî yıl anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 102",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Özel, \"MEVLİD\" (bölüm 1), c. 29, s. 475 (Ankara 2004)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 406-407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Milâdî karşılık farklı hesaplanmıştır: nesî geleneğini hesaba katanlara göre 569, diğerlerine göre 570 ya da 571. Mahmûd Paşa el-Felekî doğumu Fil Yılı'nın 9 Rebîülevvel'i (20 Nisan 571), Muhammed Hamîdullah 12 Rebîülevvel (17 Haziran 569) olarak hesaplamıştır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Ahmet Özel, \"MEVLİD\" (bölüm 1), c. 29, s. 475 (Ankara 2004)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 406-407 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Ayın günü için 2, 8, 10 ya da 17 Rebîülevvel diyen rivayetler de vardır; genel kabule göre doğum gündüz olmuştur, sabaha karşı diyen rivayet de bulunur.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Ahmet Özel, \"MEVLİD\" (bölüm 1), c. 29, s. 475 (Ankara 2004)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b03-013",
+      "ifade": "Resûlullah'a pazartesi orucu sorulduğunda şöyle buyurdu: \"O, doğduğum gündür; peygamber olarak gönderildiğim ya da bana (vahiy) indirildiği gündür.\"",
+      "guc": "kesin",
+      "gerekce": "Müslim 1162b (Ebû Katâde), sunnah.com'da Kitâbü's-Sıyâm. 'ev' (ya da) râvinin tereddüdüdür ve çeviride korunur. Türkçe bizim çevirimizdir. MEVLİD maddesi aynı hadisi Müslim, 'Sıyâm', 197'ye atıfla anar. MEVLİD Müslim'i 'Sıyâm, 197' diye anar; sunnah.com numarası 1162b (kitap içi 253). Numaralar matbu Müslim'den kontrol edilmeli.",
+      "kaynaklar": [
+        {
+          "eser": "muslim-sahih",
+          "konum": "Sıyâm (sunnah.com kitap içi sıra 253), hadis no. 1162b",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Özel, \"MEVLİD\" (bölüm 1), c. 29, s. 478 (Ankara 2004)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-014",
+      "ifade": "Doğum olunca Âmine, Abdülmuttalib'e 'Sana bir oğlan doğdu, gel ona bak' diye haber gönderdi. Abdülmuttalib geldi; Âmine ona, çocuğa hangi adı vermesinin söylendiğini anlattı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 103. MUHAMMED maddesi Âmine'nin Abdülmuttalib'e haber göndererek torununu müjdelediğini yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 103",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-015",
+      "ifade": "Rivayete göre Abdülmuttalib onu alıp Kâbe'ye girdi; orada Allah'a dua edip O'nun verdiği nimete şükretti. Sonra onu annesine geri verdi ve ona süt anne aramaya başladı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 103: 'fe-yez'umûne' (iddia ettiklerine göre) kaydıyla; 'fe-dehale bihi'l-Ka'be' (onu alıp Kâbe'nin içine girdi). Tek kaynak bu C kaynağıdır ve çekincelidir; anlatımda 'rivayete göre' denir. D desteği bulunmadı; Erdem 'guclu' etiketini gözden geçirmeli. Süt anne arayışı b04'e bağlanır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 103",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b03-016",
+      "ifade": "Çocuğun adı Muhammed kondu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 102-103 (Âmine'ye adını Muhammed koyması söylenir) ve MUHAMMED maddesi (Abdülmuttalib torununa Muhammed adını verdi). Adı kimin koyduğu kaynaklarda farklı anlatıldığı için ana metin yalnız adı verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 102-103",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir rivayete göre adını, torununun doğumu şerefine verdiği ziyafette dedesi Abdülmuttalib koymuştur.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -9,11 +9,14 @@
       "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
       "b09-hakem",
-      "b10-hira"
+      "b10-hira",
+      "b03-dogum"
     ],
     "iddialar": [
       "i-b09-001",
-      "i-b09-018"
+      "i-b09-018",
+      "i-b03-001",
+      "i-b03-012"
     ]
   },
   {
@@ -77,12 +80,15 @@
     "bolumler": [
       "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
-      "b10-hira"
+      "b10-hira",
+      "b03-dogum"
     ],
     "iddialar": [
       "i-b01-021",
       "i-b10-002",
-      "i-b02-011"
+      "i-b02-011",
+      "i-b03-003",
+      "i-b03-015"
     ]
   },
   {
@@ -364,6 +370,49 @@
     ],
     "iddialar": [
       "i-b02-010"
+    ]
+  },
+  {
+    "id": "abdullah",
+    "ad": "Abdullah b. Abdülmuttalib",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) babası",
+    "ozet": "Abdülmuttalib'in oğlu. Babasının adağında kura ona çıktı, yerine yüz deve kurban edildi. Âmine ile evlendi; tercih edilen rivayete göre oğlu doğmadan, Şam dönüşü Yesrib'de vefat etti.",
+    "bolumler": [
+      "b03-dogum"
+    ],
+    "iddialar": [
+      "i-b03-004",
+      "i-b03-006",
+      "i-b03-007",
+      "i-b03-010"
+    ]
+  },
+  {
+    "id": "amine",
+    "ad": "Âmine bint Vehb",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) annesi",
+    "ozet": "Zühreoğulları'nın büyüğü Vehb b. Abdümenâf'ın kızı; Abdullah ile evlendi. Oğlu doğunca Abdülmuttalib'e haber gönderdi.",
+    "bolumler": [
+      "b03-dogum"
+    ],
+    "iddialar": [
+      "i-b03-007",
+      "i-b03-014"
+    ]
+  },
+  {
+    "id": "vehb-b-abdumenaf",
+    "ad": "Vehb b. Abdümenâf",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) anne tarafından dedesi",
+    "ozet": "Kureyş'in Zühreoğulları kolunun büyüğü; kızı Âmine'yi Abdullah ile evlendirdi.",
+    "bolumler": [
+      "b03-dogum"
+    ],
+    "iddialar": [
+      "i-b03-007"
     ]
   }
 ]

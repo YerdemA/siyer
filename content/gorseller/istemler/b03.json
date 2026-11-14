@@ -1,0 +1,170 @@
+{
+  "bolum": "b03-dogum",
+  "aciklama": "Bölüm 3 görsellerinin üretim istemleri ve kaydı. Üslup ve yasaklar b10.json'daki ile aynı (u01-d); dönem 570 civarı Mekke.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Mecca, Hijaz, around 570 CE — a narrow valley among bare, rocky, almost treeless mountains; small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Hübel putu ve Kâbe'nin içi: kura sahnesi Kâbe'nin dışında; put ve fal okları gösterilmez.",
+      "Kurban girişimi, bıçak, deve kesimi: çizilmez.",
+      "Hayber'deki kadın (arrâfe): gösterilmez.",
+      "Abdullah ve Âmine: yüz yok (arkadan, siluet, uzak plan); GORSEL_USLUP kural 3.",
+      "Bebek Efendimiz: hiçbir biçimde çizilmez, nur da kullanılmaz; s12'de Abdülmuttalib arkadan, kucağındaki görünmez.",
+      "Doğum gecesi olağanüstü ışık: çizilmez (o rivayet dipnotta).",
+      "Kâbe: Abdülmuttalib dönemi, çatısız alçak Kâbe (kabe-alcak)."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b03-on-ogul",
+      "tur": 1,
+      "dosya": "b03-on-ogul.webp",
+      "katman": "on-ogul",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s02"
+      ],
+      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing and speaking to ten grown sons, all adult men who stand in a loose half-circle before him, listening; faces drawn simply, no distinctive features. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok."
+    },
+    {
+      "id": "b03-kureys-itiraz",
+      "tur": 1,
+      "dosya": "b03-kureys-itiraz.webp",
+      "katman": "kureys-itiraz",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s03"
+      ],
+      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth; around them a group of men of Quraysh raising their hands in protest, urging him to stop; faces of the men drawn simply. No knife, no weapon, no idol, no blood. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan)."
+    },
+    {
+      "id": "b03-hayber-kafile",
+      "tur": 1,
+      "dosya": "b03-hayber-kafile.webp",
+      "katman": "hayber-kafile",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s04"
+      ],
+      "istem": "A small caravan of a few men on camels travelling across a desert plain, seen from far away; riders small and undetailed. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 98-99: Hayber'e danışmaya giderler. Kadın gösterilmez."
+    },
+    {
+      "id": "b03-yuz-deve",
+      "tur": 1,
+      "dosya": "b03-yuz-deve.webp",
+      "katman": "yuz-deve",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s05"
+      ],
+      "istem": "A great many camels gathered in rows in an open space, seen from far away; at the edge, a handsome, imposing Arab man of Quraysh in a simple head cloth standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth. No slaughter, no blood, no knives. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez."
+    },
+    {
+      "id": "b03-vehb-kapi",
+      "tur": 1,
+      "dosya": "b03-vehb-kapi.webp",
+      "katman": "vehb-kapi",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s06"
+      ],
+      "istem": "At the doorway of a simple mudbrick house at dusk: a handsome, imposing Arab man of Quraysh in a simple head cloth and a young Arab man seen only from behind (no face visible), in simple clothes and head cloth, standing before another dignified Arab man (the host). No women in the frame. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz."
+    },
+    {
+      "id": "b03-ev-ici-gece",
+      "tur": 1,
+      "dosya": "b03-ev-ici-gece.webp",
+      "katman": "ev-ici",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s07"
+      ],
+      "istem": "Interior of a simple mudbrick room at night, lit only by pale moonlight from a small window; on a bedding on the floor lies a woman fully wrapped in a cloak and head covering, seen from behind or in deep shadow so that no face is visible, asleep, seen from behind under a blanket. No glow, no light rays, no golden-white light. Full frame.",
+      "not": "İbn Hişâm s. 102: rüya. Nur/parıltı çizilmez; Âmine yüzsüz."
+    },
+    {
+      "id": "b03-kervan-yolu",
+      "tur": 1,
+      "dosya": "b03-kervan-yolu.webp",
+      "katman": "kervan-yolu",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s08"
+      ],
+      "istem": "Wide desert ground layer at dusk: a long caravan track running north across sand and gravel toward the horizon, low rocky hills. No people. Fills the lower half of the frame; everything above is flat chroma green (#00B140).",
+      "not": "Ortak zemin."
+    },
+    {
+      "id": "b03-kervan-uzak",
+      "tur": 1,
+      "dosya": "b03-kervan-uzak.webp",
+      "katman": "kervan",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s08"
+      ],
+      "istem": "A small trading caravan of camels and a few travellers moving away toward the horizon, seen from far behind; all figures small, seen from behind, no faces. {yesil_perde_eki}",
+      "not": "ABDULLAH s. 76: Şam'a ticaret yolculuğu. Abdullah ayrıca belirtilmez."
+    },
+    {
+      "id": "b03-yesrib-mezar",
+      "tur": 1,
+      "dosya": "b03-yesrib-mezar.webp",
+      "katman": "yesrib-mezar",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s09"
+      ],
+      "istem": "At night, the inner courtyard of a simple mudbrick house, seen from a distance; in the courtyard a single plain, low grave mound. No people, no writing, no glow. {yesil_perde_eki}",
+      "not": "ABDULLAH s. 76: bir evin avlusuna defnedildi. Yazı yok."
+    },
+    {
+      "id": "b03-dogum-evi",
+      "tur": 1,
+      "dosya": "b03-dogum-evi.webp",
+      "katman": "dogum-evi",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s10"
+      ],
+      "istem": "In daylight, the outside of a modest mudbrick house among other houses in a narrow street of Mecca, its wooden door slightly ajar, the gap showing ordinary soft daylight. No people, no glow, no light rays, no golden-white light. {yesil_perde_eki}",
+      "not": "Doğum sabahı; olağanüstü ışık çizilmez (dipnottaki rivayet). İnsan yok."
+    },
+    {
+      "id": "b03-abdulmuttalib-kapi",
+      "tur": 1,
+      "dosya": "b03-abdulmuttalib-kapi.webp",
+      "katman": "abdulmuttalib-kapi",
+      "isleme": "perde",
+      "sahneler": [
+        "b03-s11"
+      ],
+      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth standing at the door of a modest house in daylight, about to look in; calm face drawn simply. No women visible, no baby visible. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 103: 'geldi ve ona baktı'. Acele/sevinç gibi nitelikler kaynakta yok; Âmine kadrajda yok."
+    },
+    {
+      "id": "b03-abdulmuttalib-kabe",
+      "tur": 1,
+      "dosya": "b03-abdulmuttalib-kabe.webp",
+      "katman": "abdulmuttalib-kabe",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b03-s12"
+      ],
+      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth seen fully from behind, stepping through the dark doorway of a low, roofless ancient stone sanctuary; his arms are in front of him and hidden by his body, so nothing he carries is visible. No baby, no bundle, no light, no glow. Full figure. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 103: onu alıp Kâbe'ye girer. Abdülmuttalib arkadan; kucağındaki görünmez, nur kullanılmaz. Üretimde bebek/bohça görünürse kullanılmaz."
+    }
+  ],
+  "uretimler": []
+}
