@@ -2,7 +2,7 @@
   "id": "b10-hira",
   "sira": 10,
   "baslik": "Hira'nın Eşiği",
-  "ozet": "Kâbe'nin onarımından sonraki yıllar: sadık rüyalar, yalnızlık ve Hira'daki inzivâ. Bölüm ilk vahiyden hemen önce biter.",
+  "ozet": "Putlardan yüz çeviren Mekkeliler ve Zeyd b. Amr; Kâbe'nin onarımından sonraki yıllarda sadık rüyalar, yalnızlık ve Hira'daki inzivâ. Bölüm ilk vahiyden hemen önce biter.",
   "durum": "taslak",
   "uzmanOkumasi": {
     "okuyan": "",
@@ -153,6 +153,342 @@
       "id": "b10-s03",
       "anlatim": [
         {
+          "metin": "Kureyş arasında putlara tapmayı sorgulayan başkaları da vardı.",
+          "iddialar": [
+            "i-b10-001",
+            "i-b10-013"
+          ]
+        },
+        {
+          "metin": "Kureyş her yıl putlarından birinin başında bayram yapardı: ona kurban keser, yanında kalır, etrafında dönerdi.",
+          "iddialar": [
+            "i-b10-013"
+          ]
+        },
+        {
+          "metin": "Böyle bir bayram günü dört kişi kalabalıktan gizlice ayrıldı: Varaka b. Nevfel, Ubeydullah b. Cahş, Osman b. Hüveyris ve Zeyd b. Amr b. Nüfeyl.",
+          "iddialar": [
+            "i-b10-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke vadisinde açık bir alan, orta plan. Ortada kaba yontulmuş taş bir put (İbn Hişâm s. 143: etrafında dönülen, duymayan görmeyen bir taş; ARAP maddesi: putlar, heykeller, dikili taşlar). Boyu ve kaidesi kaynakta yok; abartılmaz. Putun çevresinde dönen kalabalık; yüzler sade. Kalabalığın kenarında, putun aksi yönüne yürüyen dört adam. Kan yok, kurban kesimi gösterilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "put-bayrami",
+            "dosya": "b10-put-bayrami.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.5
+          },
+          {
+            "id": "dort-kisi",
+            "dosya": "b10-dort-kisi.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b10-s03.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "varaka-b-nevfel",
+        "ubeydullah-b-cahs",
+        "osman-b-huveyris",
+        "zeyd-b-amr"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s04",
+      "anlatim": [
+        {
+          "metin": "Kavimlerinin, babaları İbrâhim'in dininden saptığını konuştular: duymayan, görmeyen, ne zarar ne fayda veren bir taşın etrafında dönüyorlardı.",
+          "iddialar": [
+            "i-b10-014"
+          ]
+        },
+        {
+          "metin": "Her biri kendine bir din aramalıydı. İbrâhim'in dinini bulmak için ayrı ayrı yerlere dağıldılar.",
+          "iddialar": [
+            "i-b10-014"
+          ]
+        },
+        {
+          "metin": "Varaka Hıristiyanlığı benimsedi ve kitap ehlinin kitaplarından bilgi edindi. Osman, Bizans kayserinin yanına gidip Hıristiyan oldu. Ubeydullah ise Müslüman olana kadar kararsız kaldı.",
+          "iddialar": [
+            "i-b10-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, evlerin arasında dar bir köşe, yakın plan: dört adam başlarını birbirine yaklaştırmış, alçak sesle konuşuyor; yüzleri ciddi ve düşünceli, sade çizilmiş. Arkada uzakta putun çevresindeki kalabalık bulanık. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "dort-kisi-yakin",
+            "dosya": "b10-dort-kisi-yakin.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s04.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "varaka-b-nevfel",
+        "ubeydullah-b-cahs",
+        "osman-b-huveyris",
+        "zeyd-b-amr"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s05",
+      "anlatim": [
+        {
+          "metin": "Zeyd hak dini bulmak için Şam'a kadar gitti.",
+          "iddialar": [
+            "i-b10-017"
+          ]
+        },
+        {
+          "metin": "Önce bir Yahudi, sonra bir Hıristiyan âlimle konuştu. İkisi de ona aynı dini gösterdi: Hanîflik, yani İbrâhim'in dini. İbrâhim ne Yahudi ne Hıristiyandı; yalnız Allah'a kulluk ederdi.",
+          "iddialar": [
+            "i-b10-017"
+          ]
+        },
+        {
+          "metin": "Zeyd oradan çıkınca ellerini kaldırıp şöyle dedi: «Allah'ım! İbrâhim'in dini üzere olduğuma şahitlik ederim.»",
+          "iddialar": [
+            "i-b10-017"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Şam'da açık arazi, orta plan: iki elini göğe kaldırmış bir Arap (Zeyd), yüzü sade ve kararlı; sırtında yolcu heybesi. Yaşı kaynakta yok; belirgin özellik verilmez. Arkada Mekke'nin dik dağlarından daha düz, alçak tepeli bir arazi ve toprak yol; belirgin bitki ya da yapı yok. Haç, minare, kubbe, yazı yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sam-arazi",
+            "dosya": "b10-sam-arazi.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.2
+          },
+          {
+            "id": "zeyd-dua",
+            "dosya": "b10-zeyd-dua.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s05.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "zeyd-b-amr"
+      ],
+      "yer": "sam"
+    },
+    {
+      "id": "b10-s06",
+      "anlatim": [
+        {
+          "metin": "Zeyd ne Yahudi ne Hıristiyan oldu. Kavminin dinini bıraktı; putlardan, leşten, kandan ve putlar adına kesilen hayvanlardan uzak durdu.",
+          "iddialar": [
+            "i-b10-016"
+          ]
+        },
+        {
+          "metin": "Kızını öldürmek isteyen birine «Onu öldürme, geçimini ben üstlenirim» der, çocuğu yanına alırdı. «Ben İbrâhim'in Rabbine ibadet ederim» derdi.",
+          "iddialar": [
+            "i-b10-016"
+          ]
+        },
+        {
+          "metin": "Hz. Ebû Bekir'in kızı Esmâ onu yaşlılığında, sırtını Kâbe'ye dayamış hâlde şöyle derken görmüştü: «Ey Kureyş! Allah'a yemin ederim ki sizden benden başka İbrâhim'in dini üzere kimse yok.»",
+          "iddialar": [
+            "i-b10-018"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, yakın plan: yaşlı bir adam (Zeyd) sırtını taş bir duvara (Kâbe) dayamış, elini kaldırmış konuşuyor; yüzü sade, ciddi. Duvarın yalnız bir parçası görünür; malzemesi, yüksekliği ve örtüsü belirtilmez (anın tarihi kaynakta yok). Önünde birkaç dinleyici, arkadan ya da yandan. Putlar bu kadrajda yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kabe-duvar",
+            "dosya": "b10-kabe-duvar.webp",
+            "yerTutucu": "kabe-yakin",
+            "derinlik": 0.4
+          },
+          {
+            "id": "zeyd-yasli",
+            "dosya": "b10-zeyd-yasli.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s06.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "zeyd-b-amr",
+        "esma-bint-ebu-bekir"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s07",
+      "anlatim": [
+        {
+          "metin": "Peygamberlik gelmeden önce bir gün Efendimiz, Mekke yolu üzerindeki Beldah vadisinin aşağısında Zeyd ile karşılaştı.",
+          "iddialar": [
+            "i-b10-019"
+          ]
+        },
+        {
+          "metin": "Aralarına bir sofra getirildi. Zeyd şöyle dedi: «Putlarınızın taşları üzerinde kestiklerinizden yemem; yalnız üzerine Allah'ın adı anılandan yerim.»",
+          "iddialar": [
+            "i-b10-019"
+          ]
+        },
+        {
+          "metin": "Zeyd, peygamberliğe yetişmeden vefat etti.",
+          "iddialar": [
+            "i-b10-020"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gündüz, kuru bir vadi tabanı; yere serilmiş deri bir sofra, üzerinde kapalı ya da içi görünmeyen bir kap. Sofranın öbür yanında oturan Zeyd konuşuyor; yemeği iten ya da geri çeviren bir jest yok (rivayet farkı). Yaşı kaynakta yok. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "zeyd-sofra",
+            "dosya": "b10-zeyd-sofra.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          },
+          {
+            "id": "sofra",
+            "dosya": "b10-sofra.webp",
+            "yerTutucu": "kap",
+            "derinlik": 0.85
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b10-s07.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "zeyd-b-amr"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s08",
+      "anlatim": [
+        {
           "metin": "Mekke'de, yılın belirli aylarında inzivâya çekilen bazı kimseler vardı. Kureyş buna tahannüs derdi.",
           "iddialar": [
             "i-b10-002"
@@ -191,7 +527,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b10-s03.mp3",
+        "anlatim": "b10-s08.mp3",
         "muzik": "dusunceli-01",
         "ortam": "safak-ruzgar"
       },
@@ -201,7 +537,7 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s04",
+      "id": "b10-s09",
       "anlatim": [
         {
           "metin": "Hira, Mekke'nin kuzeydoğusunda yükselen bir dağdır.",
@@ -242,7 +578,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s04.mp3",
+        "anlatim": "b10-s09.mp3",
         "muzik": "dusunceli-01",
         "ortam": "ruzgar-hafif"
       },
@@ -250,7 +586,58 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s05",
+      "id": "b10-s10",
+      "anlatim": [
+        {
+          "metin": "Resûlullah, peygamber olduktan sonra şöyle buyurdu: «Mekke'de, peygamber olarak gönderilmemden önce bana selâm veren bir taşı tanırım; onu şimdi de tanırım.»",
+          "iddialar": [
+            "i-b10-021"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Şafak, Mekke'de evlerin yakınında sade, tek bir taş; çevresinde kerpiç duvarlar. İnsan yok. Işık sıcak ama altın-beyaz değil (nur tonu kullanılmaz). Taşta yüz, yazı ya da parıltı yok.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "vadi-tas",
+            "dosya": "b10-vadi-tas.webp",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b10-s10.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b10-s11",
       "anlatim": [
         {
           "metin": "Hz. Âişe'nin anlattığına göre, vahiy uykuda görülen sadık rüyalarla başladı; gördüğü her rüya sabah aydınlığı gibi aynen çıkardı.",
@@ -279,7 +666,7 @@
         "kamera": "sabit-gecis"
       },
       "ses": {
-        "anlatim": "b10-s05.mp3",
+        "anlatim": "b10-s11.mp3",
         "muzik": "sakin-isik",
         "ortam": "sabah-sessiz"
       },
@@ -289,7 +676,7 @@
       "yer": "mekke"
     },
     {
-      "id": "b10-s06",
+      "id": "b10-s12",
       "anlatim": [
         {
           "metin": "Sonra ona yalnızlık sevdirildi.",
@@ -330,7 +717,7 @@
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
-        "anlatim": "b10-s06.mp3",
+        "anlatim": "b10-s12.mp3",
         "muzik": "yalnizlik",
         "ortam": "ruzgar-hafif"
       },
@@ -340,7 +727,7 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s07",
+      "id": "b10-s13",
       "anlatim": [
         {
           "metin": "Orada, ailesinin yanına dönmeden geceler boyu ibadet ederdi.",
@@ -381,7 +768,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s07.mp3",
+        "anlatim": "b10-s13.mp3",
         "muzik": "yalnizlik",
         "ortam": "gece-sessiz"
       },
@@ -391,7 +778,7 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s08",
+      "id": "b10-s14",
       "anlatim": [
         {
           "metin": "Yanına azık alırdı. Azığı bitince Hz. Hatice'nin yanına döner, bir o kadar süre için yine azık alırdı.",
@@ -426,7 +813,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b10-s08.mp3",
+        "anlatim": "b10-s14.mp3",
         "muzik": "sicak-ev",
         "ortam": "aksam-sehir"
       },
@@ -437,7 +824,7 @@
       "yer": "mekke"
     },
     {
-      "id": "b10-s09",
+      "id": "b10-s15",
       "anlatim": [
         {
           "metin": "Hira'da kaldığı o ay, yanına gelen yoksulları doyururdu.",
@@ -472,7 +859,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b10-s09.mp3",
+        "anlatim": "b10-s15.mp3",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -482,7 +869,7 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s10",
+      "id": "b10-s16",
       "anlatim": [
         {
           "metin": "Ay bitince evine gitmeden önce Kâbe'ye uğrar, yedi kez ya da dilediği kadar tavaf eder, sonra evine dönerdi.",
@@ -536,7 +923,7 @@
         "kamera": "bakis-acisi-giris"
       },
       "ses": {
-        "anlatim": "b10-s10.mp3",
+        "anlatim": "b10-s16.mp3",
         "muzik": "sakin-isik",
         "ortam": "safak-ruzgar"
       },
@@ -546,7 +933,7 @@
       "yer": "mekke"
     },
     {
-      "id": "b10-s11",
+      "id": "b10-s17",
       "anlatim": [
         {
           "metin": "Zaman zaman Hz. Hatice de onunla birlikte Hira'ya çıkardı.",
@@ -581,7 +968,7 @@
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
-        "anlatim": "b10-s11.mp3",
+        "anlatim": "b10-s17.mp3",
         "muzik": "sicak-ev",
         "ortam": "ruzgar-hafif"
       },
@@ -592,7 +979,7 @@
       "yer": "hira"
     },
     {
-      "id": "b10-s12",
+      "id": "b10-s18",
       "anlatim": [
         {
           "metin": "Yıllar böyle geçti.",
@@ -633,7 +1020,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s12.mp3",
+        "anlatim": "b10-s18.mp3",
         "muzik": "esik",
         "ortam": "gece-sessiz"
       },
@@ -1002,6 +1389,294 @@
         }
       ],
       "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-013",
+      "ifade": "Kureyş her yıl putlarından birinin başında bayram yapardı: ona kurban keser, yanında kalır, etrafında dönerdi. Böyle bir bayram günü dört kişi kalabalıktan gizlice ayrıldı: Varaka b. Nevfel, Ubeydullah b. Cahş, Osman b. Hüveyris ve Zeyd b. Amr b. Nüfeyl.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (İbn İshak'tan), tarama s. 143, \"Putlara tapmaktan ayrılıp din arayan dört kişi\" başlığı: Kureyş yüceltip kurban kestiği, başında kalıp etrafında döndüğü bir putun yanında her yıl bayram yapardı; dördü gizlice ayrıldı (taramadan okundu). VARAKA maddesi dördünün birlikte yeni bir din arayışına girdiğini yazar. Bayramın hangi yıl olduğu kaynakta yok; anlatım tarih vermez.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 143",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"VARAKA b. NEVFEL\", c. 42, s. 517 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-014",
+      "ifade": "Dördü birbirine şöyle dedi: Kavmimiz babaları İbrâhim'in dininden saptı; duymayan, görmeyen, zarar da fayda da vermeyen bir taşın etrafında dönüyoruz. Kendinize bir din arayın. Sonra İbrâhim'in dinini aramak üzere farklı diyarlara dağıldılar.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, tarama s. 143 (taramadan okundu; anlatımda sözler özetlenir, birebir çeviri değildir). VARAKA maddesi de arayışı ve Suriye tarafına seyahati anar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 143",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"VARAKA b. NEVFEL\", c. 42, s. 517 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-015",
+      "ifade": "Varaka Hıristiyanlığı benimsedi ve ehl-i kitabın kitaplarını izleyerek onlardan bilgi edindi. Osman b. Hüveyris Bizans kayserinin yanına gidip Hıristiyan oldu. Ubeydullah b. Cahş ise Müslüman olana kadar kararsız kaldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm, tarama s. 143 (Varaka, Ubeydullah) ve s. 144 (Osman). VARAKA maddesi Varaka'nın Hıristiyanlığı seçtiğini, ama hangi din üzere öldüğünün ihtilaflı olduğunu yazar; anlatım ölümüne değinmez. HANÎF maddesi (s. 38) Varaka'yı putlara tapmayı kötü gören, çok kitap okuyan bir kişi olarak anar. Ubeydullah'ın sonraki hayatı (Habeşistan) b10'un konusu dışında.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 143-144",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"VARAKA b. NEVFEL\", c. 42, s. 517 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 38 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-016",
+      "ifade": "Zeyd b. Amr ne Yahudi ne Hıristiyan oldu. Kavminin dinini bıraktı; putlardan, leşten, kandan ve putlar adına kesilen hayvanlardan uzak durdu. Kızını öldürmek isteyen birine «Onu öldürme, geçimini ben üstlenirim» der, çocuğu yanına alırdı. «Ben İbrâhim'in Rabbine ibadet ederim» derdi.",
+      "guc": "guclu",
+      "gerekce": "Parçaların kaynağı: 'ne Yahudi ne Hıristiyan', leş, kan, putlara kesilen ve 'İbrâhim'in Rabbine ibadet ederim' İbn Hişâm s. 144'tedir (taramadan okundu); kız çocuklarını kurtarma İbn Hişâm s. 144'te kısaca, Buhârî 3828'de sözüyle birlikte geçer ('lâ taktulhâ, ene ekfîkehâ meûnetehâ'; Türkçesi bizim). Buhârî 3828'in senedi 'Leys dedi: Hişâm bana yazdı' diye başlar; bu yüzden 'kesin' değil 'guclu'. HANÎF maddesi (s. 38) putlara kurban kesmediğini, leş ve kan yemediğini yazar. Aynı sayfada Zeyd'i Hıristiyan sayan görüş de aktarılır; ana metin İbn Hişâm ve Buhârî'ye göre kalır, o görüş dipnottadır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 144",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "buhari-sahih",
+          "konum": "Menâkıbü'l-ensâr (hadis no. 3828; sunnah.com)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 38 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı kaynaklar Zeyd b. Amr'ı, Varaka ve Ubeydullah b. Cahş ile birlikte Hıristiyanlar arasında sayar.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 38 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b10-017",
+      "ifade": "Zeyd, hak dini bulmak için Şam'a gitti. Önce bir Yahudi, sonra bir Hıristiyan âlimle konuştu; ikisi de ona Hanîfliği gösterdi: İbrâhim'in dini; İbrâhim ne Yahudi ne Hıristiyandı, yalnız Allah'a kulluk ederdi. Zeyd oradan çıkınca ellerini kaldırıp şöyle dedi: «Allah'ım! İbrâhim'in dini üzere olduğuma şahitlik ederim.»",
+      "guc": "guclu",
+      "gerekce": "Buhârî 3827 (İbn Ömer). Senet \"Mûsâ dedi\" diye başlar ve râvi İbn Ömer'den aktarıldığını tahmin ettiğini söyler; bu yüzden 'kesin' yerine 'guclu'. Hadislerle İslâm metni Türkçe verir ve Buhârî, Menâkıbü'l-ensâr, 24'e bağlar (c. 1, PDF s. 392, dipnot 1167). HANÎF maddesi (s. 36) aynı rivayeti aynı yere bağlar. Duanın Türkçesi Arapçadan ('Allâhumme innî eşhedü ennî alâ dîni İbrâhîm') bizim çevirimizdir; Hadislerle İslâm serbest çevirir ('Ben seni şahit tutuyorum').",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Menâkıbü'l-ensâr, 24 (hadis no. 3827)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 392 (metin), s. 402 (dipnot 1167)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 36 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-018",
+      "ifade": "Esmâ bint Ebû Bekir, yaşlı Zeyd'i sırtını Kâbe'ye dayamış hâlde şöyle derken gördü: \"Ey Kureyş! Allah'a yemin ederim ki sizden benden başka İbrâhim'in dini üzere olan kimse yok.\"",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 144-145 (Hişâm b. Urve – Urve – Esmâ; 'yaşlı' ayrıntısı buradadır; söz s. 145'e taşar ve yemin 'Zeyd'in canı elinde olana' diye geçer). Buhârî 3828 aynı sözü Esmâ'dan 'vallahi' yeminiyle aktarır; anlatımda Buhârî'nin lafzı kullanıldı. Senedi talik olduğu için 'guclu'. HANÎF maddesi (s. 38) de nakleder.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 144-145",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "buhari-sahih",
+          "konum": "Menâkıbü'l-ensâr (hadis no. 3828; sunnah.com)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 38 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-019",
+      "ifade": "Peygamberlikten önce Hz. Muhammed (s.a.v.), Zeyd b. Amr ile Mekke yolu üzerindeki Beldah vadisinin aşağısında karşılaştı. Bir sofra getirildi. Zeyd, \"Putlarınızın taşları üzerinde kestiklerinizden yemem; yalnız üzerine Allah'ın adı anılandan yerim\" dedi.",
+      "guc": "kesin",
+      "gerekce": "Buhârî 3826 ve 5499 (İbn Ömer). Ana metne yalnız iki rivayetin ortak olduğu kısım alındı: Beldah'taki karşılaşma, bir sofra ve Zeyd'in sözü. Sofranın kime sunulduğu, kimin yemediği ve içinde et bulunduğu rivayetler arasında farklıdır; dipnottadır. Görsel de bu farkta taraf tutmaz. 'Mekke yolu üzerindeki' nitelemesi Hadislerle İslâm'dandır. Konu uzman okumasında ayrıca sorulmalı.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Menâkıbü'l-ensâr, 24 (hadis no. 3826)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "buhari-sahih",
+          "konum": "Zebâih (hadis no. 5499; sunnah.com)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 392 (metin), s. 402 (dipnot 1165)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Rivayetler ayrıntıda ayrılır. Buhârî 3826'ya göre sofra Efendimiz'e sunulmuş, o ondan yememiş, ardından Zeyd sözünü söylemiştir; Hadislerle İslâm da olayı bu rivayete göre anlatır. Buhârî 5499'a göre ise Efendimiz içinde et bulunan sofrayı Zeyd'e sunmuş, Zeyd yemeyip bu sözü söylemiştir.",
+          "kaynaklar": [
+            {
+              "eser": "buhari-sahih",
+              "konum": "Menâkıbü'l-ensâr, 24 (hadis no. 3826)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "buhari-sahih",
+              "konum": "Zebâih (hadis no. 5499; sunnah.com)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 1, PDF s. 392 (metin), s. 402 (dipnot 1165)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b10-020",
+      "ifade": "Zeyd b. Amr, peygamberliğe yetişmeden vefat etti.",
+      "guc": "guclu",
+      "gerekce": "HANÎF maddesi (s. 38) bi'setten beş yıl önce öldüğünü yazar. Hadislerle İslâm (c. 1, PDF s. 392) 'vahiy inmeden beş sene evvel putperestliği terk etmiş, ancak İslâm gelmeden önce de vefat etmişti' der; 'beş yıl' iki kaynakta farklı olaya bağlandığı için anlatıma alınmadı. İki D kaynağı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Şaban Kuzgun, \"HANÎF\", c. 16, s. 38 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 392",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b10-021",
+      "ifade": "Resûlullah, peygamber olduktan sonra şöyle buyurdu: \"Mekke'de, peygamber olarak gönderilmemden önce bana selâm veren bir taşı tanırım; onu şimdi de tanırım.\"",
+      "guc": "kesin",
+      "gerekce": "Müslim 2277 (Câbir b. Semüre), sunnah.com'da Kitâbü'l-Fezâil, kitap içi 2. hadis. Türkçe ifade bizim çevirimizdir; Erdem bir Türkçe tercümeyle karşılaştırmalı. MUHAMMED maddesi taşların selâm vermesini hadislere dayanan hissî mûcizeler arasında sayar ve mûcize sayısını çoğaltma eğilimine ihtiyatla yaklaşır; bu yüzden ana metne yalnız Müslim'in rivayeti alındı. İbn Hişâm s. 151'deki daha geniş rivayet (taşlar ve ağaçlar) dipnottadır; senedinde adı verilmeyen râviler bulunur (betimleme bizim; bunu söyleyen bir değerlendirme kaynağı henüz okunmadı). Yerel kaynaklarda (Hadislerle İslâm, TDV) bu hadisin Müslim atfı görülmedi; atıf yalnız sunnah.com'dan.",
+      "kaynaklar": [
+        {
+          "eser": "muslim-sahih",
+          "konum": "Fezâil (sunnah.com kitap içi sıra 2), hadis no. 2277",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn İshak'ın Abdülmelik b. Ubeydullah es-Sekafî'den, onun da adını vermediği bazı ilim ehlinden aktardığına göre, Allah onu peygamberlikle şereflendirmeye başladığı sıralarda Resûlullah ihtiyacı için evlerden uzaklaşıp Mekke'nin vadilerine çıktığında yanından geçtiği her taş ve ağaç \"Esselâmu aleyke yâ Resûlallah\" derdi; sağına, soluna, arkasına bakar, ağaç ve taştan başka bir şey görmezdi.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 151",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

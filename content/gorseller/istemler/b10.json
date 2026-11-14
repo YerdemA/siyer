@@ -12,7 +12,7 @@
     "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
     "bilincli_olarak_cizilmeyenler": [
       "Kâbe örtüsü (kisve): 605'teki durumu kaynakla netleşmedi. Yapım sahnelerinde örtüsüz; s01'de Kâbe yalnız uzak planda.",
-      "Kâbe çevresindeki putlar: görünüşleri kaynakla netleşene kadar çizilmez.",
+      "Kâbe çevresindeki putlar: eski sahnelerde (s02) gölge olarak kaldı. Yeni sahnelerde putlar kaba yontulmuş taş figür olarak çizilir (GORSEL_USLUP, Erdem 2026-11-15).",
       "Benî Şeybe kapısının biçimi ve Hicr'in sınırı: kaynakta yok."
     ]
   },
@@ -24,7 +24,7 @@
       "katman": "hira-dagi",
       "isleme": "perde",
       "sahneler": [
-        "b10-s04"
+        "b10-s09"
       ],
       "istem": "A single steep, sharp, bare rocky mountain peak, noticeably steeper and more pointed than the hills around it, made of naked, smooth, slippery-looking rock with only a few scattered thorny shrubs. Seen from far away across a valley; the peak stands alone in the middle of the image. {yesil_perde_eki}",
       "not": "HİRA maddesi: dik, sivri, çıplak ve kaygan kayalar; bitki örtüsü dikenli çalılar."
@@ -36,9 +36,9 @@
       "katman": "yokus",
       "isleme": "perde",
       "sahneler": [
-        "b10-s06",
-        "b10-s09",
-        "b10-s11"
+        "b10-s12",
+        "b10-s15",
+        "b10-s17"
       ],
       "istem": "Eye-level view up a steep mountain path of high, irregular natural rock steps among bare boulders, climbing toward a rocky summit. No people. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
       "not": "HİRA maddesi: mağaraya tabii kayalardan yüksek basamaklarla çıkılır. Üç sahnede ortak; ışık nötr tutulmalı."
@@ -50,8 +50,8 @@
       "katman": "magara",
       "isleme": "perde",
       "sahneler": [
-        "b10-s07",
-        "b10-s12"
+        "b10-s13",
+        "b10-s18"
       ],
       "istem": "Seen from inside a narrow cave looking out: an irregular gap between huge stacked rock blocks, like a rough pointed tunnel open at one end, just tall enough for a standing person and long enough to lie down. The rock walls frame the left, right and top of the image in deep shadow; the opening in the center shows only flat chroma green (the sky and valley are separate layers). No people, no lamps, no light source. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
       "not": "HİRA maddesi: iki tarafı açık, sivri tonozlu tünele benzer, kaya blokları arasında boşluk. Açıklık yeşil perde; gök ve vadi arkadaki katmanlardan gelir."
@@ -63,7 +63,7 @@
       "katman": "kapi-cercevesi",
       "isleme": "perde",
       "sahneler": [
-        "b10-s05"
+        "b10-s11"
       ],
       "istem": "Inside a dark, simple mudbrick room: a small, plain rectangular window opening in the wall, no frame, no glass, no shutters, no decoration. The wall fills the image in deep shadow; the window opening shows only flat chroma green (the sky is a separate layer). No people, no furniture. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
       "not": "Sadık rüyalar sahnesi: dışarıdaki gök geceden sabaha döner. Altın-beyaz ışık yok."
@@ -75,7 +75,7 @@
       "katman": "siluet-tek",
       "isleme": "sigdir",
       "sahneler": [
-        "b10-s03"
+        "b10-s08"
       ],
       "istem": "A single elderly man in a simple robe and head cloth, seen from behind at a distance, walking up a bare rocky slope, his face not visible at all. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
       "not": "Abdülmuttalib; yüz kesinlikle görünmez. ayar.gorsel ile yamaca yerleştirilecek."
@@ -87,7 +87,7 @@
       "katman": "siluet-tek",
       "isleme": "sigdir",
       "sahneler": [
-        "b10-s08"
+        "b10-s14"
       ],
       "istem": "A woman in a long, modest, simple dress and a head covering that hides her hair, seen from behind, standing in a plain wooden doorway of a mudbrick house, holding a small knotted cloth bundle of food. Her face is not visible at all; no hands of anyone else. {yesil_perde_eki}",
       "not": "Hz. Hatice; yalnız arkadan siluet, yüz yok. Kıyafette süs ve takı çizilmez."
@@ -99,7 +99,7 @@
       "katman": "siluet-tek",
       "isleme": "sigdir",
       "sahneler": [
-        "b10-s11"
+        "b10-s17"
       ],
       "istem": "A woman in a long, modest, simple dress and a head covering that hides her hair, seen from behind, walking up a rocky mountain path, a few steps ahead of the viewer. Her face is not visible at all. Full body inside the frame with empty margin around it. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
       "not": "Hz. Hatice; yalnız arkadan siluet, yüz yok."
@@ -111,10 +111,130 @@
       "katman": "kalabalik",
       "isleme": "perde",
       "sahneler": [
-        "b10-s09"
+        "b10-s15"
       ],
       "istem": "Four very small distant human silhouettes in simple worn clothes climbing a mountain path one after another, one of them carrying an empty bowl; no facial features at all. {yesil_perde_eki}",
       "not": "Uzak plan; ayar.gorsel ile yokuşa yerleştirilecek."
+    },
+    {
+      "id": "b10-put-bayrami",
+      "tur": 2,
+      "dosya": "b10-put-bayrami.webp",
+      "katman": "put-bayrami",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s03"
+      ],
+      "istem": "Mid shot of a pagan festival in an open dusty place in a bare rocky valley: in the center a crudely carved stone idol, roughly hewn, weathered grey-brown stone, with only a vague hint of a head and shoulders, no inscriptions, not oversized. A crowd of men and women in simple 6th-century Arabian clothes walks in a circle around it; simple dignified faces in the same paper cut-out style. No blood, no animal being slaughtered, no fire. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 143: Kureyş'in yılda bir bayram yaptığı, etrafında döndüğü taş put; adı verilmiyor. Put kaba yontulmuş taş (GORSEL_USLUP). Kan ve kesim yok."
+    },
+    {
+      "id": "b10-dort-kisi",
+      "tur": 2,
+      "dosya": "b10-dort-kisi.webp",
+      "katman": "dort-kisi",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s03"
+      ],
+      "istem": "Four Arab men of Mecca in simple 6th-century clothes and head cloths, of different ages, walking quietly away together, seen from the side, glancing back over their shoulders; serious, thoughtful faces drawn simply. {yesil_perde_eki}",
+      "not": "Varaka, Ubeydullah b. Cahş, Osman b. Hüveyris, Zeyd b. Amr (İbn Hişâm s. 143). Kaynakta görünüş yok; belirgin özellik uydurulmaz."
+    },
+    {
+      "id": "b10-dort-kisi-yakin",
+      "tur": 2,
+      "dosya": "b10-dort-kisi-yakin.webp",
+      "katman": "dort-kisi-yakin",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s04"
+      ],
+      "istem": "Close shot of four Arab men in simple 6th-century clothes and head cloths, standing close together between mudbrick house walls at dusk, heads leaned toward each other, talking in low voices; serious, thoughtful faces drawn simply, no exaggerated expressions. {yesil_perde_eki}",
+      "not": "s03'teki dört kişiyle aynı kıyafet ve yaşlar korunmalı (aynı sohbette üret)."
+    },
+    {
+      "id": "b10-sam-arazi",
+      "tur": 2,
+      "dosya": "b10-sam-arazi.webp",
+      "katman": "sam-arazi",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s05"
+      ],
+      "istem": "Wide landscape layer: an open plain with low rolling hills and a dirt road crossing it, a few scattered low shrubs; flatter and less rocky than the steep bare mountains of Mecca. No buildings, no people. Fills the lower two thirds of the frame; everything above the horizon is flat chroma green (#00B140), so the separate sky layer shows through. No green tint on the landscape.",
+      "not": "Şam yolu; arazi ayrıntısı kaynakta yok, belirgin bitki ve yapı çizilmez. Ufkun üstü yeşil perde."
+    },
+    {
+      "id": "b10-zeyd-dua",
+      "tur": 2,
+      "dosya": "b10-zeyd-dua.webp",
+      "katman": "zeyd-dua",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s05"
+      ],
+      "istem": "An Arab man of Mecca in simple travel clothes with a small shoulder bag, standing outdoors in open country and raising both open hands toward the sky in prayer; calm, resolute face drawn simply, no distinctive features. Full figure, slightly from the side. {yesil_perde_eki}",
+      "not": "Buhârî 3827: Zeyd ellerini kaldırıp dua eder. Yaş ve görünüş kaynakta yok."
+    },
+    {
+      "id": "b10-kabe-duvar",
+      "tur": 2,
+      "dosya": "b10-kabe-duvar.webp",
+      "katman": "kabe-duvar",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s06"
+      ],
+      "istem": "Close view of a section of an ancient plain stone wall filling the right half of the frame from top to bottom; no cloth covering, no door, no inscriptions, no gold. {yesil_perde_eki}",
+      "not": "Kâbe duvarının bir parçası; malzeme, yükseklik ve örtü belirtilmez (anın tarihi kaynakta yok)."
+    },
+    {
+      "id": "b10-zeyd-yasli",
+      "tur": 2,
+      "dosya": "b10-zeyd-yasli.webp",
+      "katman": "zeyd-yasli",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s06"
+      ],
+      "istem": "An old Arab man in simple clothes, standing with his back leaning against a stone wall (the wall itself not drawn), one hand raised as he speaks earnestly to people in front of him; dignified, serious face drawn simply, no other distinctive features. Full figure. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 144 'şeyh kebîr' (yaşlı); Buhârî 3828 sırtını Kâbe'ye dayamış. Başka görünüş ayrıntısı yok."
+    },
+    {
+      "id": "b10-zeyd-sofra",
+      "tur": 2,
+      "dosya": "b10-zeyd-sofra.webp",
+      "katman": "zeyd-sofra",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s07"
+      ],
+      "istem": "Seen from the viewpoint of someone sitting on the ground: an Arab man in simple clothes sits cross-legged on the far side of a leather eating mat, facing the viewer and speaking calmly; hands resting, no pushing-away or refusing gesture; face drawn simply, no distinctive features. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "Onun gözünden. Zeyd yalnız konuşur; sofrayı kimin kime sunduğu ve kimin yemediği rivayetlerde farklı olduğu için jest yok."
+    },
+    {
+      "id": "b10-sofra",
+      "tur": 2,
+      "dosya": "b10-sofra.webp",
+      "katman": "sofra",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s07"
+      ],
+      "istem": "A round leather eating mat spread on the ground, seen from slightly above, with a simple covered wooden bowl on it; contents not visible. No hands. {yesil_perde_eki}",
+      "not": "Ön plan; içi gösterilmez (et ayrıntısı yalnız bir rivayette). ayar.gorsel ile yerleştirilecek."
+    },
+    {
+      "id": "b10-vadi-tas",
+      "tur": 2,
+      "dosya": "b10-vadi-tas.webp",
+      "katman": "vadi-tas",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s10"
+      ],
+      "istem": "Eye-level view at dawn of a quiet corner in Mecca near mudbrick houses: a single plain, medium-sized stone standing by itself next to a wall. No people, no face or features on the stone, no glow, no light rays. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "Müslim 2277: Mekke'de bir taş. Vadi/patika yok (o ayrıntı İbn Hişâm rivayetinde, dipnotta). Parıltı kesinlikle yok."
     }
   ],
   "uretimler": [

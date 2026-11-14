@@ -191,5 +191,78 @@
     "iddialar": [
       "i-b01-019"
     ]
+  },
+  {
+    "id": "zeyd-b-amr",
+    "ad": "Zeyd b. Amr b. Nüfeyl",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Putlara tapmayı bırakıp İbrâhim'in dinini arayan biriydi. Ne Yahudi ne Hıristiyan oldu; putlar adına kesilenden yemedi, öldürülmek istenen kız çocuklarını yanına aldı. Peygamberliğe yetişmeden vefat etti.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-013",
+      "i-b10-016",
+      "i-b10-017",
+      "i-b10-018",
+      "i-b10-019",
+      "i-b10-020"
+    ]
+  },
+  {
+    "id": "varaka-b-nevfel",
+    "ad": "Varaka b. Nevfel",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi. Hıristiyanlığı benimsedi ve kitap ehlinin kitaplarından bilgi edindi.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-013",
+      "i-b10-015"
+    ]
+  },
+  {
+    "id": "ubeydullah-b-cahs",
+    "ad": "Ubeydullah b. Cahş",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi; Müslüman olana kadar kararsız kaldı.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-013",
+      "i-b10-015"
+    ]
+  },
+  {
+    "id": "osman-b-huveyris",
+    "ad": "Osman b. Hüveyris",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi; Bizans kayserinin yanına gidip Hıristiyan oldu.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-013",
+      "i-b10-015"
+    ]
+  },
+  {
+    "id": "esma-bint-ebu-bekir",
+    "ad": "Esmâ bint Ebû Bekir",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Ebû Bekir'in kızı. Yaşlı Zeyd b. Amr'ı sırtını Kâbe'ye dayamış, Kureyş'e seslenirken gördüğünü anlattı.",
+    "bolumler": [
+      "b10-hira"
+    ],
+    "iddialar": [
+      "i-b10-018"
+    ]
   }
 ]
