@@ -65,6 +65,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 1. **b01 yakın planları:** 13 görsel denetlendi (temsil kuralına uygun), katmana çevrildi, bölüme çekim olarak bağlandı. s07 parça 2 ve s11 parça 2'deki geçici çekimler yenileriyle değişti. s07 ve s13'teki yakın planlar baş kesilmesin diye `ayar.gorsel` ile aşağı kaydırıldı.
 2. **`gorsel_katman.py`:** ChatGPT perdesi bazen koyu geliyor (#00AF46); `SEFFAF_ESIK` 110 → 95. Eski eşikle zemin yarı saydam kalıyordu.
 3. **Anlatım sesi kararı** (Erdem): ElevenLabs MCP; olgun, hikâye anlatımına uygun bir erkek sesi.
+4. **Beden boyunda nur:** `_nur()`'a `boy` ayarı eklendi; nur yuvarlak uçlu, kenarı bulanık dikey bir ışık oldu, alt ucu zemine basar. b01 s02'de Hz. İbrâhim yetişkin, Hz. İsmâil çocuk boyunda; s04'te ikisi yetişkin boyunda, temel duvarının arkasında. `GORSEL_USLUP.md` §2 ve `ICERIK_SEMASI.md` güncellendi.
 
 ## Önceki oturum (2026-11-13 / 14)
 
@@ -90,7 +91,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 Sahibi parantez içinde.
 
 1. **Sıradaki oturum, ilk iş (Claude):**
-   - **Nuru beden boyunda yap** (Erdem, 2026-11-14): Diğer peygamberlerin nuru (s02, s04) tek nokta değil, ayakta bir insan boyunda, dikey uzunca yumuşak bir ışık olsun ki varlıkları gerçekçi sezilsin. İnsan hatları, baş, kol çizilmez; yalnız boy. `yer_tutucu.dart` `_nur()`'a dikey biçim (ör. `ayar.boy`) ekle; zemine basan alt ucu ve boyu sahnedeki insan ölçeğine (kervan, evler) göre ayarla; s02'de İsmâil küçük çocuk boyunda. `docs/GORSEL_USLUP.md` §2'deki "yalnız parıltı" tarifini "beden boyunda, hatları olmayan nur" olarak güncelle.
+   - **Anlatım sesi:** ElevenLabs MCP kurulunca aday sesleri Erdem'e dinlet (bkz. 5).
 2. **Atıf doğrulaması** (Erdem): b01'de 62, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
    - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
    - b01 Kâbe: Kusay dönemi (s08-s10) hurma dallarıyla örtülü `kabe-ortulu` (KÂBE s. 16); Abdülmuttalib dönemi ve b09 çatısız `kabe-alcak` (İbn Hişâm s. 122).
