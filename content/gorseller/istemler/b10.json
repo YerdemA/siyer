@@ -1,0 +1,121 @@
+{
+  "bolum": "b10-hira",
+  "aciklama": "Bölüm 10 görsellerinin üretim istemleri ve kaydı. Üslup, yasaklar ve referans b09.json'daki ile aynıdır (u01-d).",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Mecca, Hijaz, around 605 CE — a narrow valley among bare, rocky, almost treeless mountains; small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. No visible faces: people appear only as distant silhouettes, from behind, or as hands and fabric details. Never depict the Prophet in any form — no figure, silhouette, shadow, hand or foot; his presence is only a soft warm golden-white light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Kâbe örtüsü (kisve): 605'teki durumu kaynakla netleşmedi. Yapım sahnelerinde örtüsüz; s01'de Kâbe yalnız uzak planda.",
+      "Kâbe çevresindeki putlar: görünüşleri kaynakla netleşene kadar çizilmez.",
+      "Benî Şeybe kapısının biçimi ve Hicr'in sınırı: kaynakta yok."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b10-hira-dagi",
+      "tur": 1,
+      "dosya": "b10-hira-dagi.webp",
+      "katman": "hira-dagi",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s04"
+      ],
+      "istem": "A single steep, sharp, bare rocky mountain peak, noticeably steeper and more pointed than the hills around it, made of naked, smooth, slippery-looking rock with only a few scattered thorny shrubs. Seen from far away across a valley; the peak stands alone in the middle of the image. {yesil_perde_eki}",
+      "not": "HİRA maddesi: dik, sivri, çıplak ve kaygan kayalar; bitki örtüsü dikenli çalılar."
+    },
+    {
+      "id": "b10-yokus",
+      "tur": 1,
+      "dosya": "b10-yokus.webp",
+      "katman": "yokus",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s06",
+        "b10-s09",
+        "b10-s11"
+      ],
+      "istem": "Eye-level view up a steep mountain path of high, irregular natural rock steps among bare boulders, climbing toward a rocky summit. No people. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "HİRA maddesi: mağaraya tabii kayalardan yüksek basamaklarla çıkılır. Üç sahnede ortak; ışık nötr tutulmalı."
+    },
+    {
+      "id": "b10-magara",
+      "tur": 1,
+      "dosya": "b10-magara.webp",
+      "katman": "magara",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s07",
+        "b10-s12"
+      ],
+      "istem": "Seen from inside a narrow cave looking out: an irregular gap between huge stacked rock blocks, like a rough pointed tunnel open at one end, just tall enough for a standing person and long enough to lie down. The rock walls frame the left, right and top of the image in deep shadow; the opening in the center shows only flat chroma green (the sky and valley are separate layers). No people, no lamps, no light source. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "HİRA maddesi: iki tarafı açık, sivri tonozlu tünele benzer, kaya blokları arasında boşluk. Açıklık yeşil perde; gök ve vadi arkadaki katmanlardan gelir."
+    },
+    {
+      "id": "b10-pencere",
+      "tur": 1,
+      "dosya": "b10-pencere.webp",
+      "katman": "kapi-cercevesi",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s05"
+      ],
+      "istem": "Inside a dark, simple mudbrick room: a small, plain rectangular window opening in the wall, no frame, no glass, no shutters, no decoration. The wall fills the image in deep shadow; the window opening shows only flat chroma green (the sky is a separate layer). No people, no furniture. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "Sadık rüyalar sahnesi: dışarıdaki gök geceden sabaha döner. Altın-beyaz ışık yok."
+    },
+    {
+      "id": "b10-abdulmuttalib",
+      "tur": 1,
+      "dosya": "b10-abdulmuttalib.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s03"
+      ],
+      "istem": "A single elderly man in a simple robe and head cloth, seen from behind at a distance, walking up a bare rocky slope, his face not visible at all. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
+      "not": "Abdülmuttalib; yüz kesinlikle görünmez. ayar.gorsel ile yamaca yerleştirilecek."
+    },
+    {
+      "id": "b10-hatice-kapi",
+      "tur": 1,
+      "dosya": "b10-hatice-kapi.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s08"
+      ],
+      "istem": "A woman in a long, modest, simple dress and a head covering that hides her hair, seen from behind, standing in a plain wooden doorway of a mudbrick house, holding a small knotted cloth bundle of food. Her face is not visible at all; no hands of anyone else. {yesil_perde_eki}",
+      "not": "Hz. Hatice; yalnız arkadan siluet, yüz yok. Kıyafette süs ve takı çizilmez."
+    },
+    {
+      "id": "b10-hatice-yokus",
+      "tur": 1,
+      "dosya": "b10-hatice-yokus.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b10-s11"
+      ],
+      "istem": "A woman in a long, modest, simple dress and a head covering that hides her hair, seen from behind, walking up a rocky mountain path, a few steps ahead of the viewer. Her face is not visible at all. Full body inside the frame with empty margin around it. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
+      "not": "Hz. Hatice; yalnız arkadan siluet, yüz yok."
+    },
+    {
+      "id": "b10-yoksullar",
+      "tur": 1,
+      "dosya": "b10-yoksullar.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b10-s09"
+      ],
+      "istem": "Four very small distant human silhouettes in simple worn clothes climbing a mountain path one after another, one of them carrying an empty bowl; no facial features at all. {yesil_perde_eki}",
+      "not": "Uzak plan; ayar.gorsel ile yokuşa yerleştirilecek."
+    }
+  ],
+  "uretimler": []
+}
