@@ -6,6 +6,8 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 
 ---
 
+**Erdem'in bakacakları:** `docs/ERDEM_KONTROL.md` (atıflar, çeviri ve etiket kararları; her bölümde güncellenir).
+
 ## 1. Tamamlananlar
 
 ### Uygulama (`app/`, Flutter)
@@ -45,7 +47,7 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 | `bolumler/b10-hira.json` | Taslak: 18 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); eski 12 sahnenin görselleri hazır, yeni 6 sahnenin 10 görseli 2. turda (`b10-chatgpt.md`) |
 | `sahislar.json` | 14 kayıt |
 | `yerler.json` | 11 yer, yaklaşık konum + `konumKaynagi` (TDV, doğrulama bekliyor). Benî Sa'd yurdu kaynakta konum olmadığı için yok |
-| `zaman-cizelgesi.json` | 4 kayıt (~440 Dârünnedve, ~570 Fil Yılı ve doğum, 605 Kâbe inşası, ~605 Hira inzivâsı) |
+| `zaman-cizelgesi.json` | 4 kayıt (~440 Dârünnedve, 571 doğum, 605 Kâbe inşası, ~605 Hira inzivâsı) |
 | `kaynakca.json` | 6 eser: Kur'an meali (Diyanet Vakfı), İbn Hişâm, Buhârî, Müslim, TDV İA, Hadislerle İslâm |
 | `content/gorseller/` | 63 WebP katman (b01, b09, b10 + ortak Mekke/Kâbe katmanları) |
 | `content/gorseller/istemler/` | b09 ve b10 istem kayıtları (`b09.json`, `b10.json`) + ChatGPT mesaj dosyaları |
@@ -87,6 +89,7 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
    - Kuşların taş sayısı dipnota alındı.
 7. **b03 Doğum** yazıldı ve denetlendi. İçerik: nesep (Müslim 2276), Abdülmuttalib'in adağı ve yüz deve, Abdullah ile Âmine'nin evliliği, Abdullah'ın vefatı, Fil Yılı'nda doğum, pazartesi hadisi (Müslim 1162b), Abdülmuttalib'in Kâbe'ye girmesi.
    - Kaynaklar: İbn Hişâm s. 3, 97-103 (taramadan); ABDULLAH, ÂMİNE, MEVLİD, MUHAMMED; Duhâ 93/6.
+   - Doğum yılı 571 (Müslümanlar arasında yaygın kabul; Erdem, 2026-11-15); 569/570 dipnotta. b02'ye de işlendi.
    - Olağanüstü rivayetler: Âmine'nin rüyası ihtiyatlı verildi, nur rivayeti dipnotta. 'Evliliğin ilk üç günü' bilgisi klasik dayanak bulunamadığı için çıkarıldı.
    - Temsil: bebek Efendimiz hiç çizilmiyor, nur da kullanılmıyor; s12'de Abdülmuttalib arkadan, Kâbe'ye girerken. Abdullah ve Âmine yüzsüz ya da kadraj dışı.
 8. **FÎL SÛRESİ** maddesi okundu (yerel kopya `kaynaklar/tdv-metin/fil-suresi.md`); b02'de kuşların taşları i-b02-020 olarak ana metne döndü.
