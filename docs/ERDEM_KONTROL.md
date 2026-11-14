@@ -50,18 +50,33 @@ Atıflar:
 - [ ] TDV "ABDULLAH" c. 1 s. 75-76; "ÂMİNE" c. 3 s. 63-64; "MEVLİD" c. 29 s. 475, 478; "MUHAMMED" bölüm 1 (Fayda) c. 30 s. 406-407; bölüm 2 (Kandemir) s. 421.
 - [ ] Duhâ 93/6, Diyanet Vakfı meali (mushaf s. 596).
 
-## b04 Süt Annenin Yurdu (40 atıf)
+## b04 Süt Annenin Yurdu (45 atıf)
 
 Kararlar:
 - [x] i-b04-011 (şakk-ı sadr): anlatım yumuşatılmayacak, 'kesin' kalır (karar: Erdem, 2026-11-15). Görsel olayı göstermiyor (boş yamaç).
 - [ ] i-b04-011: Müslim 162c'nin Türkçesi bizim çevirimiz. Numara farkı: ŞAKK-ı SADR "Îmân, 261" diyor, sunnah.com "162c, kitap içi 318".
 - [ ] i-b04-014 (Halîme'nin onu Mekke'de kaybetmesi): tek ve çekinceli İbn Hişâm rivayeti; b03 kararınla 'guclu'.
-- [ ] i-b04-001 (Süveybe): Buhârî 5101 ve Hadislerle İslâm c. 4 (PDF s. 249, dn. 838 s. 254) eklendi; etiket 'guclu'. Bab numarası farkı: MEVLİD 'Nikâh 20', Hadislerle İslâm 'Nikâh 21'. Urve'nin ekine göre Ebû Leheb onu emzirmeden önce âzat etmiş, Hadislerle İslâm'a göre hicretten sonra; anlatım 'câriyesi' diyor (MUHAMMED'in ifadesi).
+- [ ] i-b04-001 (Süveybe): Buhârî 5101 ve Hadislerle İslâm c. 4 (PDF s. 249, dn. 838 s. 254) eklendi; etiket 'guclu'. Bab numarası farkı: MEVLİD 'Nikâh 20', Hadislerle İslâm 'Nikâh 21'. Urve'nin ekine ve MEVLİD'e göre Ebû Leheb onu emzirmeden önce âzat etmiş, Hadislerle İslâm'a göre (PDF s. 252, dn. 849) hicretten sonra; anlatım 'câriyesi' diyor (MUHAMMED'in ifadesi), farklar dipnotta.
 
 Atıflar:
 - [ ] İbn Hişâm s. 103-107 (Halîme'nin anlatımı, sütten kesme, şakk-ı sadr rivayeti, Âmine'nin sözü, kaybolma).
 - [ ] TDV "HALÎME" c. 15 s. 338 (sayfa no. PDF metninde yok, künyeden); "ŞAKK-ı SADR" c. 38 s. 309-310; "MUHAMMED" bölüm 1 c. 30 s. 407; "ÂMİNE" c. 3 s. 64.
 - [ ] Müslim, Îmân, 162c (matbu nüshada bab ve hadis no.).
+
+## b05 Yetimlik (43 atıf)
+
+Kararlar:
+- [ ] i-b05-009 (kabir ziyareti, Müslim 976b): anlatım yalnız "ziyaret etti, ağladı, yanındakiler de ağladı" diyor. Hadisin devamındaki söz (annesi için istiğfar izni verilmemesi, kabrini ziyaret izni verilmesi, "kabirleri ziyaret edin, ölümü hatırlatır") bölünemeyeceği ve tamamı her yaş anlatımına teolojik bir konu taşıyacağı için alınmadı. Sözün tamamı anlatıma girsin mi, sahne böyle mi kalsın?
+- [ ] i-b05-010: EBVÂ'nın İbn Sa'd'dan aktardığı söz («Annemin şefkat ve merhameti gözümün önüne geldi de onun için ağladım»), "kabri düzeltti" ve Hudeybiye bağlamı tek D kaynağında; İbn Sa'd yerelde yok. Anlatıma alınmadı, yalnız "rivayete göre hicretin altıncı yılında" kaldı.
+- [ ] i-b05-012: Abdülmuttalib'in sözünün Türkçesi bizim çevirimiz («Bırakın oğlumu! Vallahi onun bir şanı var»).
+- [ ] i-b05-015: Abdülmuttalib'in ölmeden önce kızlarından ağıt istemesi tek İbn Hişâm rivayeti; İbn Hişâm şiirleri bilen kimse görmediğini söyler. 'guclu' + "rivayete göre" (b03 ölçütün). Kalsın mı?
+- [ ] Zaman çizelgesi: Âmine'nin vefatı 577 (yaklaşık; ÂMİNE matbu "576 veya 577", 571+6). Abdülmuttalib'in vefatına giriş konmadı: madde başlığı 577 diyor, 571 doğum + sekiz yaş 579 eder (b03'teki yaş notuyla aynı mesele).
+
+Atıflar:
+- [ ] İbn Hişâm s. 107 (Âmine'nin vefatı, Neccâr dayıları, Selmâ, döşek), s. 108 (döşek sözü, sekiz yaş, kızları), s. 114 (Ebû Tâlib'e vasiyet, "fîmâ yez'umûn").
+- [ ] TDV "EBVÂ" c. 10 s. 378-379; "ÂMİNE" c. 3 s. 64; "ABDÜLMUTTALİB" c. 1 s. 273; "EBÛ TÂLİB" c. 10 s. 237; "ÜMMÜ EYMEN" c. 42 s. 317; "MUHAMMED" bölüm 1 c. 30 s. 407 (matbu PDF'te metin katmanı yok, sayfa görüntüden bakılmalı).
+- [ ] Müslim, Cenâiz, 976b: EBVÂ "Cenâiz 105, 106" diyor; sunnah.com kitap içi 134-135.
+- [ ] Hadislerle İslâm c. 1, PDF s. 429 + dn. 1294 s. 439 ("Annemden sonraki annemdir"; İsâbe VIII, 169-170); PDF s. 523 + dn. 1596 s. 532 (sekiz yaş, Ebû Tâlib).
 
 ## b09 Hakem (67 atıf)
 
