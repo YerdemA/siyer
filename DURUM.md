@@ -51,7 +51,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 ### Kararlaşmış konular
 
 - **Temsil kuralı değişti** (2026-11-14, Erdem): Yüz yasağı yalnız Efendimiz'in eşleri, çocukları, anne-babası ve süt annesi Halîme için. Efendimiz nurla kaplı, asaletli boyda, yeşil sarıklı figür ya da onun gözünden; diğer peygamberler yalnız nur; diğer herkes kaynaktaki betimlemeyle yüzüyle çizilebilir (`docs/GORSEL_USLUP.md`). Mevcut uzak plan katmanlar yeniden üretilmeyecek; yüzler yeni orta/yakın çekimlerde.
-- **Sahne içi çekimler** (2026-11-14): Uzun sahnede görüntü tek kalmasın diye `gorsel.cekimler[]` (`docs/ICERIK_SEMASI.md`). b01 s07, s08, s11'de mevcut görsellerle deneme çekimleri var; büyütülen görseller yumuşak, yeni yakın plan görseller gerekli.
+- **Sahne içi çekimler** (2026-11-14): Uzun sahnede görüntü tek kalmasın diye `gorsel.cekimler[]`; `kadraj` ana görselin katmanlarını derinlikle orantılı büyütür, böylece yakın çekimde arka plan (evler, Kâbe) uzak çekimle tutarlı kalır (`docs/ICERIK_SEMASI.md`). Yakın plan konu yeni katman olarak üstüne gelir. Aile için el ve kumaş ayrıntısı serbest (Erdem, 2026-11-14).
 - **Görsel üslup:** Kâğıt kesik (u01-d). Referans görsel, Higgsfield işi `a5e23296-…`.
 - **Görsel üretimi:** ChatGPT Go ile elle. Higgsfield hız sınırı yüzünden bırakıldı.
 - **Kaynak politikasında istisna** (2026-11-14): Yaygın kabul görmüş, zayıf bulunmamış rivayet tek güçlü kaynağa dayanabilir (`docs/KAYNAK_POLITIKASI.md` 2.1).
@@ -83,7 +83,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 Sahibi parantez içinde.
 
-1. **b01 çekim görselleri** (Claude → Erdem): Deneme çekimleri onaylanınca her sahneye 1-3 yeni orta/yakın plan istemi yazılacak (`istemler/b01.json`, yeni kuralla yüzlü). Açık soru: Efendimiz'in ailesinde el ve kumaş ayrıntısı serbest mi, yoksa "uzuv" da gösterilmesin mi?
+1. **b01 yakın plan görselleri** (Erdem): 13 istem hazır, `content/gorseller/istemler/b01-chatgpt.md` (tur 2). Mesajların çoğuna o sahnenin uzak görseli eklenir (dosya mesaj başlığında). Gelince Claude işler ve `istemler/b01.json`'daki `cekim` alanına göre (parça, kadraj, gizle) bölüme bağlar. Kadraj çekimleri (yeni görselsiz) s02, s04, s08, s09, s10, s11, s12'de kurulu.
 2. **Atıf doğrulaması** (Erdem): b01'de 62, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
    - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
    - b01 Kâbe: Kusay dönemi (s08-s10) hurma dallarıyla örtülü `kabe-ortulu` (KÂBE s. 16); Abdülmuttalib dönemi ve b09 çatısız `kabe-alcak` (İbn Hişâm s. 122).
