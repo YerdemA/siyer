@@ -21,6 +21,7 @@ Bu kurallar 2026-11-14'te Erdem'in kararıyla değişti. Eskiden yüz gösterilm
 
 - Dönem: 6.–7. yüzyıl Hicaz'ı. Minare, kubbe, hilal, çinili cami, Osmanlı mimarisi, modern Mescid-i Harâm görünümü YOK.
 - Kâbe: Dönemine uygun, sade, bugünkünden alçak; çevresi açık avlu ve evler. Peygamberlik öncesinde çevresinde putlar bulunur (ayrıntı için kaynak aranır).
+- Putlar (Erdem, 2026-11-15): Gölge olarak değil, kaynaklardaki tasvire benzer figürler olarak çizilebilir. Kaynakta adı ve görünüşü verilmeyen put için kaba yontulmuş taş figür ya da dikili taş (İbn Hişâm s. 143: etrafında dönülen taş; ARAP maddesi: putlar, heykeller, dikili taşlar). Adı bilinen putun (ör. Hübel) belirgin özellikleri ancak kaynakta okunduktan sonra çizilir. Kan ve kurban kesimi gösterilmez.
 - Mekke: Çıplak, kayalık dağlar arasında dar bir vadi; yeşillik yok denecek kadar az.
 - Kıyafet, çadır, kervan, silah ayrıntıları için kaynaklara ve müze/arkeoloji referanslarına bakılır. Emin olunmayan ayrıntı çizilmez, kadraj dışında bırakılır.
 
