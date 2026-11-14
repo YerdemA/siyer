@@ -183,14 +183,9 @@
           },
           {
             "id": "siluet-tek",
-            "dosya": "",
+            "dosya": "b10-abdulmuttalib.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.6,
-            "ayar": {
-              "x": 0.55,
-              "y": 0.72,
-              "olcek": 0.14
-            }
+            "derinlik": 0.6
           }
         ],
         "kamera": "yatay-kayma"
@@ -468,23 +463,10 @@
             "derinlik": 0.2
           },
           {
-            "id": "yokus",
-            "dosya": "",
-            "yerTutucu": "yokus",
-            "derinlik": 0.5
-          },
-          {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b10-yoksullar.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6,
-            "ayar": {
-              "sayi": 4,
-              "y": 0.7,
-              "olcek": 0.05,
-              "x1": 0.35,
-              "x2": 0.6
-            }
+            "derinlik": 0.6
           }
         ],
         "kamera": "yatay-kayma"

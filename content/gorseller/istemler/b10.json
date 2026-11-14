@@ -173,10 +173,10 @@
       "tarih": "2026-11-14",
       "kaynak_dosya": "b10-abdulmuttalib.png",
       "boyut": "1536x1024",
-      "secilen": false,
-      "dosya": "",
-      "durum": "beklemede",
-      "not": "İstemdeki gibi tek siluet değil, kendi yamacıyla tam sahne geldi; figür kadrajın yarısı kadar (uzak plan değil). Arkadan, ama yanaktan sakal kenarı seçiliyor. Erdem'in kararı bekleniyor; işlenmedi (isleme: perde, sigdir değil)."
+      "secilen": true,
+      "dosya": "b10-abdulmuttalib.webp",
+      "durum": "secildi",
+      "not": "İstemdeki gibi tek siluet değil, kendi yamacıyla tam sahne geldi; figür kadrajın yarısı kadar (uzak plan değil). Arkadan, ama yanaktan sakal kenarı seçiliyor. Erdem kabul etti (2026-11-14): seçilen yüz kenarı göz ardı edilebilir. Tam kadraj işlendi."
     },
     {
       "istem": "b10-hatice-kapi",
@@ -209,10 +209,10 @@
       "tarih": "2026-11-14",
       "kaynak_dosya": "b10-yoksullar.png",
       "boyut": "1536x1024",
-      "secilen": false,
-      "dosya": "",
-      "durum": "beklemede",
-      "not": "Kendi yokuşuyla tam sahne; figürler 'çok küçük' değil. Sağdaki ikisi yarı profilden, sakal kenarı seçiliyor. Erdem'in kararı bekleniyor; işlenmedi."
+      "secilen": true,
+      "dosya": "b10-yoksullar.webp",
+      "durum": "secildi",
+      "not": "Kendi yokuşuyla tam sahne; figürler 'çok küçük' değil. Sağdaki ikisi yarı profilden, sakal kenarı seçiliyor. Erdem kabul etti (2026-11-14): seçilen yüz kenarı göz ardı edilebilir. Tam kadraj işlendi, s09'da yokus katmanının yerine geçti."
     }
   ]
 }
