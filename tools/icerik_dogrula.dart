@@ -474,6 +474,23 @@ BolumOzeti bolumuDenetle(
           oncekiParca = parca;
         }
         if (metin(c, 'tarif').isEmpty) rapor.yayinHatasi(cYer, '`tarif` boş');
+        final kadraj = c['kadraj'];
+        if (kadraj != null &&
+            (kadraj is! Map<String, dynamic> ||
+                ['x', 'y', 'yakinlik'].any((a) => kadraj[a] != null && kadraj[a] is! num))) {
+          rapor.hata(cYer, '`kadraj` { x, y, yakinlik } sayılarından oluşmalı');
+        }
+        final anaIdler = {
+          for (final k in liste(gorsel, 'katmanlar', yer, rapor, zorunlu: false))
+            if (k is Map<String, dynamic>) metin(k, 'id'),
+        };
+        for (final g in liste(c, 'gizle', cYer, rapor, zorunlu: false)) {
+          if (kadraj == null) {
+            rapor.hata(cYer, '`gizle` yalnız `kadraj`lı çekimde anlamlı');
+          } else if (!anaIdler.contains(g)) {
+            rapor.hata(cYer, '`gizle`: ana görselde böyle katman yok: $g');
+          }
+        }
         cekimler.add((cYer, c));
       }
       for (final (gYer, g) in cekimler) {

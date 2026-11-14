@@ -62,7 +62,18 @@ class SahneCizici extends CustomPainter {
       );
       canvas.rotate(kamera.donus * etki);
       canvas.scale(1 + (kamera.yakinlik - 1) * etki);
-      canvas.translate(-size.width / 2, -size.height / 2);
+      final kadraj = katman.kadraj;
+      if (kadraj != null) {
+        // Kadraj noktasını ortaya getir ve büyüt; uzak katman az, yakın çok.
+        final z = 1 + (kadraj.yakinlik - 1) * etki;
+        canvas.scale(z);
+        canvas.translate(
+          -(0.5 + (kadraj.x - 0.5) * etki) * size.width,
+          -(0.5 + (kadraj.y - 0.5) * etki) * size.height,
+        );
+      } else {
+        canvas.translate(-size.width / 2, -size.height / 2);
+      }
       final resim = gorseller?.al(katman.dosya);
       if (resim != null) {
         paintImage(

@@ -50,6 +50,8 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 - `cekimler[]` (isteğe bağlı): Uzun sahnede görüntü tek kalmasın diye ana görselden sonra gelen çekimler. Her biri `{ "parca", "tarif", "saat", "katmanlar", "kamera" }`. `gorsel`'in kendisi ilk çekimdir.
   - `parca`: Çekimin başladığı anlatım parçasının sırası (0'dan sayılır; 1 ile parça sayısı − 1 arasında olmalı, çekimden çekime artmalı). Çekim o cümle başlarken tam görünür; 0,8 sn'lik çapraz geçiş cümleden hemen önce biter. Sesli sahnede de aynı kural geçerlidir, parça süreleri sesten gelir.
   - `saat` verilmezse sahnenin saati kullanılır. Kamera her çekimde baştan başlar.
+  - `kadraj` (önerilen): `{ "x", "y", "yakinlik" }`. Çekim ana görselin katmanlarını devralır; (`x`, `y`) noktası (ana görsele göre 0–1) kadrajın ortasına gelir, katmanlar `yakinlik` kadar, derinlikleriyle orantılı büyütülür (gök az, ön plan çok). Böylece yakın çekimde arka plan (dağlar, evler, Kâbe) uzak çekimdekiyle aynı yerde kalır. `gizle: ["kalabalik"]` ana görselden çekimde görünmeyecek katmanları çıkarır (ör. uzak plandaki küçük kervan); çekimin kendi `katmanlar`ı (yakın plan konu) en üste, kadrajsız çizilir.
+  - `kadraj` yoksa çekim yalnız kendi `katmanlar`ını çizer (tamamen farklı bir görüntü için).
   - Önceki çekime geçiş süresinden yakın düşen ya da sahne sonuna sığmayan çekim oynatıcıda atlanır; doğrulama betiği geçersiz `parca`'yı hata sayar.
   - Revize için: `#/bolum/<id>?sahne=3&cekim=2&dur=1` 3. sahnenin 2. çekiminde durmuş açılır.
 

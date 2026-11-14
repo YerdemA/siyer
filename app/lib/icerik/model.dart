@@ -14,6 +14,7 @@ class Katman {
     required this.yerTutucu,
     required this.derinlik,
     this.ayar = const {},
+    this.kadraj,
   });
 
   factory Katman.fromJson(Map<String, dynamic> j) => Katman(
@@ -36,6 +37,12 @@ class Katman {
   final double derinlik;
   final Map<String, dynamic> ayar;
 
+  /// Çekimin kadrajı; ana görselden devralınan katmanlarda dolu.
+  final Kadraj? kadraj;
+
+  Katman kadrajla(Kadraj k) =>
+      Katman(id: id, dosya: dosya, yerTutucu: yerTutucu, derinlik: derinlik, ayar: ayar, kadraj: k);
+
   double sayi(String ad, double varsayilan) =>
       (ayar[ad] as num?)?.toDouble() ?? varsayilan;
   bool bayrak(String ad) => ayar[ad] == true;
@@ -54,6 +61,25 @@ class Katman {
 
 /// [x], [y]: görselin merkezinin kadrajdaki yeri (0–1). [olcek]: görselin
 /// genişliği, kadraj genişliğine oranla; yükseklik görselin oranından gelir.
+/// Çekimin sahnedeki bakış noktası: kadrajın ortasına gelecek nokta ([x],
+/// [y], ana görsele göre 0–1) ve yakınlık (1 = ana görselle aynı). Ana
+/// görselin katmanları buna göre, derinlikleriyle orantılı büyütülür; uzak
+/// katmanlar az, yakınlar çok (kamera gibi). Böylece yakın çekimde arka
+/// plan uzak çekimdekiyle tutarlı kalır.
+class Kadraj {
+  const Kadraj({this.x = 0.5, this.y = 0.5, this.yakinlik = 1});
+
+  static Kadraj? fromJson(Object? j) {
+    if (j is! Map<String, dynamic>) return null;
+    double s(String ad, double v) => (j[ad] as num?)?.toDouble() ?? v;
+    return Kadraj(x: s('x', 0.5), y: s('y', 0.5), yakinlik: s('yakinlik', 1));
+  }
+
+  final double x;
+  final double y;
+  final double yakinlik;
+}
+
 class GorselYerlesim {
   const GorselYerlesim({required this.x, required this.y, required this.olcek});
 
@@ -73,16 +99,33 @@ class Gorsel {
   });
 
   /// [ustSaat]: çekimde `saat` verilmezse sahnenin saati kullanılır.
-  factory Gorsel.fromJson(Map<String, dynamic> j, {String ustSaat = 'gunduz'}) {
+  /// [ustKatmanlar]: çekimde `kadraj` varsa devralınan ana görsel katmanları.
+  factory Gorsel.fromJson(
+    Map<String, dynamic> j, {
+    String ustSaat = 'gunduz',
+    List<Katman> ustKatmanlar = const [],
+  }) {
     final saat = _metin(j, 'saat').isEmpty ? ustSaat : _metin(j, 'saat');
+    final kendi = _nesneler(j, 'katmanlar').map(Katman.fromJson).toList();
+    final kadraj = Kadraj.fromJson(j['kadraj']);
+    final gizle = _metinler(j, 'gizle').toSet();
     return Gorsel(
       tarif: _metin(j, 'tarif'),
       saat: saat,
-      katmanlar: _nesneler(j, 'katmanlar').map(Katman.fromJson).toList(),
+      // Kadrajlı çekim: ana görselin katmanları (gizlenenler hariç) kadrajla,
+      // üstüne çekimin kendi katmanları olduğu gibi.
+      katmanlar: kadraj == null
+          ? kendi
+          : [
+              for (final k in ustKatmanlar)
+                if (!gizle.contains(k.id)) k.kadrajla(kadraj),
+              ...kendi,
+            ],
       kamera: _metin(j, 'kamera'),
       parca: (j['parca'] as num?)?.toInt() ?? 0,
       cekimler: [
-        for (final c in _nesneler(j, 'cekimler')) Gorsel.fromJson(c, ustSaat: saat),
+        for (final c in _nesneler(j, 'cekimler'))
+          Gorsel.fromJson(c, ustSaat: saat, ustKatmanlar: kendi),
       ],
     );
   }

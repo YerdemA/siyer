@@ -99,6 +99,35 @@ void main() {
     expect(plan.sahneler[0].cekimler.map((e) => e.gorsel.tarif), ['ana', 'b']);
   });
 
+  test('kadrajlı çekim ana katmanları devralır, gizleneni atlar, kendininkini üste koyar', () {
+    final g = Gorsel.fromJson({
+      'tarif': 'ana',
+      'katmanlar': [
+        {'id': 'gok', 'dosya': 'gok.webp', 'derinlik': 0},
+        {'id': 'evler', 'dosya': 'evler.webp', 'derinlik': 0.4},
+        {'id': 'kalabalik', 'dosya': 'uzak.webp', 'derinlik': 0.6},
+      ],
+      'cekimler': [
+        {
+          'parca': 1,
+          'kadraj': {'x': 0.7, 'y': 0.6, 'yakinlik': 2},
+          'gizle': ['kalabalik'],
+          'katmanlar': [
+            {'id': 'yakin', 'dosya': 'yakin.webp', 'derinlik': 0.8},
+          ],
+        },
+        {'parca': 2, 'katmanlar': []},
+      ],
+    });
+    final c = g.cekimler[0];
+    expect(c.katmanlar.map((k) => k.id), ['gok', 'evler', 'yakin']);
+    expect(c.katmanlar[1].kadraj!.yakinlik, 2);
+    expect(c.katmanlar[1].kadraj!.x, 0.7);
+    expect(c.katmanlar[2].kadraj, isNull);
+    expect(g.katmanlar.every((k) => k.kadraj == null), isTrue);
+    expect(g.cekimler[1].katmanlar, isEmpty, reason: 'kadrajsız çekim devralmaz');
+  });
+
   test('cekimBasi istenen çekimin başını verir, sınır dışını kırpar', () {
     final plan = ZamanPlani.olustur(_bolum([
       {'parca': 1, 'tarif': 'b', 'katmanlar': []},
