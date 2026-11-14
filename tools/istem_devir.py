@@ -35,7 +35,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     kısmı yaklaşık x 128–1408, y 152–872'dir (yanlardan %8, üst/alttan %15)."""
     uslup = veri["uslup"]
     ilk = (
-        "I am making a respectful documentary motion comic about 7th-century Mecca. "
+        "I am making a respectful documentary motion comic about the life of the Prophet in 6th- and 7th-century Arabia. "
         "The attached image is the style reference: match its paper cut-out look, palette and texture in every image I ask for in this chat. "
         "Use it only for style, not composition.\n\n"
         f"Style: {uslup['istem'].replace('Cinematic 16:9 framing.', 'Cinematic wide framing.')}\n\n"
