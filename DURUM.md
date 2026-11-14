@@ -60,7 +60,14 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 ---
 
-## 2. Son oturum (2026-11-14, yakın planlar)
+## 2. Son oturum (2026-11-14, anlatıcı sesi denemesi)
+
+1. ElevenLabs MCP bağlandı. Hesap **ücretsiz katman** (ayda 10.000 karakter; 1 karakter ≈ 1 kredi, `eleven_v4`). Üç taslak bölümün anlatımı ~8.800 karakter (b01 4.508, b09 2.851, b10 1.440); 10 bölüm için ~30.000 tahmin.
+2. Dört Türkçe erkek sesiyle aynı metin (b10 s01 + s03) üretildi: Halil (`Razqs3wH10dOkbWg5isY`), Serkan Yılmaz (`1rkdtuvNN9rVebRnNiUO`), Seyfullah Kartal (`mF7tIc9VLrznhGooGjaT`) başarılı; Ahmet Esen (`XoPigySk4as5cKgN6BJg`) başarısız.
+3. **Engel:** ElevenLabs ücretsiz katmanı "olağandışı etkinlik (VPN/proxy ya da birden çok ücretsiz hesap)" gerekçesiyle kapattı; üretim için ücretli abonelik istiyor. Ayrıca ücretsiz katman ticari olmayan kullanım ve atıf şartı taşır; yayın için zaten ücretli plan gerekebilir (Erdem'in kararı).
+4. **Kararlar (Erdem):** Anlatıcı sesi **Seyfullah Kartal** (`mF7tIc9VLrznhGooGjaT`, `eleven_v4`). "(s.a.v.)" düzgün okunuyor; metinde açık yazmaya gerek yok. Erdem Starter paket (aylık 30.000 kredi) almayı düşünüyor. **Ses ekleme işi en sona bırakıldı;** öncelik sahneler, metinler ve kaynaklar.
+
+## Önceki oturum (2026-11-14, yakın planlar)
 
 1. **b01 yakın planları:** 13 görsel denetlendi (temsil kuralına uygun), katmana çevrildi, bölüme çekim olarak bağlandı. s07 parça 2 ve s11 parça 2'deki geçici çekimler yenileriyle değişti. s07 ve s13'teki yakın planlar baş kesilmesin diye `ayar.gorsel` ile aşağı kaydırıldı.
 2. **`gorsel_katman.py`:** ChatGPT perdesi bazen koyu geliyor (#00AF46); `SEFFAF_ESIK` 110 → 95. Eski eşikle zemin yarı saydam kalıyordu.
@@ -91,7 +98,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 Sahibi parantez içinde.
 
 1. **Sıradaki oturum, ilk iş (Claude):**
-   - **Anlatım sesi:** ElevenLabs MCP kurulunca aday sesleri Erdem'e dinlet (bkz. 5).
+   - **Sonraki bölüm:** `/bolum-yaz 2` (Fil Vakası). Ses işi sona bırakıldı (bkz. 5).
 2. **Atıf doğrulaması** (Erdem): b01'de 62, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
    - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
    - b01 Kâbe: Kusay dönemi (s08-s10) hurma dallarıyla örtülü `kabe-ortulu` (KÂBE s. 16); Abdülmuttalib dönemi ve b09 çatısız `kabe-alcak` (İbn Hişâm s. 122).
@@ -101,7 +108,7 @@ Sahibi parantez içinde.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
 3. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
 4. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b02 → b08. b01 yazıldı (2026-11-14). Her bölümde atıflar yerel kaynaklardan.
-5. **Anlatım sesleri** (Claude): ElevenLabs MCP ile (Erdem, 2026-11-14). Olgun, hikâye anlatımına uygun erkek sesi seçilip Erdem'e dinletilecek; lisans ve ücretsiz kullanım şartları kayda geçecek. MCP sunucusu bu oturumda bağlı değildi; kurulması gerek.
+5. **Anlatım sesleri** (Claude, en sona): ElevenLabs, Seyfullah Kartal sesi. Bütün bölümlerin metni ve kaynakları oturduktan sonra toplu üretilecek. Önce Erdem'in ücretli plana geçmesi gerek (ücretsiz katman kapalı); lisans şartları kayda geçecek.
 
 ---
 
@@ -110,7 +117,7 @@ Sahibi parantez içinde.
 | Konu | Not |
 |---|---|
 | Bölüm indirme barındırması | Seçenekler: Play Asset Delivery + Apple ODR (sunucu ilkesi korunur), Cloudflare Pages, GitHub Releases, R2. İçerik yükleme yalnız `app/lib/icerik/depo.dart` üzerinden geçer |
-| Anlatım sesi üretimi | Karar: ElevenLabs MCP, olgun erkek anlatıcı sesi (Erdem, 2026-11-14). Açık: hangi ses, lisans ve ticari olmayan/ücretsiz kullanım şartları |
+| Anlatım sesi üretimi | Karar: ElevenLabs, Seyfullah Kartal sesi; en sona bırakıldı (Erdem, 2026-11-14). Açık: plan (Starter düşünülüyor) ve lisans şartları |
 | Müzik ve ortam sesi | JSON'da adlar var (`muzik`, `ortam`); oynatıcıda henüz çalınmıyor |
 | Parşömen harita illüstrasyonu | Zemin şimdilik kodla çiziliyor; görsel üretimi bekliyor |
 | Uzman okuması | Bölümler yayın için uzmana okutulmalı (`KAYNAK_POLITIKASI` §6); kim? |
