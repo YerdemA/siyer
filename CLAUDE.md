@@ -55,6 +55,8 @@ dart run tools/icerik_dogrula.dart      # şema + kaynak kontrolü (yazılacak)
 
 ## Çalışma düzeni
 
+- Oturuma başlarken `DURUM.md`'yi oku (tamamlananlar, sıradaki adım, MVP listesi); oturum sonunda güncelle.
+
 - Bölüm yazarken `/bolum-yaz <bölüm no>` komutunu, atıf kontrolü için `kaynak-denetcisi` alt ajanını kullan.
 - Not defterine soru sorarken eser adını ve konumu açıkça iste; cevaptaki atıfı kayda aynen geçir. Kota sınırlı olduğu için soruları tek tek değil toplu sor.
 - Açık erişimli kaynakları indirmek için `scrapling` MCP sunucusunu ya da `.venv\Scripts\scrapling.exe` komutunu kullan (`docs/SCRAPLING_KURULUM.md`). Yalnızca `docs/KAYNAKLAR.md` A listesi; indirilen `kaynaklar/` altına kaydedilir. Web'den çekilen sayfa tek başına atıf kaynağı değildir, kural 2 aynen geçerli.
