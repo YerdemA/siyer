@@ -744,6 +744,12 @@
           ]
         },
         {
+          "metin": "Rivayete göre kırlangıç benzeri bu kuşların her biri, biri gagasında, ikisi ayaklarında üç taş taşıyordu; taşlar nohut ile mercimek büyüklüğündeydi.",
+          "iddialar": [
+            "i-b02-020"
+          ]
+        },
+        {
           "metin": "Taş isabet eden helak oldu; ama hepsine isabet etmedi.",
           "iddialar": [
             "i-b02-014"
@@ -1411,7 +1417,7 @@
       "id": "i-b02-014",
       "ifade": "Allah onların üzerine denizden kuşlar gönderdi; kuşlar taş taşıyordu. Taş isabet eden helak oluyordu, ama hepsine isabet etmedi.",
       "guc": "guclu",
-      "gerekce": "İbn Hişâm s. 35-36. Kuşların gönderilmesi ve taş atması Kur'an'la sabittir (i-b02-015); FİL VAK'ASI (s. 71) kuşların taşlaşmış çamur yağdırdığını yazar. Her kuşun üç taş taşıması ve taşların nohut-mercimek büyüklüğü yalnız İbn İshak'ın rivayetinde olduğu için dipnota alındı; TDV FÎL SÛRESİ maddesindeki değerlendirme okunduğunda yeniden bakılmalı.",
+      "gerekce": "İbn Hişâm s. 35-36. Kuşların gönderilmesi ve taş atması Kur'an'la sabittir (i-b02-015); FİL VAK'ASI (s. 71) kuşların taşlaşmış çamur yağdırdığını yazar. Ayrıntılar (kırlangıç benzeri kuşlar, kuş başına üç taş, nohut-mercimek büyüklüğü) i-b02-020'de.",
       "kaynaklar": [
         {
           "eser": "ibn-hisam-sire",
@@ -1428,20 +1434,7 @@
           "tarih": ""
         }
       ],
-      "alternatifRivayetler": [
-        {
-          "ifade": "İbn İshak'ın rivayetine göre kuşlar kırlangıç benzeriydi; her biri biri gagasında, ikisi ayaklarında üç taş taşıyordu ve taşlar nohut ile mercimek büyüklüğündeydi.",
-          "kaynaklar": [
-            {
-              "eser": "ibn-hisam-sire",
-              "konum": "s. 35-36",
-              "dogrulama": "bekliyor",
-              "dogrulayan": "",
-              "tarih": ""
-            }
-          ]
-        }
-      ]
+      "alternatifRivayetler": []
     },
     {
       "id": "i-b02-015",
@@ -1598,6 +1591,42 @@
         }
       ],
       "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-020",
+      "ifade": "Rivayete göre kuşlar kırlangıç benzeriydi; her biri biri gagasında, ikisi ayaklarında üç taş taşıyordu ve taşlar nohut ile mercimek büyüklüğündeydi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 35-36 (İbn İshak). FÎL SÛRESİ maddesi aynı ayrıntıları 'rivayetlere göre' diye verir ve zayıf saymaz; sûrenin kendisinin taşların ve kuşların özellikleri hakkında bilgi vermediğini, kuşların renginde rivayetlerin farklı olduğunu belirtir. Anlatımda 'rivayete göre' denir; renk verilmez.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 35-36",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Çağrıcı, \"FÎL SÛRESİ\", c. 13, s. 69-70 (İstanbul 1996; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Kuşların siyah, beyaz ya da yeşil olduğuna dair farklı rivayetler vardır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Çağrıcı, \"FÎL SÛRESİ\", c. 13, s. 69-70 (İstanbul 1996; sayfa matbu nüshada kesinleştirilecek)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
