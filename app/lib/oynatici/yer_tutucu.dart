@@ -596,6 +596,11 @@ class YerTutucu {
 
   void _nur() {
     // Sıcak beyaz-altın parıltı; başka hiçbir ışık bu tonu kullanmaz.
+    final boy = k.sayi('boy', 0);
+    if (boy > 0) {
+      _nurBoylu(boy);
+      return;
+    }
     final m = Offset(k.sayi('x', 0.5) * w, k.sayi('y', 0.5) * h);
     final yaricap = k.sayi('r', 0.12) * w * (1 + 0.06 * math.sin(t * 1.4));
     // Sahne başında yavaşça belirir. `guc`: açık zeminde (gündüz kumu) `screen`
@@ -627,6 +632,55 @@ class YerTutucu {
           _nurAltin.withValues(alpha: math.min(1.0, 0.14 * gorunurluk)),
           _nurAltin.withValues(alpha: 0),
         ], const [0, 0.4, 1]),
+    );
+  }
+
+  /// Beden boyunda nur (diğer peygamberler, docs/GORSEL_USLUP.md §2): ayakta
+  /// bir insan boyunda, dikey, yumuşak bir ışık. Baş, kol, omuz gibi hiçbir
+  /// insan hattı yok; yalnız boy sezilir. `x`, `y`: zemine bastığı alt uç;
+  /// `boy`: yüksekliği (ekran yüksekliğine oranla); `r`: yarı genişlik
+  /// (ekran genişliğine oranla, verilmezse boyun %14'ü).
+  void _nurBoylu(double boy) {
+    final yukseklik = boy * h * (1 + 0.02 * math.sin(t * 1.4));
+    final yariGen = k.sayi('r', 0) > 0 ? k.sayi('r', 0) * w : boy * h * 0.14;
+    final alt = Offset(k.sayi('x', 0.5) * w, k.sayi('y', 0.7) * h);
+    final guc = k.sayi('guc', 1).clamp(0.0, 4.0);
+    final gorunurluk = math.min(1.0, p * 4) * guc;
+
+    // Yuvarlak uçlu dikey kapsül, kenarları bulanık: insan hattı yok, boy var.
+    RRect kapsul(double genisleme) => RRect.fromRectAndRadius(
+          Rect.fromLTRB(
+            alt.dx - yariGen - genisleme,
+            alt.dy - yukseklik - genisleme * 0.5,
+            alt.dx + yariGen + genisleme,
+            alt.dy,
+          ),
+          Radius.circular(yariGen + genisleme),
+        );
+
+    if (guc > 1) {
+      // Açık zeminde de seçilsin diye sıcak, yumuşak çekirdek (normal karışım).
+      c.drawRRect(
+        kapsul(0),
+        Paint()
+          ..color = _nurAcik.withValues(alpha: math.min(0.7, 0.17 * gorunurluk))
+          ..maskFilter = MaskFilter.blur(BlurStyle.normal, yariGen * 0.8),
+      );
+    }
+    // Dış hale (`screen`): yana daha çok taşar, altındakini aydınlatır.
+    c.drawRRect(
+      kapsul(yariGen * 0.8),
+      Paint()
+        ..blendMode = BlendMode.screen
+        ..color = _nurAltin.withValues(alpha: math.min(0.7, 0.18 * gorunurluk))
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yariGen * 1.2),
+    );
+    c.drawRRect(
+      kapsul(-yariGen * 0.35),
+      Paint()
+        ..blendMode = BlendMode.screen
+        ..color = _nurAcik.withValues(alpha: math.min(0.9, 0.3 * gorunurluk))
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yariGen * 0.45),
     );
   }
 

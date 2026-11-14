@@ -11,7 +11,7 @@ Bu kurallar 2026-11-14'te Erdem'in kararıyla değişti. Eskiden yüz gösterilm
 1. **Hz. Muhammed (s.a.v.):** İki yöntem:
    - *Nurlu figür:* Asaleti belli eden bir boyda, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı bir figür; başında yeşil sarık. Yüz, ten, el ve beden ayrıntısı görünmez; nurun içinde yalnız boy ve sarık seçilir.
    - *Onun gözünden:* Sahne onun bakış açısından görülür.
-2. **Diğer peygamberler** (Hz. İbrâhim, Hz. İsmâil vb.): Figür, siluet, gölge, el, ayak dahil hiçbir beden tasviri yok; yalnız bulundukları yerde yumuşak, sıcak bir parıltı.
+2. **Diğer peygamberler** (Hz. İbrâhim, Hz. İsmâil vb.): Figür, siluet, gölge, el, ayak dahil hiçbir beden tasviri yok. Bulundukları yerde beden boyunda, hatları olmayan bir nur durur: ayakta bir insan boyunda, dikey, yumuşak kenarlı bir ışık; baş, omuz, kol çizilmez, yalnız boy sezilir. Alt ucu zemine basar, boyu sahnedeki insan ölçeğine uyar (çocukken çocuk boyunda). Nuru oynatıcı çizer, görsele çizilmez (Erdem, 2026-11-14).
 3. **Efendimiz'in eşleri, çocukları, anne-babası (Hz. Âmine, Abdullah) ve süt annesi Halîme:** Yüz gösterilmez. Arkadan, siluet, uzak plan, kumaş ve el ayrıntısı kullanılabilir.
 4. **Diğer herkes** (sahabe, Abdülmuttalib, Ebû Tâlib, Kureyş ileri gelenleri, halk, kalabalıklar): Yüzleriyle çizilebilir. Yaş, giyim, görünüş gibi ayrıntılar rivayet ve kaynaklardaki betimlemeye uygun olur; kaynakta betimleme yoksa sade, dönemine uygun, belirgin özellik uydurulmadan. Yüzler kâğıt kesik üslupta, sade ve saygılı; fotoğraf gerçekliğinde değil.
 5. **Melekler:** Tasvir edilmez; ışık ve ses ile sezdirilir.
