@@ -13,7 +13,8 @@
       "b09-hakem",
       "b10-hira",
       "b03-dogum",
-      "b04-sut-anne"
+      "b04-sut-anne",
+      "b05-yetimlik"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -129,8 +130,12 @@
       "y": 0.573
     },
     "ozet": "",
-    "bolumler": [],
-    "iddialar": [],
+    "bolumler": [
+      "b05-yetimlik"
+    ],
+    "iddialar": [
+      "i-b05-006"
+    ],
     "konumKaynagi": {
       "eser": "tdv-dia",
       "konum": "\"EBVÂ\", c. 10, s. 378",
@@ -148,7 +153,8 @@
     },
     "ozet": "",
     "bolumler": [
-      "b03-dogum"
+      "b03-dogum",
+      "b05-yetimlik"
     ],
     "iddialar": [],
     "konumKaynagi": {

@@ -656,7 +656,7 @@
       "id": "i-b04-001",
       "ifade": "Efendimiz'i bir süre Ebû Leheb'in câriyesi Süveybe emzirdi.",
       "guc": "guclu",
-      "gerekce": "Süveybe'nin Efendimiz'i emzirdiği Buhârî 5101'de Resûlullah'ın kendi sözüyle geçer («Beni de Ebû Seleme'yi de Süveybe emzirdi»; Hadislerle İslâm c. 4'teki Türkçe). 'Bir süre' ve 'câriyesi' MUHAMMED (s. 407) ve Hadislerle İslâm c. 4'e (sütanneye verilinceye kadar emzirdi) dayanır; MEVLİD (s. 478) Süveybe'yi Buhârî'ye atıfla anar. Numara farkı: MEVLİD 'Nikâh, 20', Hadislerle İslâm 'Nikâh, 21', sunnah.com kitap içi 39. Urve'nin hadise eki Ebû Leheb'in onu âzat ettiğini, sonra emzirdiğini söyler; Hadislerle İslâm âzadın hicretten sonra olduğunu yazar. Bu fark yüzünden ve 'bir süre' TDV'ye dayandığı için etiket 'guclu' kaldı.",
+      "gerekce": "Süveybe'nin Efendimiz'i emzirdiği Buhârî 5101'de Resûlullah'ın kendi sözüyle geçer (Hadislerle İslâm c. 4'teki Türkçesi: «Ben de Ebû Seleme'yi de Süveybe emzirdi»). 'Bir süre' ve 'câriyesi' MUHAMMED (s. 407) ve Hadislerle İslâm c. 4'e (sütanneye verilinceye kadar emzirdi) dayanır; MEVLİD (s. 478) Süveybe'yi Buhârî'ye atıfla anar. Numara farkı: MEVLİD 'Nikâh, 20', Hadislerle İslâm 'Nikâh, 21', sunnah.com kitap içi 39. Urve'nin hadise eki Ebû Leheb'in onu âzat ettiğini, sonra emzirdiğini söyler; Hadislerle İslâm âzadın hicretten sonra olduğunu yazar (PDF s. 252, dn. 849: İbn Sa'd, I, 108-109). Bu farklar dipnottadır. Bu fark yüzünden ve 'bir süre' TDV'ye dayandığı için etiket 'guclu' kaldı.",
       "kaynaklar": [
         {
           "eser": "buhari-sahih",
@@ -667,7 +667,7 @@
         },
         {
           "eser": "hadislerle-islam",
-          "konum": "c. 4, PDF s. 249 (metin) ve s. 254 (dipnot 838)",
+          "konum": "c. 4, PDF s. 249 (metin) ve s. 254 (dipnot 838); âzat bilgisi PDF s. 252, dipnot 849 (s. 254)",
           "dogrulama": "bekliyor",
           "dogrulayan": "",
           "tarih": ""
@@ -687,7 +687,34 @@
           "tarih": ""
         }
       ],
-      "alternatifRivayetler": []
+      "alternatifRivayetler": [
+        {
+          "ifade": "Urve'nin rivayetine göre Ebû Leheb Süveybe'yi âzat etmişti, Süveybe de Efendimiz'i bundan sonra emzirdi. MEVLİD maddesi de Ebû Leheb'in, kendisine doğum haberini getiren Süveybe'yi âzat ettiğini anar. Hadislerle İslâm'a göre ise Ebû Leheb onu hicretten sonra âzat etti.",
+          "kaynaklar": [
+            {
+              "eser": "buhari-sahih",
+              "konum": "Nikâh (sunnah.com kitap içi 39), hadis no. 5101 (Urve'nin eki)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Ahmet Özel, \"MEVLİD\" (bölüm 1), c. 29, s. 478 (Ankara 2004)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 4, PDF s. 252 (metin) ve s. 254 (dipnot 849)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "i-b04-002",

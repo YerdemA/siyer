@@ -1,0 +1,1037 @@
+{
+  "id": "b05-yetimlik",
+  "sira": 5,
+  "baslik": "Yetimlik",
+  "ozet": "Yesrib yolculuğu ve Âmine'nin Ebvâ'da vefatı; Ümmü Eymen; dedesi Abdülmuttalib'in himayesi ve vefatı; Ebû Tâlib'e vasiyet.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b05-s01",
+      "anlatim": [
+        {
+          "metin": "Hz. Muhammed (s.a.v.) annesi Âmine ve dedesi Abdülmuttalib'in yanında, Allah'ın koruması altında güzel bir şekilde büyüdü.",
+          "iddialar": [
+            "i-b05-001"
+          ]
+        },
+        {
+          "metin": "Süt annesinin yanından döndükten sonra bir süre annesinin yanında kaldı.",
+          "iddialar": [
+            "i-b05-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Sabah, Mekke vadisi uzak plan: çıplak dağlar arasında alçak evler, ortada alçak ve çatısız Kâbe. İnsanlar küçük ve ayrıntısız. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b05-s01.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "amine",
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b05-s02",
+      "anlatim": [
+        {
+          "metin": "Efendimiz altı yaşındayken annesi onu Yesrib'e götürdü.",
+          "iddialar": [
+            "i-b05-003"
+          ]
+        },
+        {
+          "metin": "Amaç Neccâroğulları'nı ziyaret etmekti. Abdülmuttalib'in annesi Selmâ bu kabiledendi; bu yüzden Neccâroğulları ailenin dayıları sayılırdı.",
+          "iddialar": [
+            "i-b05-003"
+          ]
+        },
+        {
+          "metin": "Yolculukta câriyeleri Ümmü Eymen de onlarla birlikteydi. Âmine, Abdullah'ın Yesrib'deki kabrini de ziyaret etmek istiyordu.",
+          "iddialar": [
+            "i-b05-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, kuzeye uzanan çöl yolu, uzak plan: küçük bir kervan; kervanda örtülere sarınmış, arkadan görülen iki kadın (Âmine ve Ümmü Eymen). Yüzler görünmez. Âmine'nin yüzü gösterilmez. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "yol-zemin",
+            "dosya": "b05-yol-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kervan",
+            "dosya": "b05-kervan.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b05-s02.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "amine",
+        "ummu-eymen"
+      ]
+    },
+    {
+      "id": "b05-s03",
+      "anlatim": [
+        {
+          "metin": "Yesrib'de bir ay kadar kaldılar.",
+          "iddialar": [
+            "i-b05-005"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, uzaktan görülen Yesrib: düz bir arazide alçak evlerden oluşan bir yerleşim, uzak plan, ayrıntısız. İnsan yok. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "yol-zemin",
+            "dosya": "b05-yol-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "yesrib",
+            "dosya": "b05-yesrib-uzak.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.45
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b05-s03.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "amine"
+      ],
+      "yer": "yesrib"
+    },
+    {
+      "id": "b05-s04",
+      "anlatim": [
+        {
+          "metin": "Mekke'ye dönerken, Mekke ile Yesrib arasındaki Ebvâ'da Âmine vefat etti ve oraya defnedildi.",
+          "iddialar": [
+            "i-b05-006"
+          ]
+        },
+        {
+          "metin": "Ebvâ, Yesrib'e yaklaşık yüz doksan kilometre uzaklıktaydı.",
+          "iddialar": [
+            "i-b05-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, geniş ve ıssız bir ova, alçak tepeler; uzak plan: yere çökmüş birkaç deve ve küçük bir çadır; çadırın önünde, örtülere sarınmış, arkadan görülen tek bir kadın oturuyor (Ümmü Eymen). Beden, cenaze ya da kabir çizilmez. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "yol-zemin",
+            "dosya": "b05-yol-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "ebva-konak",
+            "dosya": "b05-ebva-konak.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b05-s04.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "amine",
+        "ummu-eymen"
+      ],
+      "yer": "ebva"
+    },
+    {
+      "id": "b05-s05",
+      "anlatim": [
+        {
+          "metin": "Annesinin vefatından sonra Ümmü Eymen, altı yaşındaki Efendimiz'i Mekke'ye getirip dedesi Abdülmuttalib'e teslim etti.",
+          "iddialar": [
+            "i-b05-007"
+          ]
+        },
+        {
+          "metin": "Ümmü Eymen Habeş asıllıydı ve Efendimiz'in dadısıydı; o büyüyünceye kadar dadılığını sürdürdü.",
+          "iddialar": [
+            "i-b05-008"
+          ]
+        },
+        {
+          "metin": "Resûlullah onun için «Annemden sonraki annemdir» derdi.",
+          "iddialar": [
+            "i-b05-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de bir evin kapısı, orta plan: kapıda duran Abdülmuttalib (yüzü sade çizilmiş); ona doğru yürüyen, örtülere sarınmış, arkadan görülen bir kadın (Ümmü Eymen). Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "teslim",
+            "dosya": "b05-kapida-teslim.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b05-s05.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "ummu-eymen",
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b05-s06",
+      "anlatim": [
+        {
+          "metin": "Yıllar sonra Resûlullah, Ebvâ'daki annesinin kabrini ziyaret etti; ağladı, yanındakiler de ağladı.",
+          "iddialar": [
+            "i-b05-009"
+          ]
+        },
+        {
+          "metin": "Rivayete göre bu ziyaret hicretin altıncı yılında oldu.",
+          "iddialar": [
+            "i-b05-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Resûlullah'ın gözünden: önde, ovada alçak, sade bir toprak yığını. Kadrajda el, kol ya da beden yok. Arka planda alçak tepeler. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "yol-zemin",
+            "dosya": "b05-yol-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kabir",
+            "dosya": "b05-ebva-kabir.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "bakis-acisi-giris"
+      },
+      "ses": {
+        "anlatim": "b05-s06.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "amine"
+      ],
+      "yer": "ebva"
+    },
+    {
+      "id": "b05-s07",
+      "anlatim": [
+        {
+          "metin": "Abdülmuttalib için Kâbe'nin gölgesine bir döşek serilirdi.",
+          "iddialar": [
+            "i-b05-011"
+          ]
+        },
+        {
+          "metin": "Oğulları döşeğin çevresine oturur; ona saygılarından hiçbiri döşeğin üstüne oturmazdı.",
+          "iddialar": [
+            "i-b05-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, alçak ve çatısız Kâbe'nin gölgesi, orta plan: yere serilmiş düz bir döşek, üstünde oturan Abdülmuttalib; çevresinde, döşeğin dışında yere oturmuş oğulları. Yüzler sade. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "dosek",
+            "dosya": "b05-kabe-dosek.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b05-s07.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b05-s08",
+      "anlatim": [
+        {
+          "metin": "Efendimiz gelip o döşeğe otururdu. Amcaları onu geri çekmek için tutunca Abdülmuttalib şöyle derdi: «Bırakın oğlumu! Vallahi onun bir şanı var.»",
+          "iddialar": [
+            "i-b05-012"
+          ]
+        },
+        {
+          "metin": "Sonra onu yanına oturtur, sırtını sıvazlar, yaptığından hoşnut olurdu.",
+          "iddialar": [
+            "i-b05-012"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib torununa gereken ilgiyi gösterdi.",
+          "iddialar": [
+            "i-b05-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, aynı döşek, yakın plan: elini kaldırmış, oğullarını durduran Abdülmuttalib; öndeki iki oğlu durmuş ona bakıyor. Efendimiz çizilmez; döşekte boşluk vurgulanmaz. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "dosek-yakin",
+            "dosya": "b05-dosek-yakin.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b05-s08.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b05-s09",
+      "anlatim": [
+        {
+          "metin": "Efendimiz sekiz yaşındayken Abdülmuttalib vefat etti.",
+          "iddialar": [
+            "i-b05-014"
+          ]
+        },
+        {
+          "metin": "Rivayete göre ölümü yaklaşınca altı kızını, Safiyye, Berre, Âtike, Ümmü Hakîm, Ümeyme ve Ervâ'yı yanına çağırdı ve ölmeden önce kendisi için söyleyecekleri ağıtları duymak istedi.",
+          "iddialar": [
+            "i-b05-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, loş, turuncu bir kandil ışığında sade bir oda, orta plan: yatakta yatan Abdülmuttalib, yüzü gölgede; çevresinde oturan, örtülü, arkadan görülen altı kadın. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "oda",
+            "dosya": "b05-son-gece.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.3
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b05-s09.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b05-s10",
+      "anlatim": [
+        {
+          "metin": "Abdülmuttalib ölmeden önce torununun bakımını oğlu Ebû Tâlib'e vasiyet etmişti.",
+          "iddialar": [
+            "i-b05-016"
+          ]
+        },
+        {
+          "metin": "Çünkü Ebû Tâlib, Efendimiz'in babası Abdullah'ın anne-baba bir kardeşiydi.",
+          "iddialar": [
+            "i-b05-016"
+          ]
+        },
+        {
+          "metin": "Efendimiz artık amcası Ebû Tâlib'in yanındaydı.",
+          "iddialar": [
+            "i-b05-016"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Mekke'de bir evin önü, orta plan: kapının önünde duran, sade giyimli bir Kureyşli adam (Ebû Tâlib), yüzü sade çizilmiş. Efendimiz çizilmez. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "ebu-talib",
+            "dosya": "b05-ebu-talib-kapi.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b05-s10.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "ebu-talib",
+        "abdulmuttalib",
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b05-001",
+      "ifade": "Efendimiz annesi Âmine ve dedesi Abdülmuttalib'in yanında, Allah'ın koruması altında güzel bir şekilde büyüdü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 107 (İbn İshak: Allah onu, kendisi için dilediği şeref için güzel bir şekilde büyütüyordu). İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-002",
+      "ifade": "Süt annesinin yanından döndükten sonra bir süre annesinin yanında kaldı.",
+      "guc": "guclu",
+      "gerekce": "ÂMİNE (s. 64): Âmine onu muhtemelen dört yaşlarında tekrar yanına almış ve iki yıl daha onunla kalmıştır. b04 i-b04-013 dönüş yaşını 'dört ya da beş' diye verdiği için anlatım süre vermez, 'bir süre' der.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-003",
+      "ifade": "Efendimiz altı yaşındayken annesi onu Yesrib'e götürdü. Amaç Neccâroğulları'nı ziyaret etmekti: Abdülmuttalib'in annesi Selmâ bu kabiledendi, bu yüzden Neccâroğulları ailenin dayıları sayılırdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 107 (İbn İshak, Abdullah b. Ebû Bekir'den: altı yaşındayken; onu Adî b. Neccâroğulları'ndan dayılarına ziyarete götürmüştü; İbn Hişâm: Abdülmuttalib'in annesi Selmâ bint Amr en-Neccâriyye). MUHAMMED (s. 407), EBVÂ ve ÂMİNE (Belâzürî'nin tercihine göre altı yaş) aynı bilgiyi verir. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-004",
+      "ifade": "Yolculukta câriyeleri Ümmü Eymen de onlarla birlikteydi. Âmine, Abdullah'ın Yesrib'deki kabrini de ziyaret etmek istiyordu.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407), EBVÂ, ÂMİNE ve ÜMMÜ EYMEN maddeleri. İbn Hişâm s. 107 bu iki ayrıntıyı vermez; atıf ona yapılmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ÜMMÜ EYMEN\", c. 42, s. 317 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-005",
+      "ifade": "Yesrib'de bir ay kadar kaldılar.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407), EBVÂ ve ÂMİNE. İbn Hişâm bu süreyi vermez.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-006",
+      "ifade": "Mekke'ye dönerken, Mekke ile Medine arasındaki Ebvâ'da Âmine vefat etti ve oraya defnedildi. Ebvâ, Medine'ye yaklaşık 190 kilometre uzaklıktaydı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 107 (Mekke ile Medine arasında Ebvâ'da, Mekke'ye dönerken öldü). EBVÂ (yer, uzaklık, defin), ÂMİNE ve MUHAMMED (s. 407: 'hastalanıp vefat etti'; hastalık yalnız bu maddede geçtiği için anlatıma alınmadı). ÂMİNE kaynakların büyük kısmının Ebvâ dediğini, İbn Sa'd'ın Mekke rivayetini yanlış bulduğunu yazar. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı kaynaklar Âmine'nin Mekke'de vefat ettiğini kaydeder; İbn Sa'd bu rivayeti yanlış bulur ve kabrinin Ebvâ'da olduğunu hatırlatır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Bazı rivayetlere göre Abdülmuttalib de bu yolculukta onlarla birlikteydi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b05-007",
+      "ifade": "Ümmü Eymen onu Mekke'ye getirip dedesi Abdülmuttalib'e teslim etti.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407), EBVÂ ve ÜMMÜ EYMEN.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 378 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ÜMMÜ EYMEN\", c. 42, s. 317 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-008",
+      "ifade": "Ümmü Eymen Habeş asıllıydı ve Efendimiz'in dadısıydı; o büyüyünceye kadar dadılığını sürdürdü. Resûlullah onun için «Annemden sonraki annemdir» derdi.",
+      "guc": "guclu",
+      "gerekce": "ÜMMÜ EYMEN (Habeş asıllı; dadılık; 'annemden sonra annem' diye severdi). Söz Hadislerle İslâm c. 1'deki Türkçesiyle aynen alındı (dipnotu İbn Hacer, İsâbe, VIII, 169-170). Hadis kitaplarının sahih rivayeti değil, terâcim kaynağı olduğu için 'guclu'.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ÜMMÜ EYMEN\", c. 42, s. 317 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 429 (metin) ve s. 439 (dipnot 1294: İbn Hacer, İsâbe, VIII, 169-170)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-009",
+      "ifade": "Yıllar sonra Resûlullah annesinin kabrini ziyaret etti; ağladı, yanındakiler de ağladı.",
+      "guc": "kesin",
+      "gerekce": "Müslim 976b (Ebû Hüreyre): kabri ziyaret etti, ağladı ve çevresindekileri ağlattı. Hadisin devamında Resûlullah'ın sözü vardır: annesi için istiğfar izni istemiş, verilmemiş; kabrini ziyaret izni istemiş, verilmiş; 'kabirleri ziyaret edin, ölümü hatırlatır' demiştir (976a da istiğfar kısmını verir). Söz bölünerek aktarılamayacağı (kural 6) ve tamamı her yaş anlatımına teolojik bir konu taşıyacağı için anlatımda söz aktarılmadı; yalnız ziyaret ve ağlama verildi. Konunun değerlendirmesi için TDV 'FETRET' maddesine gönderir (EBVÂ, ÂMİNE). Erdem'in kararı bekleniyor. Numara farkı: EBVÂ 'Müslim, Cenâiz, 105, 106' der, sunnah.com kitap içi 134-135.",
+      "kaynaklar": [
+        {
+          "eser": "muslim-sahih",
+          "konum": "Cenâiz (sunnah.com kitap içi 135), hadis no. 976b",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 379 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-010",
+      "ifade": "Rivayete göre bu ziyaret hicretin altıncı yılında oldu.",
+      "guc": "guclu",
+      "gerekce": "EBVÂ (s. 379; İbn Sa'd, I, 116-117'ye atıfla: Hudeybiye'ye giderken) ve ÂMİNE (6/628 yılında ziyaret). Müslim'deki rivayette tarih yoktur; anlatımda 'rivayete göre' denir. EBVÂ İbn Sa'd'dan ayrıca şunları aktarır: Resûlullah 'Allah, annesinin kabrini ziyaret etmesi için Muhammed'e izin vermiştir' demiş, kabri düzeltmiş, niçin ağladığı sorulunca 'Annemin şefkat ve merhameti gözümün önüne geldi de onun için ağladım' demiştir. Bu söz yalnız bir D kaynağında (EBVÂ) görüldü, İbn Sa'd yerelde yok; ayrıca Müslim 976b'de ağlamanın ardından gelen söz farklıdır (istiğfar). Bu yüzden anlatıma alınmadı; Erdem'in kararı bekleniyor.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"EBVÂ\", c. 10, s. 379 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-011",
+      "ifade": "Abdülmuttalib için Kâbe'nin gölgesine bir döşek serilirdi. Oğulları döşeğin çevresine oturur, ona saygılarından hiçbiri döşeğin üstüne oturmazdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 107 (İbn İshak). İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-012",
+      "ifade": "Efendimiz gelip o döşeğe otururdu. Amcaları onu geri çekmek için tutunca Abdülmuttalib, «Bırakın oğlumu! Vallahi onun bir şanı var» der, onu yanına oturtur, sırtını sıvazlar, yaptığından hoşnut olurdu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 107-108 (İbn İshak). Abdülmuttalib'in sözünün Türkçesi bizim çevirimizdir; torununa 'oğlum' der. Kaynakta 'büyük' sıfatı yok ('inne lehû le-şe'nen'). İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107-108",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-013",
+      "ifade": "Abdülmuttalib torununa gereken ilgiyi gösterdi.",
+      "guc": "guclu",
+      "gerekce": "ABDÜLMUTTALİB (s. 273: gereken ihtimamı gösterdi) ve MUHAMMED (s. 407). MUHAMMED ayrıca Dârünnedve toplantılarına onu yanına aldığını yazar; bu ayrıntı tek D kaynağında olduğu için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "H. Ahmet Sezikli, \"ABDÜLMUTTALİB\", c. 1, s. 273 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-014",
+      "ifade": "Efendimiz sekiz yaşındayken Abdülmuttalib vefat etti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 108 (sekiz yaşına ulaşınca, Fil'den sekiz yıl sonra; İbn İshak bunu ayrıca Abbâs b. Abdullah b. Ma'bed'den aktarır). MUHAMMED (s. 407), EBÛ TÂLİB ve Hadislerle İslâm c. 1 aynı yaşı verir. ABDÜLMUTTALİB madde başlığı ölüm yılını 577 verir; 571 doğumla sekiz yaş 579'a düşer. Milâdî yıl anlatıma ve zaman çizelgesine alınmadı. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 108",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 523 (metin) ve s. 532 (dipnot 1596: İbn Hişâm, I, 318)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-015",
+      "ifade": "Rivayete göre ölümü yaklaşınca altı kızını, Safiyye, Berre, Âtike, Ümmü Hakîm, Ümeyme ve Ervâ'yı yanına çağırdı ve ölmeden önce kendisi için söyleyecekleri ağıtları duymak istedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 108 (İbn İshak, Muhammed b. Saîd b. el-Müseyyeb'den). İbn Hişâm, şiir bilenlerden bu şiirleri bilen kimse görmediğini söyler; ağıtlar (s. 108-110) aktarılmadı, anlatımda 'rivayete göre' denir. Tek klasik rivayet; Erdem'in b03 ölçütüyle 'guclu'. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 108",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b05-016",
+      "ifade": "Abdülmuttalib ölmeden önce torununun bakımını oğlu Ebû Tâlib'e vasiyet etti; çünkü Ebû Tâlib, Efendimiz'in babası Abdullah'ın anne-baba bir kardeşiydi. Efendimiz artık amcası Ebû Tâlib'in yanındaydı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 114 (İbn İshak 'iddia ettiklerine göre' kaydıyla verir; Abdullah ile Ebû Tâlib'in anneleri Fâtıma bint Amr). MUHAMMED (s. 407), EBÛ TÂLİB (s. 237) ve ABDÜLMUTTALİB (s. 273) vasiyeti çekincesiz yazar; bu yüzden anlatım çekincesizdir. Hadislerle İslâm c. 1 üstlenmeyi ve öz kardeşliği yazar, vasiyeti anmaz. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 114",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020; sayfa matbu nüshada kesinleştirilecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "H. Ahmet Sezikli, \"ABDÜLMUTTALİB\", c. 1, s. 273 (İstanbul 1988)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 523 (metin) ve s. 532 (dipnot 1596: İbn Hişâm, I, 318)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}
