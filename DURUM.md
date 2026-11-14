@@ -38,14 +38,14 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 | Dosya | Durum |
 |---|---|
-| `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); bütün görsel katmanları hazır |
+| `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); bütün görsel katmanları ve 13 yakın plan çekimi hazır |
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
 | `bolumler/b10-hira.json` | Taslak: 12 sahne, 12 iddia, 35 atıf (doğrulama bekliyor); bütün görsel katmanları hazır |
 | `sahislar.json` | 14 kayıt |
 | `yerler.json` | 11 yer, yaklaşık konum + `konumKaynagi` (TDV, doğrulama bekliyor). Benî Sa'd yurdu kaynakta konum olmadığı için yok |
 | `zaman-cizelgesi.json` | 3 kayıt (~440 Dârünnedve, 605 Kâbe inşası, ~605 Hira inzivâsı) |
 | `kaynakca.json` | 5 eser: Kur'an meali (Diyanet Vakfı), İbn Hişâm, Buhârî, TDV İA, Hadislerle İslâm |
-| `content/gorseller/` | 42 WebP katman (b01, b09, b10 + ortak Mekke/Kâbe katmanları) |
+| `content/gorseller/` | 63 WebP katman (b01, b09, b10 + ortak Mekke/Kâbe katmanları) |
 | `content/gorseller/istemler/` | b09 ve b10 istem kayıtları (`b09.json`, `b10.json`) + ChatGPT mesaj dosyaları |
 
 ### Kararlaşmış konular
@@ -60,7 +60,13 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 ---
 
-## 2. Son oturum (2026-11-13 / 14)
+## 2. Son oturum (2026-11-14, yakın planlar)
+
+1. **b01 yakın planları:** 13 görsel denetlendi (temsil kuralına uygun), katmana çevrildi, bölüme çekim olarak bağlandı. s07 parça 2 ve s11 parça 2'deki geçici çekimler yenileriyle değişti. s07 ve s13'teki yakın planlar baş kesilmesin diye `ayar.gorsel` ile aşağı kaydırıldı.
+2. **`gorsel_katman.py`:** ChatGPT perdesi bazen koyu geliyor (#00AF46); `SEFFAF_ESIK` 110 → 95. Eski eşikle zemin yarı saydam kalıyordu.
+3. **Anlatım sesi kararı** (Erdem): ElevenLabs MCP; olgun, hikâye anlatımına uygun bir erkek sesi.
+
+## Önceki oturum (2026-11-13 / 14)
 
 1. **b09 görselleri:**
    - Üslup seçildi; 5 turda ChatGPT ile üretildi.
@@ -84,7 +90,6 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 Sahibi parantez içinde.
 
 1. **Sıradaki oturum, ilk iş (Claude):**
-   - **b01 yakın plan görsellerini işle.** 13 görsel `İndirilenler\siyer01-s*.png` altında, adlar istem kimlikleriyle eşleşiyor (2026-11-14). Önce her birine bak: içerik adla eşleşiyor mu, temsil kuralı (s03'te kadın, çocuk, kuyu yok; s04'te kişi, el, gölge yok; s06'da put yok), yüzler sade mi. Sonra `gorsel-ham/b01/`'e kopyala, `tools/gorsel_katman.py` ile çevir (`b01-s08-nedve-ic` `--opak`, diğerleri perde). `istemler/b01.json` → her istemin `cekim` alanına (sahne, parça, kadraj, gizle, kamera) göre bölüme çekim olarak bağla. s07'deki deneme çekimi (parça 2, iki-ittifak) hakem çekimiyle, s11 parça 2'deki geçici kadraj çekimi kervan çekimiyle değişecek. Aynı sahnede parçalar artan sırada olmalı (s04: 1 yeni, 2 kadraj; s12: 1 yeni, 2-3 kadraj). Ekran görüntüsüyle kadrajları ayarla.
    - **Nuru beden boyunda yap** (Erdem, 2026-11-14): Diğer peygamberlerin nuru (s02, s04) tek nokta değil, ayakta bir insan boyunda, dikey uzunca yumuşak bir ışık olsun ki varlıkları gerçekçi sezilsin. İnsan hatları, baş, kol çizilmez; yalnız boy. `yer_tutucu.dart` `_nur()`'a dikey biçim (ör. `ayar.boy`) ekle; zemine basan alt ucu ve boyu sahnedeki insan ölçeğine (kervan, evler) göre ayarla; s02'de İsmâil küçük çocuk boyunda. `docs/GORSEL_USLUP.md` §2'deki "yalnız parıltı" tarifini "beden boyunda, hatları olmayan nur" olarak güncelle.
 2. **Atıf doğrulaması** (Erdem): b01'de 62, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
    - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
@@ -95,7 +100,7 @@ Sahibi parantez içinde.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
 3. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
 4. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b02 → b08. b01 yazıldı (2026-11-14). Her bölümde atıflar yerel kaynaklardan.
-5. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
+5. **Anlatım sesleri** (Claude): ElevenLabs MCP ile (Erdem, 2026-11-14). Olgun, hikâye anlatımına uygun erkek sesi seçilip Erdem'e dinletilecek; lisans ve ücretsiz kullanım şartları kayda geçecek. MCP sunucusu bu oturumda bağlı değildi; kurulması gerek.
 
 ---
 
@@ -104,7 +109,7 @@ Sahibi parantez içinde.
 | Konu | Not |
 |---|---|
 | Bölüm indirme barındırması | Seçenekler: Play Asset Delivery + Apple ODR (sunucu ilkesi korunur), Cloudflare Pages, GitHub Releases, R2. İçerik yükleme yalnız `app/lib/icerik/depo.dart` üzerinden geçer |
-| Anlatım sesi üretimi | Gerçek anlatıcı mı, yapay zekâ sesi mi? Lisans ve ücretsiz kullanım şartları `GORSEL_USLUP.md`'ye göre kayda geçmeli |
+| Anlatım sesi üretimi | Karar: ElevenLabs MCP, olgun erkek anlatıcı sesi (Erdem, 2026-11-14). Açık: hangi ses, lisans ve ticari olmayan/ücretsiz kullanım şartları |
 | Müzik ve ortam sesi | JSON'da adlar var (`muzik`, `ortam`); oynatıcıda henüz çalınmıyor |
 | Parşömen harita illüstrasyonu | Zemin şimdilik kodla çiziliyor; görsel üretimi bekliyor |
 | Uzman okuması | Bölümler yayın için uzmana okutulmalı (`KAYNAK_POLITIKASI` §6); kim? |
@@ -118,6 +123,7 @@ Sahibi parantez içinde.
 - **s01 ve s14 (b09):** Ufuk boyunca hafif zeytin yeşili bir çizgi seçiliyor.
 - **Gece sahnelerinde dağlar (b01 s12; b10 s07, s12; b09 gece sahneleri):** `mekke-daglar` gündüz tonunda; yıldızlı gök altında aydınlık duruyor. Gece varyantı ya da oynatıcıda `saat`e göre karartma gerekli.
 - **b01 görsel adları:** ChatGPT'den inen dosyalardan dördünün adı kaymıştı (hanif ↔ konak ↔ kervan-cikis ↔ iki-ittifak). `gorsel-ham/b01/`'de düzeltildi; `İndirilenler\siyer`'deki adlar hâlâ yanlış. Yeni partide işlemeden önce içerik adla eşleşiyor mu bak.
+- **Eski katmanlarda perde kalıntısı olabilir:** b01/b09/b10'un önceki katmanları `SEFFAF_ESIK` 110 ile çevrildi; perdesi koyu gelenlerde zemin hafif yarı saydam kalmış olabilir (yeni yakın planlarda dosya boyutu yarıya indi). `gorsel-ham/`'dan yeniden çevirip karşılaştırmak gerek.
 - **Şerit katmanlar:** Zemin şeridi görselin altında olan katmanlar (kervan, çadır, konak) tam kadrajda altyazının altına düşüyor; b01'de `ayar.gorsel {x 0.5, y 0.35–0.45, olcek 1.2}` ile yukarı kaydırıldı.
 - **b01 s04:** Temel taşları ön planda büyük; altyazı üstüne biniyor, kabul edilebilir.
 - **b10 s04:** Hira görselinde istenmeden mağara ağzı var; uzak planda, sorun sayılmadı.
