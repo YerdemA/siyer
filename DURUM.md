@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kurallar `CLAUDE.md`'de, ayrıntılar `docs/` altında; bu dosya yalnız **nerede olduğumuzu** anlatır.
 
-**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 5'i taslak hâlinde yazıldı (b01, b02, b03, b09, b10). b01 ve b09'un görselleri tam; b10'un 10 yeni görseli, b02'nin 19 ve b03'ün 12 görseli istemi hazır, üretim bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
+**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 6'sı taslak hâlinde yazıldı (b01-b04, b09, b10). b01 ve b09'un görselleri tam; b10'un 10 yeni görseli, b02'nin 19, b03'ün 12 ve b04'ün 12 görseli istemi hazır, üretim bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
 
 ---
 
@@ -44,6 +44,7 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
 | `bolumler/b02-fil-vakasi.json` | Taslak: 16 sahne, 19 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b02.json` + `b02-chatgpt.md` |
 | `bolumler/b03-dogum.json` | Taslak: 12 sahne, 15 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b03.json` + `b03-chatgpt.md` |
+| `bolumler/b04-sut-anne.json` | Taslak: 10 sahne, 14 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b04.json` + `b04-chatgpt.md` |
 | `bolumler/b10-hira.json` | Taslak: 18 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); eski 12 sahnenin görselleri hazır, yeni 6 sahnenin 10 görseli 2. turda (`b10-chatgpt.md`) |
 | `sahislar.json` | 14 kayıt |
 | `yerler.json` | 11 yer, yaklaşık konum + `konumKaynagi` (TDV, doğrulama bekliyor). Benî Sa'd yurdu kaynakta konum olmadığı için yok |
@@ -92,8 +93,9 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
    - Doğum yılı 571 (Müslümanlar arasında yaygın kabul; Erdem, 2026-11-15); 569/570 dipnotta. b02'ye de işlendi.
    - Olağanüstü rivayetler: Âmine'nin rüyası ihtiyatlı verildi, nur rivayeti dipnotta. 'Evliliğin ilk üç günü' bilgisi klasik dayanak bulunamadığı için çıkarıldı.
    - Temsil: bebek Efendimiz hiç çizilmiyor, nur da kullanılmıyor; s12'de Abdülmuttalib arkadan, Kâbe'ye girerken. Abdullah ve Âmine yüzsüz ya da kadraj dışı.
-8. **FÎL SÛRESİ** maddesi okundu (yerel kopya `kaynaklar/tdv-metin/fil-suresi.md`); b02'de kuşların taşları i-b02-020 olarak ana metne döndü.
-9. **Yerel araçlar:** İbn Hişâm sayfalarını görüntü olarak okumak için PyMuPDF yalnız scratchpad'e kuruldu (proje bağımlılığı değil). Taramadan okumak OCR'dan çok daha güvenilir.
+8. **b04 Süt Annenin Yurdu** yazıldı ve denetlendi: Süveybe, Halîme'nin anlatımı (İbn Hişâm s. 103-107), bereket, sütten kesilme, şakk-ı sadr (Müslim 162c; ŞAKK-ı SADR değerlendirmesi okundu, farklı zaman rivayetleri ve cismanî/ruhanî tartışma dipnotta), Mekke'de kaybolma, Âmine'ye teslim. Çocuk Efendimiz, melek ve olay çizilmiyor; Halîme ve Âmine yüzsüz.
+9. **FÎL SÛRESİ** maddesi okundu (yerel kopya `kaynaklar/tdv-metin/fil-suresi.md`); b02'de kuşların taşları i-b02-020 olarak ana metne döndü.
+10. **Yerel araçlar:** İbn Hişâm sayfalarını görüntü olarak okumak için PyMuPDF yalnız scratchpad'e kuruldu (proje bağımlılığı değil). Taramadan okumak OCR'dan çok daha güvenilir.
 
 ## Önceki oturum (2026-11-14, anlatıcı sesi denemesi)
 
@@ -139,7 +141,7 @@ Sahibi parantez içinde.
      - Beldah rivayet farkı (uzman okumasında sorulmalı)
      - Nüfeyl'in sözünün çevirisi
    - **Erdem'in kararı:** b03'te i-b03-015'in (Abdülmuttalib'in Kâbe'ye girmesi; tek ve çekinceli C kaynağı) 'guclu' etiketi; Müslim 2276 ve 1162b Türkçesi; MEVLİD'in 'Sıyâm 197' numarası ile sunnah.com 1162b farkı.
-   - **Sıradaki bölüm** (Claude): b04 Süt Annenin Yurdu (Halîme; şakk-ı sadr için D değerlendirmesi önce okunmalı).
+   - **Sıradaki bölüm** (Claude): b05 Yetimlik (Âmine'nin Ebvâ'da vefatı, Abdülmuttalib'in himayesi ve vefatı).
 2. **Atıf doğrulaması** (Erdem): b01'de 62, b02'de 60, b03'te 47, b09'da 67, b10'da 62 atıf (dipnot kaynakları dahil). b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
    - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
    - b01 Kâbe: Kusay dönemi (s08-s10) hurma dallarıyla örtülü `kabe-ortulu` (KÂBE s. 16); Abdülmuttalib dönemi ve b09 çatısız `kabe-alcak` (İbn Hişâm s. 122).
@@ -148,7 +150,7 @@ Sahibi parantez içinde.
    - MUHAMMED (c. 30) s. 410, Hadislerle İslâm dipnotundan alındı; matbu nüshada bakılmalı.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
 3. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
-4. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b04 → b08. b01 (2026-11-14), b02 ve b03 (2026-11-15) yazıldı. Her bölümde atıflar yerel kaynaklardan.
+4. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b05 → b08. b01 (2026-11-14), b02-b04 (2026-11-15) yazıldı. Her bölümde atıflar yerel kaynaklardan.
 5. **Anlatım sesleri** (Claude, en sona): ElevenLabs, Seyfullah Kartal sesi. Bütün bölümlerin metni ve kaynakları oturduktan sonra toplu üretilecek. Önce Erdem'in ücretli plana geçmesi gerek (ücretsiz katman kapalı); lisans şartları kayda geçecek.
 
 ---
@@ -239,7 +241,7 @@ MVP = peygamberlik öncesi dönem, 10 bölüm, Türkçe, Android.
 | b01 Câhiliye Mekke'si | ✓ | ✓ | 0/62 | – | – |
 | b02 Fil Vakası | ✓ | istem | 0/60 | – | – |
 | b03 Doğum | ✓ | istem | 0/47 | – | – |
-| b04 Süt Annenin Yurdu | – | – | – | – | – |
+| b04 Süt Annenin Yurdu | ✓ | istem | 0/40 | – | – |
 | b05 Yetimlik | – | – | – | – | – |
 | b06 Ebû Tâlib'in Himayesi | – | – | – | – | – |
 | b07 Gençlik | – | – | – | – | – |

@@ -50,6 +50,19 @@ Atıflar:
 - [ ] TDV "ABDULLAH" c. 1 s. 75-76; "ÂMİNE" c. 3 s. 63-64; "MEVLİD" c. 29 s. 475, 478; "MUHAMMED" bölüm 1 (Fayda) c. 30 s. 406-407; bölüm 2 (Kandemir) s. 421.
 - [ ] Duhâ 93/6, Diyanet Vakfı meali (mushaf s. 596).
 
+## b04 Süt Annenin Yurdu (40 atıf)
+
+Kararlar:
+- [ ] i-b04-011 (şakk-ı sadr): Müslim 162c'ye dayandığı için 'kesin'; anlatım çekincesiz (Cebrâil'in göğsü yarması, kan pıhtısı, "Muhammed öldürüldü"). Etiket ve her yaş için uygunluk senin kararın. Görsel olayı göstermiyor (boş yamaç).
+- [ ] i-b04-011: Müslim 162c'nin Türkçesi bizim çevirimiz. Numara farkı: ŞAKK-ı SADR "Îmân, 261" diyor, sunnah.com "162c, kitap içi 318".
+- [ ] i-b04-014 (Halîme'nin onu Mekke'de kaybetmesi): tek ve çekinceli İbn Hişâm rivayeti; b03 kararınla 'guclu'.
+- [ ] i-b04-001 (Süveybe): yalnız iki TDV maddesine dayanıyor (MUHAMMED, HALÎME); klasik dayanak (İbn Sa'd, Buhârî Nikâh 20) yerelde okunmadı.
+
+Atıflar:
+- [ ] İbn Hişâm s. 103-107 (Halîme'nin anlatımı, sütten kesme, şakk-ı sadr rivayeti, Âmine'nin sözü, kaybolma).
+- [ ] TDV "HALÎME" c. 15 s. 338 (sayfa no. PDF metninde yok, künyeden); "ŞAKK-ı SADR" c. 38 s. 309-310; "MUHAMMED" bölüm 1 c. 30 s. 407; "ÂMİNE" c. 3 s. 64.
+- [ ] Müslim, Îmân, 162c (matbu nüshada bab ve hadis no.).
+
 ## b09 Hakem (67 atıf)
 
 - [ ] Ayrıntı: iddiaların `gerekce` alanları.
