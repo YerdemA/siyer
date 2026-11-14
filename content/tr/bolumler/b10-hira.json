@@ -233,7 +233,7 @@
           },
           {
             "id": "hira-dagi",
-            "dosya": "",
+            "dosya": "b10-hira-dagi.webp",
             "yerTutucu": "daglar",
             "derinlik": 0.3
           },
@@ -276,7 +276,7 @@
           },
           {
             "id": "kapi-cercevesi",
-            "dosya": "",
+            "dosya": "b10-pencere.webp",
             "yerTutucu": "kapi-cercevesi",
             "derinlik": 0.9
           }
@@ -327,7 +327,7 @@
           },
           {
             "id": "yokus",
-            "dosya": "",
+            "dosya": "b10-yokus.webp",
             "yerTutucu": "yokus",
             "derinlik": 0.7
           }
@@ -378,7 +378,7 @@
           },
           {
             "id": "magara",
-            "dosya": "",
+            "dosya": "b10-magara.webp",
             "yerTutucu": "kapi-cercevesi",
             "derinlik": 0.95
           }
@@ -423,14 +423,9 @@
           },
           {
             "id": "siluet-tek",
-            "dosya": "",
+            "dosya": "b10-hatice-kapi.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.8,
-            "ayar": {
-              "x": 0.3,
-              "y": 0.85,
-              "olcek": 0.4
-            }
+            "derinlik": 0.8
           }
         ],
         "kamera": "sabit"
@@ -595,21 +590,10 @@
             "derinlik": 0.2
           },
           {
-            "id": "yokus",
-            "dosya": "",
-            "yerTutucu": "yokus",
-            "derinlik": 0.6
-          },
-          {
             "id": "siluet-tek",
-            "dosya": "",
+            "dosya": "b10-hatice-yokus.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.8,
-            "ayar": {
-              "x": 0.45,
-              "y": 0.78,
-              "olcek": 0.3
-            }
+            "derinlik": 0.7
           }
         ],
         "kamera": "bakis-acisi-yuruyus"
@@ -659,7 +643,7 @@
           },
           {
             "id": "magara",
-            "dosya": "",
+            "dosya": "b10-magara.webp",
             "yerTutucu": "kapi-cercevesi",
             "derinlik": 0.95
           }

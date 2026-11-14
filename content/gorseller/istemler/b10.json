@@ -117,5 +117,102 @@
       "not": "Uzak plan; ayar.gorsel ile yokuşa yerleştirilecek."
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b10-hira-dagi",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-hira-dagi.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-hira-dagi.webp",
+      "durum": "secildi",
+      "not": "İstenmeden zirveye yakın bir mağara ağzı çizilmiş; kendi kum ve çalı ön planıyla geldi, s04'te mekke-zemin altını örtüyor."
+    },
+    {
+      "istem": "b10-yokus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-yokus.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-yokus.webp",
+      "durum": "secildi",
+      "not": "Temiz. Yalnız s06'da kullanılıyor; s09 ve s11'de figürlü görseller kendi yokuşlarıyla geldi."
+    },
+    {
+      "istem": "b10-magara",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-magara.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-magara.webp",
+      "durum": "secildi",
+      "not": "Temiz; s07 ve s12."
+    },
+    {
+      "istem": "b10-pencere",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-pencere.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-pencere.webp",
+      "durum": "secildi",
+      "not": "Temiz. Pencere içi kenarlar açık turuncu; nur tonu değil."
+    },
+    {
+      "istem": "b10-abdulmuttalib",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-abdulmuttalib.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "beklemede",
+      "not": "İstemdeki gibi tek siluet değil, kendi yamacıyla tam sahne geldi; figür kadrajın yarısı kadar (uzak plan değil). Arkadan, ama yanaktan sakal kenarı seçiliyor. Erdem'in kararı bekleniyor; işlenmedi (isleme: perde, sigdir değil)."
+    },
+    {
+      "istem": "b10-hatice-kapi",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-hatice-kapi.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-hatice-kapi.webp",
+      "durum": "secildi",
+      "not": "Ev cephesiyle tam sahne geldi; sigdir yerine tam kadraj, ayar kaldırıldı. Kapı aralığı yeşildi, dışarısı görünüyordu: aralık loş, sıcak iç mekân rengiyle dolduruldu (gorsel-ham/b10/b10-hatice-kapi-ic.png). Yüz görünmüyor."
+    },
+    {
+      "istem": "b10-hatice-yokus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-hatice-yokus.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b10-hatice-yokus.webp",
+      "durum": "secildi",
+      "not": "Kendi yokuşuyla tam sahne geldi; s11'de yokus katmanının yerine geçti, sigdir değil. Yüz görünmüyor. Elinde istenmemiş bir bohça var."
+    },
+    {
+      "istem": "b10-yoksullar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-14",
+      "kaynak_dosya": "b10-yoksullar.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "",
+      "durum": "beklemede",
+      "not": "Kendi yokuşuyla tam sahne; figürler 'çok küçük' değil. Sağdaki ikisi yarı profilden, sakal kenarı seçiliyor. Erdem'in kararı bekleniyor; işlenmedi."
+    }
+  ]
 }
