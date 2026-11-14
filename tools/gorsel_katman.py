@@ -25,7 +25,7 @@ HEDEF = (2304, 1296)
 # Yeşillik = G − max(R, B). Bu eşiğin altı tamamen opak, üstü tamamen şeffaf;
 # aradaki geçiş kenarları yumuşatır.
 OPAK_ESIK = 40
-SEFFAF_ESIK = 110
+SEFFAF_ESIK = 95  # ChatGPT perdesi bazen #00AF46 gibi koyu geliyor (fark ~105)
 
 
 def kirp_olcekle(img: Image.Image) -> Image.Image:
