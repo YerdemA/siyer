@@ -137,7 +137,7 @@
           ]
         },
         {
-          "metin": "Hz. İsmâil büyüdüğünde Cürhüm'den evlendi ve kabileyle akraba oldu.",
+          "metin": "Hz. İsmâil onların arasında büyüdü, Arapçayı onlardan öğrendi; Cürhüm'den evlenerek kabileyle akraba oldu.",
           "iddialar": [
             "i-b01-003"
           ]
@@ -167,7 +167,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-curhum-kervan.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.6,
             "ayar": {
@@ -238,7 +238,7 @@
           },
           {
             "id": "temel",
-            "dosya": "",
+            "dosya": "b01-temel.webp",
             "yerTutucu": "temel-taslari",
             "derinlik": 0.7
           },
@@ -446,7 +446,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-cadirlar.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.6,
             "ayar": {
@@ -505,7 +505,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, orta plan: Kâbe'nin çevresinde sıklaşmış evler; birinin kapısı Kâbe'ye bakar (Dârünnedve; sade ve süssüz). Kapı önünde arkası dönük birkaç yüzsüz siluet. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "tarif": "Gündüz, orta plan: Kâbe'nin çevresinde sıklaşmış evler; birinin kapısı Kâbe'ye bakar (Dârünnedve; sade ve süssüz). Kapı önünde arkası dönük birkaç yüzsüz siluet. Kâbe'nin üstü hurma dallarıyla örtülü (KÂBE, c. 24, s. 16).",
         "saat": "gunduz",
         "katmanlar": [
           {
@@ -533,8 +533,8 @@
             "derinlik": 0.4
           },
           {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
+            "id": "kabe-ortulu",
+            "dosya": "kabe-ortulu.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55,
             "ayar": {
@@ -547,7 +547,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-darunnedve.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.7,
             "ayar": {
@@ -594,7 +594,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Akşam, Kâbe avlusu, uzak plan: avlunun iki yanında karşı karşıya duran iki ayrı grup yüzsüz siluet; aralarında boşluk. Mekân ayrıntısı en aza indirilir. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "tarif": "Akşam, Kâbe avlusu, uzak plan: avlunun iki yanında karşı karşıya duran iki ayrı grup yüzsüz siluet; aralarında boşluk. Mekân ayrıntısı en aza indirilir. Kâbe'nin üstü hurma dallarıyla örtülü (KÂBE, c. 24, s. 16).",
         "saat": "aksam",
         "katmanlar": [
           {
@@ -622,8 +622,8 @@
             "derinlik": 0.4
           },
           {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
+            "id": "kabe-ortulu",
+            "dosya": "kabe-ortulu.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55,
             "ayar": {
@@ -636,7 +636,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-iki-ittifak.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.7,
             "ayar": {
@@ -689,7 +689,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Şafak, orta plan: Kâbe avlusu; Kâbe'nin çevresinde yere düşmüş çok sayıda dik gölge (putlar çizilmez). Avlunun kenarında, arkası dönük, tek başına duran yüzsüz bir siluet. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "tarif": "Şafak, orta plan: Kâbe avlusu; Kâbe'nin çevresinde yere düşmüş çok sayıda dik gölge (putlar çizilmez). Avlunun kenarında, arkası dönük, tek başına duran yüzsüz bir siluet. Kâbe'nin üstü hurma dallarıyla örtülü (KÂBE, c. 24, s. 16).",
         "saat": "safak",
         "katmanlar": [
           {
@@ -717,8 +717,8 @@
             "derinlik": 0.4
           },
           {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
+            "id": "kabe-ortulu",
+            "dosya": "kabe-ortulu.webp",
             "yerTutucu": "kabe-alcak",
             "derinlik": 0.55,
             "ayar": {
@@ -731,7 +731,7 @@
           },
           {
             "id": "siluet-tek",
-            "dosya": "",
+            "dosya": "b01-hanif.webp",
             "yerTutucu": "siluet-tek",
             "derinlik": 0.8,
             "ayar": {
@@ -815,7 +815,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-kervan-cikis.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.6,
             "ayar": {
@@ -897,7 +897,7 @@
           },
           {
             "id": "kalabalik",
-            "dosya": "",
+            "dosya": "b01-konak.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.7,
             "ayar": {
@@ -931,12 +931,6 @@
           ]
         },
         {
-          "metin": "Bir sahâbîye de o günlerde yaptığı iyilikleri, misafiri ağırlamayı, yetime ikram etmeyi, komşuya iyi davranmayı sürdürmesini öğütleyecekti.",
-          "iddialar": [
-            "i-b01-022"
-          ]
-        },
-        {
           "metin": "Bu Mekke'de Hâşimoğulları'nın lideri, Hâşim'in oğlu Abdülmuttalib'di. Kureyş aralarındaki meselelerde onun görüşüne başvururdu.",
           "iddialar": [
             "i-b01-021"
@@ -950,7 +944,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Akşamüstü, uzak plan: Mekke vadisi; ortada alçak Kâbe, çevresinde evler, dumanı tüten ocaklar. Kâbe avlusunun kenarında, arkadan görülen tek, yaşlı bir siluet (Abdülmuttalib); yüzü görünmez. Altın-beyaz ışık yok. Kâbe notu: Kusay Kâbe'nin üstünü hurma dallarıyla örttü (KÂBE, c. 24, s. 16); bu sahnede örtülü Kâbe gerekir, mevcut kabe-alcak katmanı geçici.",
+        "tarif": "Akşamüstü, uzak plan: Mekke vadisi; ortada alçak Kâbe, çevresinde evler, dumanı tüten ocaklar. Kâbe avlusunun kenarında, arkadan görülen tek, yaşlı bir siluet (Abdülmuttalib); yüzü görünmez. Altın-beyaz ışık yok.",
         "saat": "aksam",
         "katmanlar": [
           {
@@ -992,7 +986,7 @@
           },
           {
             "id": "siluet-tek",
-            "dosya": "",
+            "dosya": "b01-abdulmuttalib-avlu.webp",
             "yerTutucu": "siluet-tek",
             "derinlik": 0.75,
             "ayar": {
@@ -1057,7 +1051,7 @@
       "id": "i-b01-002",
       "ifade": "Hz. İbrâhim, eşi Hâcer'i ve küçük oğlu İsmâil'i Kâbe'nin bulunduğu bu ıssız vadiye getirip yerleştirdi ve onlar için dua etti.",
       "guc": "guclu",
-      "gerekce": "Çekirdek Kur'an'dadır: Hz. İbrâhim neslinden bir kısmını Beyt-i Harem'in yanında, ziraat yapılmayan bir vadiye yerleştirdiğini söyleyerek dua eder (İbrâhîm 14/37; alıntı Diyanet Vakfı mealinden birebir). Âyet isim vermez. İsmâil'in getirilişi MEKKE maddesinde, Hâcer'le birlikte getirilişi Hadislerle İslâm'da anlatılır. Politika 2.1 istisnası: Hâcer'in adı yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır.",
+      "gerekce": "Çekirdek Kur'an'dadır: Hz. İbrâhim neslinden bir kısmını Beyt-i Harem'in yanında, ziraat yapılmayan bir vadiye yerleştirdiğini söyleyerek dua eder (İbrâhîm 14/37; alıntı Diyanet Vakfı mealinden birebir). Âyet isim vermez. İsmâil'in getirilişi MEKKE maddesinde; Hâcer'le birlikte getirilişi Hadislerle İslâm'da ve ZEMZEM maddesinde (Buhârî, Enbiyâ 9 atfıyla) anlatılır.",
       "kaynaklar": [
         {
           "eser": "kuran-meal-dv",
@@ -1079,15 +1073,22 @@
           "dogrulama": "bekliyor",
           "dogrulayan": "",
           "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Sabri Küçükaşcı, \"ZEMZEM\", c. 44, s. 242 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
         }
       ],
       "alternatifRivayetler": []
     },
     {
       "id": "i-b01-003",
-      "ifade": "Zemzem suyunun hayat verdiği vadiye, Yemen'den gelen Cürhüm kabilesi Hâcer'in izniyle yerleşti; Hz. İsmâil büyüyünce Cürhüm'den evlendi ve kabileyle akraba oldu.",
+      "ifade": "Zemzem suyunun hayat verdiği vadiye, Yemen'den gelen Cürhüm kabilesi Hâcer'in izniyle yerleşti; Hz. İsmâil Cürhümlüler arasında büyüdü, Arapçayı onlardan öğrendi ve onlardan evlenerek kabileyle akraba oldu.",
       "guc": "guclu",
-      "gerekce": "Hadislerle İslâm Cürhüm'ün Hâcer'in izniyle yerleştiğini ve kızlarını İsmâil'le evlendirdiğini anlatır; anlatımın sonundaki dipnot 972 Buhârî, Enbiyâ 9'a (B3364) atıf yapar. MEKKE maddesi, rivayetlerin çoğuna göre anayurdu Yemen olan Cürhümlüler'in Zemzem bulunduktan sonra Mekke'ye yerleştiğini yazar. Politika 2.1 istisnası: Hâcer'in izni ve evlilik ayrıntısı yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır.",
+      "gerekce": "Hadislerle İslâm Cürhüm'ün Hâcer'in izniyle yerleştiğini ve kızlarını İsmâil'le evlendirdiğini anlatır; anlatımın sonundaki dipnot 972 Buhârî, Enbiyâ 9'a (B3364) atıf yapar. ZEMZEM maddesi Yemenli Cürhüm kafilesinin Hâcer'e başvurup onun izniyle yerleştiğini Buhârî, Enbiyâ 9 ve Taberî atfıyla anlatır. MEKKE maddesi Cürhümlüler'in Zemzem bulunduktan sonra yerleştiğini ve İsmâil'in Arapça'yı onlardan öğrendiğini yazar. ARAP maddesi İsmâil'in Cürhümlüler arasında büyüyüp onlardan Arapça öğrendiğini ve evlendiğini söyler (eşlerin kabilesini açıkça anmaz); evliliğin Cürhüm'den olduğu açıkça yalnız Hadislerle İslâm'dadır.",
       "kaynaklar": [
         {
           "eser": "hadislerle-islam",
@@ -1098,7 +1099,21 @@
         },
         {
           "eser": "tdv-dia",
+          "konum": "Mustafa Sabri Küçükaşcı, \"ZEMZEM\", c. 44, s. 242 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
           "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 556 (Ankara 2003)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hakkı Dursun Yıldız, \"ARAP\" (bölüm 1), c. 3, s. 273 (İstanbul 1991)",
           "dogrulama": "bekliyor",
           "dogrulayan": "",
           "tarih": ""
@@ -1641,22 +1656,6 @@
         {
           "eser": "tdv-dia",
           "konum": "Nebi Bozkurt – Mustafa Sabri Küçükaşcı, \"MEKKE\" (bölüm 1), c. 28, s. 557 (Ankara 2003)",
-          "dogrulama": "bekliyor",
-          "dogrulayan": "",
-          "tarih": ""
-        }
-      ],
-      "alternatifRivayetler": []
-    },
-    {
-      "id": "i-b01-022",
-      "ifade": "Hz. Muhammed (s.a.v.), Câhiliye'de yaptığı iyilikleri sürdürmesini isteyerek Sâib adlı bir sahâbîye misafiri ağırlamasını, yetime ikram etmesini ve komşusuna iyi davranmasını öğütledi.",
-      "guc": "guclu",
-      "gerekce": "CÂHİLİYE maddesi bu sözü Müsned, III, 425 atfıyla Türkçe verir. Müsned kaynakçada yok; söz şimdilik yalnız bu maddeden görüldü. Politika 2.1 istisnası: söz yaygın kabul görmüş, kullanılan kaynaklarda zayıf bulunmamıştır; tek D kaynağa dayanır. Klasik dayanağı (Müsned, III, 425) maddede gösterilmiştir.",
-      "kaynaklar": [
-        {
-          "eser": "tdv-dia",
-          "konum": "Mustafa Fayda, \"CÂHİLİYE\", c. 7, s. 18 (İstanbul 1993)",
           "dogrulama": "bekliyor",
           "dogrulayan": "",
           "tarih": ""

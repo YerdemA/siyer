@@ -1,0 +1,156 @@
+{
+  "bolum": "b01-cahiliye-mekkesi",
+  "aciklama": "Bölüm 1 görsellerinin üretim istemleri ve kaydı. Üslup b10.json'daki u01-d'dir; yalnız dönem cümlesi değişti.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: the valley of Mecca, Hijaz, in the centuries before 600 CE — a valley among bare, rocky, almost treeless mountains; where a scene allows, small flat-roofed houses of mudbrick and rough stone, otherwise tents or open ground. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. No visible faces: people appear only as distant silhouettes, from behind, or as hands and fabric details. Never depict the Prophet in any form — no figure, silhouette, shadow, hand or foot; his presence is only a soft warm golden-white light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Putlar: görünüşleri kaynakla netleşmedi; yalnız gölgeleri ya da hiç.",
+      "Hz. İbrâhim, Hz. İsmâil ve Hâcer: hiçbir biçimde (figür, siluet, gölge, el, ayak izi) çizilmez; s02-s04 yalnız mekân.",
+      "Dârünnedve'nin biçimi: kaynakta yalnız yeri ve kapının Kâbe'ye bakması var; sade, süssüz bir ev olarak çizilir.",
+      "Kervan yükleri, çadır biçimleri: ayrıntı verilmez, uzak plan."
+    ],
+    "kabe_notu": "Kâbe katmanları: Kusay öncesi ve Abdülmuttalib dönemi sahneleri b09'daki çatısız kabe-alcak'ı kullanır (İbn Hişâm s. 122: çatısız). Kusay dönemi (s08-s10) için KÂBE c. 24 s. 16'ya göre üstü hurma dallarıyla örtülmüş kabe-ortulu üretilir. İki kaynak farklı dönemleri anlattığı için ikisi de kullanılır."
+  },
+  "istemler": [
+    {
+      "id": "b01-kabe-ortulu",
+      "tur": 1,
+      "dosya": "kabe-ortulu.webp",
+      "katman": "kabe-ortulu",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b01-s08",
+        "b01-s09",
+        "b01-s10"
+      ],
+      "istem": "A small, low, plain cube-shaped building of dry-stacked dark grey stones without mortar, walls only slightly taller than a person, covered on top with a simple flat roof of laid palm fronds whose ragged ends overhang the walls a little. No covering cloth, no decoration, no door leaf. Seen from a three-quarter angle, slightly from above. Strictly a cube: straight vertical walls and sharp square corners. The whole building fully inside the frame with empty margin around it. {yesil_perde_eki}",
+      "kaynak": "TDV KÂBE c. 24 s. 16 (Kusay damı bulunmayan Kâbe'nin üstünü hurma dallarıyla örttü); b09 m05-kabe-alcak ile aynı ölçek ve açı.",
+      "not": "kabe-alcak ile aynı yerleşim (ayar.gorsel x 0.501, y 0.665, olcek 0.269); açı ve boyut ona yakın olmalı. ChatGPT'ye b09'un kabe-alcak görseli de eklenebilir."
+    },
+    {
+      "id": "b01-temel",
+      "tur": 1,
+      "dosya": "b01-temel.webp",
+      "katman": "temel",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s04"
+      ],
+      "istem": "Close view of the bare valley floor: a low square foundation of two or three courses of rough, dry-stacked dark grey stones without mortar, only knee-high, unfinished; a few loose stones lying beside it on the sand. No building above it, no door, no cloth, no tools in use. No people, no hands, no feet, no shadows of people, no footprints. Foundation in the lower middle of the image on a ground strip across the bottom; everything above it flat chroma green. {yesil_perde_eki}",
+      "kaynak": "Bakara 2/127 (temellerin yükseltilmesi); KÂBE s. 16 (harçsız taş).",
+      "not": "Peygamberler kesinlikle yok: kişi, el, gölge ya da ayak izi çıkarsa yeniden ürettir."
+    },
+    {
+      "id": "b01-curhum-kervan",
+      "tur": 1,
+      "dosya": "b01-curhum-kervan.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s03"
+      ],
+      "istem": "Far away and small: a short caravan of six camels with a few riders and walkers, seen from far behind and from the side, entering a wide empty valley from the left; people are tiny flat dark shapes with no facial features at all. Only a thin strip of sandy ground under the caravan in the lower third; everything else flat chroma green. {yesil_perde_eki}",
+      "kaynak": "ZEMZEM s. 242; Hadislerle İslâm c. 7 PDF s. 312 (Yemenli Cürhüm kafilesi).",
+      "not": "Kuyu, Hâcer ve Hz. İsmâil çizilmez. Kervan kadrajın sol yarısında."
+    },
+    {
+      "id": "b01-cadirlar",
+      "tur": 1,
+      "dosya": "b01-cadirlar.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s07"
+      ],
+      "istem": "Far away and small: a scattered camp of low dark tents on open stony ground, and several small groups of tiny people walking toward the right, seen from behind; no weapons drawn, no fighting, no blood, only a little dust in the air. No facial features at all. Ground strip across the lower third; everything above flat chroma green. {yesil_perde_eki}",
+      "kaynak": "KUREYŞ s. 442 (Kureyş Mekke dışında dağınık); İbn Hişâm s. 79-80.",
+      "not": "Savaş sahnesi çizilmez; yalnız hareket ve toz."
+    },
+    {
+      "id": "b01-darunnedve",
+      "tur": 1,
+      "dosya": "b01-darunnedve.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s08"
+      ],
+      "istem": "Mid-distance: a plain, undecorated single-storey house of mudbrick and rough stone with a flat roof and a simple open doorway on its right-hand side; in front of the doorway four small men in simple robes and head cloths standing with their backs to the viewer, no faces visible. No columns, no arches, no domes. House and figures on a ground strip across the lower third, placed in the left third of the image; everything else flat chroma green. {yesil_perde_eki}",
+      "kaynak": "DÂRÜNNEDVE s. 555-556; İbn Hişâm s. 80 (kapısı Kâbe'ye açılır).",
+      "not": "Kâbe ayrı katmanda, ortada; kapının Kâbe'ye (sağa) bakması önemli."
+    },
+    {
+      "id": "b01-iki-ittifak",
+      "tur": 1,
+      "dosya": "b01-iki-ittifak.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s09"
+      ],
+      "istem": "Far away and small: two separate groups of tiny men in simple robes standing on open ground, one group at the far left and one at the far right, facing each other across a wide empty space in the middle; tense stillness, no weapons raised, no fighting. Seen from a distance and slightly from behind; no facial features at all. Ground strip across the lower third; everything else flat chroma green. {yesil_perde_eki}",
+      "kaynak": "KUREYŞ s. 442-443 (Mutayyebûn ve Ahlâf).",
+      "not": "Ortadaki boşluk Kâbe katmanına denk gelir."
+    },
+    {
+      "id": "b01-hanif",
+      "tur": 1,
+      "dosya": "b01-hanif.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b01-s10"
+      ],
+      "istem": "A single man in a plain robe and head cloth, standing alone and still, seen strictly from behind, head slightly bowed, his face not visible at all. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
+      "kaynak": "KÂBE s. 16; MEKKE s. 557 (Hanîfler).",
+      "not": "Belirli bir kişi değil; isim verilmez. Yerleşim ayar.gorsel ile."
+    },
+    {
+      "id": "b01-kervan-cikis",
+      "tur": 1,
+      "dosya": "b01-kervan-cikis.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s11"
+      ],
+      "istem": "Far away and small: a long line of camels with riders and walkers leaving toward the right along a valley path, seen from behind; people are tiny flat dark shapes with no facial features. Only a thin strip of ground under the caravan in the lower third; everything else flat chroma green. {yesil_perde_eki}",
+      "kaynak": "KUREYŞ s. 443; MEKKE s. 556.",
+      "not": "Yük ayrıntısı verilmez."
+    },
+    {
+      "id": "b01-konak",
+      "tur": 1,
+      "dosya": "b01-konak.webp",
+      "katman": "kalabalik",
+      "isleme": "perde",
+      "sahneler": [
+        "b01-s12"
+      ],
+      "istem": "Night, far away and small: a few low dark tents of a desert camp and a small fire, with two tiny groups of people sitting apart from each other with their backs turned; warm orange firelight but no golden-white glow. No weapons, no blood, no facial features at all. Ground strip across the lower third; everything above flat chroma green. {yesil_perde_eki}",
+      "kaynak": "Hadislerle İslâm c. 7 PDF s. 314 (bedevî kabile düzeni).",
+      "not": "Gece sahnesi; gök ayrı katman."
+    },
+    {
+      "id": "b01-abdulmuttalib-avlu",
+      "tur": 1,
+      "dosya": "b01-abdulmuttalib-avlu.webp",
+      "katman": "siluet-tek",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b01-s13"
+      ],
+      "istem": "A single elderly man in a simple robe and a head cloth that covers the sides of his head, standing still, seen strictly from behind, one hand resting on a walking staff; no part of his face, cheek or beard visible. Full body inside the frame with empty margin around it. {yesil_perde_eki}",
+      "kaynak": "HÂŞİM s. 403-404; MEKKE s. 557.",
+      "not": "Abdülmuttalib; b10'da yanak ve sakal kenarı seçilmişti, burada görünmesin. Yerleşim ayar.gorsel ile."
+    }
+  ],
+  "uretimler": []
+}
