@@ -6,6 +6,7 @@
     "yakinlik": "",
     "ozet": "Kâbe'nin yeniden yapıldığı yıl otuz beş yaşındaydı. Kureyş vahiyden önce de ona el-Emîn, yani güvenilir derdi.",
     "bolumler": [
+      "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
       "b09-hakem",
       "b10-hira"
@@ -72,14 +73,16 @@
     "ad": "Abdülmuttalib",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) dedesi",
-    "ozet": "Zemzem kuyusunu yeniden açtı, hacılara su ve yemek sağlama görevini üstlendi; Kureyş ona danışırdı. Zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+    "ozet": "Zemzem kuyusunu yeniden açtı, hacılara su ve yemek sağlama görevini üstlendi; Kureyş ona danışırdı. Zaman zaman Hira'daki mağaraya çekilip ibadet ederdi. Fil Vakası'nda Ebrehe'den yalnız develerini istedi: «Ben develerin sahibiyim; evin de onu koruyacak bir sahibi var.»",
     "bolumler": [
+      "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
       "b10-hira"
     ],
     "iddialar": [
       "i-b01-021",
-      "i-b10-002"
+      "i-b10-002",
+      "i-b02-011"
     ]
   },
   {
@@ -263,6 +266,104 @@
     ],
     "iddialar": [
       "i-b10-018"
+    ]
+  },
+  {
+    "id": "ebrehe",
+    "ad": "Ebrehe",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Habeşlilerin Yemen'deki komutanı; yüzündeki yara yüzünden 'el-Eşrem' diye anıldı. San'a'da bir kilise yaptırdı, Kâbe'yi yıkmak için fil ile Mekke'ye yürüdü; ordusu kuşlarla dağıldı, kendisi yaralı döndüğü San'a'da öldü.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-001",
+      "i-b02-003",
+      "i-b02-004",
+      "i-b02-005",
+      "i-b02-014",
+      "i-b02-016"
+    ]
+  },
+  {
+    "id": "zu-nefer",
+    "ad": "Zû Nefer",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Yemen'in ileri gelenlerinden. Ebrehe'ye karşı savaştı, yenilip esir düştü. Abdülmuttalib'in dostuydu; esirken onun Ebrehe'yle görüşmesine aracı buldu.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-006",
+      "i-b02-010"
+    ]
+  },
+  {
+    "id": "nufeyl-b-habib",
+    "ad": "Nüfeyl b. Habîb",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Has'am ülkesinde Ebrehe'ye karşı koydu, yenildi ve ona kılavuzluk etti. Filin kulağına 'Çök Mahmûd' dediği rivayet edilir.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-006",
+      "i-b02-013"
+    ]
+  },
+  {
+    "id": "mesud-b-muattib",
+    "ad": "Mes'ûd b. Muattib",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Tâif'te Sakîf adına Ebrehe'ye itaat etti ve ona kılavuz verdi.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-007"
+    ]
+  },
+  {
+    "id": "ebu-rigal",
+    "ad": "Ebû Rigāl",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Sakîf'in Ebrehe'ye verdiği kılavuz; Mugammes'te öldü, Araplar kabrini taşladı.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-007"
+    ]
+  },
+  {
+    "id": "hunata",
+    "ad": "Hunâta el-Himyerî",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Ebrehe'nin Mekke'ye, Abdülmuttalib'e gönderdiği elçi.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-009"
+    ]
+  },
+  {
+    "id": "uneys",
+    "ad": "Üneys",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Ebrehe'nin fil bakıcısı; Abdülmuttalib'in Ebrehe'yle görüşmesine aracılık etti.",
+    "bolumler": [
+      "b02-fil-vakasi"
+    ],
+    "iddialar": [
+      "i-b02-010"
     ]
   }
 ]

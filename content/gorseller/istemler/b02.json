@@ -1,0 +1,260 @@
+{
+  "bolum": "b02-fil-vakasi",
+  "aciklama": "Bölüm 2 görsellerinin üretim istemleri ve kaydı. Üslup ve yasaklar b10.json'daki ile aynı (u01-d); yalnız dönem ve mekân 570 civarı Yemen ve Hicaz.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Arabia around 570 CE — Yemen (San'a) and the Hijaz desert road to Mecca; Mecca is a narrow valley among bare, rocky, almost treeless mountains with small flat-roofed houses of mudbrick and rough stone. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "San'a kilisesinin (Kulleys) mimarisi: kaynakta yalnız 'benzeri görülmemiş' deniyor; sade, görkemli taş yapı, haç/kubbe/yazı yok.",
+      "Ordunun silah ve donanımı, Habeş askerlerinin kıyafeti: kaynakta yok; ayrıntısız, küçük figürler.",
+      "Kuşların rengi: İbn Hişâm yalnız 'denizden, hatâtîf (kırlangıç) ve belesân benzeri' der; sade koyu biçimler.",
+      "Kan, yaralanma, ölü beden, filin dövülmesi: çizilmez.",
+      "Lât'ın evi (Tâif): gösterilmez.",
+      "Kâbe: Abdülmuttalib dönemi, çatısız alçak Kâbe (kabe-alcak, b01 ile aynı)."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b02-sana-sehir",
+      "tur": 1,
+      "dosya": "b02-sana-sehir.webp",
+      "katman": "sana-sehir",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s01"
+      ],
+      "istem": "Wide view of an ancient highland town in Yemen around 570 CE: plain houses of stone and mudbrick set against bare mountains, drawn simply without distinctive architecture. No people in focus, no minarets, no domes. Fills the lower two thirds of the frame; everything above the rooftops and mountains is flat chroma green (#00B140) so the sky layer shows through.",
+      "not": "San'a; kaynakta şehir tarifi yok, yalnız dönem mimarisi. Ufkun üstü perde."
+    },
+    {
+      "id": "b02-ebrehe-taht",
+      "tur": 1,
+      "dosya": "b02-ebrehe-taht.webp",
+      "katman": "ebrehe-taht",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b02-s01"
+      ],
+      "istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), seated on a throne; calm, composed face drawn simply in the flat paper cut-out style. Full figure. No cross, no crown jewels. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok."
+    },
+    {
+      "id": "b02-kilise",
+      "tur": 1,
+      "dosya": "b02-kilise.webp",
+      "katman": "kilise",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s02",
+        "b02-s03"
+      ],
+      "istem": "A large stone church building of the 6th century in Yemen, seen from the front at mid distance, drawn plainly as a large simple stone building; no cross, no dome, no minaret, no inscriptions, no decorative details. Tiny people at its base for scale. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 29: benzeri görülmemiş kilise (el-Kulleys). Mimarî ayrıntı kaynakta yok."
+    },
+    {
+      "id": "b02-kinane-yolcu",
+      "tur": 1,
+      "dosya": "b02-kinane-yolcu.webp",
+      "katman": "kinane-yolcu",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b02-s03"
+      ],
+      "istem": "A lone Arab traveller in simple clothes and head cloth walking away from the viewer at dusk, seen from behind. {yesil_perde_eki}",
+      "not": "Kinâneli adam; eylemi gösterilmez, yalnız uzaklaşması."
+    },
+    {
+      "id": "b02-col",
+      "tur": 1,
+      "dosya": "b02-col.webp",
+      "katman": "col",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s04",
+        "b02-s05",
+        "b02-s12",
+        "b02-s13",
+        "b02-s14",
+        "b02-s15"
+      ],
+      "istem": "Wide flat desert ground layer: sand and gravel plain with a few low rocky outcrops, a faint caravan track crossing it. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140).",
+      "not": "Ortak zemin; altı sahnede kullanılır, ışık nötr."
+    },
+    {
+      "id": "b02-ordu-yuruyus",
+      "tur": 1,
+      "dosya": "b02-ordu-yuruyus.webp",
+      "katman": "ordu-yuruyus",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s04"
+      ],
+      "istem": "A long marching army column seen from far away and slightly above: many small, simple, undetailed soldier figures on foot and a few on horseback, and at the head of the column a single large elephant. No banners with text, no crosses, no detailed weapons. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 31: Habeşliler ve fil. Tek fil (FİL VAK'ASI: kaynakların çoğu tek fil der)."
+    },
+    {
+      "id": "b02-esirler",
+      "tur": 1,
+      "dosya": "b02-esirler.webp",
+      "katman": "esirler",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s05"
+      ],
+      "istem": "At the edge of a military camp: one Arab captive with his hands bound in front, standing among a few undetailed Abyssinian soldiers; in the distance, a free Arab man walking ahead of the army, pointing the way. Faces drawn simply, no distinctive features. No violence, no blood. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 31-32: Zû Nefer bağlı tutuldu; Nüfeyl kılavuzluğu kabul edince serbest bırakıldı. Görünüşleri kaynakta yok."
+    },
+    {
+      "id": "b02-sakif-heyet",
+      "tur": 1,
+      "dosya": "b02-sakif-heyet.webp",
+      "katman": "sakif-heyet",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s06"
+      ],
+      "istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}",
+      "not": "Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi."
+    },
+    {
+      "id": "b02-develer-surulen",
+      "tur": 1,
+      "dosya": "b02-develer-surulen.webp",
+      "katman": "develer-surulen",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s07"
+      ],
+      "istem": "A herd of many camels being driven across a valley floor by a few horsemen, raising dust, seen from far away; riders small and undetailed. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 33: Esved b. Maksûd atlılarla hayvanları sürdü; Abdülmuttalib'in 200 devesi."
+    },
+    {
+      "id": "b02-hunata-abdulmuttalib",
+      "tur": 1,
+      "dosya": "b02-hunata-abdulmuttalib.webp",
+      "katman": "hunata-abdulmuttalib",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s08"
+      ],
+      "istem": "Two men facing each other in an open space in Mecca: on the left the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, standing calm and upright; on the right a Yemeni envoy delivering a message with an open hand. Faces drawn simply, no exaggerated expressions. {yesil_perde_eki}",
+      "not": "Abdülmuttalib (İbn Hişâm s. 34: yakışıklı, heybetli) ve Hunâta el-Himyerî (s. 33). Yaş ve sakal ayrıntısı kaynakta yok."
+    },
+    {
+      "id": "b02-ordugah",
+      "tur": 1,
+      "dosya": "b02-ordugah.webp",
+      "katman": "ordugah",
+      "isleme": "opak",
+      "sahneler": [
+        "b02-s09",
+        "b02-s10"
+      ],
+      "istem": "A ruler's camp setting: a large woven carpet on the ground, an empty simple wooden throne behind it, plain cloth hangings framing the left and right edges; no people. Full frame, warm daylight.",
+      "not": "İbn Hişâm s. 34: taht (sarîr) ve halı (bisât). Çadır ayrıntısı kaynakta yok; yalnız asılı kumaş kenarlar."
+    },
+    {
+      "id": "b02-gorusme",
+      "tur": 1,
+      "dosya": "b02-gorusme.webp",
+      "katman": "gorusme",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s09"
+      ],
+      "istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), sitting on a carpet beside the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth; the ruler turned respectfully toward the chief; at the side an interpreter and a few undetailed soldiers standing. Faces drawn simply. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 34: Ebrehe tahtından inip halıda Abdülmuttalib'in yanına oturdu; tercüman."
+    },
+    {
+      "id": "b02-abdulmuttalib-yakin",
+      "tur": 1,
+      "dosya": "b02-abdulmuttalib-yakin.webp",
+      "katman": "abdulmuttalib-yakin",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b02-s10"
+      ],
+      "istem": "Close-up, head and shoulders, of the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, with a calm, steady, resolute expression; drawn simply in the flat paper cut-out style. {yesil_perde_eki}",
+      "not": "Abdülmuttalib; 'Ben develerin sahibiyim' anı. Aynı sohbette b02-hunata-abdulmuttalib ile aynı kişi."
+    },
+    {
+      "id": "b02-kapi-dua",
+      "tur": 1,
+      "dosya": "b02-kapi-dua.webp",
+      "katman": "kapi-dua",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s11"
+      ],
+      "istem": "The chief of Quraysh, a handsome, imposing Arab man in a simple head cloth standing at the door of a low, roofless ancient stone sanctuary, holding the door ring with one hand, praying; a few men of Quraysh behind him, faces drawn simply. Far away on the mountainsides, tiny groups of people climbing up. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 34-35: kapı halkası, birkaç Kureyşli, halk dağlara çekiliyor. Kapı biçimi kaynakta yok: sade."
+    },
+    {
+      "id": "b02-fil-coken",
+      "tur": 1,
+      "dosya": "b02-fil-coken.webp",
+      "katman": "fil-coken",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s12"
+      ],
+      "istem": "A large elephant kneeling down on the ground and refusing to rise; puzzled soldiers standing around it, undetailed; beside the elephant's head a man leaning close to its ear. No beating, no raised weapons, no blood. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 35: Nüfeyl filin kulağını tutar; fil çöker. Dövülme gösterilmez."
+    },
+    {
+      "id": "b02-ordu-dagilan",
+      "tur": 1,
+      "dosya": "b02-ordu-dagilan.webp",
+      "katman": "ordu-dagilan",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s13"
+      ],
+      "istem": "Seen from far above: many tiny soldier figures scattering and fleeing in all directions across a plain, small and undetailed. No injuries, no bodies, no blood. {yesil_perde_eki}",
+      "not": "Kuşlar ayrı katman."
+    },
+    {
+      "id": "b02-kuslar",
+      "tur": 1,
+      "dosya": "b02-kuslar.webp",
+      "katman": "kuslar",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s13"
+      ],
+      "istem": "A great many small swallow-like birds in flocks filling the upper part of the frame, flying in waves, drawn as simple dark paper cut-out shapes; some carry tiny pebbles. No fire, no glow, no light rays. {yesil_perde_eki}",
+      "not": "Fîl 105/3-4; İbn Hişâm s. 35: denizden gelen, kırlangıç (hatâtîf) ve belesân benzeri kuşlar. Renk kaynakta yok; nur tonu yok."
+    },
+    {
+      "id": "b02-terk-edilmis",
+      "tur": 1,
+      "dosya": "b02-terk-edilmis.webp",
+      "katman": "terk-edilmis",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s14"
+      ],
+      "istem": "An empty desert plain after an army has fled: a few abandoned bundles and a collapsed load lying on the sand; no people, no bodies. {yesil_perde_eki}",
+      "not": "Sakin, boş bir an; Fîl Sûresi okunurken."
+    },
+    {
+      "id": "b02-donus",
+      "tur": 1,
+      "dosya": "b02-donus.webp",
+      "katman": "donus",
+      "isleme": "perde",
+      "sahneler": [
+        "b02-s15"
+      ],
+      "istem": "Far view of small, scattered, exhausted groups of soldiers trudging along a desert road at dusk; in the middle one covered figure being carried by others. No wounds, no blood. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 36: Ebrehe yaralı olarak taşındı. Yara ayrıntısı yok."
+    }
+  ],
+  "uretimler": []
+}

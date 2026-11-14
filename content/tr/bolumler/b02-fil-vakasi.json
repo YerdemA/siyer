@@ -1,0 +1,1603 @@
+{
+  "id": "b02-fil-vakasi",
+  "sira": 2,
+  "baslik": "Fil Vakası",
+  "ozet": "Yemen'deki Habeş komutanı Ebrehe'nin Kâbe'yi yıkmak için Mekke'ye yürümesi, Abdülmuttalib'in tavrı, filin çökmesi ve kuşlar. Bölüm Fil Yılı'yla biter.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b02-s01",
+      "anlatim": [
+        {
+          "metin": "Mekke'nin çok güneyinde, Yemen'de, Habeşliler hüküm sürüyordu.",
+          "iddialar": [
+            "i-b02-001"
+          ]
+        },
+        {
+          "metin": "Başlarında Ebrehe vardı. Bir çarpışmada yüzüne aldığı yara yüzünden ona 'el-Eşrem', yani yüzü yarık derlerdi.",
+          "iddialar": [
+            "i-b02-001"
+          ]
+        },
+        {
+          "metin": "Kısa boylu, etli bir adamdı ve Hıristiyanlığa sıkı sıkıya bağlıydı.",
+          "iddialar": [
+            "i-b02-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, San'a, uzak plan (şehir tarifi kaynakta yok: sade taş ve kerpiç evler); ön planda tahtında oturan kısa boylu, etli Ebrehe, yüzünde yarık izi (İbn Hişâm s. 28-29). Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sana-sehir",
+            "dosya": "b02-sana-sehir.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.3
+          },
+          {
+            "id": "ebrehe-taht",
+            "dosya": "b02-ebrehe-taht.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s01.mp3",
+        "muzik": "gerilim-uzak",
+        "ortam": "saray"
+      },
+      "sahislar": [
+        "ebrehe"
+      ],
+      "yer": "sana"
+    },
+    {
+      "id": "b02-s02",
+      "anlatim": [
+        {
+          "metin": "Ebrehe San'a'da benzeri görülmemiş bir kilise yaptırdı.",
+          "iddialar": [
+            "i-b02-003"
+          ]
+        },
+        {
+          "metin": "Sonra Habeş hükümdarı Necâşî'ye yazdı: Arapların haccını bu kiliseye çevirmeden durmayacaktı.",
+          "iddialar": [
+            "i-b02-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, San'a'da büyük bir kilise, orta plan; önünde küçük insanlar. Mimarî ayrıntısı kaynakta yok: sade taş yapı; haç, kubbe, minare, yazı yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kilise",
+            "dosya": "b02-kilise.webp",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.45
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s02.mp3",
+        "muzik": "gerilim-uzak",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "ebrehe"
+      ],
+      "yer": "sana"
+    },
+    {
+      "id": "b02-s03",
+      "anlatim": [
+        {
+          "metin": "Bu haber duyulunca Kinâne kabilesinden bir adam öfkelendi. San'a'ya gitti, kiliseye girip onu kirletti ve memleketine döndü.",
+          "iddialar": [
+            "i-b02-004"
+          ]
+        },
+        {
+          "metin": "Ebrehe bunu öğrenince öfkelendi. Kâbe'ye yürüyüp onu yıkmaya yemin etti.",
+          "iddialar": [
+            "i-b02-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, kilisenin dışında, alacakaranlıkta uzaklaşan tek bir Arap yolcu, arkadan; uzakta kilisenin silueti. Kirletme eylemi gösterilmez. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "kilise",
+            "dosya": "b02-kilise.webp",
+            "yerTutucu": "kabe-yuksek",
+            "derinlik": 0.45
+          },
+          {
+            "id": "yolcu",
+            "dosya": "b02-kinane-yolcu.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b02-s03.mp3",
+        "muzik": "gerilim-uzak",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "ebrehe"
+      ],
+      "yer": "sana"
+    },
+    {
+      "id": "b02-s04",
+      "anlatim": [
+        {
+          "metin": "Ebrehe Habeşlileri hazırladı ve yanına bir fil alarak yola çıktı.",
+          "iddialar": [
+            "i-b02-005"
+          ]
+        },
+        {
+          "metin": "Araplar bunu büyük bir tehlike saydılar. Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı kendilerine borç bildiler.",
+          "iddialar": [
+            "i-b02-005"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çölde uzun bir ordu kolu, uzak plan: küçük, ayrıntısız asker figürleri; kolun önünde tek büyük bir fil. Silah ve donanım ayrıntısı verilmez. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "ordu",
+            "dosya": "b02-ordu-yuruyus.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b02-s04.mp3",
+        "muzik": "gerilim",
+        "ortam": "ordu-yuruyus"
+      },
+      "sahislar": [
+        "ebrehe"
+      ]
+    },
+    {
+      "id": "b02-s05",
+      "anlatim": [
+        {
+          "metin": "Yemen'in ileri gelenlerinden Zû Nefer kavmini toplayıp Ebrehe ile savaştı; yenildi ve esir düştü. Ebrehe onu öldürmedi, yanında bağlı tuttu.",
+          "iddialar": [
+            "i-b02-006"
+          ]
+        },
+        {
+          "metin": "Has'am ülkesinde Nüfeyl b. Habîb de karşı koydu. O da yenildi ve canına karşılık Ebrehe'ye yol göstermeyi kabul etti.",
+          "iddialar": [
+            "i-b02-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, ordugâh kenarı, orta plan: elleri önden bağlı bir esir (Zû Nefer) Habeşli askerlerin arasında; uzakta ordunun önünde yol gösteren serbest bir adam (Nüfeyl). Görünüşleri kaynakta yok; belirgin özellik ve nitelik verilmez. Şiddet sahnesi yok. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "esirler",
+            "dosya": "b02-esirler.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b02-s05.mp3",
+        "muzik": "gerilim",
+        "ortam": "ordu-yuruyus"
+      },
+      "sahislar": [
+        "ebrehe",
+        "zu-nefer",
+        "nufeyl-b-habib"
+      ]
+    },
+    {
+      "id": "b02-s06",
+      "anlatim": [
+        {
+          "metin": "Ordu Tâif'ten geçerken Sakîf kabilesinden Mes'ûd b. Muattib Ebrehe'ye itaat etti.",
+          "iddialar": [
+            "i-b02-007"
+          ]
+        },
+        {
+          "metin": "Kendi putları Lât'ın evine dokunulmamasını istediler; aradığı evin Mekke'deki ev olduğunu söyleyip yol göstersin diye ona Ebû Rigāl'i verdiler.",
+          "iddialar": [
+            "i-b02-007"
+          ]
+        },
+        {
+          "metin": "Ebû Rigāl, ordu Mekke yakınındaki Mugammes'e indiğinde öldü. Araplar sonraları onun kabrini taşladılar.",
+          "iddialar": [
+            "i-b02-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Tâif dışında, orta plan: Sakîf'ten birkaç adam, başlarında Mes'ûd, Ebrehe'nin karşısında boyun eğmiş; yanlarında yol gösterecek olan Ebû Rigāl. Lât'ın evi gösterilmez. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "sakif-heyet",
+            "dosya": "b02-sakif-heyet.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b02-s06.mp3",
+        "muzik": "gerilim",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "ebrehe",
+        "mesud-b-muattib",
+        "ebu-rigal"
+      ],
+      "yer": "taif"
+    },
+    {
+      "id": "b02-s07",
+      "anlatim": [
+        {
+          "metin": "Ebrehe Mugammes'ten Habeşli Esved b. Maksûd'u atlılarla Mekke'ye gönderdi.",
+          "iddialar": [
+            "i-b02-008"
+          ]
+        },
+        {
+          "metin": "Esved, Kureyş'in ve Tihâme halkının mallarını sürüp götürdü. Aralarında Kureyş'in o zamanki büyüğü Abdülmuttalib'in iki yüz devesi de vardı.",
+          "iddialar": [
+            "i-b02-008"
+          ]
+        },
+        {
+          "metin": "Kureyş, Kinâne ve Hüzeyl savaşmayı düşündüler, ama güçlerinin yetmeyeceğini anlayıp vazgeçtiler.",
+          "iddialar": [
+            "i-b02-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke dışındaki vadide atlıların önünde toz kaldırarak sürülen deve sürüsü, uzak plan. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "develer",
+            "dosya": "b02-develer-surulen.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b02-s07.mp3",
+        "muzik": "gerilim",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b02-s08",
+      "anlatim": [
+        {
+          "metin": "Ebrehe, Himyerli Hunâta'yı Mekke'ye gönderdi: Savaşmaya değil, yalnız bu evi yıkmaya gelmişti; karşı koymazlarsa kanlarına dokunmayacaktı.",
+          "iddialar": [
+            "i-b02-009"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib şöyle cevap verdi: Onunla savaşmak istemiyorlardı, buna güçleri de yoktu. Bu, Allah'ın kutsal evi, dostu İbrâhim'in eviydi. Onu korursa kendi evini korurdu; bırakırsa onların onu savunacak gücü yoktu.",
+          "iddialar": [
+            "i-b02-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de, Kâbe'ye yakın açıklıkta orta plan: yakışıklı, heybetli Abdülmuttalib (İbn Hişâm s. 34), karşısında Himyerli elçi Hunâta. Yaş ve sakal gibi ayrıntılar kaynakta yok. Arkada alçak, çatısız Kâbe. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "hunata",
+            "dosya": "b02-hunata-abdulmuttalib.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s08.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "hunata"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b02-s09",
+      "anlatim": [
+        {
+          "metin": "Abdülmuttalib bazı oğullarıyla Ebrehe'nin ordugâhına gitti. Esir dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi.",
+          "iddialar": [
+            "i-b02-010"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib insanların en yakışıklısı ve heybetlisiydi. Ebrehe onu görünce saygı gösterdi.",
+          "iddialar": [
+            "i-b02-010"
+          ]
+        },
+        {
+          "metin": "Onu kendinden aşağıda oturtmak istemedi; Habeşlilerin onu tahtta yanında görmesini de istemedi. Tahtından inip halının üzerine oturdu ve onu yanına aldı.",
+          "iddialar": [
+            "i-b02-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, ordugâhta, orta plan: halının üzerinde yan yana oturan Ebrehe ve heybetli Abdülmuttalib; arkada boş taht, kenarda tercüman ve Habeşli askerler (İbn Hişâm s. 34: taht, halı, tercüman). Çadır ya da mekân ayrıntısı kaynakta yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "ordugah",
+            "dosya": "b02-ordugah.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.2
+          },
+          {
+            "id": "gorusme",
+            "dosya": "b02-gorusme.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s09.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ordugah"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "ebrehe",
+        "zu-nefer",
+        "uneys"
+      ]
+    },
+    {
+      "id": "b02-s10",
+      "anlatim": [
+        {
+          "metin": "Ebrehe ne istediğini sordu. Abdülmuttalib yalnız iki yüz devesinin geri verilmesini istedi.",
+          "iddialar": [
+            "i-b02-011"
+          ]
+        },
+        {
+          "metin": "Ebrehe şöyle dedi: Onu görünce beğenmişti, ama konuşunca gözünden düşmüştü. Develerinden söz ediyor da kendisinin ve atalarının dini olan, yıkılmaya gelinen evi anmıyordu.",
+          "iddialar": [
+            "i-b02-011"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib şöyle dedi: «Ben develerin sahibiyim. Evin de onu koruyacak bir sahibi var.»",
+          "iddialar": [
+            "i-b02-011"
+          ]
+        },
+        {
+          "metin": "Ebrehe develeri geri verdi.",
+          "iddialar": [
+            "i-b02-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Aynı yer, yakın plan: Abdülmuttalib'in sakin, kararlı yüzü. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "ordugah",
+            "dosya": "b02-ordugah.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.2
+          },
+          {
+            "id": "abdulmuttalib-yakin",
+            "dosya": "b02-abdulmuttalib-yakin.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b02-s10.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "ordugah"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "ebrehe"
+      ]
+    },
+    {
+      "id": "b02-s11",
+      "anlatim": [
+        {
+          "metin": "Abdülmuttalib Mekke'ye dönünce Kureyş'e, ordunun saldırısından korunmak için şehirden çıkıp dağların tepelerine ve vadilere çekilmelerini söyledi.",
+          "iddialar": [
+            "i-b02-012"
+          ]
+        },
+        {
+          "metin": "Sonra Kâbe'nin kapı halkasından tuttu ve Kureyş'ten birkaç kişiyle birlikte Ebrehe'ye ve ordusuna karşı Allah'a dua etti.",
+          "iddialar": [
+            "i-b02-012"
+          ]
+        },
+        {
+          "metin": "Ardından halkayı bırakıp onlarla dağlara çekildi ve beklemeye başladılar.",
+          "iddialar": [
+            "i-b02-012"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Kâbe'nin kapısı önünde orta plan: kapı halkasını tutup dua eden Abdülmuttalib, arkasında birkaç Kureyşli; uzakta dağlara tırmanan küçük insan kafileleri. Kâbe alçak ve çatısız. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "dua",
+            "dosya": "b02-kapi-dua.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s11.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b02-s12",
+      "anlatim": [
+        {
+          "metin": "Sabah Ebrehe Mekke'ye girmek için ordusunu ve filini hazırladı. Filin adı Mahmûd'du.",
+          "iddialar": [
+            "i-b02-013"
+          ]
+        },
+        {
+          "metin": "Fili Mekke'ye yönelttiklerinde Nüfeyl yanına gelip kulağından tuttu: «Çök Mahmûd, geldiğin yere esenlikle dön; çünkü sen Allah'ın kutsal beldesindesin.»",
+          "iddialar": [
+            "i-b02-013"
+          ]
+        },
+        {
+          "metin": "Fil çöktü. Kaldırmak için ne yaptılarsa kalkmadı.",
+          "iddialar": [
+            "i-b02-013"
+          ]
+        },
+        {
+          "metin": "Yemen'e, Şam'a ya da doğuya çevirdiklerinde yürüdü; Mekke'ye çevirdiklerinde yine çöktü.",
+          "iddialar": [
+            "i-b02-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, orta plan: yere çökmüş büyük fil; başında şaşkın Habeşli askerler. Filin yanında kulağına eğilmiş Nüfeyl. Fil dövülürken gösterilmez. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "fil-coken",
+            "dosya": "b02-fil-coken.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s12.mp3",
+        "muzik": "gerilim",
+        "ortam": "ordu-yuruyus"
+      },
+      "sahislar": [
+        "nufeyl-b-habib",
+        "ebrehe"
+      ]
+    },
+    {
+      "id": "b02-s13",
+      "anlatim": [
+        {
+          "metin": "O sırada denizin tarafından kuşlar geldi. Kuşlar taş taşıyordu.",
+          "iddialar": [
+            "i-b02-014"
+          ]
+        },
+        {
+          "metin": "Taş isabet eden helak oldu; ama hepsine isabet etmedi.",
+          "iddialar": [
+            "i-b02-014"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, ordunun üzerinde gökyüzünü dolduran sürü sürü küçük kuşlar (İbn Hişâm s. 35: kırlangıç benzeri; renk kaynakta yok, sade koyu kâğıt kesik biçimler), geniş plan; aşağıda dağılan, kaçışan askerler küçük. Yaralanma ve ölüm ayrıntısı yok. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kacis",
+            "dosya": "b02-ordu-dagilan.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "kuslar",
+            "dosya": "b02-kuslar.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.8
+          }
+        ],
+        "kamera": "yukaridan-yavas-donus"
+      },
+      "ses": {
+        "anlatim": "b02-s13.mp3",
+        "muzik": "gerilim",
+        "ortam": "kuslar"
+      },
+      "sahislar": []
+    },
+    {
+      "id": "b02-s14",
+      "anlatim": [
+        {
+          "metin": "Kur'an bu olayı şöyle anlatır:",
+          "iddialar": [
+            "i-b02-015"
+          ]
+        },
+        {
+          "metin": "«Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı? Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu. Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.»",
+          "iddialar": [
+            "i-b02-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, boşalmış çöl, uzak plan: geride kalmış birkaç eşya, çökmüş bir yük; ufka doğru uzaklaşan son kuşlar. İnsan cesedi yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "bos-col",
+            "dosya": "b02-terk-edilmis.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s14.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": []
+    },
+    {
+      "id": "b02-s15",
+      "anlatim": [
+        {
+          "metin": "Kurtulanlar geldikleri yoldan kaçtılar; Yemen'e dönüş yolunu göstersin diye Nüfeyl'i aradılar. Yollarda düşüp kaldılar.",
+          "iddialar": [
+            "i-b02-016"
+          ]
+        },
+        {
+          "metin": "Ebrehe de yaralandı. Onu San'a'ya taşıdılar ve orada öldü.",
+          "iddialar": [
+            "i-b02-016"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, çölde güneye uzanan yol, uzak plan: dağınık, yorgun küçük asker kafileleri; ortada başkalarınca taşınan biri (Ebrehe), örtülü. Yara ayrıntısı yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "donus",
+            "dosya": "b02-donus.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b02-s15.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "ebrehe",
+        "nufeyl-b-habib"
+      ]
+    },
+    {
+      "id": "b02-s16",
+      "anlatim": [
+        {
+          "metin": "O yıl Araplar arasında 'Fil Yılı' diye anıldı. Kureyş bir süre onu tarih başlangıcı saydı.",
+          "iddialar": [
+            "i-b02-017"
+          ]
+        },
+        {
+          "metin": "Hz. Muhammed'in (s.a.v.) bu Fil Yılı'nda dünyaya geldiği kabul edilir.",
+          "iddialar": [
+            "i-b02-018"
+          ]
+        },
+        {
+          "metin": "Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar «Kasvâ çöktü, yerinden kalkmıyor» dediler. Resûlullah şöyle buyurdu: «Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.»",
+          "iddialar": [
+            "i-b02-019"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Şafak, Mekke vadisi uzak plan: alçak, çatısız Kâbe ve evler sakin; dağların arkasından doğan güneş. İnsan yok ya da çok küçük. Işık sıcak ama altın-beyaz değil (nur tonu kullanılmaz).",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b02-s16.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b02-001",
+      "ifade": "Ebrehe, Habeşlilerin Yemen'deki komutanıydı. Habeşli Eryât ile Yemen'in yönetimi için çekişti; aralarındaki çarpışmada Eryât'ın darbesi yüzünü yardığı için 'el-Eşrem' diye anıldı. Eryât öldürüldü ve Yemen Ebrehe'ye kaldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 28-29 (\"Ebrehe el-Eşrem'in Yemen'e hâkim olması ve Eryât'ın öldürülmesi\"). EBREHE maddesi Eryât'ı öldürüp idareyi ele geçirdiğini (537) ve 'Eşrem' lakabını yazar. Yıl anlatıma alınmadı. İbn Hişâm sayfaları taramanın matbu numarasıdır ve taramadan okundu (OCR değil).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 28-29",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-002",
+      "ifade": "Ebrehe kısa boylu, etli, Hıristiyanlığa bağlı bir adamdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 28 (Ebrehe'nin görünüşü). EBREHE maddesi 'mutaassıp bir hıristiyandı' der. Görünüş yalnız İbn Hişâm'da; görsel için kullanılır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 28",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-003",
+      "ifade": "Ebrehe San'a'da benzeri görülmemiş bir kilise yaptırdı ve Habeş hükümdarı Necâşî'ye, Arapların haccını bu kiliseye çevirmeden durmayacağını yazdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 29 (\"el-Kulleys\"). FİL VAK'ASI ve EBREHE maddeleri kiliseyi (Kulleys/Kalîs) ve Arapları Kâbe yerine oraya çekme amacını anlatır; Bizans'tan usta getirtildiği ayrıntısı yalnız D katmanında olduğu için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 29",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-004",
+      "ifade": "Bunu duyan Kinâne kabilesinden bir adam San'a'ya gitti, kiliseye girip onu kirletti ve memleketine döndü. Ebrehe bunu öğrenince öfkelendi ve Kâbe'ye yürüyüp onu yıkmaya yemin etti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 29 (adam haram ayları erteleyen 'nesee' ailesinden, Fukaym oğullarındandır) ve s. 31 (kiliseyi kirletmesi, Ebrehe'nin yemini). FİL VAK'ASI (s. 70) ve EBREHE (s. 79) İbn Hişâm'da olmayan bir ara adım verir: Ebrehe Kinânelileri kiliseyi tavafa çağırmış, onlar elçiyi öldürmüştür; ana metin İbn Hişâm'ı izler. Anlatımda yalnız 'kirletti' denir; ayrıntı verilmez.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 29, 31",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Mukātil b. Süleyman'dan gelen bir rivayette sebep, Kureyşli bazı gençlerin yaktığı ateşin rüzgârla kiliseyi tutuşturması olarak gösterilir (FİL VAK'ASI, İbn Kesîr'e atıfla).",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Taberî'nin aktardığı başka bir rivayete göre Ebrehe bu seferi, Mudar'a emîr tayin ettiği Muhammed b. Huzâî'nin Kinâne kabilesince öldürülmesine dayandırmıştır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Bazı kaynaklara göre Ebrehe önce Kinânelilerin gelip kiliseyi tavaf etmesini istemiş, onlar reddedip elçisini öldürünce Kâbe'yi yıkmaya karar vermiştir.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b02-005",
+      "ifade": "Ebrehe Habeşlileri hazırladı ve yanında fil ile yola çıktı. Araplar bunu büyük bir tehlike saydılar; Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı kendilerine borç bildiler.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 31. FİL VAK'ASI ve EBREHE ordunun içinde Mahmûd adlı filin bulunduğunu yazar. Fil sayısı rivayetlerde farklıdır; kaynakların çoğu tek fil der (FİL VAK'ASI s. 71), anlatım 'bir fil' der, farklar dipnottadır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 31",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Kaynakların çoğu orduda Mahmûd adlı tek bir fil bulunduğunu kaydeder; bazı rivayetlerde sekiz, on iki, on üç, hatta bin kadar filden söz edilir.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b02-006",
+      "ifade": "Yemen'in ileri gelenlerinden Zû Nefer kavmini toplayıp Ebrehe ile savaştı, yenildi ve esir düştü. Ebrehe onu öldürmedi, yanında bağlı tuttu. Has'am ülkesinde Nüfeyl b. Habîb de kabileleriyle karşı koydu; o da yenilip esir alındı ve canına karşılık Ebrehe'ye kılavuzluk etmeyi kabul etti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 31. FİL VAK'ASI ve EBREHE Zû Nefer ile Nüfeyl b. Habîb'in yenilip esir düştüğünü yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 31",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-007",
+      "ifade": "Ebrehe Tâif'ten geçerken Sakîf adına Mes'ûd b. Muattib ona itaat etti; kendi putları Lât'ın evine dokunulmamasını istediler, Ebrehe'nin aradığı evin Mekke'deki ev olduğunu söylediler ve yol göstermesi için Ebû Rigāl'i verdiler. Ebû Rigāl, ordu Mekke yakınındaki Mugammes'e indiğinde öldü; Araplar sonraları onun kabrini taşladılar.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 32. FİL VAK'ASI ve EBREHE aynı akışı verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 32",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-008",
+      "ifade": "Ebrehe Mugammes'ten Habeşli Esved b. Maksûd'u bir atlı birlikle Mekke'ye gönderdi. Esved, Kureyş'in ve Tihâme halkının mallarını sürüp getirdi; aralarında Kureyş'in o zamanki büyüğü Abdülmuttalib'in iki yüz devesi de vardı. Kureyş, Kinâne ve Hüzeyl savaşmayı düşündüler, ama güçlerinin yetmeyeceğini anlayıp vazgeçtiler.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 33. FİL VAK'ASI Abdülmuttalib'in 200 devesini İbn Hişâm'a atıfla verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 33",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-009",
+      "ifade": "Ebrehe, Himyerli Hunâta'yı Mekke'ye gönderip şehrin büyüğüne şunu iletmesini istedi: Savaşmaya değil, yalnız bu evi yıkmaya geldim; karşı koymazsanız kanınıza ihtiyacım yok. Abdülmuttalib şöyle cevap verdi: Vallahi onunla savaşmak istemiyoruz, buna gücümüz de yok. Bu, Allah'ın kutsal evi, dostu İbrâhim'in evidir. Onu korursa kendi evini korur; bırakırsa bizim onu savunacak gücümüz yok.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 33 (sözler özetlenerek aktarılır; birebir çeviri değildir). FİL VAK'ASI Hunâta'nın getirdiği haberi verir. İbn Hişâm sözün sonunda 'ya da buna benzer bir söz' (ev kemâ kâl) kaydını düşer.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 33",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-010",
+      "ifade": "Abdülmuttalib bazı oğullarıyla ordugâha gitti. Ebrehe'nin esiri olan dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi. Abdülmuttalib insanların en yakışıklısı ve heybetlisiydi; Ebrehe onu görünce saygı gösterdi. Onu kendinden aşağıda oturtmak istemedi, Habeşlilerin onu tahtta yanında görmesini de istemedi; tahtından inip halının üzerine oturdu ve onu yanına aldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 33-34.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 33-34",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-011",
+      "ifade": "Ebrehe isteğini sorduğunda Abdülmuttalib yalnız iki yüz devesinin geri verilmesini istedi. Ebrehe şöyle dedi: Seni görünce beğenmiştim, ama konuşunca gözümden düştün; develerinden söz ediyorsun da senin ve atalarının dini olan, yıkmaya geldiğim evi anmıyorsun. Abdülmuttalib: Ben develerin sahibiyim; evin de onu koruyacak bir sahibi var. Ebrehe develeri geri verdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 34 ('kad kunte a'cebtenî hîne raeytuke summe kad zehidtü fîke hîne kellemtenî'; 'innî ene rabbü'l-ibil ve inne li'l-beyti rabben seyemne'uhû'). FİL VAK'ASI ve EBREHE Abdülmuttalib'in sözünü aynı anlamla verir. Sözler özetlenerek aktarılır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 34",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 79-80 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı ilim ehline göre Abdülmuttalib'le birlikte başka kabile büyükleri de gitmiş, Kâbe'ye dokunmadan dönmesi karşılığında Ebrehe'ye Tihâme mallarının üçte birini teklif etmişler, o kabul etmemiştir. İbn İshak bunun olup olmadığını Allah'ın bildiğini söyler.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 34",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 80 (İstanbul 1994)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b02-012",
+      "ifade": "Abdülmuttalib Mekke'ye dönünce Kureyş'e haber verdi ve ordunun saldırısından korunmak için şehirden çıkıp dağların tepelerine ve vadilere çekilmelerini söyledi. Sonra Kâbe'nin kapı halkasından tutarak Kureyş'ten birkaç kişiyle Ebrehe'ye ve ordusuna karşı Allah'a dua etti; ardından halkayı bırakıp onlarla dağlara çekildi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 34-35: önce halka dağlara çekilmelerini söyler, sonra kapı halkasından tutup dua eder. FİL VAK'ASI (s. 70) sırayı tersten verir (önce dua, sonra çekilme emri); küçük bir farktır, ana metin İbn Hişâm'ın sırasını izler. İbn Hişâm'ın aktardığı dua beyitleri anlatıma alınmadı (çeviri bizim olurdu).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 34-35",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-013",
+      "ifade": "Sabah Ebrehe Mekke'ye girmek için ordusunu ve filini hazırladı; filin adı Mahmûd'du. Fili Mekke'ye yönelttiklerinde Nüfeyl b. Habîb yanına gelip kulağından tuttu: 'Çök Mahmûd, geldiğin yere esenlikle dön; çünkü sen Allah'ın kutsal beldesindesin.' Fil çöktü. Kaldırmak için dövdüler, kalkmadı. Yemen'e, Şam'a ya da doğuya çevirdiklerinde yürüdü; Mekke'ye çevirdiklerinde yine çöktü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 35. FİL VAK'ASI ve EBREHE filin Mekke'ye yürütülemediğini yazar. Filin nasıl dövüldüğüne dair ayrıntılar (balta, çengel) yaş grubu için anlatıma alınmadı. Nüfeyl'in sözü: 'ubruk Mahmûd ve'rci' râşiden min haysü ci'te fe-inneke fî beledi'llâhi'l-harâm' (s. 35); Türkçesi bizim.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 35",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 70-71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 80 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-014",
+      "ifade": "Allah onların üzerine denizden kuşlar gönderdi; kuşlar taş taşıyordu. Taş isabet eden helak oluyordu, ama hepsine isabet etmedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 35-36. Kuşların gönderilmesi ve taş atması Kur'an'la sabittir (i-b02-015); FİL VAK'ASI (s. 71) kuşların taşlaşmış çamur yağdırdığını yazar. Her kuşun üç taş taşıması ve taşların nohut-mercimek büyüklüğü yalnız İbn İshak'ın rivayetinde olduğu için dipnota alındı; TDV FÎL SÛRESİ maddesindeki değerlendirme okunduğunda yeniden bakılmalı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 35-36",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn İshak'ın rivayetine göre kuşlar kırlangıç benzeriydi; her biri biri gagasında, ikisi ayaklarında üç taş taşıyordu ve taşlar nohut ile mercimek büyüklüğündeydi.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 35-36",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b02-015",
+      "ifade": "Kur'an bu olayı Fîl Sûresi'nde anlatır: \"Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı? Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu. Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.\"",
+      "guc": "kesin",
+      "gerekce": "Fîl 105/1-5, Diyanet Vakfı meali (yerel kopya: kaynaklar/kuran/kuran-meal-diyanet-vakfi.md, mushaf s. 601). İbn Hişâm (s. 36) da olayı bu sûreyle bağlar.",
+      "kaynaklar": [
+        {
+          "eser": "kuran-meal-dv",
+          "konum": "Fîl 105/1-5 (mushaf s. 601)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 36",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-016",
+      "ifade": "Kurtulanlar geldikleri yoldan kaçtılar ve Yemen'e dönüş yolunu göstersin diye Nüfeyl'i aradılar. Yollarda düşüp kaldılar. Ebrehe de yaralandı; onu San'a'ya taşıdılar ve orada öldü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 36. EBREHE maddesi Ebrehe'nin yaralı olarak Yemen'e döndüğünü ve kısa süre sonra öldüğünü yazar; FİL VAK'ASI da öyle. Yaraların ağır ayrıntıları yaş grubu için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 36",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 80 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-017",
+      "ifade": "Olayın yaşandığı yıl Araplar arasında 'Fil Yılı' (âmü'l-fîl) diye meşhur oldu; Kureyş bir süre onu tarih başlangıcı saydı.",
+      "guc": "guclu",
+      "gerekce": "FİL VAK'ASI (s. 71) ve EBREHE maddeleri. İki D kaynağı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 80 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b02-018",
+      "ifade": "Hz. Muhammed'in (s.a.v.) Fil Vakası'nın yaşandığı yıl doğduğu kabul edilir.",
+      "guc": "ihtilafli",
+      "gerekce": "EBREHE maddesi: 'Hz. Muhammed'in bu olayın meydana geldiği yıl doğduğu kabul edilmektedir.' FİL VAK'ASI (s. 71) yaygın görüşün doğumdan elli, elli beş gün ya da üç ay önce olduğunu yazar; olaydan 13-40 yıl sonra doğduğuna dair rivayetler de vardır. Tarih ayrıntısı b03'te ele alınacak. MEVLİD maddesi İslâm tarihçilerinin çoğuna göre Fil Vakası yılında doğduğunu, MUHAMMED maddesi Fil Vakası'ndan elli (ya da elli beş) gün sonra doğduğunu yazar. Tarihte kaynaklar arasında fark olduğu için 'ihtilafli'; ana metin çoğunluk görüşünü verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Lütfi Kazancı, \"EBREHE\", c. 10, s. 80 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ahmet Özel, \"MEVLİD\", c. 29, s. 475-479 (sayfa matbu PDF'te belirlenecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\", c. 30, s. 406-421 (sayfa matbu PDF'te belirlenecek)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Kaynaklarda olayın tarihi hakkında büyük farklar vardır; Hz. Peygamber'in olaydan on üç ile kırk yıl sonra doğduğunu söyleyen rivayetler de bulunur.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b02-019",
+      "ifade": "Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar 'Kasvâ çöktü, yerinden kalkmıyor' dediler. Resûlullah şöyle buyurdu: \"Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.\"",
+      "guc": "kesin",
+      "gerekce": "Buhârî, Şurût, 15 (hadis no. 2731-2732; sunnah.com'da 2731 altında). Söz, Hadislerle İslâm'ın Türkçesiyle, ayraç içindeki açıklamalarıyla birlikte aynen verildi (CLAUDE.md kural 6); Arapçası 'mâ halaeti'l-Kasvâ ve mâ zâke lehâ bi-hulukin ve lâkin habesehâ hâbisü'l-fîl'. FİL VAK'ASI (s. 71) da sözü 'Kasvâ çökmedi, onu fili tutan tuttu' diye anar.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "Şurût, 15 (hadis no. 2731-2732)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 7, ana metin ve dipnot 398 (PDF s. 139)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"FİL VAK'ASI\", c. 13, s. 71 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}
