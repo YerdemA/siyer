@@ -38,7 +38,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 | Dosya | Durum |
 |---|---|
-| `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 22 iddia, 60 atıf (doğrulama bekliyor); 9 katman yer tutucu |
+| `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); 10 görsel istemi hazır (`istemler/b01-chatgpt.md`), üretim bekliyor |
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
 | `bolumler/b10-hira.json` | Taslak: 12 sahne, 12 iddia, 35 atıf (doğrulama bekliyor); bütün görsel katmanları hazır |
 | `sahislar.json` | 14 kayıt |
@@ -81,16 +81,17 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 Sahibi parantez içinde.
 
-1. **Atıf doğrulaması** (Erdem): b01'de 60, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
-   - b01: i-b01-022 (Sâib'e öğüt) tek D kaynakla, istisna 2.1; doğrulama betiği uyarı veriyor. Kabul ya da çıkarma kararı Erdem'de.
-   - b01 görsel: Kusay sonrası sahneler (s08-s10, s13) üstü hurma dallarıyla örtülü Kâbe ister; şimdilik kabe-alcak.
+1. **b01 görsellerini üret** (Erdem): `content/gorseller/istemler/b01-chatgpt.md`, Mesaj 0'a `u01d.png`; Mesaj 1'e (örtülü Kâbe) b09'un kabe-alcak görseli de eklenebilir. Sonra Claude işler; `b01-hanif` ve `b01-abdulmuttalib-avlu` sigdir, `ayar.gorsel` yazılacak.
+2. **Atıf doğrulaması** (Erdem): b01'de 62, b09'da 67, b10'da 35 atıf. b01 teslim notu: iddiaların `gerekce` alanları; İbn Hişâm s. 50-51, 76, 79-80, 219 taramadan okunmalı; Buhârî atıfları (Enbiyâ 8, 9; Menâkıb 1) ikincil kaynaktan.
+   - b01: Hâcer ve Cürhüm ayrıntıları ZEMZEM (c. 44 s. 242) ve ARAP (c. 3 s. 273) ile ikinci kaynağa bağlandı; Sâib'e öğüt ikinci kaynak bulunamadığı için çıkarıldı (2026-11-14, Erdem'in yetkisiyle).
+   - b01 Kâbe: Kusay dönemi (s08-s10) hurma dallarıyla örtülü `kabe-ortulu` (KÂBE s. 16); Abdülmuttalib dönemi ve b09 çatısız `kabe-alcak` (İbn Hişâm s. 122).
    b10 teslim notu: `b10-hira.json` iddialarının `gerekce` alanları.
    - İbn Hişâm sayfaları tarama sıra numarası; taramadan görülmeli.
    - MUHAMMED (c. 30) s. 410, Hadislerle İslâm dipnotundan alındı; matbu nüshada bakılmalı.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
-2. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
-3. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b02 → b08. b01 yazıldı (2026-11-14). Her bölümde atıflar yerel kaynaklardan.
-4. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
+3. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
+4. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b02 → b08. b01 yazıldı (2026-11-14). Her bölümde atıflar yerel kaynaklardan.
+5. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
 
 ---
 
@@ -172,7 +173,7 @@ MVP = peygamberlik öncesi dönem, 10 bölüm, Türkçe, Android.
 
 | Bölüm | Taslak | Görsel | Atıf doğrulama | Ses | Uzman |
 |---|---|---|---|---|---|
-| b01 Câhiliye Mekke'si | ✓ | – | 0/60 | – | – |
+| b01 Câhiliye Mekke'si | ✓ | istemler hazır | 0/62 | – | – |
 | b02 Fil Vakası | – | – | – | – | – |
 | b03 Doğum | – | – | – | – | – |
 | b04 Süt Annenin Yurdu | – | – | – | – | – |
