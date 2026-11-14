@@ -598,7 +598,23 @@ class YerTutucu {
     // Sıcak beyaz-altın parıltı; başka hiçbir ışık bu tonu kullanmaz.
     final m = Offset(k.sayi('x', 0.5) * w, k.sayi('y', 0.5) * h);
     final yaricap = k.sayi('r', 0.12) * w * (1 + 0.06 * math.sin(t * 1.4));
-    final gorunurluk = math.min(1.0, p * 4); // Sahne başında yavaşça belirir.
+    // Sahne başında yavaşça belirir. `guc`: açık zeminde (gündüz kumu) `screen`
+    // karışımı zayıf kalır; 1'den büyük değer parıltıyı ve çekirdeği güçlendirir.
+    final guc = k.sayi('guc', 1).clamp(0.0, 4.0);
+    final gorunurluk = math.min(1.0, p * 4) * guc;
+    if (guc > 1) {
+      // Açık zeminde de seçilsin diye sıcak, yumuşak bir çekirdek (normal karışım).
+      c.drawCircle(
+        m,
+        yaricap * 1.3,
+        Paint()
+          ..shader = Gradient.radial(m, yaricap * 1.3, [
+            _nurAcik.withValues(alpha: math.min(0.85, 0.22 * gorunurluk)),
+            _nurAltin.withValues(alpha: math.min(0.5, 0.1 * gorunurluk)),
+            _nurAltin.withValues(alpha: 0),
+          ], const [0, 0.45, 1]),
+      );
+    }
     // `screen` karışımı aydınlatır ama altındaki nesnenin rengini silmez
     // (ör. Hacerülesved siyah kalır).
     c.drawCircle(
@@ -607,8 +623,8 @@ class YerTutucu {
       Paint()
         ..blendMode = BlendMode.screen
         ..shader = Gradient.radial(m, yaricap * 2.4, [
-          _nurAcik.withValues(alpha: 0.32 * gorunurluk),
-          _nurAltin.withValues(alpha: 0.14 * gorunurluk),
+          _nurAcik.withValues(alpha: math.min(1.0, 0.32 * gorunurluk)),
+          _nurAltin.withValues(alpha: math.min(1.0, 0.14 * gorunurluk)),
           _nurAltin.withValues(alpha: 0),
         ], const [0, 0.4, 1]),
     );
