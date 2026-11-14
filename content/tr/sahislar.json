@@ -10,7 +10,8 @@
       "b01-cahiliye-mekkesi",
       "b09-hakem",
       "b10-hira",
-      "b03-dogum"
+      "b03-dogum",
+      "b04-sut-anne"
     ],
     "iddialar": [
       "i-b09-001",
@@ -81,7 +82,8 @@
       "b02-fil-vakasi",
       "b01-cahiliye-mekkesi",
       "b10-hira",
-      "b03-dogum"
+      "b03-dogum",
+      "b04-sut-anne"
     ],
     "iddialar": [
       "i-b01-021",
@@ -226,11 +228,13 @@
     "yakinlik": "",
     "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi. Hıristiyanlığı benimsedi ve kitap ehlinin kitaplarından bilgi edindi.",
     "bolumler": [
-      "b10-hira"
+      "b10-hira",
+      "b04-sut-anne"
     ],
     "iddialar": [
       "i-b10-013",
-      "i-b10-015"
+      "i-b10-015",
+      "i-b04-014"
     ]
   },
   {
@@ -395,7 +399,8 @@
     "yakinlik": "Hz. Muhammed'in (s.a.v.) annesi",
     "ozet": "Zühreoğulları'nın büyüğü Vehb b. Abdümenâf'ın kızı; Abdullah ile evlendi. Oğlu doğunca Abdülmuttalib'e haber gönderdi.",
     "bolumler": [
-      "b03-dogum"
+      "b03-dogum",
+      "b04-sut-anne"
     ],
     "iddialar": [
       "i-b03-007",
@@ -413,6 +418,63 @@
     ],
     "iddialar": [
       "i-b03-007"
+    ]
+  },
+  {
+    "id": "halime",
+    "ad": "Halîme bint Ebû Züeyb",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) süt annesi",
+    "ozet": "Hevâzin kabilesinin Sa'd b. Bekr kolundan. Kıtlık yılında Mekke'ye gelip yetim olduğu için kimsenin almadığı Efendimiz'i süt çocuğu olarak aldı; dört-beş yaşına kadar yanında büyüttü.",
+    "bolumler": [
+      "b04-sut-anne"
+    ],
+    "iddialar": [
+      "i-b04-003",
+      "i-b04-004",
+      "i-b04-005",
+      "i-b04-006",
+      "i-b04-013"
+    ]
+  },
+  {
+    "id": "haris-b-abduluzza",
+    "ad": "Hâris b. Abdüluzzâ",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) süt babası",
+    "ozet": "Halîme'nin kocası. Efendimiz'i almalarına 'Belki Allah onda bize bir bereket verir' diyerek razı oldu.",
+    "bolumler": [
+      "b04-sut-anne"
+    ],
+    "iddialar": [
+      "i-b04-003",
+      "i-b04-006"
+    ]
+  },
+  {
+    "id": "suveybe",
+    "ad": "Süveybe",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Ebû Leheb'in câriyesi; Efendimiz'i doğumundan sonra bir süre emzirdi.",
+    "bolumler": [
+      "b04-sut-anne"
+    ],
+    "iddialar": [
+      "i-b04-001"
+    ]
+  },
+  {
+    "id": "cebrail",
+    "ad": "Cebrâil",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Sahih rivayete göre Efendimiz süt annesinin yanındayken göğsünü yarıp kalbini Zemzem suyuyla yıkadı.",
+    "bolumler": [
+      "b04-sut-anne"
+    ],
+    "iddialar": [
+      "i-b04-011"
     ]
   }
 ]

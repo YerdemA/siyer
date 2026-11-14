@@ -1,0 +1,172 @@
+{
+  "bolum": "b04-sut-anne",
+  "aciklama": "Bölüm 4 görsellerinin üretim istemleri ve kaydı. Üslup ve yasaklar b10.json'daki ile aynı (u01-d); dönem 571-576, Mekke ve Sa'doğulları yurdu.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Arabia around 571-576 CE — Mecca (a narrow valley among bare, rocky mountains with small flat-roofed houses of mudbrick and rough stone) and the dry steppe lands of the Bedouin tribe of Banu Sa'd. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Çocuk Efendimiz: hiçbir biçimde çizilmez, nur da kullanılmaz (b03 kararı).",
+      "Şakk-ı sadr: olay, melek, ışık, beden çizilmez; yalnız boş manzara.",
+      "Halîme ve Âmine: yüz yok (arkadan, siluet, örtü, uzak plan).",
+      "Sa'doğulları çadırları: kaynakta yok; sade, genel dönem bilgisi.",
+      "Kâbe: Abdülmuttalib dönemi, çatısız alçak Kâbe (kabe-alcak)."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b04-bedevi-kafile",
+      "tur": 1,
+      "dosya": "b04-bedevi-kafile.webp",
+      "katman": "bedevi-kafile",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s01"
+      ],
+      "istem": "A small caravan of Bedouin women on donkeys arriving from far away, seen at a great distance; figures tiny and undetailed. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 103-104: Sa'doğulları kadınları süt çocuğu aramaya gelir."
+    },
+    {
+      "id": "b04-sad-yurdu",
+      "tur": 1,
+      "dosya": "b04-sad-yurdu.webp",
+      "katman": "sad-yurdu",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s02",
+        "b04-s05",
+        "b04-s07",
+        "b04-s08"
+      ],
+      "istem": "Wide dry steppe ground layer: barren, stony, sparse yellowed grass and a few low thorn bushes, gentle low hills. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140).",
+      "not": "İbn Hişâm s. 105: Sa'doğulları'nın yurdu en kurak topraklardandı. Ortak zemin."
+    },
+    {
+      "id": "b04-halime-yolda",
+      "tur": 1,
+      "dosya": "b04-halime-yolda.webp",
+      "katman": "halime-yolda",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s02"
+      ],
+      "istem": "Seen from behind at a distance: a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, riding a thin grey she-donkey; beside her an Arab man in simple clothes; next to them a thin, old she-camel; further ahead, a small group of other women on donkeys. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 104: boz merkep, yaşlı dişi deve. Halîme yüzsüz."
+    },
+    {
+      "id": "b04-halime-mekke",
+      "tur": 1,
+      "dosya": "b04-halime-mekke.webp",
+      "katman": "halime-mekke",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s03"
+      ],
+      "istem": "Between mudbrick houses: several Bedouin women walking away, seen from behind, each carrying a swaddled baby; in the middle, left behind, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, standing and talking with an Arab man (her husband), whose face is drawn simply. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 104. Diğer kadınların taşıdığı bebekler sıradan bebeklerdir; Efendimiz çizilmez."
+    },
+    {
+      "id": "b04-deve-sagma",
+      "tur": 1,
+      "dosya": "b04-deve-sagma.webp",
+      "katman": "deve-sagma",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s04"
+      ],
+      "istem": "At night, at a resting place near Mecca: an old she-camel kneeling, an Arab man kneeling beside it, milking it; his face drawn simply; behind them in the shadow, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. No tent, no baby visible. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 104: deve Mekke'de, konakladıkları yerde sağıldı. Çadır ve duygu ayrıntısı yok; Halîme yüzsüz; çocuk görünmez."
+    },
+    {
+      "id": "b04-sad-cadirlar",
+      "tur": 1,
+      "dosya": "b04-sad-cadirlar.webp",
+      "katman": "sad-cadirlar",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s05",
+        "b04-s08"
+      ],
+      "istem": "A few low, simple Bedouin tents of dark woven cloth on a dry plain, seen from a distance; no people. {yesil_perde_eki}",
+      "not": "Çadır biçimi kaynakta yok; sade."
+    },
+    {
+      "id": "b04-koyunlar",
+      "tur": 1,
+      "dosya": "b04-koyunlar.webp",
+      "katman": "koyunlar",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s05"
+      ],
+      "istem": "A flock of sheep and goats coming down a gentle slope at dusk, seen from far away, with one small, undetailed shepherd figure behind them. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 105: Halîme'nin koyunları tok döner."
+    },
+    {
+      "id": "b04-iki-anne-kapi",
+      "tur": 1,
+      "dosya": "b04-iki-anne-kapi.webp",
+      "katman": "iki-anne",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s06"
+      ],
+      "istem": "At the doorway of a modest mudbrick house in Mecca: two women talking, both fully veiled in cloaks and head coverings, one seen from behind and the other in the shadow of the doorway, no faces visible. No child visible. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 105: Halîme Âmine'den izin ister. İki kadın da yüzsüz."
+    },
+    {
+      "id": "b04-kuzular-yamac",
+      "tur": 1,
+      "dosya": "b04-kuzular-yamac.webp",
+      "katman": "kuzular",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "istem": "A wide, quiet hillside of dry steppe with a few lambs grazing. No people, no children, no figures at all. Calm, empty. No light rays, no glow, no angels. {yesil_perde_eki}",
+      "not": "Şakk-ı sadr sahnesi: olay gösterilmez; çocuk çizilmez (çocuk Efendimiz sanılmasın)."
+    },
+    {
+      "id": "b04-kosan-cocuklar",
+      "tur": 1,
+      "dosya": "b04-kosan-cocuklar.webp",
+      "katman": "kosan-cocuklar",
+      "isleme": "perde",
+      "sahneler": [
+        "b04-s08"
+      ],
+      "istem": "Several small Bedouin boys running toward tents, seen from behind; in front of a tent stands a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. {yesil_perde_eki}",
+      "not": "Müslim 162c: çocuklar süt annesine koşar. Efendimiz çizilmez."
+    },
+    {
+      "id": "b04-ev-ici-aksam",
+      "tur": 1,
+      "dosya": "b04-ev-ici-aksam.webp",
+      "katman": "ev-ici",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s10"
+      ],
+      "istem": "Interior of a simple mudbrick room: two women sitting facing each other on the floor, both fully veiled, in deep shadow, no faces visible. No child. Full frame.",
+      "not": "İbn Hişâm s. 105-106: Halîme Âmine'ye olanı anlatır. İki kadın yüzsüz."
+    },
+    {
+      "id": "b04-abdulmuttalib-dua",
+      "tur": 1,
+      "dosya": "b04-abdulmuttalib-dua.webp",
+      "katman": "abdulmuttalib-dua",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b04-s09"
+      ],
+      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing with his back to the viewer, hands raised in prayer. Full figure. No child, no light, no glow. {yesil_perde_eki}",
+      "not": "İbn Hişâm s. 106-107: Abdülmuttalib Kâbe'nin yanında dua eder. Arkadan."
+    }
+  ],
+  "uretimler": []
+}

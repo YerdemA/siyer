@@ -1,0 +1,1096 @@
+{
+  "id": "b04-sut-anne",
+  "sira": 4,
+  "baslik": "Süt Annenin Yurdu",
+  "ozet": "Süveybe ve Halîme; Sa'doğulları'nın yurdunda bereket; sütten kesilme; göğsün yarılması (şakk-ı sadr); Mekke'ye dönüş.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b04-s01",
+      "anlatim": [
+        {
+          "metin": "Hz. Muhammed'i (s.a.v.) doğumundan sonra bir süre Ebû Leheb'in câriyesi Süveybe emzirdi.",
+          "iddialar": [
+            "i-b04-001"
+          ]
+        },
+        {
+          "metin": "Mekkeli aileler çocuklarını, çölün sağlıklı havasında büyüyüp düzgün Arapça öğrensinler diye bedevî kabilelerden süt annelere verirlerdi. Abdülmuttalib de torununa bir süt anne aradı.",
+          "iddialar": [
+            "i-b04-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke vadisi uzak plan: alçak, çatısız Kâbe ve evler; vadinin girişinde, uzaktan gelen küçük bir bedevî kadın kafilesi. Yüzler seçilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "bedevi-kafile",
+            "dosya": "b04-bedevi-kafile.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b04-s01.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "abdulmuttalib",
+        "suveybe"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b04-s02",
+      "anlatim": [
+        {
+          "metin": "Süt anne, Hevâzin kabilesinin Sa'd b. Bekr kolundan Halîme'ydi. Kocası Hâris'ti; çocukları Abdullah, Üneyse ve Şeymâ, Efendimiz'in süt kardeşleri olacaktı.",
+          "iddialar": [
+            "i-b04-003"
+          ]
+        },
+        {
+          "metin": "Halîme'nin anlattığına göre o yıl kıtlık vardı. Kocası ve emzirdiği oğluyla, süt çocuğu arayan Sa'doğulları kadınlarıyla birlikte Mekke'ye yola çıktı.",
+          "iddialar": [
+            "i-b04-004"
+          ]
+        },
+        {
+          "metin": "Bindiği boz merkep zayıftı, yanlarındaki yaşlı deve bir damla süt vermiyordu. Oğlu açlıktan ağladığı için geceleri uyuyamıyorlardı.",
+          "iddialar": [
+            "i-b04-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, kurak bir çölde yolculuk, uzak plan: zayıf boz bir merkebe binmiş, yüzü görünmeyen, örtülü bir kadın (Halîme) arkadan; yanında bir adam (Hâris) ve zayıf, yaşlı bir dişi deve; önde başka kadınlardan oluşan küçük bir kafile. Halîme'nin yüzü gösterilmez (arkadan, siluet, uzak plan). Efendimiz çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sad-yurdu",
+            "dosya": "b04-sad-yurdu.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "halime-yolda",
+            "dosya": "b04-halime-yolda.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b04-s02.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "halime",
+        "haris-b-abduluzza"
+      ]
+    },
+    {
+      "id": "b04-s03",
+      "anlatim": [
+        {
+          "metin": "Mekke'de kadınların her birine Efendimiz önerildi. Yetim olduğunu duyunca hiçbiri almadı; çünkü çocuğun babasından karşılık umarlardı.",
+          "iddialar": [
+            "i-b04-005"
+          ]
+        },
+        {
+          "metin": "Halîme'den başka her kadın bir süt çocuğu buldu. Halîme eli boş dönmek istemedi ve kocasına o yetimi alacağını söyledi.",
+          "iddialar": [
+            "i-b04-006"
+          ]
+        },
+        {
+          "metin": "Kocası şöyle dedi: «Belki Allah onda bize bir bereket verir.»",
+          "iddialar": [
+            "i-b04-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de evlerin arasında orta plan: kucağında birer bebekle uzaklaşan bedevî kadınlar, arkadan; ortada yalnız kalmış, yüzü görünmeyen Halîme ve yanında kocası Hâris, konuşuyorlar. Halîme'nin yüzü gösterilmez (arkadan, siluet, uzak plan). Efendimiz çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "halime-mekke",
+            "dosya": "b04-halime-mekke.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b04-s03.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "halime",
+        "haris-b-abduluzza"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b04-s04",
+      "anlatim": [
+        {
+          "metin": "Halîme'nin anlattığına göre onu alınca sütü bollaştı; o da süt kardeşi de doyup uyudu.",
+          "iddialar": [
+            "i-b04-007"
+          ]
+        },
+        {
+          "metin": "Kocası yaşlı deveyi sağmaya kalktı; deve süt vermişti. O gece rahat uyudular.",
+          "iddialar": [
+            "i-b04-007"
+          ]
+        },
+        {
+          "metin": "Sabah kocası, «Vallahi Halîme, mübarek bir can aldın» dedi.",
+          "iddialar": [
+            "i-b04-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gece, Mekke yakınında konak yeri, orta plan: yere çökmüş yaşlı dişi deve, yanında onu sağan Hâris; arkada gölgede, yüzü görünmeyen Halîme'nin silueti (İbn Hişâm s. 104: deve, Mekke'de konakladıkları yerde sağıldı). Efendimiz çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "gece",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gece.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "deve-sagma",
+            "dosya": "b04-deve-sagma.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b04-s04.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "halime",
+        "haris-b-abduluzza"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b04-s05",
+      "anlatim": [
+        {
+          "metin": "Dönüşte Halîme'nin zayıf merkebi kafileyi geride bıraktı.",
+          "iddialar": [
+            "i-b04-008"
+          ]
+        },
+        {
+          "metin": "Sa'doğulları'nın yurdu en kurak topraklardandı. Ama Halîme'nin koyunları akşamları tok ve sütlü dönerken başkalarının koyunları aç dönerdi.",
+          "iddialar": [
+            "i-b04-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, kurak, taşlı bir bozkır, uzak plan: tepeden inen bir koyun sürüsü; yakında birkaç bedevî çadırı. İnsanlar küçük, ayrıntısız. Halîme'nin yüzü gösterilmez (arkadan, siluet, uzak plan). Efendimiz çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sad-yurdu",
+            "dosya": "b04-sad-yurdu.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "sad-cadirlar",
+            "dosya": "b04-sad-cadirlar.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.45
+          },
+          {
+            "id": "koyunlar",
+            "dosya": "b04-koyunlar.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b04-s05.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "halime"
+      ]
+    },
+    {
+      "id": "b04-s06",
+      "anlatim": [
+        {
+          "metin": "Efendimiz başka çocuklar gibi değil, hızla büyüdü. İki yaşında sütten kesildi.",
+          "iddialar": [
+            "i-b04-009"
+          ]
+        },
+        {
+          "metin": "Halîme onu annesine getirdi; ama onun bereketi yüzünden yanlarında kalmasını çok istiyordu.",
+          "iddialar": [
+            "i-b04-010"
+          ]
+        },
+        {
+          "metin": "Güçlenene kadar yanlarında kalması için, Mekke'deki salgından korktuğunu söyleyerek Âmine'den izin istedi. Halîme'nin ısrarı üzerine Âmine razı oldu.",
+          "iddialar": [
+            "i-b04-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de bir evin kapısı, orta plan: kapıda konuşan iki kadın, ikisi de yüzü görünmeyecek biçimde örtülü ve biri arkadan (Âmine ve Halîme). Çocuk çizilmez. Halîme'nin yüzü gösterilmez (arkadan, siluet, uzak plan). Efendimiz çizilmez. Kan yok. Nur tonu yok. Âmine'nin de yüzü gösterilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "iki-anne",
+            "dosya": "b04-iki-anne-kapi.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b04-s06.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "halime",
+        "amine"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b04-s07",
+      "anlatim": [
+        {
+          "metin": "Efendimiz süt annesinin yanındayken, bir gün çocuklarla oynarken yanına Cebrâil geldi.",
+          "iddialar": [
+            "i-b04-011"
+          ]
+        },
+        {
+          "metin": "Onu yere yatırdı, göğsünü yarıp kalbini çıkardı; kalbinden bir kan pıhtısı alıp, «Bu, şeytanın senden payıydı» dedi.",
+          "iddialar": [
+            "i-b04-011"
+          ]
+        },
+        {
+          "metin": "Sonra kalbi altın bir leğende Zemzem suyuyla yıkadı, kapattı ve yerine koydu.",
+          "iddialar": [
+            "i-b04-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, bozkırda geniş bir tepe yamacı, uzak plan: otlayan birkaç kuzu. İnsan yok, çocuk yok. Olay gösterilmez; melek, ışık ya da beden çizilmez. Sakin, boş bir manzara. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sad-yurdu",
+            "dosya": "b04-sad-yurdu.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "kuzular",
+            "dosya": "b04-kuzular-yamac.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b04-s07.mp3",
+        "muzik": "esik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "cebrail"
+      ]
+    },
+    {
+      "id": "b04-s08",
+      "anlatim": [
+        {
+          "metin": "Çocuklar koşarak süt annesine gidip «Muhammed öldürüldü!» dediler.",
+          "iddialar": [
+            "i-b04-011"
+          ]
+        },
+        {
+          "metin": "Yanına vardıklarında rengi solmuştu. Enes b. Mâlik, onun göğsünde o dikişin izini gördüğünü söyler.",
+          "iddialar": [
+            "i-b04-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çadırlara doğru koşan birkaç küçük çocuk, orta plan, arkadan; çadırın önünde duran, yüzü görünmeyen bir kadın silueti (Halîme). Efendimiz çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "sad-yurdu",
+            "dosya": "b04-sad-yurdu.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3
+          },
+          {
+            "id": "sad-cadirlar",
+            "dosya": "b04-sad-cadirlar.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.45
+          },
+          {
+            "id": "kosan-cocuklar",
+            "dosya": "b04-kosan-cocuklar.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.9
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b04-s08.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "halime"
+      ]
+    },
+    {
+      "id": "b04-s09",
+      "anlatim": [
+        {
+          "metin": "Bu olaydan sonra Halîme ve kocası onun başına bir şey gelmesinden korktular ve onu ailesine geri götürdüler.",
+          "iddialar": [
+            "i-b04-012"
+          ]
+        },
+        {
+          "metin": "Rivayete göre Halîme onu Mekke'ye getirdiğinde şehrin yukarı tarafında kaybetti ve Abdülmuttalib'e haber verdi.",
+          "iddialar": [
+            "i-b04-014"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib Kâbe'nin yanında durup onun bulunması için Allah'a dua etti. Onu Varaka b. Nevfel ile Kureyş'ten bir adam bulup getirdi.",
+          "iddialar": [
+            "i-b04-014"
+          ]
+        },
+        {
+          "metin": "Abdülmuttalib onu omzuna alıp Kâbe'yi tavaf ederek dua etti, sonra annesi Âmine'ye gönderdi.",
+          "iddialar": [
+            "i-b04-014"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Kâbe'nin önünde orta plan: dua eden Abdülmuttalib, arkadan. Başka figür yok; Efendimiz çizilmez. Kâbe alçak ve çatısız. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55
+          },
+          {
+            "id": "abdulmuttalib-dua",
+            "dosya": "b04-abdulmuttalib-dua.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b04-s09.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "abdulmuttalib",
+        "varaka-b-nevfel"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b04-s10",
+      "anlatim": [
+        {
+          "metin": "Âmine, Halîme'ye onu neden getirdiklerini sordu. Halîme önce söylemek istemedi; Âmine ısrar edince olanı anlattı.",
+          "iddialar": [
+            "i-b04-012"
+          ]
+        },
+        {
+          "metin": "Âmine şöyle dedi: Şeytanın ona bir yolu yoktu; bu oğlunun büyük bir şanı vardı.",
+          "iddialar": [
+            "i-b04-012"
+          ]
+        },
+        {
+          "metin": "Efendimiz dört ya da beş yaşına kadar süt annesinin yanında kalmıştı.",
+          "iddialar": [
+            "i-b04-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Mekke'de bir evin içi, orta plan: karşılıklı oturan iki kadın, ikisi de yüzü görünmeyecek biçimde örtülü ve gölgede. Çocuk çizilmez. Kan yok. Nur tonu yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "ev-ici",
+            "dosya": "b04-ev-ici-aksam.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.3
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b04-s10.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "halime",
+        "amine"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b04-001",
+      "ifade": "Efendimiz'i bir süre Ebû Leheb'in câriyesi Süveybe emzirdi.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407) Efendimiz'i bir süre Ebû Leheb'in câriyesi Süveybe'nin emzirdiğini, HALÎME (s. 338) Süveybe'yi onun 'diğer sütannesi' olarak anar. İki D kaynağı; klasik dayanak (İbn Sa'd, Buhârî) yerelde okunmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-002",
+      "ifade": "Mekkeli aileler çocuklarını, çölün sağlıklı havasında büyüyüp düzgün Arapça öğrensinler diye bedevî kabilelerden süt annelere verirlerdi. Abdülmuttalib de torununa bir süt anne aradı.",
+      "guc": "guclu",
+      "gerekce": "HALÎME ve MUHAMMED (s. 407) bu geleneği aynı gerekçelerle anlatır; İbn Hişâm s. 103 Abdülmuttalib'in süt anne aradığını yazar. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 103",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-003",
+      "ifade": "Süt anne, Hevâzin kabilesinin Sa'd b. Bekr kolundan Ebû Züeyb'in kızı Halîme'ydi. Kocası Hâris b. Abdüluzzâ'ydı; çocukları Abdullah, Üneyse ve Şeymâ, Efendimiz'in süt kardeşleri oldu.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 103 (Halîme bint Ebî Züeyb ... b. Sa'd b. Bekr b. Hevâzin; süt baba el-Hâris b. Abdüluzzâ; süt kardeşler Abdullah, Üneyse ve Cüzâme, yani Şeymâ). HALÎME ('Şeymâ diye tanınan Huzâfe [Cüdâme]') ve MUHAMMED (s. 407) aynı kişileri verir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 103",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-004",
+      "ifade": "Halîme'nin anlattığına göre, kıtlık yılıydı. Kocası ve emzirdiği oğluyla, süt çocuğu arayan Sa'doğulları kadınlarıyla birlikte Mekke'ye yola çıktı. Bindiği boz merkep zayıftı, yanlarındaki yaşlı dişi deve bir damla süt vermiyordu; oğlu açlıktan ağladığı için geceleri uyuyamıyorlardı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm bu kısmı İbn İshak'tan, Halîme'nin kendi anlatımı olarak verir: s. 103-104. HALÎME maddesi gidişin bir kıtlık yılında olduğunu yazar. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 103-104",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-005",
+      "ifade": "Mekke'de kadınların her birine Efendimiz önerildi; yetim olduğunu duyunca hiçbiri almadı, çünkü çocuğun babasından karşılık umarlardı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm bu kısmı İbn İshak'tan, Halîme'nin kendi anlatımı olarak verir: s. 104. HALÎME, yetim olması sebebiyle Halîme'nin de onu almakta tereddüt ettiğini yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 104",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-006",
+      "ifade": "Halîme'den başka her kadın bir süt çocuğu buldu. Halîme eli boş dönmek istemedi ve kocasına o yetimi alacağını söyledi; kocası da 'Belki Allah onda bize bir bereket verir' dedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm bu kısmı İbn İshak'tan, Halîme'nin kendi anlatımı olarak verir: s. 104. HALÎME (s. 338) Halîme'nin boş dönmemek için kabul ettiğini yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 104",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-007",
+      "ifade": "Halîme'nin anlattığına göre onu alınca sütü bollaştı; o da süt kardeşi de doyup uyudu. Kocası yaşlı deveyi sağdı; deve süt vermişti. O gece rahat uyudular. Kocası, 'Vallahi Halîme, mübarek bir can aldın' dedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm bu kısmı İbn İshak'tan, Halîme'nin kendi anlatımı olarak verir: s. 104. HALÎME ve MUHAMMED, Halîme ailesinin onu aldıktan sonra bolluğa kavuştuğunu kaynakların kaydettiğini yazar; anlatımda 'Halîme'nin anlattığına göre' denir.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 104",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-008",
+      "ifade": "Dönüşte Halîme'nin zayıf merkebi kafileyi geçti. Sa'doğulları'nın yurdu Allah'ın en kurak topraklarındandı; ama Halîme'nin koyunları akşamları tok ve sütlü dönerken başkalarının koyunları aç dönerdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm bu kısmı İbn İshak'tan, Halîme'nin kendi anlatımı olarak verir: s. 104-105.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 104-105",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-009",
+      "ifade": "Efendimiz başka çocuklar gibi değil, hızla büyüdü. İki yaşında sütten kesildi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 105; HALÎME ve MUHAMMED (s. 407) iki yıl sonunda sütten kesildiğini yazar.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 105",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b04-010",
+      "ifade": "Halîme onu annesine getirdi; ama onun bereketi yüzünden yanlarında kalmasını çok istiyordu. Güçlenene kadar yanlarında kalmasını, Mekke'deki salgından korktuğunu söyleyerek Âmine'den istedi; ısrarı üzerine Âmine razı oldu ve onu onlarla geri gönderdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 105 ('hattâ yağluz'; 'fe-lem nezel bihâ hattâ raddethü ma'anâ'). TDV maddeleri (HALÎME, MUHAMMED s. 407) kararı Âmine'ye bağlar ve önce çöl havasını, 'bazı rivayetlere göre' de vebayı sebep gösterir; bu farklı ağırlıklandırma dipnottadır.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 105",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "TDV'deki değerlendirmelere göre Âmine, çöl havasının oğluna yaradığını gördüğü, bazı rivayetlere göre de Mekke'de veba salgını bulunduğu için onun bir süre daha Halîme'nin yanında kalmasını uygun buldu.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b04-011",
+      "ifade": "Efendimiz süt annesinin yanındayken, bir gün çocuklarla oynarken yanına Cebrâil geldi. Onu yere yatırdı, göğsünü yarıp kalbini çıkardı ve kalbinden bir kan pıhtısı alıp 'Bu, şeytanın senden payıydı' dedi. Sonra kalbi altın bir leğende Zemzem suyuyla yıkayıp kapattı ve yerine koydu. Çocuklar koşarak süt annesine gidip 'Muhammed öldürüldü' dediler. Yanına vardıklarında rengi solmuştu. Enes b. Mâlik, onun göğsünde o dikişin izini gördüğünü söyler.",
+      "guc": "kesin",
+      "gerekce": "Müslim 162c (Enes b. Mâlik), sunnah.com'da Kitâbü'l-Îmân, kitap içi 318; ŞAKK-ı SADR maddesi bu rivayeti 'Müslim, Îmân, 261'e atıfla anar (numaraların aynı rivayeti gösterdiği matbu nüshada kontrol edilmeli). Türkçe bizim çevirimizdir. 'Süt annesinin yanındayken' bilgisi Müslim'deki 'süt annesi' (zi'r) ifadesinden ve ŞAKK-ı SADR'dan gelir. Politika §3 gereği D değerlendirmesi okundu: ŞAKK-ı SADR'a göre olayın süt annesinin yanındayken ve mi'rac öncesinde gerçekleştiğini bildiren rivayetler hadis tenkidi açısından muteber kabul edilmiştir. Etiket sahih hadis olduğu için 'kesin'; cismanî boyutun tartışıldığı dipnottadır. Erdem etiketi ve anlatımın çekincesiz kalmasını gözden geçirmeli.",
+      "kaynaklar": [
+        {
+          "eser": "muslim-sahih",
+          "konum": "Îmân (sunnah.com kitap içi sıra 318), hadis no. 162c",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Erdinç Ahatlı, \"ŞAKK-ı SADR\", c. 38, s. 309-310 (İstanbul 2010)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn İshak'ın rivayetinde Halîme olayı şöyle anlatır: Efendimiz süt kardeşiyle evlerin arkasında kuzuları güderken kardeşi koşarak gelmiş, beyaz elbiseli iki adamın onu yere yatırıp karnını yardığını söylemiştir; vardıklarında onu ayakta, rengi solmuş bulmuşlardır.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 105",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Olayın zamanına dair farklı rivayetler vardır: süt annesinin yanında dört beş yaşlarında, on küsur yaşında, ilk vahiy sırasında Hira'da ve mi'raca çıkmadan önce. Süt annesinin yanındayken ve mi'rac öncesindeki rivayetler muteber kabul edilir; olayın tekrarlandığı düşünülmüştür. İbn Hazm ve Kādî İyâz mi'rac rivayetlerini eleştirmiş, ama madde bu eleştiriyi isabetli bulmaz; Şiblî ise çocukluk rivayetlerini muteber saymaz.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Erdinç Ahatlı, \"ŞAKK-ı SADR\", c. 38, s. 309-310 (İstanbul 2010)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Elmalılı Muhammed Hamdi'ye göre cismanî şakk-ı sadr âlimler arasında tartışılmış, Resûlullah'ın kalbinin iman, hikmet ve hakikatle doldurulması anlamındaki ruhanî şerh-i sadr konusunda ise ittifak edilmiştir. Bazı müfessirler İnşirâh Sûresi'nin ilk âyetini bu olaya bağlamış; müfessirlerin çoğu ise âyetteki açılmayı ilim, hikmet ve risâlet nuruyla yorumlamıştır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Erdinç Ahatlı, \"ŞAKK-ı SADR\", c. 38, s. 309-310 (İstanbul 2010)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b04-012",
+      "ifade": "Bu olaydan sonra Halîme ve kocası onun başına bir şey gelmesinden korktular ve onu ailesine geri götürdüler. Âmine onu neden getirdiklerini sorup ısrar edince Halîme olanı anlattı. Âmine, 'Şeytanın ona bir yolu yoktur; bu oğlumun büyük bir şanı var' dedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 105-106 ('kellâ vallâhi mâ li'ş-şeytâni aleyhi sebîl, ve inne li-bunayye le-şe'nen'); Halîme önce sebebi söylemek istemez, Âmine ısrar edince anlatır. Bu sahne Müslim'deki olayla İbn İshak'taki sonrası birleştirilerek kuruldu. Âmine'nin sözünün devamında yine nur rivayeti geçer (b03 i-b03-009 dipnotu).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 105-106",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn İshak'ın adını vermediği bazı ilim ehlinden aktardığına göre Halîme'nin onu annesine geri getirmesinin bir sebebi de, onu gören bazı Habeşli Hristiyanların çocuğu alıp götürmek istemesiydi.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 107",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b04-013",
+      "ifade": "Efendimiz dört ya da beş yaşına kadar süt annesinin yanında kaldı.",
+      "guc": "ihtilafli",
+      "gerekce": "MUHAMMED (s. 407) 'dört veya beş yaşına kadar', HALÎME 'beş yaşına gelince', ÂMİNE 'muhtemelen dört yaşlarında' der. Kaynaklar arasında küçük fark olduğu için ana metin MUHAMMED'in ifadesini verir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "HALÎME maddesi onu beş yaşına gelince teslim ettiğini, ÂMİNE maddesi muhtemelen dört yaşlarında annesinin yanına aldığını yazar. İbn İshak'ın sıralamasında ise şakk-ı sadr, ikinci kez yanlarına getirildikten birkaç ay sonra olmuş ve hemen ardından geri götürülmüştür; bu da daha erken bir yaşı düşündürür.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Asri Çubukcu, \"HALÎME\", c. 15, s. 338 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 105",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b04-014",
+      "ifade": "Rivayete göre Halîme onu Mekke'ye getirirken şehrin yukarı tarafında kaybetti ve Abdülmuttalib'e haber verdi. Abdülmuttalib Kâbe'nin yanında durup onun bulunması için Allah'a dua etti. Onu Varaka b. Nevfel ile Kureyş'ten bir adam bulup Abdülmuttalib'e getirdi. Abdülmuttalib onu omzuna alıp Kâbe'yi tavaf ederek dua etti, sonra annesi Âmine'ye gönderdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 106-107; İbn İshak 'insanların anlattıklarına göre iddia ederler, Allah bilir' kaydıyla verir; anlatımda 'rivayete göre' denir. Dayanak klasik siyerin ana eseri olduğu için etiket 'guclu' (Erdem'in b03 kararıyla aynı ölçüt).",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 106-107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}
