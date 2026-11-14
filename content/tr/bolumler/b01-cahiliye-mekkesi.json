@@ -58,7 +58,27 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yukaridan-yukselis"
+        "kamera": "yukaridan-yukselis",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Yakın plan: çatlamış kumda dikenli kuru çalılar ve taşlar.",
+            "kamera": "yatay-kayma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.3
+            },
+            "katmanlar": [
+              {
+                "id": "kurak",
+                "dosya": "b01-s01-kurak.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.8
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s01.mp3",
@@ -221,7 +241,30 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Cürhümlüler çadır kuruyor, deveden yük indiriyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.25,
+              "y": 0.72,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": [
+              {
+                "id": "curhum",
+                "dosya": "b01-s03-curhum.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s03.mp3",
@@ -325,6 +368,27 @@
         "kamera": "yavas-yaklasma",
         "cekimler": [
           {
+            "parca": 1,
+            "tarif": "Yakın plan: harçsız iri taşlarla yükselen temelin alt sıraları. Kişi çizilmez.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "temel"
+            ],
+            "katmanlar": [
+              {
+                "id": "tas",
+                "dosya": "b01-s04-tas.webp",
+                "yerTutucu": "temel-taslari",
+                "derinlik": 0.8
+              }
+            ]
+          },
+          {
             "parca": 2,
             "tarif": "Temellerden yukarı, dağlara ve göğe doğru bakış.",
             "kamera": "yukaridan-yukselis",
@@ -409,7 +473,27 @@
             }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan: Huzâa ve Kinâne yaya ve deve üstünde vadiye geliyor. Çarpışma yok.",
+            "kamera": "yatay-kayma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.66,
+              "yakinlik": 1.3
+            },
+            "katmanlar": [
+              {
+                "id": "huzaa",
+                "dosya": "b01-s05-huzaa.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s05.mp3",
@@ -471,7 +555,27 @@
             }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Amr b. Luhay; yerde putların yalnız gölgeleri.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.5
+            },
+            "katmanlar": [
+              {
+                "id": "amr",
+                "dosya": "b01-s06-amr.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.8
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s06.mp3",
@@ -562,42 +666,27 @@
         "cekimler": [
           {
             "parca": 2,
-            "tarif": "Orta plan: iki taraf, aralarında boş alanla karşı karşıya duruyor; hakem kararı beklenir. Silah ve çarpışma yok.",
+            "tarif": "Orta plan: hakem iki taraf arasında elini kaldırıp kararını söylüyor.",
             "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kalabalik"
+            ],
             "katmanlar": [
               {
-                "id": "gok",
-                "dosya": "mekke-gok-aksam.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
-                "id": "daglar",
-                "dosya": "mekke-daglar.webp",
-                "yerTutucu": "daglar",
-                "derinlik": 0.15
-              },
-              {
-                "id": "zemin",
-                "dosya": "mekke-zemin.webp",
-                "yerTutucu": "zemin",
-                "derinlik": 0.35
-              },
-              {
-                "id": "kalabalik",
-                "dosya": "b01-iki-ittifak.webp",
+                "id": "hakem",
+                "dosya": "b01-s07-hakem.webp",
                 "yerTutucu": "kalabalik",
-                "derinlik": 0.7,
+                "derinlik": 0.8,
                 "ayar": {
-                  "sayi": 8,
-                  "y": 0.8,
-                  "olcek": 0.05,
-                  "x1": 0.15,
-                  "x2": 0.85,
                   "gorsel": {
                     "x": 0.5,
-                    "y": 0.36,
-                    "olcek": 1.25
+                    "y": 0.6,
+                    "olcek": 1.2
                   }
                 }
               }
@@ -753,6 +842,19 @@
               "yakinlik": 1.9
             },
             "katmanlar": []
+          },
+          {
+            "parca": 3,
+            "tarif": "Dârünnedve'nin içi: hasırlar üstünde halka olmuş Kureyş büyükleri.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "nedve-ic",
+                "dosya": "b01-s08-nedve-ic.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
           }
         ]
       },
@@ -850,6 +952,27 @@
         ],
         "kamera": "sabit",
         "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Abdüddâroğulları ve Abdümenâfoğulları karşı karşıya.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.4
+            },
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": [
+              {
+                "id": "gruplar",
+                "dosya": "b01-s09-gruplar.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
+          },
           {
             "parca": 2,
             "tarif": "Uzlaşma: iki grubun arasındaki Kâbe yakından.",
@@ -977,6 +1100,27 @@
               "siluet-tek"
             ],
             "katmanlar": []
+          },
+          {
+            "parca": 3,
+            "tarif": "Orta plan: putlardan uzak duran bir hanîf, düşünceli.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.6,
+              "y": 0.6,
+              "yakinlik": 1.4
+            },
+            "gizle": [
+              "siluet-tek"
+            ],
+            "katmanlar": [
+              {
+                "id": "hanif",
+                "dosya": "b01-s10-hanif.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.8
+              }
+            ]
           }
         ]
       },
@@ -1079,14 +1223,24 @@
         "cekimler": [
           {
             "parca": 2,
-            "tarif": "Orta plan: kervanın önü; arkada aynı evler.",
+            "tarif": "Orta plan: Kureyşli tüccarlar yüklü develeri sağa doğru götürüyor.",
             "kamera": "yatay-kayma",
             "kadraj": {
               "x": 0.3,
-              "y": 0.74,
-              "yakinlik": 1.8
+              "y": 0.72,
+              "yakinlik": 1.5
             },
-            "katmanlar": []
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": [
+              {
+                "id": "kervan",
+                "dosya": "b01-s11-kervan.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
           },
           {
             "parca": 3,
@@ -1196,6 +1350,27 @@
         ],
         "kamera": "yavas-yaklasma",
         "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gece, orta plan: kabile adamları ateş başında; biri konuşuyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.8,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kalabalik"
+            ],
+            "katmanlar": [
+              {
+                "id": "ates",
+                "dosya": "b01-s12-ates.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8
+              }
+            ]
+          },
           {
             "parca": 2,
             "tarif": "Sağdaki çadırlara yakın bakış.",
@@ -1316,7 +1491,65 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta yakın plan: yaşlı Abdülmuttalib, asasıyla.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.35,
+              "y": 0.6,
+              "yakinlik": 1.4
+            },
+            "gizle": [
+              "siluet-tek"
+            ],
+            "katmanlar": [
+              {
+                "id": "abdulmuttalib",
+                "dosya": "b01-s13-abdulmuttalib.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.6,
+                    "olcek": 1.2
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Orta plan: Abdülmuttalib ile adamları dolmuş eski kuyuyu yeniden açıyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.66,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "siluet-tek"
+            ],
+            "katmanlar": [
+              {
+                "id": "zemzem",
+                "dosya": "b01-s13-zemzem.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.55,
+                    "olcek": 1.2
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b01-s13.mp3",
