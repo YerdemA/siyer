@@ -6,13 +6,16 @@ Hareketli illüstrasyon (motion comic): resim gibi sabit kareler, katmanlar aras
 
 ## Temsil kuralları (değişmez)
 
-1. **Hz. Peygamber ve diğer peygamberler:** Figür, siluet, gölge, el, ayak dahil hiçbir beden tasviri yok. İki yöntem:
-   - *Nur:* Bulunduğu yerde yumuşak, sıcak bir parıltı.
-   - *Onun gözünden:* Sahne onun bakış açısından görülür; ona bakan insanların yüz hizası, eğilen başlar, uzatılan eller yerine çevre ve mekân gösterilir.
-2. **Yakınları ve sahabe** (Hz. Âmine, Hz. Hatice, Abdülmuttalib, Ebû Tâlib, Halîme, Zeyd vb.): Yüz gösterilmez. Arkadan, siluet, uzak plan, kumaş ve el ayrıntısı kullanılabilir.
-3. **Diğer kişiler** (kalabalıklar, tüccarlar, Ebrehe'nin ordusu): Uzak ve orta planda, yüz ayrıntısı öne çıkarılmadan.
-4. **Melekler:** Tasvir edilmez; ışık ve ses ile sezdirilir.
-5. Üretilen her görsel bu kurallara göre elle denetlenir; yapay zekâ araçları yüz ve figür eklemeye meyillidir.
+Bu kurallar 2026-11-14'te Erdem'in kararıyla değişti. Eskiden yüz gösterilmemesi herkes için geçerliydi; izleyici açısından iç karartıcı bulundu.
+
+1. **Hz. Muhammed (s.a.v.):** İki yöntem:
+   - *Nurlu figür:* Asaleti belli eden bir boyda, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı bir figür; başında yeşil sarık. Yüz, ten, el ve beden ayrıntısı görünmez; nurun içinde yalnız boy ve sarık seçilir.
+   - *Onun gözünden:* Sahne onun bakış açısından görülür.
+2. **Diğer peygamberler** (Hz. İbrâhim, Hz. İsmâil vb.): Figür, siluet, gölge, el, ayak dahil hiçbir beden tasviri yok; yalnız bulundukları yerde yumuşak, sıcak bir parıltı.
+3. **Efendimiz'in eşleri, çocukları, anne-babası (Hz. Âmine, Abdullah) ve süt annesi Halîme:** Yüz gösterilmez. Arkadan, siluet, uzak plan, kumaş ve el ayrıntısı kullanılabilir.
+4. **Diğer herkes** (sahabe, Abdülmuttalib, Ebû Tâlib, Kureyş ileri gelenleri, halk, kalabalıklar): Yüzleriyle çizilebilir. Yaş, giyim, görünüş gibi ayrıntılar rivayet ve kaynaklardaki betimlemeye uygun olur; kaynakta betimleme yoksa sade, dönemine uygun, belirgin özellik uydurulmadan. Yüzler kâğıt kesik üslupta, sade ve saygılı; fotoğraf gerçekliğinde değil.
+5. **Melekler:** Tasvir edilmez; ışık ve ses ile sezdirilir.
+6. Üretilen her görsel bu kurallara göre elle denetlenir; yapay zekâ araçları istenmeyen figür eklemeye ve nurlu figürde yüz ya da el çizmeye meyillidir.
 
 ## Tarihî doğruluk
 

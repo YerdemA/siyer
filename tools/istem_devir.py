@@ -22,9 +22,9 @@ def birlestir(uslup: dict, kayit: dict) -> str:
 
 
 KISA_YASAK = (
-    "Rules: no visible faces; no extra people, hands or body parts beyond what is described; "
-    "no figure, silhouette, shadow, hand or foot of the Prophet; no minarets, domes, crescents, arches or tiles; "
-    "no text or watermarks."
+    "Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; "
+    "the Prophet only as described (a tall figure fully covered in golden-white light with a green turban, no face or body detail); "
+    "no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks."
 )
 
 
