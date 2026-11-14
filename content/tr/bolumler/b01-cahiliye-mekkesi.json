@@ -85,7 +85,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Şafak, alçak açı: boş, kurak vadi tabanı ve dağlar; ufukta ilk ışık. Hz. İbrâhim, Hâcer ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, ayak izi) çizilmez; yalnız mekân. Işık sıcak ama altın-beyaz değil. İnsan yok.",
+        "tarif": "Şafak, alçak açı: boş, kurak vadi tabanı ve dağlar; ufukta ilk ışık. Hz. İbrâhim, Hâcer ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, ayak izi) çizilmez; yalnız mekân. Işık sıcak ama altın-beyaz değil. İnsan yok. Vadinin dibinde iki yumuşak nur: Hz. İbrâhim ve küçük Hz. İsmâil (biri küçük). Figür yok; Hâcer çizilmez.",
         "saat": "safak",
         "katmanlar": [
           {
@@ -105,6 +105,30 @@
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
             "derinlik": 0.45
+          },
+          {
+            "id": "nur-ibrahim",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.7,
+            "ayar": {
+              "x": 0.48,
+              "y": 0.68,
+              "r": 0.045,
+              "guc": 3
+            }
+          },
+          {
+            "id": "nur-ismail",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.7,
+            "ayar": {
+              "x": 0.54,
+              "y": 0.71,
+              "r": 0.025,
+              "guc": 3
+            }
           }
         ],
         "kamera": "yavas-yaklasma",
@@ -233,7 +257,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, yakın plan: vadi tabanında harçsız üst üste konmuş birkaç sıra kaba taştan alçak bir temel. Hz. İbrâhim ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, el) çizilmez; taşı taşıyan kimse görünmez. Bitmiş bina, kapı, örtü yok. İnsan yok.",
+        "tarif": "Gündüz, yakın plan: vadi tabanında harçsız üst üste konmuş birkaç sıra kaba taştan alçak bir temel. Hz. İbrâhim ve Hz. İsmâil hiçbir biçimde (figür, siluet, gölge, el) çizilmez; taşı taşıyan kimse görünmez. Bitmiş bina, kapı, örtü yok. İnsan yok. Temelin iki yanında iki yumuşak nur: Hz. İbrâhim ve Hz. İsmâil. Figür, el, gölge yok.",
         "saat": "gunduz",
         "katmanlar": [
           {
@@ -265,6 +289,30 @@
                 "y": 0.42,
                 "olcek": 1.2
               }
+            }
+          },
+          {
+            "id": "nur-ibrahim",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.7,
+            "ayar": {
+              "x": 0.3,
+              "y": 0.6,
+              "r": 0.05,
+              "guc": 3
+            }
+          },
+          {
+            "id": "nur-ismail",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.7,
+            "ayar": {
+              "x": 0.7,
+              "y": 0.6,
+              "r": 0.05,
+              "guc": 3
             }
           },
           {
