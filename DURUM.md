@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kurallar `CLAUDE.md`'de, ayrıntılar `docs/` altında; bu dosya yalnız **nerede olduğumuzu** anlatır.
 
-**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 2'si taslak hâlinde yazıldı (b09, b10); b09'un görselleri tamam, b10'un 8 görselinden 6'sı bağlandı, 2'si Erdem'in kararını bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
+**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 2'si taslak hâlinde yazıldı (b09, b10); b09'un görselleri tamam, b10'un görselleri de bağlandı. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
 
 ---
 
@@ -39,7 +39,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 | Dosya | Durum |
 |---|---|
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
-| `bolumler/b10-hira.json` | Taslak: 12 sahne, 12 iddia, 35 atıf (doğrulama bekliyor); s03 ve s09'un figür katmanı yer tutucu |
+| `bolumler/b10-hira.json` | Taslak: 12 sahne, 12 iddia, 35 atıf (doğrulama bekliyor); bütün görsel katmanları hazır |
 | `sahislar.json` | 7 kayıt |
 | `yerler.json` | 11 yer, yaklaşık konum + `konumKaynagi` (TDV, doğrulama bekliyor). Benî Sa'd yurdu kaynakta konum olmadığı için yok |
 | `zaman-cizelgesi.json` | 2 kayıt (605 Kâbe inşası, ~605 Hira inzivâsı) |
@@ -80,15 +80,13 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 
 Sahibi parantez içinde.
 
-1. **b10'da iki görsel için karar** (Erdem): `b10-abdulmuttalib` (s03) ve `b10-yoksullar` (s09) kendi yokuşlarıyla tam sahne geldi, figürler uzak değil ve yarı profilden sakal kenarı seçiliyor. Kabul ya da yeniden üretim ("figure only, no ground, strictly from behind, far away and small"). Ham dosyalar `gorsel-ham/b10/`'da; kabulde `gorsel_katman.py` ile tam kadraj işlenir, s09'da `yokus` katmanının yerine geçer.
-2. **b10 diğer görseller** (Claude, 2026-11-14 bitti): 6 katman bağlandı, kayıt `b10.json` → `uretimler`.
-3. **Atıf doğrulaması** (Erdem): b09'da 67, b10'da 35 atıf. b10 teslim notu: `b10-hira.json` iddialarının `gerekce` alanları.
+1. **Atıf doğrulaması** (Erdem): b09'da 67, b10'da 35 atıf. b10 teslim notu: `b10-hira.json` iddialarının `gerekce` alanları.
    - İbn Hişâm sayfaları tarama sıra numarası; taramadan görülmeli.
    - MUHAMMED (c. 30) s. 410, Hadislerle İslâm dipnotundan alındı; matbu nüshada bakılmalı.
    - Buhârî numaraları yalnız Hadislerle İslâm'da görüldü.
-4. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
-5. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b01 → b08. Her bölümde atıflar yerel kaynaklardan.
-6. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
+2. **Kaynakçada Buhârî'nin `baski` alanı** (Erdem): Yayın hatası.
+3. **Sonraki bölüm** (Claude, `/bolum-yaz <no>`): Sıra önerisi b01 → b08. Her bölümde atıflar yerel kaynaklardan.
+4. **Anlatım sesleri** (Erdem/Claude): Ses üretim yöntemi seçilmedi (bkz. §4).
 
 ---
 
@@ -178,13 +176,13 @@ MVP = peygamberlik öncesi dönem, 10 bölüm, Türkçe, Android.
 | b07 Gençlik | – | – | – | – | – |
 | b08 el-Emîn | – | – | – | – | – |
 | b09 Hakem | ✓ | ✓ | 0/67 | – | – |
-| b10 Hira'nın Eşiği | ✓ | 6/8 (2 karar bekliyor) | 0/35 | – | – |
+| b10 Hira'nın Eşiği | ✓ | ✓ | 0/35 | – | – |
 
 ### Yan veriler ve yayın kapısı
 - [ ] Kaynakçada Buhârî `baski` alanı
 - [ ] Her bölümün şahıs, yer ve zaman çizelgesi kayıtları (b09–b10 var)
 - [ ] `yerler.json` konum atıflarının doğrulanması
-- [ ] `dart run tools/icerik_dogrula.dart --yayin` → 0 hata (şu an 6 hata: Buhârî baskısı; b09–b10'da ses ve atıf doğrulaması; b10'da görseller)
+- [ ] `dart run tools/icerik_dogrula.dart --yayin` → 0 hata (Buhârî baskısı; b09–b10'da ses ve atıf doğrulaması)
 
 ---
 
