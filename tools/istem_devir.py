@@ -23,7 +23,7 @@ def birlestir(uslup: dict, kayit: dict) -> str:
 
 KISA_YASAK = (
     "Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; "
-    "the Prophet only as described (a tall figure fully covered in golden-white light with a green turban, no face or body detail); "
+    "the Prophet never appears unless this prompt explicitly asks for him; "
     "no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks."
 )
 
@@ -41,7 +41,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         f"Style: {uslup['istem'].replace('Cinematic 16:9 framing.', 'Cinematic wide framing.')}\n\n"
         f"Strict rules for every image: {uslup['yasaklar']}\n\n"
         "Format for every image: landscape 3:2. Edges will be cropped: about 15% at the top, 15% at the bottom "
-        "and 8% on each side. Keep every important element (people, hands, faces turned away, key objects) well inside "
+        "and 8% on each side. Keep every important element (people, faces, hands, key objects) well inside "
         "that central area; a single isolated object must sit fully inside the frame with empty margin around it. "
         "Generate exactly one image per message. "
         "Do not reply with text beyond one short line. Reply 'Ready' now; I will send the scenes one by one."
@@ -57,7 +57,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "",
         "**Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.",
         "",
-        "**Görsel kötü çıkarsa** (yüz görünüyor, fazladan el var, yazı çıkmış, yeşil zemin düz değil, nur istenmeyen yerde altın-beyaz parıltı var) "
+        "**Görsel kötü çıkarsa** (yüz fotoğraf gibi ya da istenmeyen kişide görünüyor, fazladan el var, yazı çıkmış, yeşil zemin düz değil, nur istenmeyen yerde altın-beyaz parıltı var) "
         "aynı sohbette şunu yaz ve yenisini indir: "
         "`Regenerate this one: <sorun>. Keep everything else.`",
         "",
@@ -77,9 +77,16 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         nur_yasak = "" if nur_ister else (
             " No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral."
         )
+        # Yakın çekimde uzak çekimle tutarlılık için o sahnenin uzak görseli eklenir.
+        ekle = k.get("ekle", "")
+        ek_cumle = (
+            " The image attached to this message is the wide shot of the same scene: keep the same people's clothing, "
+            "colors and setting so the two shots match; do not copy its composition."
+            if ekle else ""
+        )
         metin = (
             f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
-            f"muted earth palette. Not photorealistic, not a 3D render. {sahne}\n\n{KISA_YASAK}{nur_yasak}"
+            f"muted earth palette. Not photorealistic, not a 3D render.{ek_cumle} {sahne}\n\n{KISA_YASAK}{nur_yasak}"
         )
         notlar = []
         isleme = k.get("isleme") or ("opak" if k.get("katman") == "gok" else "perde")
@@ -91,6 +98,8 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         if k.get("not"):
             notlar.append(k["not"])
         satirlar += [f"## Mesaj {n}: {k['id']}", ""]
+        if ekle:
+            satirlar += [f"**Bu mesaja ekle** (proje klasöründen, uzak çekim): `{ekle}`", ""]
         if notlar:
             satirlar += [f"*Kontrol: {'; '.join(notlar)}*", ""]
         satirlar += ["```text", metin, "```", ""]
