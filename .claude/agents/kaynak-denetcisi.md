@@ -21,7 +21,7 @@ Ayrıca kontrol et:
 
 - İddiaya bağlanmamış ama tarihî bilgi içeren anlatım parçaları
 - `guc: zayif` olup ana metinde kullanılan iddialar
-- Görsel tariflerinde temsil kurallarına aykırılık (peygamber figürü, yakınlarının yüzü, dönem dışı mimari)
+- Görsel tariflerinde temsil kurallarına aykırılık (`docs/GORSEL_USLUP.md`: Efendimiz yalnız nurlu figür ya da onun gözünden; diğer peygamberler yalnız nur; eşleri, çocukları, anne-babası ve Halîme yüzsüz; dönem dışı mimari)
 - Hz. Peygamber'e kaynaksız söz atfedilmesi
 
 Rapor biçimi:
