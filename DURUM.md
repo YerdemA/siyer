@@ -65,7 +65,7 @@ Son güncelleme: 2026-11-14. Her çalışma oturumunun sonunda güncellenir. Kur
 1. **b01 yakın planları:** 13 görsel denetlendi (temsil kuralına uygun), katmana çevrildi, bölüme çekim olarak bağlandı. s07 parça 2 ve s11 parça 2'deki geçici çekimler yenileriyle değişti. s07 ve s13'teki yakın planlar baş kesilmesin diye `ayar.gorsel` ile aşağı kaydırıldı.
 2. **`gorsel_katman.py`:** ChatGPT perdesi bazen koyu geliyor (#00AF46); `SEFFAF_ESIK` 110 → 95. Eski eşikle zemin yarı saydam kalıyordu.
 3. **Anlatım sesi kararı** (Erdem): ElevenLabs MCP; olgun, hikâye anlatımına uygun bir erkek sesi.
-4. **Beden boyunda nur:** `_nur()`'a `boy` ayarı eklendi; nur yuvarlak uçlu, kenarı bulanık dikey bir ışık oldu, alt ucu zemine basar. b01 s02'de Hz. İbrâhim yetişkin, Hz. İsmâil çocuk boyunda; s04'te ikisi yetişkin boyunda, temel duvarının arkasında. `GORSEL_USLUP.md` §2 ve `ICERIK_SEMASI.md` güncellendi.
+4. **Beden boyunda nur:** `_nur()`'a `boy` ayarı eklendi; nur, Erdem'in isteğiyle kaba insan biçiminde (yuvarlak baş, omuzlar, aşağı açılan giysi) kenarları bulanık bir ışık oldu; yüz, kol, el yok. Alt ucu zemine basar. b01 s02'de Hz. İbrâhim yetişkin, Hz. İsmâil çocuk boyunda; s04'te ikisi yetişkin boyunda, temel duvarının arkasında. `GORSEL_USLUP.md` §2 ve `ICERIK_SEMASI.md` güncellendi.
 
 ## Önceki oturum (2026-11-13 / 14)
 
