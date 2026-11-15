@@ -4,6 +4,8 @@ Görsel kotası ve zaman kıymetli: hatayı üretimden önce istemle önlemek, �
 
 ## Kesinlikle kabul edilmeyenler (Erdem, 2026-11-15)
 
+Yalnız bariz farklar ve hatalar yeniden üretilir; göz ardı edilebilecek küçük farklarda kart mevcut görsele uydurulur, kota harcanmaz. Erdem'e yalnız çok önemli kararlar sunulur.
+
 1. **Kaynakla çelişki:** Kaynakta yazan bir özellik (yaş, sakal, beden, sayı) görselde farklı olamaz.
 2. **Görseller arası çelişki:** Aynı kişi, hayvan ya da yer her görselde aynı görünür: sakal biçimi, rengi ve uzunluğu, kıyafet renkleri, yaş.
 3. **Gerçek dışı hata:** Üç el, eksik ya da kaynaşmış uzuv, havada duran figür, sahneye uymayan ölçek.
@@ -27,7 +29,7 @@ Orta plan figürü uzak plan katmanlarının (Mekke evleri, alçak Kâbe) önün
 
 ## Pilot
 
-Yeni yöntem ChatGPT'de denenmeden toplu üretime geçilmez. Önce üç görsel: bir orta plan grup (`b03-on-ogul`), bir uzak kol (`b02-ordu-yuruyus`), bir halıda oturan grup (`b02-gorusme`, Ebrehe kararından sonra; o gelmezse `b05-kabe-dosek`). Üçü sahneye yerleştirilip önizlenir; istem kalıbı gerekirse düzeltilir, sonra devam edilir.
+Yeni yöntem ChatGPT'de denenmeden toplu üretime geçilmez. Önce üç görsel: bir orta plan grup (`b03-on-ogul`), bir uzak kol (`b02-ordu-yuruyus`), bir döşekte oturan grup (`b05-kabe-dosek`). Üçü sahneye yerleştirilip önizlenir; istem kalıbı gerekirse düzeltilir, sonra devam edilir.
 
 ## Yapılı istem alanları
 
@@ -49,7 +51,7 @@ Her istemin sonunda ChatGPT'ye **çıktıdan önce denetle** listesi gider: kiş
 
 `content/gorseller/istemler/karakterler.json`: tekrar eden her kişi, hayvan ve nesnenin sabit görünüşü. `kaynak` dayanağı, `secim` ise kaynakta olmayıp tutarlılık için sabitlenenleri gösterir.
 
-Mevcut görsellerde kabul edilmiş karakterler (Abdülmuttalib, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için referans o görsellerden kırpılır (`istemler/referans/`), kota harcanmaz. Diğerleri için bölüm istemlerinden önce bir **referans sayfası** üretilir (aynı kişi üç açıdan, yeşil perdede): `istem_devir.py --karakterler` → `karakterler-chatgpt.md`. Claude Code sayfayı kartla karşılaştırır; onaylanan sayfa o karakterin geçtiği her mesaja iliştirilir. Görseller arası tutarlılığın asıl güvencesi budur; yalnız metinle ChatGPT aynı kişiyi her seferinde biraz farklı çizer.
+Mevcut görsellerde kabul edilmiş karakterler (Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için referans o görsellerden kırpılır (`istemler/referans/`), kota harcanmaz. Diğerleri için bölüm istemlerinden önce bir **referans sayfası** üretilir (aynı kişi üç açıdan, yeşil perdede): `istem_devir.py --karakterler` → `karakterler-chatgpt.md`. Claude Code sayfayı kartla karşılaştırır; onaylanan sayfa o karakterin geçtiği her mesaja iliştirilir. Görseller arası tutarlılığın asıl güvencesi budur; yalnız metinle ChatGPT aynı kişiyi her seferinde biraz farklı çizer.
 
 ## Akış
 

@@ -148,7 +148,7 @@
     },
     {
       "id": "b02-sakif-heyet",
-      "tur": 3,
+      "tur": 1,
       "dosya": "b02-sakif-heyet.webp",
       "katman": "sakif-heyet",
       "isleme": "sigdir",
@@ -179,8 +179,7 @@
         }
       ],
       "yasak": "idols, temples, buildings, ground.",
-      "eski_istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}",
-      "yeniden_neden": "Ebrehe yaşı kararına bağlı (kart: ~60, sakalında gri)."
+      "eski_istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}"
     },
     {
       "id": "b02-develer-surulen",
@@ -221,7 +220,7 @@
     },
     {
       "id": "b02-gorusme",
-      "tur": 3,
+      "tur": 1,
       "dosya": "b02-gorusme.webp",
       "katman": "gorusme",
       "isleme": "sigdir",
@@ -254,7 +253,6 @@
       "yerlesim": "The carpet lies flat at the bottom; the seated people sit on it side by side; the standing soldiers stand behind them on the same level. The carpet is a red woven carpet with a yellow border, seen from eye level.",
       "yasak": "throne, tent, buildings, ground other than the carpet.",
       "eski_istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), sitting on a carpet beside the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth; the ruler turned respectfully toward the chief; at the side an interpreter and a few undetailed soldiers standing. Faces drawn simply. {yesil_perde_eki}",
-      "yeniden_neden": "Ebrehe yaşı kararına bağlı.",
       "izin": "the red woven carpet under the seated people, which is drawn."
     },
     {
