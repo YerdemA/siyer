@@ -119,12 +119,14 @@
         {
           "tarif": "small Abyssinian soldiers on foot (dark skin, white caps, cream tunics, red cloaks), simple and undetailed",
           "sayi": 40,
-          "poz": "walking left in a long single band behind the elephant."
+          "poz": "walking left in a long single band behind the elephant.",
+          "yaklasik": true
         },
         {
           "tarif": "small mounted soldiers on brown horses, same clothing",
           "sayi": 4,
-          "poz": "spaced along the band."
+          "poz": "spaced along the band.",
+          "yaklasik": true
         }
       ],
       "yerlesim": "The whole column is one long horizontal band across the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the column never rises, curves or recedes toward the top of the image.",
@@ -329,7 +331,8 @@
         {
           "tarif": "small Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), simple and undetailed",
           "sayi": 25,
-          "poz": "running in different directions, all on the same ground level."
+          "poz": "running in different directions, all on the same ground level.",
+          "yaklasik": true
         },
         {
           "karakter": "fil",
@@ -383,7 +386,8 @@
         {
           "tarif": "small tired Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), heads bowed",
           "sayi": 12,
-          "poz": "walking right in three loose groups."
+          "poz": "walking right in three loose groups.",
+          "yaklasik": true
         },
         {
           "tarif": "soldiers of the same look carrying a litter on their shoulders",

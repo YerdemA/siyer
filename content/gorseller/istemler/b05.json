@@ -53,30 +53,30 @@
       ],
       "not": "Âmine ve Ümmü Eymen; ikisi de arkadan. Çocuk görünmez.",
       "tip": "figur",
-      "cekim": "uzak",
-      "konu": "A small caravan seen from the side at a distance, moving from left to right; Amina and Umm Ayman ride among the travellers.",
+      "cekim": "orta",
+      "konu": "A small caravan travelling north, seen from behind, moving away from the viewer; Amina and Umm Ayman ride among the travellers.",
       "kisiler": [
         {
           "karakter": "amine",
-          "poz": "riding the second camel, seen strictly from behind-right, no face."
+          "poz": "riding the camel on the left, seen strictly from behind, no face."
         },
         {
           "karakter": "ummu_eymen",
-          "poz": "riding the third camel, seen strictly from behind-right, no face."
+          "poz": "riding the camel second from the right, seen strictly from behind, no face."
         },
         {
           "tarif": "small travellers in off-white head cloths and brown cloaks",
           "sayi": 2,
-          "poz": "walking beside the camels."
+          "poz": "walking beside the camels, seen from behind."
         },
         {
           "tarif": "camels with saddles and bundles",
           "sayi": 4,
           "hayvan": true,
-          "poz": "in one file walking right."
+          "poz": "side by side, walking away from the viewer."
         }
       ],
-      "yerlesim": "One horizontal file in the lower half of the image, feet on the same horizontal line, seen from the side.",
+      "yerlesim": "All camels and travellers move away from the viewer side by side, feet on one horizontal line in the lower part of the image, at the same distance from the camera.",
       "yasak": "child, ground.",
       "eski_istem": "A small caravan of a few camels seen from a distance and from behind; among the travellers are two figures, each a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible. No child visible. {yesil_perde_eki}"
     },
@@ -128,7 +128,8 @@
         }
       ],
       "yasak": "body, burial, grave, child, ground.",
-      "eski_istem": "A desert halt at dusk seen from far away: a few camels kneeling, one small low tent; in front of the tent sits a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible, alone. No body, no burial, no grave. {yesil_perde_eki}"
+      "eski_istem": "A desert halt at dusk seen from far away: a few camels kneeling, one small low tent; in front of the tent sits a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible, alone. No body, no burial, no grave. {yesil_perde_eki}",
+      "izin": "the one small low tent of dark woven cloth listed above, which is drawn."
     },
     {
       "id": "b05-ebva-kabir",

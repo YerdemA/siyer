@@ -80,30 +80,31 @@
       ],
       "not": "İbn Hişâm s. 104: boz merkep, yaşlı dişi deve. Halîme yüzsüz.",
       "tip": "figur",
-      "cekim": "uzak",
-      "konu": "Halima and her husband travelling toward Mecca, seen from the side at a distance, moving from right to left.",
+      "cekim": "orta",
+      "konu": "Halima and her husband travelling toward Mecca, seen from behind, walking away from the viewer side by side.",
       "kisiler": [
         {
           "karakter": "halime",
-          "poz": "riding a thin grey she-donkey, seen from behind-left so her face is not visible."
+          "poz": "riding a thin grey she-donkey on the left, seen strictly from behind, no face."
         },
         {
           "karakter": "haris",
-          "poz": "walking beside the donkey, leading an old she-camel."
+          "poz": "walking in the middle, seen from behind, leading the camel by a rope."
         },
         {
           "tarif": "a thin, old, bony she-camel",
           "hayvan": true,
-          "poz": "behind them."
+          "poz": "walking on the right, seen from behind."
         },
         {
           "tarif": "a thin grey she-donkey",
           "hayvan": true,
-          "poz": "carrying Halima."
+          "poz": "carrying Halima, seen from behind."
         }
       ],
       "yasak": "baby, ground, other women.",
-      "eski_istem": "Seen from behind at a distance: a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, riding a thin grey she-donkey; beside her an Arab man in simple clothes; next to them a thin, old she-camel; further ahead, a small group of other women on donkeys. {yesil_perde_eki}"
+      "eski_istem": "Seen from behind at a distance: a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, riding a thin grey she-donkey; beside her an Arab man in simple clothes; next to them a thin, old she-camel; further ahead, a small group of other women on donkeys. {yesil_perde_eki}",
+      "yerlesim": "Everyone moves away from the viewer side by side, feet on one horizontal line, all at the same distance from the camera; complete from head to feet."
     },
     {
       "id": "b04-halime-mekke",
@@ -197,17 +198,18 @@
       "not": "İbn Hişâm s. 105: Halîme'nin koyunları tok döner.",
       "tip": "figur",
       "cekim": "uzak",
-      "konu": "A flock of sheep and goats walking home at the end of the day, seen from the side at a distance, moving from right to left, with one small shepherd behind them.",
+      "konu": "A flock of sheep and goats walking home at the end of the day, seen from the side at a distance, moving from right to left, with one small adult shepherd behind them.",
       "kisiler": [
         {
-          "tarif": "a small, undetailed shepherd boy of about 14 in a plain undyed tunic",
+          "tarif": "a small, undetailed adult shepherd, a grown man with a short beard, in a plain undyed tunic",
           "poz": "walking behind the flock at the right, holding a stick."
         },
         {
           "tarif": "well-fed sheep and goats, cream, brown and black",
           "sayi": 20,
           "hayvan": true,
-          "poz": "in a loose horizontal band."
+          "poz": "in a loose horizontal band.",
+          "yaklasik": true
         }
       ],
       "yerlesim": "The flock forms one horizontal band in the lower part of the image, feet on the same horizontal line, seen from the side.",

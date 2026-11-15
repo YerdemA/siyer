@@ -33,23 +33,23 @@
       "not": "İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok.",
       "tip": "figur",
       "cekim": "orta",
-      "konu": "Abdul-Muttalib stands and speaks to his ten grown sons, who stand before him in a shallow arc, listening.",
+      "konu": "Abdul-Muttalib stands and speaks to his ten grown sons. The camera stands behind the sons: we see the sons' backs in the foreground and Abdul-Muttalib facing them and the viewer.",
       "kisiler": [
         {
           "karakter": "abdulmuttalib",
-          "poz": "standing at the far left, facing right, one hand slightly raised as he speaks."
+          "poz": "standing in the centre, beyond the sons, facing the viewer, one hand slightly raised as he speaks."
         },
         {
           "karakter": "abdulmuttalib_ogullari",
           "sayi": 9,
-          "poz": "standing in two shallow rows to the right, facing him; faces drawn simply."
+          "poz": "standing in a shallow arc in the foreground with their backs to the viewer, some heads turned slightly so a cheek shows; faces drawn simply where visible."
         },
         {
           "karakter": "abdullah",
-          "poz": "standing among the front row, seen strictly from behind (his back to the viewer)."
+          "poz": "standing in the arc, seen strictly from behind (back of the head and back only)."
         }
       ],
-      "yerlesim": "Two shallow rows side by side, the back row only slightly behind the front row; all feet near the same horizontal line in the lower part of the image; everyone complete from head to feet.",
+      "yerlesim": "The sons stand in one shallow arc in the lower part of the image, feet near the same horizontal line; Abdul-Muttalib stands just beyond them, his feet a little higher, fully visible between them.",
       "yasak": "ground, buildings, Kaaba, idols, knives.",
       "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing and speaking to ten grown sons, all adult men who stand in a loose half-circle before him, listening; faces drawn simply, no distinctive features. {yesil_perde_eki}",
       "yeniden_neden": "Abdülmuttalib kara sakallı çizilmişti (kaynak: ~75 yaşında)."
@@ -66,25 +66,26 @@
       "not": "İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan).",
       "tip": "figur",
       "cekim": "orta",
-      "konu": "Men of Quraysh have risen from their gatherings and surround Abdul-Muttalib and his young son, raising their open hands in protest and urging him to stop.",
+      "konu": "Men of Quraysh have risen from their gatherings and surround Abdul-Muttalib, raising their open hands in protest and urging him to stop; his young son stands in the foreground with his back to the viewer.",
       "kisiler": [
         {
           "karakter": "abdulmuttalib",
-          "poz": "standing left of centre, facing right, calm and grave."
+          "poz": "standing in the centre, facing the viewer, calm and grave."
         },
         {
           "karakter": "abdullah",
-          "poz": "standing just right of his father, seen strictly from behind."
+          "poz": "standing in the foreground slightly right of centre, seen strictly from behind (back of the head and back only), facing his father."
         },
         {
           "karakter": "kureysli",
           "sayi": 5,
-          "poz": "standing to the right in a row, facing left, open palms raised toward Abdul-Muttalib."
+          "poz": "standing on both sides of Abdul-Muttalib, facing him and partly the viewer, open palms raised toward him."
         }
       ],
       "yasak": "knife, weapon, idol, blood, ground, buildings, Kaaba.",
       "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth; around them a group of men of Quraysh raising their hands in protest, urging him to stop; faces of the men drawn simply. No knife, no weapon, no idol, no blood. {yesil_perde_eki}",
-      "yeniden_neden": "Abdülmuttalib kara sakallı çizilmişti."
+      "yeniden_neden": "Abdülmuttalib kara sakallı çizilmişti.",
+      "yerlesim": "Abdullah's feet are on the lowest horizontal line; the others stand just beyond him in one row, feet on a horizontal line slightly higher; everyone complete from head to feet."
     },
     {
       "id": "b03-hayber-kafile",
@@ -110,24 +111,25 @@
       "not": "İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez.",
       "tip": "figur",
       "cekim": "uzak",
-      "konu": "A great herd of camels gathered on open ground, seen from the side at a distance; at the left edge Abdul-Muttalib and his young son stand looking at the herd.",
+      "konu": "A great herd of camels gathered on open ground; in the foreground at the left, Abdul-Muttalib and his young son stand with their backs to the viewer, looking at the herd.",
       "kisiler": [
         {
           "karakter": "abdulmuttalib",
-          "poz": "standing at the far left, facing right, small but clearly recognisable."
+          "poz": "standing in the left foreground, seen from behind and slightly to the side (a little of his grey-white beard shows at the cheek), looking toward the herd."
         },
         {
           "karakter": "abdullah",
-          "poz": "standing beside him, seen strictly from behind."
+          "poz": "standing beside him in the left foreground, seen strictly from behind, looking toward the herd."
         },
         {
-          "tarif": "camels of sandy and light-brown colours, standing and kneeling, without saddles or loads",
+          "tarif": "a great many camels (the source says one hundred) of sandy and light-brown colours, standing and kneeling, without saddles or loads",
           "sayi": 30,
           "hayvan": true,
-          "poz": "filling the band to the right."
+          "poz": "filling the band to the right.",
+          "yaklasik": true
         }
       ],
-      "yerlesim": "Seen from eye level from the side: the herd forms a broad horizontal band across the lower half of the image, all feet near the same horizontal line; the two men are at the same ground level as the nearest camels.",
+      "yerlesim": "Seen from eye level, the camera standing just behind the two men: the herd forms a broad horizontal band across the image beyond them; the two men's feet are on the lowest horizontal line, the herd's feet on a horizontal line slightly higher.",
       "yasak": "slaughter, blood, knives, saddles, ground, buildings, Kaaba.",
       "eski_istem": "A great many camels gathered in rows in an open space, seen from far away; at the edge, a handsome, imposing Arab man of Quraysh in a simple head cloth standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth. No slaughter, no blood, no knives. {yesil_perde_eki}",
       "yeniden_neden": "Abdülmuttalib kara sakallıydı; develer kuşbakışı dizildi."
@@ -144,19 +146,19 @@
       "not": "İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz.",
       "tip": "figur",
       "cekim": "orta",
-      "konu": "Abdul-Muttalib and his young son stand before Wahb, the host, who greets them with an open hand.",
+      "konu": "Wahb, the host, greets Abdul-Muttalib and his young son with an open hand. The camera stands behind the two guests.",
       "kisiler": [
         {
           "karakter": "abdulmuttalib",
-          "poz": "standing at the left, facing right."
+          "poz": "standing in the left foreground, seen from behind and slightly to the side (a little of his grey-white beard shows at the cheek), facing Wahb."
         },
         {
           "karakter": "abdullah",
-          "poz": "standing next to him, seen strictly from behind."
+          "poz": "standing beside him in the foreground, seen strictly from behind, facing Wahb."
         },
         {
           "karakter": "vehb",
-          "poz": "standing at the right, facing left, one open hand raised in welcome."
+          "poz": "standing beyond them at the right, facing them and the viewer, one open hand raised in welcome."
         }
       ],
       "yasak": "women, door, wall, house, ground.",

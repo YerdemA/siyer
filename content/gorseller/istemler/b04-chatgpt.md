@@ -35,8 +35,8 @@ CAMERA: Wide shot from far away, camera at standing eye level, looking straight 
 SUBJECT: A small caravan of Bedouin women on donkeys arriving from far away, seen from the side, moving from right to left.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 6 people in total). Keep every listed colour and feature exactly as written:
-1. 6 × tiny Bedouin women wrapped in dark cloaks and black head coverings, faces not visible at this distance Pose and place: each riding a grey donkey, in one file.
-2. 6 × grey donkeys Pose and place: in one horizontal file walking left.
+1. 6 × tiny Bedouin women wrapped in dark cloaks and black head coverings, faces not visible at this distance. Pose and place: each riding a grey donkey, in one file.
+2. 6 × grey donkeys. Pose and place: in one horizontal file walking left.
 
 LAYOUT: One horizontal file in the lower half of the image, feet on the same horizontal line, seen from the side. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -75,24 +75,24 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 3: b04-halime-yolda
 
-**Bu mesaja ekle:** `karakter-halime.png`, `karakter-haris.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-halime.png`, `karakter-haris.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 104: boz merkep, yaşlı dişi deve. Halîme yüzsüz.*
 
 ```text
 Scene b04-halime-yolda. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
-CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Halima and her husband travelling toward Mecca, seen from the side at a distance, moving from right to left.
+SUBJECT: Halima and her husband travelling toward Mecca, seen from behind, walking away from the viewer side by side.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
-1. Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering. Pose and place: riding a thin grey she-donkey, seen from behind-left so her face is not visible.
-2. Al-Harith, Halima's husband, a lean Bedouin man of about 40 with a short black beard; a faded indigo head cloth wrapped loosely without a cord; a plain undyed wool tunic; barefoot or simple sandals. Pose and place: walking beside the donkey, leading an old she-camel.
-3. a thin, old, bony she-camel Pose and place: behind them.
-4. a thin grey she-donkey Pose and place: carrying Halima.
+1. Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering. Pose and place: riding a thin grey she-donkey on the left, seen strictly from behind, no face.
+2. Al-Harith, Halima's husband, a lean Bedouin man of about 40 with a short black beard; a faded indigo head cloth wrapped loosely without a cord; a plain undyed wool tunic; barefoot or simple sandals. Pose and place: walking in the middle, seen from behind, leading the camel by a rope.
+3. a thin, old, bony she-camel. Pose and place: walking on the right, seen from behind.
+4. a thin grey she-donkey. Pose and place: carrying Halima, seen from behind.
 
-LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: Everyone moves away from the viewer side by side, feet on one horizontal line, all at the same distance from the camera; complete from head to feet. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -105,7 +105,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 4: b04-halime-mekke
 
-**Bu mesaja ekle:** `karakter-halime.png`, `karakter-haris.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-halime.png`, `karakter-haris.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 104. Diğer kadınların taşıdığı bebekler sıradan bebeklerdir; Efendimiz çizilmez.*
 
@@ -117,7 +117,7 @@ CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (
 SUBJECT: Bedouin women walk away carrying babies; Halima, left behind, stands talking with her husband.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 5 people in total). Keep every listed colour and feature exactly as written:
-1. 3 × Bedouin women wrapped in dark cloaks and black head coverings, seen strictly from behind, each carrying a swaddled baby Pose and place: walking away at the right.
+1. 3 × Bedouin women wrapped in dark cloaks and black head coverings, seen strictly from behind, each carrying a swaddled baby. Pose and place: walking away at the right.
 2. Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering. Pose and place: standing left of centre, seen strictly from behind.
 3. Al-Harith, Halima's husband, a lean Bedouin man of about 40 with a short black beard; a faded indigo head cloth wrapped loosely without a cord; a plain undyed wool tunic; barefoot or simple sandals. Pose and place: standing facing her and the viewer at the left, face drawn simply.
 
@@ -134,7 +134,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 5: b04-deve-sagma
 
-**Bu mesaja ekle:** `karakter-haris.png`, `karakter-halime.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-haris.png`, `karakter-halime.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 104: deve Mekke'de, konakladıkları yerde sağıldı. Çadır ve duygu ayrıntısı yok; Halîme yüzsüz; çocuk görünmez.*
 
@@ -147,7 +147,7 @@ SUBJECT: Night halt: al-Harith kneels beside the old she-camel and milks it into
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
 1. Al-Harith, Halima's husband, a lean Bedouin man of about 40 with a short black beard; a faded indigo head cloth wrapped loosely without a cord; a plain undyed wool tunic; barefoot or simple sandals. Pose and place: kneeling on one knee at the camel's side, both hands at the udder, a wooden bowl on the ground under it.
-2. the same thin, old she-camel, kneeling Pose and place: in the centre, side view facing left.
+2. the same thin, old she-camel, kneeling. Pose and place: in the centre, side view facing left.
 3. Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering. Pose and place: standing behind them at the right, seen strictly from behind.
 
 LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
@@ -174,7 +174,7 @@ SUBJECT: Three low, simple Bedouin tents of dark woven goat-hair cloth, side by 
 
 PEOPLE: none. No people, animals, hands or figures of any kind.
 
-LAYOUT: The tents stand side by side on one horizontal base line in the lower part of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: The tents stand side by side on one horizontal base line in the lower part of the image. Draw only the object: no ground, cast shadow, people, hands or background; perfectly flat, uniform chroma green (#00B140) everywhere else, no green tint on the object.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -194,11 +194,11 @@ Scene b04-koyunlar. ONE image, landscape 3:2. Flat paper cut-out style of the st
 
 CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
-SUBJECT: A flock of sheep and goats walking home at the end of the day, seen from the side at a distance, moving from right to left, with one small shepherd behind them.
+SUBJECT: A flock of sheep and goats walking home at the end of the day, seen from the side at a distance, moving from right to left, with one small adult shepherd behind them.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
-1. a small, undetailed shepherd boy of about 14 in a plain undyed tunic Pose and place: walking behind the flock at the right, holding a stick.
-2. 20 × well-fed sheep and goats, cream, brown and black Pose and place: in a loose horizontal band.
+1. a small, undetailed adult shepherd, a grown man with a short beard, in a plain undyed tunic. Pose and place: walking behind the flock at the right, holding a stick.
+2. about 20 × well-fed sheep and goats, cream, brown and black. Pose and place: in a loose horizontal band.
 
 LAYOUT: The flock forms one horizontal band in the lower part of the image, feet on the same horizontal line, seen from the side. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -213,7 +213,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 8: b04-iki-anne-kapi
 
-**Bu mesaja ekle:** `karakter-halime.png`, `karakter-amine.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-halime.png`, `karakter-amine.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 105: Halîme Âmine'den izin ister. İki kadın da yüzsüz.*
 
@@ -250,8 +250,8 @@ CAMERA: Wide shot from far away, camera at standing eye level, looking straight 
 
 SUBJECT: A few lambs grazing quietly, seen from the side at a distance.
 
-ANIMALS: draw exactly these and no people:
-1. 5 × small cream-white lambs Pose and place: grazing in a loose horizontal row.
+ANIMALS AND OBJECTS: draw exactly these and no people:
+1. 5 × small cream-white lambs. Pose and place: grazing in a loose horizontal row.
 
 LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -266,7 +266,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 10: b04-kosan-cocuklar
 
-**Bu mesaja ekle:** `karakter-halime.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-halime.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Müslim 162c: çocuklar süt annesine koşar. Efendimiz çizilmez.*
 
@@ -278,7 +278,7 @@ CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (
 SUBJECT: Several small Bedouin boys run toward Halima, who stands waiting.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 4 people in total). Keep every listed colour and feature exactly as written:
-1. 3 × Bedouin boys aged 5 to 8 in plain undyed tunics, seen strictly from behind, running away from the viewer Pose and place: at the left, running right.
+1. 3 × Bedouin boys aged 5 to 8 in plain undyed tunics, seen strictly from behind, running away from the viewer. Pose and place: at the left, running right.
 2. Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering. Pose and place: standing at the right, seen strictly from behind.
 
 LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
@@ -294,7 +294,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 11: b04-ev-ici-aksam
 
-**Bu mesaja ekle:** `karakter-halime.png`, `karakter-amine.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-halime.png`, `karakter-amine.png`
 
 *Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 105-106: Halîme Âmine'ye olanı anlatır. İki kadın yüzsüz.*
 
@@ -322,7 +322,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 12: b04-abdulmuttalib-dua
 
-**Bu mesaja ekle:** `karakter-abdulmuttalib.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 106-107: Abdülmuttalib Kâbe'nin yanında dua eder. Arkadan.*
 

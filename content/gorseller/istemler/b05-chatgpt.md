@@ -49,24 +49,24 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 2: b05-kervan
 
-**Bu mesaja ekle:** `karakter-amine.png`, `karakter-ummu_eymen.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-amine.png`, `karakter-ummu_eymen.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Âmine ve Ümmü Eymen; ikisi de arkadan. Çocuk görünmez.*
 
 ```text
 Scene b05-kervan. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
-CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: A small caravan seen from the side at a distance, moving from left to right; Amina and Umm Ayman ride among the travellers.
+SUBJECT: A small caravan travelling north, seen from behind, moving away from the viewer; Amina and Umm Ayman ride among the travellers.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 4 people in total). Keep every listed colour and feature exactly as written:
-1. Amina, a woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long deep indigo-blue cloak with a sand-coloured head covering that hides her hair and the sides of her face. Pose and place: riding the second camel, seen strictly from behind-right, no face.
-2. Umm Ayman, an Abyssinian woman, seen from behind in these scenes; wrapped in a long sand-beige cloak with a brown head covering. Pose and place: riding the third camel, seen strictly from behind-right, no face.
-3. 2 × small travellers in off-white head cloths and brown cloaks Pose and place: walking beside the camels.
-4. 4 × camels with saddles and bundles Pose and place: in one file walking right.
+1. Amina, a woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long deep indigo-blue cloak with a sand-coloured head covering that hides her hair and the sides of her face. Pose and place: riding the camel on the left, seen strictly from behind, no face.
+2. Umm Ayman, an Abyssinian woman, seen from behind in these scenes; wrapped in a long sand-beige cloak with a brown head covering. Pose and place: riding the camel second from the right, seen strictly from behind, no face.
+3. 2 × small travellers in off-white head cloths and brown cloaks. Pose and place: walking beside the camels, seen from behind.
+4. 4 × camels with saddles and bundles. Pose and place: side by side, walking away from the viewer.
 
-LAYOUT: One horizontal file in the lower half of the image, feet on the same horizontal line, seen from the side. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: All camels and travellers move away from the viewer side by side, feet on one horizontal line in the lower part of the image, at the same distance from the camera. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -90,7 +90,7 @@ SUBJECT: A distant settlement of low, flat-roofed mudbrick houses and a few palm
 
 PEOPLE: none. No people, animals, hands or figures of any kind.
 
-LAYOUT: The settlement is one long, low horizontal band in the lower part of the image, its base a straight horizontal line. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: The settlement is one long, low horizontal band in the lower part of the image, its base a straight horizontal line. Draw only the object: no ground, cast shadow, people, hands or background; perfectly flat, uniform chroma green (#00B140) everywhere else, no green tint on the object.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -103,7 +103,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 4: b05-ebva-konak
 
-**Bu mesaja ekle:** `karakter-ummu_eymen.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-ummu_eymen.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Ebvâ; Âmine'nin vefatı gösterilmez. Kadın Ümmü Eymen. Akşam, çadır, develer sahnelemedir, kaynakta yok.*
 
@@ -116,10 +116,10 @@ SUBJECT: A desert halt at Abwa seen from the side at a distance: a few camels kn
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
 1. Umm Ayman, an Abyssinian woman, seen from behind in these scenes; wrapped in a long sand-beige cloak with a brown head covering. Pose and place: sitting on the ground in front of the tent, seen strictly from behind.
-2. 3 × kneeling camels Pose and place: beside the tent.
-3. one small low tent of dark woven cloth Pose and place: in the middle.
+2. 3 × kneeling camels. Pose and place: beside the tent.
+3. one small low tent of dark woven cloth. Pose and place: in the middle.
 
-LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them. The only exception: the one small low tent of dark woven cloth listed above, which is drawn.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -156,7 +156,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 6: b05-kapida-teslim
 
-**Bu mesaja ekle:** `karakter-abdulmuttalib.png`, `karakter-ummu_eymen.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`, `karakter-ummu_eymen.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Ümmü Eymen Efendimiz'i Abdülmuttalib'e teslim eder; çocuk görünmez.*
 
@@ -184,7 +184,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 7: b05-kabe-dosek
 
-**Bu mesaja ekle:** `karakter-abdulmuttalib.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 107: Kâbe'nin gölgesinde Abdülmuttalib'in döşeği; oğulları üstüne oturmaz.*
 
@@ -212,7 +212,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 8: b05-dosek-yakin
 
-**Bu mesaja ekle:** `karakter-abdulmuttalib.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 107-108: 'Bırakın oğlumu'. Çocuk çizilmez.*
 
@@ -240,7 +240,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 9: b05-son-gece
 
-**Bu mesaja ekle:** `karakter-abdulmuttalib.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`
 
 *Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 108: Abdülmuttalib'in vefatı. Kızlarından ağıt isteme rivayeti çıkarıldı (Erdem, 2026-11-15).*
 
@@ -267,7 +267,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 10: b05-ebu-talib-kapi
 
-**Bu mesaja ekle:** `karakter-ebu_talib.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-ebu_talib.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Ebû Tâlib; kaynakta görünüş betimi yok, sade. Çocuk görünmez.*
 

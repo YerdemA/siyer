@@ -25,7 +25,7 @@ Format for every image: landscape 3:2. Green-screen images are cut-out layers pl
 
 ## Mesaj 1: b02-ebrehe-taht
 
-**Bu mesaja ekle:** `karakter-ebrehe.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-ebrehe.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok.*
 
@@ -52,7 +52,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 2: b02-ordu-yuruyus
 
-**Bu mesaja ekle:** `karakter-fil.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 31: Habeşliler ve fil. Tek fil (FİL VAK'ASI: kaynakların çoğu tek fil der).*
 
@@ -63,10 +63,10 @@ CAMERA: Wide shot from far away, camera at standing eye level, looking straight 
 
 SUBJECT: The army on the march, seen from the side at a great distance: a long column moving from right to left, with the single elephant at its head on the left.
 
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 44 people in total). Keep every listed colour and feature exactly as written:
+PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count. Keep every listed colour and feature exactly as written:
 1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: at the left end of the column, walking left.
-2. 40 × small Abyssinian soldiers on foot (dark skin, white caps, cream tunics, red cloaks), simple and undetailed Pose and place: walking left in a long single band behind the elephant.
-3. 4 × small mounted soldiers on brown horses, same clothing Pose and place: spaced along the band.
+2. about 40 × small Abyssinian soldiers on foot (dark skin, white caps, cream tunics, red cloaks), simple and undetailed. Pose and place: walking left in a long single band behind the elephant.
+3. about 4 × small mounted soldiers on brown horses, same clothing. Pose and place: spaced along the band.
 
 LAYOUT: The whole column is one long horizontal band across the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the column never rises, curves or recedes toward the top of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -74,14 +74,14 @@ LIGHT: even, neutral daylight from the front-left, soft paper shadows within the
 
 DO NOT DRAW: banners, text, crosses, detailed weapons, ground, mountains, a second elephant.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 44 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
 ## Mesaj 3: b02-fil-coken
 
-**Bu mesaja ekle:** `karakter-fil.png`, `karakter-nufeyl.png`, `karakter-habes_askeri.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`, `karakter-nufeyl.png`, `karakter-habes_askeri.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 35: Nüfeyl filin kulağını tutar; fil çöker. Dövülme gösterilmez.*
 
@@ -110,7 +110,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 4: b02-ordu-dagilan
 
-**Bu mesaja ekle:** `karakter-fil.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Kuşlar ayrı katman.*
 
@@ -121,8 +121,8 @@ CAMERA: Wide shot from far away, camera at standing eye level, looking straight 
 
 SUBJECT: The army breaking apart in panic, seen from the side at a distance: small soldiers running and scattering left and right, some ducking with arms over their heads.
 
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 25 people in total). Keep every listed colour and feature exactly as written:
-1. 25 × small Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), simple and undetailed Pose and place: running in different directions, all on the same ground level.
+PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count. Keep every listed colour and feature exactly as written:
+1. about 25 × small Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), simple and undetailed. Pose and place: running in different directions, all on the same ground level.
 2. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: standing still near the right, side view, calm.
 
 LAYOUT: All figures are in one broad horizontal band in the lower half of the image, feet on roughly the same horizontal line, seen from eye level from the side; nobody is higher in the image than the band. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
@@ -131,7 +131,7 @@ LIGHT: even, neutral daylight from the front-left, soft paper shadows within the
 
 DO NOT DRAW: birds (separate layer), tents, camels, injuries, bodies, blood, a second elephant, view from above.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 25 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
@@ -147,9 +147,9 @@ CAMERA: Wide shot from far away, camera at standing eye level, looking straight 
 
 SUBJECT: The defeated army trudging home at a distance, seen from the side, moving from left to right: small, tired, scattered groups; in the middle, four soldiers carry a covered litter with a person lying under a cloth.
 
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 16 people in total). Keep every listed colour and feature exactly as written:
-1. 12 × small tired Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), heads bowed Pose and place: walking right in three loose groups.
-2. 4 × soldiers of the same look carrying a litter on their shoulders Pose and place: in the middle; the litter is covered with a red cloth, no body or face visible.
+PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count (4 individually listed people). Keep every listed colour and feature exactly as written:
+1. about 12 × small tired Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), heads bowed. Pose and place: walking right in three loose groups.
+2. 4 × soldiers of the same look carrying a litter on their shoulders. Pose and place: in the middle; the litter is covered with a red cloth, no body or face visible.
 
 LAYOUT: All groups walk in one horizontal band in the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the line never rises toward the top of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -157,7 +157,7 @@ LIGHT: even, neutral daylight from the front-left, soft paper shadows within the
 
 DO NOT DRAW: wounds, blood, visible body of the carried person, ground, mountains.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 16 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```

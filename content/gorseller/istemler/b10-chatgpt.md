@@ -34,9 +34,9 @@ CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (
 
 SUBJECT: A pagan festival: a crowd circles a crudely carved stone idol.
 
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 10 people in total). Keep every listed colour and feature exactly as written:
-1. a crudely carved stone idol about the height of a man, roughly hewn, weathered grey-brown stone, only a vague hint of head and shoulders, on a low rough stone base Pose and place: in the centre.
-2. 10 × Meccan men and women in simple 6th-century Arabian clothes, muted colours, the women in head coverings Pose and place: walking in a loose circle around the idol, some in front, some partly behind it.
+PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count. Keep every listed colour and feature exactly as written:
+1. a crudely carved stone idol about the height of a man, roughly hewn, weathered grey-brown stone, only a vague hint of head and shoulders, on a low rough stone base. Pose and place: in the centre.
+2. about 10 × Meccan men and women in simple 6th-century Arabian clothes, muted colours, the women in head coverings. Pose and place: walking in a loose circle around the idol, some in front, some partly behind it.
 
 LAYOUT: Seen from eye level; the crowd's feet are close to one horizontal line in the lower part of the image; the idol's base is on the same line. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
@@ -44,14 +44,14 @@ LIGHT: even, neutral daylight from the front-left, soft paper shadows within the
 
 DO NOT DRAW: blood, animals being slaughtered, fire, inscriptions, ground, buildings.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 10 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
 ## Mesaj 2: b10-dort-kisi
 
-**Bu mesaja ekle:** `karakter-varaka.png`, `karakter-ubeydullah.png`, `karakter-osman_huveyris.png`, `karakter-zeyd_amr.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-varaka.png`, `karakter-ubeydullah.png`, `karakter-osman_huveyris.png`, `karakter-zeyd_amr.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Varaka, Ubeydullah b. Cahş, Osman b. Hüveyris, Zeyd b. Amr (İbn Hişâm s. 143). Kaynakta görünüş yok; belirgin özellik uydurulmaz.*
 
@@ -81,7 +81,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 3: b10-dort-kisi-yakin
 
-**Bu mesaja ekle:** `karakter-varaka.png`, `karakter-ubeydullah.png`, `karakter-osman_huveyris.png`, `karakter-zeyd_amr.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-varaka.png`, `karakter-ubeydullah.png`, `karakter-osman_huveyris.png`, `karakter-zeyd_amr.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; s03'teki dört kişiyle aynı kıyafet ve yaşlar korunmalı (aynı sohbette üret).*
 
@@ -135,7 +135,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 5: b10-zeyd-dua
 
-**Bu mesaja ekle:** `karakter-zeyd_amr.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-zeyd_amr.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Buhârî 3827: Zeyd ellerini kaldırıp dua eder. Yaş ve görünüş kaynakta yok.*
 
@@ -173,7 +173,7 @@ SUBJECT: A section of an ancient plain wall of rough, dark grey stone blocks lai
 
 PEOPLE: none. No people, animals, hands or figures of any kind.
 
-LAYOUT: The wall section touches the top, right and bottom edges of the image; the left half is flat chroma green (#00B140). Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: The wall section touches the top, right and bottom edges of the image; the left half is flat chroma green (#00B140). Draw only the object: no ground, cast shadow, people, hands or background; perfectly flat, uniform chroma green (#00B140) everywhere else, no green tint on the object.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
@@ -186,7 +186,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 7: b10-zeyd-yasli
 
-**Bu mesaja ekle:** `karakter-zeyd_amr_yasli.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-zeyd_amr_yasli.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 144 'şeyh kebîr' (yaşlı); Buhârî 3828 sırtını Kâbe'ye dayamış. Başka görünüş ayrıntısı yok.*
 
@@ -213,7 +213,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 8: b10-zeyd-sofra
 
-**Bu mesaja ekle:** `karakter-zeyd_amr.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-zeyd_amr.png`
 
 *Kontrol: yeşil perde; nesne kenarlara değmemeli; Onun gözünden. Zeyd yalnız konuşur; sofrayı kimin kime sunduğu ve kimin yemediği rivayetlerde farklı olduğu için jest yok.*
 

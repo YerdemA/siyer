@@ -5,7 +5,8 @@
       "ad": "Abdülmuttalib",
       "en": "Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals.",
       "kaynak": "İbn Hişâm s. 34: yakışıklı, heybetli. TDV ABDÜLMUTTALİB: 82 yaşında öldü (577) → Fil Vakası (570-571) sırasında ~75; yaşlılık bundan çıkarıldı.",
-      "secim": "Sakal biçimi ve rengi (gri-beyaz, yumruk boyu), kıyafet renkleri. b02'deki dört görseldeki görünüşe göre sabitlendi."
+      "secim": "Sakal biçimi ve rengi (gri-beyaz, yumruk boyu), kıyafet renkleri. b02'deki dört görseldeki görünüşe göre sabitlendi.",
+      "referans_dosya": "referans/karakter-abdulmuttalib.png (kırpıldı: b02-hunata-abdulmuttalib)"
     },
     "ebrehe": {
       "ad": "Ebrehe",
@@ -18,13 +19,15 @@
       "en": "Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals.",
       "kaynak": "TDV ABDULLAH: ~18 yaşında evlendi ve öldü. Temsil kuralı 3: yüz yok.",
       "secim": "Kıyafet renkleri (b03 görsellerine göre).",
-      "yuzsuz": true
+      "yuzsuz": true,
+      "referans_dosya": "referans/karakter-abdullah.png (kırpıldı: b03-vehb-kapi)"
     },
     "vehb": {
       "ad": "Vehb b. Abdümenâf",
       "en": "Wahb ibn Abd Manaf, chief of the Banu Zuhra: a dignified man of about 55 with a short, neat dark-brown beard with a little grey; an off-white head cloth with a dark brown cord band; a cream tunic and a long brown cloak without a coloured border.",
       "kaynak": "TDV ÂMİNE: Benî Zühre reisi. Görünüş kaynakta yok.",
-      "secim": "Yaş, sakal, kıyafet."
+      "secim": "Yaş, sakal, kıyafet.",
+      "referans_dosya": "referans/karakter-vehb.png (kırpıldı: b03-vehb-kapi)"
     },
     "amine": {
       "ad": "Hz. Âmine",
@@ -49,7 +52,7 @@
     "ummu_eymen": {
       "ad": "Ümmü Eymen",
       "en": "Umm Ayman, an Abyssinian woman, seen from behind in these scenes; wrapped in a long sand-beige cloak with a brown head covering.",
-      "kaynak": "TDV ÜMMÜ EYMEN: Habeş asıllı.",
+      "kaynak": "TDV ÜMMÜ EYMEN: Habeş asıllı (not defterinden; yerel metin yok, doğrulama bekliyor).",
       "secim": "Kıyafet renkleri; bu bölümlerde arkadan.",
       "yuzsuz": true
     },
@@ -63,25 +66,29 @@
       "ad": "Hunâta el-Himyerî",
       "en": "Hunata, a Himyarite envoy from Yemen: a man of about 45 with a short black beard; a dark-red head wrap tied as a turban; a cream tunic and a long dark-red cloak.",
       "kaynak": "İbn Hişâm s. 34: Himyerli elçi. Görünüş kaynakta yok.",
-      "secim": "b02-hunata-abdulmuttalib'e göre."
+      "secim": "b02-hunata-abdulmuttalib'e göre.",
+      "referans_sayfasi": false
     },
     "nufeyl": {
       "ad": "Nüfeyl b. Habîb",
       "en": "Nufayl ibn Habib of Khath'am, the army's guide: an Arab man of about 45 with a short dark beard; an off-white head cloth wrapped loosely without a cord; a cream tunic and a red cloak with a narrow white edge.",
       "kaynak": "İbn Hişâm s. 31-32, 35; TDV FİL VAK'ASI: Has'am reisi, kılavuz. Görünüş kaynakta yok.",
-      "secim": "b02-esirler'deki kılavuza göre."
+      "secim": "b02-esirler'deki kılavuza göre.",
+      "referans_dosya": "referans/karakter-nufeyl.png (kırpıldı: b02-esirler)"
     },
     "zu_nefer": {
       "ad": "Zû Nefer",
       "en": "Dhu Nafar, a Yemeni nobleman held captive: a man of about 50 with a short greying beard; a white head cloth with a dark cord; a beige tunic and a brown cloak; hands bound in front of him with a simple rope.",
       "kaynak": "İbn Hişâm s. 31: esir. Görünüş kaynakta yok.",
-      "secim": "b02-esirler'e göre."
+      "secim": "b02-esirler'e göre.",
+      "referans_sayfasi": false
     },
     "habes_askeri": {
       "ad": "Habeşli asker",
       "en": "Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses.",
       "kaynak": "Habeşli ordu (İbn Hişâm s. 31). Donanım kaynakta yok.",
-      "secim": "b02'deki askerlere göre sabitlendi; deri yelek ve mızrak kaynakta yok, Erdem onayı gerek."
+      "secim": "b02'deki askerlere göre sabitlendi; deri yelek ve mızrak kaynakta yok, Erdem onayı gerek.",
+      "referans_dosya": "referans/karakter-habes_askeri.png (kırpıldı: b02-esirler)"
     },
     "kureysli": {
       "ad": "Kureyşli erkek (genel)",
@@ -102,7 +109,8 @@
       "en": "Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant.",
       "kaynak": "TDV FİL VAK'ASI: Mahmûd adlı fil; kaynakların çoğu tek fil der.",
       "secim": "Örtü rengi (b02-fil-coken'e göre). Renk kaynakta yok.",
-      "hayvan": true
+      "hayvan": true,
+      "referans_dosya": "referans/karakter-fil.png (kırpıldı: b02-fil-coken)"
     },
     "kuslar": {
       "ad": "Ebâbîl kuşları",
@@ -114,7 +122,7 @@
     "varaka": {
       "ad": "Varaka b. Nevfel",
       "en": "Waraqa ibn Nawfal, a man of about 60 with a long grey beard; an off-white head cloth with a dark cord; a cream tunic and a long dark-grey cloak.",
-      "kaynak": "İbn Hişâm s. 143 (dört kişiden biri). TDV VARAKA: ilk vahiyde âmâ ve ihtiyar (605'ten sonra; bu sahnede görme belirtilmez).",
+      "kaynak": "İbn Hişâm s. 143 (dört kişiden biri). TDV VARAKA: ilk vahiyde âmâ ve ihtiyar (not defterinden; yerel metin yok, doğrulama bekliyor). Bu sahnede görme belirtilmez.",
       "secim": "Yaş ve kıyafet."
     },
     "ubeydullah": {
