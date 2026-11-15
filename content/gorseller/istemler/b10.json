@@ -121,36 +121,97 @@
       "tur": 2,
       "dosya": "b10-put-bayrami.webp",
       "katman": "put-bayrami",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b10-s03"
       ],
-      "istem": "Mid shot of a pagan festival in an open dusty place in a bare rocky valley: in the center a crudely carved stone idol, roughly hewn, weathered grey-brown stone, with only a vague hint of a head and shoulders, no inscriptions, not oversized. A crowd of men and women in simple 6th-century Arabian clothes walks in a circle around it; simple dignified faces in the same paper cut-out style. No blood, no animal being slaughtered, no fire. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 143: Kureyş'in yılda bir bayram yaptığı, etrafında döndüğü taş put; adı verilmiyor. Put kaba yontulmuş taş (GORSEL_USLUP). Kan ve kesim yok."
+      "not": "İbn Hişâm s. 143: Kureyş'in yılda bir bayram yaptığı, etrafında döndüğü taş put; adı verilmiyor. Put kaba yontulmuş taş (GORSEL_USLUP). Kan ve kesim yok.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "A pagan festival: a crowd circles a crudely carved stone idol.",
+      "kisiler": [
+        {
+          "tarif": "a crudely carved stone idol about the height of a man, roughly hewn, weathered grey-brown stone, only a vague hint of head and shoulders, on a low rough stone base",
+          "hayvan": true,
+          "poz": "in the centre."
+        },
+        {
+          "tarif": "Meccan men and women in simple 6th-century Arabian clothes, muted colours, the women in head coverings",
+          "sayi": 10,
+          "poz": "walking in a loose circle around the idol, some in front, some partly behind it."
+        }
+      ],
+      "yerlesim": "Seen from eye level; the crowd's feet are close to one horizontal line in the lower part of the image; the idol's base is on the same line.",
+      "yasak": "blood, animals being slaughtered, fire, inscriptions, ground, buildings.",
+      "eski_istem": "Mid shot of a pagan festival in an open dusty place in a bare rocky valley: in the center a crudely carved stone idol, roughly hewn, weathered grey-brown stone, with only a vague hint of a head and shoulders, no inscriptions, not oversized. A crowd of men and women in simple 6th-century Arabian clothes walks in a circle around it; simple dignified faces in the same paper cut-out style. No blood, no animal being slaughtered, no fire. {yesil_perde_eki}"
     },
     {
       "id": "b10-dort-kisi",
       "tur": 2,
       "dosya": "b10-dort-kisi.webp",
       "katman": "dort-kisi",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b10-s03"
       ],
-      "istem": "Four Arab men of Mecca in simple 6th-century clothes and head cloths, of different ages, walking quietly away together, seen from the side, glancing back over their shoulders; serious, thoughtful faces drawn simply. {yesil_perde_eki}",
-      "not": "Varaka, Ubeydullah b. Cahş, Osman b. Hüveyris, Zeyd b. Amr (İbn Hişâm s. 143). Kaynakta görünüş yok; belirgin özellik uydurulmaz."
+      "not": "Varaka, Ubeydullah b. Cahş, Osman b. Hüveyris, Zeyd b. Amr (İbn Hişâm s. 143). Kaynakta görünüş yok; belirgin özellik uydurulmaz.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Four men walk quietly away together from left to right, seen from the side, glancing back over their shoulders; serious, thoughtful faces.",
+      "kisiler": [
+        {
+          "karakter": "varaka",
+          "poz": "first in the row."
+        },
+        {
+          "karakter": "ubeydullah",
+          "poz": "second."
+        },
+        {
+          "karakter": "osman_huveyris",
+          "poz": "third."
+        },
+        {
+          "karakter": "zeyd_amr",
+          "poz": "last, glancing back."
+        }
+      ],
+      "yasak": "ground, buildings, idols.",
+      "eski_istem": "Four Arab men of Mecca in simple 6th-century clothes and head cloths, of different ages, walking quietly away together, seen from the side, glancing back over their shoulders; serious, thoughtful faces drawn simply. {yesil_perde_eki}"
     },
     {
       "id": "b10-dort-kisi-yakin",
       "tur": 2,
       "dosya": "b10-dort-kisi-yakin.webp",
       "katman": "dort-kisi-yakin",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b10-s04"
       ],
-      "istem": "Close shot of four Arab men in simple 6th-century clothes and head cloths, standing close together between mudbrick house walls at dusk, heads leaned toward each other, talking in low voices; serious, thoughtful faces drawn simply, no exaggerated expressions. {yesil_perde_eki}",
-      "not": "s03'teki dört kişiyle aynı kıyafet ve yaşlar korunmalı (aynı sohbette üret)."
+      "not": "s03'teki dört kişiyle aynı kıyafet ve yaşlar korunmalı (aynı sohbette üret).",
+      "tip": "figur",
+      "cekim": "yakin",
+      "konu": "The same four men stand close together, heads leaned toward each other, talking in low voices; serious, thoughtful faces, no exaggerated expressions.",
+      "kisiler": [
+        {
+          "karakter": "varaka",
+          "poz": "far left."
+        },
+        {
+          "karakter": "ubeydullah",
+          "poz": "second from left."
+        },
+        {
+          "karakter": "osman_huveyris",
+          "poz": "second from right."
+        },
+        {
+          "karakter": "zeyd_amr",
+          "poz": "far right."
+        }
+      ],
+      "yasak": "walls, houses, background.",
+      "eski_istem": "Close shot of four Arab men in simple 6th-century clothes and head cloths, standing close together between mudbrick house walls at dusk, heads leaned toward each other, talking in low voices; serious, thoughtful faces drawn simply, no exaggerated expressions. {yesil_perde_eki}"
     },
     {
       "id": "b10-sam-arazi",
@@ -161,8 +222,13 @@
       "sahneler": [
         "b10-s05"
       ],
-      "istem": "Wide landscape layer: an open plain with low rolling hills and a dirt road crossing it, a few scattered low shrubs; flatter and less rocky than the steep bare mountains of Mecca. No buildings, no people. Fills the lower two thirds of the frame; everything above the horizon is flat chroma green (#00B140), so the separate sky layer shows through. No green tint on the landscape.",
-      "not": "Şam yolu; arazi ayrıntısı kaynakta yok, belirgin bitki ve yapı çizilmez. Ufkun üstü yeşil perde."
+      "not": "Şam yolu; arazi ayrıntısı kaynakta yok, belirgin bitki ve yapı çizilmez. Ufkun üstü yeşil perde.",
+      "tip": "zemin",
+      "cekim": "uzak",
+      "ufuk": 0.4,
+      "konu": "An open plain near Syria with low rolling hills along the horizon and a dirt road crossing it, a few scattered low shrubs; flatter and less rocky than the steep bare mountains of Mecca.",
+      "yasak": "buildings, people, crosses.",
+      "eski_istem": "Wide landscape layer: an open plain with low rolling hills and a dirt road crossing it, a few scattered low shrubs; flatter and less rocky than the steep bare mountains of Mecca. No buildings, no people. Fills the lower two thirds of the frame; everything above the horizon is flat chroma green (#00B140), so the separate sky layer shows through. No green tint on the landscape."
     },
     {
       "id": "b10-zeyd-dua",
@@ -173,20 +239,35 @@
       "sahneler": [
         "b10-s05"
       ],
-      "istem": "An Arab man of Mecca in simple travel clothes with a small shoulder bag, standing outdoors in open country and raising both open hands toward the sky in prayer; calm, resolute face drawn simply, no distinctive features. Full figure, slightly from the side. {yesil_perde_eki}",
-      "not": "Buhârî 3827: Zeyd ellerini kaldırıp dua eder. Yaş ve görünüş kaynakta yok."
+      "not": "Buhârî 3827: Zeyd ellerini kaldırıp dua eder. Yaş ve görünüş kaynakta yok.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Zayd stands in open country and raises both open hands toward the sky in prayer, calm and resolute.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr",
+          "poz": "standing in the centre, slightly from the side, a small travel bag over his shoulder."
+        }
+      ],
+      "yasak": "ground, buildings.",
+      "eski_istem": "An Arab man of Mecca in simple travel clothes with a small shoulder bag, standing outdoors in open country and raising both open hands toward the sky in prayer; calm, resolute face drawn simply, no distinctive features. Full figure, slightly from the side. {yesil_perde_eki}"
     },
     {
       "id": "b10-kabe-duvar",
       "tur": 2,
       "dosya": "b10-kabe-duvar.webp",
       "katman": "kabe-duvar",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b10-s06"
       ],
-      "istem": "Close view of a section of an ancient plain stone wall filling the right half of the frame from top to bottom; no cloth covering, no door, no inscriptions, no gold. {yesil_perde_eki}",
-      "not": "Kâbe duvarının bir parçası; malzeme, yükseklik ve örtü belirtilmez (anın tarihi kaynakta yok)."
+      "not": "Kâbe duvarının bir parçası; malzeme, yükseklik ve örtü belirtilmez (anın tarihi kaynakta yok).",
+      "tip": "nesne",
+      "cekim": "orta",
+      "konu": "A section of an ancient plain wall of rough, dark grey stone blocks laid in rows, filling the right half of the image from top to bottom edge.",
+      "yerlesim": "The wall section touches the top, right and bottom edges of the image; the left half is flat chroma green (#00B140).",
+      "yasak": "cloth covering, door, inscriptions, gold, people.",
+      "eski_istem": "Close view of a section of an ancient plain stone wall filling the right half of the frame from top to bottom; no cloth covering, no door, no inscriptions, no gold. {yesil_perde_eki}"
     },
     {
       "id": "b10-zeyd-yasli",
@@ -197,8 +278,18 @@
       "sahneler": [
         "b10-s06"
       ],
-      "istem": "An old Arab man in simple clothes, standing with his back leaning against a stone wall (the wall itself not drawn), one hand raised as he speaks earnestly to people in front of him; dignified, serious face drawn simply, no other distinctive features. Full figure. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 144 'şeyh kebîr' (yaşlı); Buhârî 3828 sırtını Kâbe'ye dayamış. Başka görünüş ayrıntısı yok."
+      "not": "İbn Hişâm s. 144 'şeyh kebîr' (yaşlı); Buhârî 3828 sırtını Kâbe'ye dayamış. Başka görünüş ayrıntısı yok.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Old Zayd stands with his back leaning against a wall (the wall itself not drawn), one hand raised as he speaks earnestly.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr_yasli",
+          "poz": "standing in the centre, back slightly leaning, facing the viewer."
+        }
+      ],
+      "yasak": "wall, ground, other people.",
+      "eski_istem": "An old Arab man in simple clothes, standing with his back leaning against a stone wall (the wall itself not drawn), one hand raised as he speaks earnestly to people in front of him; dignified, serious face drawn simply, no other distinctive features. Full figure. {yesil_perde_eki}"
     },
     {
       "id": "b10-zeyd-sofra",
@@ -209,32 +300,52 @@
       "sahneler": [
         "b10-s07"
       ],
-      "istem": "Seen from the viewpoint of someone sitting on the ground: an Arab man in simple clothes sits cross-legged on the far side of a leather eating mat, facing the viewer and speaking calmly; hands resting, no pushing-away or refusing gesture; face drawn simply, no distinctive features. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
-      "not": "Onun gözünden. Zeyd yalnız konuşur; sofrayı kimin kime sunduğu ve kimin yemediği rivayetlerde farklı olduğu için jest yok."
+      "not": "Onun gözünden. Zeyd yalnız konuşur; sofrayı kimin kime sunduğu ve kimin yemediği rivayetlerde farklı olduğu için jest yok.",
+      "tip": "figur",
+      "cekim": "bakis",
+      "konu": "Seen by someone sitting on the ground: Zayd sits cross-legged on the far side of a round leather eating mat, facing the viewer and speaking calmly; hands resting on his knees.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr",
+          "poz": "sitting cross-legged in the centre, facing the viewer."
+        }
+      ],
+      "yerlesim": "He sits on the same level as the viewer's eyes; the image is cut at his waist at the bottom edge; flat green space above his head and on both sides.",
+      "yasak": "the eating mat (separate layer), pushing-away or refusing gesture, the viewer's hands, arms, feet or body.",
+      "eski_istem": "Seen from the viewpoint of someone sitting on the ground: an Arab man in simple clothes sits cross-legged on the far side of a leather eating mat, facing the viewer and speaking calmly; hands resting, no pushing-away or refusing gesture; face drawn simply, no distinctive features. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}"
     },
     {
       "id": "b10-sofra",
       "tur": 2,
       "dosya": "b10-sofra.webp",
       "katman": "sofra",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b10-s07"
       ],
-      "istem": "A round leather eating mat spread on the ground, seen from slightly above, with a simple covered wooden bowl on it; contents not visible. No hands. {yesil_perde_eki}",
-      "not": "Ön plan; içi gösterilmez (et ayrıntısı yalnız bir rivayette). ayar.gorsel ile yerleştirilecek."
+      "not": "Ön plan; içi gösterilmez (et ayrıntısı yalnız bir rivayette). ayar.gorsel ile yerleştirilecek.",
+      "tip": "nesne",
+      "cekim": "bakis",
+      "konu": "A round leather eating mat spread flat, seen from a sitting person's eye level, with a simple covered wooden bowl on it; contents not visible.",
+      "yasak": "hands, people, ground around the mat.",
+      "eski_istem": "A round leather eating mat spread on the ground, seen from slightly above, with a simple covered wooden bowl on it; contents not visible. No hands. {yesil_perde_eki}"
     },
     {
       "id": "b10-vadi-tas",
       "tur": 2,
       "dosya": "b10-vadi-tas.webp",
       "katman": "vadi-tas",
-      "isleme": "perde",
+      "isleme": "opak",
       "sahneler": [
         "b10-s10"
       ],
-      "istem": "Eye-level view at dawn of a quiet corner in Mecca near mudbrick houses: a single plain, medium-sized stone standing by itself next to a wall. No people, no face or features on the stone, no glow, no light rays. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}",
-      "not": "Müslim 2277: Mekke'de bir taş. Vadi/patika yok (o ayrıntı İbn Hişâm rivayetinde, dipnotta). Parıltı kesinlikle yok."
+      "not": "Müslim 2277: Mekke'de bir taş. Vadi/patika yok (o ayrıntı İbn Hişâm rivayetinde, dipnotta). Parıltı kesinlikle yok.",
+      "tip": "mekan",
+      "cekim": "bakis",
+      "konu": "Dawn, a quiet corner in Mecca: a single plain, medium-sized stone standing by itself next to a mudbrick wall.",
+      "isik": "LIGHT: soft early dawn, cool blue-grey shadows and a faint apricot sky; no glow, no light rays.",
+      "yasak": "people, face or features on the stone, glow, light rays, the viewer's hands, arms, feet or body.",
+      "eski_istem": "Eye-level view at dawn of a quiet corner in Mecca near mudbrick houses: a single plain, medium-sized stone standing by itself next to a wall. No people, no face or features on the stone, no glow, no light rays. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}"
     }
   ],
   "uretimler": [

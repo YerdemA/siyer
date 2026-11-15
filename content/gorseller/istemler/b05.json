@@ -34,80 +34,172 @@
         "b05-s04",
         "b05-s06"
       ],
-      "istem": "Wide desert ground layer: flat sandy and stony plain with a faint caravan track, a few low dry bushes, low bare hills at the edges. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140).",
-      "not": "Mekke-Yesrib yolu; ortak zemin."
+      "not": "Mekke-Yesrib yolu; ortak zemin.",
+      "tip": "zemin",
+      "cekim": "uzak",
+      "ufuk": 0.45,
+      "konu": "Desert road toward Yathrib: flat sandy and stony plain with a faint caravan track running across it from left to right, a few low dry bushes, low bare hills along the horizon.",
+      "yasak": "people, animals, buildings.",
+      "eski_istem": "Wide desert ground layer: flat sandy and stony plain with a faint caravan track, a few low dry bushes, low bare hills at the edges. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140)."
     },
     {
       "id": "b05-kervan",
       "tur": 1,
       "dosya": "b05-kervan.webp",
       "katman": "kervan",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s02"
       ],
-      "istem": "A small caravan of a few camels seen from a distance and from behind; among the travellers are two figures, each a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible. No child visible. {yesil_perde_eki}",
-      "not": "Âmine ve Ümmü Eymen; ikisi de arkadan. Çocuk görünmez."
+      "not": "Âmine ve Ümmü Eymen; ikisi de arkadan. Çocuk görünmez.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A small caravan seen from the side at a distance, moving from left to right; Amina and Umm Ayman ride among the travellers.",
+      "kisiler": [
+        {
+          "karakter": "amine",
+          "poz": "riding the second camel, seen strictly from behind-right, no face."
+        },
+        {
+          "karakter": "ummu_eymen",
+          "poz": "riding the third camel, seen strictly from behind-right, no face."
+        },
+        {
+          "tarif": "small travellers in off-white head cloths and brown cloaks",
+          "sayi": 2,
+          "poz": "walking beside the camels."
+        },
+        {
+          "tarif": "camels with saddles and bundles",
+          "sayi": 4,
+          "hayvan": true,
+          "poz": "in one file walking right."
+        }
+      ],
+      "yerlesim": "One horizontal file in the lower half of the image, feet on the same horizontal line, seen from the side.",
+      "yasak": "child, ground.",
+      "eski_istem": "A small caravan of a few camels seen from a distance and from behind; among the travellers are two figures, each a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible. No child visible. {yesil_perde_eki}"
     },
     {
       "id": "b05-yesrib-uzak",
       "tur": 1,
       "dosya": "b05-yesrib-uzak.webp",
       "katman": "yesrib",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s03"
       ],
-      "istem": "A distant settlement of low, flat-roofed mudbrick houses spread across a flat plain, seen from far away, undetailed. No people. {yesil_perde_eki}",
-      "not": "Yesrib; kaynakta görünüş betimi yok, uzak ve ayrıntısız."
+      "not": "Yesrib; kaynakta görünüş betimi yok, uzak ve ayrıntısız.",
+      "tip": "nesne",
+      "cekim": "uzak",
+      "konu": "A distant settlement of low, flat-roofed mudbrick houses and a few palm trees spread along a flat plain, seen from eye level, undetailed.",
+      "yerlesim": "The settlement is one long, low horizontal band in the lower part of the image, its base a straight horizontal line.",
+      "yasak": "people, minarets, domes, ground in front.",
+      "eski_istem": "A distant settlement of low, flat-roofed mudbrick houses spread across a flat plain, seen from far away, undetailed. No people. {yesil_perde_eki}"
     },
     {
       "id": "b05-ebva-konak",
       "tur": 1,
       "dosya": "b05-ebva-konak.webp",
       "katman": "ebva-konak",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s04"
       ],
-      "istem": "A desert halt at dusk seen from far away: a few camels kneeling, one small low tent; in front of the tent sits a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible, alone. No body, no burial, no grave. {yesil_perde_eki}",
-      "not": "Ebvâ; Âmine'nin vefatı gösterilmez. Kadın Ümmü Eymen. Akşam, çadır, develer sahnelemedir, kaynakta yok."
+      "not": "Ebvâ; Âmine'nin vefatı gösterilmez. Kadın Ümmü Eymen. Akşam, çadır, develer sahnelemedir, kaynakta yok.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A desert halt at Abwa seen from the side at a distance: a few camels kneeling, one small low tent; Umm Ayman sits alone in front of the tent.",
+      "kisiler": [
+        {
+          "karakter": "ummu_eymen",
+          "poz": "sitting on the ground in front of the tent, seen strictly from behind."
+        },
+        {
+          "tarif": "kneeling camels",
+          "sayi": 3,
+          "hayvan": true,
+          "poz": "beside the tent."
+        },
+        {
+          "tarif": "one small low tent of dark woven cloth",
+          "hayvan": true,
+          "poz": "in the middle."
+        }
+      ],
+      "yasak": "body, burial, grave, child, ground.",
+      "eski_istem": "A desert halt at dusk seen from far away: a few camels kneeling, one small low tent; in front of the tent sits a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible, alone. No body, no burial, no grave. {yesil_perde_eki}"
     },
     {
       "id": "b05-ebva-kabir",
       "tur": 1,
       "dosya": "b05-ebva-kabir.webp",
       "katman": "kabir",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s06"
       ],
-      "istem": "This scene is set in 628 CE. Seen at eye level from a standing person's point of view: a low, simple mound of earth on the plain. No hands, arms or body in the frame, no light, no glow, no inscription, no building. {yesil_perde_eki}",
-      "not": "Resûlullah'ın gözünden kabir ziyareti (Müslim 976b; EBVÂ). Kabir sade."
+      "not": "Resûlullah'ın gözünden kabir ziyareti (Müslim 976b; EBVÂ). Kabir sade.",
+      "tip": "nesne",
+      "cekim": "bakis",
+      "konu": "This scene is set in 628 CE. A low, simple mound of earth, edged with a few plain stones, seen at eye level from a few steps away.",
+      "yasak": "hands, arms, feet or body of the viewer, light, glow, inscription, building, ground around the mound.",
+      "eski_istem": "This scene is set in 628 CE. Seen at eye level from a standing person's point of view: a low, simple mound of earth on the plain. No hands, arms or body in the frame, no light, no glow, no inscription, no building. {yesil_perde_eki}"
     },
     {
       "id": "b05-kapida-teslim",
       "tur": 1,
       "dosya": "b05-kapida-teslim.webp",
       "katman": "teslim",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s05"
       ],
-      "istem": "At the doorway of a modest mudbrick house in Mecca: the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, standing in the doorway, face drawn simply and calm; walking toward him, a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible. No child visible. {yesil_perde_eki}",
-      "not": "Ümmü Eymen Efendimiz'i Abdülmuttalib'e teslim eder; çocuk görünmez."
+      "not": "Ümmü Eymen Efendimiz'i Abdülmuttalib'e teslim eder; çocuk görünmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Umm Ayman walks toward Abdul-Muttalib, who stands waiting calmly.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing at the right, facing left, calm."
+        },
+        {
+          "karakter": "ummu_eymen",
+          "poz": "walking toward him from the left, seen strictly from behind."
+        }
+      ],
+      "yasak": "child, door, house, ground.",
+      "eski_istem": "At the doorway of a modest mudbrick house in Mecca: the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, standing in the doorway, face drawn simply and calm; walking toward him, a woman fully wrapped in a cloak and head covering, seen from behind so that no face is visible. No child visible. {yesil_perde_eki}"
     },
     {
       "id": "b05-kabe-dosek",
       "tur": 1,
       "dosya": "b05-kabe-dosek.webp",
       "katman": "dosek",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s07"
       ],
-      "istem": "In the shade of a low stone wall: a plain flat mat spread on the ground; the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth sits on it; around the mat, on the bare ground and not on the mat, sit several Quraysh men (his sons), faces drawn simply. No child. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 107: Kâbe'nin gölgesinde Abdülmuttalib'in döşeği; oğulları üstüne oturmaz."
+      "not": "İbn Hişâm s. 107: Kâbe'nin gölgesinde Abdülmuttalib'in döşeği; oğulları üstüne oturmaz.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abdul-Muttalib sits on his own plain flat mat; his sons sit on the bare ground around it, never on the mat.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "sitting cross-legged on the mat in the centre."
+        },
+        {
+          "karakter": "abdulmuttalib_ogullari",
+          "sayi": 4,
+          "poz": "sitting cross-legged on the ground, two at the left and two at the right, off the mat."
+        }
+      ],
+      "yerlesim": "The plain flat mat lies at the bottom centre, seen from eye level; everyone sits at the same ground level.",
+      "yasak": "child, wall, Kaaba, ground other than the mat.",
+      "eski_istem": "In the shade of a low stone wall: a plain flat mat spread on the ground; the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth sits on it; around the mat, on the bare ground and not on the mat, sit several Quraysh men (his sons), faces drawn simply. No child. {yesil_perde_eki}",
+      "izin": "the plain flat mat under Abdul-Muttalib, which is drawn."
     },
     {
       "id": "b05-dosek-yakin",
@@ -118,8 +210,25 @@
       "sahneler": [
         "b05-s08"
       ],
-      "istem": "Closer view: the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, seated on a plain flat mat, raising one hand to stop two men in front of him; the two men pause and look at him. No child, no light, no glow. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 107-108: 'Bırakın oğlumu'. Çocuk çizilmez."
+      "not": "İbn Hişâm s. 107-108: 'Bırakın oğlumu'. Çocuk çizilmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abdul-Muttalib, seated on his mat, raises one open hand to stop two of his sons, who pause and look at him.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "sitting cross-legged on the mat at the right, one hand raised palm outward."
+        },
+        {
+          "karakter": "abdulmuttalib_ogullari",
+          "sayi": 2,
+          "poz": "standing at the left, half-turned toward him, paused mid-step."
+        }
+      ],
+      "yerlesim": "The plain flat mat lies at the bottom right, seen from eye level; the standing men's feet are on the same ground level as the mat.",
+      "yasak": "child, light, glow, ground other than the mat.",
+      "eski_istem": "Closer view: the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth, seated on a plain flat mat, raising one hand to stop two men in front of him; the two men pause and look at him. No child, no light, no glow. {yesil_perde_eki}",
+      "izin": "the plain flat mat under Abdul-Muttalib, which is drawn."
     },
     {
       "id": "b05-son-gece",
@@ -130,20 +239,41 @@
       "sahneler": [
         "b05-s09"
       ],
-      "istem": "Interior of a simple mudbrick room at night lit only by a small, dim orange oil lamp: an Arab man lying on a bed, his face in shadow. Calm and quiet. Full frame.",
-      "not": "İbn Hişâm s. 108: Abdülmuttalib'in vefatı. Kızlarından ağıt isteme rivayeti çıkarıldı (Erdem, 2026-11-15)."
+      "not": "İbn Hişâm s. 108: Abdülmuttalib'in vefatı. Kızlarından ağıt isteme rivayeti çıkarıldı (Erdem, 2026-11-15).",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Interior of a simple mudbrick room at night: Abdul-Muttalib lies on a low bed under a blanket, eyes closed, calm.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "lying on his back on the bed, head on a cushion at the left; his white-grey beard visible, face calm, partly in shadow."
+        }
+      ],
+      "isik": "LIGHT: night interior lit only by one small dim orange oil lamp; deep soft shadows; no golden-white glow, no halo.",
+      "yasak": "other people, women, child, glow.",
+      "eski_istem": "Interior of a simple mudbrick room at night lit only by a small, dim orange oil lamp: an Arab man lying on a bed, his face in shadow. Calm and quiet. Full frame."
     },
     {
       "id": "b05-ebu-talib-kapi",
       "tur": 1,
       "dosya": "b05-ebu-talib-kapi.webp",
       "katman": "ebu-talib",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b05-s10"
       ],
-      "istem": "In front of a modest mudbrick house in Mecca at dusk: an Arab man of Quraysh in simple clothes standing by the door, face drawn simply and calm. No child visible. {yesil_perde_eki}",
-      "not": "Ebû Tâlib; kaynakta görünüş betimi yok, sade. Çocuk görünmez."
+      "not": "Ebû Tâlib; kaynakta görünüş betimi yok, sade. Çocuk görünmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abu Talib stands calmly, waiting.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "standing in the centre, facing slightly left."
+        }
+      ],
+      "yasak": "child, door, house, ground.",
+      "eski_istem": "In front of a modest mudbrick house in Mecca at dusk: an Arab man of Quraysh in simple clothes standing by the door, face drawn simply and calm. No child visible. {yesil_perde_eki}"
     }
   ],
   "uretimler": []

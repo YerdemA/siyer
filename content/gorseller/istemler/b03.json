@@ -23,27 +23,68 @@
   "istemler": [
     {
       "id": "b03-on-ogul",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b03-on-ogul.webp",
       "katman": "on-ogul",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b03-s02"
       ],
-      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing and speaking to ten grown sons, all adult men who stand in a loose half-circle before him, listening; faces drawn simply, no distinctive features. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok."
+      "not": "İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abdul-Muttalib stands and speaks to his ten grown sons, who stand before him in a shallow arc, listening.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing at the far left, facing right, one hand slightly raised as he speaks."
+        },
+        {
+          "karakter": "abdulmuttalib_ogullari",
+          "sayi": 9,
+          "poz": "standing in two shallow rows to the right, facing him; faces drawn simply."
+        },
+        {
+          "karakter": "abdullah",
+          "poz": "standing among the front row, seen strictly from behind (his back to the viewer)."
+        }
+      ],
+      "yerlesim": "Two shallow rows side by side, the back row only slightly behind the front row; all feet near the same horizontal line in the lower part of the image; everyone complete from head to feet.",
+      "yasak": "ground, buildings, Kaaba, idols, knives.",
+      "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing and speaking to ten grown sons, all adult men who stand in a loose half-circle before him, listening; faces drawn simply, no distinctive features. {yesil_perde_eki}",
+      "yeniden_neden": "Abdülmuttalib kara sakallı çizilmişti (kaynak: ~75 yaşında)."
     },
     {
       "id": "b03-kureys-itiraz",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b03-kureys-itiraz.webp",
       "katman": "kureys-itiraz",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b03-s03"
       ],
-      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth; around them a group of men of Quraysh raising their hands in protest, urging him to stop; faces of the men drawn simply. No knife, no weapon, no idol, no blood. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan)."
+      "not": "İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan).",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Men of Quraysh have risen from their gatherings and surround Abdul-Muttalib and his young son, raising their open hands in protest and urging him to stop.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing left of centre, facing right, calm and grave."
+        },
+        {
+          "karakter": "abdullah",
+          "poz": "standing just right of his father, seen strictly from behind."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 5,
+          "poz": "standing to the right in a row, facing left, open palms raised toward Abdul-Muttalib."
+        }
+      ],
+      "yasak": "knife, weapon, idol, blood, ground, buildings, Kaaba.",
+      "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth; around them a group of men of Quraysh raising their hands in protest, urging him to stop; faces of the men drawn simply. No knife, no weapon, no idol, no blood. {yesil_perde_eki}",
+      "yeniden_neden": "Abdülmuttalib kara sakallı çizilmişti."
     },
     {
       "id": "b03-hayber-kafile",
@@ -59,27 +100,68 @@
     },
     {
       "id": "b03-yuz-deve",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b03-yuz-deve.webp",
       "katman": "yuz-deve",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b03-s05"
       ],
-      "istem": "A great many camels gathered in rows in an open space, seen from far away; at the edge, a handsome, imposing Arab man of Quraysh in a simple head cloth standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth. No slaughter, no blood, no knives. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez."
+      "not": "İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A great herd of camels gathered on open ground, seen from the side at a distance; at the left edge Abdul-Muttalib and his young son stand looking at the herd.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing at the far left, facing right, small but clearly recognisable."
+        },
+        {
+          "karakter": "abdullah",
+          "poz": "standing beside him, seen strictly from behind."
+        },
+        {
+          "tarif": "camels of sandy and light-brown colours, standing and kneeling, without saddles or loads",
+          "sayi": 30,
+          "hayvan": true,
+          "poz": "filling the band to the right."
+        }
+      ],
+      "yerlesim": "Seen from eye level from the side: the herd forms a broad horizontal band across the lower half of the image, all feet near the same horizontal line; the two men are at the same ground level as the nearest camels.",
+      "yasak": "slaughter, blood, knives, saddles, ground, buildings, Kaaba.",
+      "eski_istem": "A great many camels gathered in rows in an open space, seen from far away; at the edge, a handsome, imposing Arab man of Quraysh in a simple head cloth standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth. No slaughter, no blood, no knives. {yesil_perde_eki}",
+      "yeniden_neden": "Abdülmuttalib kara sakallıydı; develer kuşbakışı dizildi."
     },
     {
       "id": "b03-vehb-kapi",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b03-vehb-kapi.webp",
       "katman": "vehb-kapi",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b03-s06"
       ],
-      "istem": "At the doorway of a simple mudbrick house at dusk: a handsome, imposing Arab man of Quraysh in a simple head cloth and a young Arab man seen only from behind (no face visible), in simple clothes and head cloth, standing before another dignified Arab man (the host). No women in the frame. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz."
+      "not": "İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abdul-Muttalib and his young son stand before Wahb, the host, who greets them with an open hand.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing at the left, facing right."
+        },
+        {
+          "karakter": "abdullah",
+          "poz": "standing next to him, seen strictly from behind."
+        },
+        {
+          "karakter": "vehb",
+          "poz": "standing at the right, facing left, one open hand raised in welcome."
+        }
+      ],
+      "yasak": "women, door, wall, house, ground.",
+      "eski_istem": "At the doorway of a simple mudbrick house at dusk: a handsome, imposing Arab man of Quraysh in a simple head cloth and a young Arab man seen only from behind (no face visible), in simple clothes and head cloth, standing before another dignified Arab man (the host). No women in the frame. {yesil_perde_eki}",
+      "yeniden_neden": "Abdülmuttalib kara sakallıydı. Kapı/ev artık ayrı katman (mekke-evler)."
     },
     {
       "id": "b03-ev-ici-gece",
@@ -107,15 +189,34 @@
     },
     {
       "id": "b03-kervan-uzak",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b03-kervan-uzak.webp",
       "katman": "kervan",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b03-s08"
       ],
-      "istem": "A small trading caravan of camels and a few travellers moving away toward the horizon, seen from far behind; all figures small, seen from behind, no faces. {yesil_perde_eki}",
-      "not": "ABDULLAH s. 76: Şam'a ticaret yolculuğu. Abdullah ayrıca belirtilmez."
+      "not": "ABDULLAH s. 76: Şam'a ticaret yolculuğu. Abdullah ayrıca belirtilmez.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A small trading caravan seen from the side at a great distance, moving from left to right: a few loaded camels led by travellers on foot.",
+      "kisiler": [
+        {
+          "tarif": "small travellers in off-white head cloths and brown cloaks, undetailed",
+          "sayi": 3,
+          "poz": "walking right beside the camels."
+        },
+        {
+          "tarif": "loaded camels with bundles and saddle bags",
+          "sayi": 5,
+          "hayvan": true,
+          "poz": "in a single file walking right."
+        }
+      ],
+      "yerlesim": "The caravan is one horizontal file in the lower half of the image, all feet on the same horizontal line, seen exactly from the side; it never rises toward the top of the image.",
+      "yasak": "ground, road, mountains.",
+      "eski_istem": "A small trading caravan of camels and a few travellers moving away toward the horizon, seen from far behind; all figures small, seen from behind, no faces. {yesil_perde_eki}",
+      "yeniden_neden": "Kervan havada süzülüyordu."
     },
     {
       "id": "b03-yesrib-mezar",

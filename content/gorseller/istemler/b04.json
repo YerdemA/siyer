@@ -24,12 +24,30 @@
       "tur": 1,
       "dosya": "b04-bedevi-kafile.webp",
       "katman": "bedevi-kafile",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s01"
       ],
-      "istem": "A small caravan of Bedouin women on donkeys arriving from far away, seen at a great distance; figures tiny and undetailed. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 103-104: Sa'doğulları kadınları süt çocuğu aramaya gelir."
+      "not": "İbn Hişâm s. 103-104: Sa'doğulları kadınları süt çocuğu aramaya gelir.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A small caravan of Bedouin women on donkeys arriving from far away, seen from the side, moving from right to left.",
+      "kisiler": [
+        {
+          "tarif": "tiny Bedouin women wrapped in dark cloaks and black head coverings, faces not visible at this distance",
+          "sayi": 6,
+          "poz": "each riding a grey donkey, in one file."
+        },
+        {
+          "tarif": "grey donkeys",
+          "sayi": 6,
+          "hayvan": true,
+          "poz": "in one horizontal file walking left."
+        }
+      ],
+      "yerlesim": "One horizontal file in the lower half of the image, feet on the same horizontal line, seen from the side.",
+      "yasak": "ground, tents, babies.",
+      "eski_istem": "A small caravan of Bedouin women on donkeys arriving from far away, seen at a great distance; figures tiny and undetailed. {yesil_perde_eki}"
     },
     {
       "id": "b04-sad-yurdu",
@@ -43,105 +61,235 @@
         "b04-s07",
         "b04-s08"
       ],
-      "istem": "Wide dry steppe ground layer: barren, stony, sparse yellowed grass and a few low thorn bushes, gentle low hills. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140).",
-      "not": "İbn Hişâm s. 105: Sa'doğulları'nın yurdu en kurak topraklardandı. Ortak zemin."
+      "not": "İbn Hişâm s. 105: Sa'doğulları'nın yurdu en kurak topraklardandı. Ortak zemin.",
+      "tip": "zemin",
+      "cekim": "uzak",
+      "ufuk": 0.42,
+      "konu": "Dry steppe of the Banu Sa'd: barren, stony ground with sparse yellowed grass and a few low thorn bushes, gentle low hills along the horizon.",
+      "yasak": "people, animals, tents, buildings, trees.",
+      "eski_istem": "Wide dry steppe ground layer: barren, stony, sparse yellowed grass and a few low thorn bushes, gentle low hills. No people, no buildings. Fills the lower half of the frame; everything above is flat chroma green (#00B140)."
     },
     {
       "id": "b04-halime-yolda",
       "tur": 1,
       "dosya": "b04-halime-yolda.webp",
       "katman": "halime-yolda",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s02"
       ],
-      "istem": "Seen from behind at a distance: a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, riding a thin grey she-donkey; beside her an Arab man in simple clothes; next to them a thin, old she-camel; further ahead, a small group of other women on donkeys. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 104: boz merkep, yaşlı dişi deve. Halîme yüzsüz."
+      "not": "İbn Hişâm s. 104: boz merkep, yaşlı dişi deve. Halîme yüzsüz.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "Halima and her husband travelling toward Mecca, seen from the side at a distance, moving from right to left.",
+      "kisiler": [
+        {
+          "karakter": "halime",
+          "poz": "riding a thin grey she-donkey, seen from behind-left so her face is not visible."
+        },
+        {
+          "karakter": "haris",
+          "poz": "walking beside the donkey, leading an old she-camel."
+        },
+        {
+          "tarif": "a thin, old, bony she-camel",
+          "hayvan": true,
+          "poz": "behind them."
+        },
+        {
+          "tarif": "a thin grey she-donkey",
+          "hayvan": true,
+          "poz": "carrying Halima."
+        }
+      ],
+      "yasak": "baby, ground, other women.",
+      "eski_istem": "Seen from behind at a distance: a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, riding a thin grey she-donkey; beside her an Arab man in simple clothes; next to them a thin, old she-camel; further ahead, a small group of other women on donkeys. {yesil_perde_eki}"
     },
     {
       "id": "b04-halime-mekke",
       "tur": 1,
       "dosya": "b04-halime-mekke.webp",
       "katman": "halime-mekke",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s03"
       ],
-      "istem": "Between mudbrick houses: several Bedouin women walking away, seen from behind, each carrying a swaddled baby; in the middle, left behind, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, standing and talking with an Arab man (her husband), whose face is drawn simply. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 104. Diğer kadınların taşıdığı bebekler sıradan bebeklerdir; Efendimiz çizilmez."
+      "not": "İbn Hişâm s. 104. Diğer kadınların taşıdığı bebekler sıradan bebeklerdir; Efendimiz çizilmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Bedouin women walk away carrying babies; Halima, left behind, stands talking with her husband.",
+      "kisiler": [
+        {
+          "tarif": "Bedouin women wrapped in dark cloaks and black head coverings, seen strictly from behind, each carrying a swaddled baby",
+          "sayi": 3,
+          "poz": "walking away at the right."
+        },
+        {
+          "karakter": "halime",
+          "poz": "standing left of centre, seen strictly from behind."
+        },
+        {
+          "karakter": "haris",
+          "poz": "standing facing her and the viewer at the left, face drawn simply."
+        }
+      ],
+      "yasak": "houses, walls, ground; the babies show no face detail.",
+      "eski_istem": "Between mudbrick houses: several Bedouin women walking away, seen from behind, each carrying a swaddled baby; in the middle, left behind, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible, standing and talking with an Arab man (her husband), whose face is drawn simply. {yesil_perde_eki}"
     },
     {
       "id": "b04-deve-sagma",
       "tur": 1,
       "dosya": "b04-deve-sagma.webp",
       "katman": "deve-sagma",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s04"
       ],
-      "istem": "At night, at a resting place near Mecca: an old she-camel kneeling, an Arab man kneeling beside it, milking it; his face drawn simply; behind them in the shadow, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. No tent, no baby visible. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 104: deve Mekke'de, konakladıkları yerde sağıldı. Çadır ve duygu ayrıntısı yok; Halîme yüzsüz; çocuk görünmez."
+      "not": "İbn Hişâm s. 104: deve Mekke'de, konakladıkları yerde sağıldı. Çadır ve duygu ayrıntısı yok; Halîme yüzsüz; çocuk görünmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Night halt: al-Harith kneels beside the old she-camel and milks it into a wooden bowl; Halima stands behind them.",
+      "kisiler": [
+        {
+          "karakter": "haris",
+          "poz": "kneeling on one knee at the camel's side, both hands at the udder, a wooden bowl on the ground under it."
+        },
+        {
+          "tarif": "the same thin, old she-camel, kneeling",
+          "hayvan": true,
+          "poz": "in the centre, side view facing left."
+        },
+        {
+          "karakter": "halime",
+          "poz": "standing behind them at the right, seen strictly from behind."
+        }
+      ],
+      "yasak": "tent, baby, ground.",
+      "eski_istem": "At night, at a resting place near Mecca: an old she-camel kneeling, an Arab man kneeling beside it, milking it; his face drawn simply; behind them in the shadow, a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. No tent, no baby visible. {yesil_perde_eki}"
     },
     {
       "id": "b04-sad-cadirlar",
       "tur": 1,
       "dosya": "b04-sad-cadirlar.webp",
       "katman": "sad-cadirlar",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s05",
         "b04-s08"
       ],
-      "istem": "A few low, simple Bedouin tents of dark woven cloth on a dry plain, seen from a distance; no people. {yesil_perde_eki}",
-      "not": "Çadır biçimi kaynakta yok; sade."
+      "not": "Çadır biçimi kaynakta yok; sade.",
+      "tip": "nesne",
+      "cekim": "uzak",
+      "konu": "Three low, simple Bedouin tents of dark woven goat-hair cloth, side by side, seen from eye level at a distance.",
+      "yerlesim": "The tents stand side by side on one horizontal base line in the lower part of the image.",
+      "yasak": "people, animals, ground.",
+      "eski_istem": "A few low, simple Bedouin tents of dark woven cloth on a dry plain, seen from a distance; no people. {yesil_perde_eki}"
     },
     {
       "id": "b04-koyunlar",
       "tur": 1,
       "dosya": "b04-koyunlar.webp",
       "katman": "koyunlar",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s05"
       ],
-      "istem": "A flock of sheep and goats coming down a gentle slope at dusk, seen from far away, with one small, undetailed shepherd figure behind them. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 105: Halîme'nin koyunları tok döner."
+      "not": "İbn Hişâm s. 105: Halîme'nin koyunları tok döner.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A flock of sheep and goats walking home at the end of the day, seen from the side at a distance, moving from right to left, with one small shepherd behind them.",
+      "kisiler": [
+        {
+          "tarif": "a small, undetailed shepherd boy of about 14 in a plain undyed tunic",
+          "poz": "walking behind the flock at the right, holding a stick."
+        },
+        {
+          "tarif": "well-fed sheep and goats, cream, brown and black",
+          "sayi": 20,
+          "hayvan": true,
+          "poz": "in a loose horizontal band."
+        }
+      ],
+      "yerlesim": "The flock forms one horizontal band in the lower part of the image, feet on the same horizontal line, seen from the side.",
+      "yasak": "ground, slope, tents, small children.",
+      "eski_istem": "A flock of sheep and goats coming down a gentle slope at dusk, seen from far away, with one small, undetailed shepherd figure behind them. {yesil_perde_eki}"
     },
     {
       "id": "b04-iki-anne-kapi",
       "tur": 1,
       "dosya": "b04-iki-anne-kapi.webp",
       "katman": "iki-anne",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s06"
       ],
-      "istem": "At the doorway of a modest mudbrick house in Mecca: two women talking, both fully veiled in cloaks and head coverings, one seen from behind and the other in the shadow of the doorway, no faces visible. No child visible. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 105: Halîme Âmine'den izin ister. İki kadın da yüzsüz."
+      "not": "İbn Hişâm s. 105: Halîme Âmine'den izin ister. İki kadın da yüzsüz.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Halima and Amina stand facing each other and talk.",
+      "kisiler": [
+        {
+          "karakter": "halime",
+          "poz": "standing at the left, seen strictly from behind."
+        },
+        {
+          "karakter": "amine",
+          "poz": "standing at the right, facing Halima, her face completely hidden in deep shadow under her head covering."
+        }
+      ],
+      "yasak": "child, door, house, wall, ground.",
+      "eski_istem": "At the doorway of a modest mudbrick house in Mecca: two women talking, both fully veiled in cloaks and head coverings, one seen from behind and the other in the shadow of the doorway, no faces visible. No child visible. {yesil_perde_eki}"
     },
     {
       "id": "b04-kuzular-yamac",
       "tur": 1,
       "dosya": "b04-kuzular-yamac.webp",
       "katman": "kuzular",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s07"
       ],
-      "istem": "A wide, quiet hillside of dry steppe with a few lambs grazing. No people, no children, no figures at all. Calm, empty. No light rays, no glow, no angels. {yesil_perde_eki}",
-      "not": "Şakk-ı sadr sahnesi: olay gösterilmez; çocuk çizilmez (çocuk Efendimiz sanılmasın)."
+      "not": "Şakk-ı sadr sahnesi: olay gösterilmez; çocuk çizilmez (çocuk Efendimiz sanılmasın).",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "A few lambs grazing quietly, seen from the side at a distance.",
+      "kisiler": [
+        {
+          "tarif": "small cream-white lambs",
+          "sayi": 5,
+          "hayvan": true,
+          "poz": "grazing in a loose horizontal row."
+        }
+      ],
+      "yasak": "people, children, figures, light rays, glow, angels, ground.",
+      "eski_istem": "A wide, quiet hillside of dry steppe with a few lambs grazing. No people, no children, no figures at all. Calm, empty. No light rays, no glow, no angels. {yesil_perde_eki}"
     },
     {
       "id": "b04-kosan-cocuklar",
       "tur": 1,
       "dosya": "b04-kosan-cocuklar.webp",
       "katman": "kosan-cocuklar",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b04-s08"
       ],
-      "istem": "Several small Bedouin boys running toward tents, seen from behind; in front of a tent stands a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. {yesil_perde_eki}",
-      "not": "Müslim 162c: çocuklar süt annesine koşar. Efendimiz çizilmez."
+      "not": "Müslim 162c: çocuklar süt annesine koşar. Efendimiz çizilmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Several small Bedouin boys run toward Halima, who stands waiting.",
+      "kisiler": [
+        {
+          "tarif": "Bedouin boys aged 5 to 8 in plain undyed tunics, seen strictly from behind, running away from the viewer",
+          "sayi": 3,
+          "poz": "at the left, running right."
+        },
+        {
+          "karakter": "halime",
+          "poz": "standing at the right, seen strictly from behind."
+        }
+      ],
+      "yasak": "tent, ground, any boy facing the viewer.",
+      "eski_istem": "Several small Bedouin boys running toward tents, seen from behind; in front of a tent stands a woman fully wrapped in a cloak and head covering, seen from behind or in shadow so that no face is visible. {yesil_perde_eki}"
     },
     {
       "id": "b04-ev-ici-aksam",
@@ -152,8 +300,23 @@
       "sahneler": [
         "b04-s10"
       ],
-      "istem": "Interior of a simple mudbrick room: two women sitting facing each other on the floor, both fully veiled, in deep shadow, no faces visible. No child. Full frame.",
-      "not": "İbn Hişâm s. 105-106: Halîme Âmine'ye olanı anlatır. İki kadın yüzsüz."
+      "not": "İbn Hişâm s. 105-106: Halîme Âmine'ye olanı anlatır. İki kadın yüzsüz.",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Interior of a simple mudbrick room in the evening, lit by one small dim orange oil lamp on the floor: Halima and Amina sit on the floor facing each other.",
+      "kisiler": [
+        {
+          "karakter": "halime",
+          "poz": "sitting at the left, seen strictly from behind."
+        },
+        {
+          "karakter": "amine",
+          "poz": "sitting at the right, her face completely hidden in deep shadow."
+        }
+      ],
+      "isik": "LIGHT: evening interior, one small dim orange oil lamp; deep soft shadows; no golden-white glow, no halo.",
+      "yasak": "child, glow, windows with light rays.",
+      "eski_istem": "Interior of a simple mudbrick room: two women sitting facing each other on the floor, both fully veiled, in deep shadow, no faces visible. No child. Full frame."
     },
     {
       "id": "b04-abdulmuttalib-dua",
@@ -164,8 +327,18 @@
       "sahneler": [
         "b04-s09"
       ],
-      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing with his back to the viewer, hands raised in prayer. Full figure. No child, no light, no glow. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 106-107: Abdülmuttalib Kâbe'nin yanında dua eder. Arkadan."
+      "not": "İbn Hişâm s. 106-107: Abdülmuttalib Kâbe'nin yanında dua eder. Arkadan.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abdul-Muttalib stands praying with both hands raised to shoulder height, palms open.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "seen from behind and slightly to the side, so a little of his white-grey beard shows at the cheek."
+        }
+      ],
+      "yasak": "child, light, glow, Kaaba, ground.",
+      "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing with his back to the viewer, hands raised in prayer. Full figure. No child, no light, no glow. {yesil_perde_eki}"
     }
   ],
   "uretimler": []

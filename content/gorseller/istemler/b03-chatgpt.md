@@ -20,125 +20,147 @@ Style: Flat-shape illustration for a documentary motion comic in a paper cut-out
 
 Strict rules for every image: No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.
 
-Format for every image: landscape 3:2. Edges will be cropped: about 15% at the top, 15% at the bottom and 8% on each side. Keep every important element (people, faces, hands, key objects) well inside that central area; a single isolated object must sit fully inside the frame with empty margin around it. Generate exactly one image per message. Do not reply with text beyond one short line. Reply 'Ready' now; I will send the scenes one by one.
+Format for every image: landscape 3:2. Green-screen images are cut-out layers placed later over separate sky, mountain, ground and building layers: draw only what the message lists, complete and with green margin around it, and never draw any background, ground or shadow on them. Full-frame images will be cropped about 15% at the top and bottom and 8% on each side, so keep important elements inside that central area. Each message describes every person exactly (age, beard, clothing colours); the same named person must look identical in every image of this chat. Before outputting, always count people, arms, hands and legs and fix any error. Generate exactly one image per message. Do not reply with text beyond one short line. Reply 'Ready' now; I will send the scenes one by one.
 ```
 
 ## Mesaj 1: b03-on-ogul
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok.*
+**Bu mesaja ekle:** `karakter-abdulmuttalib.png`, `karakter-abdullah.png`
+
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 97: oğulları onu koruyacak yaşa gelmiştir (hepsi yetişkin). Görünüş kaynakta yok.*
 
 ```text
-Scene b03-on-ogul. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A handsome, imposing Arab man of Quraysh in a simple head cloth, standing and speaking to ten grown sons, all adult men who stand in a loose half-circle before him, listening; faces drawn simply, no distinctive features. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
+Scene b03-on-ogul. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Abdul-Muttalib stands and speaks to his ten grown sons, who stand before him in a shallow arc, listening.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 11 people in total). Keep every listed colour and feature exactly as written:
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: standing at the far left, facing right, one hand slightly raised as he speaks.
+2. 9 × the sons of Abdul-Muttalib: grown men aged roughly 20 to 50, all clearly younger than their father; mixed beard lengths, all beards black or dark brown except the eldest with a little grey; off-white or sand head cloths and plain cloaks in muted brown, grey-blue and ochre. Pose and place: standing in two shallow rows to the right, facing him; faces drawn simply.
+3. Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals. Pose and place: standing among the front row, seen strictly from behind (his back to the viewer).
+
+LAYOUT: Two shallow rows side by side, the back row only slightly behind the front row; all feet near the same horizontal line in the lower part of the image; everyone complete from head to feet. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+
+LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+
+DO NOT DRAW: ground, buildings, Kaaba, idols, knives.
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 11 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
 ## Mesaj 2: b03-kureys-itiraz
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan).*
+**Bu mesaja ekle:** `karakter-abdulmuttalib.png`, `karakter-abdullah.png`
+
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 98: Kureyş toplantı yerlerinden kalkıp onu durdurur. Abdullah yüzsüz (arkadan).*
 
 ```text
-Scene b03-kureys-itiraz. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A handsome, imposing Arab man of Quraysh in a simple head cloth, standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth; around them a group of men of Quraysh raising their hands in protest, urging him to stop; faces of the men drawn simply. No knife, no weapon, no idol, no blood. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
+Scene b03-kureys-itiraz. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Men of Quraysh have risen from their gatherings and surround Abdul-Muttalib and his young son, raising their open hands in protest and urging him to stop.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 7 people in total). Keep every listed colour and feature exactly as written:
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: standing left of centre, facing right, calm and grave.
+2. Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals. Pose and place: standing just right of his father, seen strictly from behind.
+3. 5 × men of Quraysh: Arab men of mixed ages in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool; no bright colours, no jewellery. Pose and place: standing to the right in a row, facing left, open palms raised toward Abdul-Muttalib.
+
+LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+
+LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+
+DO NOT DRAW: knife, weapon, idol, blood, ground, buildings, Kaaba.
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 7 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 3: b03-hayber-kafile
+## Mesaj 3: b03-yuz-deve
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 98-99: Hayber'e danışmaya giderler. Kadın gösterilmez.*
+**Bu mesaja ekle:** `karakter-abdulmuttalib.png`, `karakter-abdullah.png`
+
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez.*
 
 ```text
-Scene b03-hayber-kafile. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A small caravan of a few men on camels travelling across a desert plain, seen from far away; riders small and undetailed. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
+Scene b03-yuz-deve. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
+
+SUBJECT: A great herd of camels gathered on open ground, seen from the side at a distance; at the left edge Abdul-Muttalib and his young son stand looking at the herd.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: standing at the far left, facing right, small but clearly recognisable.
+2. Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals. Pose and place: standing beside him, seen strictly from behind.
+3. 30 × camels of sandy and light-brown colours, standing and kneeling, without saddles or loads Pose and place: filling the band to the right.
+
+LAYOUT: Seen from eye level from the side: the herd forms a broad horizontal band across the lower half of the image, all feet near the same horizontal line; the two men are at the same ground level as the nearest camels. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+
+LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+
+DO NOT DRAW: slaughter, blood, knives, saddles, ground, buildings, Kaaba.
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 2 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 4: b03-yuz-deve
+## Mesaj 4: b03-vehb-kapi
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 99-100: yüz deve. Kesim gösterilmez.*
+**Bu mesaja ekle:** `karakter-abdulmuttalib.png`, `karakter-abdullah.png`, `karakter-vehb.png`
+
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz.*
 
 ```text
-Scene b03-yuz-deve. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A great many camels gathered in rows in an open space, seen from far away; at the edge, a handsome, imposing Arab man of Quraysh in a simple head cloth standing beside a young Arab man seen only from behind (no face visible), in simple clothes and head cloth. No slaughter, no blood, no knives. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
+Scene b03-vehb-kapi. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Abdul-Muttalib and his young son stand before Wahb, the host, who greets them with an open hand.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 3 people in total). Keep every listed colour and feature exactly as written:
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: standing at the left, facing right.
+2. Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals. Pose and place: standing next to him, seen strictly from behind.
+3. Wahb ibn Abd Manaf, chief of the Banu Zuhra: a dignified man of about 55 with a short, neat dark-brown beard with a little grey; an off-white head cloth with a dark brown cord band; a cream tunic and a long brown cloak without a coloured border. Pose and place: standing at the right, facing left, one open hand raised in welcome.
+
+LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+
+LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+
+DO NOT DRAW: women, door, wall, house, ground.
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 3 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 5: b03-vehb-kapi
+## Mesaj 5: b03-kervan-uzak
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 100. Âmine kadrajda yok; Abdullah yüzsüz.*
-
-```text
-Scene b03-vehb-kapi. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. At the doorway of a simple mudbrick house at dusk: a handsome, imposing Arab man of Quraysh in a simple head cloth and a young Arab man seen only from behind (no face visible), in simple clothes and head cloth, standing before another dignified Arab man (the host). No women in the frame. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 6: b03-ev-ici-gece
-
-*Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 102: rüya. Nur/parıltı çizilmez; Âmine yüzsüz.*
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; ABDULLAH s. 76: Şam'a ticaret yolculuğu. Abdullah ayrıca belirtilmez.*
 
 ```text
-Scene b03-ev-ici-gece. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. Interior of a simple mudbrick room at night, lit only by pale moonlight from a small window; on a bedding on the floor lies a woman fully wrapped in a cloak and head covering, seen from behind or in deep shadow so that no face is visible, asleep, seen from behind under a blanket. No glow, no light rays, no golden-white light. Full frame.
+Scene b03-kervan-uzak. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
 
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
-```
+CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
-## Mesaj 7: b03-kervan-yolu
+SUBJECT: A small trading caravan seen from the side at a great distance, moving from left to right: a few loaded camels led by travellers on foot.
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; Ortak zemin.*
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 3 people in total). Keep every listed colour and feature exactly as written:
+1. 3 × small travellers in off-white head cloths and brown cloaks, undetailed Pose and place: walking right beside the camels.
+2. 5 × loaded camels with bundles and saddle bags Pose and place: in a single file walking right.
 
-```text
-Scene b03-kervan-yolu. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. Wide desert ground layer at dusk: a long caravan track running north across sand and gravel toward the horizon, low rocky hills. No people. Fills the lower half of the frame; everything above is flat chroma green (#00B140).
+LAYOUT: The caravan is one horizontal file in the lower half of the image, all feet on the same horizontal line, seen exactly from the side; it never rises toward the top of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
 
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
+LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
-## Mesaj 8: b03-kervan-uzak
+DO NOT DRAW: ground, road, mountains.
 
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; ABDULLAH s. 76: Şam'a ticaret yolculuğu. Abdullah ayrıca belirtilmez.*
-
-```text
-Scene b03-kervan-uzak. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A small trading caravan of camels and a few travellers moving away toward the horizon, seen from far behind; all figures small, seen from behind, no faces. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 9: b03-yesrib-mezar
-
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; ABDULLAH s. 76: bir evin avlusuna defnedildi. Yazı yok.*
-
-```text
-Scene b03-yesrib-mezar. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. At night, the inner courtyard of a simple mudbrick house, seen from a distance; in the courtyard a single plain, low grave mound. No people, no writing, no glow. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 10: b03-dogum-evi
-
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; Doğum sabahı; olağanüstü ışık çizilmez (dipnottaki rivayet). İnsan yok.*
-
-```text
-Scene b03-dogum-evi. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. In daylight, the outside of a modest mudbrick house among other houses in a narrow street of Mecca, its wooden door slightly ajar, the gap showing ordinary soft daylight. No people, no glow, no light rays, no golden-white light. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
-```
-
-## Mesaj 11: b03-abdulmuttalib-kapi
-
-*Kontrol: yeşil perde, zemin düz yeşil olmalı; İbn Hişâm s. 103: 'geldi ve ona baktı'. Acele/sevinç gibi nitelikler kaynakta yok; Âmine kadrajda yok.*
-
-```text
-Scene b03-abdulmuttalib-kapi. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A handsome, imposing Arab man of Quraysh in a simple head cloth standing at the door of a modest house in daylight, about to look in; calm face drawn simply. No women visible, no baby visible. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 12: b03-abdulmuttalib-kabe
-
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 103: onu alıp Kâbe'ye girer. Abdülmuttalib arkadan; kucağındaki görünmez, nur kullanılmaz. Üretimde bebek/bohça görünürse kullanılmaz.*
-
-```text
-Scene b03-abdulmuttalib-kabe. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. A handsome, imposing Arab man of Quraysh in a simple head cloth seen fully from behind, stepping through the dark doorway of a low, roofless ancient stone sanctuary; his arms are in front of him and hidden by his body, so nothing he carries is visible. No baby, no bundle, no light, no glow. Full figure. Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 3 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```

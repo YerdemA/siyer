@@ -1,0 +1,145 @@
+{
+  "aciklama": "Tekrar eden kişi, hayvan ve nesnelerin sabit görünüş kartları. Her istemde ilgili kartın `en` metni harfiyen kullanılır (tools/istem_devir.py). `kaynak`: görünüşün dayandığı yer. `secim`: kaynakta olmayıp yalnız görseller arası tutarlılık için sabitlenen ayrıntılar; Erdem onaylayınca kesinleşir. Kaynakla çelişen bir görsel ya da kartla uyuşmayan bir görsel kabul edilmez.",
+  "karakterler": {
+    "abdulmuttalib": {
+      "ad": "Abdülmuttalib",
+      "en": "Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals.",
+      "kaynak": "İbn Hişâm s. 34: yakışıklı, heybetli. TDV ABDÜLMUTTALİB: 82 yaşında öldü (577) → Fil Vakası (570-571) sırasında ~75; yaşlılık bundan çıkarıldı.",
+      "secim": "Sakal biçimi ve rengi (gri-beyaz, yumruk boyu), kıyafet renkleri. b02'deki dört görseldeki görünüşe göre sabitlendi."
+    },
+    "ebrehe": {
+      "ad": "Ebrehe",
+      "en": "Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a split scar running vertically through his upper lip and the tip of his nose; short, tightly curled black hair and a short, close-cropped curly black beard streaked with grey; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a narrow golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin.",
+      "kaynak": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: el-Eşrem (yüzü yarık). TDV EBREHE: dudağı veya burnu yarıldı; 525'te Eryât'ın ordusundaydı → 570'te en az ~60 yaşında. Habeşli.",
+      "secim": "Saç, sakal biçimi, kıyafet renkleri (b02'deki görüşme ve Sakîf görsellerine göre). Yaşın gri sakalla gösterilmesi Erdem kararı bekliyor."
+    },
+    "abdullah": {
+      "ad": "Abdullah (Efendimiz'in babası)",
+      "en": "Abdullah, a slim young Arab man of about 18, ALWAYS seen strictly from behind (back of the head and back only, no face, no profile, no cheek); a plain off-white head cloth held by a dark brown cord band; a plain light sand-grey knee-length tunic with a brown belt; brown sandals.",
+      "kaynak": "TDV ABDULLAH: ~18 yaşında evlendi ve öldü. Temsil kuralı 3: yüz yok.",
+      "secim": "Kıyafet renkleri (b03 görsellerine göre).",
+      "yuzsuz": true
+    },
+    "vehb": {
+      "ad": "Vehb b. Abdümenâf",
+      "en": "Wahb ibn Abd Manaf, chief of the Banu Zuhra: a dignified man of about 55 with a short, neat dark-brown beard with a little grey; an off-white head cloth with a dark brown cord band; a cream tunic and a long brown cloak without a coloured border.",
+      "kaynak": "TDV ÂMİNE: Benî Zühre reisi. Görünüş kaynakta yok.",
+      "secim": "Yaş, sakal, kıyafet."
+    },
+    "amine": {
+      "ad": "Hz. Âmine",
+      "en": "Amina, a woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long deep indigo-blue cloak with a sand-coloured head covering that hides her hair and the sides of her face.",
+      "kaynak": "Temsil kuralı 3: yüz yok. Görünüş kaynakta yok.",
+      "secim": "Kıyafet renkleri.",
+      "yuzsuz": true
+    },
+    "halime": {
+      "ad": "Halîme",
+      "en": "Halima, a Bedouin woman ALWAYS seen from behind or completely in shadow, face never visible; wrapped in a long dark brown woven cloak with a black head covering.",
+      "kaynak": "Temsil kuralı 3: yüz yok. Görünüş kaynakta yok.",
+      "secim": "Kıyafet renkleri.",
+      "yuzsuz": true
+    },
+    "haris": {
+      "ad": "Hâris b. Abdüluzzâ (Halîme'nin kocası)",
+      "en": "Al-Harith, Halima's husband, a lean Bedouin man of about 40 with a short black beard; a faded indigo head cloth wrapped loosely without a cord; a plain undyed wool tunic; barefoot or simple sandals.",
+      "kaynak": "TDV HALÎME: Halîme'nin kocası. Görünüş kaynakta yok.",
+      "secim": "Yaş, sakal, kıyafet."
+    },
+    "ummu_eymen": {
+      "ad": "Ümmü Eymen",
+      "en": "Umm Ayman, an Abyssinian woman, seen from behind in these scenes; wrapped in a long sand-beige cloak with a brown head covering.",
+      "kaynak": "TDV ÜMMÜ EYMEN: Habeş asıllı.",
+      "secim": "Kıyafet renkleri; bu bölümlerde arkadan.",
+      "yuzsuz": true
+    },
+    "ebu_talib": {
+      "ad": "Ebû Tâlib",
+      "en": "Abu Talib, a man of about 42 with a full, short black beard; an off-white head cloth with a dark brown cord band; a cream tunic and a long olive-brown cloak with a thin dark border; brown sandals.",
+      "kaynak": "TDV EBÛ TÂLİB: 535 doğumlu → babası öldüğünde (577) ~42. Görünüş kaynakta yok.",
+      "secim": "Sakal, kıyafet."
+    },
+    "hunata": {
+      "ad": "Hunâta el-Himyerî",
+      "en": "Hunata, a Himyarite envoy from Yemen: a man of about 45 with a short black beard; a dark-red head wrap tied as a turban; a cream tunic and a long dark-red cloak.",
+      "kaynak": "İbn Hişâm s. 34: Himyerli elçi. Görünüş kaynakta yok.",
+      "secim": "b02-hunata-abdulmuttalib'e göre."
+    },
+    "nufeyl": {
+      "ad": "Nüfeyl b. Habîb",
+      "en": "Nufayl ibn Habib of Khath'am, the army's guide: an Arab man of about 45 with a short dark beard; an off-white head cloth wrapped loosely without a cord; a cream tunic and a red cloak with a narrow white edge.",
+      "kaynak": "İbn Hişâm s. 31-32, 35; TDV FİL VAK'ASI: Has'am reisi, kılavuz. Görünüş kaynakta yok.",
+      "secim": "b02-esirler'deki kılavuza göre."
+    },
+    "zu_nefer": {
+      "ad": "Zû Nefer",
+      "en": "Dhu Nafar, a Yemeni nobleman held captive: a man of about 50 with a short greying beard; a white head cloth with a dark cord; a beige tunic and a brown cloak; hands bound in front of him with a simple rope.",
+      "kaynak": "İbn Hişâm s. 31: esir. Görünüş kaynakta yok.",
+      "secim": "b02-esirler'e göre."
+    },
+    "habes_askeri": {
+      "ad": "Habeşli asker",
+      "en": "Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses.",
+      "kaynak": "Habeşli ordu (İbn Hişâm s. 31). Donanım kaynakta yok.",
+      "secim": "b02'deki askerlere göre sabitlendi; deri yelek ve mızrak kaynakta yok, Erdem onayı gerek."
+    },
+    "kureysli": {
+      "ad": "Kureyşli erkek (genel)",
+      "en": "men of Quraysh: Arab men of mixed ages in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool; no bright colours, no jewellery.",
+      "kaynak": "Görünüş kaynakta yok.",
+      "secim": "Renk aralığı.",
+      "referans_sayfasi": false
+    },
+    "abdulmuttalib_ogullari": {
+      "ad": "Abdülmuttalib'in oğulları",
+      "en": "the sons of Abdul-Muttalib: grown men aged roughly 20 to 50, all clearly younger than their father; mixed beard lengths, all beards black or dark brown except the eldest with a little grey; off-white or sand head cloths and plain cloaks in muted brown, grey-blue and ochre.",
+      "kaynak": "İbn Hişâm s. 97: hepsi yetişkin (onu koruyacak yaşa geldiler). TDV: Abdullah en küçükleri.",
+      "secim": "Yaş aralığı ve renkler.",
+      "referans_sayfasi": false
+    },
+    "fil": {
+      "ad": "Fil (Mahmûd)",
+      "en": "Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant.",
+      "kaynak": "TDV FİL VAK'ASI: Mahmûd adlı fil; kaynakların çoğu tek fil der.",
+      "secim": "Örtü rengi (b02-fil-coken'e göre). Renk kaynakta yok.",
+      "hayvan": true
+    },
+    "kuslar": {
+      "ad": "Ebâbîl kuşları",
+      "en": "flocks of small swallow-like birds with forked tails: dark brown backs and wings, pale cream bellies, simple paper shapes; each carries a tiny reddish pebble in its beak or claws; no fire, no glow.",
+      "kaynak": "Fîl 105/3-4; İbn Hişâm s. 35: kırlangıç benzeri. TDV FİL VAK'ASI: kırmızı çizgili taş.",
+      "secim": "Kuş rengi kaynakta yok; b02-kuslar'a göre sabitlendi.",
+      "referans_sayfasi": false
+    },
+    "varaka": {
+      "ad": "Varaka b. Nevfel",
+      "en": "Waraqa ibn Nawfal, a man of about 60 with a long grey beard; an off-white head cloth with a dark cord; a cream tunic and a long dark-grey cloak.",
+      "kaynak": "İbn Hişâm s. 143 (dört kişiden biri). TDV VARAKA: ilk vahiyde âmâ ve ihtiyar (605'ten sonra; bu sahnede görme belirtilmez).",
+      "secim": "Yaş ve kıyafet."
+    },
+    "ubeydullah": {
+      "ad": "Ubeydullah b. Cahş",
+      "en": "Ubaydallah ibn Jahsh, a young man of about 25 with a short black beard; a sand-coloured head cloth with a brown cord; a light tunic and an ochre cloak.",
+      "kaynak": "İbn Hişâm s. 143. Görünüş kaynakta yok.",
+      "secim": "Yaş ve kıyafet."
+    },
+    "osman_huveyris": {
+      "ad": "Osman b. Hüveyris",
+      "en": "Uthman ibn al-Huwayrith, a man of about 40 with a medium black beard; a white head cloth with a dark cord; a cream tunic and a grey-blue cloak.",
+      "kaynak": "İbn Hişâm s. 143. Görünüş kaynakta yok.",
+      "secim": "Yaş ve kıyafet."
+    },
+    "zeyd_amr": {
+      "ad": "Zeyd b. Amr b. Nüfeyl",
+      "en": "Zayd ibn Amr, a man of about 50 with a full, medium-length dark beard with grey at the chin; an undyed off-white head cloth without a cord; a plain undyed wool tunic and a simple brown cloak.",
+      "kaynak": "İbn Hişâm s. 143; Buhârî 3827. Yaş kaynakta yok.",
+      "secim": "Yaş ve kıyafet."
+    },
+    "zeyd_amr_yasli": {
+      "ad": "Zeyd b. Amr (yaşlılığında)",
+      "en": "Zayd ibn Amr in old age: an old man of about 70 with a full white beard; the same undyed off-white head cloth without a cord, plain undyed wool tunic and simple brown cloak as in his younger days.",
+      "kaynak": "İbn Hişâm s. 144: şeyh kebîr; Buhârî 3828.",
+      "secim": "Kıyafet zeyd_amr ile aynı."
+    }
+  }
+}

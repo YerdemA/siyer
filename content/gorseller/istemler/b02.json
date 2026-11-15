@@ -34,15 +34,26 @@
     },
     {
       "id": "b02-ebrehe-taht",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b02-ebrehe-taht.webp",
       "katman": "ebrehe-taht",
       "isleme": "sigdir",
       "sahneler": [
         "b02-s01"
       ],
-      "istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), seated on a throne; calm, composed face drawn simply in the flat paper cut-out style. Full figure. No cross, no crown jewels. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok."
+      "not": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abraha seated calmly on a simple, plain wooden throne with a straight back, hands resting on the armrests; calm, composed face.",
+      "kisiler": [
+        {
+          "karakter": "ebrehe",
+          "poz": "seated on the throne in the centre, facing the viewer."
+        }
+      ],
+      "yasak": "animal skins, leopard pattern, crown, jewels, cross, carved ornaments on the throne.",
+      "eski_istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), seated on a throne; calm, composed face drawn simply in the flat paper cut-out style. Full figure. No cross, no crown jewels. {yesil_perde_eki}",
+      "yeniden_neden": "Omzunda pars postu vardı (kartla çelişki); yaş kararı."
     },
     {
       "id": "b02-kilise",
@@ -88,15 +99,38 @@
     },
     {
       "id": "b02-ordu-yuruyus",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b02-ordu-yuruyus.webp",
       "katman": "ordu-yuruyus",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s04"
       ],
-      "istem": "A long marching army column seen from far away and slightly above: many small, simple, undetailed soldier figures on foot and a few on horseback, and at the head of the column a single large elephant. No banners with text, no crosses, no detailed weapons. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 31: Habeşliler ve fil. Tek fil (FİL VAK'ASI: kaynakların çoğu tek fil der)."
+      "not": "İbn Hişâm s. 31: Habeşliler ve fil. Tek fil (FİL VAK'ASI: kaynakların çoğu tek fil der).",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "The army on the march, seen from the side at a great distance: a long column moving from right to left, with the single elephant at its head on the left.",
+      "kisiler": [
+        {
+          "karakter": "fil",
+          "hayvan": true,
+          "poz": "at the left end of the column, walking left."
+        },
+        {
+          "tarif": "small Abyssinian soldiers on foot (dark skin, white caps, cream tunics, red cloaks), simple and undetailed",
+          "sayi": 40,
+          "poz": "walking left in a long single band behind the elephant."
+        },
+        {
+          "tarif": "small mounted soldiers on brown horses, same clothing",
+          "sayi": 4,
+          "poz": "spaced along the band."
+        }
+      ],
+      "yerlesim": "The whole column is one long horizontal band across the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the column never rises, curves or recedes toward the top of the image.",
+      "yasak": "banners, text, crosses, detailed weapons, ground, mountains, a second elephant.",
+      "eski_istem": "A long marching army column seen from far away and slightly above: many small, simple, undetailed soldier figures on foot and a few on horseback, and at the head of the column a single large elephant. No banners with text, no crosses, no detailed weapons. {yesil_perde_eki}",
+      "yeniden_neden": "Kol çapraz biçimde göğe tırmanıyordu."
     },
     {
       "id": "b02-esirler",
@@ -112,15 +146,39 @@
     },
     {
       "id": "b02-sakif-heyet",
-      "tur": 1,
+      "tur": 3,
       "dosya": "b02-sakif-heyet.webp",
       "katman": "sakif-heyet",
       "isleme": "sigdir",
       "sahneler": [
         "b02-s06"
       ],
-      "istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}",
-      "not": "Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi."
+      "not": "Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "A small delegation of Arab men of Ta'if standing before Abraha with heads slightly bowed in submission; one of them stands a little apart, ready to lead the way.",
+      "kisiler": [
+        {
+          "karakter": "ebrehe",
+          "poz": "seated on a simple plain wooden stool at the left, turned to the right."
+        },
+        {
+          "karakter": "habes_askeri",
+          "poz": "standing behind Abraha's left shoulder."
+        },
+        {
+          "tarif": "men of Ta'if: Arab men aged 30 to 60 in off-white head cloths with dark cords, plain tunics and cloaks in muted brown, grey-blue and ochre",
+          "sayi": 3,
+          "poz": "standing side by side in the middle, heads bowed."
+        },
+        {
+          "tarif": "Abu Righal, a lean Arab man of about 40 with a short dark beard, sand-coloured head cloth, brown cloak",
+          "poz": "standing at the right, a little apart, one arm pointing the way."
+        }
+      ],
+      "yasak": "idols, temples, buildings, ground.",
+      "eski_istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}",
+      "yeniden_neden": "Ebrehe yaşı kararına bağlı (kart: ~60, sakalında gri)."
     },
     {
       "id": "b02-develer-surulen",
@@ -161,15 +219,41 @@
     },
     {
       "id": "b02-gorusme",
-      "tur": 1,
+      "tur": 3,
       "dosya": "b02-gorusme.webp",
       "katman": "gorusme",
       "isleme": "sigdir",
       "sahneler": [
         "b02-s09"
       ],
-      "istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), sitting on a carpet beside the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth; the ruler turned respectfully toward the chief; at the side an interpreter and a few undetailed soldiers standing. Faces drawn simply. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 34: Ebrehe tahtından inip halıda Abdülmuttalib'in yanına oturdu; tercüman."
+      "not": "İbn Hişâm s. 34: Ebrehe tahtından inip halıda Abdülmuttalib'in yanına oturdu; tercüman.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Abraha has stepped down from his throne and sits on a large woven carpet beside Abdul-Muttalib, turned respectfully toward him; an interpreter kneels between them; soldiers stand behind.",
+      "kisiler": [
+        {
+          "karakter": "ebrehe",
+          "poz": "sitting cross-legged on the carpet at the left, turned to the right."
+        },
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "sitting cross-legged on the carpet at the right, upright and calm, facing left."
+        },
+        {
+          "tarif": "the interpreter: an Arab man of about 35 with a short black beard, red head wrap, brown cloak",
+          "poz": "kneeling between them, slightly behind."
+        },
+        {
+          "karakter": "habes_askeri",
+          "sayi": 3,
+          "poz": "standing in a row behind Abraha, spears upright."
+        }
+      ],
+      "yerlesim": "The carpet lies flat at the bottom; the seated people sit on it side by side; the standing soldiers stand behind them on the same level. The carpet is a red woven carpet with a yellow border, seen from eye level.",
+      "yasak": "throne, tent, buildings, ground other than the carpet.",
+      "eski_istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), sitting on a carpet beside the chief of Quraysh, a handsome, imposing Arab man in a simple head cloth; the ruler turned respectfully toward the chief; at the side an interpreter and a few undetailed soldiers standing. Faces drawn simply. {yesil_perde_eki}",
+      "yeniden_neden": "Ebrehe yaşı kararına bağlı.",
+      "izin": "the red woven carpet under the seated people, which is drawn."
     },
     {
       "id": "b02-abdulmuttalib-yakin",
@@ -197,27 +281,66 @@
     },
     {
       "id": "b02-fil-coken",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b02-fil-coken.webp",
       "katman": "fil-coken",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s12"
       ],
-      "istem": "A large elephant kneeling down on the ground and refusing to rise; puzzled soldiers standing around it, undetailed; beside the elephant's head a man leaning close to its ear. No beating, no raised weapons, no blood. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 35: Nüfeyl filin kulağını tutar; fil çöker. Dövülme gösterilmez."
+      "not": "İbn Hişâm s. 35: Nüfeyl filin kulağını tutar; fil çöker. Dövülme gösterilmez.",
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "The elephant has knelt down on the ground and refuses to rise; puzzled soldiers stand around it; Nufayl leans close to the elephant's ear, holding it gently and speaking into it.",
+      "kisiler": [
+        {
+          "karakter": "fil",
+          "hayvan": true,
+          "poz": "kneeling in the centre, side view facing right, head low."
+        },
+        {
+          "karakter": "nufeyl",
+          "poz": "standing at the elephant's head on the right, leaning to its ear."
+        },
+        {
+          "karakter": "habes_askeri",
+          "sayi": 4,
+          "poz": "two standing at the left, two at the far right, looking puzzled, spears pointing up."
+        }
+      ],
+      "yasak": "beating, raised weapons, blood, a second elephant.",
+      "eski_istem": "A large elephant kneeling down on the ground and refusing to rise; puzzled soldiers standing around it, undetailed; beside the elephant's head a man leaning close to its ear. No beating, no raised weapons, no blood. {yesil_perde_eki}",
+      "yeniden_neden": "Nüfeyl b02-esirler'deki kılavuzdan farklı çizilmişti (başı açık, kıvırcık)."
     },
     {
       "id": "b02-ordu-dagilan",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b02-ordu-dagilan.webp",
       "katman": "ordu-dagilan",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s13"
       ],
-      "istem": "Seen from far above: many tiny soldier figures scattering and fleeing in all directions across a plain, small and undetailed. No injuries, no bodies, no blood. {yesil_perde_eki}",
-      "not": "Kuşlar ayrı katman."
+      "not": "Kuşlar ayrı katman.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "The army breaking apart in panic, seen from the side at a distance: small soldiers running and scattering left and right, some ducking with arms over their heads.",
+      "kisiler": [
+        {
+          "tarif": "small Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), simple and undetailed",
+          "sayi": 25,
+          "poz": "running in different directions, all on the same ground level."
+        },
+        {
+          "karakter": "fil",
+          "hayvan": true,
+          "poz": "standing still near the right, side view, calm."
+        }
+      ],
+      "yerlesim": "All figures are in one broad horizontal band in the lower half of the image, feet on roughly the same horizontal line, seen from eye level from the side; nobody is higher in the image than the band.",
+      "yasak": "birds (separate layer), tents, camels, injuries, bodies, blood, a second elephant, view from above.",
+      "eski_istem": "Seen from far above: many tiny soldier figures scattering and fleeing in all directions across a plain, small and undetailed. No injuries, no bodies, no blood. {yesil_perde_eki}",
+      "yeniden_neden": "Kuşbakışıydı ve birden çok fil vardı (kaynak ve s04 ile çelişki)."
     },
     {
       "id": "b02-kuslar",
@@ -245,15 +368,33 @@
     },
     {
       "id": "b02-donus",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b02-donus.webp",
       "katman": "donus",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s15"
       ],
-      "istem": "Far view of small, scattered, exhausted groups of soldiers trudging along a desert road at dusk; in the middle one covered figure being carried by others. No wounds, no blood. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 36: Ebrehe yaralı olarak taşındı. Yara ayrıntısı yok."
+      "not": "İbn Hişâm s. 36: Ebrehe yaralı olarak taşındı. Yara ayrıntısı yok.",
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "The defeated army trudging home at a distance, seen from the side, moving from left to right: small, tired, scattered groups; in the middle, four soldiers carry a covered litter with a person lying under a cloth.",
+      "kisiler": [
+        {
+          "tarif": "small tired Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), heads bowed",
+          "sayi": 12,
+          "poz": "walking right in three loose groups."
+        },
+        {
+          "tarif": "soldiers of the same look carrying a litter on their shoulders",
+          "sayi": 4,
+          "poz": "in the middle; the litter is covered with a red cloth, no body or face visible."
+        }
+      ],
+      "yerlesim": "All groups walk in one horizontal band in the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the line never rises toward the top of the image.",
+      "yasak": "wounds, blood, visible body of the carried person, ground, mountains.",
+      "eski_istem": "Far view of small, scattered, exhausted groups of soldiers trudging along a desert road at dusk; in the middle one covered figure being carried by others. No wounds, no blood. {yesil_perde_eki}",
+      "yeniden_neden": "Kol çapraz biçimde göğe tırmanıyordu."
     }
   ],
   "uretimler": [

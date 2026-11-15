@@ -66,7 +66,19 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 
 ---
 
-## 2. Son oturum (2026-11-15, b10 genişletme, b02 ve b03 taslakları)
+## 2. Son oturum (2026-11-15, görsel üretim yönteminin yenilenmesi)
+
+1. b02'nin 19 görseli işlendi ama sahnelerde ölçek, havada duran figür ve ışık sorunları çıktı; b03 de aynı. Kök neden: figür görselleri kendi zemini ve binalarıyla, kadrajı dolduracak boyda geliyordu.
+2. **Yeni yöntem** (`docs/GORSEL_URETIM.md`): katman tipleri (figür/nesne/zemin/mekân), yapılı istemler (kamera, kişi sayısı, yerleşim, çıktı öncesi denetim), **karakter kartları** (`istemler/karakterler.json`) ve karakter referans sayfaları (`karakterler-chatgpt.md`).
+3. İstemler yenilendi: b02 (5 yeniden üretim + 2 Erdem kararına bağlı), b03 (5 yeniden üretim), b04 (12), b05 (10), b10 2. tur (10).
+4. `tools/gorsel_al.py`: ChatGPT indirmelerini sırayla adlandırır, otomatik ön denetim yapar, pafta çıkarır.
+5. Oynatıcıda saat tonu denemesi (`sahne_cizici.dart` → `saatTonuAcik`).
+6. b03'ün 12 görseli `content/gorseller/` altında işlendi ama commit'lenmedi: yerleşim yapılmadı, 5'i yeniden üretilecek.
+7. Erdem'in kararları: `docs/ERDEM_KONTROL.md` → "Görseller: karakter kartları ve kararlar".
+
+**Sıradaki:** Erdem karakter referans sayfalarını üretir → Claude onaylar → bölüm istemleri. Sonra b02/b03 yerleşimi yeni katmanlarla baştan.
+
+## 2b. Önceki oturum (2026-11-15, b10 genişletme, b02 ve b03 taslakları)
 
 1. **Yeni çalışma düzeni** (Erdem): Görsel üretimi Erdem'i beklerken Claude sıradaki bölümü uçtan uca hazırlar (metin, iddia, atıf, istem); iddia onayı toplu teslimde yapılır.
 2. **b10 genişletildi** (Erdem onayladı): b10 sığ bulundu. Eklenen sahneler:

@@ -44,6 +44,8 @@ Gerçek harita değil: ahşap/parşömen dokusu üzerinde elle çizilmiş görü
 
 ## Tutarlılık
 
+- Üretim yöntemi, katman tipleri, karakter kartları ve denetim akışı: `GORSEL_URETIM.md`.
+
 - Tek bir üslup istemi (style prompt) ve 5–10 referans görsel belirlenir; tüm üretimler bunlarla yapılır.
 - Tekrarlayan mekânlar (Mekke vadisi, Kâbe avlusu, Benî Sa'd yurdu, Hira) için sabit "mekân kartları" hazırlanır.
 - Kullanılan araç, model sürümü ve istem her görselle birlikte `assets/` yanında kayda geçirilir.

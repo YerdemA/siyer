@@ -98,3 +98,16 @@ Atıflar:
 - [ ] TDV "HANÎF" c. 16 s. 36, 38; "VARAKA b. NEVFEL" c. 42 s. 517.
 - [ ] MUHAMMED (c. 30) s. 410: Hadislerle İslâm dipnotundan alındı; matbu nüshada bakılmalı.
 - [ ] Ayrıntı: iddiaların `gerekce` alanları.
+
+---
+
+## Görseller: karakter kartları ve kararlar (2026-11-15)
+
+Kartlar: `content/gorseller/istemler/karakterler.json`. `secim` alanındaki ayrıntılar kaynakta yok, yalnız tutarlılık için sabitlendi; onayın gerek.
+
+- [ ] **Abdülmuttalib:** ~75 yaşında (TDV: 82 yaşında öldü, 577). Sakal gri-beyaz, yumruk boyu; kıyafet krem entari, safran kenarlı pas-kahve cübbe (b02'deki dört görsele göre). Bu yüzden b03'teki kara sakallı dört görsel yeniden üretilecek. `b03-abdulmuttalib-kapi`'de sakal biraz daha beyaz; kabul mü?
+- [ ] **Ebrehe'nin yaşı:** TDV'ye göre 525'te Eryât'ın ordusundaydı, yani 570'te en az ~60 yaşında. b02'de kara sakallı, orta yaşlı çizildi. Kart "~60, kıvırcık kara sakalda gri" diyor. Kabul edersen `b02-sakif-heyet` ve `b02-gorusme` de yeniden üretilecek (b02.json'da `tur: 3`); etmezsen kart gençleştirilir.
+- [ ] **Habeşli askerler:** b02'de deri yelek, kırmızı pelerin, beyaz takke ve mızrakla çizildi. Donanım kaynakta yok; mevcut görseller yeniden üretilmesin diye kart bunu sabitledi. Kabul mü?
+- [ ] **Kâbe kapısı:** İbn Hişâm s. 34-35'te Abdülmuttalib kapı halkasını tutuyor, yani kapı var. Ortak `kabe-alcak` katmanında kapı kanadı yok, yalnız açık bir giriş var. `b02-kapi-dua` ve `b03-abdulmuttalib-kabe` kendi kapılı Kâbe'leriyle geldi. Ortak katman kapılı olarak yeniden mi üretilsin?
+- [ ] **Saat tonu (deneme):** Oynatıcı akşam, şafak ve gece sahnelerinde katmanları tonluyor (`sahne_cizici.dart` → `saatTonuAcik`). Beğenmezsen kapatılır.
+- [ ] **`mekke-zemin` katmanı:** Üst kenarında zeytin yeşili bir şerit görünüyor (ör. b10-s01, b02-s16). Yeniden işlenmeli ya da üretilmeli.
