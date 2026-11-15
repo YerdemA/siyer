@@ -49,7 +49,7 @@
       "tur": 1,
       "dosya": "b02-kilise.webp",
       "katman": "kilise",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s02",
         "b02-s03"
@@ -115,7 +115,7 @@
       "tur": 1,
       "dosya": "b02-sakif-heyet.webp",
       "katman": "sakif-heyet",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s06"
       ],
@@ -139,7 +139,7 @@
       "tur": 1,
       "dosya": "b02-hunata-abdulmuttalib.webp",
       "katman": "hunata-abdulmuttalib",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s08"
       ],
@@ -151,7 +151,7 @@
       "tur": 1,
       "dosya": "b02-ordugah.webp",
       "katman": "ordugah",
-      "isleme": "opak",
+      "isleme": "perde",
       "sahneler": [
         "b02-s09",
         "b02-s10"
@@ -164,7 +164,7 @@
       "tur": 1,
       "dosya": "b02-gorusme.webp",
       "katman": "gorusme",
-      "isleme": "perde",
+      "isleme": "sigdir",
       "sahneler": [
         "b02-s09"
       ],
@@ -256,5 +256,234 @@
       "not": "İbn Hişâm s. 36: Ebrehe yaralı olarak taşındı. Yara ayrıntısı yok."
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b02-sana-sehir",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-sana-sehir.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-sana-sehir.webp",
+      "durum": "secildi",
+      "not": "Temiz."
+    },
+    {
+      "istem": "b02-ebrehe-taht",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-ebrehe-taht.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ebrehe-taht.webp",
+      "durum": "secildi",
+      "not": "Yüzdeki yarık izi belli belirsiz; omzunda istenmemiş bir pars postu var. s01'de ayar.gorsel ile sağa yerleştirildi."
+    },
+    {
+      "istem": "b02-kilise",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-kilise.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-kilise.webp",
+      "durum": "secildi",
+      "not": "Haç, kubbe, yazı yok. Kırpınca çok büyük kaldığı için sigdir'e alındı; s02 orta, s03 uzak plan ayar.gorsel ile. Zemin için mekke-daglar ve b02-col eklendi."
+    },
+    {
+      "istem": "b02-kinane-yolcu",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-kinane-yolcu.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-kinane-yolcu.webp",
+      "durum": "secildi",
+      "not": "Arkadan, yarı profil. s03'te ayar.gorsel ile sola küçük yerleştirildi."
+    },
+    {
+      "istem": "b02-col",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-col.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-col.webp",
+      "durum": "secildi",
+      "not": "Temiz."
+    },
+    {
+      "istem": "b02-ordu-yuruyus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-ordu-yuruyus.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ordu-yuruyus.webp",
+      "durum": "secildi",
+      "not": "Kol çaprazlama yokuş yukarı çizilmiş; s04'e mekke-daglar eklendi ki fil göğe değil dağa otursun."
+    },
+    {
+      "istem": "b02-esirler",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-esirler.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-esirler.webp",
+      "durum": "secildi",
+      "not": "Temiz. s05'e mekke-daglar eklendi."
+    },
+    {
+      "istem": "b02-sakif-heyet",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-sakif-heyet.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-sakif-heyet.webp",
+      "durum": "secildi",
+      "not": "Ebrehe tahtında, karşısında eğilmiş heyet. Kırpınca başlar kesildiği için sigdir'e alındı; s06'ya mekke-zemin eklendi."
+    },
+    {
+      "istem": "b02-develer-surulen",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-develer-surulen.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-develer-surulen.webp",
+      "durum": "secildi",
+      "not": "Temiz."
+    },
+    {
+      "istem": "b02-hunata-abdulmuttalib",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-hunata-abdulmuttalib.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-hunata-abdulmuttalib.webp",
+      "durum": "secildi",
+      "not": "Kırpınca başlar kesildiği için sigdir'e alındı; s08'de iki figür alçak Kâbe'nin iki yanında."
+    },
+    {
+      "istem": "b02-ordugah",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-ordugah.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ordugah.webp",
+      "durum": "secildi",
+      "not": "İstem opak tam kadraj istiyordu; ChatGPT yeşil perdeyle verdi, perde olarak işlendi. s09 ve s10'a mekke-gok-gunduz ve mekke-daglar eklendi."
+    },
+    {
+      "istem": "b02-gorusme",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-gorusme.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-gorusme.webp",
+      "durum": "secildi",
+      "not": "Mızrak uçları kırpmada kesildiği için sigdir'e alındı."
+    },
+    {
+      "istem": "b02-abdulmuttalib-yakin",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-abdulmuttalib-yakin.png",
+      "boyut": "1254x1254",
+      "secilen": true,
+      "dosya": "b02-abdulmuttalib-yakin.webp",
+      "durum": "secildi",
+      "not": "Kare (1254x1254) geldi; sigdir ile ortalandı, s10'da olcek 0.95."
+    },
+    {
+      "istem": "b02-kapi-dua",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-kapi-dua.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-kapi-dua.webp",
+      "durum": "secildi",
+      "not": "Kâbe duvarı ve kapısı görselin içinde, kalabalık uzak yamaçta; neredeyse tam kadraj."
+    },
+    {
+      "istem": "b02-fil-coken",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-fil-coken.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-fil-coken.webp",
+      "durum": "secildi",
+      "not": "Temiz."
+    },
+    {
+      "istem": "b02-ordu-dagilan",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-ordu-dagilan.png",
+      "boyut": "1672x941",
+      "secilen": true,
+      "dosya": "b02-ordu-dagilan.webp",
+      "durum": "secildi",
+      "not": "Küçük figürler, yaralanma yok."
+    },
+    {
+      "istem": "b02-kuslar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-kuslar.png",
+      "boyut": "1672x941",
+      "secilen": true,
+      "dosya": "b02-kuslar.webp",
+      "durum": "secildi",
+      "not": "Kuşların gagasında/pençesinde taşlar var (FÎL SÛRESİ maddesi). Kan yok."
+    },
+    {
+      "istem": "b02-terk-edilmis",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-terk-edilmis.png",
+      "boyut": "1672x941",
+      "secilen": true,
+      "dosya": "b02-terk-edilmis.webp",
+      "durum": "secildi",
+      "not": "İnsan yok; eşya, sandık, yıkık çadır."
+    },
+    {
+      "istem": "b02-donus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-15",
+      "kaynak_dosya": "b02-donus.png",
+      "boyut": "1672x941",
+      "secilen": true,
+      "dosya": "b02-donus.webp",
+      "durum": "secildi",
+      "not": "Taşınan figür örtülü; yara ayrıntısı yok. s15'e mekke-daglar eklendi."
+    }
+  ]
 }
