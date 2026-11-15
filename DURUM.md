@@ -2,7 +2,7 @@
 
 Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kurallar `CLAUDE.md`'de, ayrıntılar `docs/` altında; bu dosya yalnız **nerede olduğumuzu** anlatır.
 
-**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 7'si taslak hâlinde yazıldı (b01-b05, b09, b10). b01, b02 ve b09'un görselleri tam; b10'un 10 yeni görseli, b03'ün 12, b04'ün 12 ve b05'in 10 görseli istemi hazır, üretim bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
+**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 7'si taslak hâlinde yazıldı (b01-b05, b09, b10). b01 ve b09'un görselleri tam; b02'nin 19 görseli işlendi ama sahne yerleşimi kusurlu, bir kısmı yeniden üretilecek; b10'un 10 yeni görseli, b03'ün 12, b04'ün 12 ve b05'in 10 görseli istemi hazır, üretim bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
 
 ---
 
@@ -42,7 +42,7 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 |---|---|
 | `bolumler/b01-cahiliye-mekkesi.json` | Taslak: 13 sahne, 21 iddia, 62 atıf (doğrulama bekliyor); bütün görsel katmanları ve 13 yakın plan çekimi hazır |
 | `bolumler/b09-hakem.json` | Taslak: 14 sahne, 67 atıf (hepsi doğrulama bekliyor); bütün görsel katmanları hazır |
-| `bolumler/b02-fil-vakasi.json` | Taslak: 16 sahne, 19 iddia (doğrulama bekliyor); 19 görsel katmanı hazır (2026-11-15), üretim kaydı `istemler/b02.json` → `uretimler` |
+| `bolumler/b02-fil-vakasi.json` | Taslak: 16 sahne, 19 iddia (doğrulama bekliyor); 19 görsel katmanı işlendi (2026-11-15) ama ölçek/yerleşim kusurlu, düzeltme ve kısmi yeniden üretim bekliyor; kayıt `istemler/b02.json` → `uretimler` |
 | `bolumler/b03-dogum.json` | Taslak: 12 sahne, 15 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b03.json` + `b03-chatgpt.md` |
 | `bolumler/b04-sut-anne.json` | Taslak: 10 sahne, 14 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b04.json` + `b04-chatgpt.md` |
 | `bolumler/b05-yetimlik.json` | Taslak: 10 sahne, 15 iddia (doğrulama bekliyor); görseller üretilmedi, istemler `istemler/b05.json` + `b05-chatgpt.md` |
