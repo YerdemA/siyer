@@ -277,7 +277,7 @@ def karakter_sayfalari(idler: list[str] | None = None) -> Path:
         "",
         "Bölüm istemlerinden ÖNCE üretilir. Mesaj 0'ı (üslup ve kurallar) bölüm dosyasındakiyle aynı gönder, sonra bunları sırayla.",
         "Her sayfayı `İndirilenler\\siyer` klasörüne `karakter-<kimlik>.png` adıyla kaydet ya da `tools/gorsel_al.py` ile adlandır.",
-        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa `content/gorseller/istemler/referans/` klasörüne konur ve o karakterin geçtiği her mesaja iliştirilir. Mevcut görsellerden kırpılmış referansı olan karakterler (Abdülmuttalib, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için sayfa üretilmez.",
+        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa `content/gorseller/istemler/referans/` klasörüne konur ve o karakterin geçtiği her mesaja iliştirilir. Mevcut görsellerden kırpılmış referansı olan karakterler (Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için sayfa üretilmez.",
         "",
     ]
     for n, i in enumerate(secilen, 1):
