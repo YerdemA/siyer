@@ -55,7 +55,7 @@ dart run tools/icerik_dogrula.dart      # şema + kaynak kontrolü (yazılacak)
 
 ## Çalışma düzeni
 
-- Oturuma başlarken `DURUM.md`'yi oku (tamamlananlar, sıradaki adım, MVP listesi); oturum sonunda güncelle.
+- Oturuma başlarken önce `DURUM.md`'yi oku (son yapılanlar, sıradaki adımlar), genel plan için `YOL_HARITASI.md`'ye bak; oturum sonunda ikisini de güncelle.
 
 - Bölüm yazarken `/bolum-yaz <bölüm no>` komutunu, atıf kontrolü için `kaynak-denetcisi` alt ajanını kullan.
 - Not defterine soru sorarken eser adını ve konumu açıkça iste; cevaptaki atıfı kayda aynen geçir. Kota sınırlı olduğu için soruları tek tek değil toplu sor.

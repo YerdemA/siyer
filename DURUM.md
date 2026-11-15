@@ -1,12 +1,27 @@
 # Proje Durumu
 
-Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kurallar `CLAUDE.md`'de, ayrıntılar `docs/` altında; bu dosya yalnız **nerede olduğumuzu** anlatır.
+**Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-**Kısaca:** Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 7'si taslak hâlinde yazıldı (b01-b05, b09, b10). b01 ve b09'un görselleri tam; b02'nin 19 görseli işlendi ama sahne yerleşimi kusurlu, bir kısmı yeniden üretilecek; b10'un 10 yeni görseli, b03'ün 12, b04'ün 12 ve b05'in 10 görseli istemi hazır, üretim bekliyor. Yayını engelleyen işler büyük ölçüde içerik doğrulaması ve anlatım sesleri.
+Son güncelleme: 2026-11-15.
 
----
+## Sıradaki adımlar (öncelik sırasıyla)
+
+1. **OpenAI API anahtarı** (Erdem): `OPENAI_API_KEY` kullanıcı ortam değişkenine kaydedilecek, Claude Code yeniden başlatılacak. Claude anahtarı görmeden yalnız varlığını kontrol eder (`[Environment]::GetEnvironmentVariable("OPENAI_API_KEY","User")` uzunluğu). Anahtar asla sohbete, depoya ya da komut satırına yazılmaz.
+2. **API üretim betiği** (Claude): `tools/gorsel_uret.py`. Kayıttaki yapılı istemi (`istem_devir.yapili_istem`) üslup görseli + karakter referanslarıyla OpenAI Images API'ye (edit uç noktası, `background: transparent`) gönderir; çıktıyı `İndirilenler\siyer\<kimlik>.png` olarak kaydeder, `gorsel_al.py`'deki denetimden geçirir, pafta çıkarır. Model ve kalite: önce `gpt-image-2.6` (Sunburst) ile `chatgpt-image-latest` karşılaştırılır; kalite `high`. Bütçe: 10 dolar yüklü.
+3. **3 görsellik deneme** (Claude, sonra Erdem bakar): `b03-on-ogul`, `b02-ordu-yuruyus`, `b05-kabe-dosek`. Sahneye yerleştirip önizlemeyle Erdem'e göster. Şeffaf zemin gelirse `gorsel_katman.py`'ye perdesiz giriş modu gerekir.
+4. **Karakter referans sayfaları** (10 adet, `karakterler-chatgpt.md`), onaylananlar `content/gorseller/istemler/referans/`'a.
+5. **b02 ve b03 düzeltmeleri + yerleşim** (her biri 5 görsel), sonra **b04, b05, b10 2. tur**.
+6. **Sıradaki bölüm yazımı** (Claude, görsel beklerken): b06 Ebû Tâlib'in Himayesi (`/bolum-yaz 6`).
+
+Erdem'e yalnız çok önemli kararlar sunulur; küçük görsel farkları yeniden üretilmez (bkz. `docs/GORSEL_URETIM.md`).
+
+## Kısaca
+
+Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 7'si taslak (b01-b05, b09, b10). b01 ve b09'un görselleri tam. b02'nin 19 görseli işlendi ama yerleşimi kusurlu; b03'ün 12'si işlendi, commit'lenmedi. Görsel üretimi yeni yönteme ve OpenAI API'ye geçiyor. Yayını engelleyen işler: içerik doğrulaması, görseller, anlatım sesleri.
 
 **Erdem'in bakacakları:** `docs/ERDEM_KONTROL.md` (atıflar, çeviri ve etiket kararları; her bölümde güncellenir).
+
+---
 
 ## 1. Tamamlananlar
 
@@ -144,7 +159,7 @@ Son güncelleme: 2026-11-15. Her çalışma oturumunun sonunda güncellenir. Kur
 
 ---
 
-## 3. Sıradaki adımlar
+## 3. Eski sıradaki adımlar (2026-11-15 öncesi; güncel liste en üstte)
 
 Sahibi parantez içinde.
 
@@ -225,57 +240,6 @@ Sahibi parantez içinde.
 
 ---
 
-## 7. MVP kontrol listesi
+## 7. MVP kontrol listesi ve tam sürüm
 
-MVP = peygamberlik öncesi dönem, 10 bölüm, Türkçe, Android.
-
-### Uygulama
-- [x] Bölüm oynatıcı (katman, kamera, geçiş, altyazı)
-- [x] Bölüm sonu kaynak listesi
-- [x] Ayarlar'da tam kaynakça
-- [x] Şahıslar sözlüğü
-- [x] Zaman çizelgesi
-- [x] Harita ekranı (geçici zemin)
-- [x] İlerleme takibi
-- [x] Anlatım sesi altyapısı
-- [ ] Anlatım sesiyle gerçek cihazda deneme
-- [ ] Müzik ve ortam sesi çalma
-- [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
-- [ ] Parşömen harita illüstrasyonu
-- [ ] "Hata bildir" bağlantısı
-- [ ] İsteğe bağlı bağış bağlantısı
-- [ ] Uygulama simgesi, açılış ekranı, mağaza görselleri
-- [ ] Android imzalama (`key.properties`) ve Play Store kaydı
-- [ ] Gerçek cihazlarda test (en az bir telefon ve bir tablet)
-
-### İçerik (bölüm başına: taslak → görseller → atıf doğrulama → ses → uzman okuması → `yayinda`)
-
-| Bölüm | Taslak | Görsel | Atıf doğrulama | Ses | Uzman |
-|---|---|---|---|---|---|
-| b01 Câhiliye Mekke'si | ✓ | ✓ | 0/62 | – | – |
-| b02 Fil Vakası | ✓ | istem | 0/60 | – | – |
-| b03 Doğum | ✓ | istem | 0/47 | – | – |
-| b04 Süt Annenin Yurdu | ✓ | istem | 0/45 | – | – |
-| b05 Yetimlik | ✓ | istem | 0/42 | – | – |
-| b06 Ebû Tâlib'in Himayesi | – | – | – | – | – |
-| b07 Gençlik | – | – | – | – | – |
-| b08 el-Emîn | – | – | – | – | – |
-| b09 Hakem | ✓ | ✓ | 0/67 | – | – |
-| b10 Hira'nın Eşiği | ✓ | 12/18 sahne | 0/62 | – | – |
-
-### Yan veriler ve yayın kapısı
-- [ ] Kaynakçada Buhârî ve Müslim `baski` alanı
-- [ ] Her bölümün şahıs, yer ve zaman çizelgesi kayıtları (b09–b10 var)
-- [ ] `yerler.json` konum atıflarının doğrulanması
-- [ ] `dart run tools/icerik_dogrula.dart --yayin` → 0 hata (Buhârî baskısı; b09–b10'da ses ve atıf doğrulaması)
-
----
-
-## 8. Tam sürüm (MVP sonrası)
-
-- **İngilizce:** İçerik (`content/en/`, aynı kimlikler) ve İngilizce anlatım sesi; Ayarlar'da dil seçimi. Arayüz metinleri zaten iki dilde.
-- **Dönemler** (`docs/BOLUM_HARITASI.md`): Mekke dönemi (ilk vahiy → hicret), Medine dönemi (hicret → Hudeybiye), Fetih ve vedâ. Her dönem ayrı sürüm ve ayrı not defteri.
-- **iOS:** Derleme, test, App Store; yayın kapısının iOS karşılığı.
-- **Kaynakça büyümesi:** İbn Sa'd, Taberî, Müslim ve diğer Kütüb-i Sitte; baskı bilgileriyle.
-- **Uzman okuması süreci** ve "Hakkında"da okuyanların listesi.
-- **Sürüm notlarında hata düzeltme kaydı** (`KAYNAK_POLITIKASI` §7).
+`YOL_HARITASI.md`'ye taşındı.
