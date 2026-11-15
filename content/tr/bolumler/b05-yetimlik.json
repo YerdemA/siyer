@@ -479,16 +479,10 @@
           "iddialar": [
             "i-b05-014"
           ]
-        },
-        {
-          "metin": "Rivayete göre ölümü yaklaşınca altı kızını, Safiyye, Berre, Âtike, Ümmü Hakîm, Ümeyme ve Ervâ'yı yanına çağırdı ve ölmeden önce kendisi için söyleyecekleri ağıtları duymak istedi.",
-          "iddialar": [
-            "i-b05-015"
-          ]
         }
       ],
       "gorsel": {
-        "tarif": "Gece, loş, turuncu bir kandil ışığında sade bir oda, orta plan: yatakta yatan Abdülmuttalib, yüzü gölgede; çevresinde oturan, örtülü, arkadan görülen altı kadın. Efendimiz çizilmez. Nur tonu yok.",
+        "tarif": "Gece, loş, turuncu bir kandil ışığında sade bir oda, orta plan: yatakta yatan Abdülmuttalib, yüzü gölgede. Efendimiz çizilmez. Nur tonu yok.",
         "saat": "gece",
         "katmanlar": [
           {
@@ -516,19 +510,19 @@
         {
           "metin": "Abdülmuttalib ölmeden önce torununun bakımını oğlu Ebû Tâlib'e vasiyet etmişti.",
           "iddialar": [
-            "i-b05-016"
+            "i-b05-015"
           ]
         },
         {
           "metin": "Çünkü Ebû Tâlib, Efendimiz'in babası Abdullah'ın anne-baba bir kardeşiydi.",
           "iddialar": [
-            "i-b05-016"
+            "i-b05-015"
           ]
         },
         {
           "metin": "Efendimiz artık amcası Ebû Tâlib'in yanındaydı.",
           "iddialar": [
-            "i-b05-016"
+            "i-b05-015"
           ]
         }
       ],
@@ -975,22 +969,6 @@
     },
     {
       "id": "i-b05-015",
-      "ifade": "Rivayete göre ölümü yaklaşınca altı kızını, Safiyye, Berre, Âtike, Ümmü Hakîm, Ümeyme ve Ervâ'yı yanına çağırdı ve ölmeden önce kendisi için söyleyecekleri ağıtları duymak istedi.",
-      "guc": "guclu",
-      "gerekce": "İbn Hişâm s. 108 (İbn İshak, Muhammed b. Saîd b. el-Müseyyeb'den). İbn Hişâm, şiir bilenlerden bu şiirleri bilen kimse görmediğini söyler; ağıtlar (s. 108-110) aktarılmadı, anlatımda 'rivayete göre' denir. Tek klasik rivayet; Erdem'in b03 ölçütüyle 'guclu'. İbn Hişâm sayfaları taramadan okundu.",
-      "kaynaklar": [
-        {
-          "eser": "ibn-hisam-sire",
-          "konum": "s. 108",
-          "dogrulama": "bekliyor",
-          "dogrulayan": "",
-          "tarih": ""
-        }
-      ],
-      "alternatifRivayetler": []
-    },
-    {
-      "id": "i-b05-016",
       "ifade": "Abdülmuttalib ölmeden önce torununun bakımını oğlu Ebû Tâlib'e vasiyet etti; çünkü Ebû Tâlib, Efendimiz'in babası Abdullah'ın anne-baba bir kardeşiydi. Efendimiz artık amcası Ebû Tâlib'in yanındaydı.",
       "guc": "guclu",
       "gerekce": "İbn Hişâm s. 114 (İbn İshak 'iddia ettiklerine göre' kaydıyla verir; Abdullah ile Ebû Tâlib'in anneleri Fâtıma bint Amr). MUHAMMED (s. 407), EBÛ TÂLİB (s. 237) ve ABDÜLMUTTALİB (s. 273) vasiyeti çekincesiz yazar; bu yüzden anlatım çekincesizdir. Hadislerle İslâm c. 1 üstlenmeyi ve öz kardeşliği yazar, vasiyeti anmaz. İbn Hişâm sayfaları taramadan okundu.",

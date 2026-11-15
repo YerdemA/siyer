@@ -105,10 +105,10 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 9: b05-son-gece
 
-*Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 108: Abdülmuttalib kızlarını çağırır. Kadınlar arkadan.*
+*Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 108: Abdülmuttalib'in vefatı. Kızlarından ağıt isteme rivayeti çıkarıldı (Erdem, 2026-11-15).*
 
 ```text
-Scene b05-son-gece. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. Interior of a simple mudbrick room at night lit only by a small, dim orange oil lamp: an Arab man lying on a bed, his face in shadow; around him sit six women, fully veiled and seen from behind. Calm, quiet, no wailing. Full frame.
+Scene b05-son-gece. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, muted earth palette. Not photorealistic, not a 3D render. Interior of a simple mudbrick room at night lit only by a small, dim orange oil lamp: an Arab man lying on a bed, his face in shadow. Calm and quiet. Full frame.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
