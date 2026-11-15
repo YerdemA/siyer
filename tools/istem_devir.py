@@ -80,6 +80,7 @@ def yapili_istem(kayit: dict, kartlar: dict) -> str:
 
     kisiler = kayit.get("kisiler", [])
     insan = 0
+    grup = False
     satirlar = []
     for n, k in enumerate(kisiler, 1):
         sayi = k.get("sayi", 1)
@@ -87,17 +88,26 @@ def yapili_istem(kayit: dict, kartlar: dict) -> str:
             tarif = kartlar[k["karakter"]]["en"]
         else:
             tarif = k["tarif"]
-        if not k.get("hayvan"):
-            insan += sayi
-        adet = f"{sayi} × " if sayi > 1 else ""
+        if k.get("yaklasik"):
+            # Kalabalık ve sürüde kesin sayı tutturulamaz; kaynak sayı vermiyorsa yaklaşık.
+            grup = grup or not k.get("hayvan")
+            adet = f"about {sayi} × "
+        else:
+            if not k.get("hayvan"):
+                insan += sayi
+            adet = f"{sayi} × " if sayi > 1 else ""
+        tarif = tarif.rstrip(". ") + "."
         poz = f" Pose and place: {k['poz']}" if k.get("poz") else ""
         satirlar.append(f"{n}. {adet}{tarif}{poz}")
     if satirlar:
-        baslik = (
-            f"PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly {insan} "
-            f"{'person' if insan == 1 else 'people'} in total). Keep every listed colour and feature exactly as written:"
-            if insan else "ANIMALS: draw exactly these and no people:"
-        )
+        if grup:
+            baslik = (f"PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count"
+                      f"{f' ({insan} individually listed people)' if insan else ''}. Keep every listed colour and feature exactly as written:")
+        elif insan:
+            baslik = (f"PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly {insan} "
+                      f"{'person' if insan == 1 else 'people'} in total). Keep every listed colour and feature exactly as written:")
+        else:
+            baslik = "ANIMALS AND OBJECTS: draw exactly these and no people:"
         parcalar.append(baslik + "\n" + "\n".join(satirlar))
     elif tip in ("zemin", "nesne"):
         parcalar.append("PEOPLE: none. No people, animals, hands or figures of any kind.")
@@ -115,6 +125,9 @@ def yapili_istem(kayit: dict, kartlar: dict) -> str:
             "LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: "
             "the top 15%, the bottom 15% and 8% on each side will be cropped."
         )
+    elif kayit.get("yerlesim") and tip == "nesne":
+        perde = "Draw" + YERLESIM["nesne"].split("Draw", 1)[1]
+        parcalar.append(f"LAYOUT: {kayit['yerlesim'].strip()} {perde}")
     elif kayit.get("yerlesim"):
         # Sürü, kalabalık gibi tek sıraya sığmayan figür katmanları için özel düzen;
         # perde kuralı aynen eklenir.
@@ -123,13 +136,17 @@ def yapili_istem(kayit: dict, kartlar: dict) -> str:
             perde += f" The only exception: {kayit['izin'].strip()}"
         parcalar.append(f"LAYOUT: {kayit['yerlesim'].strip()} {perde}")
     else:
-        parcalar.append(YERLESIM["yakin" if cekim == "yakin" else ("nesne" if tip == "nesne" else "figur")])
+        metin = YERLESIM["yakin" if cekim == "yakin" else ("nesne" if tip == "nesne" else "figur")]
+        if kayit.get("izin"):
+            metin += f" The only exception: {kayit['izin'].strip()}"
+        parcalar.append(metin)
 
     parcalar.append(kayit.get("isik") or ISIK_NOTR)
     if kayit.get("yasak"):
         parcalar.append(f"DO NOT DRAW: {kayit['yasak'].strip()}")
     denetim = [
-        f"exactly {insan} {'person' if insan == 1 else 'people'}" if insan else "no people at all",
+        ("the individually listed people are all there, nobody extra" if grup else
+         f"exactly {insan} {'person' if insan == 1 else 'people'}" if insan else "no people at all"),
         "every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs",
         "every held object is held by a hand that belongs to a body",
         "faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek",
@@ -239,7 +256,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
             notlar.append(k["not"])
         satirlar += [f"## Mesaj {n}: {k['id']}", ""]
         if ekle:
-            satirlar += ["**Bu mesaja ekle:** " + ", ".join(f"`{e}`" for e in ekle), ""]
+            satirlar += ["**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): " + ", ".join(f"`{e}`" for e in ekle), ""]
         if notlar:
             satirlar += [f"*Kontrol: {'; '.join(notlar)}*", ""]
         satirlar += ["```text", metin, "```", ""]
@@ -253,13 +270,14 @@ def karakter_sayfalari(idler: list[str] | None = None) -> Path:
     yeşil perdede. Sonraki her istemde ilgili sayfa mesaja eklenir; görseller
     arası tutarlılığın (kural 2) asıl güvencesi budur."""
     kartlar = _karakterler()
-    secilen = [i for i in kartlar if kartlar[i].get("referans_sayfasi", True) and (not idler or i in idler)]
+    secilen = [i for i in kartlar if kartlar[i].get("referans_sayfasi", True) and not kartlar[i].get("referans_dosya")
+               and (not idler or i in idler)]
     satirlar = [
         "# Karakter referans sayfaları: ChatGPT",
         "",
         "Bölüm istemlerinden ÖNCE üretilir. Mesaj 0'ı (üslup ve kurallar) bölüm dosyasındakiyle aynı gönder, sonra bunları sırayla.",
         "Her sayfayı `İndirilenler\\siyer` klasörüne `karakter-<kimlik>.png` adıyla kaydet ya da `tools/gorsel_al.py` ile adlandır.",
-        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa ChatGPT projesine dosya olarak eklenir ve o karakterin geçtiği her mesaja iliştirilir.",
+        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa `content/gorseller/istemler/referans/` klasörüne konur ve o karakterin geçtiği her mesaja iliştirilir. Mevcut görsellerden kırpılmış referansı olan karakterler (Abdülmuttalib, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için sayfa üretilmez.",
         "",
     ]
     for n, i in enumerate(secilen, 1):

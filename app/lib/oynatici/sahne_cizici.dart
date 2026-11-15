@@ -41,7 +41,8 @@ class SahneCizici extends CustomPainter {
     final m = switch (saat) {
       'safak' => const <double>[1.0, 0, 0, 0, 8, 0, 0.88, 0, 0, 2, 0, 0, 0.80, 0, 6, 0, 0, 0, 1, 0],
       'aksam' => const <double>[0.92, 0, 0, 0, 6, 0, 0.78, 0, 0, 2, 0, 0, 0.72, 0, 8, 0, 0, 0, 1, 0],
-      'gece' => const <double>[0.42, 0, 0, 0, 2, 0, 0.48, 0, 0, 4, 0, 0, 0.68, 0, 14, 0, 0, 0, 1, 0],
+      // Gece tonlanmaz: gece katmanları (meşale, ateş, ay ışıklı iç mekân)
+      // kendi ışığıyla üretildi; karartmak onları bozar.
       _ => null,
     };
     return m == null ? null : ColorFilter.matrix(m);
