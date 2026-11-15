@@ -26,6 +26,27 @@ class SahneCizici extends CustomPainter {
   /// (docs/GORSEL_USLUP.md → Kadraj); kamera yaklaşınca kenar boş kalmaz.
   static const tasma = 0.1;
 
+  /// Deneme (Erdem, 2026-11-15): katman görselleri nötr gün ışığında
+  /// üretilir, sahnenin saatine göre tonu oynatıcı verir. Kapatmak için false.
+  static const saatTonuAcik = true;
+
+  /// Saatin renk süzgeci; gündüz ve gök katmanı tonlanmaz (gök görselleri
+  /// zaten saatine göre üretildi). Kendi ışığıyla üretilmiş bir katman
+  /// (ör. kandil ışıklı iç mekân) `ayar.ton: false` ile hariç tutulur.
+  static ColorFilter? saatTonu(String saat, Katman katman) {
+    if (!saatTonuAcik || katman.yerTutucu == 'gok' || katman.ayar['ton'] == false) {
+      return null;
+    }
+    // Satırlar: R, G, B, A çıkışı = katsayılar · (R, G, B, A) + sabit (0–255).
+    final m = switch (saat) {
+      'safak' => const <double>[1.0, 0, 0, 0, 8, 0, 0.88, 0, 0, 2, 0, 0, 0.80, 0, 6, 0, 0, 0, 1, 0],
+      'aksam' => const <double>[0.92, 0, 0, 0, 6, 0, 0.78, 0, 0, 2, 0, 0, 0.72, 0, 8, 0, 0, 0, 1, 0],
+      'gece' => const <double>[0.42, 0, 0, 0, 2, 0, 0.48, 0, 0, 4, 0, 0, 0.68, 0, 14, 0, 0, 0, 1, 0],
+      _ => null,
+    };
+    return m == null ? null : ColorFilter.matrix(m);
+  }
+
   /// Görselin çizileceği alan. `ayar.gorsel` yoksa kadraj + taşma payı;
   /// varsa görsel o merkeze ve genişliğe, kendi [oran]ıyla (en/boy) yerleşir.
   static Rect gorselAlani(Katman katman, Size size, double oran) {
@@ -84,6 +105,7 @@ class SahneCizici extends CustomPainter {
             resim.width / resim.height,
           ),
           image: resim,
+          colorFilter: saatTonu(g.saat, katman),
           fit: BoxFit.cover,
           filterQuality: FilterQuality.medium,
         );

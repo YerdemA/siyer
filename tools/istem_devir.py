@@ -6,6 +6,12 @@ Kullanım (depo kökünden):
 
 --chatgpt: Higgsfield yerine tek bir ChatGPT sohbetine sırayla yapıştırılacak
 mesajlar (<ad>-chatgpt.md).
+--karakterler [kimlik ...]: karakterler.json'dan referans sayfası mesajları
+(karakterler-chatgpt.md).
+
+Kayıtta "konu" alanı olan istemler yapılı biçimde yazılır (kamera, kişi sayısı,
+karakter kartı, yerleşim, ışık, çıktı öncesi denetim); alanlar
+docs/GORSEL_URETIM.md'de.
 
 Çıktı aynı klasöre <ad>-devir.md olarak yazılır. Her istem; üslup istemi +
 sahne istemi + yasaklar birleştirilmiş, son haliyle yer alır; claude.ai
@@ -17,8 +23,123 @@ from pathlib import Path
 
 
 def birlestir(uslup: dict, kayit: dict) -> str:
-    sahne = kayit["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
+    if "konu" in kayit:
+        sahne = yapili_istem(kayit, _karakterler())
+    else:
+        sahne = kayit["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
     return f"{uslup['istem']}\n\n{sahne}\n\n{uslup['yasaklar']}"
+
+
+KARAKTER_DOSYASI = Path(__file__).resolve().parent.parent / "content/gorseller/istemler/karakterler.json"
+
+# Yapılı istem (kayıtta "konu" alanı varsa). Alanlar docs/GORSEL_URETIM.md'de.
+# tip: figur (yeşil perde, kırpılmadan sığdırılır, sahneye ayar.gorsel ile konur),
+#      nesne (figur gibi, insan yok), zemin (alt kısmı dolu, ufkun üstü yeşil),
+#      mekan (tam dolu iç/dış mekân, perde yok).
+CEKIM = {
+    "uzak": "Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.",
+    "orta": "Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.",
+    "yakin": "Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.",
+    "bakis": "Point of view of a person standing (or sitting, if stated) in the scene, at their eye level. The viewer's own body, hands, arms and feet never appear in the image.",
+}
+YERLESIM = {
+    "figur": (
+        "LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, "
+        "with clear flat green space on all four sides (at least one tenth of the image width and height). "
+        "Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, "
+        "arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, "
+        "and never place anyone higher in the image than the others. "
+        "Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. "
+        "Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), "
+        "with no green tint on them."
+    ),
+    "yakin": (
+        "LAYOUT: The figure is cut at mid-chest by the bottom edge of the image; clear flat green space above the head and on both sides. "
+        "No background of any kind: perfectly flat, uniform chroma green (#00B140) behind the figure, no green tint on the figure."
+    ),
+    "nesne": (
+        "LAYOUT: The object is shown complete with clear flat green space on all four sides (at least one tenth of the image). "
+        "Draw only the object: no ground, cast shadow, people, hands or background; perfectly flat, uniform chroma green (#00B140) "
+        "everywhere else, no green tint on the object."
+    ),
+}
+ISIK_NOTR = (
+    "LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. "
+    "No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint)."
+)
+
+
+def _karakterler() -> dict:
+    return json.loads(KARAKTER_DOSYASI.read_text(encoding="utf-8"))["karakterler"]
+
+
+def yapili_istem(kayit: dict, kartlar: dict) -> str:
+    tip = kayit.get("tip", "figur")
+    cekim = kayit.get("cekim", "orta")
+    parcalar = [f"CAMERA: {CEKIM[cekim]}", f"SUBJECT: {kayit['konu'].strip()}"]
+
+    kisiler = kayit.get("kisiler", [])
+    insan = 0
+    satirlar = []
+    for n, k in enumerate(kisiler, 1):
+        sayi = k.get("sayi", 1)
+        if k.get("karakter"):
+            tarif = kartlar[k["karakter"]]["en"]
+        else:
+            tarif = k["tarif"]
+        if not k.get("hayvan"):
+            insan += sayi
+        adet = f"{sayi} × " if sayi > 1 else ""
+        poz = f" Pose and place: {k['poz']}" if k.get("poz") else ""
+        satirlar.append(f"{n}. {adet}{tarif}{poz}")
+    if satirlar:
+        baslik = (
+            f"PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly {insan} "
+            f"{'person' if insan == 1 else 'people'} in total). Keep every listed colour and feature exactly as written:"
+            if insan else "ANIMALS: draw exactly these and no people:"
+        )
+        parcalar.append(baslik + "\n" + "\n".join(satirlar))
+    elif tip in ("zemin", "nesne"):
+        parcalar.append("PEOPLE: none. No people, animals, hands or figures of any kind.")
+
+    if tip == "zemin":
+        ufuk = kayit.get("ufuk", 0.45)
+        parcalar.append(
+            f"LAYOUT: This is a ground layer. The horizon is a perfectly straight, horizontal line at {round(ufuk * 100)}% of the image height "
+            "from the top; the ground fills everything below it to the bottom edge and to both side edges. "
+            "Everything above the horizon is perfectly flat, uniform chroma green (#00B140): no sky, no clouds, no distant mountains. "
+            "No green tint on the ground."
+        )
+    elif tip == "mekan":
+        parcalar.append(
+            "LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: "
+            "the top 15%, the bottom 15% and 8% on each side will be cropped."
+        )
+    elif kayit.get("yerlesim"):
+        # Sürü, kalabalık gibi tek sıraya sığmayan figür katmanları için özel düzen;
+        # perde kuralı aynen eklenir.
+        perde = "Draw NO" + YERLESIM["figur"].split("Draw NO", 1)[1]
+        if kayit.get("izin"):
+            perde += f" The only exception: {kayit['izin'].strip()}"
+        parcalar.append(f"LAYOUT: {kayit['yerlesim'].strip()} {perde}")
+    else:
+        parcalar.append(YERLESIM["yakin" if cekim == "yakin" else ("nesne" if tip == "nesne" else "figur")])
+
+    parcalar.append(kayit.get("isik") or ISIK_NOTR)
+    if kayit.get("yasak"):
+        parcalar.append(f"DO NOT DRAW: {kayit['yasak'].strip()}")
+    denetim = [
+        f"exactly {insan} {'person' if insan == 1 else 'people'}" if insan else "no people at all",
+        "every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs",
+        "every held object is held by a hand that belongs to a body",
+        "faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek",
+        "every clothing colour, beard colour and feature matches the description",
+        "no text, letters, crosses, minarets, domes, crescents or glow",
+    ]
+    if tip in ("figur", "nesne"):
+        denetim.append("the background is one flat, uniform green with no ground, horizon or shadow")
+    parcalar.append("BEFORE YOU OUTPUT, CHECK AND FIX: " + "; ".join(denetim) + ".")
+    return "\n\n".join(parcalar)
 
 
 KISA_YASAK = (
@@ -40,9 +161,12 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "Use it only for style, not composition.\n\n"
         f"Style: {uslup['istem'].replace('Cinematic 16:9 framing.', 'Cinematic wide framing.')}\n\n"
         f"Strict rules for every image: {uslup['yasaklar']}\n\n"
-        "Format for every image: landscape 3:2. Edges will be cropped: about 15% at the top, 15% at the bottom "
-        "and 8% on each side. Keep every important element (people, faces, hands, key objects) well inside "
-        "that central area; a single isolated object must sit fully inside the frame with empty margin around it. "
+        "Format for every image: landscape 3:2. Green-screen images are cut-out layers placed later over separate "
+        "sky, mountain, ground and building layers: draw only what the message lists, complete and with green margin around it, "
+        "and never draw any background, ground or shadow on them. Full-frame images will be cropped about 15% at the top and bottom "
+        "and 8% on each side, so keep important elements inside that central area. "
+        "Each message describes every person exactly (age, beard, clothing colours); the same named person must look identical "
+        "in every image of this chat. Before outputting, always count people, arms, hands and legs and fix any error. "
         "Generate exactly one image per message. "
         "Do not reply with text beyond one short line. Reply 'Ready' now; I will send the scenes one by one."
     )
@@ -70,24 +194,40 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         "```",
         "",
     ]
+    kartlar = _karakterler()
     for n, k in enumerate(istemler, 1):
-        sahne = k["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
+        if "konu" in k:
+            sahne = yapili_istem(k, kartlar)
+        else:
+            sahne = k["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
         # Sıcak altın-beyaz yalnız nura ayrılmıştır (docs/GORSEL_USLUP.md → Renk ve ışık).
-        nur_ister = "golden-white" in k["istem"]
+        nur_ister = "golden-white" in k.get("istem", k.get("konu", ""))
         nur_yasak = "" if nur_ister else (
             " No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral."
         )
-        # Yakın çekimde uzak çekimle tutarlılık için o sahnenin uzak görseli eklenir.
-        ekle = k.get("ekle", "")
-        ek_cumle = (
-            " The image attached to this message is the wide shot of the same scene: keep the same people's clothing, "
-            "colors and setting so the two shots match; do not copy its composition."
-            if ekle else ""
-        )
-        metin = (
-            f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
-            f"muted earth palette. Not photorealistic, not a 3D render.{ek_cumle} {sahne}\n\n{KISA_YASAK}{nur_yasak}"
-        )
+        # Yakın çekimde uzak çekimle tutarlılık için o sahnenin uzak görseli eklenir;
+        # yapılı istemde ayrıca geçen her karakterin referans sayfası.
+        ekle = [e for e in [k.get("ekle", "")] if e]
+        ekle += [f"karakter-{p['karakter']}.png" for p in k.get("kisiler", [])
+                 if p.get("karakter") and kartlar[p["karakter"]].get("referans_sayfasi", True)]
+        ek_cumle = ""
+        if ekle:
+            ek_cumle = (
+                " The images attached to this message are references: character sheets show exactly how each named "
+                "character must look (face, beard, clothing colours); a wide shot shows the same scene. "
+                "Match them exactly, but do not copy their composition or background."
+            )
+        if "konu" in k:
+            metin = (
+                f"Scene {k['id']}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered "
+                f"textured paper shapes, muted earth palette; not photorealistic, not a 3D render.{ek_cumle}\n\n"
+                f"{sahne}\n\n{KISA_YASAK}{nur_yasak}"
+            )
+        else:
+            metin = (
+                f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
+                f"muted earth palette. Not photorealistic, not a 3D render.{ek_cumle} {sahne}\n\n{KISA_YASAK}{nur_yasak}"
+            )
         notlar = []
         isleme = k.get("isleme") or ("opak" if k.get("katman") == "gok" else "perde")
         notlar.append({
@@ -99,7 +239,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
             notlar.append(k["not"])
         satirlar += [f"## Mesaj {n}: {k['id']}", ""]
         if ekle:
-            satirlar += [f"**Bu mesaja ekle** (proje klasöründen, uzak çekim): `{ekle}`", ""]
+            satirlar += ["**Bu mesaja ekle:** " + ", ".join(f"`{e}`" for e in ekle), ""]
         if notlar:
             satirlar += [f"*Kontrol: {'; '.join(notlar)}*", ""]
         satirlar += ["```text", metin, "```", ""]
@@ -108,7 +248,53 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     return cikti
 
 
+def karakter_sayfalari(idler: list[str] | None = None) -> Path:
+    """Her karakter için bir referans sayfası: aynı kişi yan yana birkaç açıdan,
+    yeşil perdede. Sonraki her istemde ilgili sayfa mesaja eklenir; görseller
+    arası tutarlılığın (kural 2) asıl güvencesi budur."""
+    kartlar = _karakterler()
+    secilen = [i for i in kartlar if kartlar[i].get("referans_sayfasi", True) and (not idler or i in idler)]
+    satirlar = [
+        "# Karakter referans sayfaları: ChatGPT",
+        "",
+        "Bölüm istemlerinden ÖNCE üretilir. Mesaj 0'ı (üslup ve kurallar) bölüm dosyasındakiyle aynı gönder, sonra bunları sırayla.",
+        "Her sayfayı `İndirilenler\\siyer` klasörüne `karakter-<kimlik>.png` adıyla kaydet ya da `tools/gorsel_al.py` ile adlandır.",
+        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa ChatGPT projesine dosya olarak eklenir ve o karakterin geçtiği her mesaja iliştirilir.",
+        "",
+    ]
+    for n, i in enumerate(secilen, 1):
+        k = kartlar[i]
+        if k.get("hayvan"):
+            gorunum = "the same animal three times side by side: side view facing left, front three-quarter view, side view facing right"
+        elif k.get("yuzsuz"):
+            gorunum = ("the same person three times side by side, ALL WITHOUT ANY FACE: back view, back three-quarter view "
+                       "from behind the left shoulder, back three-quarter view from behind the right shoulder")
+        else:
+            gorunum = "the same person three times side by side: front view, three-quarter view, side profile view"
+        metin = (
+            f"Character reference sheet {i}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference; "
+            "not photorealistic, not a 3D render.\n\n"
+            f"CHARACTER: {k['en']}\n\n"
+            f"LAYOUT: {gorunum}; full figure from head to feet, all three the same size, standing on one horizontal line, "
+            "with flat green space around each. Perfectly flat, uniform chroma green background (#00B140), no ground, no shadow, "
+            "no text or labels.\n\n"
+            "LIGHT: even, neutral daylight; no glow.\n\n"
+            "BEFORE YOU OUTPUT, CHECK AND FIX: all three views show the same person with identical clothing colours, beard and features; "
+            "two arms, two hands with five fingers, two legs each; nothing else in the image."
+        )
+        satirlar += [f"## Sayfa {n}: karakter-{i}", "", f"*Kontrol: {k['ad']}. Kaynak: {k['kaynak']} Seçim: {k['secim']}*", "",
+                     "```text", metin, "```", ""]
+    cikti = KARAKTER_DOSYASI.with_name("karakterler-chatgpt.md")
+    cikti.write_text("\n".join(satirlar), encoding="utf-8")
+    return cikti
+
+
 def main(argv: list[str]) -> int:
+    if "--karakterler" in argv:
+        idler = [a for a in argv if not a.startswith("--")]
+        cikti = karakter_sayfalari(idler or None)
+        print(cikti)
+        return 0
     yollar = [a for a in argv if not a.startswith("--")]
     if not yollar:
         print(__doc__)
