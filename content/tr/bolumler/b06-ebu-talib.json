@@ -1,0 +1,1560 @@
+{
+  "id": "b06-ebu-talib",
+  "sira": 6,
+  "baslik": "Ebû Tâlib'in Himayesi",
+  "ozet": "Amcası Ebû Tâlib'in yanında büyümesi, koyun gütmesi ve on iki yaşında amcasıyla çıktığı Şam yolculuğu.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b06-s01",
+      "anlatim": [
+        {
+          "metin": "Dedesi Abdülmuttalib vefat ettiğinde Efendimiz sekiz yaşındaydı. Artık amcası Ebû Tâlib onun bakımını ve himayesini üstlenmişti.",
+          "iddialar": [
+            "i-b06-001"
+          ]
+        },
+        {
+          "metin": "Efendimiz bundan sonra amcasının yanında, onunla birlikte büyüdü.",
+          "iddialar": [
+            "i-b06-001"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke vadisi uzak plan: evlerin önünde duran Ebû Tâlib (b05'teki aynı figür). Efendimiz çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "ebu-talib",
+            "dosya": "b05-ebu-talib-kapi.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.82,
+                "y": 0.615,
+                "olcek": 0.096
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b06-s01.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "abdulmuttalib",
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s02",
+      "anlatim": [
+        {
+          "metin": "Ebû Tâlib, Kureyş içinde sözü dinlenen, saygı duyulan biriydi.",
+          "iddialar": [
+            "i-b06-002"
+          ]
+        },
+        {
+          "metin": "Ailesi ise kalabalıktı.",
+          "iddialar": [
+            "i-b06-003"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de sade bir kerpiç evin avlusu, orta plan: Ebû Tâlib (yüzü sade çizilmiş) avluda; çevresinde birkaç çocuk ve sade eşyalar (birkaç küp, eski bir hasır). Gösterişsiz, sade bir ev. Efendimiz çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "avlu",
+            "dosya": "",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3
+          },
+          {
+            "id": "aile",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b06-s02.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "sabah-sessiz"
+      },
+      "sahislar": [
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s03",
+      "anlatim": [
+        {
+          "metin": "Ebû Tâlib yeğenini çok severdi.",
+          "iddialar": [
+            "i-b06-004"
+          ]
+        },
+        {
+          "metin": "Onun uğurlu olduğuna inanır, üzerine titrer, iyi yetişmesi için elinden geleni yapardı.",
+          "iddialar": [
+            "i-b06-004"
+          ]
+        },
+        {
+          "metin": "Ebû Tâlib'in hanımı Fâtıma bint Esed de ona kendi çocuklarından daha çok özen gösterirdi.",
+          "iddialar": [
+            "i-b06-005"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Ebû Tâlib'in evinin içi, kandil ışığı; onun gözünden: yer sofrasının karşısında oturan Ebû Tâlib ona şefkatle bakıyor, yanında Fâtıma bint Esed (yüzü sade, başı örtülü) yemeği ona doğru uzatıyor; kenarda çocuklar. Efendimiz'in eli ya da bedeni görünmez.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "oda",
+            "dosya": "",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "ton": false
+            }
+          },
+          {
+            "id": "aile",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75,
+            "ayar": {
+              "ton": false
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b06-s03.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib",
+        "fatima-bint-esed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s04",
+      "anlatim": [
+        {
+          "metin": "Efendimiz on yaşlarındayken, kalabalık ailesi olan amcasına yardım olsun diye koyun güttü.",
+          "iddialar": [
+            "i-b06-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'yi çevreleyen çıplak, kayalık bir yamaç; onun gözünden: önünde otlayan küçük bir koyun sürüsü, aşağıda uzakta vadi. Değnek, el ya da beden görünmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "yamac",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.4
+          },
+          {
+            "id": "suru",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "bakis-acisi-yuruyus"
+      },
+      "ses": {
+        "anlatim": "b06-s04.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s05",
+      "anlatim": [
+        {
+          "metin": "Yıllar sonra, peygamberliğinden sonra bir gün şöyle buyurdu: “Allah'ın gönderdiği her peygamber koyun gütmüştür.”",
+          "iddialar": [
+            "i-b06-008"
+          ]
+        },
+        {
+          "metin": "Yanındakiler, “Ya sen?” diye sorunca şöyle dedi: “Evet, ben de bir miktar ücret karşılığında Mekkelilerin koyunlarını güttüm.”",
+          "iddialar": [
+            "i-b06-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, aynı yamaç uzak plan: sürü yamaçtan vadiye iniyor, gölgeler uzun. İnsan figürü yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "yamac",
+            "dosya": "",
+            "yerTutucu": "yokus",
+            "derinlik": 0.4
+          },
+          {
+            "id": "suru",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b06-s05.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "aksam-ruzgar"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s06",
+      "anlatim": [
+        {
+          "metin": "Ebû Tâlib yeğenini yolculuklarında bile yanından ayırmazdı.",
+          "iddialar": [
+            "i-b06-006"
+          ]
+        },
+        {
+          "metin": "Efendimiz on iki yaşındayken Ebû Tâlib, bir Kureyş kervanıyla ticaret için Şam diyarına, yani Suriye'ye gitmeye karar verdi.",
+          "iddialar": [
+            "i-b06-009",
+            "i-b06-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Sabah erken, Mekke'de evlerin önü, orta plan: develer çöktürülmüş, Kureyşli tüccarlar yük bağlıyor; Ebû Tâlib aralarında. Efendimiz çizilmez.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kervan",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b06-s06.mp3",
+        "muzik": "yolculuk-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s07",
+      "anlatim": [
+        {
+          "metin": "Yola çıkma vakti gelince, rivayete göre Efendimiz amcasından ayrılmak istemedi.",
+          "iddialar": [
+            "i-b06-011"
+          ]
+        },
+        {
+          "metin": "Ebû Tâlib'in yüreği yumuşadı ve şöyle dedi: “Vallahi onu yanımda götüreceğim. O benden, ben de ondan hiç ayrılmayız.”",
+          "iddialar": [
+            "i-b06-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Sabah erken, kervanın yanı; onun gözünden: Ebû Tâlib ona doğru eğilmiş, yüzünde şefkat; arkasında yüklü develer ve yola hazırlanan adamlar. Efendimiz'in eli ya da bedeni görünmez.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "ebu-talib-egilmis",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.8
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b06-s07.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "kervan-uzak"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b06-s08",
+      "anlatim": [
+        {
+          "metin": "Kervan kuzeye, Suriye topraklarına doğru yol aldı ve Busrâ'da konakladı.",
+          "iddialar": [
+            "i-b06-012"
+          ]
+        },
+        {
+          "metin": "Busrâ, Şam şehrinin güneyinde bir pazar şehriydi; Kureyş kervanları buraya sık sık uğrardı.",
+          "iddialar": [
+            "i-b06-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çöl uzak plan: uzun bir deve kervanı ufka doğru ilerliyor. Minare, kubbe, hilal yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55
+          }
+        ],
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Uzak plan: Busrâ'nın taş surları ve yapıları verimli bir ovada; kervan şehre yaklaşıyor. Minare, kubbe, hilal yok.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok-c",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "busra",
+                "dosya": "",
+                "yerTutucu": "evler",
+                "derinlik": 0.4
+              },
+              {
+                "id": "kervan-c",
+                "dosya": "",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.7
+              }
+            ]
+          }
+        ]
+      },
+      "ses": {
+        "anlatim": "b06-s08.mp3",
+        "muzik": "yolculuk-01",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b06-s09",
+      "anlatim": [
+        {
+          "metin": "Siyer kaynaklarında anlatılan bir rivayete göre, Busrâ'da manastırında yaşayan Bahîrâ adında bir rahip vardı.",
+          "iddialar": [
+            "i-b06-014"
+          ]
+        },
+        {
+          "metin": "Bahîrâ, daha önce oradan geçen Kureyş kervanlarıyla hiç ilgilenmez, kimseyle konuşmazdı.",
+          "iddialar": [
+            "i-b06-014"
+          ]
+        },
+        {
+          "metin": "Ama bu kez kervanda bir bulutun Efendimiz'i gölgelediğini, onun oturduğu ağacın dallarının üzerine eğildiğini gördü.",
+          "iddialar": [
+            "i-b06-014"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Busrâ'da küçük taş bir manastır; önünde konaklamış kervan, develer çökmüş. Manastırın penceresinden bakan rahip Bahîrâ (sade, koyu renk keşiş giysisi; yüzü sade). Efendimiz bu planda çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "manastir",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.45
+          },
+          {
+            "id": "kervan",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65
+          }
+        ],
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan: ağacın altında oturan Efendimiz; dallar ona doğru eğilmiş, üstünde bir bulutun gölgesi. Efendimiz nurlu figür olarak çizilir: on iki yaşında bir çocuk boyunda, baştan ayağa sıcak altın-beyaz nur, başında yeşil sarık; yüz, el ve beden ayrıntısı yok.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok-c",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "agac",
+                "dosya": "",
+                "yerTutucu": "kumas-tas",
+                "derinlik": 0.6
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.5,
+                  "y": 0.78,
+                  "boy": 0.32,
+                  "guc": 2.5
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ses": {
+        "anlatim": "b06-s09.mp3",
+        "muzik": "esik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "bahira",
+        "hz-muhammed"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b06-s10",
+      "anlatim": [
+        {
+          "metin": "Hemen bir yemek hazırlatıp bütün kafileyi davet etti.",
+          "iddialar": [
+            "i-b06-015"
+          ]
+        },
+        {
+          "metin": "Efendimiz yaşı küçük olduğu için yüklerin yanında bırakılmıştı. Bahîrâ onun da gelmesini istedi.",
+          "iddialar": [
+            "i-b06-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, manastırın önü, orta plan: yere serilmiş bir sofranın çevresinde oturan Kureyşli tüccarlar, ayakta onları karşılayan Bahîrâ. Uzakta, ağacın altında yüklerin yanında küçük bir nurlu figür (Efendimiz).",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "manastir",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.45
+          },
+          {
+            "id": "agac-uzak",
+            "dosya": "",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.5
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.5,
+            "ayar": {
+              "x": 0.82,
+              "y": 0.7,
+              "boy": 0.12,
+              "guc": 2.5
+            }
+          },
+          {
+            "id": "sofra",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b06-s10.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "bahira",
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b06-s11",
+      "anlatim": [
+        {
+          "metin": "Bahîrâ ona, kavminin adına yemin ettiğini duyduğu Lât ve Uzzâ putları adına bazı şeyler sormak istedi.",
+          "iddialar": [
+            "i-b06-016"
+          ]
+        },
+        {
+          "metin": "Efendimiz şöyle cevap verdi: “Bana Lât ve Uzzâ adına sorma. Vallahi onlardan daha çok nefret ettiğim bir şey yok.”",
+          "iddialar": [
+            "i-b06-016"
+          ]
+        },
+        {
+          "metin": "Bahîrâ bu kez Allah adına sordu; uykusundaki hâlini, görünüşünü ve işlerini sordu. Verdiği cevaplar Bahîrâ'nın bildiği tarife uyuyordu. Sonra sırtına baktı ve orada peygamberlik mührünü gördü.",
+          "iddialar": [
+            "i-b06-016"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, manastırın önü, yakın plan: Bahîrâ (yüzü sade, dikkatle bakıyor) karşısındaki Efendimiz'e eğilmiş. Efendimiz nurlu figür olarak çizilir: on iki yaşında bir çocuk boyunda, baştan ayağa sıcak altın-beyaz nur, başında yeşil sarık; yüz, el ve beden ayrıntısı yok. Mühür ya da sırt ayrıntısı çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "manastir",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.45
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.7,
+            "ayar": {
+              "x": 0.36,
+              "y": 0.84,
+              "boy": 0.4,
+              "guc": 2.5
+            }
+          },
+          {
+            "id": "bahira",
+            "dosya": "",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "sabit"
+      },
+      "ses": {
+        "anlatim": "b06-s11.mp3",
+        "muzik": "esik",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "bahira",
+        "hz-muhammed"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b06-s12",
+      "anlatim": [
+        {
+          "metin": "Sonra Ebû Tâlib'e döndü; yeğenini memleketine geri götürmesini ve onu Yahudilerden korumasını söyledi.",
+          "iddialar": [
+            "i-b06-017"
+          ]
+        },
+        {
+          "metin": "“Bu yeğeninin büyük bir şanı olacak” dedi.",
+          "iddialar": [
+            "i-b06-017"
+          ]
+        },
+        {
+          "metin": "Ebû Tâlib de Suriye'deki işini çabucak bitirdi ve yeğeniyle Mekke'ye döndü.",
+          "iddialar": [
+            "i-b06-019"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, manastırın önü, orta plan: Bahîrâ, Ebû Tâlib'le konuşuyor; ikisi de yüzleriyle, Ebû Tâlib kaygılı. Efendimiz bu planda çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "manastir",
+            "dosya": "",
+            "yerTutucu": "temel-taslari",
+            "derinlik": 0.45
+          },
+          {
+            "id": "konusma",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Uzak plan: kervan çölde güneye, Mekke'ye doğru geri dönüyor.",
+            "saat": "aksam",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-aksam.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "b02-col.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.27,
+                    "olcek": 1.56
+                  }
+                }
+              },
+              {
+                "id": "kervan-c",
+                "dosya": "",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.55
+              }
+            ]
+          }
+        ]
+      },
+      "ses": {
+        "anlatim": "b06-s12.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "ruzgar-hafif"
+      },
+      "sahislar": [
+        "bahira",
+        "ebu-talib",
+        "hz-muhammed"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b06-s13",
+      "anlatim": [
+        {
+          "metin": "Bu karşılaşmayı anlatan rivayetin sağlamlığı tartışmalıdır; bazı âlimler onu sahih bulmayıp reddetmiş, bazıları ise doğru kabul etmiştir.",
+          "iddialar": [
+            "i-b06-018"
+          ]
+        },
+        {
+          "metin": "Efendimiz ise Allah'ın koruması altında, Câhiliye'nin kötülüklerinden uzak büyümeye devam etti.",
+          "iddialar": [
+            "i-b06-020"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Mekke vadisi uzak plan: kervan vadiye giriyor, evler ve alçak Kâbe akşam ışığında. İnsanlar küçük ve ayrıntısız.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b06-s13.mp3",
+        "muzik": "kapanis",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b06-001",
+      "ifade": "Abdülmuttalib'in ölümünden sonra sekiz yaşındaki Efendimiz'in bakımını ve himayesini amcası Ebû Tâlib üstlendi; Efendimiz artık hep onun yanında, onunla birlikteydi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 114 (İbn İshak: dedesinden sonra onun bakımını Ebû Tâlib üstlendi, 'ona ve onunla birlikte' idi). MUHAMMED (s. 407) ve EBÛ TÂLİB (s. 237) sekiz yaşı ve himayeyi verir. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 114",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-002",
+      "ifade": "Ebû Tâlib, Kureyş içinde sözü dinlenen, saygı duyulan biriydi.",
+      "guc": "guclu",
+      "gerekce": "EBÛ TÂLİB (s. 237): 'Kureyş içinde önde gelen, sözü dinlenen, saygı duyulan'. Hadislerle İslâm c. 1: 'Mekke'nin saygın simalarından'. İki D kaynağı. Hâşimoğulları reisliği anlatıma alınmadı: HÂŞİM (Benî Hâşim) maddesine göre Ebû Tâlib reisliğe kardeşi Zübeyr'in ölümünden sonra geçti; himayenin ilk yıllarında reis olduğu belli değil.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 1, PDF s. 523",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-003",
+      "ifade": "Ebû Tâlib'in ailesi kalabalıktı.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407): 'kalabalık bir aileye sahip olan Ebû Tâlib'. EBÛ TÂLİB (s. 238): Fâtıma bint Esed'den dört oğlu ve iki (bir görüşe göre dört) kızı oldu. İki D kaynağı. Fakirliği yalnız EBÛ TÂLİB (s. 237) yazar, klasik dayanak ve zaman vermez; anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 238 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-004",
+      "ifade": "Ebû Tâlib yeğenini çok severdi; onun uğurlu olduğuna inanır, üzerine titrer, iyi yetişmesi için elinden geleni yapardı.",
+      "guc": "guclu",
+      "gerekce": "EBÛ TÂLİB (s. 237, İbn Sa'd I, 119-120'ye atıfla): üzerine titrer, onu çok sever, uğurlu olduğuna inanır, iyi yetişmesi için elinden geleni yapardı. MUHAMMED (s. 407): çocuklarından daha fazla sevdi, uğurlu olduğuna inandı, iyi yetişmesi için gayret etti. 'Kendi çocuklarından daha çok' yalnız MUHAMMED'de ve atıfsız olduğu için anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-005",
+      "ifade": "Ebû Tâlib'in hanımı Fâtıma bint Esed de Efendimiz'e kendi çocuklarından daha çok özen gösterirdi.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407): 'kendi çocuklarından daha çok ihtimam gösterdi' (atıfsız). EBÛ TÂLİB (s. 238) yalnız 'Hz. Peygamber'in çok sevip saydığı bir müslüman olan hanımı Fâtıma bint Esed' der; özeni desteklemez. Tek D kaynağına dayanır ve klasik dayanak gösterilmemiştir; anlatıma alınması Erdem'in kararıdır (2026-11-17). 'İkinci annem' sözü anlatıma alınmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 238 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-006",
+      "ifade": "Ebû Tâlib yeğenini yolculuklarında bile yanından ayırmazdı.",
+      "guc": "guclu",
+      "gerekce": "EBÛ TÂLİB (s. 237): 'Hatta seyahatlerinde bile yanından ayırmazdı' (cümlenin kendi atfı yok; bir önceki cümle İbn Sa'd I, 119-120'ye atıf verir). İbn Hişâm s. 115 genel bir alışkanlık değil, Şam yolculuğundaki tek bir sözü verir (i-b06-011). Tek D kaynağına dayanır ve klasik dayanak gösterilmemiştir; anlatıma alınması Erdem'in kararıdır (2026-11-17). İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-007",
+      "ifade": "Efendimiz on yaşlarında, kalabalık ailesi olan amcası Ebû Tâlib'e yardım için koyun güttü.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407): 'kalabalık bir aileye sahip olan Ebû Tâlib'e yardım için on yaşlarında iken onun veya başkalarının koyunlarını güttüğü bilinmektedir' (Buhârî, İcâre, 2; Müslim, Îmân, 302; İbn Sa'd I, 125-126). Yaş ve sebep yalnız bu D kaynağında; Politika §2 istisnası: yaygın kabul görmüş, zayıf bulunmamış, klasik dayanağı (İbn Sa'd) gösterilmiş. Koyun güttüğü Buhârî ile sabit (i-b06-008).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-008",
+      "ifade": "Efendimiz peygamberliğinden sonra 'Allah'ın gönderdiği her peygamber koyun gütmüştür' buyurdu; 'Ya sen?' diye sorulunca 'Evet, ben de bir miktar ücret karşılığında Mekkelilerin koyunlarını güttüm' dedi.",
+      "guc": "kesin",
+      "gerekce": "Buhârî, İcâre, 2 (2262). Türkçesi Hadislerle İslâm c. 5'teki çeviriye dayanır ('bir miktar ücret karşılığında'; Arapçada 'karârît', küçük bir para birimi). MUHAMMED (s. 407) aynı hadise atıf verir. Buhârî metni elimizdeki yerel kaynaklarda yok; numara matbu nüshada kontrol edilmeli.",
+      "kaynaklar": [
+        {
+          "eser": "buhari-sahih",
+          "konum": "İcâre, 2 (2262)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 5, PDF s. 40 (metin); PDF s. 44 (dipnot 95: Buhârî, İcâre, 2, no. 2262)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-009",
+      "ifade": "Ebû Tâlib bir Kureyş kervanıyla ticaret için Şam diyarına (Suriye) gitmeye karar verdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 115 (Şam'a giden bir kervanla). EBÛ TÂLİB (s. 237), BAHÎRÂ (s. 486) ve MUHAMMED (s. 407) aynı bilgiyi verir. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-010",
+      "ifade": "Efendimiz bu yolculuk sırasında on iki yaşındaydı.",
+      "guc": "ihtilafli",
+      "gerekce": "EBÛ TÂLİB (s. 237, İbn Sa'd I, 153'e atıfla) 'on iki yaşlarında' der; BAHÎRÂ (s. 486) 'on iki (bir başka rivayete göre dokuz)' der; ARAP (s. 324) 'on iki ve yirmi beş yaşlarında bu seferlere katıldı' der. MUHAMMED (s. 407) ve BUSRÂ (s. 470) 'dokuz veya on iki' der. İbn Hişâm yaş vermez. Kaynaklar iki yaş arasında tercih belirtmez; MUHAMMED ve BUSRÂ dokuzu önce verir. On iki, İbn Sa'd I, 153'e atıfla EBÛ TÂLİB'de ve ARAP'ta tek yaş olarak geçer; yaygın kabul gereği (docs/ERDEM_KONTROL.md) ana metne on iki alındı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 324 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir rivayete göre Efendimiz bu yolculukta dokuz yaşındaydı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"BUSRÂ\", c. 6, s. 470 (İstanbul 1992)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b06-011",
+      "ifade": "Rivayete göre yola çıkılırken Efendimiz amcasından ayrılmak istemedi; Ebû Tâlib'in yüreği yumuşadı ve 'Vallahi onu yanımda götüreceğim; o benden, ben de ondan hiç ayrılmayız' dedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 115 (İbn İshak 'iddia ettiklerine göre' kaydıyla: yolculuğa hazırlanınca Resûlullah ona sarıldı, Ebû Tâlib'in yüreği yumuşadı ve yemin etti). EBÛ TÂLİB (s. 237): 'ısrarlı talebi üzerine yanına almıştı'. İbn İshak sözü 'ya da buna benzer bir şey dedi' (aw kemâ kâl) kaydıyla verir; tırnak içindeki Türkçe bizim çevirimizdir. İbn İshak'ın çekincesi anlatımda 'rivayete göre' ile korundu. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-012",
+      "ifade": "Kervan Suriye topraklarındaki Busrâ'da konakladı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 115 ('Şam topraklarından Busrâ'ya inince'); MUHAMMED (s. 407), BUSRÂ (s. 470). İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BUSRÂ\", c. 6, s. 470 (İstanbul 1992)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-013",
+      "ifade": "Busrâ, Şam şehrinin güneyinde bir pazar şehriydi; Kureyş kervanları buraya sık sık uğrardı.",
+      "guc": "guclu",
+      "gerekce": "BUSRÂ (s. 470): Şam'ın 141 km güneyinde; Câhiliye devrinde Kureyş kervanlarının çok sık ziyaret ettiği kuzey şehirlerinden. ARAP (s. 324): Câhiliye'de belli aylarda Ezriât ve Busrâ'da da panayır kurulurdu; ARAP (s. 323): Mekke'den Dımaşk'a giden ticaret yolu Busrâ'dan geçer. BUSRÂ'daki ünlü panayır bilgisi Roma dönemine ait olduğu için dayanak sayılmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BUSRÂ\", c. 6, s. 470 (İstanbul 1992)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 324 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 323 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-014",
+      "ifade": "Rivayete göre Busrâ'daki manastırında yaşayan rahip Bahîrâ, daha önce Kureyş kervanlarıyla hiç ilgilenmezdi; bu kez kervanda Efendimiz'i bir bulutun gölgelediğini, oturduğu ağacın dallarının üzerine eğildiğini gördü.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 115; BAHÎRÂ (s. 486). Politika §3 gereği D değerlendirmesi okundu: MUHAMMED (s. 407) Bahîrâ görüşmesini 'sağlam rivayetlere dayanmayan', 'tartışmalı bir konu' diye niteler; BAHÎRÂ (s. 486) bazı âlimlerin senedin mürsel olduğunu, olayı naklettiği söylenen Ebû Mûsâ el-Eş'arî'nin olayı görmesinin mümkün olmadığını, râvilerden Abdurrahman b. Gazvân'ın münker hadisler naklettiğini belirterek rivayeti reddettiğini, Köksal'ın ise savunduğunu yazar. EBÛ TÂLİB (s. 237) olayı 'kaynakların ittifakla verdikleri bilgilere göre' diye çekincesiz verir; İbn Hişâm 'iddia ettiklerine göre' kaydıyla anlatır. Bu yüzden 'ihtilafli'; Erdem'in kararıyla (2026-11-17) anlatıma 'rivayete göre' çekincesiyle girer ve tartışma i-b06-018 ile anlatımda söylenir. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-015",
+      "ifade": "Bahîrâ yemek hazırlatıp bütün kafileyi davet etti; yaşı küçük olduğu için yüklerin yanında bırakılan Efendimiz'in de gelmesini istedi.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 115-116 (küçük büyük, köle hür herkesi davet etti; Resûlullah yaşı küçük olduğu için ağacın altında yüklerin yanında kalmıştı). BAHÎRÂ (s. 486) aynı bilgiyi verir. Güç gerekçesi için bk. i-b06-014. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 115-116",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-016",
+      "ifade": "Bahîrâ, kavminin adına yemin ettiğini duyduğu Lât ve Uzzâ putları adına sormak isteyince Efendimiz 'Bana Lât ve Uzzâ adına sorma; vallahi onlardan daha çok nefret ettiğim bir şey yok' dedi. Bahîrâ Allah adına sorup uykusundaki hâlini, görünüşünü ve işlerini sordu; cevaplar bildiği tarife uyuyordu. Sırtına bakıp peygamberlik mührünü gördü.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 116 (Lât ve Uzzâ cevabı yalnız burada; Bahîrâ'nın bu yemini kavminin bunlarla yemin ettiğini duyduğu için kullandığı da burada). BAHÎRÂ (s. 486): çeşitli sorular sordu, sırtına bakarak peygamberlik mührünü gördü. Lât ve Uzzâ cevabını anlatıma alma kararı Erdem'in (2026-11-17). Sözün Türkçesi bizim çevirimizdir. Güç gerekçesi için bk. i-b06-014. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 116",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-017",
+      "ifade": "Bahîrâ, Ebû Tâlib'e yeğenini memleketine geri götürmesini ve onu Yahudilerden korumasını söyledi; 'Bu yeğeninin büyük bir şanı olacak' dedi.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 116-117 (önce 'bu çocuk nesi oluyor' diye sordu; babasının öldüğünü öğrenince 'yeğenini memleketine geri götür, onu Yahudilerden sakın' dedi; 'yeğeninin büyük bir şanı olacak'). BAHÎRÂ (s. 486): yetim kaldığını öğrenince iyi bakmasını ve Yahudilerden korumasını tavsiye etti. EBÛ TÂLİB (s. 237): 'İncil'de vaad edilen peygamber olduğunu, iyi koruması gerektiğini söyledi'. Sözün Türkçesi bizim çevirimizdir. Güç gerekçesi için bk. i-b06-014. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 116-117",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-018",
+      "ifade": "Bahîrâ ile karşılaşmayı anlatan rivayetin sağlamlığı tartışmalıdır; bazı âlimler onu sahih bulmayıp reddetmiş, bazıları doğru kabul etmiştir.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407): 'Hz. Muhammed'in burada rahip Bahîrâ ile görüşüp görüşmediği ve bu esnada aralarında nelerin konuşulduğu hususu tartışmalı bir konudur (sağlam rivayetlere dayanmayan bu görüşmeyle ilgili değerlendirmeler için bk. BAHÎRÂ ...)'. BAHÎRÂ (s. 486): bazı âlimler rivayeti 'ya tamamen reddetmişler veya üzerinde durmaya ve reddetmeye bile değer bulmamışlar'dır; savunan olarak Köksal anılır. İddia tartışmanın varlığıdır; iki D kaynağı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b06-019",
+      "ifade": "Ebû Tâlib Suriye'deki işini çabucak bitirip yeğeniyle Mekke'ye döndü.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm s. 117 (Şam'daki ticaretini bitirince onunla hızla memleketine döndü); BAHÎRÂ (s. 486): 'Suriye'deki işlerini hemen bitirip onu Mekke'ye götürdü'. EBÛ TÂLİB (s. 237) ise 'Şam'a gitmekten vazgeçip süratle Mekke'ye dönmüştü' der; dipnotta. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 117",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir rivayete göre Ebû Tâlib, Şam şehrine gitmekten vazgeçip Busrâ'dan hemen Mekke'ye döndü.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b06-020",
+      "ifade": "Efendimiz Allah'ın koruması altında, Câhiliye'nin kötülüklerinden uzak büyüdü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm s. 117 (İbn İshak: Allah, ona vereceği şeref ve risalet sebebiyle onu koruyup gözeterek Câhiliye'nin kirlerinden uzak tuttu). 'El-Emîn' lakabı aynı paragrafta geçer; b08'in konusu olduğu için burada anlatılmadı. İbn Hişâm sayfaları taramadan okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 117",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

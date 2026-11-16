@@ -2,7 +2,7 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-16.
+Son güncelleme: 2026-11-17.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
@@ -67,7 +67,7 @@ Son güncelleme: 2026-11-16.
 3. **3 görsellik deneme**: üretildi (`İndirilenler\siyer\b03-on-ogul-api-sunburst.png`, `b02-ordu-yuruyus-api.png`, `b05-kabe-dosek-api.png`). Kusur: b02'de fil sol, son asker sağ kenara değiyor; b05'te soldaki oğul kenara yakın. Sırada: Erdem'in bakışı, sonra sahneye yerleştirme + önizleme.
 4. **Karakter referans sayfaları** (10 adet, `karakterler-chatgpt.md`), onaylananlar `content/gorseller/istemler/referans/`'a.
 5. **b02 ve b03 düzeltmeleri + yerleşim** (her biri 5 görsel), sonra **b04, b05, b10 2. tur**.
-6. **Sıradaki bölüm yazımı** (Claude, görsel beklerken): b06 Ebû Tâlib'in Himayesi (`/bolum-yaz 6`).
+6. ~~b06 Ebû Tâlib'in Himayesi~~ (2026-11-17, taslak): 13 sahne, 20 iddia; kaynak denetçisi bulguları düzeltildi, doğrulama 0 hata. Bahîrâ rivayeti çekinceyle anlatılıyor (Erdem kararı). Erdem'in bakacakları `docs/ERDEM_KONTROL.md` → b06. Sırada: b06 görsel istemleri (`istemler/b06.json`), sonra b07 Gençlik (`/bolum-yaz 7`).
 
 **Maliyet kararı (2026-11-15, Erdem):** 4 API görseli 0,45 dolar tuttu (~0,11 $/görsel). Bütün projeyi API ile bitirmek pahalı; duruma göre bazen API (`gorsel_uret.py`), bazen ChatGPT ile elle (`<bölüm>-chatgpt.md` + `gorsel_al.py`). Hangisinin kullanılacağını her seferinde Erdem söyler; API'yi sormadan toplu çalıştırma.
 
@@ -91,7 +91,7 @@ Erdem'e yalnız çok önemli kararlar sunulur; küçük görsel farkları yenide
 
 ## Kısaca
 
-Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 7'si taslak (b01-b05, b09, b10). b01 ve b09'un görselleri tam. b02'nin 19 görseli işlendi ama yerleşimi kusurlu; b03'ün 12'si işlendi, commit'lenmedi. Görsel üretimi yeni yönteme ve OpenAI API'ye geçiyor. Yayını engelleyen işler: içerik doğrulaması, görseller, anlatım sesleri.
+Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesinde denendi, telefonda henüz değil). 10 bölümün 8'i taslak (b01-b06, b09, b10). b01 ve b09'un görselleri tam. b02'nin 19 görseli işlendi ama yerleşimi kusurlu; b03'ün 12'si işlendi, commit'lenmedi. Görsel üretimi yeni yönteme ve OpenAI API'ye geçiyor. Yayını engelleyen işler: içerik doğrulaması, görseller, anlatım sesleri.
 
 **Erdem'in bakacakları:** `docs/ERDEM_KONTROL.md` (atıflar, çeviri ve etiket kararları; her bölümde güncellenir).
 

@@ -14,7 +14,8 @@
       "b10-hira",
       "b03-dogum",
       "b04-sut-anne",
-      "b05-yetimlik"
+      "b05-yetimlik",
+      "b06-ebu-talib"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -172,9 +173,14 @@
       "x": 0.141,
       "y": 0.099
     },
-    "ozet": "",
-    "bolumler": [],
-    "iddialar": [],
+    "ozet": "Şam'ın güneyinde bir pazar şehri; Kureyş kervanları buraya sık sık uğrardı. Efendimiz on iki yaşında amcası Ebû Tâlib'le çıktığı yolculukta burada konakladı.",
+    "bolumler": [
+      "b06-ebu-talib"
+    ],
+    "iddialar": [
+      "i-b06-012",
+      "i-b06-013"
+    ],
     "konumKaynagi": {
       "eser": "tdv-dia",
       "konum": "\"BUSRÂ\", c. 6, s. 470",
@@ -193,7 +199,8 @@
     "ozet": "",
     "bolumler": [
       "b01-cahiliye-mekkesi",
-      "b10-hira"
+      "b10-hira",
+      "b06-ebu-talib"
     ],
     "iddialar": [],
     "konumKaynagi": {

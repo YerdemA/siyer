@@ -78,6 +78,23 @@ Atıflar:
 - [ ] Müslim, Cenâiz, 976b: EBVÂ "Cenâiz 105, 106" diyor; sunnah.com kitap içi 134-135.
 - [ ] Hadislerle İslâm c. 1, PDF s. 429 + dn. 1294 s. 439 ("Annemden sonraki annemdir"; İsâbe VIII, 169-170); PDF s. 523 + dn. 1596 s. 532 (sekiz yaş, Ebû Tâlib).
 
+## b06 Ebû Tâlib'in Himayesi (50 atıf)
+
+Kararlar:
+- [x] Bahîrâ rivayeti (i-b06-014..017) 'ihtilafli' etiketle, "rivayete göre" çekincesiyle anlatılır; tartışma son sahnede söylenir (i-b06-018). Lât ve Uzzâ cevabı dahil (Erdem, 2026-11-17).
+- [ ] i-b06-010: Şam yolculuğunda yaş on iki seçildi; kaynaklar tercih belirtmiyor, MUHAMMED ve BUSRÂ "dokuz veya on iki" diyor. Dokuz dipnotta.
+- [x] Tek D kaynağına dayandığı hâlde anlatıma alınanlar (Erdem, 2026-11-17): i-b06-005 Fâtıma bint Esed'in ona kendi çocuklarından çok özen göstermesi (MUHAMMED s. 407), i-b06-006 "yolculuklarında bile yanından ayırmazdı" (EBÛ TÂLİB s. 237).
+- [ ] Anlatıma alınmayanlar (tek D kaynağı, klasik dayanak yok): Ebû Tâlib'in fakir düşmesi (EBÛ TÂLİB s. 237), "kendi çocuklarından daha çok sevdi" (MUHAMMED s. 407), "ikinci annem" sözü (MUHAMMED s. 407). İbn Sa'd yerelde olsa ikinci kaynak olurdu.
+- [ ] Hâşimoğulları reisliği alınmadı: HÂŞİM maddesine göre Ebû Tâlib reisliğe kardeşi Zübeyr'in ölümünden sonra geçti, KUREYŞ maddesi Ficâr'da (14-20 yaş) onu reis sayıyor.
+- [ ] i-b06-007 (on yaşlarında koyun gütmesi): yaş ve sebep yalnız MUHAMMED s. 407'de (İbn Sa'd I, 125-126'ya atıfla); Politika §2 istisnası uygulandı, doğrulama betiği uyarı veriyor.
+- [ ] Bizim çevirilerimiz: i-b06-011 (Ebû Tâlib'in sözü; İbn İshak "ya da buna benzer" kaydıyla verir), i-b06-016 (Lât ve Uzzâ cevabı), i-b06-017 (Bahîrâ'nın sözü).
+
+Atıflar:
+- [ ] İbn Hişâm s. 114 (himaye), s. 115 (kervan, sarılma, Busrâ, Bahîrâ, bulut, ağaç, davet), s. 116 (yükler yanında kalması, Lât-Uzzâ, mühür, uyarı), s. 117 (büyük şan, dönüş, Câhiliye kirlerinden korunma).
+- [ ] TDV "BAHÎRÂ" c. 4 s. 486; "BUSRÂ" c. 6 s. 470; "EBÛ TÂLİB" c. 10 s. 237-238; "ARAP" bölüm 5 (Özaydın) c. 3 s. 323-324; "MUHAMMED" bölüm 1 c. 30 s. 407 (matbu PDF görüntüden).
+- [ ] Buhârî, İcâre, 2 (2262): metin yerelde yok; "karârît" kelimesi ve numara matbu nüshada. Hadislerle İslâm c. 5, PDF s. 40 (metin), s. 44 (dn. 95).
+- [ ] Hadislerle İslâm c. 1, PDF s. 523 (Ebû Tâlib'in saygınlığı).
+
 ## b09 Hakem (67 atıf)
 
 - [ ] Ayrıntı: iddiaların `gerekce` alanları.

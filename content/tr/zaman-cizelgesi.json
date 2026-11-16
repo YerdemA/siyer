@@ -27,6 +27,24 @@
     "iddia": "i-b05-006"
   },
   {
+    "id": "z-581-koyun",
+    "yil": 581,
+    "yaklasik": true,
+    "hicriOncesi": null,
+    "olay": "Efendimiz on yaşlarında, amcası Ebû Tâlib'e yardım için koyun güder.",
+    "bolum": "b06-ebu-talib",
+    "iddia": "i-b06-007"
+  },
+  {
+    "id": "z-583-sam-yolculugu",
+    "yil": 583,
+    "yaklasik": true,
+    "hicriOncesi": null,
+    "olay": "Efendimiz on iki yaşında amcası Ebû Tâlib'le bir Kureyş kervanına katılıp Busrâ'ya gider.",
+    "bolum": "b06-ebu-talib",
+    "iddia": "i-b06-010"
+  },
+  {
     "id": "z-605-kabe-insasi",
     "yil": 605,
     "yaklasik": false,
