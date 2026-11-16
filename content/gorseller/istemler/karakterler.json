@@ -61,7 +61,8 @@
       "ad": "Ebû Tâlib",
       "en": "Abu Talib, a man of about 42 with a full, short black beard; an off-white head cloth with a dark brown cord band; a cream tunic and a long olive-brown cloak with a thin dark border; brown sandals.",
       "kaynak": "TDV EBÛ TÂLİB: 535 doğumlu → babası öldüğünde (577) ~42. Görünüş kaynakta yok.",
-      "secim": "Sakal, kıyafet."
+      "secim": "Sakal, kıyafet.",
+      "referans_dosya": "referans/karakter-ebu_talib.png (OpenAI API ile üç açılı sayfa, 2026-11-17; kimlik için b05-ebu-talib-kapi görseli verildi)"
     },
     "hunata": {
       "ad": "Hunâta el-Himyerî",
@@ -149,6 +150,20 @@
       "en": "Zayd ibn Amr in old age: an old man of about 70 with a full white beard; the same undyed off-white head cloth without a cord, plain undyed wool tunic and simple brown cloak as in his younger days.",
       "kaynak": "İbn Hişâm s. 144: şeyh kebîr; Buhârî 3828.",
       "secim": "Kıyafet zeyd_amr ile aynı."
+    },
+    "bahira": {
+      "ad": "Bahîrâ",
+      "en": "Bahira, a Christian monk of Arab descent who lives in a small stone monastery in Syria: a man of middle age with a full, dark-brown beard; a plain dark-brown hood over his head; a long, plain dark-brown woollen robe tied with a simple rope belt; brown sandals; no cross, no jewellery, no book in hand.",
+      "kaynak": "TDV BAHÎRÂ (c. 4, s. 486): Busrâ'da küçük bir manastırda yaşayan münzevi rahip; Abdülkays kabilesinden (bir rivayette Teymâ Yahudilerinden). Yaş ve görünüş kaynakta yok.",
+      "secim": "Orta yaş, sakal, kıyafet; haç çizilmez (emin olunmayan ayrıntı).",
+      "referans_dosya": "referans/karakter-bahira.png (OpenAI API ile üç açılı sayfa, 2026-11-17)"
+    },
+    "fatima_bint_esed": {
+      "ad": "Fâtıma bint Esed",
+      "en": "Fatima bint Asad, wife of Abu Talib: a woman of about 35 with a calm, kind face drawn simply; a long deep-blue head covering draped over her head and shoulders, hair not visible; a long plain sand-coloured dress under a dark-brown outer wrap; no jewellery.",
+      "kaynak": "Görünüş ve yaş kaynakta yok (TDV EBÛ TÂLİB, MUHAMMED yalnız adını ve Efendimiz'e özenini verir).",
+      "secim": "Yaş, kıyafet ve renkler. Temsil kuralına göre yüzü çizilebilir (eş, çocuk, anne-baba ya da süt anne değil).",
+      "referans_dosya": "referans/karakter-fatima_bint_esed.png (OpenAI API ile üç açılı sayfa, 2026-11-17)"
     }
   }
 }

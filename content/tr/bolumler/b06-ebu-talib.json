@@ -116,15 +116,9 @@
         "katmanlar": [
           {
             "id": "avlu",
-            "dosya": "",
+            "dosya": "b06-avlu.webp",
             "yerTutucu": "kumas-tas",
-            "derinlik": 0.3
-          },
-          {
-            "id": "aile",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.7
+            "derinlik": 0.5
           }
         ],
         "kamera": "yatay-kayma"
@@ -166,19 +160,10 @@
         "saat": "aksam",
         "katmanlar": [
           {
-            "id": "oda",
-            "dosya": "",
+            "id": "ev-ici",
+            "dosya": "b06-ev-ici.webp",
             "yerTutucu": "kumas-tas",
-            "derinlik": 0.3,
-            "ayar": {
-              "ton": false
-            }
-          },
-          {
-            "id": "aile",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.75,
+            "derinlik": 0.5,
             "ayar": {
               "ton": false
             }
@@ -213,28 +198,10 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
             "id": "yamac",
-            "dosya": "",
+            "dosya": "b06-yamac.webp",
             "yerTutucu": "yokus",
-            "derinlik": 0.4
-          },
-          {
-            "id": "suru",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.7
+            "derinlik": 0.5
           }
         ],
         "kamera": "bakis-acisi-yuruyus"
@@ -271,28 +238,10 @@
         "saat": "aksam",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-aksam.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
             "id": "yamac",
-            "dosya": "",
+            "dosya": "b06-yamac.webp",
             "yerTutucu": "yokus",
-            "derinlik": 0.4
-          },
-          {
-            "id": "suru",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.5
           }
         ],
         "kamera": "yavas-uzaklasma"
@@ -354,7 +303,7 @@
           },
           {
             "id": "kervan",
-            "dosya": "",
+            "dosya": "b06-kervan-hazirlik.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.65
           }
@@ -416,10 +365,16 @@
             "derinlik": 0.4
           },
           {
+            "id": "kervan",
+            "dosya": "b06-kervan-hazirlik.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
             "id": "ebu-talib-egilmis",
-            "dosya": "",
+            "dosya": "b06-ebu-talib-egilmis.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.8
+            "derinlik": 0.85
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -482,7 +437,7 @@
           },
           {
             "id": "kervan",
-            "dosya": "",
+            "dosya": "b06-kervan-yol.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.55
           }
@@ -495,22 +450,10 @@
             "kamera": "yavas-yaklasma",
             "katmanlar": [
               {
-                "id": "gok-c",
-                "dosya": "mekke-gok-gunduz.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
                 "id": "busra",
-                "dosya": "",
+                "dosya": "b06-busra.webp",
                 "yerTutucu": "evler",
-                "derinlik": 0.4
-              },
-              {
-                "id": "kervan-c",
-                "dosya": "",
-                "yerTutucu": "kalabalik",
-                "derinlik": 0.7
+                "derinlik": 0.5
               }
             ]
           }
@@ -554,41 +497,16 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "manastir",
-            "dosya": "",
+            "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.45
+            "derinlik": 0.5
           },
           {
-            "id": "kervan",
-            "dosya": "",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.65
+            "id": "bahira",
+            "dosya": "b06-bahira-bakis.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
           }
         ],
         "kamera": "yavas-yaklasma",
@@ -599,29 +517,25 @@
             "kamera": "yavas-yaklasma",
             "katmanlar": [
               {
-                "id": "gok-c",
-                "dosya": "mekke-gok-gunduz.webp",
-                "yerTutucu": "gok",
-                "derinlik": 0.0
-              },
-              {
-                "id": "agac",
-                "dosya": "",
-                "yerTutucu": "kumas-tas",
-                "derinlik": 0.6
-              },
-              {
                 "id": "nur",
                 "dosya": "",
                 "yerTutucu": "nur",
-                "derinlik": 0.6,
+                "derinlik": 0.7,
                 "ayar": {
                   "x": 0.5,
-                  "y": 0.78,
+                  "y": 0.8,
                   "boy": 0.32,
                   "guc": 2.5
                 }
               }
+            ],
+            "kadraj": {
+              "x": 0.72,
+              "y": 0.62,
+              "yakinlik": 1.8
+            },
+            "gizle": [
+              "bahira"
             ]
           }
         ]
@@ -658,40 +572,9 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "manastir",
-            "dosya": "",
+            "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.45
-          },
-          {
-            "id": "agac-uzak",
-            "dosya": "",
-            "yerTutucu": "kumas-tas",
             "derinlik": 0.5
           },
           {
@@ -700,7 +583,7 @@
             "yerTutucu": "nur",
             "derinlik": 0.5,
             "ayar": {
-              "x": 0.82,
+              "x": 0.78,
               "y": 0.7,
               "boy": 0.12,
               "guc": 2.5
@@ -708,7 +591,7 @@
           },
           {
             "id": "sofra",
-            "dosya": "",
+            "dosya": "b06-sofra.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.75
           }
@@ -754,35 +637,10 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "manastir",
-            "dosya": "",
+            "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.45
+            "derinlik": 0.5
           },
           {
             "id": "nur",
@@ -798,7 +656,7 @@
           },
           {
             "id": "bahira",
-            "dosya": "",
+            "dosya": "b06-bahira-egilmis.webp",
             "yerTutucu": "siluet-tek",
             "derinlik": 0.75
           }
@@ -843,39 +701,14 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "manastir",
-            "dosya": "",
+            "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.45
+            "derinlik": 0.5
           },
           {
             "id": "konusma",
-            "dosya": "",
+            "dosya": "b06-bahira-ebu-talib.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.75
           }
@@ -915,7 +748,7 @@
               },
               {
                 "id": "kervan-c",
-                "dosya": "",
+                "dosya": "b06-kervan-yol.webp",
                 "yerTutucu": "kalabalik",
                 "derinlik": 0.55
               }
@@ -994,7 +827,7 @@
           },
           {
             "id": "kervan",
-            "dosya": "",
+            "dosya": "b06-kervan-yol.webp",
             "yerTutucu": "kalabalik",
             "derinlik": 0.6
           }
