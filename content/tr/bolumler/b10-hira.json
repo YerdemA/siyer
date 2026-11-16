@@ -109,19 +109,28 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
-            "derinlik": 0.4
+            "derinlik": 0.4,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "kabe-yuksek",
@@ -133,7 +142,8 @@
                 "x": 0.502,
                 "y": 0.626,
                 "olcek": 0.272
-              }
+              },
+              "ton": "gece"
             }
           }
         ],
@@ -204,13 +214,14 @@
             "id": "put-bayrami",
             "dosya": "b10-put-bayrami.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.5
-          },
-          {
-            "id": "dort-kisi",
-            "dosya": "b10-dort-kisi.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.7
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.45,
+                "y": 0.691,
+                "olcek": 0.277
+              }
+            }
           },
           {
             "id": "toz",
@@ -219,7 +230,34 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: putun çevresindeki kalabalıktan ayrılıp yürüyen dört adam, omuzlarının üstünden geriye bakıyor.",
+            "kamera": "yatay-kayma",
+            "kadraj": {
+              "x": 0.45,
+              "y": 0.68,
+              "yakinlik": 1.4
+            },
+            "katmanlar": [
+              {
+                "id": "dort-kisi",
+                "dosya": "b10-dort-kisi.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.548,
+                    "y": 0.58,
+                    "olcek": 1.059
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s03.mp3",
@@ -342,10 +380,47 @@
             "id": "zeyd-dua",
             "dosya": "b10-zeyd-dua.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.635,
+                "olcek": 0.179
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Zeyd iki elini göğe kaldırmış dua ediyor; sırtında heybe.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "zeyd-dua-yakin",
+                "dosya": "b10-zeyd-dua.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.458,
+                    "y": 0.579,
+                    "olcek": 0.948
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.6,
+              "yakinlik": 1.4
+            },
+            "gizle": [
+              "zeyd-dua"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s05.mp3",
@@ -390,6 +465,24 @@
             "derinlik": 0.0
           },
           {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.38
+          },
+          {
             "id": "kabe-duvar",
             "dosya": "b10-kabe-duvar.webp",
             "yerTutucu": "kabe-yakin",
@@ -399,7 +492,14 @@
             "id": "zeyd-yasli",
             "dosya": "b10-zeyd-yasli.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.618,
+                "y": 0.581,
+                "olcek": 0.918
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -463,13 +563,27 @@
             "id": "zeyd-sofra",
             "dosya": "b10-zeyd-sofra.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.503,
+                "y": 0.63,
+                "olcek": 0.74
+              }
+            }
           },
           {
             "id": "sofra",
             "dosya": "b10-sofra.webp",
             "yerTutucu": "kap",
-            "derinlik": 0.85
+            "derinlik": 0.85,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.801,
+                "olcek": 0.613
+              }
+            }
           }
         ],
         "kamera": "sabit"
@@ -621,7 +735,10 @@
             "id": "vadi-tas",
             "dosya": "b10-vadi-tas.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "ton": false
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -756,13 +873,24 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.25
+            "derinlik": 0.25,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.58,
+                "olcek": 1.35
+              },
+              "ton": "gece"
+            }
           },
           {
             "id": "magara",
             "dosya": "b10-magara.webp",
             "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.95
+            "derinlik": 0.95,
+            "ayar": {
+              "ton": "gece"
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -1008,13 +1136,24 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.25
+            "derinlik": 0.25,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.58,
+                "olcek": 1.35
+              },
+              "ton": "gece"
+            }
           },
           {
             "id": "magara",
             "dosya": "b10-magara.webp",
             "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.95
+            "derinlik": 0.95,
+            "ayar": {
+              "ton": "gece"
+            }
           }
         ],
         "kamera": "yavas-yaklasma"

@@ -49,7 +49,18 @@ Son güncelleme: 2026-11-16.
      - b02-s06: uzak + çekim. b03-s06: Vehb'in evi grubun arkasında; çekimde ayrı, ölçekli katman.
      - Gerçek oynatıcıda b02-s11 ve b03-s06 çekimleri denendi. Eski ham görseller `gorsel-ham/` altında `-turN` adıyla duruyor.
      - Tam önizleme: `İndirilenler\siyer\_onizleme-b02.jpg`, `_onizleme-b03.jpg`.
-     - **Commit'lenmedi; Erdem'in önizleme onayı bekleniyor.** Sonra b04, b05, b10 aynı yolla (dört bileşim sorusuyla).
+     - Erdem onayladı, commit'lendi (`999af09`, `c1fc01e`).
+   - **2026-11-17: b04 (12), b05 (10), b10 2. tur (10) görselleri işlendi ve yerleştirildi; Erdem onayladı, commit'lendi.**
+     - Önizleme: `İndirilenler\siyer\_onizleme-b04.jpg`, `_onizleme-b05.jpg`, `_onizleme-b10.jpg`.
+     - Ortak düzeltmeler: bütün bölümlerde eksik Kâbe `ayar.gorsel` eklendi; Mekke sahnelerine `mekke-zemin` eklendi; orta plan sahneler uzak plan + çekim düzenine geçti.
+     - b04-s06: çekimde Âmine'nin kapısı olarak doğum evi (`b03-dogum-evi`) kullanıldı.
+     - b05-s05 ve s10: kapı görseli yok; tarifler "evlerin önü" olarak düzeltildi.
+     - b05-s07/s08: döşek Kâbe'nin hemen yanında.
+     - b10-s03: dört kişi kalabalığın önünde çekimde.
+     - b10-s06: Kâbe duvarı önünde Mekke arka planı eklendi.
+     - b10-s13/s18: mağaradaki mavi şerit, dağ katmanı uzatılarak kapatıldı.
+     - Kendi ışığıyla gelen mekânlarda (b04-s10, b05-s09, b10-s10) saat tonu kapatıldı.
+     - **Gece tonu (Erdem onayladı):** oynatıcıya `ayar.ton: "gece"` eklendi; işaretli katman ay ışığına çevrilir (koyu, soğuk, az doygun). İşaretlenenler: b01-s06, b01-s12, b04-s04 (çekim dahil), b09-s09, b10-s02, b10-s13, b10-s18'deki dağ, zemin, ev, Kâbe, mağara ve gündüz figürleri. Ateş ve meşale ışıklı katmanlar (b01-konak, b09 siluetleri) ile kendi ışıklı mekânlar (b03-s07, b03-s09, b05-s09) dokunulmadı. Gerçek oynatıcıda henüz denenmedi.
 
 1. ~~OpenAI API anahtarı~~ (2026-11-15 tamam): `OPENAI_API_KEY` çalışıyor.
 2. ~~API üretim betiği~~ (2026-11-15 tamam): `tools/gorsel_uret.py` (yeşil perde varsayılan, `--seffaf` isteğe bağlı). İstem metni `istem_devir.mesaj()` ile ChatGPT dosyasıyla aynı. Üslup görseli `istemler/referans/uslup-u01d.png`. Model karşılaştırması (`b03-on-ogul`): `gpt-image-2.6-sunburst` kazandı (10 oğul tam, Abdullah arkadan, düz yeşil); `chatgpt-image-latest` 9 oğul çizdi, yeşil dokulu. Varsayılan sunburst, `high`.

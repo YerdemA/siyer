@@ -57,13 +57,27 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "bedevi-kafile",
             "dosya": "b04-bedevi-kafile.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.269,
+                "y": 0.734,
+                "olcek": 0.245
+              }
+            }
           },
           {
             "id": "toz",
@@ -72,7 +86,37 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: merkeplere binmiş bedevî kadınlar, yüzleri örtülü, Mekke'ye giriyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "bedevi-kafile-yakin",
+                "dosya": "b04-bedevi-kafile.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.496,
+                    "y": 0.634,
+                    "olcek": 1.261
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.3,
+              "y": 0.72,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "bedevi-kafile"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s01.mp3",
@@ -128,7 +172,14 @@
             "id": "halime-yolda",
             "dosya": "b04-halime-yolda.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.697,
+                "olcek": 0.206
+              }
+            }
           },
           {
             "id": "toz",
@@ -137,7 +188,37 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan, arkadan: merkepteki Halîme, yürüyen Hâris ve yaşlı dişi deve.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "halime-yolda-yakin",
+                "dosya": "b04-halime-yolda.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.498,
+                    "y": 0.6,
+                    "olcek": 1.068
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "halime-yolda"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s02.mp3",
@@ -188,6 +269,12 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
@@ -197,10 +284,47 @@
             "id": "halime-mekke",
             "dosya": "b04-halime-mekke.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.704,
+                "olcek": 0.276
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: bebekleriyle uzaklaşan bedevî kadınlar; geride Hâris ile konuşan Halîme.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "halime-mekke-yakin",
+                "dosya": "b04-halime-mekke.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.502,
+                    "y": 0.606,
+                    "olcek": 1.215
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "halime-mekke"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s03.mp3",
@@ -249,22 +373,67 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "deve-sagma",
             "dosya": "b04-deve-sagma.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.503,
+                "y": 0.7,
+                "olcek": 0.265
+              },
+              "ton": "gece"
+            }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Hâris çökmüş deveyi sağıyor, Halîme arkada.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "deve-sagma-yakin",
+                "dosya": "b04-deve-sagma.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.511,
+                    "y": 0.625,
+                    "olcek": 0.993
+                  },
+                  "ton": "gece"
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "deve-sagma"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s04.mp3",
@@ -378,6 +547,12 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
@@ -386,11 +561,52 @@
           {
             "id": "iki-anne",
             "dosya": "b04-iki-anne-kapi.webp",
-            "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.6
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.17,
+                "y": 0.592,
+                "olcek": 0.081
+              }
+            }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Âmine'nin evinin kapısında konuşan Halîme ve Âmine; ikisinin de yüzü görünmez.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "ev",
+                "dosya": "b03-dogum-evi.webp",
+                "yerTutucu": "kapi-araligi",
+                "derinlik": 0.4
+              },
+              {
+                "id": "iki-anne-yakin",
+                "dosya": "b04-iki-anne-kapi.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.504,
+                    "y": 0.698,
+                    "olcek": 0.648
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s06.mp3",
@@ -445,7 +661,14 @@
             "id": "kuzular",
             "dosya": "b04-kuzular-yamac.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.499,
+                "y": 0.602,
+                "olcek": 0.363
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -502,7 +725,14 @@
             "id": "kosan-cocuklar",
             "dosya": "b04-kosan-cocuklar.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.65
+            "derinlik": 0.65,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.679,
+                "olcek": 0.223
+              }
+            }
           },
           {
             "id": "toz",
@@ -511,7 +741,37 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan, arkadan: çocuklar koşarak Halîme'ye geliyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kosan-cocuklar-yakin",
+                "dosya": "b04-kosan-cocuklar.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.507,
+                    "y": 0.577,
+                    "olcek": 1.005
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.7,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kosan-cocuklar"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s08.mp3",
@@ -582,16 +842,60 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "abdulmuttalib-dua",
             "dosya": "b04-abdulmuttalib-dua.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.7
+            "derinlik": 0.7,
+            "ayar": {
+              "gorsel": {
+                "x": 0.361,
+                "y": 0.715,
+                "olcek": 0.178
+              }
+            }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Orta plan: Kâbe'nin önünde ellerini açıp dua eden Abdülmuttalib.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "abdulmuttalib-dua-yakin",
+                "dosya": "b04-abdulmuttalib-dua.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.305,
+                    "y": 0.579,
+                    "olcek": 0.944
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.42,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "abdulmuttalib-dua"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s09.mp3",
@@ -634,7 +938,10 @@
             "id": "ev-ici",
             "dosya": "b04-ev-ici-aksam.webp",
             "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "ton": false
+            }
           }
         ],
         "kamera": "sabit"

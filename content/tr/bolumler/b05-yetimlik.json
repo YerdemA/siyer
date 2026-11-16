@@ -57,7 +57,14 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "toz",
@@ -122,7 +129,14 @@
             "id": "kervan",
             "dosya": "b05-kervan.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.662,
+                "olcek": 0.199
+              }
+            }
           },
           {
             "id": "toz",
@@ -131,7 +145,37 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan, arkadan: kervanda Âmine ve Ümmü Eymen develerin üstünde.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kervan-yakin",
+                "dosya": "b05-kervan.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.501,
+                    "y": 0.57,
+                    "olcek": 1.17
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kervan"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s02.mp3",
@@ -173,7 +217,14 @@
             "id": "yesrib",
             "dosya": "b05-yesrib-uzak.webp",
             "yerTutucu": "evler",
-            "derinlik": 0.45
+            "derinlik": 0.45,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.46,
+                "olcek": 0.608
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -224,10 +275,47 @@
             "id": "ebva-konak",
             "dosya": "b05-ebva-konak.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.598,
+                "olcek": 0.303
+              }
+            }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Daha yakın: çadırın önünde yalnız oturan Ümmü Eymen, arkadan; çökmüş develer.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebva-konak-yakin",
+                "dosya": "b05-ebva-konak.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.499,
+                    "y": 0.669,
+                    "olcek": 1.137
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.7
+            },
+            "gizle": [
+              "ebva-konak"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s04.mp3",
@@ -263,7 +351,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, Mekke'de bir evin kapısı, orta plan: kapıda duran Abdülmuttalib (yüzü sade çizilmiş); ona doğru yürüyen, örtülere sarınmış, arkadan görülen bir kadın (Ümmü Eymen). Efendimiz çizilmez. Nur tonu yok.",
+        "tarif": "Gündüz, Mekke'de evlerin önü, orta plan: kapıda duran Abdülmuttalib (yüzü sade çizilmiş); ona doğru yürüyen, örtülere sarınmış, arkadan görülen bir kadın (Ümmü Eymen). Efendimiz çizilmez. Nur tonu yok.",
         "saat": "gunduz",
         "katmanlar": [
           {
@@ -279,6 +367,12 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
@@ -287,11 +381,48 @@
           {
             "id": "teslim",
             "dosya": "b05-kapida-teslim.webp",
-            "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.6
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.161,
+                "y": 0.618,
+                "olcek": 0.092
+              }
+            }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Ümmü Eymen evlerin önünde bekleyen Abdülmuttalib'e doğru yürüyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "teslim-yakin",
+                "dosya": "b05-kapida-teslim.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.455,
+                    "y": 0.591,
+                    "olcek": 0.954
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.2,
+              "y": 0.6,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "teslim"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s05.mp3",
@@ -340,7 +471,14 @@
             "id": "kabir",
             "dosya": "b05-ebva-kabir.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.7
+            "derinlik": 0.7,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.734,
+                "olcek": 0.817
+              }
+            }
           }
         ],
         "kamera": "bakis-acisi-giris"
@@ -389,19 +527,75 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "dosek",
             "dosya": "b05-kabe-dosek.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.65
+            "derinlik": 0.65,
+            "ayar": {
+              "gorsel": {
+                "x": 0.625,
+                "y": 0.717,
+                "olcek": 0.122
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Kâbe'nin gölgesinde döşeğinde oturan Abdülmuttalib, çevresinde yerde oğulları.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "dosek-yakin",
+                "dosya": "b05-kabe-dosek.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.6,
+                    "y": 0.647,
+                    "olcek": 1.117
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.58,
+              "y": 0.7,
+              "yakinlik": 1.8
+            },
+            "gizle": [
+              "dosek"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s07.mp3",
@@ -446,19 +640,81 @@
             "derinlik": 0.0
           },
           {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
-            "id": "dosek-yakin",
-            "dosya": "b05-dosek-yakin.webp",
-            "yerTutucu": "siluet-tek",
-            "derinlik": 0.7
+            "id": "dosek",
+            "dosya": "b05-kabe-dosek.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.65,
+            "ayar": {
+              "gorsel": {
+                "x": 0.625,
+                "y": 0.717,
+                "olcek": 0.122
+              }
+            }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Yakın plan: elini kaldırıp oğullarını durduran Abdülmuttalib.",
+            "kamera": "sabit",
+            "kadraj": {
+              "x": 0.58,
+              "y": 0.7,
+              "yakinlik": 1.8
+            },
+            "gizle": [
+              "dosek"
+            ],
+            "katmanlar": [
+              {
+                "id": "dosek-yakin",
+                "dosya": "b05-dosek-yakin.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.589,
+                    "y": 0.616,
+                    "olcek": 0.896
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s08.mp3",
@@ -489,7 +745,15 @@
             "id": "oda",
             "dosya": "b05-son-gece.webp",
             "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              },
+              "ton": false
+            }
           }
         ],
         "kamera": "sabit"
@@ -527,7 +791,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Akşam, Mekke'de bir evin önü, orta plan: kapının önünde duran, sade giyimli bir Kureyşli adam (Ebû Tâlib), yüzü sade çizilmiş. Efendimiz çizilmez. Nur tonu yok.",
+        "tarif": "Akşam, Mekke'de evlerin önü, orta plan: evlerin önünde duran, sade giyimli bir Kureyşli adam (Ebû Tâlib), yüzü sade çizilmiş. Efendimiz çizilmez. Nur tonu yok.",
         "saat": "aksam",
         "katmanlar": [
           {
@@ -543,6 +807,12 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
@@ -551,11 +821,48 @@
           {
             "id": "ebu-talib",
             "dosya": "b05-ebu-talib-kapi.webp",
-            "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.6
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.82,
+                "y": 0.615,
+                "olcek": 0.096
+              }
+            }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: evlerin önünde bekleyen Ebû Tâlib.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebu-talib-yakin",
+                "dosya": "b05-ebu-talib-kapi.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.552,
+                    "y": 0.592,
+                    "olcek": 0.938
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.8,
+              "y": 0.6,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "ebu-talib"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s10.mp3",

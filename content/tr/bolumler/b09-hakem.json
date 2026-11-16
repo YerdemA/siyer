@@ -677,19 +677,28 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
-            "derinlik": 0.4
+            "derinlik": 0.4,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "kabe-yarim",
@@ -702,7 +711,8 @@
                 "x": 0.502,
                 "y": 0.662,
                 "olcek": 0.394
-              }
+              },
+              "ton": "gece"
             }
           },
           {

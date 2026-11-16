@@ -533,13 +533,19 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "kabe-alcak",
@@ -551,7 +557,8 @@
                 "x": 0.501,
                 "y": 0.665,
                 "olcek": 0.269
-              }
+              },
+              "ton": "gece"
             }
           }
         ],
@@ -1321,13 +1328,19 @@
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "ton": "gece"
+            }
           },
           {
             "id": "kalabalik",

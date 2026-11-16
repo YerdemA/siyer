@@ -277,5 +277,136 @@
       "eski_istem": "In front of a modest mudbrick house in Mecca at dusk: an Arab man of Quraysh in simple clothes standing by the door, face drawn simply and calm. No child visible. {yesil_perde_eki}"
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b05-yol-zemin",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-yol-zemin.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-yol-zemin.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-kervan",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-kervan.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-kervan.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-yesrib-uzak",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-yesrib-uzak.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-yesrib-uzak.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-ebva-konak",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-ebva-konak.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-ebva-konak.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-ebva-kabir",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-ebva-kabir.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-ebva-kabir.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-kapida-teslim",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-kapida-teslim.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-kapida-teslim.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-kabe-dosek",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-kabe-dosek.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-kabe-dosek.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-dosek-yakin",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-dosek-yakin.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-dosek-yakin.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-son-gece",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-son-gece.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-son-gece.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b05-ebu-talib-kapi",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b05-ebu-talib-kapi.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b05-ebu-talib-kapi.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    }
+  ]
 }

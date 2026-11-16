@@ -343,5 +343,162 @@
       "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing with his back to the viewer, hands raised in prayer. Full figure. No child, no light, no glow. {yesil_perde_eki}"
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b04-bedevi-kafile",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-bedevi-kafile.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-bedevi-kafile.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-sad-yurdu",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-sad-yurdu.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-sad-yurdu.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-halime-yolda",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-halime-yolda.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-halime-yolda.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-halime-mekke",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-halime-mekke.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-halime-mekke.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-deve-sagma",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-deve-sagma.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-deve-sagma.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-sad-cadirlar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-sad-cadirlar.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-sad-cadirlar.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-koyunlar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-koyunlar.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-koyunlar.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-iki-anne-kapi",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-iki-anne-kapi.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-iki-anne-kapi.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-kuzular-yamac",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-kuzular-yamac.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-kuzular-yamac.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-kosan-cocuklar",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-kosan-cocuklar.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-kosan-cocuklar.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-ev-ici-aksam",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-ev-ici-aksam.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-ev-ici-aksam.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    },
+    {
+      "istem": "b04-abdulmuttalib-dua",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b04-abdulmuttalib-dua.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b04-abdulmuttalib-dua.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-17)."
+    }
+  ]
 }
