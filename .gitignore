@@ -25,3 +25,6 @@ app/assets/icerik/
 
 # Üretilen görsellerin ham hâlleri (yeniden dönüştürme için)
 gorsel-ham/
+
+# Python önbelleği
+__pycache__/

@@ -166,6 +166,46 @@ KISA_YASAK = (
 )
 
 
+def mesaj(uslup: dict, k: dict, kartlar: dict) -> tuple[str, list[str]]:
+    """Tek görselin istem metni ve iliştirilecek referans dosya adları.
+    ChatGPT mesaj dosyası da API betiği (gorsel_uret.py) de bunu kullanır."""
+    if "konu" in k:
+        sahne = yapili_istem(k, kartlar)
+    else:
+        sahne = k["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
+    # Sıcak altın-beyaz yalnız nura ayrılmıştır (docs/GORSEL_USLUP.md → Renk ve ışık).
+    nur_ister = "golden-white" in k.get("istem", k.get("konu", ""))
+    nur_yasak = "" if nur_ister else (
+        " No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral."
+    )
+    # Yakın çekimde uzak çekimle tutarlılık için o sahnenin uzak görseli eklenir;
+    # yapılı istemde ayrıca geçen her karakterin referans sayfası.
+    ek = k.get("ekle", [])
+    ekle = [e for e in ([ek] if isinstance(ek, str) else ek) if e]
+    ekle += [f"karakter-{p['karakter']}.png" for p in k.get("kisiler", [])
+             if p.get("karakter") and kartlar[p["karakter"]].get("referans_sayfasi", True)]
+    ekle = list(dict.fromkeys(ekle))
+    ek_cumle = ""
+    if ekle:
+        ek_cumle = (
+            " The images attached to this message are references: character sheets show exactly how each named "
+            "character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. "
+            "Match them exactly, but do not copy their composition or background."
+        )
+    if "konu" in k:
+        metin = (
+            f"Scene {k['id']}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered "
+            f"textured paper shapes, muted earth palette; not photorealistic, not a 3D render.{ek_cumle}\n\n"
+            f"{sahne}\n\n{KISA_YASAK}{nur_yasak}"
+        )
+    else:
+        metin = (
+            f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
+            f"muted earth palette. Not photorealistic, not a 3D render.{ek_cumle} {sahne}\n\n{KISA_YASAK}{nur_yasak}"
+        )
+    return metin, ekle
+
+
 def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     """Tek ChatGPT sohbeti için: ilk mesaj üslubu ve kuralları sabitler, sonraki
     her mesaj tek görsel ister. ChatGPT 16:9 vermez; 3:2 yatay istenir. 16:9'a
@@ -213,38 +253,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     ]
     kartlar = _karakterler()
     for n, k in enumerate(istemler, 1):
-        if "konu" in k:
-            sahne = yapili_istem(k, kartlar)
-        else:
-            sahne = k["istem"].replace("{yesil_perde_eki}", uslup["yesil_perde_eki"]).strip()
-        # Sıcak altın-beyaz yalnız nura ayrılmıştır (docs/GORSEL_USLUP.md → Renk ve ışık).
-        nur_ister = "golden-white" in k.get("istem", k.get("konu", ""))
-        nur_yasak = "" if nur_ister else (
-            " No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral."
-        )
-        # Yakın çekimde uzak çekimle tutarlılık için o sahnenin uzak görseli eklenir;
-        # yapılı istemde ayrıca geçen her karakterin referans sayfası.
-        ekle = [e for e in [k.get("ekle", "")] if e]
-        ekle += [f"karakter-{p['karakter']}.png" for p in k.get("kisiler", [])
-                 if p.get("karakter") and kartlar[p["karakter"]].get("referans_sayfasi", True)]
-        ek_cumle = ""
-        if ekle:
-            ek_cumle = (
-                " The images attached to this message are references: character sheets show exactly how each named "
-                "character must look (face, beard, clothing colours); a wide shot shows the same scene. "
-                "Match them exactly, but do not copy their composition or background."
-            )
-        if "konu" in k:
-            metin = (
-                f"Scene {k['id']}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered "
-                f"textured paper shapes, muted earth palette; not photorealistic, not a 3D render.{ek_cumle}\n\n"
-                f"{sahne}\n\n{KISA_YASAK}{nur_yasak}"
-            )
-        else:
-            metin = (
-                f"Scene {k['id']}. Keep the flat paper cut-out style of the reference image: layered textured paper shapes, "
-                f"muted earth palette. Not photorealistic, not a 3D render.{ek_cumle} {sahne}\n\n{KISA_YASAK}{nur_yasak}"
-            )
+        metin, ekle = mesaj(uslup, k, kartlar)
         notlar = []
         isleme = k.get("isleme") or ("opak" if k.get("katman") == "gok" else "perde")
         notlar.append({
@@ -277,7 +286,7 @@ def karakter_sayfalari(idler: list[str] | None = None) -> Path:
         "",
         "Bölüm istemlerinden ÖNCE üretilir. Mesaj 0'ı (üslup ve kurallar) bölüm dosyasındakiyle aynı gönder, sonra bunları sırayla.",
         "Her sayfayı `İndirilenler\\siyer` klasörüne `karakter-<kimlik>.png` adıyla kaydet ya da `tools/gorsel_al.py` ile adlandır.",
-        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa `content/gorseller/istemler/referans/` klasörüne konur ve o karakterin geçtiği her mesaja iliştirilir. Mevcut görsellerden kırpılmış referansı olan karakterler (Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için sayfa üretilmez.",
+        "Claude Code her sayfayı karttaki tarifle karşılaştırır; onaylanan sayfa `content/gorseller/istemler/referans/` klasörüne konur ve o karakterin geçtiği her mesaja iliştirilir. Referans sayfası zaten olan karakterler (`referans_dosya` alanı dolu: Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için sayfa üretilmez.",
         "",
     ]
     for n, i in enumerate(secilen, 1):

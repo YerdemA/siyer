@@ -51,7 +51,7 @@ Her istemin sonunda ChatGPT'ye **çıktıdan önce denetle** listesi gider: kiş
 
 `content/gorseller/istemler/karakterler.json`: tekrar eden her kişi, hayvan ve nesnenin sabit görünüşü. `kaynak` dayanağı, `secim` ise kaynakta olmayıp tutarlılık için sabitlenenleri gösterir.
 
-Mevcut görsellerde kabul edilmiş karakterler (Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) için referans o görsellerden kırpılır (`istemler/referans/`), kota harcanmaz. Diğerleri için bölüm istemlerinden önce bir **referans sayfası** üretilir (aynı kişi üç açıdan, yeşil perdede): `istem_devir.py --karakterler` → `karakterler-chatgpt.md`. Claude Code sayfayı kartla karşılaştırır; onaylanan sayfa o karakterin geçtiği her mesaja iliştirilir. Görseller arası tutarlılığın asıl güvencesi budur; yalnız metinle ChatGPT aynı kişiyi her seferinde biraz farklı çizer.
+Mevcut görsellerde kabul edilmiş karakterlerin (Abdülmuttalib, Ebrehe, Vehb, Abdullah, Nüfeyl, Habeşli asker, fil) referansı önce o görsellerden kırpılmıştı; 2026-11-16'da Erdem'in isteğiyle bu kırpıntılar kimlik referansı verilerek OpenAI API ile temiz üç açılı sayfalara çevrildi (`istemler/referans/`). Diğerleri için bölüm istemlerinden önce bir **referans sayfası** üretilir (aynı kişi üç açıdan, yeşil perdede): `istem_devir.py --karakterler` → `karakterler-chatgpt.md`. Claude Code sayfayı kartla karşılaştırır; onaylanan sayfa o karakterin geçtiği her mesaja iliştirilir. Görseller arası tutarlılığın asıl güvencesi budur; yalnız metinle ChatGPT aynı kişiyi her seferinde biraz farklı çizer.
 
 ## Akış
 
