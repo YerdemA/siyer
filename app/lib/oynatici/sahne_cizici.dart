@@ -33,16 +33,26 @@ class SahneCizici extends CustomPainter {
   /// Saatin renk süzgeci; gündüz ve gök katmanı tonlanmaz (gök görselleri
   /// zaten saatine göre üretildi). Kendi ışığıyla üretilmiş bir katman
   /// (ör. kandil ışıklı iç mekân) `ayar.ton: false` ile hariç tutulur.
+  ///
+  /// Gece yalnız `ayar.ton: "gece"` olan katman tonlanır (ay ışığı: koyu,
+  /// soğuk, az doygun). Ortak gündüz katmanları (dağ, zemin, ev) gece
+  /// sahnesinde böyle işaretlenir; meşale ya da ateş ışıklı katmanlar
+  /// kendi ışığıyla üretildiği için işaretlenmez.
   static ColorFilter? saatTonu(String saat, Katman katman) {
-    if (!saatTonuAcik || katman.yerTutucu == 'gok' || katman.ayar['ton'] == false) {
+    final ton = katman.ayar['ton'];
+    if (!saatTonuAcik || katman.yerTutucu == 'gok' || ton == false) {
       return null;
     }
     // Satırlar: R, G, B, A çıkışı = katsayılar · (R, G, B, A) + sabit (0–255).
     final m = switch (saat) {
       'safak' => const <double>[1.0, 0, 0, 0, 8, 0, 0.88, 0, 0, 2, 0, 0, 0.80, 0, 6, 0, 0, 0, 1, 0],
       'aksam' => const <double>[0.92, 0, 0, 0, 6, 0, 0.78, 0, 0, 2, 0, 0, 0.72, 0, 8, 0, 0, 0, 1, 0],
-      // Gece tonlanmaz: gece katmanları (meşale, ateş, ay ışıklı iç mekân)
-      // kendi ışığıyla üretildi; karartmak onları bozar.
+      'gece' when ton == 'gece' => const <double>[
+        0.26, 0.117, 0.023, 0, 4, //
+        0.07, 0.373, 0.027, 0, 6, //
+        0.099, 0.194, 0.368, 0, 16, //
+        0, 0, 0, 1, 0,
+      ],
       _ => null,
     };
     return m == null ? null : ColorFilter.matrix(m);

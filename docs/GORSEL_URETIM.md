@@ -21,7 +21,7 @@ Yalnız bariz farklar ve hatalar yeniden üretilir; göz ardı edilebilecek kü�
 | `zemin` | Alt kısmı dolu arazi, ufuk yatay ve verilen yükseklikte, üstü yeşil | perde (kırpılır) | tam kadraj |
 | `mekan` | Tam dolu iç ya da dış mekân, kendi ışığıyla | `--opak` | tam kadraj; gerekirse `ayar.ton: false` |
 
-Ortak katmanlar (gök, Mekke dağları, zemin, evler, Kâbe) bir kez üretilir ve her sahnede aynı kalır. Figür görseline bunların hiçbiri çizdirilmez; çizdirilirse ölçek ve görünüş tutmaz.
+Ortak katmanlar (gök, Mekke dağları, zemin, evler, Kâbe) bir kez üretilir ve her sahnede aynı kalır. Gece sahnesinde gündüz ışığında üretilmiş katmanlara (ortak katmanlar ve figürler) `ayar.ton: "gece"` verilir; oynatıcı onları ay ışığına çevirir, ayrı gece görseli gerekmez. Figür görseline bunların hiçbiri çizdirilmez; çizdirilirse ölçek ve görünüş tutmaz.
 
 ## Sahne kurgusu: orta ve yakın plan
 
