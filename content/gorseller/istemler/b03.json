@@ -258,16 +258,142 @@
     },
     {
       "id": "b03-abdulmuttalib-kabe",
-      "tur": 1,
+      "tur": 3,
+      "isleme": "opak",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Day at the Ka'ba: close view of the doorway of the low, roofless ancient stone sanctuary from the attached reference: dry-laid, roughly cut grey-brown stone blocks in uneven rows, earthy brown at the base, walls only a little taller than a standing man, no roof, no covering cloth; its doorway is at ground level. The plain wooden door leaf stands open inward; inside is only shadow. Abdul-Muttalib is stepping through the doorway into the sanctuary, seen strictly from behind; his arms are in front of him and hidden by his body, so nothing he carries is visible. Behind the sanctuary, the bare mountains of Mecca under a clear sky.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "in the doorway, seen strictly from behind (back of the head cloth, shoulders and cloak only; no face, no profile), one foot over the threshold; full figure."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: even daylight; the inside of the doorway is in simple shadow; no glow, no light rays.",
+      "yasak": "baby, bundle, cloth bundle, anything in his arms, light from inside, glow, roof, black covering cloth, gold, inscriptions, idols, steps.",
+      "yeniden_neden": "Kâbe koyu gri kule gibi ve lentolu kapılıydı (kabe-alcak ile çelişki); Abdülmuttalib arkadan değil kameraya dönük görünüyordu.",
+      "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth seen fully from behind, stepping through the dark doorway of a low, roofless ancient stone sanctuary; his arms are in front of him and hidden by his body, so nothing he carries is visible. No baby, no bundle, no light, no glow. Full figure. {yesil_perde_eki}",
       "dosya": "b03-abdulmuttalib-kabe.webp",
       "katman": "abdulmuttalib-kabe",
-      "isleme": "sigdir",
       "sahneler": [
         "b03-s12"
       ],
-      "istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth seen fully from behind, stepping through the dark doorway of a low, roofless ancient stone sanctuary; his arms are in front of him and hidden by his body, so nothing he carries is visible. No baby, no bundle, no light, no glow. Full figure. {yesil_perde_eki}",
       "not": "İbn Hişâm s. 103: onu alıp Kâbe'ye girer. Abdülmuttalib arkadan; kucağındaki görünmez, nur kullanılmaz. Üretimde bebek/bohça görünürse kullanılmaz."
+    },
+    {
+      "id": "b03-vehb-ev",
+      "tur": 3,
+      "dosya": "b03-vehb-ev.webp",
+      "katman": "vehb-ev",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b03-s06"
+      ],
+      "tip": "nesne",
+      "cekim": "orta",
+      "konu": "The front of one simple flat-roofed house of Mecca, built like the houses in the attached reference (stone and mudbrick, small dark window), seen straight on at eye level, with a plain wooden door standing slightly open.",
+      "yerlesim": "The house front stands on one straight horizontal base line in the lower part of the image and fills about the middle 60% of the width.",
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "yasak": "people, animals, ground, domes, arches, decorations, inscriptions.",
+      "not": "İbn Hişâm s. 100: Abdülmuttalib, Abdullah'ı Vehb b. Abdümenâf'a götürür. Evin biçimi kaynakta yok: mekke-evler'le aynı sade ev. Atıf sayfası taramadan doğrulanmalı (b03-dogum.json iddiası)."
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b03-on-ogul",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b03-on-ogul.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-on-ogul.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "9 oğul + Abdullah arkadan; Abdülmuttalib kır sakallı. s02 uzak + çekim (parça 1)."
+    },
+    {
+      "istem": "b03-kureys-itiraz",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b03-kureys-itiraz.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-kureys-itiraz.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Soldaki adamın sol elinde ve bileklerde yeşil yansıma vardı; ham görsel yerel olarak ten rengine çevrildi (orijinal: gorsel-ham/b03/b03-kureys-itiraz-orijinal.png). s03 uzak + çekim."
+    },
+    {
+      "istem": "b03-yuz-deve",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b03-yuz-deve.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-yuz-deve.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Develer kenarlara değiyor; --sigdir yerine kırparak işlendi. s05 uzak + çekim."
+    },
+    {
+      "istem": "b03-vehb-kapi",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b03-vehb-kapi.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-vehb-kapi.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Vehb kartla uyumlu. s06 uzak + çekim."
+    },
+    {
+      "istem": "b03-kervan-uzak",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b03-kervan-uzak.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-kervan-uzak.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "5 deve, 3 yolcu, yatay. s08."
+    },
+    {
+      "istem": "b03-abdulmuttalib-kabe",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-17",
+      "kaynak_dosya": "b03-abdulmuttalib-kabe.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-abdulmuttalib-kabe.webp",
+      "durum": "secildi",
+      "tur": 3,
+      "not": "Abdülmuttalib tam arkadan, kucağı görünmüyor; Kâbe kabe-alcak ile uyumlu. s12 çekimi."
+    },
+    {
+      "istem": "b03-vehb-ev",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-17",
+      "kaynak_dosya": "b03-vehb-ev.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b03-vehb-ev.webp",
+      "durum": "secildi",
+      "tur": 3,
+      "not": "Sade ev cephesi, kapı aralık. s06 ana görüntüde grubun arkasında, çekimde figürlere göre ölçekli."
+    }
+  ]
 }

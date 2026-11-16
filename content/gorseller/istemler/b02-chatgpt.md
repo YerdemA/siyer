@@ -25,139 +25,86 @@ Format for every image: landscape 3:2. Green-screen images are cut-out layers pl
 
 ## Mesaj 1: b02-ebrehe-taht
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-ebrehe.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-taht.png`, `karakter-ebrehe.png`
 
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok.*
+*Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 28: kısa boylu, etli; s. 29: yarık izi (el-Eşrem); taht (sarîr) s. 34. Avlu ve şehir biçimi kaynakta yok: sade taş avlu ve evler. Taht s09'daki (b02-ordugah) tahtla aynı (Erdem, 2026-11-17).*
 
 ```text
-Scene b02-ebrehe-taht. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+Scene b02-ebrehe-taht. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Abraha seated calmly on a simple, plain wooden throne with a straight back, hands resting on the armrests; calm, composed face.
+SUBJECT: In San'a, Abraha sits calmly on his throne in a plain open stone courtyard; the same throne as in the attached throne reference: a sturdy wooden throne with a tall arched back upholstered in deep red cloth, thick square wooden armrests, a red seat cloth with a broad golden-yellow border hanging over the front. The throne stands on the paved ground of the courtyard, its legs and Abraha's feet clearly resting on the paving; behind him a plain stone wall, and beyond it simple flat-roofed stone and mudbrick houses and bare mountains under a clear day sky.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
-1. Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin. Pose and place: seated on the throne in the centre, facing the viewer.
+1. Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin. Pose and place: seated on the throne slightly right of centre, facing the viewer, hands on the armrests; full figure, feet on the ground.
 
-LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
-LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+LIGHT: even daylight from the upper left, soft shadows under the throne and Abraha's feet so they sit on the paving; no glow.
 
-DO NOT DRAW: animal skins, leopard pattern, crown, jewels, cross, carved ornaments on the throne.
+DO NOT DRAW: animal skins, leopard pattern, crown, jewels, cross, guards, other people, church, domes, columns with carvings, inscriptions.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 2: b02-ordu-yuruyus
-
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`
-
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 31: Habeşliler ve fil. Tek fil (FİL VAK'ASI: kaynakların çoğu tek fil der).*
-
-```text
-Scene b02-ordu-yuruyus. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
-
-CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
-
-SUBJECT: The army on the march, seen from the side at a great distance: a long column moving from right to left, with the single elephant at its head on the left.
-
-PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count. Keep every listed colour and feature exactly as written:
-1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: at the left end of the column, walking left.
-2. about 40 × small Abyssinian soldiers on foot (dark skin, white caps, cream tunics, red cloaks), simple and undetailed. Pose and place: walking left in a long single band behind the elephant.
-3. about 4 × small mounted soldiers on brown horses, same clothing. Pose and place: spaced along the band.
-
-LAYOUT: The whole column is one long horizontal band across the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the column never rises, curves or recedes toward the top of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
-
-LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
-
-DO NOT DRAW: banners, text, crosses, detailed weapons, ground, mountains, a second elephant.
-
-BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 3: b02-fil-coken
+## Mesaj 2: b02-sakif-heyet
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`, `karakter-nufeyl.png`, `karakter-habes_askeri.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-taht.png`, `karakter-ebrehe.png`, `karakter-habes_askeri.png`
 
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 35: Nüfeyl filin kulağını tutar; fil çöker. Dövülme gösterilmez.*
+*Kontrol: yeşil perde; nesne kenarlara değmemeli; Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi.*
 
 ```text
-Scene b02-fil-coken. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+Scene b02-sakif-heyet. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: The elephant has knelt down on the ground and refuses to rise; puzzled soldiers stand around it; Nufayl leans close to the elephant's ear, holding it gently and speaking into it.
+SUBJECT: A small delegation of Arab men of Ta'if stands before Abraha with heads slightly bowed in submission; one of them stands a little apart, ready to lead the way.
 
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 5 people in total). Keep every listed colour and feature exactly as written:
-1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: kneeling in the centre, side view facing right, head low.
-2. Nufayl ibn Habib of Khath'am, the army's guide: an Arab man of about 45 with a short dark beard; an off-white head cloth wrapped loosely without a cord; a cream tunic and a red cloak with a narrow white edge. Pose and place: standing at the elephant's head on the right, leaning to its ear.
-3. 4 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: two standing at the left, two at the far right, looking puzzled, spears pointing up.
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 6 people in total). Keep every listed colour and feature exactly as written:
+1. Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin. Pose and place: seated at the left on the same throne as in the attached throne reference: a sturdy wooden throne with a tall arched back upholstered in deep red cloth, thick square wooden armrests, a red seat cloth with a broad golden-yellow border hanging over the front, turned to the right towards the men; full figure, feet on the ground.
+2. Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: standing behind the throne at Abraha's left shoulder.
+3. 3 × men of Ta'if: Arab men aged 30 to 60 in off-white head cloths with dark cords, plain tunics and cloaks in muted brown, grey-blue and ochre. Pose and place: standing side by side in the middle, heads bowed.
+4. Abu Righal, a lean Arab man of about 40 with a short dark beard, sand-coloured head cloth, brown cloak. Pose and place: standing at the right, a little apart, one arm pointing the way.
 
-LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: Show every person and animal complete, from the top of the head (or head cloth) to the soles of the feet, with clear flat green space on all four sides (at least one tenth of the image width and height). Everyone stands on one and the same straight, horizontal foot line in the lower part of the image, at the same distance from the camera, arranged side by side from left to right. Never arrange figures in a line that recedes diagonally into the distance, and never place anyone higher in the image than the others. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them. The only exception: the throne under Abraha, which is drawn.
 
 LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
 
-DO NOT DRAW: beating, raised weapons, blood, a second elephant.
+DO NOT DRAW: idols, temples, buildings, ground, stone seat, stool.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 5 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 6 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 4: b02-ordu-dagilan
+## Mesaj 3: b02-kapi-dua
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`, `karakter-abdulmuttalib.png`
 
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; Kuşlar ayrı katman.*
-
-```text
-Scene b02-ordu-dagilan. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
-
-CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
-
-SUBJECT: The army breaking apart in panic, seen from the side at a distance: small soldiers running and scattering left and right, some ducking with arms over their heads.
-
-PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count. Keep every listed colour and feature exactly as written:
-1. about 25 × small Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), simple and undetailed. Pose and place: running in different directions, all on the same ground level.
-2. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: standing still near the right, side view, calm.
-
-LAYOUT: All figures are in one broad horizontal band in the lower half of the image, feet on roughly the same horizontal line, seen from eye level from the side; nobody is higher in the image than the band. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
-
-LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
-
-DO NOT DRAW: birds (separate layer), tents, camels, injuries, bodies, blood, a second elephant, view from above.
-
-BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 5: b02-donus
-
-*Kontrol: yeşil perde; nesne kenarlara değmemeli; İbn Hişâm s. 36: Ebrehe yaralı olarak taşındı. Yara ayrıntısı yok.*
+*Kontrol: tam dolu görsel, perde yok; İbn Hişâm s. 34-35: kapı halkası, birkaç Kureyşli, halk dağlara çekiliyor. Kâbe görünüşü kabe-alcak katmanıyla aynı (İbn Hişâm s. 122: çatısız, alçak). Kapı kanadı biçimi kaynakta yok: sade.*
 
 ```text
-Scene b02-donus. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+Scene b02-kapi-dua. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
-CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: The defeated army trudging home at a distance, seen from the side, moving from left to right: small, tired, scattered groups; in the middle, four soldiers carry a covered litter with a person lying under a cloth.
+SUBJECT: Evening at the Ka'ba: close view of the doorway corner of the low, roofless ancient stone sanctuary from the attached reference: dry-laid, roughly cut grey-brown stone blocks in uneven rows, earthy brown at the base, walls only a little taller than a standing man, no roof, no covering cloth; its doorway is at ground level. A plain wooden door leaf in the doorway carries a plain iron ring. Abdul-Muttalib stands at the door holding the iron ring with one hand and raising the other hand in prayer; a few men of Quraysh stand quietly behind him. Behind the sanctuary, the bare mountains of Mecca, where tiny distant groups of people are climbing the slopes.
 
 PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count (4 individually listed people). Keep every listed colour and feature exactly as written:
-1. about 12 × small tired Abyssinian soldiers (dark skin, white caps, cream tunics, red cloaks), heads bowed. Pose and place: walking right in three loose groups.
-2. 4 × soldiers of the same look carrying a litter on their shoulders. Pose and place: in the middle; the litter is covered with a red cloth, no body or face visible.
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: standing at the door on the right, seen from the side, one hand on the iron ring, the other raised in prayer; full figure.
+2. 3 × men of Quraysh: Arab men of mixed ages in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool; no bright colours, no jewellery. Pose and place: standing behind him at the left, hands folded, faces calm.
+3. about 15 × tiny distant people on the far mountainsides, simple undetailed shapes. Pose and place: climbing in small groups far away.
 
-LAYOUT: All groups walk in one horizontal band in the lower half of the image, all feet on the same horizontal line, seen exactly from the side; the line never rises toward the top of the image. Draw NO ground, floor, cast shadow, horizon, rocks, plants, buildings, walls, doors, tents, mountains, sky or Kaaba: those are separate layers. Only the listed people, animals and hand-held objects, isolated on a perfectly flat, uniform chroma green background (#00B140), with no green tint on them.
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
-LIGHT: even, neutral daylight from the front-left, soft paper shadows within the figures only. No sunset or night colouring, no dramatic light, no glow, no halo, no light rays (the app adds the time-of-day tint).
+LIGHT: warm low evening light from the left, long soft shadows; no glow.
 
-DO NOT DRAW: wounds, blood, visible body of the carried person, ground, mountains.
+DO NOT DRAW: roof, black cloth covering, gold, inscriptions, idols, tall walls, steps up to the door, arches.
 
-BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow; the background is one flat, uniform green with no ground, horizon or shadow.
+BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```

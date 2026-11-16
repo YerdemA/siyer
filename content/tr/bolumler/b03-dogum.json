@@ -57,7 +57,14 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "toz",
@@ -111,6 +118,12 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
@@ -120,10 +133,47 @@
             "id": "on-ogul",
             "dosya": "b03-on-ogul.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.27,
+                "y": 0.712,
+                "olcek": 0.231
+              }
+            }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Abdülmuttalib karşısındaki oğullarına konuşuyor; Abdullah arkadan.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.3,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "on-ogul"
+            ],
+            "katmanlar": [
+              {
+                "id": "on-ogul-yakin",
+                "dosya": "b03-on-ogul.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.556,
+                    "olcek": 1.011
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s02.mp3",
@@ -183,16 +233,60 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "kureys-itiraz",
             "dosya": "b03-kureys-itiraz.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.7
+            "derinlik": 0.7,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.713,
+                "olcek": 0.214
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Kureyşliler ellerini kaldırıp Abdülmuttalib'e itiraz ediyor; Abdullah arkadan.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kureys-itiraz"
+            ],
+            "katmanlar": [
+              {
+                "id": "kureys-itiraz-yakin",
+                "dosya": "b03-kureys-itiraz.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.502,
+                    "y": 0.559,
+                    "olcek": 1.038
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s03.mp3",
@@ -238,10 +332,30 @@
             "derinlik": 0.15
           },
           {
+            "id": "col",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
             "id": "kafile",
             "dosya": "b03-hayber-kafile.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.503,
+                "y": 0.641,
+                "olcek": 0.629
+              }
+            }
           },
           {
             "id": "toz",
@@ -315,16 +429,60 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           },
           {
             "id": "yuz-deve",
             "dosya": "b03-yuz-deve.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.65
+            "derinlik": 0.65,
+            "ayar": {
+              "gorsel": {
+                "x": 0.74,
+                "y": 0.707,
+                "olcek": 0.3
+              }
+            }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Abdülmuttalib ile Abdullah arkadan, karşılarında toplanmış develer.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.72,
+              "y": 0.7,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "yuz-deve"
+            ],
+            "katmanlar": [
+              {
+                "id": "yuz-deve-yakin",
+                "dosya": "b03-yuz-deve.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.566,
+                    "olcek": 1.112
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s05.mp3",
@@ -370,19 +528,89 @@
             "derinlik": 0.15
           },
           {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
             "derinlik": 0.4
           },
           {
+            "id": "vehb-ev",
+            "dosya": "b03-vehb-ev.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.78,
+                "y": 0.638,
+                "olcek": 0.42
+              }
+            }
+          },
+          {
             "id": "vehb-kapi",
             "dosya": "b03-vehb-kapi.webp",
-            "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.6
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.741,
+                "y": 0.7,
+                "olcek": 0.228
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Vehb, Abdülmuttalib'i ve Abdullah'ı eliyle buyur ediyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.72,
+              "y": 0.66,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "vehb-kapi",
+              "vehb-ev"
+            ],
+            "katmanlar": [
+              {
+                "id": "vehb-ev-yakin",
+                "dosya": "b03-vehb-ev.webp",
+                "yerTutucu": "evler",
+                "derinlik": 0.7,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.62,
+                    "y": 0.417,
+                    "olcek": 1.47
+                  }
+                }
+              },
+              {
+                "id": "vehb-kapi-yakin",
+                "dosya": "b03-vehb-kapi.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.504,
+                    "y": 0.579,
+                    "olcek": 1.026
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s06.mp3",
@@ -472,7 +700,14 @@
             "id": "kervan",
             "dosya": "b03-kervan-uzak.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.687,
+                "olcek": 0.58
+              }
+            }
           },
           {
             "id": "toz",
@@ -698,16 +933,39 @@
             "id": "kabe-alcak",
             "dosya": "kabe-alcak.webp",
             "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55
-          },
-          {
-            "id": "abdulmuttalib-kabe",
-            "dosya": "b03-abdulmuttalib-kabe.webp",
-            "yerTutucu": "siluet-tek",
-            "derinlik": 0.7
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Abdülmuttalib arkadan, Kâbe'nin kapısından içeri giriyor; kucağındaki görünmez.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "abdulmuttalib-kabe",
+                "dosya": "b03-abdulmuttalib-kabe.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s12.mp3",

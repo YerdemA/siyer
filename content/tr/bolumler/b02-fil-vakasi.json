@@ -32,7 +32,7 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, San'a, uzak plan (şehir tarifi kaynakta yok: sade taş ve kerpiç evler); ön planda tahtında oturan kısa boylu, etli Ebrehe, yüzünde yarık izi (İbn Hişâm s. 28-29). Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "tarif": "Gündüz, San'a, uzak plan: sade taş ve kerpiç evler (şehir tarifi kaynakta yok). Nur tonu yok.",
         "saat": "gunduz",
         "katmanlar": [
           {
@@ -46,22 +46,31 @@
             "dosya": "b02-sana-sehir.webp",
             "yerTutucu": "evler",
             "derinlik": 0.3
-          },
-          {
-            "id": "ebrehe-taht",
-            "dosya": "b02-ebrehe-taht.webp",
-            "yerTutucu": "siluet-tek",
-            "derinlik": 0.6,
-            "ayar": {
-              "gorsel": {
-                "x": 0.66,
-                "y": 0.56,
-                "olcek": 0.62
-              }
-            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: San'a'da taş bir avluda tahtında oturan Ebrehe; yüzünde yarık izi.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebrehe-taht",
+                "dosya": "b02-ebrehe-taht.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.02
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s01.mp3",
@@ -109,7 +118,20 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
           },
           {
             "id": "kilise",
@@ -179,7 +201,20 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
           },
           {
             "id": "kilise",
@@ -256,13 +291,27 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "ordu",
             "dosya": "b02-ordu-yuruyus.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.644,
+                "olcek": 1.001
+              }
+            }
           },
           {
             "id": "toz",
@@ -318,7 +367,14 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "esirler",
@@ -391,14 +447,44 @@
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.5,
-                "y": 0.55,
-                "olcek": 0.9
+                "x": 0.498,
+                "y": 0.693,
+                "olcek": 0.331
               }
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Sakîf heyeti tahtındaki Ebrehe'nin önünde başı eğik; Ebû Rigāl yolu gösteriyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "sakif-heyet"
+            ],
+            "katmanlar": [
+              {
+                "id": "sakif-heyet-yakin",
+                "dosya": "b02-sakif-heyet.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.464,
+                    "y": 0.625,
+                    "olcek": 1.225
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s06.mp3",
@@ -545,14 +631,44 @@
             "derinlik": 0.7,
             "ayar": {
               "gorsel": {
-                "x": 0.5,
-                "y": 0.55,
-                "olcek": 0.95
+                "x": 0.301,
+                "y": 0.698,
+                "olcek": 0.207
               }
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Abdülmuttalib ile Himyerli elçi Hunâta konuşuyor; arkada alçak Kâbe.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.32,
+              "y": 0.68,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "hunata"
+            ],
+            "katmanlar": [
+              {
+                "id": "hunata-yakin",
+                "dosya": "b02-hunata-abdulmuttalib.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.304,
+                    "y": 0.591,
+                    "olcek": 0.891
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s08.mp3",
@@ -694,9 +810,9 @@
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.5,
-                "y": 0.52,
-                "olcek": 0.95
+                "x": 0.55,
+                "y": 0.53,
+                "olcek": 1.1
               }
             }
           }
@@ -775,15 +891,32 @@
                 "olcek": 0.269
               }
             }
-          },
-          {
-            "id": "dua",
-            "dosya": "b02-kapi-dua.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.7
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Kâbe'nin kapısında halkayı tutup dua eden Abdülmuttalib, arkasında Kureyşliler; uzakta dağlara çıkan kafileler.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "dua",
+                "dosya": "b02-kapi-dua.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s11.mp3",
@@ -843,13 +976,27 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "fil-coken",
             "dosya": "b02-fil-coken.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.614,
+                "olcek": 1.038
+              }
+            }
           },
           {
             "id": "toz",
@@ -912,19 +1059,40 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "kacis",
             "dosya": "b02-ordu-dagilan.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.498,
+                "y": 0.653,
+                "olcek": 0.695
+              }
+            }
           },
           {
             "id": "kuslar",
             "dosya": "b02-kuslar.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.8
+            "derinlik": 0.8,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.43,
+                "olcek": 0.72
+              }
+            }
           }
         ],
         "kamera": "yukaridan-yavas-donus"
@@ -972,7 +1140,14 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "bos-col",
@@ -1026,13 +1201,27 @@
             "id": "col",
             "dosya": "b02-col.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
           },
           {
             "id": "donus",
             "dosya": "b02-donus.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.499,
+                "y": 0.649,
+                "olcek": 0.656
+              }
+            }
           },
           {
             "id": "toz",

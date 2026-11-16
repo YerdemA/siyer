@@ -34,26 +34,29 @@
     },
     {
       "id": "b02-ebrehe-taht",
-      "tur": 2,
-      "dosya": "b02-ebrehe-taht.webp",
-      "katman": "ebrehe-taht",
-      "isleme": "sigdir",
-      "sahneler": [
-        "b02-s01"
-      ],
-      "not": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: kaş, göz, burun ve dudağı yarıldığı için el-Eşrem; s. 31: halîm (yumuşak huylu). Taht (sarîr) s. 34. Giysi ve taht malzemesi kaynakta yok.",
-      "tip": "figur",
+      "tur": 3,
+      "isleme": "opak",
+      "tip": "mekan",
       "cekim": "orta",
-      "konu": "Abraha seated calmly on a simple, plain wooden throne with a straight back, hands resting on the armrests; calm, composed face.",
+      "konu": "In San'a, Abraha sits calmly on his throne in a plain open stone courtyard; the same throne as in the attached throne reference: a sturdy wooden throne with a tall arched back upholstered in deep red cloth, thick square wooden armrests, a red seat cloth with a broad golden-yellow border hanging over the front. The throne stands on the paved ground of the courtyard, its legs and Abraha's feet clearly resting on the paving; behind him a plain stone wall, and beyond it simple flat-roofed stone and mudbrick houses and bare mountains under a clear day sky.",
       "kisiler": [
         {
           "karakter": "ebrehe",
-          "poz": "seated on the throne in the centre, facing the viewer."
+          "poz": "seated on the throne slightly right of centre, facing the viewer, hands on the armrests; full figure, feet on the ground."
         }
       ],
-      "yasak": "animal skins, leopard pattern, crown, jewels, cross, carved ornaments on the throne.",
-      "eski_istem": "A short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), seated on a throne; calm, composed face drawn simply in the flat paper cut-out style. Full figure. No cross, no crown jewels. {yesil_perde_eki}",
-      "yeniden_neden": "Omzunda pars postu vardı (kartla çelişki); yaş kararı."
+      "ekle": [
+        "nesne-taht.png"
+      ],
+      "isik": "LIGHT: even daylight from the upper left, soft shadows under the throne and Abraha's feet so they sit on the paving; no glow.",
+      "yasak": "animal skins, leopard pattern, crown, jewels, cross, guards, other people, church, domes, columns with carvings, inscriptions.",
+      "not": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: yarık izi (el-Eşrem); taht (sarîr) s. 34. Avlu ve şehir biçimi kaynakta yok: sade taş avlu ve evler. Taht s09'daki (b02-ordugah) tahtla aynı (Erdem, 2026-11-17).",
+      "yeniden_neden": "Figür katmanı şehir görselinin önüne yapıştırılmış gibi duruyordu; tahtın altında zemin yoktu (Erdem, 2026-11-16). Artık zeminiyle tek parça mekân.",
+      "dosya": "b02-ebrehe-taht.webp",
+      "katman": "ebrehe-taht",
+      "sahneler": [
+        "b02-s01"
+      ]
     },
     {
       "id": "b02-kilise",
@@ -148,25 +151,19 @@
     },
     {
       "id": "b02-sakif-heyet",
-      "tur": 1,
-      "dosya": "b02-sakif-heyet.webp",
-      "katman": "sakif-heyet",
+      "tur": 3,
       "isleme": "sigdir",
-      "sahneler": [
-        "b02-s06"
-      ],
-      "not": "Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi.",
       "tip": "figur",
       "cekim": "orta",
-      "konu": "A small delegation of Arab men of Ta'if standing before Abraha with heads slightly bowed in submission; one of them stands a little apart, ready to lead the way.",
+      "konu": "A small delegation of Arab men of Ta'if stands before Abraha with heads slightly bowed in submission; one of them stands a little apart, ready to lead the way.",
       "kisiler": [
         {
           "karakter": "ebrehe",
-          "poz": "seated on a simple plain wooden stool at the left, turned to the right."
+          "poz": "seated at the left on the same throne as in the attached throne reference: a sturdy wooden throne with a tall arched back upholstered in deep red cloth, thick square wooden armrests, a red seat cloth with a broad golden-yellow border hanging over the front, turned to the right towards the men; full figure, feet on the ground."
         },
         {
           "karakter": "habes_askeri",
-          "poz": "standing behind Abraha's left shoulder."
+          "poz": "standing behind the throne at Abraha's left shoulder."
         },
         {
           "tarif": "men of Ta'if: Arab men aged 30 to 60 in off-white head cloths with dark cords, plain tunics and cloaks in muted brown, grey-blue and ochre",
@@ -178,8 +175,18 @@
           "poz": "standing at the right, a little apart, one arm pointing the way."
         }
       ],
-      "yasak": "idols, temples, buildings, ground.",
-      "eski_istem": "A small group of Arab men of Ta'if in simple clothes standing before a short, stout, heavy-set Abyssinian ruler with a visible scar across his face (split brow, nose and lip area), heads slightly bowed in submission; one man stands a little apart, ready to lead the way. Faces drawn simply. No idols, no temple. {yesil_perde_eki}"
+      "ekle": [
+        "nesne-taht.png"
+      ],
+      "izin": "the throne under Abraha, which is drawn.",
+      "yasak": "idols, temples, buildings, ground, stone seat, stool.",
+      "yeniden_neden": "Ebrehe taş blokta oturuyordu; s01 ve s09'daki tahtla çelişki (Erdem: s09'daki taht esas).",
+      "dosya": "b02-sakif-heyet.webp",
+      "katman": "sakif-heyet",
+      "sahneler": [
+        "b02-s06"
+      ],
+      "not": "Mes'ûd b. Muattib ve Ebû Rigāl (İbn Hişâm s. 32). Ebrehe b02-ebrehe-taht ile aynı kişi."
     },
     {
       "id": "b02-develer-surulen",
@@ -269,15 +276,41 @@
     },
     {
       "id": "b02-kapi-dua",
-      "tur": 1,
+      "tur": 3,
+      "isleme": "opak",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Evening at the Ka'ba: close view of the doorway corner of the low, roofless ancient stone sanctuary from the attached reference: dry-laid, roughly cut grey-brown stone blocks in uneven rows, earthy brown at the base, walls only a little taller than a standing man, no roof, no covering cloth; its doorway is at ground level. A plain wooden door leaf in the doorway carries a plain iron ring. Abdul-Muttalib stands at the door holding the iron ring with one hand and raising the other hand in prayer; a few men of Quraysh stand quietly behind him. Behind the sanctuary, the bare mountains of Mecca, where tiny distant groups of people are climbing the slopes.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "standing at the door on the right, seen from the side, one hand on the iron ring, the other raised in prayer; full figure."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 3,
+          "poz": "standing behind him at the left, hands folded, faces calm."
+        },
+        {
+          "tarif": "tiny distant people on the far mountainsides, simple undetailed shapes",
+          "sayi": 15,
+          "yaklasik": true,
+          "poz": "climbing in small groups far away."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: warm low evening light from the left, long soft shadows; no glow.",
+      "yasak": "roof, black cloth covering, gold, inscriptions, idols, tall walls, steps up to the door, arches.",
+      "not": "İbn Hişâm s. 34-35: kapı halkası, birkaç Kureyşli, halk dağlara çekiliyor. Kâbe görünüşü kabe-alcak katmanıyla aynı (İbn Hişâm s. 122: çatısız, alçak). Kapı kanadı biçimi kaynakta yok: sade.",
+      "yeniden_neden": "Kâbe yüksek ve kırmızımsı iri taşlıydı; uzak plandaki alçak, gri-kahve kabe-alcak ile çelişki.",
+      "eski_istem": "The chief of Quraysh, a handsome, imposing Arab man in a simple head cloth standing at the door of a low, roofless ancient stone sanctuary, holding the door ring with one hand, praying; a few men of Quraysh behind him, faces drawn simply. Far away on the mountainsides, tiny groups of people climbing up. {yesil_perde_eki}",
       "dosya": "b02-kapi-dua.webp",
       "katman": "kapi-dua",
-      "isleme": "perde",
       "sahneler": [
         "b02-s11"
-      ],
-      "istem": "The chief of Quraysh, a handsome, imposing Arab man in a simple head cloth standing at the door of a low, roofless ancient stone sanctuary, holding the door ring with one hand, praying; a few men of Quraysh behind him, faces drawn simply. Far away on the mountainsides, tiny groups of people climbing up. {yesil_perde_eki}",
-      "not": "İbn Hişâm s. 34-35: kapı halkası, birkaç Kureyşli, halk dağlara çekiliyor. Kapı biçimi kaynakta yok: sade."
+      ]
     },
     {
       "id": "b02-fil-coken",
@@ -419,9 +452,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-ebrehe-taht.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-ebrehe-taht.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Yüzdeki yarık izi belli belirsiz; omzunda istenmemiş bir pars postu var. s01'de ayar.gorsel ile sağa yerleştirildi."
     },
     {
@@ -467,9 +500,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-ordu-yuruyus.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-ordu-yuruyus.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Kol çaprazlama yokuş yukarı çizilmiş; s04'e mekke-daglar eklendi ki fil göğe değil dağa otursun."
     },
     {
@@ -491,9 +524,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-sakif-heyet.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-sakif-heyet.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Ebrehe tahtında, karşısında eğilmiş heyet. Kırpınca başlar kesildiği için sigdir'e alındı; s06'ya mekke-zemin eklendi."
     },
     {
@@ -563,9 +596,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-kapi-dua.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-kapi-dua.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Kâbe duvarı ve kapısı görselin içinde, kalabalık uzak yamaçta; neredeyse tam kadraj."
     },
     {
@@ -575,9 +608,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-fil-coken.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-fil-coken.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Temiz."
     },
     {
@@ -587,9 +620,9 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-ordu-dagilan.png",
       "boyut": "1672x941",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b02-ordu-dagilan.webp",
-      "durum": "secildi",
+      "durum": "degistirildi",
       "not": "Küçük figürler, yaralanma yok."
     },
     {
@@ -623,10 +656,114 @@
       "tarih": "2026-11-15",
       "kaynak_dosya": "b02-donus.png",
       "boyut": "1672x941",
+      "secilen": false,
+      "dosya": "b02-donus.webp",
+      "durum": "degistirildi",
+      "not": "Taşınan figür örtülü; yara ayrıntısı yok. s15'e mekke-daglar eklendi."
+    },
+    {
+      "istem": "b02-ebrehe-taht",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b02-ebrehe-taht.png",
+      "boyut": "1536x1024",
+      "secilen": false,
+      "dosya": "b02-ebrehe-taht.webp",
+      "durum": "degistirildi",
+      "tur": 2,
+      "not": "Kartla uyumlu (yarık izi, kıvırcık sakal, pars postu yok). s01 sağda, tahtın altı kadraj altında."
+    },
+    {
+      "istem": "b02-ordu-yuruyus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b02-ordu-yuruyus.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ordu-yuruyus.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Tek fil, kol yatay. s04 uzak plan; çöl zemini ayar.gorsel ile yukarı alındı (ufuk ~0,66)."
+    },
+    {
+      "istem": "b02-fil-coken",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b02-fil-coken.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-fil-coken.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Nüfeyl kartla uyumlu; 4 asker. s12 orta plan."
+    },
+    {
+      "istem": "b02-ordu-dagilan",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b02-ordu-dagilan.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ordu-dagilan.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Tek fil, yatay şerit. s13."
+    },
+    {
+      "istem": "b02-donus",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-16",
+      "kaynak_dosya": "b02-donus.png",
+      "boyut": "1536x1024",
       "secilen": true,
       "dosya": "b02-donus.webp",
       "durum": "secildi",
-      "not": "Taşınan figür örtülü; yara ayrıntısı yok. s15'e mekke-daglar eklendi."
+      "tur": 2,
+      "not": "Örtülü sedye, 4 taşıyıcı. s15 uzak plan."
+    },
+    {
+      "istem": "b02-ebrehe-taht",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-17",
+      "kaynak_dosya": "b02-ebrehe-taht.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-ebrehe-taht.webp",
+      "durum": "secildi",
+      "tur": 3,
+      "not": "Tek parça mekân; taht s09 ile aynı, zemine basıyor. s01 çekimi (parça 1); ana görüntü San'a uzak plan."
+    },
+    {
+      "istem": "b02-sakif-heyet",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-17",
+      "kaynak_dosya": "b02-sakif-heyet.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-sakif-heyet.webp",
+      "durum": "secildi",
+      "tur": 3,
+      "not": "Ebrehe s09 tahtında; 6 kişi. s06 uzak + çekim."
+    },
+    {
+      "istem": "b02-kapi-dua",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-17",
+      "kaynak_dosya": "b02-kapi-dua.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b02-kapi-dua.webp",
+      "durum": "secildi",
+      "tur": 3,
+      "not": "Alçak Kâbe ile uyumlu kapı, halka, 3 Kureyşli, dağda kafileler. s11 çekimi; ton kapalı (kendi akşam ışığı)."
     }
   ]
 }

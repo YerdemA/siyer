@@ -6,14 +6,14 @@
       "en": "Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals.",
       "kaynak": "İbn Hişâm s. 34: yakışıklı, heybetli. TDV ABDÜLMUTTALİB: 82 yaşında öldü (577) → Fil Vakası (570-571) sırasında ~75; yaşlılık bundan çıkarıldı.",
       "secim": "Sakal biçimi ve rengi, kıyafet renkleri; b02'deki görsellere göre. Oradaki gri tonu farkları küçük, yeniden üretilmedi.",
-      "referans_dosya": "referans/karakter-abdulmuttalib.png (kırpıldı: b02-hunata-abdulmuttalib)"
+      "referans_dosya": "referans/karakter-abdulmuttalib.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b02-hunata-abdulmuttalib kırpıntısı verildi)"
     },
     "ebrehe": {
       "ad": "Ebrehe",
       "en": "Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin.",
       "kaynak": "İbn Hişâm s. 28: kısa boylu, etli; s. 29: el-Eşrem (yüzü yarık). TDV EBREHE: dudağı veya burnu yarıldı; 525'te Eryât'ın ordusundaydı → 570'te en az ~60 yaşında. Habeşli.",
       "secim": "Saç, sakal, yara biçimi ve kıyafet b02-gorusme'ye göre. Yaşa rağmen kara sakal: mevcut görseller korunsun diye (Claude kararı, 2026-11-15).",
-      "referans_dosya": "referans/karakter-ebrehe.png (kırpıldı: b02-gorusme)"
+      "referans_dosya": "referans/karakter-ebrehe.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b02-gorusme kırpıntısı verildi)"
     },
     "abdullah": {
       "ad": "Abdullah (Efendimiz'in babası)",
@@ -21,14 +21,14 @@
       "kaynak": "TDV ABDULLAH: ~18 yaşında evlendi ve öldü. Temsil kuralı 3: yüz yok.",
       "secim": "Kıyafet renkleri (b03 görsellerine göre).",
       "yuzsuz": true,
-      "referans_dosya": "referans/karakter-abdullah.png (kırpıldı: b03-vehb-kapi)"
+      "referans_dosya": "referans/karakter-abdullah.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b03-vehb-kapi kırpıntısı verildi)"
     },
     "vehb": {
       "ad": "Vehb b. Abdümenâf",
       "en": "Wahb ibn Abd Manaf, chief of the Banu Zuhra: a dignified man of about 55 with a short, neat dark-brown beard with a little grey; an off-white head cloth with a dark brown cord band; a cream tunic and a long brown cloak without a coloured border.",
       "kaynak": "TDV ÂMİNE: Benî Zühre reisi. Görünüş kaynakta yok.",
       "secim": "Yaş, sakal, kıyafet.",
-      "referans_dosya": "referans/karakter-vehb.png (kırpıldı: b03-vehb-kapi)"
+      "referans_dosya": "referans/karakter-vehb.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b03-vehb-kapi kırpıntısı verildi)"
     },
     "amine": {
       "ad": "Hz. Âmine",
@@ -75,7 +75,7 @@
       "en": "Nufayl ibn Habib of Khath'am, the army's guide: an Arab man of about 45 with a short dark beard; an off-white head cloth wrapped loosely without a cord; a cream tunic and a red cloak with a narrow white edge.",
       "kaynak": "İbn Hişâm s. 31-32, 35; TDV FİL VAK'ASI: Has'am reisi, kılavuz. Görünüş kaynakta yok.",
       "secim": "b02-esirler'deki kılavuza göre.",
-      "referans_dosya": "referans/karakter-nufeyl.png (kırpıldı: b02-esirler)"
+      "referans_dosya": "referans/karakter-nufeyl.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b02-esirler kırpıntısı verildi)"
     },
     "zu_nefer": {
       "ad": "Zû Nefer",
@@ -89,7 +89,7 @@
       "en": "Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses.",
       "kaynak": "Habeşli ordu (İbn Hişâm s. 31). Donanım kaynakta yok.",
       "secim": "b02'deki askerlere göre sabitlendi; deri yelek ve mızrak kaynakta yok, kaynakla çelişmediği için korundu.",
-      "referans_dosya": "referans/karakter-habes_askeri.png (kırpıldı: b02-esirler)"
+      "referans_dosya": "referans/karakter-habes_askeri.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b02-esirler kırpıntısı verildi)"
     },
     "kureysli": {
       "ad": "Kureyşli erkek (genel)",
@@ -111,7 +111,7 @@
       "kaynak": "TDV FİL VAK'ASI: Mahmûd adlı fil; kaynakların çoğu tek fil der.",
       "secim": "Örtü rengi (b02-fil-coken'e göre). Renk kaynakta yok.",
       "hayvan": true,
-      "referans_dosya": "referans/karakter-fil.png (kırpıldı: b02-fil-coken)"
+      "referans_dosya": "referans/karakter-fil.png (OpenAI API ile üç açılı sayfa, 2026-11-16; kimlik için b02-fil-coken kırpıntısı verildi)"
     },
     "kuslar": {
       "ad": "Ebâbîl kuşları",

@@ -2,16 +2,79 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-15.
+Son güncelleme: 2026-11-16.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-1. **OpenAI API anahtarı** (Erdem): `OPENAI_API_KEY` kullanıcı ortam değişkenine kaydedilecek, Claude Code yeniden başlatılacak. Claude anahtarı görmeden yalnız varlığını kontrol eder (`[Environment]::GetEnvironmentVariable("OPENAI_API_KEY","User")` uzunluğu). Anahtar asla sohbete, depoya ya da komut satırına yazılmaz.
-2. **API üretim betiği** (Claude): `tools/gorsel_uret.py`. Kayıttaki yapılı istemi (`istem_devir.yapili_istem`) üslup görseli + karakter referanslarıyla OpenAI Images API'ye (edit uç noktası, `background: transparent`) gönderir; çıktıyı `İndirilenler\siyer\<kimlik>.png` olarak kaydeder, `gorsel_al.py`'deki denetimden geçirir, pafta çıkarır. Model ve kalite: önce `gpt-image-2.6` (Sunburst) ile `chatgpt-image-latest` karşılaştırılır; kalite `high`. Bütçe: 10 dolar yüklü.
-3. **3 görsellik deneme** (Claude, sonra Erdem bakar): `b03-on-ogul`, `b02-ordu-yuruyus`, `b05-kabe-dosek`. Sahneye yerleştirip önizlemeyle Erdem'e göster. Şeffaf zemin gelirse `gorsel_katman.py`'ye perdesiz giriş modu gerekir.
+0. **2026-11-16: 42 yeni görsel geldi** (`İndirilenler\siyer\yeni\`, ChatGPT ile elle; b02 5, b03 5, b04 12, b05 10, b10 10). Claude kartlarla tek tek denetledi: yeniden üretilecek yok. İşlerken dikkat:
+   - `b03-kureys-itiraz`: soldaki üçüncü adamın sol eli ve birkaç bilek yeşil yansımalı; perde silinince zeytin rengi kalıyor, işlerken o bölge yerel olarak düzeltilmeli.
+   - `b10-dort-kisi-yakin` ve `b03-yuz-deve`: konu yanlara değiyor; `--sigdir` yerine kırparak (cover) işlenmeli, yoksa kenarda kesik çizgi kalır.
+   - `b05-kapida-teslim`: Ümmü Eymen Abdülmuttalib'e değil derine doğru yürüyor gibi; yerleşimde bak.
+   - b04'teki Halîme/Hâris/Âmine görselleri referans sayfaları gibi düz keçe dokulu, Abdülmuttalib'li görseller eski kırpılmış referans gibi pürüzlü dokulu; karakter içi tutarlılık tamam.
+   - **b02 ve b03 işlendi ve yerleştirildi (2026-11-16), commit'lenmedi, Erdem'in önizleme onayı bekliyor** (`İndirilenler\siyer\_onizleme-b02.jpg`, `_onizleme-b03.jpg`). Hamlar `gorsel-ham/b02`, `b03` (eskiler `-tur1.png`). b02: `b02-col` zemini bütün sahnelerde `ayar.gorsel {0.5, 0.27, 1.56}` ile yukarı alındı (ufuk ~0,66; eskiden 0,80'de altyazının altında kalıyordu); yeni 5 figür ayaklarından zemine oturtuldu. b03: Kâbe'ye b01/b02'deki `ayar.gorsel` eklendi (eksikti, kadrajı dolduruyordu); s02, s03, s05, s06 b01 düzeninde: ana görüntü uzak plan (küçük figür + `mekke-zemin`), 1. parçada kadrajlı orta plan çekimi (`gizle` ile küçük figür gizlenir). Gerçek oynatıcıda (web) b03-s02 çekimi ve b02-s12 denendi, önizlemeyle aynı.
+   - Değişmeyen eski b03 katmanları (s04, s07, s09-s12) gözden geçirildi, sorun görülmedi.
+   - **Erdem önizlemede bariz sorunlar buldu** (Ebrehe montaj gibi, kuşlar her yerde, develer Kâbe'nin dibinde). Bunun üzerine b02/b03'ün bütün sahneleri, eski katmanlar dahil, bileşim sorularıyla yeniden denetlendi (pafta: `İndirilenler\siyer\_denetim-b02.jpg`, `_denetim-b03.jpg`). Bulgular:
+     - **Yeni görsel gerekir:**
+       - b02-s01: Ebrehe tahtta; altında zemin yok, şehrin önüne yapıştırılmış gibi. Gereken: avlu ya da salonla tek parça mekân görseli.
+       - b02-s11 ve b03-s12: Kâbe kapısı yakın planları birbirine ve `kabe-alcak`'a uymuyor (taş rengi, boy, kapı kanadı). b03-s12'de Abdülmuttalib arkadan değil kameraya dönük. Gereken: `kabe-alcak` ile uyumlu tek bir kapı yakın planı ve figürlerin ayrı katmanı.
+       - b03-s06: "evin kapısı önünde" denmiş ama boş vadide. Gereken: küçük bir ev cephesi/kapı nesnesi.
+     - **Yerleşimle düzelir:**
+       - b02-s13 kuşlar: küçült, ordunun üstüne topla.
+       - b03-s05 develer: Kâbe'den ayır, öne yay.
+       - b02-s08 Abdülmuttalib–Hunâta dev figürler: uzak plan + çekim düzenine geçir.
+       - b02-s10: başın üstü kadraj içinde düz kesik.
+       - b03-s04 Hayber kafilesi: dağ sırtında yürüyor, altta mavi şerit boşluk var.
+       - b02-s02: kilise San'a'da olmalı ama çölde; San'a evleri arkaya eklenip denenecek.
+       - b03 s02/s03/s05/s06: dört sahne aynı geniş açıyla açılıyor; kadraj çeşitlenecek.
+     - **Karar bekleyen:** Ebrehe'nin tahtı üç sahnede üç farklı (s01 ahşap sade, s06 taş blok, s09 süslü kırmızı minderli).
+     - **Küçük:** b03-s08'de kervan yandan gidiyor, tarif "arkadan uzaklaşan Abdullah" diyor; uzakta seçilmiyor.
+   - **Kırpılmış 7 referans API ile yeniden üretildi (2026-11-16, Erdem'in isteği):** Abdülmuttalib, Ebrehe, Abdullah, Vehb, Nüfeyl, Habeşli asker, fil. Kimlik için eski kırpıntı da verildi. Abdullah'ın ilk sayfasında yanaktan sakal göründüğü için ikinci kez üretildi; toplam 8 API görseli (~0,9 $). Yeniler `referans/`'a kondu (eskiler git'te); ham hâlleri `İndirilenler\siyer\referans-yeni\`'de.
+   - **2026-11-17: Erdem listeyi onayladı; Ebrehe'nin tahtı için s09'daki (b02-ordugah) taht esas.**
+     - 7 yerleşim işi yapıldı (önizleme: `İndirilenler\siyer\_duzeltme-b02.jpg`, `_duzeltme-b03.jpg`):
+       - b02-s13: kuşlar ordunun üstünde.
+       - b02-s10: kesik baş kadraj dışında.
+       - b02-s02 ve s03: kilisenin çevresine `mekke-evler` eklendi. `b02-sana-sehir` kendi dağ ve göğünü taşıdığı için kullanılamadı.
+       - b02-s08: uzak plan + çekim.
+       - b03-s04: çöl zemini eklendi, kafile yere indi.
+       - b03-s05: develer Kâbe'nin sağında; ölçek Kâbe ≈ 2 deve boyu.
+       - b03-s02 ve s06: kadraj çeşitlendi.
+     - Yeni görsel sayısı 5 çıktı (taht birliği s06'yı da gerektirdi; Kâbe kapısında iki ayrı sahne var). Erdem'in kuralı gereği (3'ten fazlaysa elle) **ChatGPT ile elle** üretilecek: `b02-chatgpt.md` ve `b03-chatgpt.md` (`--tur 3`).
+       - b02: `ebrehe-taht` (mekân), `sakif-heyet`, `kapi-dua` (mekân).
+       - b03: `abdulmuttalib-kabe` (mekân), `vehb-ev` (yeni nesne).
+     - Yeni referanslar: `referans/nesne-taht.png`, `nesne-kabe-alcak.png`, `nesne-mekke-evler.png`. `istem_devir.py` artık `ekle` alanında liste kabul ediyor.
+     - Görseller gelince: `b03-vehb-ev` s06'da figürlerin arkasına (ana görüntü + çekim) konacak; `kapi-dua` ve `abdulmuttalib-kabe` tam kadraj mekân (`--opak`).
+     - b02-s11'in uzak plan açılışı yok, sahne doğrudan kapıda açılıyor. Gerekirse Kâbe'li uzak plan + çekim düzenine geçirilir.
+   - **2026-11-17: 5 görsel geldi, denetlendi (red yok), yerleştirildi.**
+     - Mekân çekimleri: b02-s01 (San'a uzak plan → Ebrehe avluda), b02-s11 (Mekke vadisi → kapıda dua; ton kapalı), b03-s12 (vadi → Kâbe'ye giriş). Böylece b02-s11'e de uzak plan açılışı geldi.
+     - b02-s06: uzak + çekim. b03-s06: Vehb'in evi grubun arkasında; çekimde ayrı, ölçekli katman.
+     - Gerçek oynatıcıda b02-s11 ve b03-s06 çekimleri denendi. Eski ham görseller `gorsel-ham/` altında `-turN` adıyla duruyor.
+     - Tam önizleme: `İndirilenler\siyer\_onizleme-b02.jpg`, `_onizleme-b03.jpg`.
+     - **Commit'lenmedi; Erdem'in önizleme onayı bekleniyor.** Sonra b04, b05, b10 aynı yolla (dört bileşim sorusuyla).
+
+1. ~~OpenAI API anahtarı~~ (2026-11-15 tamam): `OPENAI_API_KEY` çalışıyor.
+2. ~~API üretim betiği~~ (2026-11-15 tamam): `tools/gorsel_uret.py` (yeşil perde varsayılan, `--seffaf` isteğe bağlı). İstem metni `istem_devir.mesaj()` ile ChatGPT dosyasıyla aynı. Üslup görseli `istemler/referans/uslup-u01d.png`. Model karşılaştırması (`b03-on-ogul`): `gpt-image-2.6-sunburst` kazandı (10 oğul tam, Abdullah arkadan, düz yeşil); `chatgpt-image-latest` 9 oğul çizdi, yeşil dokulu. Varsayılan sunburst, `high`.
+3. **3 görsellik deneme**: üretildi (`İndirilenler\siyer\b03-on-ogul-api-sunburst.png`, `b02-ordu-yuruyus-api.png`, `b05-kabe-dosek-api.png`). Kusur: b02'de fil sol, son asker sağ kenara değiyor; b05'te soldaki oğul kenara yakın. Sırada: Erdem'in bakışı, sonra sahneye yerleştirme + önizleme.
 4. **Karakter referans sayfaları** (10 adet, `karakterler-chatgpt.md`), onaylananlar `content/gorseller/istemler/referans/`'a.
 5. **b02 ve b03 düzeltmeleri + yerleşim** (her biri 5 görsel), sonra **b04, b05, b10 2. tur**.
 6. **Sıradaki bölüm yazımı** (Claude, görsel beklerken): b06 Ebû Tâlib'in Himayesi (`/bolum-yaz 6`).
+
+**Maliyet kararı (2026-11-15, Erdem):** 4 API görseli 0,45 dolar tuttu (~0,11 $/görsel). Bütün projeyi API ile bitirmek pahalı; duruma göre bazen API (`gorsel_uret.py`), bazen ChatGPT ile elle (`<bölüm>-chatgpt.md` + `gorsel_al.py`). Hangisinin kullanılacağını her seferinde Erdem söyler; API'yi sormadan toplu çalıştırma.
+
+### Dosya yolları
+
+**Üretilecek görsellerin istemleri** (`content/gorseller/istemler/`):
+- `b01.json` … `b10.json`: istem kayıtları (asıl kaynak; API betiği bunları okur).
+- `b01-chatgpt.md` … `b10-chatgpt.md`: elle üretim için ChatGPT mesajları (`tools/istem_devir.py <kayıt> --chatgpt [--tur N]` ile yeniden üretilir). Bekleyenler: b03 (yeniden), b04, b05 (tümü), b10 2. tur, b02 düzeltmeleri.
+- `karakterler.json` + `karakterler-chatgpt.md`: karakter kartları ve 10 referans sayfasının mesajları (henüz üretilmedi).
+- `referans/`: üslup görseli (`uslup-u01d.png`) ve onaylı karakter referansları.
+
+**Erdem'in kontrolünü bekleyenler:**
+- `docs/ERDEM_KONTROL.md`: atıf, çeviri ve etiket kararları.
+- `İndirilenler\siyer\b03-on-ogul-api-sunburst.png`, `b02-ordu-yuruyus-api.png`, `b05-kabe-dosek-api.png`: API denemeleri (Erdem: "iyi"); sahneye yerleştirme + önizleme bekliyor.
+- `İndirilenler\siyer\_kontrol.jpg`: son üretimin paftası.
+- `content/gorseller/b03-*.webp` (12 dosya, commit'lenmedi): işlenmiş b03 katmanları, yerleşim ve önizleme bekliyor.
+- `content/gorseller/istemler/b02-chatgpt.md`: commit'lenmemiş değişiklik (önceki oturumdan).
+- `İndirilenler\siyer\_api_kayit.jsonl`: API kullanım kaydı (token).
 
 Erdem'e yalnız çok önemli kararlar sunulur; küçük görsel farkları yeniden üretilmez (bkz. `docs/GORSEL_URETIM.md`).
 
