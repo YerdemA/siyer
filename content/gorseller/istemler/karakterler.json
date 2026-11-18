@@ -164,6 +164,41 @@
       "kaynak": "Görünüş ve yaş kaynakta yok (TDV EBÛ TÂLİB, MUHAMMED yalnız adını ve Efendimiz'e özenini verir).",
       "secim": "Yaş, kıyafet ve renkler. Temsil kuralına göre yüzü çizilebilir (eş, çocuk, anne-baba ya da süt anne değil).",
       "referans_dosya": "referans/karakter-fatima_bint_esed.png (OpenAI API ile üç açılı sayfa, 2026-11-17)"
+    },
+    "zubeyr": {
+      "ad": "Zübeyr b. Abdülmuttalib",
+      "en": "Zubayr ibn Abd al-Muttalib, a vigorous man of about 45 with a full, short black beard with a few grey hairs; an off-white head cloth with a black cord band; a cream tunic and a long dark indigo-grey cloak with a thin brown border; a plain leather belt; brown sandals.",
+      "kaynak": "TDV HİLFÜ'L-FUDÛL (c. 18, s. 32), FİCÂR (c. 13, s. 52): Efendimiz'in amcası, Ficâr'da Hâşimoğulları'nın komutanı, Hilfü'l-fudûl'ün öncüsü. Yaş ve görünüş kaynakta yok.",
+      "secim": "Yaş, sakal, kıyafet renkleri (Ebû Tâlib'in zeytin cüppesinden ayrılsın diye çivit-gri).",
+      "referans_dosya": "referans/karakter-zubeyr.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "abdullah_b_cudan": {
+      "ad": "Abdullah b. Cüd'ân",
+      "en": "Abdullah ibn Jud'an, a very old, wealthy and dignified chieftain of Quraysh, about 75, slightly stooped; a long white beard; a white head cloth with a brown cord band; a long cream tunic and a finely woven saffron-ochre cloak with a narrow woven border; he leans on a plain wooden staff; no jewellery, no gold.",
+      "kaynak": "TDV HİLFÜ'L-FUDÛL (c. 18, s. 32): şehrin en zengin, yaşlı ve nüfuzlu kabile reisi; Teymoğulları'ndan. Görünüş kaynakta yok.",
+      "secim": "Yaş (~75), beyaz sakal, asa, safran-aşı cüppe; zenginlik süsle değil kumaşın inceliğiyle.",
+      "referans_dosya": "referans/karakter-abdullah_b_cudan.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "zubeydli_tuccar": {
+      "ad": "Zübeydli tüccar",
+      "en": "a merchant from the Zubayd tribe of Yemen, a man of about 35 with a short black beard; a dark-brown head cloth wound into a small, simple wrap; a knee-length undyed tunic and a cloak woven in narrow stripes of indigo and natural wool; a small leather pouch at his belt; brown sandals.",
+      "kaynak": "TDV HİLFÜ'L-FUDÛL (c. 18, s. 31-32): Zübeyd kabilesinden, umre için Yemen'den gelen tüccar. Adı, yaşı ve görünüşü kaynakta yok.",
+      "secim": "Mekkelilerden ayırt edilsin diye çizgili dokuma cüppe ve sarılı başlık; yaş, sakal.",
+      "referans_dosya": "referans/karakter-zubeydli_tuccar.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "harb_b_umeyye": {
+      "ad": "Harb b. Ümeyye",
+      "en": "Harb ibn Umayya, a powerful chieftain of Quraysh of about 50 with a full black beard streaked with grey; an off-white head cloth with a black cord band; a cream tunic and a long dark red-brown cloak; a stern, commanding look.",
+      "kaynak": "TDV FİCÂR (c. 13, s. 52): Kureyş'in reisi, Ficâr'da başkomutan. Görünüş kaynakta yok.",
+      "secim": "Yaş, sakal, kıyafet. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "as_b_vail": {
+      "ad": "Âs b. Vâil",
+      "en": "al-As ibn Wa'il, a wealthy, proud man of Quraysh of about 45 with a neatly trimmed black beard; a white head cloth with a dark cord band; a fine cream tunic and a deep crimson-brown cloak with a narrow woven border; no jewellery.",
+      "kaynak": "TDV HİLFÜ'L-FUDÛL (c. 18, s. 31): rivayetlerin çoğunda Zübeydli tüccarın malını alıp parasını ödemeyen kişi; Kureyş'in ileri gelenlerinden. Görünüş kaynakta yok.",
+      "secim": "Yaş, kıyafet. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
     }
   }
 }

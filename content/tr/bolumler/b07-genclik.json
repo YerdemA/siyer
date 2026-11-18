@@ -30,35 +30,17 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "ukaz",
             "dosya": "b07-ukaz.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.55
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -95,35 +77,17 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "ukaz",
             "dosya": "b07-ukaz.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.55
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "sair",
@@ -169,35 +133,17 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
             "id": "ukaz",
             "dosya": "b07-ukaz.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.55
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "tartisma",
@@ -585,27 +531,15 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35,
+            "id": "ok-toplama",
+            "dosya": "b07-ok-toplama.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.3,
             "ayar": {
               "gorsel": {
                 "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
+                "y": 0.5,
+                "olcek": 1.0
               }
             }
           },
@@ -613,13 +547,7 @@
             "id": "toz",
             "dosya": "",
             "yerTutucu": "toz",
-            "derinlik": 0.45
-          },
-          {
-            "id": "ok-toplama",
-            "dosya": "b07-ok-toplama.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.75
+            "derinlik": 0.6
           }
         ],
         "kamera": "bakis-acisi-yuruyus"
@@ -837,52 +765,15 @@
         "saat": "safak",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-safak.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "mekke-zemin.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35
-          },
-          {
-            "id": "evler",
-            "dosya": "mekke-evler.webp",
-            "yerTutucu": "evler",
-            "derinlik": 0.4
-          },
-          {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
-            "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55,
-            "ayar": {
-              "gorsel": {
-                "x": 0.501,
-                "y": 0.665,
-                "olcek": 0.269
-              }
-            }
-          },
-          {
             "id": "ebukubeys",
             "dosya": "b07-ebukubeys.webp",
-            "yerTutucu": "siluet-tek",
-            "derinlik": 0.5,
+            "yerTutucu": "evler",
+            "derinlik": 0.3,
             "ayar": {
               "gorsel": {
-                "x": 0.78,
-                "y": 0.42,
-                "olcek": 0.12
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
               }
             }
           }
@@ -973,8 +864,8 @@
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "cudan-avlu",
-            "dosya": "b07-cudan-avlu.webp",
+            "id": "yemin",
+            "dosya": "b07-yemin.webp",
             "yerTutucu": "kumas-tas",
             "derinlik": 0.3,
             "ayar": {
@@ -982,19 +873,6 @@
                 "x": 0.5,
                 "y": 0.5,
                 "olcek": 1.0
-              }
-            }
-          },
-          {
-            "id": "yemin",
-            "dosya": "b07-yemin.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.6,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.55,
-                "olcek": 0.8
               }
             }
           },

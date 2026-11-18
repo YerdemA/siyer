@@ -1,0 +1,424 @@
+{
+  "bolum": "b07-genclik",
+  "aciklama": "Bölüm 7 görsellerinin üretim istemleri ve kaydı. Üslup ve yasaklar b06 ile aynı (u01-d); dönem 585-590, Ukâz ve Mekke. Efendimiz hiçbir görsele çizilmez: ya onun gözünden bakılır ya da oynatıcı nurlu figürü çizer.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Arabia around 585-590 CE — Mecca (a narrow valley among bare, rocky mountains with small flat-roofed houses of mudbrick and rough stone and the low, roofless Ka'ba) and the open, stony valley of the Ukaz fair between Ta'if and Nakhla. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Efendimiz: s07 ve s13'te oynatıcı nurlu figür olarak çizer (kim: efendimiz); görsellerde yeri boş bırakılır. s08 onun gözünden: el, kol, beden yok.",
+      "Savaş: kan, yara, ölü ya da yaralı beden, saplanmış ok yok; çarpışmalar uzak ve ayrıntısız (toz bulutu). Öldürme anı (Berrâd-Urve) çizilmez.",
+      "Silah: yalnız Ficâr sahnelerinde basit yay, ok ve yuvarlak deri kalkan (FİCÂR s. 52: oklar, kalkan); kılıç kınında.",
+      "Ukâz: kaynakta görünüş: taşlık, su kaynakları olan geniş vadi; alışveriş, şiir okuma; kabilelerin bayraklı yerleri (UKÂZ s. 61); şairlerin kırmızı deriden çadırları (UKÂZ s. 62). Yazılı şiir tomarı ve Kâbe'ye asılan şiir çizilmez (tartışmalı).",
+      "Hilfü'l-fudûl yemini: biçimi kaynakta yok; el birleştirme, kılıç ya da başka işaret çizilmez. Hacerülesved suyu içilmesi (HİLFÜ'L-FUDÛL s. 32) anlatımda olmadığı için çizilmez.",
+      "Abdullah b. Cüd'ân'ın evi: kaynakta tarif yok; dönemin sade Mekke evi (nesne-mekke-evler), zenginlik süsle değil genişlikle.",
+      "Kâbe: dönemin çatısız alçak Kâbe'si (nesne-kabe-alcak)."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b07-ukaz",
+      "tur": 1,
+      "dosya": "b07-ukaz.webp",
+      "katman": "ukaz",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s01",
+        "b07-s02",
+        "b07-s03"
+      ],
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "The Ukaz fair seen from a distance: a wide, stony valley with a few small springs and low scrub, ringed by low bare hills under a clear sky. Across the valley stands a large seasonal fair: simple cloth awnings on poles, low tents of dark goat hair and a few of red leather, goods laid out on mats (bales of cloth, leather, jars, baskets), kneeling camels, and a crowd of small, undetailed people moving between them. Here and there a plain cloth banner on a pole marks where a tribe has camped. Keep the foreground in the lower third mostly open, sandy ground.",
+      "kisiler": [
+        {
+          "tarif": "small, undetailed Arab men and a few women in muted brown, sand and grey-blue clothes",
+          "sayi": 60,
+          "yaklasik": true,
+          "poz": "spread across the fair in small groups, walking, trading, talking."
+        },
+        {
+          "tarif": "camels, some with loads",
+          "sayi": 12,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "kneeling or standing among the tents."
+        }
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, buildings of stone, domes, minarets, writing or lettering on banners, crosses, idols, blood.",
+      "not": "UKÂZ (c. 42, s. 61-62): Tâif ile Nahle arasında, taşlık, su kaynakları olan geniş vadi; kabilelerin bayrak ya da işaretle belirlenmiş yerleri; şairler kırmızı deriden çadırlarda şiir okurdu. Panayırın görünüşü başka ayrıntıda kaynakta yok."
+    },
+    {
+      "id": "b07-sair",
+      "tur": 1,
+      "dosya": "b07-sair.webp",
+      "katman": "sair",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s02"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "At the fair: a poet stands and recites with one hand raised, while a small group of men of different tribes listens, some sitting, some standing. Calm, peaceful.",
+      "kisiler": [
+        {
+          "tarif": "a poet, a man of about 40 with a short black beard, a grey-blue cloak over a cream tunic, an off-white head cloth",
+          "poz": "standing at the left, one hand raised as he recites, facing right."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 4,
+          "poz": "two sitting cross-legged and two standing at the right, all turned towards the poet, listening."
+        }
+      ],
+      "yerlesim": "The poet stands at the left; the listeners sit or stand side by side at the right; everyone's feet or seated base on one horizontal line in the lower part of the image.",
+      "yasak": "the Prophet, any glowing figure, halo, women, children, scrolls, writing, tents, ground, buildings.",
+      "not": "UKÂZ (s. 62), ARAP (c. 3, s. 324): şairler en güzel şiirlerini Ukâz'da okurdu. Kişilerin görünüşü kaynakta yok."
+    },
+    {
+      "id": "b07-tartisma",
+      "tur": 1,
+      "dosya": "b07-tartisma.webp",
+      "katman": "tartisma",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s03"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "A quarrel breaking out at the fair: two groups of men face each other angrily, one man in the middle boasting with his chest out; two older men step between the groups with open hands to calm them. No one is hit or hurt.",
+      "kisiler": [
+        {
+          "tarif": "a boastful man of about 30 with a black beard, sand-coloured cloak, off-white head cloth",
+          "poz": "in the centre-left, chin raised, one hand on his chest."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 3,
+          "poz": "at the left behind the boastful man, frowning."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 3,
+          "poz": "at the right, facing them angrily, fists clenched at their sides."
+        },
+        {
+          "tarif": "two older men with grey beards in brown cloaks",
+          "sayi": 2,
+          "poz": "in the middle between the groups, arms out, palms open, calming them."
+        }
+      ],
+      "yerlesim": "All nine men stand side by side on one horizontal foot line in the lower part of the image; the two groups face each other with the two peacemakers between them.",
+      "yasak": "the Prophet, any glowing figure, halo, weapons drawn, swords, blood, wounds, women, children, ground, tents, buildings.",
+      "not": "FİCÂR (s. 52): birinci Ficâr Ukâz'da bir adamın 'Arapların en şereflisi benim' diye övünmesiyle başladı. Sahnede saldırı ya da yara gösterilmez."
+    },
+    {
+      "id": "b07-berrad",
+      "tur": 1,
+      "dosya": "b07-berrad.webp",
+      "katman": "berrad",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s04"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "A lone man crouches behind a large rock, half-hidden, watching something far away to the left with a cold, determined look.",
+      "kisiler": [
+        {
+          "tarif": "a lean man of about 35 with an unkempt black beard, a dark-brown cloak, a dark head cloth pulled low; a sheathed sword at his side",
+          "poz": "crouching behind the rock at its right side, looking left over it."
+        }
+      ],
+      "izin": "the single large sand-coloured rock he hides behind, which is drawn.",
+      "yasak": "the Prophet, any glowing figure, halo, drawn sword, blood, horse, camel, any other person, ground, sky.",
+      "not": "FİCÂR (s. 52), İbn Hişâm (s. 118): Kinâneli Berrâd b. Kays, Urve'yi takip edip öldürdü. Öldürme anı çizilmez; görünüşü kaynakta yok (kötü bilinen biri)."
+    },
+    {
+      "id": "b07-takip",
+      "tur": 1,
+      "dosya": "b07-takip.webp",
+      "katman": "takip",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s05"
+      ],
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "Two groups of men in the desert at a distance, seen from the side: at the left a group of Quraysh men hurrying away to the left with a few loaded camels; at the right, some distance behind, a larger group of Hawazin men running after them with bows and spears raised. Dust kicked up at their feet.",
+      "kisiler": [
+        {
+          "karakter": "kureysli",
+          "sayi": 8,
+          "yaklasik": true,
+          "poz": "the left group, hurrying left, some looking back over their shoulders."
+        },
+        {
+          "tarif": "camels with loads",
+          "sayi": 3,
+          "hayvan": true,
+          "poz": "walking quickly among the left group."
+        },
+        {
+          "tarif": "small, undetailed Hawazin tribesmen in dark brown and grey cloaks and head cloths, with simple bows and spears",
+          "sayi": 12,
+          "yaklasik": true,
+          "poz": "the right group, running left after them."
+        }
+      ],
+      "yerlesim": "All figures form one long horizontal band in the lower part of the image, seen exactly from the side, all feet on the same horizontal line, with a clear gap between the two groups.",
+      "izin": "a little dust at the feet of the runners.",
+      "yasak": "the Prophet, any glowing figure, halo, horses, fighting, blood, fallen people, ground, buildings, sky.",
+      "not": "İbn Hişâm (s. 118): Kureyş Ukâz'dan ayrıldı, Hevâzin peşlerine düştü, Harem'e girene kadar çarpıştılar. Binek ve sayı kaynakta yok; atlı çizilmez."
+    },
+    {
+      "id": "b07-ebu-talib-ikna",
+      "tur": 1,
+      "dosya": "b07-ebu-talib-ikna.webp",
+      "katman": "ebu-talib-ikna",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s06"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Four men of Quraysh in earnest discussion: Abu Talib stands serious and unwilling, one hand slightly raised as if saying 'not in the sacred months'; Harb ibn Umayya and the old Abdullah ibn Jud'an speak to him insistently; Zubayr stands a little behind, listening.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "standing at the left, facing right, serious, one hand raised slightly."
+        },
+        {
+          "karakter": "harb_b_umeyye",
+          "poz": "standing centre-right, facing left, gesturing firmly with an open hand."
+        },
+        {
+          "karakter": "abdullah_b_cudan",
+          "poz": "standing at the right, facing left, leaning on his staff, speaking."
+        },
+        {
+          "karakter": "zubeyr",
+          "poz": "standing between Abu Talib and Harb, one step behind them, listening."
+        }
+      ],
+      "yerlesim": "All four stand side by side on one horizontal foot line in the lower part of the image.",
+      "yasak": "the Prophet, any glowing figure, halo, weapons, children, women, ground, buildings.",
+      "not": "FİCÂR (s. 52), KUREYŞ (s. 443): Ebû Tâlib haram aylar gerekçesiyle razı olmadı; Abdullah b. Cüd'ân ve Harb ısrar etti; Hâşimoğulları Zübeyr komutasında katıldı. Yüzler çizilebilir."
+    },
+    {
+      "id": "b07-hasimogullari",
+      "tur": 1,
+      "dosya": "b07-hasimogullari.webp",
+      "katman": "hasimogullari",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s07"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "The men of the Hashim clan ready to set out with Zubayr: Zubayr in front, the others behind him with simple bows and round leather shields. Calm and serious. Leave a clear empty gap at the right of the group, about one person wide, where someone of a young man's height will be added later.",
+      "kisiler": [
+        {
+          "karakter": "zubeyr",
+          "poz": "standing at the left front, facing right, a round leather shield on his arm."
+        },
+        {
+          "tarif": "men of the Hashim clan, Arab men aged 30 to 50 with black or greying beards, in off-white head cloths and muted brown, grey and ochre cloaks, each with a simple bow or a round leather shield",
+          "sayi": 4,
+          "poz": "standing side by side to the right of Zubayr."
+        }
+      ],
+      "yerlesim": "Everyone stands side by side on one horizontal foot line in the lower part of the image; leave an empty gap about one person wide at the right end of the row, then green space.",
+      "yasak": "the Prophet, any glowing figure, halo, a young man or boy, any figure in the gap, drawn swords, blood, horses, ground, buildings.",
+      "not": "İbn Hişâm (s. 118), FİCÂR (s. 52): amcaları onu yanlarında götürdü. Efendimiz'i oynatıcı nurlu figür olarak boşluğa koyar; görselde çizilmez."
+    },
+    {
+      "id": "b07-ok-toplama",
+      "tur": 1,
+      "dosya": "b07-ok-toplama.webp",
+      "katman": "ok-toplama",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s08"
+      ],
+      "tip": "mekan",
+      "cekim": "bakis",
+      "konu": "A desert battlefield seen through the eyes of a young man standing just behind his uncles: in the foreground, three men stand with their backs to the viewer, holding round leather shields and bows; far in the distance a large cloud of dust where two crowds clash, small and undetailed. On the sand in front of the viewer lie several spent arrows, scattered. Bare hills, clear sky.",
+      "kisiler": [
+        {
+          "tarif": "the viewer's uncles, Arab men seen only from behind, in off-white head cloths and muted brown, indigo-grey and ochre cloaks, with round leather shields and bows",
+          "sayi": 3,
+          "poz": "standing in the middle ground with their backs to the viewer, facing the distant battle; no faces visible."
+        }
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, the viewer's hands, arms, feet or body, blood, wounds, fallen people, arrows sticking in anyone, faces of the three uncles, horses, buildings.",
+      "not": "İbn Hişâm (s. 119): 'Amcalarıma ok verirdim.' FİCÂR (s. 52): atılan okları kalkanla karşılayıp toplayarak onlara verirdi. Onun gözünden; Efendimiz çizilmez."
+    },
+    {
+      "id": "b07-dagilan",
+      "tur": 1,
+      "dosya": "b07-dagilan.webp",
+      "katman": "dagilan",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s09"
+      ],
+      "tip": "figur",
+      "cekim": "uzak",
+      "konu": "After the battle: two crowds of men walking slowly away from each other across the desert, one to the left and one to the right, tired, some carrying shields; a gap of empty space between them. Small and undetailed.",
+      "kisiler": [
+        {
+          "tarif": "small, undetailed Arab men in muted brown and grey cloaks",
+          "sayi": 10,
+          "yaklasik": true,
+          "poz": "the left group, walking away to the left."
+        },
+        {
+          "tarif": "small, undetailed Arab men in darker brown and grey cloaks",
+          "sayi": 10,
+          "yaklasik": true,
+          "poz": "the right group, walking away to the right."
+        }
+      ],
+      "yerlesim": "Both groups form one long horizontal band in the lower part of the image, all feet on the same horizontal line, with an empty gap in the middle.",
+      "yasak": "the Prophet, any glowing figure, halo, fallen people, blood, wounds, horses, ground, sky.",
+      "not": "İbn Hişâm (s. 119), FİCÂR (s. 52): Kureyş ve Kinâne kazandı. Ölü ve yaralı gösterilmez."
+    },
+    {
+      "id": "b07-tuccar-as",
+      "tur": 1,
+      "dosya": "b07-tuccar-as.webp",
+      "katman": "tuccar-as",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b07-s10"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "In the market of Mecca: the Yemeni merchant stands beside his bundled goods, holding out an open hand and asking to be paid; al-As ibn Wa'il turns half away with a dismissive wave of his hand, refusing.",
+      "kisiler": [
+        {
+          "karakter": "zubeydli_tuccar",
+          "poz": "standing at the left, facing right, one hand held out, palm up, a pleading look; bundles of cloth and leather at his feet."
+        },
+        {
+          "karakter": "as_b_vail",
+          "poz": "standing at the right, body turned half away to the right, head turned back, one hand waving dismissively."
+        }
+      ],
+      "izin": "the merchant's three bundles of goods on the ground beside him, which are drawn.",
+      "yerlesim": "Both men stand side by side on one horizontal foot line in the lower part of the image, with clear space between them.",
+      "yasak": "the Prophet, any glowing figure, halo, money, coins, other people, ground, buildings, stalls.",
+      "not": "HİLFÜ'L-FUDÛL (s. 31-32), Hadislerle İslâm c. 3: Zübeydli tüccar malını Âs b. Vâil'e sattı, parasını alamadı."
+    },
+    {
+      "id": "b07-ebukubeys",
+      "tur": 1,
+      "dosya": "b07-ebukubeys.webp",
+      "katman": "ebukubeys",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s11"
+      ],
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Early morning in Mecca, wide view across the valley: on the top of a bare, rocky hill rising beside the town, a single small man stands with both arms raised, calling out loudly over the town. Below, the flat-roofed houses built like the attached reference and the low, roofless Ka'ba as a small dark block; a few tiny people in front of the houses look up towards the hill.",
+      "kisiler": [
+        {
+          "karakter": "zubeydli_tuccar",
+          "poz": "very small, standing on the hilltop at the upper right, both arms raised, facing the town."
+        },
+        {
+          "tarif": "tiny, undetailed townspeople",
+          "sayi": 8,
+          "yaklasik": true,
+          "poz": "in front of the houses, looking up towards the hill."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png",
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: soft early-morning daylight, low sun from the left; no glow, no light rays.",
+      "yasak": "the Prophet, any glowing figure, halo, minarets, domes, crowds on the hill, writing.",
+      "not": "HİLFÜ'L-FUDÛL (s. 32): tüccar Ebûkubeys tepesine çıkıp mağduriyetini şiirle dile getirdi. Tepenin biçimi kaynakta yok; sade, kayalık."
+    },
+    {
+      "id": "b07-cudan-avlu",
+      "tur": 1,
+      "dosya": "b07-cudan-avlu.webp",
+      "katman": "cudan-avlu",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s12"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the courtyard of Abdullah ibn Jud'an's house in Mecca, a plain house of stone and mudbrick like the attached reference but larger, with a wide courtyard. The old Abdullah ibn Jud'an sits on a low bench against the wall; Zubayr bends towards him and speaks earnestly; around the courtyard, men of Quraysh sit on the ground and listen. Bare mountains of Mecca above the courtyard wall.",
+      "kisiler": [
+        {
+          "karakter": "abdullah_b_cudan",
+          "poz": "sitting on a low stone bench at the centre-left, both hands on his staff, listening."
+        },
+        {
+          "karakter": "zubeyr",
+          "poz": "standing in front of him, bending slightly forward, one hand open, speaking."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 6,
+          "poz": "sitting cross-legged on the ground in a loose half circle to the right, turned towards the two."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, women, children, gold, rich carpets, cushions, arches, domes, writing.",
+      "not": "HİLFÜ'L-FUDÛL (s. 32), İbn Hişâm (s. 85): toplantı Abdullah b. Cüd'ân'ın evinde. Evin görünüşü kaynakta yok; sade. Efendimiz bu görselde çizilmez."
+    },
+    {
+      "id": "b07-yemin",
+      "tur": 1,
+      "dosya": "b07-yemin.webp",
+      "katman": "yemin",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s13"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "The same courtyard as in the attached wide image: the men of Quraysh now stand in a group around the old Abdullah ibn Jud'an and Zubayr, serious and solemn, as they swear an oath together. Leave a clear empty space on the ground at the right-centre, about one person wide, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "abdullah_b_cudan",
+          "poz": "standing at the centre-left, leaning on his staff."
+        },
+        {
+          "karakter": "zubeyr",
+          "poz": "standing beside him at the centre."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 6,
+          "poz": "standing around them, three at the left and three at the far right, solemn faces turned to the centre; leave the right-centre empty."
+        }
+      ],
+      "ekle": [
+        "b07-cudan-avlu.png",
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, any figure in the empty space, joined hands, raised swords, cups, women, children, writing.",
+      "not": "İbn Hişâm (s. 85-86), HİLFÜ'L-FUDÛL (s. 32): yemin. Yemin biçimi kaynakta yok; el birleştirme çizilmez. Efendimiz'i oynatıcı nurlu figür olarak boşluğa koyar. 'b07-cudan-avlu' önce üretilmeli."
+    }
+  ],
+  "uretimler": []
+}
