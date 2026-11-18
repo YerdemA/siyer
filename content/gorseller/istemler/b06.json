@@ -352,5 +352,162 @@
       "not": "İbn Hişâm s. 116-117; BAHÎRÂ s. 486: Yahudilerden koru uyarısı."
     }
   ],
-  "uretimler": []
+  "uretimler": [
+    {
+      "istem": "b06-avlu",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-avlu.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-avlu.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-ev-ici",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-ev-ici.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-ev-ici.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-yamac",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-yamac.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-yamac.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-kervan-hazirlik",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-kervan-hazirlik.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-kervan-hazirlik.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18). Kenar figürler kenara değiyor; ayar.gorsel ile küçük yerleştirildiği için görünmüyor."
+    },
+    {
+      "istem": "b06-ebu-talib-egilmis",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-ebu-talib-egilmis.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-ebu-talib-egilmis.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-kervan-yol",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-kervan-yol.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-kervan-yol.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-busra",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-busra.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-busra.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-manastir",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-manastir.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-manastir.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18). Ağacın dalları istenen kadar alçak değil; bulut gölgesi ağaç gölgesiyle birleşik. Kabul edildi, Erdem onayına bağlı."
+    },
+    {
+      "istem": "b06-bahira-bakis",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-bahira-bakis.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-bahira-bakis.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-sofra",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-sofra.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-sofra.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-bahira-egilmis",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-bahira-egilmis.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-bahira-egilmis.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    },
+    {
+      "istem": "b06-bahira-ebu-talib",
+      "arac": "ChatGPT (Go, web)",
+      "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
+      "tarih": "2026-11-18",
+      "kaynak_dosya": "b06-bahira-ebu-talib.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b06-bahira-ebu-talib.webp",
+      "durum": "secildi",
+      "tur": 1,
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-18)."
+    }
+  ]
 }

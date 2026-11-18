@@ -2,15 +2,17 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-17.
+Son güncelleme: 2026-11-18.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-17 akşamı, oturum Erdem'in isteğiyle durdu).** Her şey commit'li ve push'lu (`8a71b2f`).
+**Kaldığımız yer (2026-11-18).** b06'nın 12 görseli geldi, işlendi ve yerleştirildi; Erdem onayladı, commit'lendi (önizleme `İndirilenler\siyer\_onizleme-b06.jpg`; paftadaki nur kaba bir taklit, oynatıcıdakinden sert görünür).
 
-- **Erdem'de bekleyen (görsel):** `content/gorseller/istemler/b06-chatgpt.md` içindeki 12 görsel ChatGPT'de elle üretilecek. Önce üç yeni karakter sayfası (`referans/karakter-bahira.png`, `karakter-fatima_bint_esed.png`, `karakter-ebu_talib.png`) ChatGPT kitaplığına eklenmeli. Görseller `İndirilenler\siyer\yeni\` gibi ayrı bir klasöre konursa ad çakışması olmaz.
-- **Erdem'in kararı bekleyen:** Bahîrâ referansı kukuletalı, ip kemerli kahverengi cüppesiyle Batı'nın ortaçağ keşişini andırıyor. İsterse kart "ip kemersiz, sade koyu cüppe" diye değiştirilip API ile yeniden üretilir (~0,11 $). Fâtıma bint Esed kartta yazan 35 yaştan genç görünüyor (küçük fark).
-- **Görseller gelince (Claude):** `tools/gorsel_al.py` ya da elle adlandır → kartlarla ve üç red kuralıyla denetle → `gorsel_katman.py` (figür `--sigdir`, mekân `--opak`) → `b06-ebu-talib.json`'da katmanlar zaten dosya adlarına bağlı; figürlere `ayar.gorsel` konumu ver, s09 çekiminin `kadraj`'ını ağacın gerçek yerine göre düzelt, nur katmanlarının (`s09` çekim, `s10`, `s11`) x/y'sini ağacın altına ve Bahîrâ'nın önüne oturt → bileşim denetimi (4 soru: zemine basıyor mu, ışık ve ölçek tutuyor mu, konu kaynaktaki yerinde mi, eski katmanlar da geçiyor mu) → önizleme paftası → Erdem onayı → commit. `uretimler` kaydı `istemler/b06.json`'a eklenecek.
+- Denetim: kartlarla tek tek bakıldı, red yok. Notlar: `b06-manastir`'da ağacın dalları istendiği kadar alçak değil, bulut gölgesi ağaç gölgesiyle birleşik; Ebû Tâlib'in cüppesi b06'da zeytin tonlu (kartta kahverengi), bölüm içinde tutarlı.
+- Hamlar `gorsel-ham/b06`. Kayıt `istemler/b06.json` → `uretimler`.
+- Yerleşim: mekânlar (avlu, ev içi, yamaç, Busrâ) derinlik 0,3 + `ayar.gorsel {0.5, 0.5, 1.0}` ile tam görünür; manastır da tam görsel. s06 uzak plan + 1. parçada kadrajlı çekim (yeni). s07'de kervan arkada orta boy, Ebû Tâlib önde. s08/s12 kervan küçültüldü; s13'te kervan solda, Kâbe'ye değmeden. s09 Bahîrâ manastırın yanında küçük; s09 çekiminde nur ağaç gölgesinde (boy 0,2); s10 nur yüklerin yanında; s11 nur 0,48 boyda Bahîrâ'nın karşısında.
+- Gerçek oynatıcıda (web) s09 çekimi, s10 ve s11 denendi; nur yerinde, yumuşak.
+- **Erdem'in kararı bekleyen (eski):** Bahîrâ'nın kukuletalı, ip kemerli Batılı keşiş görünümü; görseller bu kartla üretildi, değişirse 5 Bahîrâ'lı görsel de yenilenir.
 - **b06 metni, Erdem'in bakacakları:** `docs/ERDEM_KONTROL.md` → b06 (atıflar, yaş tercihi, tek kaynaklı iddialar). Bölümde bilerek yer verilmeyen bir rivayet: İbn Hişâm s. 114-115'teki Lehebli kâhinin çocukları inceleyip Efendimiz'e dikkat kesilmesi (eski plan notunda geçiyordu); istenirse eklenir.
 - **Sonra:** b07 Gençlik (`/bolum-yaz 7`; Ficâr ve Hilfü'l-fudûl). Not: HÂŞİM ve KUREYŞ maddeleri Ficâr döneminde Hâşimoğulları reisinin Ebû Tâlib olduğunu, kumandanın Zübeyr olduğunu yazar; b07'de işe yarar.
 

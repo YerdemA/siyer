@@ -118,7 +118,14 @@
             "id": "avlu",
             "dosya": "b06-avlu.webp",
             "yerTutucu": "kumas-tas",
-            "derinlik": 0.5
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           }
         ],
         "kamera": "yatay-kayma"
@@ -163,9 +170,14 @@
             "id": "ev-ici",
             "dosya": "b06-ev-ici.webp",
             "yerTutucu": "kumas-tas",
-            "derinlik": 0.5,
+            "derinlik": 0.3,
             "ayar": {
-              "ton": false
+              "ton": false,
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
             }
           }
         ],
@@ -201,7 +213,14 @@
             "id": "yamac",
             "dosya": "b06-yamac.webp",
             "yerTutucu": "yokus",
-            "derinlik": 0.5
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           }
         ],
         "kamera": "bakis-acisi-yuruyus"
@@ -241,7 +260,14 @@
             "id": "yamac",
             "dosya": "b06-yamac.webp",
             "yerTutucu": "yokus",
-            "derinlik": 0.5
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           }
         ],
         "kamera": "yavas-uzaklasma"
@@ -305,10 +331,47 @@
             "id": "kervan",
             "dosya": "b06-kervan-hazirlik.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.65
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.635,
+                "olcek": 0.2
+              }
+            }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: develer çöktürülmüş, Kureyşli tüccarlar yük bağlıyor; Ebû Tâlib aralarında. Efendimiz çizilmez.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kervan-yakin",
+                "dosya": "b06-kervan-hazirlik.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 0.92
+                  }
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.64,
+              "yakinlik": 1.5
+            },
+            "gizle": [
+              "kervan"
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b06-s06.mp3",
@@ -368,13 +431,27 @@
             "id": "kervan",
             "dosya": "b06-kervan-hazirlik.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.42,
+                "olcek": 0.62
+              }
+            }
           },
           {
             "id": "ebu-talib-egilmis",
             "dosya": "b06-ebu-talib-egilmis.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.85
+            "derinlik": 0.85,
+            "ayar": {
+              "gorsel": {
+                "x": 0.47,
+                "y": 0.6,
+                "olcek": 1.2
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma"
@@ -439,7 +516,14 @@
             "id": "kervan",
             "dosya": "b06-kervan-yol.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.55
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.55,
+                "olcek": 0.75
+              }
+            }
           }
         ],
         "kamera": "yatay-kayma",
@@ -453,7 +537,14 @@
                 "id": "busra",
                 "dosya": "b06-busra.webp",
                 "yerTutucu": "evler",
-                "derinlik": 0.5
+                "derinlik": 0.3,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  }
+                }
               }
             ]
           }
@@ -500,13 +591,27 @@
             "id": "manastir",
             "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.5
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "bahira",
             "dosya": "b06-bahira-bakis.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.7
+            "derinlik": 0.7,
+            "ayar": {
+              "gorsel": {
+                "x": 0.36,
+                "y": 0.69,
+                "olcek": 0.23
+              }
+            }
           }
         ],
         "kamera": "yavas-yaklasma",
@@ -522,16 +627,16 @@
                 "yerTutucu": "nur",
                 "derinlik": 0.7,
                 "ayar": {
-                  "x": 0.5,
-                  "y": 0.8,
-                  "boy": 0.32,
+                  "x": 0.63,
+                  "y": 0.83,
+                  "boy": 0.2,
                   "guc": 2.5
                 }
               }
             ],
             "kadraj": {
-              "x": 0.72,
-              "y": 0.62,
+              "x": 0.68,
+              "y": 0.7,
               "yakinlik": 1.8
             },
             "gizle": [
@@ -575,7 +680,14 @@
             "id": "manastir",
             "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.5
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "nur",
@@ -583,8 +695,8 @@
             "yerTutucu": "nur",
             "derinlik": 0.5,
             "ayar": {
-              "x": 0.78,
-              "y": 0.7,
+              "x": 0.84,
+              "y": 0.77,
               "boy": 0.12,
               "guc": 2.5
             }
@@ -593,7 +705,14 @@
             "id": "sofra",
             "dosya": "b06-sofra.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.75
+            "derinlik": 0.75,
+            "ayar": {
+              "gorsel": {
+                "x": 0.38,
+                "y": 0.633,
+                "olcek": 0.6
+              }
+            }
           }
         ],
         "kamera": "yatay-kayma"
@@ -640,7 +759,14 @@
             "id": "manastir",
             "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.5
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "nur",
@@ -648,9 +774,9 @@
             "yerTutucu": "nur",
             "derinlik": 0.7,
             "ayar": {
-              "x": 0.36,
-              "y": 0.84,
-              "boy": 0.4,
+              "x": 0.42,
+              "y": 0.9,
+              "boy": 0.48,
               "guc": 2.5
             }
           },
@@ -658,7 +784,14 @@
             "id": "bahira",
             "dosya": "b06-bahira-egilmis.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.75
+            "derinlik": 0.75,
+            "ayar": {
+              "gorsel": {
+                "x": 0.62,
+                "y": 0.55,
+                "olcek": 0.75
+              }
+            }
           }
         ],
         "kamera": "sabit"
@@ -704,13 +837,27 @@
             "id": "manastir",
             "dosya": "b06-manastir.webp",
             "yerTutucu": "temel-taslari",
-            "derinlik": 0.5
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
           },
           {
             "id": "konusma",
             "dosya": "b06-bahira-ebu-talib.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.75
+            "derinlik": 0.75,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.52,
+                "olcek": 0.75
+              }
+            }
           }
         ],
         "kamera": "sabit",
@@ -750,7 +897,14 @@
                 "id": "kervan-c",
                 "dosya": "b06-kervan-yol.webp",
                 "yerTutucu": "kalabalik",
-                "derinlik": 0.55
+                "derinlik": 0.55,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.55,
+                    "olcek": 0.75
+                  }
+                }
               }
             ]
           }
@@ -829,7 +983,14 @@
             "id": "kervan",
             "dosya": "b06-kervan-yol.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.23,
+                "y": 0.645,
+                "olcek": 0.4
+              }
+            }
           }
         ],
         "kamera": "yavas-uzaklasma"
