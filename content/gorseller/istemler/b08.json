@@ -1,0 +1,341 @@
+{
+  "bolum": "b08-el-emin",
+  "aciklama": "Bölüm 8 görsellerinin üretim istemleri ve kaydı. Üslup ve yasaklar b07 ile aynı (u01-d); dönem 595-605, Mekke ve Busrâ. Efendimiz hiçbir görsele çizilmez; oynatıcı nurlu figürü boş bırakılan yere çizer. Hz. Hatice ve çocuklar yüzsüz.",
+  "uslup": {
+    "istem": "Flat-shape illustration for a documentary motion comic in a paper cut-out style: layered flat shapes with clear depth planes, each plane like a sheet of textured paper with a soft shadow beneath it. Muted, low-saturation earth palette: sand, ochre, raw umber, warm grey stone; deep indigo for night, soft apricot for dawn and dusk. Gentle atmospheric haze, clean readable silhouettes, calm and respectful mood. Setting: Arabia around 595-605 CE — Mecca (a narrow valley among bare, rocky mountains with small flat-roofed houses of mudbrick and rough stone and the low, roofless Ka'ba) and, once, the edge of a town in southern Syria (Busra) with a stone monastery. Cinematic 16:9 framing.",
+    "referans": {
+      "is_id": "a5e23296-85b4-40f2-9289-f94ea4dd0085",
+      "not": "u01-d, Erdem seçti (2026-11-13). Her üretime image_references olarak verilir; yalnız üslup ve palet için, kompozisyon için değil."
+    },
+    "yasaklar": "No minarets, no domes, no crescents, no arches, no tiles, no Ottoman or modern architecture, no modern Masjid al-Haram. No text, letters, logos or watermarks. Ordinary people may show their faces, drawn simply in the same flat paper cut-out style, dignified, not photorealistic. The Prophet Muhammad appears only when the prompt asks for him, and then only as a tall, dignified figure entirely covered in soft warm golden-white light, wearing a green turban; no face, skin, hands or body detail visible inside the light. His wives, children, parents and wet nurse never show a face: only from behind, as distant silhouettes, or as hands and fabric details. No other prophet in any form: no figure, silhouette, shadow, hand or foot, only a soft warm light. No angels. No blood.",
+    "katman_kurali": "Katmanlar ayrı üretilir. Gök katmanı hariç her katman düz, tek renk #00B140 (yeşil perde) zemin üzerinde istenir; zemin sonra `tools/gorsel_katman.py` ile silinip şeffaf WebP yapılır. Konu yeşil içeriyorsa (ör. s06'daki yeşil temel taşları) zemin mavi perde #0047BB istenir ve betik `--mavi` ile çalıştırılır; gök `--opak` ile. Görsel 16:9 kadrajdan her yöne %10 taşacak genişlikte düşünülür; ana öğe alt %25'e (altyazı alanı) düşmez.",
+    "yesil_perde_eki": "Isolated on a perfectly flat, uniform pure chroma-green background (#00B140), no shadows on the background, no green tint on the subject.",
+    "bilincli_olarak_cizilmeyenler": [
+      "Efendimiz: hiçbir görsele çizilmez; nurlu figür olarak oynatıcı çizer (kim: efendimiz, sarıksız). Görsellerde yeri boş bırakılır.",
+      "Hz. Hatice ve çocuklar: yüz yok (arkadan, siluet, perde ardı). Kâsım dahil çocuklar ancak arkadan, küçük siluet.",
+      "Rahip: adı kaynaklarda karışık (Nestûrâ/Bahîrâ, BAHÎRÂ s. 486); Bahîrâ kartından ayrı, sade bir rahip. Haç ve kilise süsü yok.",
+      "Mehir develeri: 'yirmi genç dişi deve' (İbn Hişâm s. 120); sayı görselde tam tutturulamaz, 'about 20'.",
+      "İki melek gölgelemesi (İbn Hişâm s. 120, 'fîmâ yez'umûn') anlatımda yok; çizilmez.",
+      "Hicr: o dönemdeki görünüşü kaynakta aranmadı; Hicr sahnesi anlatımdan çıkarıldı.",
+      "Kâbe: dönemin çatısız alçak Kâbe'si (nesne-kabe-alcak)."
+    ]
+  },
+  "istemler": [
+    {
+      "id": "b08-hatice-ev",
+      "tur": 1,
+      "dosya": "b08-hatice-ev.webp",
+      "katman": "hatice-ev",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s02",
+        "b08-s03",
+        "b08-s07"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the wide courtyard of Khadija's house in Mecca, a plain but spacious two-storey house of stone and mudbrick like the attached reference. The courtyard is busy with trade: rolled bales of cloth, stacked leather bundles, a large balance scale on a wooden frame, sacks and clay jars; two workers tie up loads. On the upper floor, a small window is covered by a cloth curtain; behind it, only a faint, dark shadow of a standing woman can be guessed. Leave the courtyard gateway at the right open and clear, with empty ground in front of it, where a tall figure will be added later. Bare mountains of Mecca above the walls.",
+      "kisiler": [
+        {
+          "tarif": "two working men in plain undyed tunics and head cloths",
+          "sayi": 2,
+          "poz": "at the left, bending over a load of bales, tying it with rope."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, Khadija's face, any woman's face, any figure in the gateway, gold, rich carpets, arches, domes, writing.",
+      "not": "İbn Hişâm (s. 119), HATİCE (s. 465): Hatice zengin bir tacirdi, adamlarını malıyla ticarete gönderirdi. Evin görünüşü kaynakta yok; sade, geniş. Hatice yalnız perde ardında belli belirsiz gölge."
+    },
+    {
+      "id": "b08-meysere",
+      "tur": 1,
+      "dosya": "b08-meysere.webp",
+      "katman": "meysere",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s03"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Maysara stands beside a few tied bundles of goods, ready for the journey, looking respectfully towards the right, where someone stands at the gate.",
+      "kisiler": [
+        {
+          "karakter": "meysere",
+          "poz": "standing at the left, three-quarter view facing right, one hand resting on the bundles, attentive."
+        }
+      ],
+      "izin": "three tied bundles of cloth and leather on the ground beside him, which are drawn.",
+      "yasak": "the Prophet, any glowing figure, halo, any other person, camels, ground, walls.",
+      "not": "İbn Hişâm (s. 119): Meysere yolculukta onunla gidecekti."
+    },
+    {
+      "id": "b08-busra-agac",
+      "tur": 1,
+      "dosya": "b08-busra-agac.webp",
+      "katman": "busra-agac",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s05"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the edge of a small town in southern Syria (Busra): at the left, a single large, old shade tree with a broad, low canopy and a wide patch of shade beneath it; at the right, a modest stone monastery building with a small doorway and a low wall, built of grey-black basalt stone. A few loaded camels kneel and rest some distance behind the tree. Leave the shade under the tree completely empty — no one sits or stands there; a tall figure will be added later. Leave the ground in front of the monastery doorway empty too.",
+      "kisiler": [
+        {
+          "tarif": "camels with loads",
+          "sayi": 5,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "kneeling and resting in the middle distance behind the tree."
+        }
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, any person, anyone under the tree, crosses, bells, church domes, icons, writing.",
+      "not": "İbn Hişâm (s. 119-120): rahibin manastırına yakın bir ağacın gölgesine indi. BUSRÂ (s. 470): olay Busrâ'da. Ağacın ve manastırın görünüşü kaynakta yok; Busrâ bazalt taşıyla bilinir (yerelde kaynak yok, seçim)."
+    },
+    {
+      "id": "b08-rahip",
+      "tur": 1,
+      "dosya": "b08-rahip.webp",
+      "katman": "rahip",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s05"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "The old monk stands in his doorway and speaks to Maysara, pointing towards the left with one hand, as if asking who is resting under the tree there; Maysara turns his head to look where he points.",
+      "kisiler": [
+        {
+          "karakter": "nestura",
+          "poz": "standing at the right, facing left, one arm stretched out, pointing left, an earnest look."
+        },
+        {
+          "karakter": "meysere",
+          "poz": "standing at the left, body facing the monk, head turned back over his shoulder to the left."
+        }
+      ],
+      "yerlesim": "Both stand side by side on one horizontal foot line in the lower part of the image.",
+      "yasak": "the Prophet, any glowing figure, halo, crosses, any other person, tree, building, ground.",
+      "not": "İbn Hişâm (s. 120), BUSRÂ (s. 470): rahip Meysere'ye ağacın altındakini sordu. Görünüşler kaynakta yok."
+    },
+    {
+      "id": "b08-amcalar",
+      "tur": 1,
+      "dosya": "b08-amcalar.webp",
+      "katman": "amcalar",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s08"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Two uncles walk side by side through Mecca with calm, purposeful steps, as if going to ask for a bride: Abu Talib, now older, and Hamza. Leave a clear empty gap at the right of the pair, about one person wide, where a tall figure walking with them will be added later.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "walking at the left, facing right; he is now about 60, his beard mostly grey."
+        },
+        {
+          "karakter": "hamza",
+          "poz": "walking beside him in the middle, facing right."
+        }
+      ],
+      "yerlesim": "Both walk on one horizontal foot line in the lower part of the image; leave an empty gap about one person wide at their right.",
+      "yasak": "the Prophet, any glowing figure, halo, any figure in the gap, weapons, women, ground, buildings.",
+      "not": "İbn Hişâm (s. 120): Hamza; HATİCE (s. 465): Ebû Tâlib ve kardeşleri. Anlatım tarafsız ('amcaları'); görselde iki amca. Ebû Tâlib 535 doğumlu (EBÛ TÂLİB) → ~61."
+    },
+    {
+      "id": "b08-nikah",
+      "tur": 1,
+      "dosya": "b08-nikah.webp",
+      "katman": "nikah",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s09"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in front of Khadija's house in Mecca (plain stone and mudbrick house like the attached references): a small gathering of relatives, older men of Quraysh, stands in a loose half circle; from the left, young she-camels are led in on ropes as the bride gift. Calm, joyful, dignified. Leave a clear empty space at the centre, on the ground, about one person wide, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "standing at the centre-left, facing right, now about 60 with a mostly grey beard."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 5,
+          "poz": "relatives standing at the right in a loose half circle, turned to the centre."
+        },
+        {
+          "tarif": "young she-camels with simple rope halters",
+          "sayi": 20,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "led in from the left by two herdsmen, standing in a loose group."
+        },
+        {
+          "tarif": "two herdsmen in plain undyed tunics",
+          "sayi": 2,
+          "poz": "leading the camels at the left."
+        }
+      ],
+      "ekle": [
+        "b08-hatice-ev.png",
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, Khadija's face, any woman's face, women, any figure in the empty centre, gold, jewellery, music, dancing, writing.",
+      "not": "İbn Hişâm (s. 120): mehir yirmi genç dişi deve. Nikâhın biçimi kaynakta yok. Hatice çizilmez. 'b08-hatice-ev' önce üretilmeli."
+    },
+    {
+      "id": "b08-aile",
+      "tur": 1,
+      "dosya": "b08-aile.webp",
+      "katman": "aile",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s10"
+      ],
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Evening, inside a plain Meccan house lit by a single clay oil lamp on the floor: warm lamplight, reed mats, a few cushions of undyed wool, clay jars and a simple wooden chest. Several small children play quietly near the lamp, seen only from behind and in silhouette against the light; their faces are never visible. In the background at the left, a woman in a long wine-red-brown cloak sits with her back to the viewer, watching them. Leave a clear empty space beside the doorway at the right, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "hatice",
+          "poz": "sitting on a mat in the background at the left, seen from behind, face not visible."
+        },
+        {
+          "tarif": "small children (girls and a little boy), seen only from behind or in dark silhouette, faces never visible, in simple tunics",
+          "sayi": 4,
+          "poz": "sitting and playing around the lamp in the middle, backs to the viewer."
+        }
+      ],
+      "isik": "LIGHT: warm light from one small clay oil lamp on the floor only; the rest of the room in soft shadow. Faces stay in darkness or turned away.",
+      "yasak": "the Prophet, any glowing figure, halo, any visible face, any figure by the doorway, toys of modern kind, books, writing, rich carpets.",
+      "not": "İbn Hişâm (s. 120-121), HATİCE (s. 465): çocukları. Temsil kuralı: eşi ve çocukları yüzsüz. Oynatıcıda ton: false."
+    },
+    {
+      "id": "b08-koleler",
+      "tur": 1,
+      "dosya": "b08-koleler.webp",
+      "katman": "koleler",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s11"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Hakim ibn Hizam has just arrived with a few young slaves from a journey; he stands beside them, presenting them. Among the young slaves stands Zayd, tired but upright, his eyes lowered.",
+      "kisiler": [
+        {
+          "karakter": "hakim_b_hizam",
+          "poz": "standing at the left, facing right, one open hand gesturing towards the youths."
+        },
+        {
+          "karakter": "zeyd_harise",
+          "poz": "standing in the middle of the youths, upright, eyes lowered."
+        },
+        {
+          "tarif": "two young male slaves of about 16 to 18 in worn, plain undyed tunics",
+          "sayi": 2,
+          "poz": "standing to the left and right of Zayd, heads slightly bowed."
+        }
+      ],
+      "yerlesim": "All four stand side by side on one horizontal foot line in the lower part of the image.",
+      "yasak": "the Prophet, any glowing figure, halo, Khadija's face, any woman's face, chains, ropes on people, whips, wounds, women, ground, buildings.",
+      "not": "İbn Hişâm (s. 160): Hakîm b. Hizâm Şam'dan köleler getirdi, Hatice Zeyd'i seçti. Zincir, kırbaç gibi şiddet öğesi çizilmez."
+    },
+    {
+      "id": "b08-harise",
+      "tur": 1,
+      "dosya": "b08-harise.webp",
+      "katman": "harise",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s12"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Zayd's father Haritha and his brother, dusty from the road, have come to Mecca to take Zayd home. Haritha stretches out his hands towards his son, hopeful; Zayd stands a step apart, turned towards the right, where someone stands whom he has chosen to stay with. Leave a clear empty gap at the right of Zayd, about one person wide, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "harise",
+          "poz": "standing at the left, facing right, both hands held out towards his son."
+        },
+        {
+          "tarif": "Haritha's brother Ka'b, a desert tribesman of about 40 with a black beard, a dusty grey head cloth and a dark brown travelling cloak, holding a small leather pouch",
+          "poz": "standing just behind Haritha at the left."
+        },
+        {
+          "karakter": "zeyd_harise",
+          "poz": "standing in the middle-right, body turned to the right towards the empty gap, head turned back to his father, gentle but decided."
+        }
+      ],
+      "yerlesim": "All three stand on one horizontal foot line in the lower part of the image; leave an empty gap about one person wide at Zayd's right.",
+      "yasak": "the Prophet, any glowing figure, halo, any figure in the gap, coins spilling, weapons, women, ground, buildings.",
+      "not": "İbn Hişâm (s. 160-161), ZEYD (s. 319): babası Hârise ve amcası Kâ'b fidyeyle geldi; Zeyd kalmayı seçti."
+    },
+    {
+      "id": "b08-zeyd-yuruyus",
+      "tur": 1,
+      "dosya": "b08-zeyd-yuruyus.webp",
+      "katman": "zeyd-yuruyus",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s13"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "Zayd walks calmly and contentedly through Mecca in the late afternoon, beside someone taller who walks at his left. Leave a clear empty gap at Zayd's left, about one person wide, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_harise",
+          "poz": "walking at the right, facing left, a calm, content look, slightly turned towards the empty gap at his left."
+        }
+      ],
+      "yerlesim": "Zayd walks on a horizontal foot line in the lower part of the image; leave an empty gap about one person wide at his left.",
+      "yasak": "the Prophet, any glowing figure, halo, any figure in the gap, any other person, ground, buildings.",
+      "not": "İbn Hişâm (s. 160), ZEYD (s. 319): âzat edilip evlat edinildi, 'Zeyd b. Muhammed' diye anıldı. Yürüyüş sahnesi temsilî."
+    },
+    {
+      "id": "b08-ali",
+      "tur": 1,
+      "dosya": "b08-ali.webp",
+      "katman": "ali",
+      "isleme": "sigdir",
+      "sahneler": [
+        "b08-s14"
+      ],
+      "tip": "figur",
+      "cekim": "orta",
+      "konu": "A year of famine in Mecca: in front of his house, the old Abu Talib stands in his doorway, tired and grateful. Al-Abbas has his hand on the shoulder of the boy Ja'far, ready to take him home. The little boy Ali stands at the right, looking up towards an empty space beside him. Two empty clay water jars lie on the dry ground. Leave a clear empty gap beside Ali at the far right, about one person wide, where a tall figure will be added later.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "standing at the left, facing right; he is now about 70, his beard white, a little stooped, leaning on a staff."
+        },
+        {
+          "karakter": "abbas",
+          "poz": "standing at the centre-left, facing right, one hand on Ja'far's shoulder."
+        },
+        {
+          "karakter": "cafer_genc",
+          "poz": "standing beside Abbas, facing right."
+        },
+        {
+          "karakter": "ali_cocuk",
+          "poz": "standing at the centre-right, looking up to the right towards the empty gap."
+        }
+      ],
+      "izin": "two empty clay water jars lying on their sides near Abu Talib's feet, which are drawn.",
+      "yerlesim": "All four stand on one horizontal foot line in the lower part of the image; leave an empty gap about one person wide at the far right, next to Ali.",
+      "yasak": "the Prophet, any glowing figure, halo, any figure in the gap, food, women, ground, buildings.",
+      "not": "İbn Hişâm (s. 159), ALİ (s. 371): kıtlıkta Efendimiz Ali'yi, Abbas Ca'fer'i aldı. Ebû Tâlib 535 doğumlu → ~605'te 70; Ali ~5 (ALİ s. 371)."
+    }
+  ],
+  "uretimler": []
+}

@@ -199,6 +199,77 @@
       "kaynak": "TDV HİLFÜ'L-FUDÛL (c. 18, s. 31): rivayetlerin çoğunda Zübeydli tüccarın malını alıp parasını ödemeyen kişi; Kureyş'in ileri gelenlerinden. Görünüş kaynakta yok.",
       "secim": "Yaş, kıyafet. Tek görselde geçtiği için referans sayfası yok.",
       "referans_sayfasi": false
+    },
+    "meysere": {
+      "ad": "Meysere",
+      "en": "Maysara, a young servant man of about 25 with a short, sparse black beard; a plain undyed off-white head cloth tied simply; a knee-length undyed wool tunic and a short sand-brown cloak; a plain rope belt; simple sandals.",
+      "kaynak": "İbn Hişâm (s. 119): Hatice'nin kölesi (gulâm); Şam yolculuğunda Efendimiz'in yanındaydı. Yaş ve görünüş kaynakta yok.",
+      "secim": "Yaş, sakal, sade köle kıyafeti (efendilerden ayrılsın diye boyasız yün).",
+      "referans_dosya": "referans/karakter-meysere.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "zeyd_harise": {
+      "ad": "Zeyd b. Hârise",
+      "en": "Zayd ibn Haritha as a youth of about 16, slim, beardless, with short curly black hair partly under a plain cream head cloth; a plain undyed wool tunic to the knee and a light sand-coloured cloak; a simple cord belt; bare feet or plain sandals.",
+      "kaynak": "TDV ZEYD b. HÂRİSE (c. 44, s. 319): Kelb kabilesinden, Efendimiz'den on yaş küçük; Efendimiz 25 yaşında evlendiğine göre eve geldiğinde en az 15 yaşındaydı. Görünüş yerel kaynakta yok.",
+      "secim": "Görünüş, kıyafet renkleri.",
+      "referans_dosya": "referans/karakter-zeyd_harise.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "hatice": {
+      "ad": "Hz. Hatice",
+      "en": "Khadija, a dignified woman ALWAYS seen from behind, in silhouette or completely in shadow, face never visible; wrapped in a long deep wine-red-brown cloak of fine wool with a narrow woven border, and a cream head covering that hides her hair and the sides of her face.",
+      "kaynak": "Temsil kuralı: yüz yok. HATİCE (c. 16, s. 465): soylu ve zengin. Görünüş kaynakta yok.",
+      "secim": "Kıyafet renkleri (Âmine'nin çivit mavisinden ayrılsın diye şarap kırmızısı-kahve); zenginlik süsle değil kumaşın inceliğiyle.",
+      "yuzsuz": true,
+      "referans_dosya": "referans/karakter-hatice.png (OpenAI API ile üç açılı sayfa, 2026-11-18)"
+    },
+    "hamza": {
+      "ad": "Hamza b. Abdülmuttalib",
+      "en": "Hamza ibn Abd al-Muttalib, a strong, broad-shouldered man of about 30 with a short black beard; an off-white head cloth with a dark cord band; a cream tunic and a long rust-brown cloak; a leather belt; brown sandals.",
+      "kaynak": "İbn Hişâm (s. 120): Efendimiz'in amcası. Yaş ve görünüş yerel kaynakta yok.",
+      "secim": "Yaş, yapı, kıyafet. b08'de tek görselde geçtiği için referans sayfası yok; sonraki bölümlerde sık geçerse sayfası üretilir.",
+      "referans_sayfasi": false
+    },
+    "abbas": {
+      "ad": "Abbas b. Abdülmuttalib",
+      "en": "al-Abbas ibn Abd al-Muttalib, a well-to-do, composed man of about 37 with a neat black beard; a white head cloth with a dark cord band; a fine cream tunic and a long dark green-grey cloak with a narrow border.",
+      "kaynak": "İbn Hişâm (s. 159): Hâşimoğulları'nın en varlıklısı. Yaş ve görünüş yerel kaynakta yok.",
+      "secim": "Yaş, kıyafet. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "ali_cocuk": {
+      "ad": "Ali b. Ebû Tâlib (çocuk)",
+      "en": "Ali ibn Abi Talib as a small boy of about 5, with short black hair, bare-headed; a simple knee-length off-white tunic; bare feet.",
+      "kaynak": "TDV ALİ (c. 2, s. 371): 600'de doğdu, beş yaşından itibaren Efendimiz'in yanında büyüdü. Görünüş kaynakta yok.",
+      "secim": "Görünüş. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "cafer_genc": {
+      "ad": "Ca'fer b. Ebû Tâlib (genç)",
+      "en": "Ja'far ibn Abi Talib as a boy of about 14, slim, beardless, with black hair under a small off-white head cloth; a plain cream tunic and a short brown cloak.",
+      "kaynak": "İbn Hişâm (s. 159): Ebû Tâlib'in oğlu; Abbas onu yanına aldı. Yaş ve görünüş yerel kaynakta yok.",
+      "secim": "Yaş (Ali'den büyük), görünüş. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "hakim_b_hizam": {
+      "ad": "Hakîm b. Hizâm",
+      "en": "Hakim ibn Hizam, a prosperous merchant of about 35 with a trimmed black beard; a white head cloth with a dark cord band; a cream tunic and a long ochre-brown travelling cloak.",
+      "kaynak": "İbn Hişâm (s. 160): Hatice'nin yeğeni, Şam'dan köleler getirdi. Yaş ve görünüş kaynakta yok.",
+      "secim": "Yaş, kıyafet. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "harise": {
+      "ad": "Hârise",
+      "en": "Haritha, Zayd's father, a weathered desert tribesman of about 45 with a greying black beard; a dusty dark head cloth; a worn grey-brown travelling cloak over an undyed tunic; a staff.",
+      "kaynak": "İbn Hişâm (s. 160-161), ZEYD (s. 319): oğlunu almak için Mekke'ye geldi. Görünüş kaynakta yok.",
+      "secim": "Yaş, yoldan gelmiş kıyafet. Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
+    },
+    "nestura": {
+      "ad": "Rahip (Nestûrâ)",
+      "en": "an old Christian monk of Syria with a long white beard; a plain dark-brown woollen robe and a dark hood; a simple cord belt; no cross, no jewellery.",
+      "kaynak": "İbn Hişâm (s. 119-120), BUSRÂ (c. 6, s. 470): Busrâ'da bir rahip. Görünüş kaynakta yok.",
+      "secim": "Görünüş; Bahîrâ kartından ayrı (karışıklık olmasın diye koyu kahve, sade). Tek görselde geçtiği için referans sayfası yok.",
+      "referans_sayfasi": false
     }
   }
 }
