@@ -1,0 +1,1916 @@
+{
+  "id": "b08-el-emin",
+  "sira": 8,
+  "baslik": "el-Emîn",
+  "ozet": "Efendimiz'in ticaret yılları, Hz. Hatice'nin kervanıyla Şam yolculuğu, Hatice ile evliliği ve çocukları; Zeyd b. Hârise'nin ve Hz. Ali'nin eve katılması.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b08-s01",
+      "anlatim": [
+        {
+          "metin": "Efendimiz gençliğinde ticaretle uğraştı. Yemen'deki Hubâşe panayırına, Suhâr ve Debâ panayırlarına gitti.",
+          "iddialar": [
+            "i-b08-001"
+          ]
+        },
+        {
+          "metin": "Onu tanıyan herkes doğru sözlü ve güvenilir biri olduğunu bilirdi. Kureyş ona daha peygamber olmadan 'el-Emîn', yani 'güvenilir' derdi.",
+          "iddialar": [
+            "i-b08-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Sabah, Mekke'nin kenarında yola hazırlanan bir ticaret kervanı uzak plan: yük bağlanan develer, kumaş ve deri denkleri, tüccarlar. Efendimiz çizilmez.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "b06-kervan-hazirlik.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.635,
+                "olcek": 0.2
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s01.mp3",
+        "muzik": "acilis-sakin",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s02",
+      "anlatim": [
+        {
+          "metin": "Mekke'de Huveylid'in kızı Hatice adında soylu ve zengin bir hanım vardı.",
+          "iddialar": [
+            "i-b08-003"
+          ]
+        },
+        {
+          "metin": "Hatice kendi malıyla adamlarını ticarete gönderir, kazancı onlarla paylaşırdı. Daha önce iki kez evlenmiş, iki eşini de kaybetmişti.",
+          "iddialar": [
+            "i-b08-003",
+            "i-b08-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Hz. Hatice'nin geniş taş evinin avlusu: kumaş topları, deri denkler, terazi, yük hazırlayan hizmetliler ve çalışanlar. Hz. Hatice yüzü görünmeden: arkadan ya da perde ardında, uzak planda, örtülü siluet: üst kattaki perdeli pencerenin ardında belli belirsiz bir gölge.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "hatice-ev",
+            "dosya": "b08-hatice-ev.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b08-s02.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "hatice"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s03",
+      "anlatim": [
+        {
+          "metin": "Hatice, Efendimiz'in ne kadar doğru ve güvenilir olduğunu duydu. Ona, malını Şam'a götürüp ticaret yapmasını teklif etti.",
+          "iddialar": [
+            "i-b08-005"
+          ]
+        },
+        {
+          "metin": "Başka tüccarlara verdiğinden daha fazlasını verecekti. Kölesi Meysere de onunla birlikte gidecekti.",
+          "iddialar": [
+            "i-b08-005"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, aynı avlu orta plan: genç bir hizmetli (Meysere) yük denklerinin yanında; avlunun kapısında boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Hatice çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "hatice-ev",
+            "dosya": "b08-hatice-ev.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          },
+          {
+            "id": "meysere",
+            "dosya": "b08-meysere.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.7,
+              "y": 0.86,
+              "boy": 0.45,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s03.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice",
+        "meysere"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s04",
+      "anlatim": [
+        {
+          "metin": "Efendimiz teklifi kabul etti. Meysere ile birlikte kervana katılıp Şam'a doğru yola çıktı.",
+          "iddialar": [
+            "i-b08-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çöl uzak plan: kuzeye ilerleyen uzun, yüklü bir kervan; ufukta sıcak pusu. Figürler küçük ve ayrıntısız; Efendimiz çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "b06-kervan-yol.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.59,
+                "olcek": 0.75
+              }
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b08-s04.mp3",
+        "muzik": "yolculuk-01",
+        "ortam": "kervan-uzak"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "meysere"
+      ],
+      "yer": "sam"
+    },
+    {
+      "id": "b08-s05",
+      "anlatim": [
+        {
+          "metin": "Rivayete göre Şam topraklarına vardıklarında, bir rahibin manastırına yakın bir ağacın gölgesinde konakladılar.",
+          "iddialar": [
+            "i-b08-007"
+          ]
+        },
+        {
+          "metin": "Rahip Meysere'ye ağacın altında dinlenen kişinin kim olduğunu sordu ve şöyle dedi: 'Bu ağacın altına peygamberden başkası inmedi.'",
+          "iddialar": [
+            "i-b08-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Busrâ yakınlarında taş bir manastırın yanında tek, büyük, gölgeli bir ağaç; ağacın gölgesinde duran boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok; ileride develer dinleniyor. Manastırın kapısında yaşlı, sakallı bir rahip (Nestûrâ) Meysere ile konuşuyor, eliyle ağacı gösteriyor. Haç ya da kilise süslemesi abartısız.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "busra-agac",
+            "dosya": "b08-busra-agac.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          },
+          {
+            "id": "rahip",
+            "dosya": "b08-rahip.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.32,
+              "y": 0.8,
+              "boy": 0.3,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s05.mp3",
+        "muzik": "sakin-isik",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "meysere"
+      ],
+      "yer": "busra"
+    },
+    {
+      "id": "b08-s06",
+      "anlatim": [
+        {
+          "metin": "Efendimiz Şam'da getirdiği malları sattı, almak istediklerini aldı ve Mekke'ye döndü.",
+          "iddialar": [
+            "i-b08-006"
+          ]
+        },
+        {
+          "metin": "Hatice getirilen malları sattı; kazancı iki katına ya da ona yakın çıktı.",
+          "iddialar": [
+            "i-b08-008"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü, Mekke vadisi uzak plan: Mekke'ye giren, yükü kabarık bir kervan; evler ve alçak Kâbe akşam ışığında.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "b06-kervan-yol.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.23,
+                "y": 0.645,
+                "olcek": 0.4
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s06.mp3",
+        "muzik": "huzur-dusuk",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s07",
+      "anlatim": [
+        {
+          "metin": "Bir süre sonra Hatice, Efendimiz'e haber gönderdi.",
+          "iddialar": [
+            "i-b08-009"
+          ]
+        },
+        {
+          "metin": "Akrabalığı, kavmi içindeki saygın yeri, güvenilirliği, güzel ahlâkı ve doğru sözlülüğü için onunla evlenmek istediğini bildirdi.",
+          "iddialar": [
+            "i-b08-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Hatice'nin evinin avlusu: kandiller yanmış, mallar istiflenmiş, avlu sessiz. Hz. Hatice yüzü görünmeden: arkadan ya da perde ardında, uzak planda, örtülü siluet: perdeli kapının ardında, ışığın önünde silueti.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "hatice-ev",
+            "dosya": "b08-hatice-ev.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s07.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hatice"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s08",
+      "anlatim": [
+        {
+          "metin": "Efendimiz bu teklifi amcalarına anlattı. Amcaları da gidip Hatice'yi ailesinden istedi.",
+          "iddialar": [
+            "i-b08-010"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke sokağı orta plan: Ebû Tâlib ile Hamza, yanlarında boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok, birlikte Hatice'nin evine doğru yürüyor.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "amcalar",
+            "dosya": "b08-amcalar.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.6,
+              "y": 0.72,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b08-s08.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib",
+        "hamza-b-abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s09",
+      "anlatim": [
+        {
+          "metin": "Böylece evlendiler. Efendimiz mehir olarak yirmi genç dişi deve verdi.",
+          "iddialar": [
+            "i-b08-011"
+          ]
+        },
+        {
+          "metin": "Efendimiz o sırada yirmi beş yaşındaydı. Hatice'nin ise kırk yaşlarında olduğu rivayet edilir.",
+          "iddialar": [
+            "i-b08-012",
+            "i-b08-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Hatice'nin evinin önü uzak plan: avluya getirilen genç dişi develer; toplanmış akrabalar ve amcalar; aralarında boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Hatice çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "nikah",
+            "dosya": "b08-nikah.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.5,
+              "y": 0.82,
+              "boy": 0.32,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s09.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice",
+        "ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s10",
+      "anlatim": [
+        {
+          "metin": "Hatice, Efendimiz'in ilk eşiydi. Efendimiz o hayattayken başka biriyle evlenmedi.",
+          "iddialar": [
+            "i-b08-014"
+          ]
+        },
+        {
+          "metin": "İbrâhim dışındaki bütün çocukları Hatice'dendir. Kızları Zeyneb, Rukıyye, Ümmü Külsûm ve Fâtıma'ydı. Oğullarının adları rivayetlerde Kâsım, Abdullah, Tayyib ve Tâhir olarak geçer.",
+          "iddialar": [
+            "i-b08-015"
+          ]
+        },
+        {
+          "metin": "İlk çocukları Kâsım'dı. Efendimiz, 'Kâsım'ın babası' anlamına gelen 'Ebü'l-Kâsım' diye anıldı. Kâsım küçük yaşta öldü.",
+          "iddialar": [
+            "i-b08-016"
+          ]
+        },
+        {
+          "metin": "Oğullarının hepsi Efendimiz peygamber olmadan önce öldü. Kızları ise İslâm'ı gördü, Müslüman oldu ve onunla birlikte hicret etti.",
+          "iddialar": [
+            "i-b08-017"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, evin içi: kandil ışığı, hasırlar, sade eşyalar. Küçük çocuklar arkadan ve siluet halinde, kandilin önünde oyun oynuyor; Hz. Hatice yüzü görünmeden: arkadan ya da perde ardında, uzak planda, örtülü siluet; kapının yanında boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Hiçbir yüz görünmez.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "aile",
+            "dosya": "b08-aile.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "ton": false,
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.78,
+              "y": 0.9,
+              "boy": 0.5,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s10.mp3",
+        "muzik": "sicak-ev",
+        "ortam": "gece-sessiz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice",
+        "kasim-b-muhammed"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s11",
+      "anlatim": [
+        {
+          "metin": "Evlilikten sonra eve Zeyd b. Hârise adında bir genç katıldı.",
+          "iddialar": [
+            "i-b08-019"
+          ]
+        },
+        {
+          "metin": "Zeyd, Kelb kabilesindendi. Daha çocukken annesiyle akrabalarını ziyarete giderken kaçırılmış, köle olarak satılmıştı.",
+          "iddialar": [
+            "i-b08-018"
+          ]
+        },
+        {
+          "metin": "Hatice'nin yeğeni Hakîm b. Hizâm bazı köleler getirmişti. Hatice aralarından Zeyd'i seçti. Efendimiz Zeyd'i Hatice'den istedi, Hatice de ona verdi.",
+          "iddialar": [
+            "i-b08-019"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de bir evin önü orta plan: varlıklı giyimli Hakîm b. Hizâm; yanında birkaç genç köle; aralarında yorgun ama dik duran genç bir delikanlı (Zeyd). Hatice çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "koleler",
+            "dosya": "b08-koleler.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s11.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "zeyd-b-harise",
+        "hakim-b-hizam",
+        "hatice"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s12",
+      "anlatim": [
+        {
+          "metin": "Zeyd'in babası Hârise, oğlunun kaybına çok üzülmüştü. Sonunda nerede olduğunu öğrenip Mekke'ye geldi.",
+          "iddialar": [
+            "i-b08-020"
+          ]
+        },
+        {
+          "metin": "Efendimiz seçimi Zeyd'e bıraktı: isterse babasıyla gidebilirdi. Zeyd ise Efendimiz'in yanında kalmayı seçti.",
+          "iddialar": [
+            "i-b08-020"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de bir avlu orta plan: yoldan gelmiş, tozlu giysili bir adam (Hârise) ve yanında kardeşi; karşılarında genç Zeyd, boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok figürüne doğru dönmüş duruyor.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "harise",
+            "dosya": "b08-harise.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.7,
+              "y": 0.72,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s12.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "zeyd-b-harise",
+        "harise"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s13",
+      "anlatim": [
+        {
+          "metin": "Efendimiz Zeyd'i âzat etti ve evlat edindi.",
+          "iddialar": [
+            "i-b08-021"
+          ]
+        },
+        {
+          "metin": "Zeyd bundan sonra, evlatlıkların öz babalarının adıyla anılmasını emreden âyet inene kadar 'Zeyd b. Muhammed' diye anıldı.",
+          "iddialar": [
+            "i-b08-022"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü, Mekke sokağı orta plan: yan yana yürüyen genç Zeyd ve boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Arkada evler.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "zeyd-yuruyus",
+            "dosya": "b08-zeyd-yuruyus.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.55,
+              "y": 0.72,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s13.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "zeyd-b-harise"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s14",
+      "anlatim": [
+        {
+          "metin": "Bir yıl Kureyş'i şiddetli bir kıtlık vurdu. Ebû Tâlib'in ailesi kalabalıktı ve geçimi zorlaşmıştı.",
+          "iddialar": [
+            "i-b08-023"
+          ]
+        },
+        {
+          "metin": "Efendimiz, Hâşimoğulları'nın en varlıklısı olan amcası Abbas'la konuştu. Ebû Tâlib'in yükünü hafifletmek için çocuklarından birer tanesini yanlarına alacaklardı.",
+          "iddialar": [
+            "i-b08-023"
+          ]
+        },
+        {
+          "metin": "Efendimiz Ali'yi, Abbas da Ca'fer'i aldı. Ali, Efendimiz peygamber olana kadar hep onun yanında kaldı.",
+          "iddialar": [
+            "i-b08-023"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, kurak Mekke, Ebû Tâlib'in evinin önü orta plan: yaşlı Ebû Tâlib kapıda; Abbas genç Ca'fer'in omzunda eliyle; boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok küçük Ali'nin yanında. Kuru toprak, boş testiler.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "ali",
+            "dosya": "b08-ali.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.35,
+              "y": 0.72,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s14.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib",
+        "abbas-b-abdulmuttalib",
+        "cafer-b-ebu-talib",
+        "ali-b-ebu-talib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b08-s15",
+      "anlatim": [
+        {
+          "metin": "Resûlullah, Hatice'nin vefatından sonra da onu hep andı. Kimse inanmazken onun inandığını, insanlar yalanlarken onun doğruladığını, kimse bir şey vermezken onun malıyla destek olduğunu ve Allah'ın kendisine ondan çocuklar verdiğini söylerdi.",
+          "iddialar": [
+            "i-b08-024"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Mekke vadisi uzak plan: evler ve alçak Kâbe akşam ışığında; Hatice'nin evinin penceresinden sıcak bir kandil ışığı. İnsanlar küçük ve ayrıntısız.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b08-s15.mp3",
+        "muzik": "kapanis",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "hatice"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b08-001",
+      "ifade": "Efendimiz gençliğinde ticaretle uğraştı; Yemen'deki Hubâşe panayırına, Suhâr ve Debâ panayırlarına gitti.",
+      "guc": "guclu",
+      "gerekce": "ARAP (bölüm 5, s. 324): Hz. Peygamber Yemen'deki Hubâşe ile Suhâr ve Debâ panayırlarına katılmıştır. MUHAMMED: ticaret için Hubâşe, Yemen, Muşakkar, Debâ ve Habeşistan'a gittiği nakledilir (Hamîdullah'a dayanarak). Suhâr yalnız ARAP'ta geçer. İki D kaynağı. MUHAMMED maddesinin taraması metinsiz olduğu için sayfa s. 407-408 aralığı olarak verildi.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 324 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-002",
+      "ifade": "İnsanlar onu doğru sözlü ve güvenilir biri olarak tanırdı; Kureyş ona vahiy gelmeden önce 'el-Emîn', yani güvenilir derdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): Hatice onun doğru sözlülüğünü, büyük güvenilirliğini ve güzel ahlâkını duymuştu; (s. 125): Kureyş vahiyden önce ona el-Emîn derdi. MUHAMMED: 'Muhammedü'l-emîn' diye anılırdı (İbn Sa'd I, 121, 156). Hadislerle İslâm (c. 6) lakabı Kureyş'in verdiğini söyler. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119, 125",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 6, PDF s. 319 (dipnot 1291'in geçtiği paragraf)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-003",
+      "ifade": "Hz. Hatice, Huveylid'in kızıydı; Kureyş'in soylu ve zengin bir hanımıydı. Kendi malıyla adamlarını ticarete gönderir, kazancı onlarla paylaşırdı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): Hatice bint Huveylid şerefli ve zengin bir tüccar kadındı; adamlarını malıyla ticarete gönderir, kazançtan onlara pay verirdi; (s. 120): soyca Kureyş kadınlarının ortası, şerefçe en büyüğü, malca en zengini. HATİCE (s. 465): soyu Kusay'da Resûl-i Ekrem'in soyuyla birleşir; soylu, güzel ve zengindi. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119-120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-004",
+      "ifade": "Hatice daha önce iki kez evlenmiş, iki eşini de kaybetmişti.",
+      "guc": "guclu",
+      "gerekce": "HATİCE (s. 465): Hz. Peygamber ile evlenmeden önce iki evlilik yaptı (Ebû Hâle Hind b. Zürâre ve Atîk b. Âiz); ikinci kocasının ölümünden sonra Kureyş'in ileri gelenlerinin evlilik tekliflerini kabul etmedi. MUHAMMED aynı bilgiyi verir. İki D kaynağı; eşlerin adları ve sırası kaynaklarda farklı olduğu için anlatıma alınmadı. MUHAMMED maddesinin taraması metinsiz olduğu için sayfa s. 407-408 aralığı olarak verildi.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-005",
+      "ifade": "Hatice, Efendimiz'in doğruluğunu ve güvenilirliğini duyunca ona malını Şam'a götürüp ticaret yapmasını teklif etti; başka tüccarlara verdiğinden fazlasını verecekti. Kölesi Meysere de onunla gidecekti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): Hatice onun doğru sözlülüğünü, güvenilirliğini ve güzel ahlâkını duyunca malını Şam'a götürmesini, başka tüccarlara verdiğinin daha fazlasını vereceğini, kölesi Meysere'nin de onunla gideceğini teklif etti. HATİCE (s. 465) ve MUHAMMED ticaret teklifini ve Meysere'yi anar; başkalarından fazla pay verileceği yalnız İbn Hişâm'dadır. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-006",
+      "ifade": "Efendimiz teklifi kabul etti ve Meysere ile Şam'a gitti; malları satıp istediklerini aldı ve Mekke'ye döndü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119-120): teklifi kabul edip Meysere ile Şam'a çıktı; getirdiğini sattı, almak istediğini aldı ve Mekke'ye döndü. HATİCE (s. 465) ve MUHAMMED yolculuğu aynı biçimde anar. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119-120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-007",
+      "ifade": "Rivayete göre Şam topraklarına vardıklarında, bir rahibin manastırına yakın bir ağacın gölgesinde konakladılar. Rahip Meysere'ye ağacın altındakinin kim olduğunu sordu ve 'Bu ağacın altına peygamberden başkası inmedi' dedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119-120): Şam'da bir rahibin manastırına yakın bir ağacın gölgesine indi; rahip Meysere'ye kim olduğunu sordu ve 'Bu ağacın altına peygamberden başkası inmedi' dedi. BUSRÂ (s. 470): Busrâ'da rahip Nestûrâ'nın aynı sözü (İbn Sa'd I, 130). Bir C ve bir D kaynağı. Olay Bahîrâ kıssası gibi rivayet niteliğinde olduğundan anlatımda 'rivayete göre' denir; yer olarak Busrâ BUSRÂ maddesinden alındı, İbn Hişâm yalnız 'Şam' der. BAHÎRÂ (s. 486): Halebî bu ikinci yolculuktaki rahibin Bahîrâ değil onun halefi Nestûrâ olduğunu, bazı kaynakların iki olayı karıştırdığını söyler; bu yüzden anlatımda rahibin adı verilmez. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119-120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BUSRÂ\", c. 6, s. 470 (İstanbul 1992)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"BAHÎRÂ\", c. 4, s. 486 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-008",
+      "ifade": "Hatice getirilen malları sattı; kazancı iki katına ya da ona yakın çıktı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 120): Hatice getirdiklerini sattı, kâr iki katı ya da ona yakın oldu. MUHAMMED ticaretin kârlı geçtiğini, HATİCE (s. 465) Hatice'nin onun başarılı bir tacir olduğunu gördüğünü yazar; kârın miktarı yalnız İbn Hişâm'dadır. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-009",
+      "ifade": "Hatice ona haber gönderdi: akrabalığı, kavmi içindeki saygın yeri, güvenilirliği, güzel ahlâkı ve doğru sözlülüğü için onunla evlenmek istediğini bildirdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 120): 'Ey amcamın oğlu, akrabalığın, kavmin içindeki yerin, emanetin, ahlâkının güzelliği ve sözünün doğruluğu için sana rağbet ettim' diye haber gönderdi; ardından kendini ona teklif etti. İbn Hişâm bunu 'fîmâ yez'umûn' (anlattıklarına göre) diye aktarır. Haber ile teklif kaynakta iki ayrı cümle olduğu için söz tırnaksız, dolaylı verilir. HATİCE (s. 465) ve MUHAMMED teklifi doğrudan ya da Nefîse bint Ümeyye aracılığıyla yaptığını yazar; aracı dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı rivayetlere göre Hatice teklifi Nefîse bint Ümeyye aracılığıyla iletti.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-010",
+      "ifade": "Efendimiz bu teklifi amcalarına anlattı; amcaları da Hatice'yi ailesinden istedi.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm (s. 120): amcalarına anlattı; amcası Hamza onunla birlikte Huveylid b. Esed'e gidip Hatice'yi istedi. HATİCE (s. 465): Ebû Tâlib, kardeşleri ve Hz. Muhammed'in katıldığı, Hatice'nin evinde yapılan toplantıda Hatice'nin amcası Amr b. Esed'den istedi; bazı rivayetlerde Ebû Tâlib yerine Hamza, amca yerine babası Huveylid geçer. MUHAMMED amcaların Amr b. Esed'den istediğini yazar. Ana metinde ortak nokta (amcaların istemesi) verilir; kişiler dipnotta. Babasının (ya da amcasının) sarhoş edildiğine dair rivayet HATİCE'de güvenilmez sayıldığı için alınmadı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'a göre Hatice'yi amcası Hamza, babası Huveylid b. Esed'den istedi.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 120",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        },
+        {
+          "ifade": "Başka rivayetlere göre Ebû Tâlib, Hatice'nin evinde yapılan toplantıda onu amcası Amr b. Esed'den istedi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-011",
+      "ifade": "Efendimiz mehir olarak yirmi genç dişi deve verdi.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm (s. 120): İbn Hişâm kendi ilavesinde mehrin yirmi genç dişi deve (bekre) olduğunu söyler. HATİCE (s. 465): 500 (veya 400) dirhem, bazı kaynaklara göre yirmi dişi deve. İbn Hişâm ile HATİCE'deki bir rivayet ortak olduğu için ana metne deve alındı; dirhem rivayeti dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı kaynaklara göre mehir 500 ya da 400 dirhemdi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-012",
+      "ifade": "Efendimiz evlendiğinde yirmi beş yaşındaydı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): Resûlullah yirmi beş yaşına gelince Hatice ile evlendi. HATİCE (s. 465): yirmi beş yaşında olduğu rivayeti ağırlık kazanır; otuz (Zübeyr b. Bekkâr) ve yirmi bir (Taberânî) zayıf sayılır. MUHAMMED aynı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Zayıf sayılan rivayetlere göre Efendimiz o sırada otuz ya da yirmi bir yaşındaydı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-013",
+      "ifade": "Hatice o sırada kırk yaşlarındaydı.",
+      "guc": "ihtilafli",
+      "gerekce": "HATİCE (s. 465): Hatice muhtemelen kırk yaşlarındaydı; otuz yedi ve yirmi sekiz (İbn Sa'd VIII, 17) rivayetleri zayıf kabul edilir, ama yirmi sekiz rivayeti yedi çocuk sahibi olmasıyla daha iyi bağdaşır. MUHAMMED: yirmi beş ve kırk yaş söylenmekle birlikte, İbn Abbas'tan gelen yirmi sekiz yaş rivayeti yedi (veya altı) çocuk göz önüne alındığında daha isabetli görünür. Yaygın kabul ana metne, diğerleri dipnota (Erdem kararı, 2026-11-18). MUHAMMED maddesinin taraması metinsiz olduğu için sayfa s. 407-408 aralığı olarak verildi.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Başka rivayetlere göre Hatice yirmi sekiz ya da otuz yedi yaşındaydı; yirmi sekiz rivayeti yedi çocuk sahibi olmasıyla daha iyi bağdaşır.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407-408 (Ankara 2020)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-014",
+      "ifade": "Hatice, Efendimiz'in ilk eşiydi; Efendimiz o hayattayken başka biriyle evlenmedi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 120): Hatice Resûlullah'ın ilk eşiydi; o ölünceye kadar başka bir kadınla evlenmedi. HATİCE (s. 466): Hatice hayattayken bir başka kadınla evlenmedi. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 466 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-015",
+      "ifade": "İbrâhim dışındaki bütün çocukları Hatice'dendir. Kızları Zeyneb, Rukıyye, Ümmü Külsûm ve Fâtıma'ydı. Oğullarının adları rivayetlerde Kâsım, Abdullah, Tayyib ve Tâhir olarak geçer; bunların bir kısmının aynı çocuğun lakapları olduğu da söylenir.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm (s. 120-121): İbrâhim dışındaki bütün çocukları Hatice'dendir: Kâsım, Tâhir, Tayyib, Zeyneb, Rukıyye, Ümmü Külsûm ve Fâtıma; sıralamada İbn Hişâm ile İbn İshâk ayrılır. HATİCE (s. 465): Kâsım, Tayyib (Abdullah) ve Tâhir; bazı kaynaklarda Abdullah, Tâhir ve Tayyib'in aynı çocuk olduğu kaydedilir; (s. 466): İbrâhim dışındaki bütün çocuklarının annesidir. Erken kaynaklar sayıda ayrıldığı için anlatımda sayı verilmez, adlar rivayetteki haliyle sayılır; sıralama farkı dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120-121",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 466 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'a göre büyük kızı Rukıyye'ydi, sonra Zeyneb geliyordu; başka bir rivayete göre çocuklarının en büyüğü Zeyneb'di.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 121",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-016",
+      "ifade": "İlk çocukları Kâsım'dı; Efendimiz 'Ebü'l-Kâsım' künyesini onun adından aldı. Kâsım küçük yaşta öldü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 120): künyesi onunla verilen Kâsım; en büyük oğlu Kâsım'dı. HATİCE (s. 465): ilk çocukları Kâsım olup iki yaşına kadar yaşadı; Ebü'l-Kâsım künyesini onun adından aldı. Künye 'falanın babası' anlamına gelen addır; anlatımda açıklanır. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 120-121",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bir rivayete göre çocuklarının en büyüğü Zeyneb'di.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-017",
+      "ifade": "Oğulları peygamberlikten önce öldü. Kızları İslâm'ı gördü, Müslüman oldu ve onunla birlikte hicret etti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 121, İbn İshâk'tan): oğulları Câhiliye'de öldü; kızları İslâm'a yetişti, Müslüman oldu ve onunla hicret etti. HATİCE (s. 465): Tayyib (Abdullah) ile Tâhir peygamberlikten önce öldü; bir görüşe göre Abdullah İslâm'dan sonra doğmuştur. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 121",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı kaynaklara göre Abdullah, Tayyib ve Tâhir aynı çocuktur ve İslâm'dan sonra doğmuştur.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 465 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-018",
+      "ifade": "Zeyd b. Hârise, Kelb kabilesindendi. Çocukken annesiyle akrabalarını ziyarete giderken kaçırıldı ve köle olarak satıldı.",
+      "guc": "guclu",
+      "gerekce": "ZEYD (s. 319): Yemen asıllı Kelb kabilesinden; çocukken annesi Su'dâ ile akrabalarını ziyarete giderken Benî Kayn tarafından kaçırıldı ve köle olarak satıldı. İbn Hişâm (s. 160): Hakîm b. Hizâm'ın Şam'dan getirdiği köleler arasındaydı; Kelb'e nisbet edilir. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 160",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-019",
+      "ifade": "Hatice'nin yeğeni Hakîm b. Hizâm köleler getirmişti; Hatice aralarından Zeyd'i seçti. Efendimiz Zeyd'i Hatice'den istedi, Hatice de ona verdi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 160): Hakîm b. Hizâm Şam'dan köleler getirdi; halası Hatice -o sırada Resûlullah'ın eşi- yanına geldi, Hakîm ona birini seçmesini söyledi, Hatice Zeyd'i seçti; Resûlullah onu Hatice'den istedi, o da verdi. ZEYD (s. 319): Ukâz panayırında Hakîm b. Hizâm'a satıldı; Hakîm onu Hatice'ye verdi, Hatice de Hz. Peygamber'e hediye etti. Satış yeri farkı dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 160",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "ZEYD maddesine göre Zeyd, Ukâz panayırında Hakîm b. Hizâm'a satılmıştı; İbn Hişâm onu Şam'dan getirilen köleler arasında anar.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 160",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-020",
+      "ifade": "Zeyd'in babası Hârise oğlunun kaybına çok üzülmüştü; sonunda Mekke'ye geldi. Efendimiz seçimi Zeyd'e bıraktı: isterse babasıyla gidebilirdi. Zeyd, Efendimiz'in yanında kalmayı seçti.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 160-161): babası Hârise onun için çok üzüldü, ağıtlar söyledi; sonra yanına geldi; Resûlullah 'İstersen bende kal, istersen onunla git' dedi; Zeyd onun yanında kaldı. ZEYD (s. 319): Kelbli hacılar Zeyd'i tanıyıp ailesine haber verdi; babası Hârise ve amcası Kâ'b fidyesini alarak Mekke'ye geldi; Resûlullah dilerse onlarla gidebileceğini söyledi; Zeyd onun yanında kalmayı tercih etti. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 160-161",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-021",
+      "ifade": "Efendimiz Zeyd'i âzat etti ve evlat edindi.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 160): Resûlullah onu vahiy gelmeden önce âzat edip evlat edindi. ZEYD (s. 319): babasının gelişinden ve Hicr'deki sözlerden sonra onu âzat etti. Sıra farkı yüzünden anlatımda sıra kesinleştirilmez. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 160",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Hişâm'a göre Efendimiz Zeyd'i babası gelmeden önce âzat edip evlat edinmişti; ZEYD maddesine göre ise babası geldikten sonra.",
+          "kaynaklar": [
+            {
+              "eser": "ibn-hisam-sire",
+              "konum": "s. 160",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            },
+            {
+              "eser": "tdv-dia",
+              "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b08-022",
+      "ifade": "Zeyd, evlatlıkların öz babalarının adıyla anılmasını emreden âyet inene kadar 'Zeyd b. Muhammed' diye anıldı.",
+      "guc": "guclu",
+      "gerekce": "ZEYD (s. 319): evlatlığı olduğu için önceleri Zeyd b. Muhammed diye anılırdı; Ahzâb 33/5 indikten sonra babasının adıyla anıldı (Müslim, Fezâilü's-sahâbe 62). İbn Hişâm (s. 161): âyet inince 'Ben Zeyd b. Hârise'yim' dedi. ZEYD'deki Hicr sözü ('Şahit olun, Zeyd benim oğlumdur') maddede atıfsızdır ve başka yerel kaynakta yoktur; Hz. Peygamber'in sözü olduğu için ikinci kaynak (ör. İbn Sa'd III) bulunana kadar anlatıma alınmadı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Bünyamin Erul, \"ZEYD b. HÂRİSE\", c. 44, s. 319 (İstanbul 2013); maddedeki atıf: Müslim, \"Fezâilü's-sahâbe\", 62",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 161",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-023",
+      "ifade": "Bir yıl Kureyş'i şiddetli bir kıtlık vurdu. Ebû Tâlib'in ailesi kalabalıktı. Efendimiz, Hâşimoğulları'nın en varlıklısı olan amcası Abbas'la konuştu: Ebû Tâlib'in yükünü hafifletmek için onun çocuklarından birer tanesini yanlarına alacaklardı. Efendimiz Ali'yi, Abbas Ca'fer'i aldı. Ali, Efendimiz peygamber olana kadar onun yanında kaldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 159): Kureyş'i şiddetli bir kıtlık vurdu; Ebû Tâlib'in ailesi kalabalıktı; Resûlullah, Hâşimoğulları'nın en varlıklısı olan amcası Abbas'a, Ebû Tâlib'in yükünü hafifletmek için çocuklarından birer kişiyi almayı önerdi; Resûlullah Ali'yi, Abbas Ca'fer'i aldı; Ali, Allah onu peygamber olarak gönderene kadar onunla kaldı. ALİ (s. 371): Mekke'deki kıtlık sırasında Ebû Tâlib'in yükünü hafifletmek için Hz. Peygamber onu yanına aldı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 159",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"ALİ\", c. 2, s. 371 (İstanbul 1989)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b08-024",
+      "ifade": "Resûlullah, Hatice'nin vefatından sonra da onu hep andı: kimse inanmazken onun inandığını, insanlar yalanlarken onun doğruladığını, kimse bir şey vermezken onun malıyla destek olduğunu ve Allah'ın kendisine ondan çocuklar verdiğini söylerdi.",
+      "guc": "guclu",
+      "gerekce": "HATİCE (s. 466): Resûl-i Ekrem vefatından sonra onu hiç unutmadı; kimsenin inanmadığı günlerde onun inandığını, halk yalanlarken onun tasdik ettiğini, kimse bir şey vermezken onun malıyla desteklediğini, Allah'ın kendisine ondan çocuk verdiğini söyledi; madde bu ve ilgili hadisleri Buhârî ve Müslim'e toplu atıfla verir. Söz maddedeki haliyle dolaylı aktarılır; hadis metinleri yerelde yok. Tek D kaynağı (politika §2 istisnası): madde Buhârî ve Müslim'e toplu atıf verir, ama bu sözlerin hangi hadiste geçtiği maddeden çıkmaz; bu yüzden güç 'guclu'. Hz. Peygamber'in sözü olduğundan Erdem kaynak hadisi görmeli.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "M. Yaşar Kandemir, \"HATİCE\", c. 16, s. 466 (İstanbul 1997); maddedeki toplu atıf: Buhârî, \"Umre\", 11, \"Enbiyâ\", 45, \"Menâkıbü'l-ensâr\", 20, \"Nikâh\", 108, \"Edeb\", 23, \"Tevhîd\", 32; Müslim, \"Fezâilü's-sahâbe\", 69, 71-78; bibliyografyada ayrıca Müsned VI, 117-118",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

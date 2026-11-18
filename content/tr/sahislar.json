@@ -14,13 +14,16 @@
       "b04-sut-anne",
       "b05-yetimlik",
       "b06-ebu-talib",
-      "b07-genclik"
+      "b07-genclik",
+      "b08-el-emin"
     ],
     "iddialar": [
       "i-b09-001",
       "i-b09-018",
       "i-b03-001",
-      "i-b03-012"
+      "i-b03-012",
+      "i-b08-002",
+      "i-b08-012"
     ]
   },
   {
@@ -28,12 +31,14 @@
     "ad": "Abbas b. Abdülmuttalib",
     "lakap": "",
     "yakinlik": "Amcası",
-    "ozet": "Kâbe'nin yeniden yapımında Resûlullah ile birlikte taş taşıdı.",
+    "ozet": "Hâşimoğulları'nın en varlıklısıydı. Bir kıtlık yılında Ebû Tâlib'in yükünü hafifletmek için oğlu Ca'fer'i yanına aldı. Kâbe'nin yeniden yapımında Resûlullah ile birlikte taş taşıdı.",
     "bolumler": [
-      "b09-hakem"
+      "b09-hakem",
+      "b08-el-emin"
     ],
     "iddialar": [
-      "i-b09-011"
+      "i-b09-011",
+      "i-b08-023"
     ]
   },
   {
@@ -105,11 +110,17 @@
     "ad": "Hz. Hatice",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) eşi",
-    "ozet": "Efendimiz Hira'da yalnız başına ibadet ettiği yıllarda azığını ondan alırdı; Hatice zaman zaman onunla birlikte Hira'ya çıkardı.",
+    "ozet": "Huveylid'in kızı; Kureyş'in soylu ve zengin bir hanımıydı, kendi malıyla adamlarını ticarete gönderirdi. Efendimiz'in doğruluğunu duyunca ona malıyla Şam'a gitmeyi teklif etti; sonra onunla evlendi. Efendimiz'in ilk eşidir; İbrâhim dışındaki bütün çocukları ondandır. Efendimiz Hira'da yalnız başına ibadet ettiği yıllarda azığını ondan alırdı; Hatice zaman zaman onunla birlikte Hira'ya çıkardı.",
     "bolumler": [
-      "b10-hira"
+      "b10-hira",
+      "b08-el-emin"
     ],
     "iddialar": [
+      "i-b08-003",
+      "i-b08-005",
+      "i-b08-009",
+      "i-b08-014",
+      "i-b08-015",
       "i-b10-006",
       "i-b10-010"
     ]
@@ -201,13 +212,15 @@
     "id": "cafer-b-ebu-talib",
     "ad": "Ca'fer b. Ebû Tâlib",
     "lakap": "",
-    "yakinlik": "",
-    "ozet": "Habeş hükümdarına İslâm'dan önceki Mekke toplumunu anlattı.",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) amcasının oğlu",
+    "ozet": "Ebû Tâlib'in oğlu. Bir kıtlık yılında amcası Abbas onu yanına aldı. Habeş hükümdarına İslâm'dan önceki Mekke toplumunu anlattı.",
     "bolumler": [
-      "b01-cahiliye-mekkesi"
+      "b01-cahiliye-mekkesi",
+      "b08-el-emin"
     ],
     "iddialar": [
-      "i-b01-019"
+      "i-b01-019",
+      "i-b08-023"
     ]
   },
   {
@@ -506,11 +519,12 @@
     "ad": "Ebû Tâlib",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) amcası",
-    "ozet": "Abdülmuttalib'in oğlu. Efendimiz'in babası Abdullah ile hem anneleri hem babaları aynıydı. Babası ölmeden önce torununu ona emanet etmişti; sekiz yaşındaki yeğenini yanına alıp büyüttü. Kureyş içinde sözü dinlenen, saygı duyulan biriydi; ailesi kalabalıktı. Yeğenini çok sever, uğurlu olduğuna inanır, yolculuklarında bile yanından ayırmazdı; onu on iki yaşındayken Şam yolculuğuna yanında götürdü.",
+    "ozet": "Abdülmuttalib'in oğlu. Efendimiz'in babası Abdullah ile hem anneleri hem babaları aynıydı. Babası ölmeden önce torununu ona emanet etmişti; sekiz yaşındaki yeğenini yanına alıp büyüttü. Kureyş içinde sözü dinlenen, saygı duyulan biriydi; ailesi kalabalıktı. Yeğenini çok sever, uğurlu olduğuna inanır, yolculuklarında bile yanından ayırmazdı; onu on iki yaşındayken Şam yolculuğuna yanında götürdü. Bir kıtlık yılında yükünü hafifletmek için oğlu Ali'yi Efendimiz, Ca'fer'i Abbas yanına aldı.",
     "bolumler": [
       "b05-yetimlik",
       "b06-ebu-talib",
-      "b07-genclik"
+      "b07-genclik",
+      "b08-el-emin"
     ],
     "iddialar": [
       "i-b05-015",
@@ -518,7 +532,8 @@
       "i-b06-003",
       "i-b06-004",
       "i-b06-009",
-      "i-b06-006"
+      "i-b06-006",
+      "i-b08-023"
     ]
   },
   {
@@ -627,6 +642,102 @@
     ],
     "iddialar": [
       "i-b07-006"
+    ]
+  },
+  {
+    "id": "meysere",
+    "ad": "Meysere",
+    "lakap": "",
+    "yakinlik": "Hz. Hatice'nin kölesi",
+    "ozet": "Hz. Hatice'nin kölesi. Efendimiz'in Hatice'nin malıyla Şam'a yaptığı ticaret yolculuğunda onun yanındaydı.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-005",
+      "i-b08-007"
+    ]
+  },
+  {
+    "id": "hamza-b-abdulmuttalib",
+    "ad": "Hamza b. Abdülmuttalib",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) amcası",
+    "ozet": "Abdülmuttalib'in oğlu. İbn Hişâm'ın rivayetine göre Efendimiz'le birlikte gidip Hz. Hatice'yi babası Huveylid'den istedi.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-010"
+    ]
+  },
+  {
+    "id": "kasim-b-muhammed",
+    "ad": "Kâsım",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) oğlu",
+    "ozet": "Efendimiz ile Hz. Hatice'nin ilk çocuğu. Efendimiz 'Ebü'l-Kâsım' künyesini onun adından aldı. Küçük yaşta öldü.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-016"
+    ]
+  },
+  {
+    "id": "zeyd-b-harise",
+    "ad": "Zeyd b. Hârise",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) evlatlığı",
+    "ozet": "Kelb kabilesinden. Çocukken kaçırılıp köle olarak satıldı; Hz. Hatice onu Efendimiz'e verdi. Babası onu almaya geldiğinde Efendimiz'in yanında kalmayı seçti; Efendimiz onu âzat edip evlat edindi.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-018",
+      "i-b08-019",
+      "i-b08-020",
+      "i-b08-021",
+      "i-b08-022"
+    ]
+  },
+  {
+    "id": "hakim-b-hizam",
+    "ad": "Hakîm b. Hizâm",
+    "lakap": "",
+    "yakinlik": "Hz. Hatice'nin yeğeni",
+    "ozet": "Hz. Hatice'nin yeğeni. Getirdiği köleler arasından Hatice, Zeyd b. Hârise'yi seçti.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-019"
+    ]
+  },
+  {
+    "id": "harise",
+    "ad": "Hârise",
+    "lakap": "",
+    "yakinlik": "Zeyd b. Hârise'nin babası",
+    "ozet": "Zeyd b. Hârise'nin babası. Kaçırılan oğlunu yıllarca aradı, sonunda Mekke'ye geldi; Zeyd Efendimiz'in yanında kalmayı seçti.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-020"
+    ]
+  },
+  {
+    "id": "ali-b-ebu-talib",
+    "ad": "Ali b. Ebû Tâlib",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) amcasının oğlu",
+    "ozet": "Ebû Tâlib'in oğlu. Mekke'deki bir kıtlık yılında Efendimiz onu, amcasının yükünü hafifletmek için yanına aldı; Ali, Efendimiz peygamber olana kadar onun yanında kaldı.",
+    "bolumler": [
+      "b08-el-emin"
+    ],
+    "iddialar": [
+      "i-b08-023"
     ]
   }
 ]

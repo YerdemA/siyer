@@ -16,7 +16,8 @@
       "b04-sut-anne",
       "b05-yetimlik",
       "b06-ebu-talib",
-      "b07-genclik"
+      "b07-genclik",
+      "b08-el-emin"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -178,13 +179,15 @@
       "x": 0.141,
       "y": 0.099
     },
-    "ozet": "Şam'ın güneyinde bir pazar şehri; Kureyş kervanları buraya sık sık uğrardı. Efendimiz on iki yaşında amcası Ebû Tâlib'le çıktığı yolculukta burada konakladı.",
+    "ozet": "Şam'ın güneyinde bir pazar şehri; Kureyş kervanları buraya sık sık uğrardı. Efendimiz on iki yaşında amcası Ebû Tâlib'le çıktığı yolculukta burada konakladı. Rivayete göre yirmi beş yaşındayken Hz. Hatice'nin kervanıyla çıktığı yolculukta da bir rahip onun hakkında konuştu.",
     "bolumler": [
-      "b06-ebu-talib"
+      "b06-ebu-talib",
+      "b08-el-emin"
     ],
     "iddialar": [
       "i-b06-012",
-      "i-b06-013"
+      "i-b06-013",
+      "i-b08-007"
     ],
     "konumKaynagi": {
       "eser": "tdv-dia",
@@ -205,7 +208,8 @@
     "bolumler": [
       "b01-cahiliye-mekkesi",
       "b10-hira",
-      "b06-ebu-talib"
+      "b06-ebu-talib",
+      "b08-el-emin"
     ],
     "iddialar": [],
     "konumKaynagi": {

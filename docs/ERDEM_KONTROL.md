@@ -113,6 +113,24 @@ Atıflar:
 - [ ] "MUHAMMED" bölüm 1 c. 30 s. 407: taramada metin yok; Ficâr ve Hilf kısmı s. 408'e taşıyor olabilir (not defteri s. 405 demişti, yanlış).
 - [ ] Hadislerle İslâm c. 3, PDF s. 776 (metin), s. 783 (dipnot 2472-2474).
 
+## b08 el-Emîn (73 atıf)
+
+Kararlar:
+- [x] Hatice'nin yaşı ana metinde kırk ("rivayet edilir"); 28 ve 37 dipnotta (i-b08-013). MUHAMMED 28'i "daha isabetli" bulur.
+- [x] Hatice'yi isteyen ana metinde "amcaları"; Hamza→Huveylid (İbn Hişâm) ve Ebû Tâlib→Amr b. Esed (HATİCE) dipnotta (i-b08-010).
+- [x] "İki melek gölgeledi" rivayeti alınmadı.
+- [ ] Oğulların adları rivayetteki haliyle sayıldı: Kâsım, Abdullah, Tayyib, Tâhir (i-b08-015); onaylı listeden farklı.
+- [ ] Hicr'deki söz ("Şahit olun, Zeyd benim oğlumdur") çıkarıldı: yalnız ZEYD s. 319'da, atıfsız (i-b08-022).
+- [ ] Zeyd'in âzat sırası İbn Hişâm ile ZEYD'de farklı; anlatım sırayı kesinleştirmez (i-b08-021).
+- [ ] Hatice'yi anma (i-b08-024): tek D, toplu hadis atfı; hangi hadis olduğu belirsiz. Güç "guclu".
+- [ ] Rahibin adı verilmedi (BUSRÂ Nestûrâ; BAHÎRÂ s. 486 karışıklık notu) (i-b08-007).
+
+Atıflar:
+- [ ] İbn Hişâm tarama s. 119-121, 125, 159-161 (OCR düzeltilmemiş).
+- [ ] TDV "HATİCE" c. 16 s. 465-466; "ZEYD b. HÂRİSE" c. 44 s. 319; "ALİ" c. 2 s. 371; "BUSRÂ" c. 6 s. 470; "BAHÎRÂ" c. 4 s. 486; "ARAP" (5) c. 3 s. 324.
+- [ ] "MUHAMMED" (1) c. 30 s. 407-408: taramada metin yok, sayfa tahmini.
+- [ ] Hadislerle İslâm c. 6, PDF s. 319.
+
 ## b09 Hakem (67 atıf)
 
 - [ ] Ayrıntı: iddiaların `gerekce` alanları.
