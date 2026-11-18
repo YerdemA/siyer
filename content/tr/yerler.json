@@ -15,7 +15,8 @@
       "b03-dogum",
       "b04-sut-anne",
       "b05-yetimlik",
-      "b06-ebu-talib"
+      "b06-ebu-talib",
+      "b07-genclik"
     ],
     "iddialar": [],
     "konumKaynagi": {
@@ -92,9 +93,13 @@
       "x": 0.5,
       "y": 0.662
     },
-    "ozet": "",
-    "bolumler": [],
-    "iddialar": [],
+    "ozet": "Mekke'nin güneydoğusunda, Tâif ile Nahle arasında bir vadi. Her yıl zilkade ayında burada Arapların en büyük panayırı kurulurdu.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-001"
+    ],
     "konumKaynagi": {
       "eser": "tdv-dia",
       "konum": "\"UKÂZ\", c. 42, s. 61",

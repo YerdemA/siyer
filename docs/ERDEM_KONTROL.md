@@ -95,6 +95,24 @@ Atıflar:
 - [ ] Buhârî, İcâre, 2 (2262): metin yerelde yok; "karârît" kelimesi ve numara matbu nüshada. Hadislerle İslâm c. 5, PDF s. 40 (metin), s. 44 (dn. 95).
 - [ ] Hadislerle İslâm c. 1, PDF s. 523 (Ebû Tâlib'in saygınlığı).
 
+## b07 Gençlik (73 atıf)
+
+Kararlar:
+- [x] Ficâr'daki yaş (i-b07-011) aralık olarak verilir: 14, 15, 17 ya da 20 (Erdem, 2026-11-18).
+- [x] Hâşimoğulları'nın reisi anlatımda adlandırılmaz; FİCÂR/KUREYŞ Ebû Tâlib, HÂŞİM Zübeyr der (i-b07-009, Erdem, 2026-11-18).
+- [x] İlk Ficâr savaşları kısaca anlatılır (Erdem, 2026-11-18). Üçüncünün sebebi (borç inkârı) yalnız FİCÂR'da olduğu için alınmadı.
+- [ ] Zübeydli tüccar hikâyesi (i-b07-014, -015) ve antlaşmanın sonraki işleyişi (i-b07-021): Hadislerle İslâm bu kısım için doğrudan HİLFÜ'L-FUDÛL'e dayanıyor; fiilen tek D kaynağı. Politika §2 istisnasıyla anlatıma alındı. Klasik dayanak (İbn Sa'd I, 128-129; Belâzürî I, 128-130; İbn Habîb s. 52-59, 275) yerelde yok.
+- [ ] Resûlullah'ın sözü iki iddiaya ayrıldı: lafız yalnız İbn Hişâm s. 86 (i-b07-023); "övgüyle andı, yine katılırdı" anlamı TDV ve Hadislerle İslâm (i-b07-022). Müsned lafzı ("iyi insanların antlaşması", Cüd'ân'ın evi yok) dipnotta. Hadisin sıhhati (Müsned [Arnaût] III, 193-194) okunmadı.
+- [ ] Zaman çizelgesi: Ficâr ≈ 585 (UKÂZ; İbn Hişâm'ın 14-15 yaşıyla uyumlu), Hilfü'l-fudûl ≈ 589 (hicretten 33 yıl önce, hesap Claude'un). MUHAMMED Hilf'i Ficâr'ın "hemen ardına" koyar; iki tarih ve 20 yaş tam örtüşmez (i-b07-024, -025).
+- [ ] Bilerek alınmayanlar (tek D): Ficâr'ın Utbe b. Rebîa aracılığıyla barışla bitmesi ve diyetleri Kureyş'in ödemesi (FİCÂR); Âs'tan tüccarın hakkının alınması (Hadislerle İslâm); Zübeyr'in Ficâr'dan pişman olduğu (HİLFÜ'L-FUDÛL s. 32).
+- [ ] Bizim çevirilerimiz: i-b07-012 ("Amcalarıma ok verirdim", İbn Hişâm s. 119), i-b07-023 (İbn Hişâm s. 86).
+
+Atıflar:
+- [ ] İbn Hişâm s. 85-86 (Hilfü'l-fudûl, söz), s. 117 (14-15 yaş), s. 118 (sebep, ad, takip, amcaların götürmesi; s. 118-119 sayfa sınırına bak), s. 119 (ok verme, İbn İshâk'ın 20 yaşı, Harb, sonuç). OCR düzeltilmemiş.
+- [ ] TDV "FİCÂR" c. 13 s. 52; "HİLFÜ'l-FUDÛL" c. 18 s. 31-32; "KUREYŞ" c. 26 s. 443; "HÂŞİM" c. 16 s. 404; "UKÂZ" c. 42 s. 61-62; "ARAP" bölüm 2 c. 3 s. 287, bölüm 5 c. 3 s. 324; "EBÛ TÂLİB" c. 10 s. 237.
+- [ ] "MUHAMMED" bölüm 1 c. 30 s. 407: taramada metin yok; Ficâr ve Hilf kısmı s. 408'e taşıyor olabilir (not defteri s. 405 demişti, yanlış).
+- [ ] Hadislerle İslâm c. 3, PDF s. 776 (metin), s. 783 (dipnot 2472-2474).
+
 ## b09 Hakem (67 atıf)
 
 - [ ] Ayrıntı: iddiaların `gerekce` alanları.

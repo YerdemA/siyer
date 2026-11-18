@@ -1,0 +1,1902 @@
+{
+  "id": "b07-genclik",
+  "sira": 7,
+  "baslik": "Gençlik",
+  "ozet": "Efendimiz'in delikanlılık yılları: haram aylarda çıkan Ficâr savaşları ve haksızlığa uğrayanları korumak için Abdullah b. Cüd'ân'ın evinde yapılan Hilfü'l-fudûl antlaşması.",
+  "durum": "taslak",
+  "uzmanOkumasi": {
+    "okuyan": "",
+    "tarih": ""
+  },
+  "sahneler": [
+    {
+      "id": "b07-s01",
+      "anlatim": [
+        {
+          "metin": "Efendimiz amcası Ebû Tâlib'in yanında büyüyordu.",
+          "iddialar": [
+            "i-b07-026"
+          ]
+        },
+        {
+          "metin": "Her yıl zilkade ayında, Mekke'nin güneydoğusunda, Tâif ile Nahle arasındaki Ukâz'da büyük bir panayır kurulurdu. Arapların en büyük panayırı buydu; alışveriş yapılır, şairler en güzel şiirlerini burada okurdu.",
+          "iddialar": [
+            "i-b07-001"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Ukâz vadisi uzak plan: taşlık, geniş bir vadide kurulmuş panayır; kumaş gölgelikler, deri çadırlar, yere serili mallar, develer ve kalabalık. Minare, kubbe, hilal yok. Efendimiz çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "ukaz",
+            "dosya": "b07-ukaz.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s01.mp3",
+        "muzik": "acilis-sakin",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "ebu-talib"
+      ],
+      "yer": "ukaz"
+    },
+    {
+      "id": "b07-s02",
+      "anlatim": [
+        {
+          "metin": "Panayırların önemli bir kısmı haram aylarda kurulurdu. Araplar zilkade, zilhicce, muharrem ve receb aylarını haram ay sayardı.",
+          "iddialar": [
+            "i-b07-002"
+          ]
+        },
+        {
+          "metin": "Bu aylarda savaşmak ve kan dökmek yasaktı; kabileler arasındaki savaşlar kesilirdi.",
+          "iddialar": [
+            "i-b07-002"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Ukâz panayırı orta plan: farklı kabilelerden insanlar yan yana alışveriş yapıyor, silahlar kınında ya da yerde; bir şair küçük bir kalabalığa şiir okuyor. Sakin, barış içinde.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "ukaz",
+            "dosya": "b07-ukaz.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55
+          },
+          {
+            "id": "sair",
+            "dosya": "b07-sair.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b07-s02.mp3",
+        "muzik": "sehir-01",
+        "ortam": "kalabalik-uzak"
+      },
+      "sahislar": [],
+      "yer": "ukaz"
+    },
+    {
+      "id": "b07-s03",
+      "anlatim": [
+        {
+          "metin": "Ama bu yasak her zaman korunmadı. Haram aylarda Kinâne kabilesiyle komşu kabileler arasında birkaç savaş çıktı.",
+          "iddialar": [
+            "i-b07-003"
+          ]
+        },
+        {
+          "metin": "Birinin sebebi Ukâz'da bir adamın 'Arapların en şereflisi benim' diye övünmesi, birinin sebebi de orada bir kadına yapılan saldırıydı.",
+          "iddialar": [
+            "i-b07-003"
+          ]
+        },
+        {
+          "metin": "Haram aylarda yapıldıkları için bu savaşlara 'Ficâr savaşları' denir. Ficâr, 'haktan ayrılmak, günaha dalmak' demektir.",
+          "iddialar": [
+            "i-b07-004"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Ukâz panayırı: kalabalığın ortasında yükselen bir tartışma; iki grup adam birbirine öfkeyle bakıyor, birkaç kişi araya girmeye çalışıyor. Kan ve yara yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "ukaz",
+            "dosya": "b07-ukaz.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55
+          },
+          {
+            "id": "tartisma",
+            "dosya": "b07-tartisma.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s03.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "kalabalik-gergin"
+      },
+      "sahislar": [],
+      "yer": "ukaz"
+    },
+    {
+      "id": "b07-s04",
+      "anlatim": [
+        {
+          "metin": "Bu savaşların dördüncüsü en şiddetlisi oldu. Bir yanda müttefik Kureyş ve Kinâne, öbür yanda Kays-Aylân kabileleri vardı.",
+          "iddialar": [
+            "i-b07-005"
+          ]
+        },
+        {
+          "metin": "Hîre hükümdarı Nu'mân b. Münzir Ukâz'a bir kervan göndermişti. Hevâzin'den Urve er-Rahhâl kervanı korumayı üstlendi. Kinâne'den Berrâd b. Kays onu takip etti ve haram ayda öldürdü.",
+          "iddialar": [
+            "i-b07-006"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çöl uzak plan: yüklü bir kervan çölde ilerliyor; uzakta, kayaların arkasından kervanı izleyen tek bir adam. Öldürme anı ve kan gösterilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "kervan",
+            "dosya": "b06-kervan-yol.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.42,
+                "y": 0.6,
+                "olcek": 0.55
+              }
+            }
+          },
+          {
+            "id": "berrad",
+            "dosya": "b07-berrad.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.7
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b07-s04.mp3",
+        "muzik": "gerilim-uzak",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "berrad-b-kays",
+        "urve-er-rahhal"
+      ],
+      "yer": ""
+    },
+    {
+      "id": "b07-s05",
+      "anlatim": [
+        {
+          "metin": "Haber Kureyş'e Ukâz'dayken ulaştı. Kureyşliler Hevâzin'e sezdirmeden oradan ayrıldı.",
+          "iddialar": [
+            "i-b07-007"
+          ]
+        },
+        {
+          "metin": "Hevâzin haberi alınca peşlerine düştü. İki taraf, Kureyş Harem'e girene kadar çarpıştı; sonraki günlerde de birçok kez karşılaştılar.",
+          "iddialar": [
+            "i-b07-007"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşamüstü, çöl uzak plan: Mekke'ye doğru hızla çekilen bir grup Kureyşli; arkalarında toz bulutu içinde yaklaşan Hevâzinliler. Çarpışma ayrıntısız, uzaktan; kan yok.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.5
+          },
+          {
+            "id": "takip",
+            "dosya": "b07-takip.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b07-s05.mp3",
+        "muzik": "gerilim",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [],
+      "yer": ""
+    },
+    {
+      "id": "b07-s06",
+      "anlatim": [
+        {
+          "metin": "Kureyş ve Kinâne'nin başkomutanı Harb b. Ümeyye'ydi; her kolun başında ayrıca bir komutan vardı.",
+          "iddialar": [
+            "i-b07-008"
+          ]
+        },
+        {
+          "metin": "Ebû Tâlib, haram aylarda bulundukları için Hâşimoğulları'nın savaşa katılmasına razı olmadı. Ama Abdullah b. Cüd'ân ile Harb b. Ümeyye, 'Hâşimoğulları katılmazsa biz de katılmayız' diye ısrar etti.",
+          "iddialar": [
+            "i-b07-009"
+          ]
+        },
+        {
+          "metin": "Sonunda Hâşimoğulları, Efendimiz'in amcası Zübeyr b. Abdülmuttalib'in komutasında savaşa katıldı.",
+          "iddialar": [
+            "i-b07-009"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke'de bir evin önü, orta plan: Ebû Tâlib ciddi ve düşünceli; karşısında ısrarla konuşan Harb b. Ümeyye ile yaşlı Abdullah b. Cüd'ân; biraz geride kardeşi Zübeyr. Efendimiz çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "ebu-talib-ikna",
+            "dosya": "b07-ebu-talib-ikna.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.62,
+                "olcek": 0.2
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Ebû Tâlib, Harb b. Ümeyye ve Abdullah b. Cüd'ân konuşuyor; Zübeyr geride.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.62,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "ebu-talib-ikna"
+            ],
+            "katmanlar": [
+              {
+                "id": "ebu-talib-ikna-yakin",
+                "dosya": "b07-ebu-talib-ikna.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 0.95
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ses": {
+        "anlatim": "b07-s06.mp3",
+        "muzik": "ciddi-dusuk",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "ebu-talib",
+        "harb-b-umeyye",
+        "abdullah-b-cudan",
+        "zubeyr-b-abdulmuttalib"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b07-s07",
+      "anlatim": [
+        {
+          "metin": "Amcaları Efendimiz'i de yanlarında götürdü. Efendimiz o sırada genç bir delikanlıydı; yaşı rivayetlerde on dört, on beş, on yedi ya da yirmi olarak geçer.",
+          "iddialar": [
+            "i-b07-010",
+            "i-b07-011"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, çöl kenarında toplanan Hâşimoğulları uzak plan: Zübeyr önde, yanında amcalar; aralarında genç yaşta, nurlu bir figür (Efendimiz): baştan ayağa sıcak altın-beyaz nur, başında yeşil sarık; yüz, el ve beden ayrıntısı yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "hasimogullari",
+            "dosya": "b07-hasimogullari.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.6,
+                "olcek": 0.55
+              }
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.58,
+              "y": 0.7,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s07.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "col-ruzgari"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "zubeyr-b-abdulmuttalib"
+      ],
+      "yer": ""
+    },
+    {
+      "id": "b07-s08",
+      "anlatim": [
+        {
+          "metin": "Efendimiz o günleri şöyle anlatmıştır: 'Amcalarıma ok verirdim.'",
+          "iddialar": [
+            "i-b07-012"
+          ]
+        },
+        {
+          "metin": "Düşmanın attığı okları toplar, amcalarına verirdi. Kaynaklarda tercih edilen görüşe göre kendisi savaşmadı.",
+          "iddialar": [
+            "i-b07-012"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, onun gözünden: önde, sırtı dönük birkaç amca kalkanlarıyla duruyor; ileride toz içinde uzak, ayrıntısız bir çarpışma; yerde, kumun üstünde dağınık oklar. El, kol ya da beden görünmez; kan yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.45
+          },
+          {
+            "id": "ok-toplama",
+            "dosya": "b07-ok-toplama.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.75
+          }
+        ],
+        "kamera": "bakis-acisi-yuruyus"
+      },
+      "ses": {
+        "anlatim": "b07-s08.mp3",
+        "muzik": "gerilim-dusuk",
+        "ortam": "ordu-yuruyus"
+      },
+      "sahislar": [
+        "hz-muhammed"
+      ],
+      "yer": ""
+    },
+    {
+      "id": "b07-s09",
+      "anlatim": [
+        {
+          "metin": "Savaşın başında Kays-Aylân üstündü; sonra Kureyş ve Kinâne kazandı.",
+          "iddialar": [
+            "i-b07-013"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, çöl uzak plan: savaş alanından dağılan iki topluluk; toz yatışıyor, ufuk turuncu. Kan, yerde yatan insan gösterilmez.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "b02-col.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.27,
+                "olcek": 1.56
+              }
+            }
+          },
+          {
+            "id": "toz",
+            "dosya": "",
+            "yerTutucu": "toz",
+            "derinlik": 0.5
+          },
+          {
+            "id": "dagilan",
+            "dosya": "b07-dagilan.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.6,
+                "olcek": 0.6
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s09.mp3",
+        "muzik": "huzur-dusuk",
+        "ortam": "aksam-ruzgar"
+      },
+      "sahislar": [],
+      "yer": ""
+    },
+    {
+      "id": "b07-s10",
+      "anlatim": [
+        {
+          "metin": "O yıllarda Mekke'ye hac ve ticaret için dışarıdan gelen güçsüz kimselere zaman zaman haksızlık yapılıyordu.",
+          "iddialar": [
+            "i-b07-014"
+          ]
+        },
+        {
+          "metin": "Yemen'in Zübeyd kabilesinden bir tüccar Mekke'de mallarını Kureyş'in ileri gelenlerinden Âs b. Vâil'e sattı. Ama Âs parasını ödemedi.",
+          "iddialar": [
+            "i-b07-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Mekke çarşısı orta plan: yabancı kıyafetli Yemenli bir tüccar mallarını göstererek parasını istiyor; varlıklı giyimli Âs b. Vâil ödemeyi reddediyor.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-gunduz.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "tuccar-as",
+            "dosya": "b07-tuccar-as.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.62,
+                "y": 0.62,
+                "olcek": 0.18
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Yemenli tüccar parasını istiyor, Âs b. Vâil ödemeyi reddediyor.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.62,
+              "y": 0.62,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "tuccar-as"
+            ],
+            "katmanlar": [
+              {
+                "id": "tuccar-as-yakin",
+                "dosya": "b07-tuccar-as.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 0.95
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ses": {
+        "anlatim": "b07-s10.mp3",
+        "muzik": "gerilim-hafif",
+        "ortam": "sehir-gunduz"
+      },
+      "sahislar": [
+        "as-b-vail"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b07-s11",
+      "anlatim": [
+        {
+          "metin": "Tüccar Mekke'nin nüfuzlu kimselerine gidip yardım istedi, ama başvurduğu kimseler ona yardım etmedi.",
+          "iddialar": [
+            "i-b07-015"
+          ]
+        },
+        {
+          "metin": "Ertesi gün Ebûkubeys tepesine çıktı ve başına geleni yüksek sesle bir şiirle duyurdu.",
+          "iddialar": [
+            "i-b07-015"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Sabah, Mekke vadisi uzak plan: Mekke'yi gören Ebûkubeys tepesinde, kollarını açmış, aşağıya seslenen tek bir adam (Yemenli tüccar); aşağıda evlerin önünde başlarını kaldırıp bakan küçük insanlar.",
+        "saat": "safak",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-safak.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          },
+          {
+            "id": "ebukubeys",
+            "dosya": "b07-ebukubeys.webp",
+            "yerTutucu": "siluet-tek",
+            "derinlik": 0.5,
+            "ayar": {
+              "gorsel": {
+                "x": 0.78,
+                "y": 0.42,
+                "olcek": 0.12
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s11.mp3",
+        "muzik": "yalnizlik",
+        "ortam": "safak-ruzgar"
+      },
+      "sahislar": [],
+      "yer": "mekke"
+    },
+    {
+      "id": "b07-s12",
+      "anlatim": [
+        {
+          "metin": "Bunun üzerine Efendimiz'in amcası Zübeyr b. Abdülmuttalib, Teymoğulları'nın reisi, Mekke'nin en zengin, yaşlı ve sözü geçen kişilerinden Abdullah b. Cüd'ân'a gidip onu bir toplantı yapmaya ikna etti.",
+          "iddialar": [
+            "i-b07-016"
+          ]
+        },
+        {
+          "metin": "Abdullah b. Cüd'ân'ın evinde Kureyş'ten Hâşim, Muttalib, Esed, Zühre ve Teymoğulları toplandı.",
+          "iddialar": [
+            "i-b07-016",
+            "i-b07-017"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, Abdullah b. Cüd'ân'ın evinin avlusu (sade, dönemin Mekke evleri gibi): yaşlı, varlıklı Abdullah b. Cüd'ân oturuyor; Zübeyr ona doğru eğilip konuşuyor; çevrede Kureyş'in ileri gelenleri yere oturmuş. Efendimiz bu planda çizilmez.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "cudan-avlu",
+            "dosya": "b07-cudan-avlu.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          }
+        ],
+        "kamera": "yatay-kayma"
+      },
+      "ses": {
+        "anlatim": "b07-s12.mp3",
+        "muzik": "dusunceli-01",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "zubeyr-b-abdulmuttalib",
+        "abdullah-b-cudan"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b07-s13",
+      "anlatim": [
+        {
+          "metin": "Orada şöyle yemin ettiler: Mekke'de, ister Mekkeli ister dışarıdan gelmiş olsun, kim zulme uğrarsa, hakkı geri verilinceye kadar hep birlikte onun yanında olacaklardı.",
+          "iddialar": [
+            "i-b07-018"
+          ]
+        },
+        {
+          "metin": "Efendimiz de yirmi yaşlarındayken bu antlaşmaya katıldı.",
+          "iddialar": [
+            "i-b07-019"
+          ]
+        },
+        {
+          "metin": "Kureyş buna Hilfü'l-fudûl dedi; bu ad 'erdemliler antlaşması' diye açıklanır. Bundan sonra haksızlığa uğrayanlar bu antlaşmanın üyelerine başvurur, hakları onların yardımıyla alınırdı.",
+          "iddialar": [
+            "i-b07-020",
+            "i-b07-021"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Gündüz, aynı avlu orta plan: Abdullah b. Cüd'ân'ın çevresinde ciddi yüzlerle toplanmış Kureyşliler, yemin ediyor (yemin biçimi kaynakta yok; el birleştirme, kılıç ya da başka işaret çizilmez); aralarında, boyu ve asaleti belli, baştan ayağa sıcak altın-beyaz nurla kaplı, başında yeşil sarık olan nurlu figür (Efendimiz); yüz, el ve beden ayrıntısı yok.",
+        "saat": "gunduz",
+        "katmanlar": [
+          {
+            "id": "cudan-avlu",
+            "dosya": "b07-cudan-avlu.webp",
+            "yerTutucu": "kumas-tas",
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.0
+              }
+            }
+          },
+          {
+            "id": "yemin",
+            "dosya": "b07-yemin.webp",
+            "yerTutucu": "kalabalik",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.55,
+                "olcek": 0.8
+              }
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.66,
+              "y": 0.86,
+              "boy": 0.5,
+              "guc": 2.5,
+              "kim": "efendimiz"
+            }
+          }
+        ],
+        "kamera": "yavas-yaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s13.mp3",
+        "muzik": "umut-sicak",
+        "ortam": "avlu-mirildanma"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "zubeyr-b-abdulmuttalib",
+        "abdullah-b-cudan"
+      ],
+      "yer": "mekke"
+    },
+    {
+      "id": "b07-s14",
+      "anlatim": [
+        {
+          "metin": "Resûlullah peygamberliğinden sonra bu antlaşmayı övgüyle andı; böyle bir antlaşmaya yeniden çağrılsa tereddütsüz katılacağını söyledi ve şöyle buyurdu:",
+          "iddialar": [
+            "i-b07-022"
+          ]
+        },
+        {
+          "metin": "'Abdullah b. Cüd'ân'ın evinde bir antlaşmada bulundum; karşılığında bana kızıl develer verilmesini istemem. İslâm döneminde ona çağrılsam, bu çağrıya uyarım.'",
+          "iddialar": [
+            "i-b07-023"
+          ]
+        }
+      ],
+      "gorsel": {
+        "tarif": "Akşam, Mekke vadisi uzak plan: evler ve alçak Kâbe akşam ışığında; Abdullah b. Cüd'ân'ın evinin kapısı açık, içeriden sıcak bir ışık. İnsanlar küçük ve ayrıntısız.",
+        "saat": "aksam",
+        "katmanlar": [
+          {
+            "id": "gok",
+            "dosya": "mekke-gok-aksam.webp",
+            "yerTutucu": "gok",
+            "derinlik": 0.0
+          },
+          {
+            "id": "daglar",
+            "dosya": "mekke-daglar.webp",
+            "yerTutucu": "daglar",
+            "derinlik": 0.15
+          },
+          {
+            "id": "zemin",
+            "dosya": "mekke-zemin.webp",
+            "yerTutucu": "zemin",
+            "derinlik": 0.35
+          },
+          {
+            "id": "evler",
+            "dosya": "mekke-evler.webp",
+            "yerTutucu": "evler",
+            "derinlik": 0.4
+          },
+          {
+            "id": "kabe-alcak",
+            "dosya": "kabe-alcak.webp",
+            "yerTutucu": "kabe-alcak",
+            "derinlik": 0.55,
+            "ayar": {
+              "gorsel": {
+                "x": 0.501,
+                "y": 0.665,
+                "olcek": 0.269
+              }
+            }
+          }
+        ],
+        "kamera": "yavas-uzaklasma"
+      },
+      "ses": {
+        "anlatim": "b07-s14.mp3",
+        "muzik": "kapanis",
+        "ortam": "aksam-sehir"
+      },
+      "sahislar": [
+        "hz-muhammed",
+        "abdullah-b-cudan"
+      ],
+      "yer": "mekke"
+    }
+  ],
+  "iddialar": [
+    {
+      "id": "i-b07-001",
+      "ifade": "Mekke'nin güneydoğusunda, Tâif ile Nahle arasındaki Ukâz'da her yıl zilkade ayında Arapların en büyük panayırı kurulurdu; burada alışveriş yapılır, şairler en güzel şiirlerini okurdu.",
+      "guc": "guclu",
+      "gerekce": "UKÂZ (s. 61-62): panayırların en tanınmışı Mekke'nin güneydoğusunda, Tâif ile Nahle arasındaki Ukâz'da kurulurdu; hac mevsimi zilkadenin başından yirmisine kadar sürer, Ukâz ile başlardı; s. 62'de Arap panayırlarının en büyüğü olduğu ve şairlerin en güzel şiirlerini burada okudukları geçer. ARAP (bölüm 5, s. 324): Ukâz (Tâif-Nahle arasında) 15-30 zilkade; panayırların en önemlisi; şairler en güzel şiirlerini burada okurdu. İki D kaynağı ortak. Gün aralığı kaynaklarda farklı olduğundan anlatıma yalnız ay alındı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Elnure Azizova, \"UKÂZ\", c. 42, s. 61-62 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 324 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-002",
+      "ifade": "Araplar zilkade, zilhicce, muharrem ve receb aylarını haram ay sayardı; panayırların önemli bir kısmı bu aylarda kurulurdu. Bu aylarda savaşmak ve kan dökmek yasaktı, kabileler arasındaki savaşlar kesilirdi.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52): haram aylar (zilkade, zilhicce, muharrem, receb) her türlü düşmanlıktan el çekilmesi gereken, kan dökmenin yasak olduğu aylardı. ARAP (bölüm 2, s. 287): panayırlar her yıl kabileler arası savaşların kesildiği bir tür ateşkes dönemi sayılan günlerde kurulurdu. ARAP (bölüm 5, s. 324) panayırların önemli bir bölümünün haram aylarda kurulduğunu yazar.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Nihad M. Çetin, \"ARAP\" (bölüm 2), c. 3, s. 287 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Abdülkerim Özaydın, \"ARAP\" (bölüm 5), c. 3, s. 324 (İstanbul 1991)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-003",
+      "ifade": "Haram aylarda Kinâne kabilesiyle komşu kabileler arasında birkaç savaş çıktı; birinin sebebi Ukâz panayırında bir adamın 'Arapların en şereflisi benim' diye övünmesi, birinin sebebi de Ukâz'da bir kadına yapılan saldırıydı.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52): birincisi Ukâz'da Bedr b. Ma'şer'in övünmesiyle Kinâne ile Hevâzin arasında başlamış; ikincisi Kinâneli gençlerin Ukâz'da Benî Âmir b. Sa'saa'dan bir kadına saldırmasıyla çıkmış; üçüncüsü (Kinâne ile Hevâzin) bir borcun inkârı yüzünden. UKÂZ (s. 61) ilk ikisini aynı sebeplerle anar. Üçüncünün sebebi yalnız FİCÂR'da geçtiği için anlatıma alınmadı; ikinci savaşta tarafların adı verilmediği için 'komşu kabileler' denir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Elnure Azizova, \"UKÂZ\", c. 42, s. 61 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-004",
+      "ifade": "Haram aylarda yapılan bu savaşlara, yasak aylar çiğnendiği için 'Ficâr savaşları' denir; ficâr 'haktan ayrılmak, günaha dalmak' demektir.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52): ficâr sözlükte 'azmak, haktan ayrılmak, günaha dalmak, yemininde ve sözünde yalancı çıkmak'; haram aylarda yapıldıkları için bu ad verilmiştir. İbn Hişâm (s. 118-119): Urve haram ayda öldürüldüğü için bu savaşa ficâr denmiş; İbn İshâk'a göre iki kabile birbirine karşı haramları helal saydıkları için bu adı almıştır. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118-119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-005",
+      "ifade": "Bu savaşların dördüncüsü ve en şiddetlisi, müttefik Kureyş ve Kinâne ile Kays-Aylân kabileleri arasında oldu.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52): dördüncüsü en şiddetlisi, müttefik Kureyş-Kinâne ile Kays-Aylân arasında. KUREYŞ (s. 443) aynı tarafları verir. İbn Hişâm (s. 118): Kureyş ve yanlarındaki Kinâne ile Kays-Aylân arasında. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-006",
+      "ifade": "Savaşın sebebi, Kinâneli Berrâd b. Kays'ın, Hîre hükümdarı Nu'mân b. Münzir'in kervanını korumaya giden Hevâzinli Urve er-Rahhâl'i haram ayda öldürmesiydi.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52): Benî Kinâne'den Berrâd b. Kays, Nu'mân b. Münzir'in kervanını koruma görevini alan Hevâzin eşrafından Urve b. Utbe'yi takip edip öldürdü. İbn Hişâm (s. 118): Urve er-Rahhâl Nu'mân'ın kervanını korumaya çıktı, Benî Damre b. Bekr'den (Kinâne) Berrâd onu haram ayda öldürdü. UKÂZ (s. 61) olayı 585'e tarihler, Berrâd'ı 'Kureyşli' diye anar; İbn Hişâm ve FİCÂR Kinâneli dediği için ana metne Kinâne alındı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Elnure Azizova, \"UKÂZ\", c. 42, s. 61 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "UKÂZ maddesi Berrâd'ı Kureyşli olarak anar.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Elnure Azizova, \"UKÂZ\", c. 42, s. 61 (İstanbul 2012)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-007",
+      "ifade": "Haber Kureyş'e Ukâz'dayken ulaştı; Kureyş Hevâzin'e sezdirmeden oradan ayrıldı, Hevâzin peşlerine düştü ve Harem'e girene kadar çarpıştılar. Sonraki günlerde de karşılaştılar.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 118): Kureyş'e Ukâz'da haram ayda Urve'nin öldürüldüğü haberi gelince Hevâzin farkına varmadan ayrıldılar; Hevâzin haberi alıp onlara Harem'e girmeden yetişti, gece olup Harem'e girene dek çarpıştılar, sonra başka günlerde karşılaştılar. FİCÂR (s. 52): Kays-Aylân reisi Ebû Berâ, Berrâd'ı takibe koyuldu, Mekke yakınlarında yetişti; bu ilk çarpışmadan sonra iki taraf savaşa hazırlandı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-008",
+      "ifade": "Kureyş ve Kinâne'nin başkomutanı Harb b. Ümeyye'ydi; her kolun başında ayrıca bir komutan vardı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 118): Kureyş ve Kinâne'nin her kolunun başında bir reis vardı; (s. 119): Kureyş ve Kinâne'nin komutanı Harb b. Ümeyye. FİCÂR (s. 52) ve KUREYŞ (s. 443) aynı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118-119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-009",
+      "ifade": "Ebû Tâlib haram aylarda bulundukları için Hâşimoğulları'nın bu savaşa katılmasına razı olmadı; Abdullah b. Cüd'ân ve Harb b. Ümeyye 'Hâşimoğulları katılmazsa biz de katılmayız' diye ısrar edince Hâşimoğulları, Efendimiz'in amcası Zübeyr b. Abdülmuttalib'in komutasında savaşa katıldı.",
+      "guc": "guclu",
+      "gerekce": "FİCÂR (s. 52) ve KUREYŞ (s. 443) aynı bilgiyi verir; ikisi de Ebû Tâlib'i Hâşimoğulları'nın reisi olarak anar. HÂŞİM (s. 404) ise Abdülmuttalib'den sonra liderliğin Zübeyr'e geçtiğini, kabilenin Ficâr'a onun idaresinde katıldığını yazar. Reislik konusunda kaynaklar ayrıldığı için anlatımda kimsenin reis olduğu söylenmez (Erdem kararı, 2026-11-18). İki D kaynağı; klasik dayanakları maddelerin bibliyografyasında (İbn Hişâm, İbn Sa'd, İbnü'l-Esîr) gösterilir.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "HÂŞİM maddesine göre Abdülmuttalib'den sonra Hâşimoğulları'nın lideri Zübeyr'di ve kabile Ficâr'a onun idaresinde katıldı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "İbrahim Sarıçam, Mustafa Öz, \"HÂŞİM (Benî Hâşim)\", c. 16, s. 404 (İstanbul 1997)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-010",
+      "ifade": "Efendimiz'i amcaları bu savaşa yanlarında götürdü.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 118): Resûlullah bazı günlerinde bulundu, amcaları onu yanlarında çıkardı. FİCÂR (s. 52): amcalarıyla birlikte katıldığı nakledilir. MUHAMMED (s. 407): amcalarıyla birlikte katıldığı, fakat fiilen savaşmadığı tercih edilen görüştür. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 118",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-011",
+      "ifade": "Efendimiz'in bu savaştaki yaşı rivayetlerde on dört, on beş, on yedi ya da yirmi olarak geçer.",
+      "guc": "ihtilafli",
+      "gerekce": "İbn Hişâm (s. 117) kendi rivayetinde on dört ya da on beş der; aynı eserde (s. 119) İbn İshâk'a göre savaş çıktığında Resûlullah yirmi yaşındaydı. FİCÂR (s. 52): on dört, on beş, on yedi veya yirmi. MUHAMMED (s. 407) aynı dört yaşı verir, tercih belirtmez. Kaynaklar birini öne çıkarmadığı için anlatımda aralık verilir (Erdem kararı, 2026-11-18). İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 117, 119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-012",
+      "ifade": "Efendimiz sonradan 'Amcalarıma ok verirdim' demiştir: düşmanın attığı okları toplayıp amcalarına verirdi. Fiilen savaşmadığı, kaynaklarda tercih edilen görüştür.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): Resûlullah 'Kuntü unebbilü alâ a'mâmî' dedi; İbn Hişâm bunu 'düşman ok atınca oklarını onlara geri verirdim' diye açıklar. FİCÂR (s. 52): birinci rivayette savaşmayıp amcalarının eşyalarını koruduğu, atılan okları toplayıp onlara verdiği (İbn Hişâm); Süheylî bu görüşü destekler. MUHAMMED (s. 407): fiilen savaşmadığı tercih edilen görüştür. İkinci rivayet dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Sa'd'ın naklettiği bir rivayete göre Efendimiz bu savaşta ok atmış ve bundan pişman olmadığını söylemiştir.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-013",
+      "ifade": "Savaşın başında Kays-Aylân üstündü; sonra Kureyş ve Kinâne kazandı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 119): günün başında zafer Kays'ın, gün ortasında Kinâne'nin oldu. FİCÂR (s. 52): ilk başlarda Kays-Aylân üstünlük sağladıysa da akşama doğru Kureyş ve Kinâne'nin zaferiyle sonuçlandı. KUREYŞ (s. 443) sonucu aynı verir. Saat farkı yüzünden yalnız 'başında' ve 'sonra' denir. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 119",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Hüseyin Algül, \"FİCÂR\", c. 13, s. 52 (İstanbul 1996)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-014",
+      "ifade": "O yıllarda Mekke'ye hac ve ticaret için dışarıdan gelen güçsüz kimselere zaman zaman haksızlık yapılıyordu.",
+      "guc": "guclu",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 31): dışarıdan hac ve ticaret için şehre gelen zayıf ve güçsüz kimselere haksızlık ve zulüm yapılıyordu. Hadislerle İslâm (c. 3): Mekke dışından gelenler hepten korumasızdı. Not: Hadislerle İslâm bu paragraf için kaynak olarak doğrudan HİLFÜ'L-FUDÛL'ü (DİA XVIII, 31; dipnot 2472) gösterir; iki kaynak birbirinden bağımsız değildir. İddia fiilen tek D kaynağına dayanır ve kaynak politikasının istisna maddesiyle (yaygın bilinen, hiçbir kaynakta zayıf bulunmamış rivayet) anlatıma alınmıştır; HİLFÜ'L-FUDÛL'ün klasik dayanakları bibliyografyasında İbn Sa'd I, 128-129, Belâzürî I, 128-130 ve İbn Habîb, el-Münemmak s. 52-59, 275'tir. Erdem'in kontrolüne bırakıldı (docs/ERDEM_KONTROL.md).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-015",
+      "ifade": "Yemen'in Zübeyd kabilesinden bir tüccar Mekke'de mallarını Âs b. Vâil'e sattı, ama parasını alamadı. Başvurduğu nüfuzlu kimseler ona yardım etmeyince Ebûkubeys tepesine çıkıp başına geleni yüksek sesle bir şiirle duyurdu.",
+      "guc": "guclu",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 31-32): zilkade ayında Zübeyd kabilesinden bir kişi umre için Yemen'den geldi; alıcı (rivayetlerin çoğunda Âs b. Vâil es-Sehmî) parasını ödemedi; Hilfü'l-ahlâf ileri gelenleri yardım etmedi; ertesi gün Ebûkubeys tepesine çıkıp mağduriyetini dile getiren bir şiir okudu. Hadislerle İslâm (c. 3): Yemenli tüccar mallarını Âs b. Vâil'e sattı, Âs parayı ödemedi; tüccar yardım göremeyince Ebû Kubeys'e çıkıp şiirle haykırdı. İbn Hişâm (s. 85-86) antlaşmayı anlatır ama bu olayı anmaz. Not: Hadislerle İslâm bu paragraf için kaynak olarak doğrudan HİLFÜ'L-FUDÛL'ü (DİA XVIII, 31; dipnot 2472) gösterir; iki kaynak birbirinden bağımsız değildir. İddia fiilen tek D kaynağına dayanır ve kaynak politikasının istisna maddesiyle (yaygın bilinen, hiçbir kaynakta zayıf bulunmamış rivayet) anlatıma alınmıştır; HİLFÜ'L-FUDÛL'ün klasik dayanakları bibliyografyasında İbn Sa'd I, 128-129, Belâzürî I, 128-130 ve İbn Habîb, el-Münemmak s. 52-59, 275'tir. Erdem'in kontrolüne bırakıldı (docs/ERDEM_KONTROL.md).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31-32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Habîb'in el-Münemmak'ına göre alıcı Huzeyfe b. Kays es-Sehmî'ydi.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-016",
+      "ifade": "Efendimiz'in amcası Zübeyr b. Abdülmuttalib, Teymoğulları'nın reisi, Mekke'nin en zengin, yaşlı ve sözü geçen kişilerinden Abdullah b. Cüd'ân'a gidip onu bu iş için bir toplantı yapmaya ikna etti; toplantı Abdullah b. Cüd'ân'ın evinde yapıldı.",
+      "guc": "guclu",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 32): Zübeyr b. Abdülmuttalib şehrin en zengin, yaşlı ve nüfuzlu kabile reisi Abdullah b. Cüd'ân et-Teymî'ye başvurup toplantı yapmaya ikna etti. HÂŞİM (s. 404): Zübeyr, Abdullah b. Cüd'ân ile birlikte Hilfü'l-fudûl'ün kuruluşunda en önemli rolü oynadı. İbn Hişâm (s. 85): kabileler Abdullah b. Cüd'ân'ın evinde toplandı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "İbrahim Sarıçam, Mustafa Öz, \"HÂŞİM (Benî Hâşim)\", c. 16, s. 404 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 85",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-017",
+      "ifade": "Toplantıya Kureyş'ten Hâşim, Muttalib, Esed, Zühre ve Teymoğulları katıldı.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 85): Benî Hâşim, Benî Muttalib, Esed b. Abdüluzzâ, Zühre b. Kilâb ve Teym b. Mürre. HİLFÜ'L-FUDÛL (s. 32) aynı beş kolu sayar. KUREYŞ (s. 443) bunlara Hâris b. Fihr'i de ekler; bu fark dipnotta. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 85",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "KUREYŞ maddesine göre bu antlaşmaya Hâris b. Fihr kolu da katıldı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Casim Avcı, \"KUREYŞ (Benî Kureyş)\", c. 26, s. 443 (Ankara 2002)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-018",
+      "ifade": "Mekke'de yerli ya da dışarıdan gelen kim zulme uğrarsa, hakkı geri verilinceye kadar hep birlikte onun yanında olacaklarına yemin ettiler.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 85-86): Mekke'de, halkından ya da oraya giren diğer insanlardan zulme uğramış birini bulurlarsa onun yanında duracak, zulmü geri verilinceye kadar zalime karşı olacaklarına ahitleştiler. HİLFÜ'L-FUDÛL (s. 32): 'o kimse ister iyi ister kötü ister bizden ister yabancı olsun, kendisine hakkı verilinceye kadar tek bir el gibi hareket edeceğiz' (Süheylî, II, 73). Hadislerle İslâm (c. 3) aynı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 85-86",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-019",
+      "ifade": "Efendimiz bu antlaşmaya yirmi yaşlarındayken katıldı.",
+      "guc": "ihtilafli",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 32): o sırada yirmi (veya otuz beş; İbn Habîb, s. 53) yaşında bulunan Hz. Muhammed de katıldı. Hadislerle İslâm (c. 3): o zamanlar henüz yirmi yaşlarında. MUHAMMED (s. 407): Ficâr'ın hemen ardından Hilfü'l-fudûl toplantısına katıldı. Ana metne yirmi alındı; otuz beş dipnotta. Antlaşmanın tarihi HİLFÜ'L-FUDÛL'e göre hicretten otuz üç (bazı rivayetlerde yirmi sekiz veya on sekiz) yıl öncedir. MUHAMMED toplantıyı Ficâr'ın hemen ardına koyduğu için Ficâr'daki 14-15 yaş rivayeti ile buradaki yirmi yaş tam örtüşmez; kaynaklar bunu açıklamaz.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "İbn Habîb'e göre Efendimiz bu antlaşmada otuz beş yaşındaydı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-020",
+      "ifade": "Kureyş bu antlaşmaya Hilfü'l-fudûl dedi; bu ad 'erdemliler antlaşması' anlamında açıklanır.",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 86): Kureyş bu antlaşmaya Hilfü'l-fudûl adını verdi. Hadislerle İslâm (c. 3): 'Erdemliler Antlaşması' anlamına gelen 'Hilfü'l-fudûl'. HİLFÜ'L-FUDÛL (s. 31) ad için başka görüşler de verir (dipnot). Aynı maddede 'Fazl adlı üç kişi' açıklaması Cürhüm dönemindeki ilk antlaşma içindir, bu antlaşmayla ilgili değildir. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 86",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Başka görüşlere göre bu ad, antlaşmanın diğer Kureyş antlaşmalarından üstün sayılmasından, Kureyşlilerin onu 'fazilet yemini' diye nitelemesinden ya da haksız alınan fazlanın sahibine iade edilmesinden gelir.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-021",
+      "ifade": "Bundan sonra Mekke'de haksızlığa uğrayanlar bu antlaşmanın üyelerine başvurur, hakları onların yardımıyla alınırdı.",
+      "guc": "guclu",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 32): Hilfü'l-fudûl'ün nasıl çalıştığını gösteren olaylar (ör. Sümâleli tüccarın alacağının Übey b. Halef'ten alınması, İbn Habîb s. 54). Hadislerle İslâm (c. 3): artık kim haksızlığa uğrasa bu âdil insanlara koşuyor ve hakkını arıyordu. Not: Hadislerle İslâm bu paragraf için kaynak olarak doğrudan HİLFÜ'L-FUDÛL'ü (DİA XVIII, 31; dipnot 2472) gösterir; iki kaynak birbirinden bağımsız değildir. İddia fiilen tek D kaynağına dayanır ve kaynak politikasının istisna maddesiyle (yaygın bilinen, hiçbir kaynakta zayıf bulunmamış rivayet) anlatıma alınmıştır; HİLFÜ'L-FUDÛL'ün klasik dayanakları bibliyografyasında İbn Sa'd I, 128-129, Belâzürî I, 128-130 ve İbn Habîb, el-Münemmak s. 52-59, 275'tir. Erdem'in kontrolüne bırakıldı (docs/ERDEM_KONTROL.md).",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-022",
+      "ifade": "Resûlullah peygamberliğinden sonra bu antlaşmayı övgüyle andı ve böyle bir antlaşmaya yeniden çağrılsa tereddütsüz katılacağını söyledi.",
+      "guc": "guclu",
+      "gerekce": "MUHAMMED (s. 407): nübüvvetten sonra bu ittifaktan övgüyle bahsetmiş, böyle bir fazilet antlaşmasına tekrar çağrıldığı takdirde tereddüt göstermeden katılabileceğini söylemiştir (Müsned I, 190; İbn Sa'd I, 128-129; sıhhati için Müsned [Arnaût] III, 193-194). HİLFÜ'L-FUDÛL (s. 32): bütün kaynaklarda övgüyle bahsettiği, kızıl tüylü bir deve sürüsüyle de olsa değişmeyeceğini, tekrar çağrılırsa icabet edeceğini söylediği kaydedilir (Müsned I, 190, 317). Hadislerle İslâm (c. 3) aynı anlamı Müsned I, 191 ve Beyhakî'ye atıfla verir. Hadisin sıhhat değerlendirmesi (Arnaût) yerelde okunmadı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 32 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "hadislerle-islam",
+          "konum": "c. 3, PDF s. 776 (metin); PDF s. 783 (dipnot 2473: Ahmed b. Hanbel, Müsned, I, 191; dipnot 2474: Beyhakî, es-Sünenü'l-kübrâ, VI, 603)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-023",
+      "ifade": "Resûlullah şöyle buyurdu: 'Abdullah b. Cüd'ân'ın evinde bir antlaşmada bulundum; karşılığında bana kızıl develer verilmesini istemem. İslâm döneminde ona çağrılsam, bu çağrıya uyarım.'",
+      "guc": "guclu",
+      "gerekce": "İbn Hişâm (s. 86, İbn İshâk'tan, Talha b. Abdullah b. Avf yoluyla): 'lekad şehidtü fî dâri Abdillâh b. Cüd'ân hılfen mâ uhibbu enne lî bihî humra'n-ne'am, ve lev ud'â bihî fi'l-İslâm le-ecebtü.' Çeviri bu metinden yapıldı. C katmanında tek kaynak; söz anlam olarak TDV ve Hadislerle İslâm'da da geçer (i-b07-022). Müsned'deki lafız farklıdır (dipnot). Senedin değerlendirmesi (Müsned [Arnaût] III, 193-194) yerelde okunmadı. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 86",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Müsned'deki rivayette söz şöyledir: 'Henüz delikanlı iken amcalarımla beraber iyi insanların yapmış olduğu antlaşmada hazır bulunmuştum. Bana kızıl develer dahi verilse bu antlaşmayı bozmak istemezdim.' Bu rivayette Abdullah b. Cüd'ân'ın evi anılmaz.",
+          "kaynaklar": [
+            {
+              "eser": "hadislerle-islam",
+              "konum": "c. 3, PDF s. 776 (metin); PDF s. 783 (dipnot 2473: Ahmed b. Hanbel, Müsned, I, 191; dipnot 2474: Beyhakî, es-Sünenü'l-kübrâ, VI, 603)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-024",
+      "ifade": "Dördüncü Ficâr savaşı yaklaşık 585 yılında oldu.",
+      "guc": "ihtilafli",
+      "gerekce": "UKÂZ (s. 61): Urve'nin öldürülmesi ve savaş 585'te. İbn Hişâm'ın (s. 117) verdiği 14-15 yaş, 571 doğum kabulüyle 585-586'ya düşer. İbn İshâk'ın yirmi yaş rivayeti (s. 119) ise yaklaşık 591'e düşer (i-b07-011). Yalnız zaman çizelgesinde, 'yaklaşık' işaretiyle kullanılır. İbn Hişâm sayfaları taramadan (Wüstenfeld neşri) okundu.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Elnure Azizova, \"UKÂZ\", c. 42, s. 61 (İstanbul 2012)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 117",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    },
+    {
+      "id": "i-b07-025",
+      "ifade": "Hilfü'l-fudûl hicretten otuz üç yıl önce, yaklaşık 589 yılında yapıldı.",
+      "guc": "ihtilafli",
+      "gerekce": "HİLFÜ'L-FUDÛL (s. 31): hicretten otuz üç yıl (bazı rivayetlerde yirmi sekiz veya on sekiz yıl) önce; 622 − 33 = 589 (hesap Claude'un). MUHAMMED (s. 407) toplantıyı Ficâr'ın hemen ardına koyar; Efendimiz'in yirmi yaşında olması (i-b07-019) 591'e düşer. Yalnız zaman çizelgesinde, 'yaklaşık' işaretiyle kullanılır.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Mustafa Fayda, \"MUHAMMED\" (bölüm 1), c. 30, s. 407 (Ankara 2020)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": [
+        {
+          "ifade": "Bazı rivayetlere göre antlaşma hicretten yirmi sekiz ya da on sekiz yıl önce yapıldı.",
+          "kaynaklar": [
+            {
+              "eser": "tdv-dia",
+              "konum": "Muhammed Hamîdullah, \"HİLFÜ'l-FUDÛL\", c. 18, s. 31 (İstanbul 1998)",
+              "dogrulama": "bekliyor",
+              "dogrulayan": "",
+              "tarih": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "i-b07-026",
+      "ifade": "Efendimiz dedesinin vefatından sonra amcası Ebû Tâlib'in himayesinde büyüdü.",
+      "guc": "guclu",
+      "gerekce": "HÂŞİM (s. 404): dedesi Abdülmuttalib'in ölümünden sonra amcası Ebû Tâlib'in himayesinde büyüyen Hz. Muhammed. EBÛ TÂLİB (s. 237): Abdülmuttalib sekiz yaşındaki torununun bakımını ona vasiyet etti, yeğenini çok severdi. İki D kaynağı; b06'da ayrıntısıyla anlatıldı.",
+      "kaynaklar": [
+        {
+          "eser": "tdv-dia",
+          "konum": "İbrahim Sarıçam, Mustafa Öz, \"HÂŞİM (Benî Hâşim)\", c. 16, s. 404 (İstanbul 1997)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
+        {
+          "eser": "tdv-dia",
+          "konum": "Ethem Ruhi Fığlalı, \"EBÛ TÂLİB\", c. 10, s. 237 (İstanbul 1994)",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        }
+      ],
+      "alternatifRivayetler": []
+    }
+  ]
+}

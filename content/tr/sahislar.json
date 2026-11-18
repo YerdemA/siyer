@@ -13,7 +13,8 @@
       "b03-dogum",
       "b04-sut-anne",
       "b05-yetimlik",
-      "b06-ebu-talib"
+      "b06-ebu-talib",
+      "b07-genclik"
     ],
     "iddialar": [
       "i-b09-001",
@@ -508,7 +509,8 @@
     "ozet": "Abdülmuttalib'in oğlu. Efendimiz'in babası Abdullah ile hem anneleri hem babaları aynıydı. Babası ölmeden önce torununu ona emanet etmişti; sekiz yaşındaki yeğenini yanına alıp büyüttü. Kureyş içinde sözü dinlenen, saygı duyulan biriydi; ailesi kalabalıktı. Yeğenini çok sever, uğurlu olduğuna inanır, yolculuklarında bile yanından ayırmazdı; onu on iki yaşındayken Şam yolculuğuna yanında götürdü.",
     "bolumler": [
       "b05-yetimlik",
-      "b06-ebu-talib"
+      "b06-ebu-talib",
+      "b07-genclik"
     ],
     "iddialar": [
       "i-b05-015",
@@ -545,6 +547,86 @@
     ],
     "iddialar": [
       "i-b06-005"
+    ]
+  },
+  {
+    "id": "zubeyr-b-abdulmuttalib",
+    "ad": "Zübeyr b. Abdülmuttalib",
+    "lakap": "",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) amcası",
+    "ozet": "Abdülmuttalib'in oğlu. Dördüncü Ficâr savaşında Hâşimoğulları'na komuta etti. Zübeydli bir tüccara yapılan haksızlık üzerine Abdullah b. Cüd'ân'ı ikna ederek Hilfü'l-fudûl antlaşmasının yapılmasına öncülük etti.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-009",
+      "i-b07-016"
+    ]
+  },
+  {
+    "id": "abdullah-b-cudan",
+    "ad": "Abdullah b. Cüd'ân",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Teymoğulları'nın reisi, Mekke'nin en zengin, yaşlı ve sözü geçen kişilerinden. Ficâr savaşına Hâşimoğulları'nın da katılması için ısrar etti; Hilfü'l-fudûl antlaşması onun evinde yapıldı.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-009",
+      "i-b07-016"
+    ]
+  },
+  {
+    "id": "harb-b-umeyye",
+    "ad": "Harb b. Ümeyye",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Dördüncü Ficâr savaşında Kureyş ve Kinâne'nin başkomutanı.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-008"
+    ]
+  },
+  {
+    "id": "as-b-vail",
+    "ad": "Âs b. Vâil",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kureyş'in ileri gelenlerinden. Rivayetlerin çoğuna göre Zübeydli bir tüccardan aldığı malın parasını ödemedi; Hilfü'l-fudûl antlaşmasına bu olayın yol açtığı rivayet edilir.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-015"
+    ]
+  },
+  {
+    "id": "berrad-b-kays",
+    "ad": "Berrâd b. Kays",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Kinâne kabilesinden. Hîre hükümdarının kervanını koruyan Urve er-Rahhâl'i haram ayda öldürdü; dördüncü Ficâr savaşı bu yüzden çıktı.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-006"
+    ]
+  },
+  {
+    "id": "urve-er-rahhal",
+    "ad": "Urve er-Rahhâl",
+    "lakap": "",
+    "yakinlik": "",
+    "ozet": "Hevâzin kabilesinden. Hîre hükümdarı Nu'mân b. Münzir'in kervanını korurken haram ayda Berrâd b. Kays tarafından öldürüldü.",
+    "bolumler": [
+      "b07-genclik"
+    ],
+    "iddialar": [
+      "i-b07-006"
     ]
   }
 ]
