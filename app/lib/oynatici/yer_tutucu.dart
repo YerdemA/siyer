@@ -642,6 +642,10 @@ class YerTutucu {
   /// `x`, `y`: zemine bastığı alt uç; `boy`: yüksekliği (ekran yüksekliğine
   /// oranla); `r`: omuz yarı genişliği (ekran genişliğine oranla, verilmezse
   /// boyun %17'si).
+  ///
+  /// `kim: "efendimiz"`: Hz. Muhammed'in nurlu figürü (GORSEL_USLUP.md §1).
+  /// Aynı biçim, ama baştan ayağa dolu, opak bir nur ve başında yeşil sarık;
+  /// içinde yalnız boy ve sarık seçilir.
   void _nurBoylu(double boy) {
     final yk = boy * h * (1 + 0.02 * math.sin(t * 1.4));
     final omuz = k.sayi('r', 0) > 0 ? k.sayi('r', 0) * w : boy * h * 0.17;
@@ -672,6 +676,11 @@ class YerTutucu {
       ..addPath(govde, Offset.zero)
       ..addOval(bas);
 
+    if (k.yazi('kim', '') == 'efendimiz') {
+      _nurFigur(bicim, x, ust, yk, omuz, gorunurluk);
+      return;
+    }
+
     if (guc > 1) {
       // Açık zeminde de seçilsin diye sıcak, yumuşak çekirdek (normal karışım).
       c.drawPath(
@@ -696,6 +705,47 @@ class YerTutucu {
         ..blendMode = BlendMode.screen
         ..color = _nurAcik.withValues(alpha: math.min(0.72, 0.24 * gorunurluk))
         ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.032),
+    );
+  }
+
+  static const _sarik = Color(0xFF3F7D4E);
+
+  void _nurFigur(Path bicim, double x, double ust, double yk, double omuz, double gorunurluk) {
+    final g = math.min(1.0, gorunurluk / 2.5);
+    // Dış hale: açık zeminde de figürün çevresi ışısın.
+    c.drawPath(
+      bicim,
+      Paint()
+        ..blendMode = BlendMode.screen
+        ..color = _nurAltin.withValues(alpha: 0.7 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.1),
+    );
+    // Gövde: dolu, opak sıcak nur; kenarı hafif yumuşak.
+    c.drawPath(
+      bicim,
+      Paint()
+        ..color = Color.lerp(_nurAcik, _nurAltin, 0.18)!.withValues(alpha: 0.95 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.012),
+    );
+    // Sarık: başın üst yarısını saran yeşil bir sargı.
+    final sarik = Rect.fromCenter(
+      center: Offset(x, ust + yk * 0.065),
+      width: omuz * 1.02,
+      height: yk * 0.12,
+    );
+    c.drawOval(
+      sarik,
+      Paint()
+        ..color = _sarik.withValues(alpha: 0.95 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.005),
+    );
+    // İç parlaklık: nur sarığın ve gövdenin üstüne hafifçe taşar.
+    c.drawPath(
+      bicim,
+      Paint()
+        ..blendMode = BlendMode.screen
+        ..color = _nurAcik.withValues(alpha: 0.35 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.04),
     );
   }
 
