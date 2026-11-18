@@ -274,6 +274,28 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
     return cikti
 
 
+def karakter_sayfa_metni(i: str, k: dict) -> str:
+    """Bir karakterin referans sayfası istemi (ChatGPT dosyası ve gorsel_uret.py ortak)."""
+    if k.get("hayvan"):
+        gorunum = "the same animal three times side by side: side view facing left, front three-quarter view, side view facing right"
+    elif k.get("yuzsuz"):
+        gorunum = ("the same person three times side by side, ALL WITHOUT ANY FACE: back view, back three-quarter view "
+                   "from behind the left shoulder, back three-quarter view from behind the right shoulder")
+    else:
+        gorunum = "the same person three times side by side: front view, three-quarter view, side profile view"
+    return (
+        f"Character reference sheet {i}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference; "
+        "not photorealistic, not a 3D render.\n\n"
+        f"CHARACTER: {k['en']}\n\n"
+        f"LAYOUT: {gorunum}; full figure from head to feet, all three the same size, standing on one horizontal line, "
+        "with flat green space around each. Perfectly flat, uniform chroma green background (#00B140), no ground, no shadow, "
+        "no text or labels.\n\n"
+        "LIGHT: even, neutral daylight; no glow.\n\n"
+        "BEFORE YOU OUTPUT, CHECK AND FIX: all three views show the same person with identical clothing colours, beard and features; "
+        "two arms, two hands with five fingers, two legs each; nothing else in the image."
+    )
+
+
 def karakter_sayfalari(idler: list[str] | None = None) -> Path:
     """Her karakter için bir referans sayfası: aynı kişi yan yana birkaç açıdan,
     yeşil perdede. Sonraki her istemde ilgili sayfa mesaja eklenir; görseller
@@ -291,24 +313,7 @@ def karakter_sayfalari(idler: list[str] | None = None) -> Path:
     ]
     for n, i in enumerate(secilen, 1):
         k = kartlar[i]
-        if k.get("hayvan"):
-            gorunum = "the same animal three times side by side: side view facing left, front three-quarter view, side view facing right"
-        elif k.get("yuzsuz"):
-            gorunum = ("the same person three times side by side, ALL WITHOUT ANY FACE: back view, back three-quarter view "
-                       "from behind the left shoulder, back three-quarter view from behind the right shoulder")
-        else:
-            gorunum = "the same person three times side by side: front view, three-quarter view, side profile view"
-        metin = (
-            f"Character reference sheet {i}. ONE image, landscape 3:2. Flat paper cut-out style of the style reference; "
-            "not photorealistic, not a 3D render.\n\n"
-            f"CHARACTER: {k['en']}\n\n"
-            f"LAYOUT: {gorunum}; full figure from head to feet, all three the same size, standing on one horizontal line, "
-            "with flat green space around each. Perfectly flat, uniform chroma green background (#00B140), no ground, no shadow, "
-            "no text or labels.\n\n"
-            "LIGHT: even, neutral daylight; no glow.\n\n"
-            "BEFORE YOU OUTPUT, CHECK AND FIX: all three views show the same person with identical clothing colours, beard and features; "
-            "two arms, two hands with five fingers, two legs each; nothing else in the image."
-        )
+        metin = karakter_sayfa_metni(i, k)
         satirlar += [f"## Sayfa {n}: karakter-{i}", "", f"*Kontrol: {k['ad']}. Kaynak: {k['kaynak']} Seçim: {k['secim']}*", "",
                      "```text", metin, "```", ""]
     cikti = KARAKTER_DOSYASI.with_name("karakterler-chatgpt.md")

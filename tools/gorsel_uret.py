@@ -5,6 +5,9 @@ Kullanım (depo kökünden):
       [--model gpt-image-2.6-sunburst] [--kalite high] [--sonek -a] [--seffaf] [--kuru]
 
 - Kimliğin ilk üç harfi (b03) kayıt dosyasını seçer: content/gorseller/istemler/b03.json.
+- `karakter-<kimlik>`: karakterler.json'daki kartın referans sayfası (üç açı, yeşil perde);
+  istem istem_devir.karakter_sayfa_metni ile aynıdır. Onaylanan sayfa elle
+  referans/ klasörüne konur ve karta `referans_dosya` yazılır.
 - İstem metni ChatGPT mesaj dosyasıyla aynıdır (istem_devir.mesaj); başına Mesaj 0'daki
   üslup ve kurallar eklenir. Görsel olarak üslup referansı (referans/uslup-u01d.png),
   geçen karakterlerin referans sayfaları ve varsa kayıttaki "ekle" görseli gönderilir.
@@ -139,13 +142,23 @@ def main(argv: list[str]) -> int:
     VARSAYILAN_KLASOR.mkdir(parents=True, exist_ok=True)
     sonuc = []
     for kimlik in kimlikler:
-        kayit_yolu = ISTEMLER / f"{kimlik[:3]}.json"
-        veri = json.loads(kayit_yolu.read_text(encoding="utf-8"))
-        kayit = next((k for k in veri["istemler"] if k["id"] == kimlik), None)
-        if not kayit:
-            print(f"{kimlik}: {kayit_yolu.name} içinde yok, atlandı.")
-            continue
-        metin, ekle = istem_devir.mesaj(veri["uslup"], kayit, kartlar)
+        if kimlik.startswith("karakter-"):
+            kart_id = kimlik[len("karakter-"):]
+            if kart_id not in kartlar:
+                print(f"{kimlik}: karakterler.json içinde yok, atlandı.")
+                continue
+            # Üslup bütün bölümlerde aynı; en son bölüm kaydından alınır.
+            veri = json.loads(sorted(ISTEMLER.glob("b[0-9][0-9].json"))[-1].read_text(encoding="utf-8"))
+            kayit = {"id": kimlik, "tip": "figur"}
+            metin, ekle = istem_devir.karakter_sayfa_metni(kart_id, kartlar[kart_id]), []
+        else:
+            kayit_yolu = ISTEMLER / f"{kimlik[:3]}.json"
+            veri = json.loads(kayit_yolu.read_text(encoding="utf-8"))
+            kayit = next((k for k in veri["istemler"] if k["id"] == kimlik), None)
+            if not kayit:
+                print(f"{kimlik}: {kayit_yolu.name} içinde yok, atlandı.")
+                continue
+            metin, ekle = istem_devir.mesaj(veri["uslup"], kayit, kartlar)
         istem = f"{onsoz(veri['uslup'])}\n\n{metin}"
         if seffaf:
             istem = seffaflastir(istem)
