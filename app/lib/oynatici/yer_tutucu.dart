@@ -677,7 +677,7 @@ class YerTutucu {
       ..addOval(bas);
 
     if (k.yazi('kim', '') == 'efendimiz') {
-      _nurFigur(bicim, x, ust, yk, omuz, gorunurluk);
+      _nurFigur(bicim, x, ust, zemin, yk, omuz, gorunurluk);
       return;
     }
 
@@ -710,42 +710,70 @@ class YerTutucu {
 
   static const _sarik = Color(0xFF3F7D4E);
 
-  void _nurFigur(Path bicim, double x, double ust, double yk, double omuz, double gorunurluk) {
-    final g = math.min(1.0, gorunurluk / 2.5);
-    // Dış hale: açık zeminde de figürün çevresi ışısın.
+  void _nurFigur(Path bicim, double x, double ust, double zemin, double yk, double omuz, double gorunurluk) {
+    // Hafif nefes: ışık durağan bir kesik gibi değil, canlı dursun.
+    final g = math.min(1.0, gorunurluk / 2.5) * (0.95 + 0.05 * math.sin(t * 1.2));
+    // Zemine düşen ışık: figürü bastığı yere bağlar.
+    c.drawOval(
+      Rect.fromCenter(center: Offset(x, zemin), width: omuz * 4, height: yk * 0.08),
+      Paint()
+        ..blendMode = BlendMode.screen
+        ..color = _nurAltin.withValues(alpha: 0.42 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.05),
+    );
+    // Geniş hale: çevresindeki havayı ısıtır, kenarı belirsiz.
     c.drawPath(
       bicim,
       Paint()
         ..blendMode = BlendMode.screen
-        ..color = _nurAltin.withValues(alpha: 0.7 * g)
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.1),
+        ..color = _nurAltin.withValues(alpha: 0.6 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.14),
     );
-    // Gövde: dolu, opak sıcak nur; kenarı hafif yumuşak.
+    // Sıcak kenar ışıması (normal karışım): açık duvar ya da kum önünde de seçilsin.
     c.drawPath(
       bicim,
       Paint()
-        ..color = Color.lerp(_nurAcik, _nurAltin, 0.18)!.withValues(alpha: 0.95 * g)
+        ..color = _nurAltin.withValues(alpha: 0.38 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.05),
+    );
+    // Gövde: yukarıda dolu, ayağa doğru zemine karışan ışık; kenarlar yumuşak.
+    c.drawPath(
+      bicim,
+      Paint()
+        ..shader = Gradient.linear(Offset(x, ust), Offset(x, zemin), [
+          _nurAcik.withValues(alpha: 0.96 * g),
+          Color.lerp(_nurAcik, _nurAltin, 0.12)!.withValues(alpha: 0.93 * g),
+          _nurAltin.withValues(alpha: 0.5 * g),
+        ], const [0, 0.65, 1])
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.018),
+    );
+    // Baş: sarığın oturduğu yumuşak, parlak bir yuvarlak.
+    c.drawOval(
+      Rect.fromCenter(center: Offset(x, ust + yk * 0.1), width: omuz * 0.9, height: yk * 0.18),
+      Paint()
+        ..color = _nurAcik.withValues(alpha: 0.9 * g)
         ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.012),
     );
-    // Sarık: başın üst yarısını saran yeşil bir sargı.
+    // Sarık: başın üst yarısını saran yeşil bir sargı; nurun içinde, kenarı yumuşak.
     final sarik = Rect.fromCenter(
-      center: Offset(x, ust + yk * 0.065),
-      width: omuz * 1.02,
-      height: yk * 0.12,
+      center: Offset(x, ust + yk * 0.075),
+      width: omuz * 0.96,
+      height: yk * 0.1,
     );
     c.drawOval(
       sarik,
       Paint()
-        ..color = _sarik.withValues(alpha: 0.95 * g)
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.005),
+        ..color = _sarik.withValues(alpha: 0.82 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.012),
     );
-    // İç parlaklık: nur sarığın ve gövdenin üstüne hafifçe taşar.
-    c.drawPath(
-      bicim,
+    // İç çekirdek: göğüs hizasında en parlak, dışa doğru söner; sarığın üstüne de hafifçe taşar.
+    final cekirdek = Rect.fromCenter(center: Offset(x, ust + yk * 0.42), width: omuz * 1.3, height: yk * 0.8);
+    c.drawOval(
+      cekirdek,
       Paint()
         ..blendMode = BlendMode.screen
-        ..color = _nurAcik.withValues(alpha: 0.35 * g)
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.04),
+        ..color = const Color(0xFFFFFFFF).withValues(alpha: 0.45 * g)
+        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.09),
     );
   }
 
