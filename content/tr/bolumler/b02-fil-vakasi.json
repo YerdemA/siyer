@@ -265,7 +265,7 @@
           ]
         },
         {
-          "metin": "Araplar bunu büyük bir tehlike saydılar. Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı kendilerine borç bildiler.",
+          "metin": "Araplar bunu büyük bir tehlike saydılar. Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı üzerlerine düşen bir görev saydılar.",
           "iddialar": [
             "i-b02-005"
           ]
@@ -341,7 +341,7 @@
           ]
         },
         {
-          "metin": "Has'am ülkesinde Nüfeyl b. Habîb de karşı koydu. O da yenildi ve canına karşılık Ebrehe'ye yol göstermeyi kabul etti.",
+          "metin": "Has'am kabilesinin yurdunda Nüfeyl b. Habîb de karşı koydu. O da yenildi ve canına karşılık Ebrehe'ye yol göstermeyi kabul etti.",
           "iddialar": [
             "i-b02-006"
           ]
@@ -1033,7 +1033,7 @@
           ]
         },
         {
-          "metin": "Taş isabet eden helak oldu; ama hepsine isabet etmedi.",
+          "metin": "Taş değen ölüyordu; ama taşlar herkese değmedi.",
           "iddialar": [
             "i-b02-014"
           ]
@@ -1478,7 +1478,7 @@
     },
     {
       "id": "i-b02-005",
-      "ifade": "Ebrehe Habeşlileri hazırladı ve yanında fil ile yola çıktı. Araplar bunu büyük bir tehlike saydılar; Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı kendilerine borç bildiler.",
+      "ifade": "Ebrehe Habeşlileri hazırladı ve yanında fil ile yola çıktı. Araplar bunu büyük bir tehlike saydılar; Kâbe'yi yıkmak istediğini duyunca ona karşı koymayı üzerlerine düşen bir görev saydılar.",
       "guc": "guclu",
       "gerekce": "İbn Hişâm s. 31. FİL VAK'ASI ve EBREHE ordunun içinde Mahmûd adlı filin bulunduğunu yazar. Fil sayısı rivayetlerde farklıdır; kaynakların çoğu tek fil der (FİL VAK'ASI s. 71), anlatım 'bir fil' der, farklar dipnottadır.",
       "kaynaklar": [
@@ -1521,7 +1521,7 @@
     },
     {
       "id": "i-b02-006",
-      "ifade": "Yemen'in ileri gelenlerinden Zû Nefer kavmini toplayıp Ebrehe ile savaştı, yenildi ve esir düştü. Ebrehe onu öldürmedi, yanında bağlı tuttu. Has'am ülkesinde Nüfeyl b. Habîb de kabileleriyle karşı koydu; o da yenilip esir alındı ve canına karşılık Ebrehe'ye kılavuzluk etmeyi kabul etti.",
+      "ifade": "Yemen'in ileri gelenlerinden Zû Nefer kavmini toplayıp Ebrehe ile savaştı, yenildi ve esir düştü. Ebrehe onu öldürmedi, yanında bağlı tuttu. Has'am kabilesinin yurdunda Nüfeyl b. Habîb de kabileleriyle karşı koydu; o da yenilip esir alındı ve canına karşılık Ebrehe'ye yol göstermeyi kabul etti.",
       "guc": "guclu",
       "gerekce": "İbn Hişâm s. 31. FİL VAK'ASI ve EBREHE Zû Nefer ile Nüfeyl b. Habîb'in yenilip esir düştüğünü yazar.",
       "kaynaklar": [

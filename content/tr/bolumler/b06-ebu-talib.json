@@ -13,7 +13,7 @@
       "id": "b06-s01",
       "anlatim": [
         {
-          "metin": "Dedesi Abdülmuttalib vefat ettiğinde Efendimiz sekiz yaşındaydı. Artık amcası Ebû Tâlib onun bakımını ve himayesini üstlenmişti.",
+          "metin": "Dedesi Abdülmuttalib vefat ettiğinde Efendimiz sekiz yaşındaydı. Artık onu amcası Ebû Tâlib yanına alıp büyütecek ve koruyacaktı.",
           "iddialar": [
             "i-b06-001"
           ]
@@ -630,7 +630,8 @@
                   "x": 0.63,
                   "y": 0.83,
                   "boy": 0.2,
-                  "guc": 2.5
+                  "guc": 2.5,
+                  "kim": "efendimiz"
                 }
               }
             ],
@@ -698,7 +699,8 @@
               "x": 0.84,
               "y": 0.77,
               "boy": 0.12,
-              "guc": 2.5
+              "guc": 2.5,
+              "kim": "efendimiz"
             }
           },
           {
@@ -733,7 +735,7 @@
       "id": "b06-s11",
       "anlatim": [
         {
-          "metin": "Bahîrâ ona, kavminin adına yemin ettiğini duyduğu Lât ve Uzzâ putları adına bazı şeyler sormak istedi.",
+          "metin": "Bahîrâ, Kureyşlilerin yemin ederken adını andığı Lât ve Uzzâ putları adına ona bazı sorular sormak istedi.",
           "iddialar": [
             "i-b06-016"
           ]
@@ -777,7 +779,8 @@
               "x": 0.42,
               "y": 0.9,
               "boy": 0.48,
-              "guc": 2.5
+              "guc": 2.5,
+              "kim": "efendimiz"
             }
           },
           {

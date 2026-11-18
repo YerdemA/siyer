@@ -288,7 +288,7 @@
           ]
         },
         {
-          "metin": "Varaka Hıristiyanlığı benimsedi ve kitap ehlinin kitaplarından bilgi edindi. Osman, Bizans kayserinin yanına gidip Hıristiyan oldu. Ubeydullah ise Müslüman olana kadar kararsız kaldı.",
+          "metin": "Varaka Hıristiyanlığı benimsedi ve Yahudi ve Hıristiyanların kutsal kitaplarından bilgi edindi. Osman, Bizans imparatorunun yanına gidip Hıristiyan oldu. Ubeydullah ise Müslüman olana kadar kararsız kaldı.",
           "iddialar": [
             "i-b10-015"
           ]
@@ -603,7 +603,7 @@
       "id": "b10-s08",
       "anlatim": [
         {
-          "metin": "Mekke'de, yılın belirli aylarında inzivâya çekilen bazı kimseler vardı. Kureyş buna tahannüs derdi.",
+          "metin": "Mekke'de, yılın belirli aylarında bir köşeye çekilip ibadet eden bazı kimseler vardı. Kureyş buna tahannüs derdi.",
           "iddialar": [
             "i-b10-002"
           ]
@@ -1195,7 +1195,7 @@
     },
     {
       "id": "i-b10-002",
-      "ifade": "Mekke'de bazı kimseler yılın belirli aylarında inzivâya çekilirdi; Kureyş Câhiliye'de buna tahannüs derdi. Hz. Muhammed'in dedesi Abdülmuttalib de zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+      "ifade": "Mekke'de bazı kimseler yılın belirli aylarında bir köşeye çekilip ibadet ederdi; Kureyş Câhiliye'de buna tahannüs derdi. Hz. Muhammed'in dedesi Abdülmuttalib de zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
       "guc": "guclu",
       "gerekce": "İbn Hişâm, Ubeyd b. Umeyr'den Hira'daki mücâverenin Kureyş'in Câhiliye'de yaptığı tahannüs olduğunu aktarır (s. 152; tarama OCR'ı düzeltilmemiş, yer bulmak için okundu). HİRA maddesi receb ve ramazan gibi aylarda inzivâya çekilen hanîflerden ve Abdülmuttalib'in Hira'ya çekilmesinden söz eder (İbn Hişâm, I, 50 vd. atfıyla). ABDÜLMUTTALİB maddesi de aynı bilgiyi verir. İbn Hişâm s. 152 yalnız tahannüs kısmını karşılar; Abdülmuttalib kısmı iki D kaynağına (HİRA, ABDÜLMUTTALİB) dayanır.",
       "kaynaklar": [
@@ -1577,7 +1577,7 @@
     },
     {
       "id": "i-b10-015",
-      "ifade": "Varaka Hıristiyanlığı benimsedi ve ehl-i kitabın kitaplarını izleyerek onlardan bilgi edindi. Osman b. Hüveyris Bizans kayserinin yanına gidip Hıristiyan oldu. Ubeydullah b. Cahş ise Müslüman olana kadar kararsız kaldı.",
+      "ifade": "Varaka Hıristiyanlığı benimsedi ve ehl-i kitabın kitaplarını izleyerek onlardan bilgi edindi. Osman b. Hüveyris Bizans imparatorunun yanına gidip Hıristiyan oldu. Ubeydullah b. Cahş ise Müslüman olana kadar kararsız kaldı.",
       "guc": "guclu",
       "gerekce": "İbn Hişâm, tarama s. 143 (Varaka, Ubeydullah) ve s. 144 (Osman). VARAKA maddesi Varaka'nın Hıristiyanlığı seçtiğini, ama hangi din üzere öldüğünün ihtilaflı olduğunu yazar; anlatım ölümüne değinmez. HANÎF maddesi (s. 38) Varaka'yı putlara tapmayı kötü gören, çok kitap okuyan bir kişi olarak anar. Ubeydullah'ın sonraki hayatı (Habeşistan) b10'un konusu dışında.",
       "kaynaklar": [

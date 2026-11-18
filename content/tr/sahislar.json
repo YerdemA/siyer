@@ -104,7 +104,7 @@
     "ad": "Hz. Hatice",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) eşi",
-    "ozet": "Efendimiz Hira'da inzivâya çekildiği yıllarda azığını ondan alırdı; Hatice zaman zaman onunla birlikte Hira'ya çıkardı.",
+    "ozet": "Efendimiz Hira'da yalnız başına ibadet ettiği yıllarda azığını ondan alırdı; Hatice zaman zaman onunla birlikte Hira'ya çıkardı.",
     "bolumler": [
       "b10-hira"
     ],
@@ -187,7 +187,7 @@
     "id": "hasim-b-abdumenaf",
     "ad": "Hâşim b. Abdümenâf",
     "lakap": "",
-    "yakinlik": "Hz. Muhammed'in (s.a.v.) büyük dedesi",
+    "yakinlik": "Hz. Muhammed'in (s.a.v.) dedesi Abdülmuttalib'in babası",
     "ozet": "Kardeşleriyle birlikte komşu devletlerle ve ticaret yolu üzerindeki kabilelerle antlaşmalar yaptı; Kureyş'in kış ve yaz ticaret yolculukları bu sayede güvenli hâle geldi.",
     "bolumler": [
       "b01-cahiliye-mekkesi"
@@ -232,7 +232,7 @@
     "ad": "Varaka b. Nevfel",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi. Hıristiyanlığı benimsedi ve kitap ehlinin kitaplarından bilgi edindi.",
+    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi. Hıristiyanlığı benimsedi ve Yahudi ve Hıristiyanların kutsal kitaplarından bilgi edindi.",
     "bolumler": [
       "b10-hira",
       "b04-sut-anne"
@@ -262,7 +262,7 @@
     "ad": "Osman b. Hüveyris",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi; Bizans kayserinin yanına gidip Hıristiyan oldu.",
+    "ozet": "Putlara tapmaktan ayrılıp din arayan dört kişiden biriydi; Bizans imparatorunun yanına gidip Hıristiyan oldu.",
     "bolumler": [
       "b10-hira"
     ],
@@ -321,7 +321,7 @@
     "ad": "Nüfeyl b. Habîb",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Has'am ülkesinde Ebrehe'ye karşı koydu, yenildi ve ona kılavuzluk etti. Filin kulağına 'Çök Mahmûd' dediği rivayet edilir.",
+    "ozet": "Has'am kabilesinin yurdunda Ebrehe'ye karşı koydu, yenildi ve ona yol gösterdi. Filin kulağına 'Çök Mahmûd' dediği rivayet edilir.",
     "bolumler": [
       "b02-fil-vakasi"
     ],
@@ -335,7 +335,7 @@
     "ad": "Mes'ûd b. Muattib",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Tâif'te Sakîf adına Ebrehe'ye itaat etti ve ona kılavuz verdi.",
+    "ozet": "Tâif'te Sakîf adına Ebrehe'ye boyun eğdi ve ona yol gösterecek bir adam verdi.",
     "bolumler": [
       "b02-fil-vakasi"
     ],
@@ -348,7 +348,7 @@
     "ad": "Ebû Rigāl",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Sakîf'in Ebrehe'ye verdiği kılavuz; Mugammes'te öldü, Araplar kabrini taşladı.",
+    "ozet": "Sakîf'in Ebrehe'ye yol göstersin diye verdiği adam; Mugammes'te öldü, Araplar kabrini taşladı.",
     "bolumler": [
       "b02-fil-vakasi"
     ],
@@ -387,7 +387,7 @@
     "ad": "Abdullah b. Abdülmuttalib",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) babası",
-    "ozet": "Abdülmuttalib'in oğlu. Babasının adağında kura ona çıktı, yerine yüz deve kurban edildi. Âmine ile evlendi; tercih edilen rivayete göre oğlu doğmadan, Şam dönüşü Yesrib'de vefat etti.",
+    "ozet": "Abdülmuttalib'in oğlu. Babası oğullarından birini kurban etmeyi adamıştı; kura Abdullah'a çıktı, onun yerine yüz deve kurban edildi. Âmine ile evlendi; tercih edilen rivayete göre oğlu doğmadan, Şam dönüşü Yesrib'de vefat etti.",
     "bolumler": [
       "b03-dogum"
     ],
@@ -464,7 +464,7 @@
     "ad": "Süveybe",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Ebû Leheb'in câriyesi; Efendimiz'i doğumundan sonra bir süre emzirdi.",
+    "ozet": "Ebû Leheb'in hizmetçisi; Efendimiz'i doğumundan sonra bir süre emzirdi.",
     "bolumler": [
       "b04-sut-anne"
     ],
@@ -505,7 +505,7 @@
     "ad": "Ebû Tâlib",
     "lakap": "",
     "yakinlik": "Hz. Muhammed'in (s.a.v.) amcası",
-    "ozet": "Abdülmuttalib'in oğlu, Abdullah'ın anne-baba bir kardeşi. Babasının vasiyetiyle sekiz yaşındaki yeğeninin bakımını üstlendi. Kureyş içinde sözü dinlenen, saygı duyulan biriydi; ailesi kalabalıktı. Yeğenini çok sever, uğurlu olduğuna inanır, yolculuklarında bile yanından ayırmazdı; onu on iki yaşındayken Şam yolculuğuna yanında götürdü.",
+    "ozet": "Abdülmuttalib'in oğlu. Efendimiz'in babası Abdullah ile hem anneleri hem babaları aynıydı. Babası ölmeden önce torununu ona emanet etmişti; sekiz yaşındaki yeğenini yanına alıp büyüttü. Kureyş içinde sözü dinlenen, saygı duyulan biriydi; ailesi kalabalıktı. Yeğenini çok sever, uğurlu olduğuna inanır, yolculuklarında bile yanından ayırmazdı; onu on iki yaşındayken Şam yolculuğuna yanında götürdü.",
     "bolumler": [
       "b05-yetimlik",
       "b06-ebu-talib"
@@ -524,7 +524,7 @@
     "ad": "Bahîrâ",
     "lakap": "",
     "yakinlik": "",
-    "ozet": "Busrâ'da manastırında yaşayan bir rahip. Rivayete göre on iki yaşındaki Efendimiz'i amcasıyla gelen Kureyş kervanında görüp peygamberlik alametlerini tanıdı ve Ebû Tâlib'e onu korumasını söyledi. Bu rivayetin sağlamlığı âlimler arasında tartışmalıdır.",
+    "ozet": "Busrâ'da manastırında yaşayan bir rahip. Rivayete göre on iki yaşındaki Efendimiz'i amcasıyla gelen Kureyş kervanında görüp peygamberlik işaretlerini tanıdı ve Ebû Tâlib'e onu korumasını söyledi. Bu rivayetin sağlamlığı âlimler arasında tartışmalıdır.",
     "bolumler": [
       "b06-ebu-talib"
     ],
