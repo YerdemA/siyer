@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <radialGradient id="a3-kararma" cx="50%" cy="48%" r="70%">
+      <stop offset="0.55" stop-color="#3B2716" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2716" stop-opacity="0.32"/>
+    </radialGradient>
+    <filter id="a3-doku" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.23  0 0 0 0 0.15  0 0 0 0 0.09  0 0 0 0.09 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="1080" height="1920" fill="#E6D3A8"/>
+  <rect width="1080" height="1920" fill="#E6D3A8" filter="url(#a3-doku)"/>
+  <rect width="1080" height="1920" fill="url(#a3-kararma)"/><path d="M0,820 L120,900 L230,1060 L300,1260 L380,1480 L470,1640 L560,1920 L0,1920 Z" fill="#C9C6A6"/><path d="M0,820 L120,900 L230,1060 L300,1260 L380,1480 L470,1640 L560,1920" fill="none" stroke="#3B2716" stroke-width="5" opacity="0.85"/><path d="M-30,820 L90,900 L200,1060 L270,1260 L350,1480 L440,1640 L530,1920" fill="none" stroke="#3B2716" stroke-width="2" opacity="0.23"/><path d="M-60,820 L60,900 L170,1060 L240,1260 L320,1480 L410,1640 L500,1920" fill="none" stroke="#3B2716" stroke-width="2" opacity="0.16"/><path d="M-90,820 L30,900 L140,1060 L210,1260 L290,1480 L380,1640 L470,1920" fill="none" stroke="#3B2716" stroke-width="2" opacity="0.09"/><g fill="none" stroke="#3B2716" stroke-width="5.0" stroke-linecap="round" opacity="0.3"><path d="M705,1100 Q746.25,1058.75 798.5,1097.25" /><path d="M754.5,1119.25 Q787.5,1091.75 826.0,1116.5" opacity="0.7"/><path d="M825,1480 Q866.25,1438.75 918.5,1477.25" /><path d="M874.5,1499.25 Q907.5,1471.75 946.0,1496.5" opacity="0.7"/><path d="M585,1700 Q626.25,1658.75 678.5,1697.25" /><path d="M634.5,1719.25 Q667.5,1691.75 706.0,1716.5" opacity="0.7"/><path d="M845,900 Q886.25,858.75 938.5,897.25" /><path d="M894.5,919.25 Q927.5,891.75 966.0,916.5" opacity="0.7"/></g><path d="M260,640 C360,860 420,1040 470,1200 C520,1330 540,1380 560,1430" fill="none" stroke="#7A3B1E" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 26"/><circle cx="260" cy="640" r="16" fill="#9C3B22" stroke="#3B2716" stroke-width="4"/><text x="290" y="625" font-family="'Noto Serif', Georgia, 'Times New Roman', serif" font-size="38" font-style="italic" fill="#3B2716">Şam</text>
+  <g stroke="#9C3B22" stroke-width="14.560000000000002" stroke-linecap="round" fill="none">
+    <path d="M513,1388 Q571.24,1434.8 617,1492"/>
+    <path d="M617,1388 Q569.16,1446.24 513,1492"/>
+  </g><text x="640" y="1455" font-family="'Noto Serif', Georgia, 'Times New Roman', serif" font-size="42" font-style="italic" font-weight="700" fill="#3B2716">Mekke</text>
+  <g>
+    <circle cx="900" cy="720" r="73.8" fill="none" stroke="#C2913F" stroke-width="4.5"/>
+    <circle cx="900" cy="720" r="64.8" fill="none" stroke="#3B2716" stroke-width="1.3499999999999999"/>
+    <polygon points="900,720 900.0,630.0 911.7,720.0" fill="#3B2716"/><polygon points="900,720 900.0,630.0 888.3,720.0" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 935.0,685.0 908.3,728.3" fill="#3B2716"/><polygon points="900,720 935.0,685.0 891.7,711.7" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 990.0,720.0 900.0,731.7" fill="#3B2716"/><polygon points="900,720 990.0,720.0 900.0,708.3" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 935.0,755.0 891.7,728.3" fill="#3B2716"/><polygon points="900,720 935.0,755.0 908.3,711.7" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 900.0,810.0 888.3,720.0" fill="#3B2716"/><polygon points="900,720 900.0,810.0 911.7,720.0" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 865.0,755.0 891.7,711.7" fill="#3B2716"/><polygon points="900,720 865.0,755.0 908.3,728.3" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 810.0,720.0 900.0,708.3" fill="#3B2716"/><polygon points="900,720 810.0,720.0 900.0,731.7" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/><polygon points="900,720 865.0,685.0 908.3,711.7" fill="#3B2716"/><polygon points="900,720 865.0,685.0 891.7,728.3" fill="#F3E8CF" stroke="#3B2716" stroke-width="1.1"/>
+    <circle cx="900" cy="720" r="6.300000000000001" fill="#9C3B22"/>
+  </g>
+  <text x="540" y="300" text-anchor="middle" font-family="'Noto Serif', Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" fill="#3B2716">Resulü Ekrem'in Hayatı</text>
+  <text x="540" y="370" text-anchor="middle" font-family="'Noto Serif', Georgia, 'Times New Roman', serif" font-size="40" font-style="italic" fill="#6E5236">Peygamberlik öncesi</text>
+</svg>

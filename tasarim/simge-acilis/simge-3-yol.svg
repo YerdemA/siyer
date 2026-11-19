@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="s3-kararma" cx="50%" cy="48%" r="70%">
+      <stop offset="0.55" stop-color="#3B2716" stop-opacity="0"/>
+      <stop offset="1" stop-color="#3B2716" stop-opacity="0.32"/>
+    </radialGradient>
+    <filter id="s3-doku" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0.23  0 0 0 0 0.15  0 0 0 0 0.09  0 0 0 0.09 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" fill="#E6D3A8"/>
+  <rect width="1024" height="1024" fill="#E6D3A8" filter="url(#s3-doku)"/>
+  <rect width="1024" height="1024" fill="url(#s3-kararma)"/><g fill="none" stroke="#3B2716" stroke-width="6.3" stroke-linecap="round" opacity="0.35"><path d="M180,330 Q232.5,277.5 299.0,326.5" /><path d="M243.0,354.5 Q285.0,319.5 334.0,351.0" opacity="0.7"/><path d="M650,760 Q702.5,707.5 769.0,756.5" /><path d="M713.0,784.5 Q755.0,749.5 804.0,781.0" opacity="0.7"/><path d="M260,760 Q312.5,707.5 379.0,756.5" /><path d="M323.0,784.5 Q365.0,749.5 414.0,781.0" opacity="0.7"/></g><path d="M190,840 C420,820 300,600 520,560 C720,520 600,330 700,300" fill="none" stroke="#3B2716" stroke-width="26" stroke-linecap="round" stroke-dasharray="0 52"/>
+  <g stroke="#9C3B22" stroke-width="33.6" stroke-linecap="round" fill="none">
+    <path d="M600,170 Q734.4,278.0 840,410"/>
+    <path d="M840,170 Q729.6,304.4 600,410"/>
+  </g>
+</svg>
