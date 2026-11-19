@@ -36,6 +36,8 @@ Bu kurallar 2026-11-14'te Erdem'in kararıyla değişti. Eskiden yüz gösterilm
 
 Gerçek harita değil: ahşap/parşömen dokusu üzerinde elle çizilmiş görünümlü bir illüstrasyon. Yerler yaklaşık konumlarıyla işaretlenir (`yerler.json` → `harita.x/y`).
 
+Harita kodla çizilir (`app/lib/ekranlar/harita.dart`, `harita_cografya.dart`): parşömen zemin, Kızıldeniz ve kıyısı (bugünkü coğrafyadan, kaba; Erdem 2026-11-19), kıyıya koşut dağ süsleri, kervan yolları (kesik çizgi), pusula. Kıyı ve noktalar aynı doğrusal izdüşümü kullanır: `x = 0,46 + 0,0955 × (boylam − 39,83)`, `y = 0,654 − 0,05 × (enlem − 21,42)`. Mekke çevresindeki yakın yerler ayrı, büyütülmüş "Mekke çevresi" haritasında gösterilir.
+
 ## Renk ve ışık
 
 - Ana palet: kum, toprak, koyu lacivert gece, şafak turuncusu. Doygunluk düşük.

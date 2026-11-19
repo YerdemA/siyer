@@ -57,14 +57,14 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Ayarlar'da tam kaynakça
 - [x] Şahıslar sözlüğü
 - [x] Zaman çizelgesi
-- [x] Harita ekranı (geçici zemin)
+- [x] Harita ekranı
 - [x] İlerleme takibi
 - [x] Anlatım sesi altyapısı
 - [x] Saat tonu (deneme; akşam ve şafak)
 - [ ] Anlatım sesiyle gerçek cihazda deneme
 - [ ] Müzik ve ortam sesi çalma
 - [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
-- [ ] Parşömen harita illüstrasyonu
+- [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
 - [ ] "Hata bildir" bağlantısı
 - [ ] Uygulama simgesi, açılış ekranı, mağaza görselleri
 - [ ] Android imzalama (`key.properties`) ve Play Store kaydı

@@ -29,7 +29,8 @@ Son güncelleme: 2026-11-19.
   1. **"s08 kervan Kâbe'nin üstünde."** b08-s08'de kervan yok (Ebû Tâlib ile Hamza); büyük olasılıkla b08-s01 kastediliyor: `b06-kervan-hazirlik` x 0,5 / y 0,635 / ölçek 0,2 ile tam Kâbe'nin önüne biniyor. b06-s08 de olabilir; Erdem'e sor, ikisine de bak, kervanı Kâbe'den ayır.
   2. **Efendimiz'in nuru hâlâ istediği gibi değil.** Neyin değişmesi gerektiğini sor (biçim, ışık, boy, saydamlık?); gerçek oynatıcıda göstererek ilerle.
 - **2026-11-19, iki not işlendi; Erdem onayladı, b08 commit'lendi:** (1) b08-s01'de kervan x 0,5 → 0,2 (Kâbe'nin solunda, evlerin önünde); b06-s06'da Kâbe olmadığı için dokunulmadı. (2) Nur: web oynatıcıda ve paftada siyah kenar görülmedi; büyük olasılıkla telefonda (Impeller) renk geçişli şekle `MaskFilter.blur` koyu saçak bırakıyor. Kenar ışıması ve gövde artık ayrı katmanda düz renkle çizilip katman bütün hâlinde bulanıklaştırılıyor (`_nurKatmani`); gövde biraz saydam (opaklık 0,9, aşağı doğru solar; Erdem saydamlığı beğendi). Siyah kenarı Erdem telefonda görmüştü; yeni hâl telefonda henüz denenmedi, ilk fırsatta bakılacak. Önce/sonra: oturum çıktısı `nur-once-sonra.jpg`. Not: b08 içeriği `icerik_esitle` ile uygulamaya hiç kopyalanmamıştı, kopyalandı.
-- **Sonra:** Bu iki not → Erdem'in b08 önizleme onayı → commit. Açık: Bahîrâ kıyafet kararı (b08 rahibi de aynı kukuletalı keşiş görünümünde); b08 Erdem kontrolü (`docs/ERDEM_KONTROL.md`). Sonraki metin işi yok (10/10 taslak); sıradaki büyük iş b02-b05 görsel eksikleri ve ses.
+- **2026-11-19 (akşam):** (1) b08 rahibi Bahîrâ ile karışmasın diye `nestura` kartı değişti (yaşlı, beyaz sakal, kukuletasız, küçük siyah takke, açık gri cüppe, asa); `b08-rahip` API ile 2. tur üretildi (~0,11 $), denetlendi, s05'te yerinde (ham `gorsel-ham/b08`, eski `-tur1`). Bahîrâ kıyafet kararı böylece kapandı, Bahîrâ olduğu gibi kaldı. (2) Bağış bağlantısı MVP'den çıktı (Erdem). (3) **Parşömen harita yapıldı** (kodla; Erdem kıyının çizilmesini seçti): `harita_cografya.dart` (izdüşüm, Kızıldeniz/Akdeniz kıyıları, dağ süsleri, kervan yolları Mekke–Ebvâ–Yesrib–Busrâ–Şam ve Mekke–San'a), pusula, kıyıya koşut dalga çizgileri; bütün haritada Mekke çevresi çerçeve olarak görünür, dokununca `/harita/mekke` ayrıntı haritası açılır (Hira, Şuaybe, Nahle, Ukâz, Tâif). Web'de telefon ve geniş ekranda denendi; Erdem'in görüşü bekleniyor (boş doğu çölü süslensin mi, dağlar yeterli mi).
+ Erdem'in b08 önizleme onayı → commit. Açık: Bahîrâ kıyafet kararı (b08 rahibi de aynı kukuletalı keşiş görünümünde); b08 Erdem kontrolü (`docs/ERDEM_KONTROL.md`). Sonraki metin işi yok (10/10 taslak); sıradaki büyük iş b02-b05 görsel eksikleri ve ses.
 
 0. **2026-11-16: 42 yeni görsel geldi** (`İndirilenler\siyer\yeni\`, ChatGPT ile elle; b02 5, b03 5, b04 12, b05 10, b10 10). Claude kartlarla tek tek denetledi: yeniden üretilecek yok. İşlerken dikkat:
    - `b03-kureys-itiraz`: soldaki üçüncü adamın sol eli ve birkaç bilek yeşil yansımalı; perde silinince zeytin rengi kalıyor, işlerken o bölge yerel olarak düzeltilmeli.
@@ -136,7 +137,7 @@ Uygulamanın iskeleti ve MVP ekranlarının çoğu çalışıyor (web derlemesin
 | Ayarlar + tam kaynakça | `lib/ekranlar/ayarlar.dart` | Kaynak katmanı ve web adresiyle |
 | Şahıslar sözlüğü | `lib/ekranlar/sahislar.dart` | Atıflar bölüm iddialarından; atıfsız kayıtta "kaynak bekliyor" |
 | Zaman çizelgesi | `lib/ekranlar/zaman_cizelgesi.dart` | Aynı kaynak kuralı |
-| Harita | `lib/ekranlar/harita.dart` | Kodla çizilmiş **geçici** parşömen; yerler `yerler.json`'dan, etiketler çakışmasız |
+| Harita | `lib/ekranlar/harita.dart`, `harita_cografya.dart` | Kodla çizilmiş parşömen: kıyı, dağlar, kervan yolları, pusula; Mekke çevresi ayrı ayrıntı haritası (`/harita/mekke`); etiketler çakışmasız |
 | Dil | `lib/l10n/` | Arayüz metinleri TR + EN; içerik yalnız TR |
 | Testler | `app/test/` | 47 test, hepsi geçiyor; `flutter analyze` temiz |
 | Yayın kapısı | `android/app/build.gradle.kts` | Release derlemesi önce içeriği eşitler, sonra `--yayin` denetimi; hata varsa derleme durur |
@@ -290,7 +291,7 @@ Sahibi parantez içinde.
 | Bölüm indirme barındırması | Seçenekler: Play Asset Delivery + Apple ODR (sunucu ilkesi korunur), Cloudflare Pages, GitHub Releases, R2. İçerik yükleme yalnız `app/lib/icerik/depo.dart` üzerinden geçer |
 | Anlatım sesi üretimi | Karar: ElevenLabs, Seyfullah Kartal sesi; en sona bırakıldı (Erdem, 2026-11-14). Açık: plan (Starter düşünülüyor) ve lisans şartları |
 | Müzik ve ortam sesi | JSON'da adlar var (`muzik`, `ortam`); oynatıcıda henüz çalınmıyor |
-| Parşömen harita illüstrasyonu | Zemin şimdilik kodla çiziliyor; görsel üretimi bekliyor |
+| Parşömen harita | Kodla çizildi (2026-11-19); görsel üretimi gerekmedi |
 | Uzman okuması | Bölümler yayın için uzmana okutulmalı (`KAYNAK_POLITIKASI` §6); kim? |
 | Müslim | Kaynakçada yok; b10'da Müslim atfı bu yüzden kullanılmadı |
 
