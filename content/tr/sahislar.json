@@ -24,7 +24,8 @@
       "i-b03-012",
       "i-b08-002",
       "i-b08-012"
-    ]
+    ],
+    "temsil": "nur"
   },
   {
     "id": "abbas-b-abdulmuttalib",
@@ -103,7 +104,8 @@
       "i-b03-015",
       "i-b05-014",
       "i-b05-015"
-    ]
+    ],
+    "portre": "sahislar/abdulmuttalib.webp"
   },
   {
     "id": "hatice",
@@ -123,7 +125,8 @@
       "i-b08-015",
       "i-b10-006",
       "i-b10-010"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "hz-ibrahim",
@@ -137,7 +140,8 @@
     "iddialar": [
       "i-b01-002",
       "i-b01-004"
-    ]
+    ],
+    "temsil": "nur"
   },
   {
     "id": "hz-ismail",
@@ -151,7 +155,8 @@
     "iddialar": [
       "i-b01-003",
       "i-b01-004"
-    ]
+    ],
+    "temsil": "nur"
   },
   {
     "id": "hacer",
@@ -165,7 +170,8 @@
     "iddialar": [
       "i-b01-002",
       "i-b01-003"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "amr-b-luhay",
@@ -239,7 +245,8 @@
       "i-b10-018",
       "i-b10-019",
       "i-b10-020"
-    ]
+    ],
+    "portre": "sahislar/zeyd-b-amr.webp"
   },
   {
     "id": "varaka-b-nevfel",
@@ -255,7 +262,8 @@
       "i-b10-013",
       "i-b10-015",
       "i-b04-014"
-    ]
+    ],
+    "portre": "sahislar/varaka-b-nevfel.webp"
   },
   {
     "id": "ubeydullah-b-cahs",
@@ -269,7 +277,8 @@
     "iddialar": [
       "i-b10-013",
       "i-b10-015"
-    ]
+    ],
+    "portre": "sahislar/ubeydullah-b-cahs.webp"
   },
   {
     "id": "osman-b-huveyris",
@@ -283,7 +292,8 @@
     "iddialar": [
       "i-b10-013",
       "i-b10-015"
-    ]
+    ],
+    "portre": "sahislar/osman-b-huveyris.webp"
   },
   {
     "id": "esma-bint-ebu-bekir",
@@ -314,7 +324,8 @@
       "i-b02-005",
       "i-b02-014",
       "i-b02-016"
-    ]
+    ],
+    "portre": "sahislar/ebrehe.webp"
   },
   {
     "id": "zu-nefer",
@@ -342,7 +353,8 @@
     "iddialar": [
       "i-b02-006",
       "i-b02-013"
-    ]
+    ],
+    "portre": "sahislar/nufeyl-b-habib.webp"
   },
   {
     "id": "mesud-b-muattib",
@@ -410,7 +422,8 @@
       "i-b03-006",
       "i-b03-007",
       "i-b03-010"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "amine",
@@ -427,7 +440,8 @@
       "i-b03-007",
       "i-b03-014",
       "i-b05-006"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "vehb-b-abdumenaf",
@@ -440,7 +454,8 @@
     ],
     "iddialar": [
       "i-b03-007"
-    ]
+    ],
+    "portre": "sahislar/vehb-b-abdumenaf.webp"
   },
   {
     "id": "halime",
@@ -457,7 +472,8 @@
       "i-b04-005",
       "i-b04-006",
       "i-b04-013"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "haris-b-abduluzza",
@@ -471,7 +487,8 @@
     "iddialar": [
       "i-b04-003",
       "i-b04-006"
-    ]
+    ],
+    "portre": "sahislar/haris-b-abduluzza.webp"
   },
   {
     "id": "suveybe",
@@ -484,7 +501,8 @@
     ],
     "iddialar": [
       "i-b04-001"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "cebrail",
@@ -497,7 +515,8 @@
     ],
     "iddialar": [
       "i-b04-011"
-    ]
+    ],
+    "temsil": "nur"
   },
   {
     "id": "ummu-eymen",
@@ -512,7 +531,8 @@
       "i-b05-004",
       "i-b05-007",
       "i-b05-008"
-    ]
+    ],
+    "portre": "sahislar/ummu-eymen.webp"
   },
   {
     "id": "ebu-talib",
@@ -534,7 +554,8 @@
       "i-b06-009",
       "i-b06-006",
       "i-b08-023"
-    ]
+    ],
+    "portre": "sahislar/ebu-talib.webp"
   },
   {
     "id": "bahira",
@@ -549,7 +570,8 @@
       "i-b06-014",
       "i-b06-017",
       "i-b06-018"
-    ]
+    ],
+    "portre": "sahislar/bahira.webp"
   },
   {
     "id": "fatima-bint-esed",
@@ -562,7 +584,8 @@
     ],
     "iddialar": [
       "i-b06-005"
-    ]
+    ],
+    "portre": "sahislar/fatima-bint-esed.webp"
   },
   {
     "id": "zubeyr-b-abdulmuttalib",
@@ -576,7 +599,8 @@
     "iddialar": [
       "i-b07-009",
       "i-b07-016"
-    ]
+    ],
+    "portre": "sahislar/zubeyr-b-abdulmuttalib.webp"
   },
   {
     "id": "abdullah-b-cudan",
@@ -590,7 +614,8 @@
     "iddialar": [
       "i-b07-009",
       "i-b07-016"
-    ]
+    ],
+    "portre": "sahislar/abdullah-b-cudan.webp"
   },
   {
     "id": "harb-b-umeyye",
@@ -656,7 +681,8 @@
     "iddialar": [
       "i-b08-005",
       "i-b08-007"
-    ]
+    ],
+    "portre": "sahislar/meysere.webp"
   },
   {
     "id": "hamza-b-abdulmuttalib",
@@ -682,7 +708,8 @@
     ],
     "iddialar": [
       "i-b08-016"
-    ]
+    ],
+    "temsil": "yuzsuz"
   },
   {
     "id": "zeyd-b-harise",
@@ -699,7 +726,8 @@
       "i-b08-020",
       "i-b08-021",
       "i-b08-022"
-    ]
+    ],
+    "portre": "sahislar/zeyd-b-harise.webp"
   },
   {
     "id": "hakim-b-hizam",
