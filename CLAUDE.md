@@ -22,7 +22,7 @@ Bu kurallar teknik tercihlerden önce gelir. Emin olmadığında dur ve Erdem'e 
 - Özellikler: bölüm oynatıcı, bölüm sonu kaynak listesi, Ayarlar'da tam kaynakça, harita, zaman çizelgesi, şahıslar sözlüğü, ilerleme takibi.
 - Hesap yok, sunucu yok, reklam yok, analitik yok. İlerleme cihazda saklanır.
 - Bölümler tek tek indirilir ve çevrimdışı çalışır.
-- Ücretsiz; yalnızca isteğe bağlı bağış bağlantısı.
+- Ücretsiz; yalnızca isteğe bağlı bağış bağlantısı (MVP'de yok, sonraki sürümlerde).
 
 ## Teknik yön
 

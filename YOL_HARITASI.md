@@ -66,7 +66,6 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
 - [ ] Parşömen harita illüstrasyonu
 - [ ] "Hata bildir" bağlantısı
-- [ ] İsteğe bağlı bağış bağlantısı
 - [ ] Uygulama simgesi, açılış ekranı, mağaza görselleri
 - [ ] Android imzalama (`key.properties`) ve Play Store kaydı
 - [ ] Gerçek cihazlarda test (en az bir telefon ve bir tablet)
@@ -83,6 +82,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 
 - **İngilizce:** İçerik (`content/en/`, aynı kimlikler) ve İngilizce anlatım sesi; Ayarlar'da dil seçimi. Arayüz metinleri zaten iki dilde. Görseller dilden bağımsız, yeniden üretilmez.
 - **Dönemler** (`docs/BOLUM_HARITASI.md`): Mekke dönemi (ilk vahiy → hicret), Medine dönemi (hicret → Hudeybiye), Fetih ve vedâ. Her dönem ayrı sürüm ve ayrı not defteri. Bütün siyer için tahminen ~1.500 görsel üretimi (100–200 dolar).
+- **Bağış bağlantısı:** İsteğe bağlı; MVP'de yok (Erdem, 2026-11-19).
 - **iOS:** Derleme, test, App Store; yayın kapısının iOS karşılığı.
 - **Kaynakça büyümesi:** İbn Sa'd, Taberî, Müslim ve diğer Kütüb-i Sitte; baskı bilgileriyle.
 - **Uzman okuması süreci** ve "Hakkında"da okuyanların listesi.
