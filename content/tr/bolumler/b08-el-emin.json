@@ -73,7 +73,7 @@
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.5,
+                "x": 0.2,
                 "y": 0.635,
                 "olcek": 0.2
               }
@@ -166,9 +166,9 @@
             "derinlik": 0.3,
             "ayar": {
               "gorsel": {
-                "x": 0.5,
-                "y": 0.5,
-                "olcek": 1.0
+                "x": 0.42,
+                "y": 0.47,
+                "olcek": 1.16
               }
             }
           },
@@ -176,17 +176,24 @@
             "id": "meysere",
             "dosya": "b08-meysere.webp",
             "yerTutucu": "siluet-tek",
-            "derinlik": 0.6
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.6506,
+                "y": 0.6613,
+                "olcek": 0.5327
+              }
+            }
           },
           {
             "id": "nur",
             "dosya": "",
             "yerTutucu": "nur",
-            "derinlik": 0.6,
+            "derinlik": 0.3,
             "ayar": {
-              "x": 0.7,
+              "x": 0.84,
               "y": 0.86,
-              "boy": 0.45,
+              "boy": 0.47,
               "guc": 2.5,
               "kim": "efendimiz"
             }
@@ -309,17 +316,24 @@
             "id": "rahip",
             "dosya": "b08-rahip.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.3,
+            "ayar": {
+              "gorsel": {
+                "x": 0.81,
+                "y": 0.5855,
+                "olcek": 0.2717
+              }
+            }
           },
           {
             "id": "nur",
             "dosya": "",
             "yerTutucu": "nur",
-            "derinlik": 0.6,
+            "derinlik": 0.3,
             "ayar": {
-              "x": 0.32,
-              "y": 0.8,
-              "boy": 0.3,
+              "x": 0.36,
+              "y": 0.86,
+              "boy": 0.38,
               "guc": 2.5,
               "kim": "efendimiz"
             }
@@ -486,25 +500,53 @@
             "id": "gok",
             "dosya": "mekke-gok-gunduz.webp",
             "yerTutucu": "gok",
-            "derinlik": 0.0
+            "derinlik": 0.0,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5637,
+                "y": 0.4434,
+                "olcek": 1.416
+              }
+            }
           },
           {
             "id": "daglar",
             "dosya": "mekke-daglar.webp",
             "yerTutucu": "daglar",
-            "derinlik": 0.15
+            "derinlik": 0.15,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5906,
+                "y": 0.4195,
+                "olcek": 1.4916
+              }
+            }
           },
           {
             "id": "zemin",
             "dosya": "mekke-zemin.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.35
+            "derinlik": 0.35,
+            "ayar": {
+              "gorsel": {
+                "x": 0.6302,
+                "y": 0.3843,
+                "olcek": 1.5924
+              }
+            }
           },
           {
             "id": "evler",
             "dosya": "mekke-evler.webp",
             "yerTutucu": "evler",
-            "derinlik": 0.4
+            "derinlik": 0.4,
+            "ayar": {
+              "gorsel": {
+                "x": 0.6407,
+                "y": 0.3749,
+                "olcek": 1.6176
+              }
+            }
           },
           {
             "id": "kabe-alcak",
@@ -513,9 +555,9 @@
             "derinlik": 0.55,
             "ayar": {
               "gorsel": {
-                "x": 0.501,
-                "y": 0.665,
-                "olcek": 0.269
+                "x": 0.6754,
+                "y": 0.5782,
+                "olcek": 0.3796
               }
             }
           },
@@ -523,17 +565,24 @@
             "id": "amcalar",
             "dosya": "b08-amcalar.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.8,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5234,
+                "y": 0.5091,
+                "olcek": 0.9396
+              }
+            }
           },
           {
             "id": "nur",
             "dosya": "",
             "yerTutucu": "nur",
-            "derinlik": 0.6,
+            "derinlik": 0.8,
             "ayar": {
-              "x": 0.6,
-              "y": 0.72,
-              "boy": 0.17,
+              "x": 0.7207,
+              "y": 0.93,
+              "boy": 0.8736,
               "guc": 2.5,
               "kim": "efendimiz"
             }
@@ -591,11 +640,11 @@
             "id": "nur",
             "dosya": "",
             "yerTutucu": "nur",
-            "derinlik": 0.6,
+            "derinlik": 0.3,
             "ayar": {
-              "x": 0.5,
-              "y": 0.82,
-              "boy": 0.32,
+              "x": 0.53,
+              "y": 0.9,
+              "boy": 0.55,
               "guc": 2.5,
               "kim": "efendimiz"
             }
@@ -665,11 +714,11 @@
             "id": "nur",
             "dosya": "",
             "yerTutucu": "nur",
-            "derinlik": 0.6,
+            "derinlik": 0.3,
             "ayar": {
-              "x": 0.78,
-              "y": 0.9,
-              "boy": 0.5,
+              "x": 0.87,
+              "y": 0.68,
+              "boy": 0.45,
               "guc": 2.5,
               "kim": "efendimiz"
             }
@@ -756,10 +805,47 @@
             "id": "koleler",
             "dosya": "b08-koleler.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.74,
+                "y": 0.6571,
+                "olcek": 0.0963
+              }
+            }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Hakîm b. Hizâm getirdiği genç kölelerin yanında; aralarında yorgun ama dik duran Zeyd. Hatice çizilmez.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.74,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "koleler"
+            ],
+            "katmanlar": [
+              {
+                "id": "koleler-yakin",
+                "dosya": "b08-koleler.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5201,
+                    "olcek": 0.919
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s11.mp3",
@@ -834,7 +920,14 @@
             "id": "harise",
             "dosya": "b08-harise.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.2751,
+                "y": 0.6547,
+                "olcek": 0.102
+              }
+            }
           },
           {
             "id": "nur",
@@ -842,15 +935,59 @@
             "yerTutucu": "nur",
             "derinlik": 0.6,
             "ayar": {
-              "x": 0.7,
-              "y": 0.72,
-              "boy": 0.17,
+              "x": 0.3026,
+              "y": 0.7,
+              "boy": 0.0915,
               "guc": 2.5,
               "kim": "efendimiz"
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Hârise ve kardeşi Zeyd'e ellerini uzatıyor; Zeyd yanında duran figüre dönük: boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.27,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "harise",
+              "nur"
+            ],
+            "katmanlar": [
+              {
+                "id": "harise-yakin",
+                "dosya": "b08-harise.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.4687,
+                    "y": 0.4978,
+                    "olcek": 0.9733
+                  }
+                }
+              },
+              {
+                "id": "nur-yakin",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.8,
+                "ayar": {
+                  "x": 0.7315,
+                  "y": 0.93,
+                  "boy": 0.8736,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s12.mp3",
@@ -925,7 +1062,14 @@
             "id": "zeyd-yuruyus",
             "dosya": "b08-zeyd-yuruyus.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.7103,
+                "y": 0.6563,
+                "olcek": 0.0975
+              }
+            }
           },
           {
             "id": "nur",
@@ -933,15 +1077,59 @@
             "yerTutucu": "nur",
             "derinlik": 0.6,
             "ayar": {
-              "x": 0.55,
-              "y": 0.72,
-              "boy": 0.17,
+              "x": 0.7366,
+              "y": 0.7,
+              "boy": 0.0915,
               "guc": 2.5,
               "kim": "efendimiz"
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: genç Zeyd yanında yürüyen figürle birlikte: boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.72,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "zeyd-yuruyus",
+              "nur"
+            ],
+            "katmanlar": [
+              {
+                "id": "zeyd-yuruyus-yakin",
+                "dosya": "b08-zeyd-yuruyus.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.307,
+                    "y": 0.5133,
+                    "olcek": 0.9302
+                  }
+                }
+              },
+              {
+                "id": "nur-yakin",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.8,
+                "ayar": {
+                  "x": 0.5582,
+                  "y": 0.93,
+                  "boy": 0.8736,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s13.mp3",
@@ -1021,7 +1209,14 @@
             "id": "ali",
             "dosya": "b08-ali.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.27,
+                "y": 0.6557,
+                "olcek": 0.0992
+              }
+            }
           },
           {
             "id": "nur",
@@ -1029,15 +1224,59 @@
             "yerTutucu": "nur",
             "derinlik": 0.6,
             "ayar": {
-              "x": 0.35,
-              "y": 0.72,
-              "boy": 0.17,
+              "x": 0.3027,
+              "y": 0.7,
+              "boy": 0.0915,
               "guc": 2.5,
               "kim": "efendimiz"
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: yaşlı Ebû Tâlib, Abbas ve Ca'fer; küçük Ali yanındaki figüre bakıyor: boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Boş testiler.",
+            "kamera": "yavas-yaklasma",
+            "kadraj": {
+              "x": 0.27,
+              "y": 0.66,
+              "yakinlik": 1.6
+            },
+            "gizle": [
+              "ali",
+              "nur"
+            ],
+            "katmanlar": [
+              {
+                "id": "ali-yakin",
+                "dosya": "b08-ali.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.42,
+                    "y": 0.5067,
+                    "olcek": 0.947
+                  }
+                }
+              },
+              {
+                "id": "nur-yakin",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.8,
+                "ayar": {
+                  "x": 0.7325,
+                  "y": 0.93,
+                  "boy": 0.8736,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s14.mp3",
