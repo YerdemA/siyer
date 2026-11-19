@@ -8,54 +8,117 @@ import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../l10n/app_localizations.dart';
 import 'atif_listesi.dart';
+import 'harita_cografya.dart';
 
 /// Parşömen harita (docs/GORSEL_USLUP.md → Harita). Gerçek harita değildir;
-/// yerler yaklaşık konumlarıyla işaretlenir. Parşömen illüstrasyonu gelene
-/// kadar zemin kodla çizilir.
+/// yerler yaklaşık konumlarıyla işaretlenir. Kıyı, dağ süsleri, pusula ve
+/// kervan yolları kodla, mürekkep çizimi gibi çizilir ([ParsomenCizici]).
+///
+/// [bolge] `tum` (bütün harita) ya da `mekke` (Mekke çevresi, büyütülmüş).
+/// Bütün haritada Mekke çevresindeki yakın yerler gizlenir; yerine dokununca
+/// ayrıntı haritasını açan bir çerçeve çizilir.
 class HaritaEkrani extends ConsumerWidget {
-  const HaritaEkrani({super.key});
+  const HaritaEkrani({super.key, this.bolge = 'tum'});
 
-  /// Parşömenin en/boy oranı (yerler.json'daki x, y bu alana göre 0–1).
-  static const oran = 3 / 4;
+  final String bolge;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final m = Metinler.of(context);
+    final b = haritaBolgeleri[bolge] ?? tumHarita;
+    final tum = b.id == tumHarita.id;
     final yerler = ref.watch(yerlerProvider);
     return Scaffold(
-      appBar: AppBar(title: Text(m.harita)),
+      appBar: AppBar(title: Text(tum ? m.harita : m.haritaMekkeCevresi)),
       backgroundColor: const Color(0xFF1B1511),
       body: yerler.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
-        data: (liste) => InteractiveViewer(
-          maxScale: 6,
-          child: Center(
-            child: AspectRatio(
-              aspectRatio: oran,
-              child: LayoutBuilder(builder: (context, k) {
-                final yerlesim = etiketYerlesimi(liste, Size(k.maxWidth, k.maxHeight));
-                return Stack(
-                  children: [
-                    const Positioned.fill(child: CustomPaint(painter: ParsomenCizici())),
-                    Positioned.fill(child: CustomPaint(painter: _CizgiCizici(yerlesim))),
-                    for (final e in yerlesim) ...[
-                      Positioned(
-                        left: e.nokta.dx - 8,
-                        top: e.nokta.dy - 8,
-                        child: _Nokta(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+        data: (liste) {
+          final gorunen = [
+            for (final y in liste)
+              if (b.icerir(Offset(y.x, y.y)) && (!tum || y.id == 'mekke' || !mekkeCevresi.icerir(Offset(y.x, y.y)))) y,
+          ];
+          final konumlar = {for (final y in liste) y.id: Offset(y.x, y.y)};
+          return InteractiveViewer(
+            maxScale: 6,
+            child: Center(
+              child: AspectRatio(
+                aspectRatio: b.oran,
+                child: LayoutBuilder(builder: (context, k) {
+                  final boyut = Size(k.maxWidth, k.maxHeight);
+                  Offset ekran(Offset p) => Offset(
+                        (p.dx - b.alan.left) / b.alan.width * boyut.width,
+                        (p.dy - b.alan.top) / b.alan.height * boyut.height,
+                      );
+                  final cerceve = tum
+                      ? Rect.fromPoints(ekran(mekkeCevresi.alan.topLeft), ekran(mekkeCevresi.alan.bottomRight))
+                      : null;
+                  final cerceveEtiketi = cerceve == null
+                      ? null
+                      : Rect.fromLTWH(cerceve.right + 4, cerceve.center.dy - 9, m.haritaMekkeCevresi.length * 6.6 + 22, 18);
+                  final yerlesim = etiketYerlesimi(
+                    gorunen,
+                    boyut,
+                    konum: (y) => ekran(Offset(y.x, y.y)),
+                    dolu: [?cerceveEtiketi],
+                  );
+                  return Stack(
+                    children: [
+                      Positioned.fill(
+                        child: CustomPaint(
+                          painter: ParsomenCizici(
+                            bolge: b,
+                            yerler: konumlar,
+                            bos: [
+                              for (final e in yerlesim) ...[e.etiket, Rect.fromCircle(center: e.nokta, radius: 10)],
+                              ?cerceve,
+                              ?cerceveEtiketi,
+                            ],
+                            kuzey: m.pusulaKuzey,
+                            kizildeniz: m.haritaKizildeniz,
+                          ),
+                        ),
                       ),
-                      Positioned.fromRect(
-                        rect: e.etiket,
-                        child: _Etiket(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
-                      ),
+                      Positioned.fill(child: CustomPaint(painter: _CizgiCizici(yerlesim))),
+                      if (cerceve != null) ...[
+                        Positioned.fromRect(
+                          rect: cerceve,
+                          child: GestureDetector(
+                            onTap: () => context.push('/harita/mekke'),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(color: const Color(0xAA4A2F1B), width: 1.2),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned.fromRect(
+                          rect: cerceveEtiketi!,
+                          child: _CerceveEtiketi(
+                            metin: m.haritaMekkeCevresi,
+                            onTap: () => context.push('/harita/mekke'),
+                          ),
+                        ),
+                      ],
+                      for (final e in yerlesim) ...[
+                        Positioned(
+                          left: e.nokta.dx - 8,
+                          top: e.nokta.dy - 8,
+                          child: _Nokta(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                        ),
+                        Positioned.fromRect(
+                          rect: e.etiket,
+                          child: _Etiket(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                        ),
+                      ],
                     ],
-                  ],
-                );
-              }),
+                  );
+                }),
+              ),
             ),
-          ),
-        ),
+          );
+        },
       ),
     );
   }
@@ -110,11 +173,20 @@ class EtiketYeri {
 
 /// Etiketleri birbirine ve noktalara binmeyecek biçimde yerleştirir: önce
 /// noktanın altı, sonra üstü, sonra giderek uzaklaşan basamaklar.
-List<EtiketYeri> etiketYerlesimi(List<Yer> yerler, Size alan) {
+/// [konum] yerin ekrandaki noktası (verilmezse x, y doğrudan [alan]'a
+/// oranlanır); [dolu] etiketlerin kaçınacağı başka alanlar.
+List<EtiketYeri> etiketYerlesimi(
+  List<Yer> yerler,
+  Size alan, {
+  Offset Function(Yer)? konum,
+  List<Rect> dolu = const [],
+}) {
   const yukseklik = 16.0;
   const basamaklar = [10.0, -26.0, 28.0, -44.0, 46.0, -62.0, 64.0, -80.0, 82.0];
-  final noktalar = {for (final y in yerler) y.id: Offset(y.x * alan.width, y.y * alan.height)};
-  final dolu = [for (final n in noktalar.values) Rect.fromCircle(center: n, radius: 9)];
+  final noktalar = {
+    for (final y in yerler) y.id: konum?.call(y) ?? Offset(y.x * alan.width, y.y * alan.height),
+  };
+  final kapali = [...dolu, for (final n in noktalar.values) Rect.fromCircle(center: n, radius: 9)];
   final sirali = [...yerler]..sort((a, b) => a.y != b.y ? a.y.compareTo(b.y) : a.x.compareTo(b.x));
   final sonuc = <EtiketYeri>[];
   for (final y in sirali) {
@@ -130,12 +202,12 @@ List<EtiketYeri> etiketYerlesimi(List<Yer> yerler, Size alan) {
     var secilen = aday(basamaklar.first);
     for (final dy in basamaklar) {
       final r = aday(dy);
-      if (!dolu.any((d) => d.overlaps(r))) {
+      if (!kapali.any((d) => d.overlaps(r))) {
         secilen = r;
         break;
       }
     }
-    dolu.add(secilen);
+    kapali.add(secilen);
     sonuc.add(EtiketYeri(y, n, secilen));
   }
   return sonuc;
@@ -164,6 +236,14 @@ class _Nokta extends StatelessWidget {
       );
 }
 
+const _etiketYazisi = TextStyle(
+  color: _murekkep,
+  fontSize: 12,
+  height: 1.2,
+  fontWeight: FontWeight.w600,
+  fontStyle: FontStyle.italic,
+);
+
 class _Etiket extends StatelessWidget {
   const _Etiket({required this.yer, required this.onTap});
 
@@ -184,13 +264,35 @@ class _Etiket extends StatelessWidget {
             maxLines: 1,
             overflow: TextOverflow.visible,
             softWrap: false,
-            style: const TextStyle(
-              color: _murekkep,
-              fontSize: 12,
-              height: 1.2,
-              fontWeight: FontWeight.w600,
-              fontStyle: FontStyle.italic,
-            ),
+            style: _etiketYazisi,
+          ),
+        ),
+      );
+}
+
+class _CerceveEtiketi extends StatelessWidget {
+  const _CerceveEtiketi({required this.metin, required this.onTap});
+
+  final String metin;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Semantics(
+        button: true,
+        label: metin,
+        excludeSemantics: true,
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: onTap,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.zoom_in, size: 16, color: _murekkep),
+              const SizedBox(width: 2),
+              Flexible(
+                child: Text(metin, maxLines: 1, softWrap: false, overflow: TextOverflow.visible, style: _etiketYazisi),
+              ),
+            ],
           ),
         ),
       );
@@ -215,44 +317,239 @@ class _CizgiCizici extends CustomPainter {
   bool shouldRepaint(_CizgiCizici eski) => eski.yerlesim != yerlesim;
 }
 
-/// Geçici parşömen zemini: sıcak kâğıt rengi, kenarlarda kararma, hafif leke.
-/// Kıyı çizgisi ya da gerçek coğrafya çizilmez (kaynak gerektirir).
+/// Parşömen zemini ve mürekkep çizimi: kâğıt, deniz (kıyıya koşut dalga
+/// çizgileriyle), kıyı, dağ süsleri, kervan yolları, pusula ve kenar
+/// çerçevesi. Hepsi [bolge]'ye göre ölçeklenir; [bos] alanlara (nokta,
+/// etiket) dağ süsü konmaz.
 class ParsomenCizici extends CustomPainter {
-  const ParsomenCizici();
+  const ParsomenCizici({
+    this.bolge = tumHarita,
+    this.yerler = const {},
+    this.bos = const [],
+    this.kuzey = 'K',
+    this.kizildeniz = '',
+  });
+
+  final HaritaBolgesi bolge;
+
+  /// Yer kimliği → harita koordinatı (0–1); kervan yolları için.
+  final Map<String, Offset> yerler;
+  final List<Rect> bos;
+  final String kuzey;
+  final String kizildeniz;
+
+  static const _kagit = Color(0xFFE6D3A8);
+  static const _deniz = Color(0xFFC9C6A6);
 
   @override
   void paint(Canvas canvas, Size size) {
     final alan = Offset.zero & size;
-    canvas.drawRect(alan, Paint()..color = const Color(0xFFE6D3A8));
+    final b = bolge.alan;
+    Offset ekran(Offset p) => Offset(
+          (p.dx - b.left) / b.width * size.width,
+          (p.dy - b.top) / b.height * size.height,
+        );
+    Offset nokta(Nokta n) => ekran(izdusum(n.$1, n.$2));
+    Path cizgi(List<Nokta> l) {
+      final p = Path()..moveTo(nokta(l.first).dx, nokta(l.first).dy);
+      for (final n in l.skip(1)) {
+        final e = nokta(n);
+        p.lineTo(e.dx, e.dy);
+      }
+      return p;
+    }
+
+    // Ölçek: bütün haritada genişliğe göre; büyütülmüş bölgede çizgiler
+    // kalınlaşmasın diye aynı kalır.
+    final birim = size.width * bolge.alan.width;
+    canvas.save();
+    canvas.clipRect(alan);
+    canvas.drawRect(alan, Paint()..color = _kagit);
+
+    // Deniz: Kızıldeniz (iki kıyı arası) ve Akdeniz (sol üst köşe).
+    final kizil = cizgi(arabistanKiyisi);
+    for (final n in afrikaKiyisi.reversed) {
+      final e = nokta(n);
+      kizil.lineTo(e.dx, e.dy);
+    }
+    kizil.close();
+    final ak = cizgi(akdenizKiyisi);
+    for (final n in const <Nokta>[(36.0, 30.0), (30.0, 30.0)]) {
+      final e = nokta(n);
+      ak.lineTo(e.dx, e.dy);
+    }
+    ak.close();
+    final deniz = Path.combine(PathOperation.union, kizil, ak);
+    canvas.drawPath(deniz, Paint()..color = _deniz);
+
+    // Kıyıya koşut dalga çizgileri (eski haritalardaki gibi), denize doğru.
+    canvas.save();
+    canvas.clipPath(deniz);
+    final dalga = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 0.8;
+    final arabistan = cizgi(arabistanKiyisi);
+    final afrika = cizgi(afrikaKiyisi);
+    final akdenizKiyi = cizgi(akdenizKiyisi);
+    for (var i = 1; i <= 3; i++) {
+      final d = i * 0.012 * size.width;
+      dalga.color = _murekkep.withValues(alpha: 0.32 - i * 0.07);
+      canvas.drawPath(arabistan.shift(Offset(-d, 0)), dalga);
+      canvas.drawPath(akdenizKiyi.shift(Offset(-d, 0)), dalga);
+      canvas.drawPath(afrika.shift(Offset(d, 0)), dalga);
+    }
+    canvas.restore();
+
+    // Kıyı çizgisi.
+    final kiyi = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.6
+      ..strokeJoin = StrokeJoin.round
+      ..color = _murekkep.withValues(alpha: 0.85);
+    canvas.drawPath(arabistan, kiyi);
+    canvas.drawPath(afrika, kiyi);
+    canvas.drawPath(akdenizKiyi, kiyi);
+
+    // Deniz adı (yalnız bütün haritada; Akdeniz köşede çok dar, adı yazılmaz).
+    if (bolge.id == tumHarita.id) {
+      final a = nokta((25.8, 35.6)), z = nokta((17.8, 40.6));
+      _yazi(canvas, kizildeniz, Offset.lerp(nokta((22.6, 37.6)), nokta((22.3, 37.9)), 0.5)!,
+          math.atan2(z.dy - a.dy, z.dx - a.dx), size.width * 0.032);
+    }
+
+    // Dağ süsleri: noktaların ve etiketlerin üstüne gelmez.
+    final dagBoyu = math.min(birim * 0.03, 16.0);
+    for (final d in daglar) {
+      final p = nokta(d);
+      final r = Rect.fromCenter(center: p, width: dagBoyu * 3, height: dagBoyu * 1.6);
+      if (!alan.deflate(4).contains(p) || bos.any((x) => x.overlaps(r))) continue;
+      _dag(canvas, p, dagBoyu);
+    }
+
+    // Kervan yolları: kesik çizgi.
+    final yol = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.3
+      ..color = const Color(0xFF7A3B1E).withValues(alpha: 0.55);
+    for (final y in kervanYollari) {
+      final noktalar = [for (final id in y) if (yerler[id] != null) ekran(yerler[id]!)];
+      for (var i = 0; i + 1 < noktalar.length; i++) {
+        _kesik(canvas, noktalar[i], noktalar[i + 1], yol, size.width * 0.012);
+      }
+    }
+
+    // Kâğıt dokusu: kenarlarda kararma, sabit tohumlu hafif lekeler.
     canvas.drawRect(
       alan,
       Paint()
-        ..shader = RadialGradient(
+        ..shader = const RadialGradient(
           radius: 0.85,
-          colors: const [Color(0x00000000), Color(0x00000000), Color(0x664A2F1B)],
-          stops: const [0, 0.6, 1],
+          colors: [Color(0x00000000), Color(0x00000000), Color(0x664A2F1B)],
+          stops: [0, 0.6, 1],
         ).createShader(alan),
     );
-    // Sabit tohumlu hafif lekeler: her açılışta aynı görünür.
     final rnd = math.Random(605);
     final leke = Paint()..maskFilter = const MaskFilter.blur(BlurStyle.normal, 18);
     for (var i = 0; i < 14; i++) {
-      leke.color = Color.fromARGB(18 + rnd.nextInt(18), 120, 80, 40);
+      leke.color = Color.fromARGB(14 + rnd.nextInt(14), 120, 80, 40);
       canvas.drawCircle(
         Offset(rnd.nextDouble() * size.width, rnd.nextDouble() * size.height),
         size.shortestSide * (0.04 + rnd.nextDouble() * 0.1),
         leke,
       );
     }
-    canvas.drawRect(
-      alan.deflate(10),
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.5
-        ..color = const Color(0x994A2F1B),
-    );
+
+    // Pusula: sağ üst köşe.
+    _pusula(canvas, Offset(size.width * 0.86, size.width * 0.14), size.width * 0.07);
+
+    // Çift kenar çerçevesi.
+    final kenar = Paint()
+      ..style = PaintingStyle.stroke
+      ..color = const Color(0x994A2F1B);
+    canvas.drawRect(alan.deflate(10), kenar..strokeWidth = 1.5);
+    canvas.drawRect(alan.deflate(14), kenar..strokeWidth = 0.6);
+    canvas.restore();
+  }
+
+  void _yazi(Canvas canvas, String metin, Offset merkez, double aci, double boy) {
+    if (metin.isEmpty) return;
+    final tp = TextPainter(
+      text: TextSpan(
+        text: metin,
+        style: TextStyle(
+          color: _murekkep.withValues(alpha: 0.6),
+          fontSize: boy,
+          fontStyle: FontStyle.italic,
+          letterSpacing: boy * 0.3,
+        ),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    canvas.save();
+    canvas.translate(merkez.dx, merkez.dy);
+    canvas.rotate(aci);
+    tp.paint(canvas, Offset(-tp.width / 2, -tp.height / 2));
+    canvas.restore();
+  }
+
+  /// Küçük bir dağ: iki tepe, gölgeli yamaç.
+  void _dag(Canvas canvas, Offset p, double s) {
+    final kalem = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.1
+      ..strokeJoin = StrokeJoin.round
+      ..color = _murekkep.withValues(alpha: 0.6);
+    final golge = Paint()..color = _murekkep.withValues(alpha: 0.14);
+    void tepe(Offset t, double g) {
+      final sol = t + Offset(-g, g * 0.9), sag = t + Offset(g, g * 0.9);
+      canvas.drawPath(Path()..moveTo(t.dx, t.dy)..lineTo(sag.dx, sag.dy)..lineTo(t.dx, sag.dy)..close(), golge);
+      canvas.drawPath(Path()..moveTo(sol.dx, sol.dy)..lineTo(t.dx, t.dy)..lineTo(sag.dx, sag.dy), kalem);
+    }
+
+    tepe(p + Offset(-s * 0.45, -s * 0.35), s * 0.75);
+    tepe(p + Offset(s * 0.5, -s * 0.1), s * 0.55);
+  }
+
+  void _kesik(Canvas canvas, Offset a, Offset b, Paint kalem, double adim) {
+    final uzunluk = (b - a).distance;
+    if (uzunluk == 0) return;
+    final yon = (b - a) / uzunluk;
+    for (var t = 0.0; t < uzunluk; t += adim * 1.8) {
+      canvas.drawLine(a + yon * t, a + yon * math.min(t + adim, uzunluk), kalem);
+    }
+  }
+
+  void _pusula(Canvas canvas, Offset m, double r) {
+    final ince = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 0.9
+      ..color = _murekkep.withValues(alpha: 0.7);
+    final koyu = Paint()..color = _murekkep.withValues(alpha: 0.75);
+    final acik = Paint()..color = const Color(0xFFF0E2BF);
+    canvas.drawCircle(m, r * 0.78, ince);
+    canvas.drawCircle(m, r * 0.7, ince);
+    for (var i = 0; i < 8; i++) {
+      final aci = -math.pi / 2 + i * math.pi / 4;
+      final uzun = i.isEven ? r : r * 0.55;
+      final ucu = m + Offset(math.cos(aci), math.sin(aci)) * uzun;
+      final yan = Offset(math.cos(aci + math.pi / 2), math.sin(aci + math.pi / 2)) * (r * 0.13);
+      // Her kol iki yarım: biri koyu, biri açık (eski pusula güllerindeki gibi).
+      canvas.drawPath(Path()..moveTo(m.dx, m.dy)..lineTo(ucu.dx, ucu.dy)..lineTo(m.dx + yan.dx, m.dy + yan.dy)..close(), koyu);
+      final ac = Path()..moveTo(m.dx, m.dy)..lineTo(ucu.dx, ucu.dy)..lineTo(m.dx - yan.dx, m.dy - yan.dy)..close();
+      canvas.drawPath(ac, acik);
+      canvas.drawPath(ac, ince);
+    }
+    final tp = TextPainter(
+      text: TextSpan(
+        text: kuzey,
+        style: TextStyle(color: _murekkep, fontSize: r * 0.42, fontWeight: FontWeight.w700),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    tp.paint(canvas, m + Offset(-tp.width / 2, -r - tp.height - 2));
   }
 
   @override
-  bool shouldRepaint(ParsomenCizici eski) => false;
+  bool shouldRepaint(ParsomenCizici eski) =>
+      eski.bolge != bolge || eski.yerler != yerler || eski.bos != bos || eski.kuzey != kuzey;
 }

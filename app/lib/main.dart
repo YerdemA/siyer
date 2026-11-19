@@ -23,6 +23,10 @@ final _yonlendirici = GoRouter(
       builder: (_, durum) => SahisEkrani(sahisId: durum.pathParameters['id']!),
     ),
     GoRoute(path: '/harita', builder: (_, _) => const HaritaEkrani()),
+    GoRoute(
+      path: '/harita/:bolge',
+      builder: (_, durum) => HaritaEkrani(bolge: durum.pathParameters['bolge']!),
+    ),
     GoRoute(path: '/zaman', builder: (_, _) => const ZamanCizelgesiEkrani()),
     GoRoute(
       path: '/bolum/:id',

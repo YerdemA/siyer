@@ -115,6 +115,18 @@ void main() {
     await tester.pumpWidget(_sar(const HaritaEkrani()));
     await tester.pumpAndSettle();
     expect(find.text('Mekke'), findsOneWidget);
+    // Mekke çevresindeki yakın yerler bütün haritada gizlenir, çerçeve görünür.
+    expect(find.text('Tâif'), findsNothing);
+    expect(find.text('Mekke çevresi'), findsOneWidget);
+    await tester.tap(find.text('Mekke'));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Konum yaklaşıktır'), findsOneWidget);
+  });
+
+  testWidgets('Mekke çevresi haritası yakın yerleri gösterir', (tester) async {
+    await tester.pumpWidget(_sar(const HaritaEkrani(bolge: 'mekke')));
+    await tester.pumpAndSettle();
+    expect(find.text('Mekke'), findsOneWidget);
     expect(find.text('Tâif'), findsOneWidget);
     await tester.tap(find.text('Tâif'));
     await tester.pumpAndSettle();

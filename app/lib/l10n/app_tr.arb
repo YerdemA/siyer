@@ -49,5 +49,8 @@
   "@yilYaklasik": { "placeholders": { "yil": { "type": "int" } } },
   "bolumeGit": "Bölüme git",
   "harita": "Harita",
-  "konumYaklasik": "Konum yaklaşıktır; harita ölçekli değildir."
+  "konumYaklasik": "Konum yaklaşıktır; harita ölçekli değildir.",
+  "haritaMekkeCevresi": "Mekke çevresi",
+  "haritaKizildeniz": "Kızıldeniz",
+  "pusulaKuzey": "K"
 }

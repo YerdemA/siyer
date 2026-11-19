@@ -154,4 +154,13 @@ class MetinlerTr extends Metinler {
 
   @override
   String get konumYaklasik => 'Konum yaklaşıktır; harita ölçekli değildir.';
+
+  @override
+  String get haritaMekkeCevresi => 'Mekke çevresi';
+
+  @override
+  String get haritaKizildeniz => 'Kızıldeniz';
+
+  @override
+  String get pusulaKuzey => 'K';
 }

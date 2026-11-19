@@ -354,6 +354,24 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Konum yaklaşıktır; harita ölçekli değildir.'**
   String get konumYaklasik;
+
+  /// No description provided for @haritaMekkeCevresi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Mekke çevresi'**
+  String get haritaMekkeCevresi;
+
+  /// No description provided for @haritaKizildeniz.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kızıldeniz'**
+  String get haritaKizildeniz;
+
+  /// No description provided for @pusulaKuzey.
+  ///
+  /// In tr, this message translates to:
+  /// **'K'**
+  String get pusulaKuzey;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

@@ -156,4 +156,13 @@ class MetinlerEn extends Metinler {
   @override
   String get konumYaklasik =>
       'Locations are approximate; the map is not to scale.';
+
+  @override
+  String get haritaMekkeCevresi => 'Around Mecca';
+
+  @override
+  String get haritaKizildeniz => 'Red Sea';
+
+  @override
+  String get pusulaKuzey => 'N';
 }
