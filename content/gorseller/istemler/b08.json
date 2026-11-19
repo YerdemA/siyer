@@ -98,7 +98,7 @@
     },
     {
       "id": "b08-rahip",
-      "tur": 1,
+      "tur": 2,
       "dosya": "b08-rahip.webp",
       "katman": "rahip",
       "isleme": "sigdir",
@@ -120,7 +120,7 @@
       ],
       "yerlesim": "Both stand side by side on one horizontal foot line in the lower part of the image.",
       "yasak": "the Prophet, any glowing figure, halo, crosses, any other person, tree, building, ground.",
-      "not": "İbn Hişâm (s. 120), BUSRÂ (s. 470): rahip Meysere'ye ağacın altındakini sordu. Görünüşler kaynakta yok."
+      "not": "İbn Hişâm (s. 120), BUSRÂ (s. 470): rahip Meysere'ye ağacın altındakini sordu. Görünüşler kaynakta yok. 2. tur (2026-11-19): rahip Bahîrâ'ya benzediği için kart değişti (kukuletasız, açık gri cüppe)."
     },
     {
       "id": "b08-amcalar",
@@ -382,13 +382,13 @@
       "arac": "ChatGPT (Go, web)",
       "model": "ChatGPT görsel üretimi (sürüm arayüzde belirtilmiyor)",
       "tarih": "2026-11-19",
-      "kaynak_dosya": "b08-rahip.png",
+      "kaynak_dosya": "b08-rahip-tur1.png",
       "boyut": "1536x1024",
-      "secilen": true,
+      "secilen": false,
       "dosya": "b08-rahip.webp",
-      "durum": "secildi",
+      "durum": "degisti",
       "tur": 1,
-      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-19)."
+      "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-19). 2026-11-19: Bahîrâ'ya benzediği için kart değişti, yerine 2. tur."
     },
     {
       "istem": "b08-amcalar",
@@ -480,6 +480,19 @@
       "durum": "secildi",
       "tur": 1,
       "not": "Kartla ve bileşim sorularıyla denetlendi (2026-11-19). Ebû Tâlib'in cüppesi kartın ve b08-amcalar'ın zeytin-kahvesine göre yerel olarak renk düzeltildi (ham: gorsel-ham/b08/b08-ali-orijinal.png)."
+    },
+    {
+      "istem": "b08-rahip",
+      "arac": "OpenAI API (tools/gorsel_uret.py)",
+      "model": "gpt-image-2.6-sunburst, high",
+      "tarih": "2026-11-19",
+      "kaynak_dosya": "b08-rahip.png",
+      "boyut": "1536x1024",
+      "secilen": true,
+      "dosya": "b08-rahip.webp",
+      "durum": "secildi",
+      "tur": 2,
+      "not": "Yeni nestura kartıyla (kukuletasız, açık gri cüppe, asa). Kartla denetlendi, red yok."
     }
   ]
 }
