@@ -54,7 +54,11 @@ class HaritaGecisi extends StatefulWidget {
     this.onceki,
     required this.bitti,
     this.efekt,
+    this.azHareket = false,
   });
+
+  /// Hareketi azalt: kamera gezinmez, doğrudan hedef gösterilir; kısa sürer.
+  final bool azHareket;
 
   /// Açılışta `parsomen` sesini çalmak için.
   final void Function(String ad)? efekt;
@@ -79,7 +83,7 @@ bool haritaGecisiGerekir(Yer? onceki, Yer yeni) {
 class _HaritaGecisiState extends State<HaritaGecisi> with SingleTickerProviderStateMixin {
   late final _ac = AnimationController(
     vsync: this,
-    duration: Duration(milliseconds: widget.onceki == null ? 3600 : 4800),
+    duration: Duration(milliseconds: widget.azHareket ? 1500 : (widget.onceki == null ? 3600 : 4800)),
   )
     ..addStatusListener((d) {
       if (d == AnimationStatus.completed) widget.bitti();
@@ -106,6 +110,7 @@ class _HaritaGecisiState extends State<HaritaGecisi> with SingleTickerProviderSt
   /// Zamana göre kamera: (önceki yer →) bütün harita → hedef.
   HaritaKamerasi _kamera(double t) {
     final hedef = HaritaKamerasi.yer(widget.hedef);
+    if (widget.azHareket) return hedef;
     double evre(double bas, double son) => Curves.easeInOut.transform(((t - bas) / (son - bas)).clamp(0.0, 1.0));
     if (widget.onceki == null) {
       return HaritaKamerasi.ara(HaritaKamerasi.tum, hedef, evre(0.25, 0.8));
@@ -148,8 +153,9 @@ class _HaritaGecisiState extends State<HaritaGecisi> with SingleTickerProviderSt
                       pencere: pencere,
                       yerler: widget.yerler,
                       hedef: widget.hedef,
-                      onceki: widget.onceki,
+                      onceki: widget.azHareket ? null : widget.onceki,
                       t: t,
+                      azHareket: widget.azHareket,
                     ),
                   ),
                   Positioned(
@@ -183,7 +189,10 @@ class _IsaretCizici extends CustomPainter {
     required this.hedef,
     required this.onceki,
     required this.t,
+    this.azHareket = false,
   });
+
+  final bool azHareket;
 
   final Rect pencere;
   final List<Yer> yerler;
@@ -214,18 +223,21 @@ class _IsaretCizici extends CustomPainter {
       _ad(canvas, ekran(onceki!), onceki!.ad, (1 - t / 0.3).clamp(0.0, 1.0), 18);
     }
     // Hedef: yaklaşma sonunda halka ve ad.
-    final belir = ((t - (onceki == null ? 0.6 : 0.68)) / 0.14).clamp(0.0, 1.0);
+    final belir = azHareket ? 1.0 : ((t - (onceki == null ? 0.6 : 0.68)) / 0.14).clamp(0.0, 1.0);
     if (belir > 0) {
       final p = ekran(hedef);
       final nabiz = (t * 3) % 1;
-      canvas.drawCircle(
-        p,
-        10 + 22 * nabiz,
-        Paint()
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 2
-          ..color = Palet.kina.withValues(alpha: belir * (1 - nabiz) * 0.8),
-      );
+      // Nabız gibi atan halka; hareket azaltılmışsa yok.
+      if (!azHareket) {
+        canvas.drawCircle(
+          p,
+          10 + 22 * nabiz,
+          Paint()
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 2
+            ..color = Palet.kina.withValues(alpha: belir * (1 - nabiz) * 0.8),
+        );
+      }
       _ad(canvas, p, hedef.ad, belir, 24);
     }
   }

@@ -64,5 +64,7 @@
   "siradaki": "Up next",
   "ilkGorundugu": "First appears in",
   "ilkGorunduguAyrinti": "{bolum}, scene {sahne}",
-  "devamEt": "Continue where you left off"
+  "devamEt": "Continue where you left off",
+  "hareketiAzalt": "Reduce motion",
+  "hareketiAzaltAciklama": "Shorter card and map animations"
 }

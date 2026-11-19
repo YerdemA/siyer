@@ -231,4 +231,10 @@ class MetinlerEn extends Metinler {
 
   @override
   String get devamEt => 'Continue where you left off';
+
+  @override
+  String get hareketiAzalt => 'Reduce motion';
+
+  @override
+  String get hareketiAzaltAciklama => 'Shorter card and map animations';
 }

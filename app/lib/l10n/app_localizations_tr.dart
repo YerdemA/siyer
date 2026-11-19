@@ -229,4 +229,10 @@ class MetinlerTr extends Metinler {
 
   @override
   String get devamEt => 'Kaldığın yerden devam et';
+
+  @override
+  String get hareketiAzalt => 'Hareketi azalt';
+
+  @override
+  String get hareketiAzaltAciklama => 'Kart ve harita animasyonları kısalır';
 }

@@ -68,6 +68,7 @@ class OynaticiEkrani extends ConsumerWidget {
             sesFabrikasi: ref.read(anlatimSesiFabrikasi),
             altyaziOlcegi: ref.read(tercihlerProvider).value?.altyazi.olcek ?? 1,
             efekt: ref.read(efektCalProvider),
+            azHareket: hareketAz(context, ref),
             sonrakiBolum: _sonraki(ref.read(bolumListesiProvider).value ?? const [], b),
             baslangicSahnesi: baslangicSahnesi ??
                 ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
@@ -107,7 +108,11 @@ class Oynatici extends StatefulWidget {
     this.altyaziOlcegi = 1,
     this.efekt,
     this.sonrakiBolum,
+    this.azHareket = false,
   });
+
+  /// Hareketi azalt: harita geçişi kısa ve kamerasız.
+  final bool azHareket;
 
   /// Ayarlar'daki altyazı boyutu (1 = orta).
   final double altyaziOlcegi;
@@ -356,6 +361,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                   onceki: g.onceki,
                   hedef: g.hedef,
                   efekt: widget.efekt,
+                  azHareket: widget.azHareket,
                   bitti: () => setState(() => _gecis = null),
                 ),
               if (_bitti)

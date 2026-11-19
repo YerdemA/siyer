@@ -45,6 +45,13 @@ class AyarlarEkrani extends ConsumerWidget {
             value: tercih.efektSesleri,
             onChanged: depo.efektSesleriSec,
           ),
+          SwitchListTile(
+            secondary: const Icon(Icons.motion_photos_off_outlined),
+            title: Text(m.hareketiAzalt),
+            subtitle: Text(m.hareketiAzaltAciklama),
+            value: tercih.hareketiAzalt,
+            onChanged: depo.hareketiAzaltSec,
+          ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.restart_alt),

@@ -486,6 +486,18 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Kaldığın yerden devam et'**
   String get devamEt;
+
+  /// No description provided for @hareketiAzalt.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hareketi azalt'**
+  String get hareketiAzalt;
+
+  /// No description provided for @hareketiAzaltAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kart ve harita animasyonları kısalır'**
+  String get hareketiAzaltAciklama;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

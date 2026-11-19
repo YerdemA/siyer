@@ -78,6 +78,7 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
         // Sıradaki: bitirilmemiş ilk bölüm. Ondan sonrakiler soluk (yine açılabilir).
         final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
         final efekt = ref.read(efektCalProvider);
+        final azHareket = hareketAz(context, ref);
         final sira = [
           for (var i = 0; i < liste.length; i++)
             if (liste[i].id != _secili) i,
@@ -125,6 +126,7 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                       // Başlanmış bölüm (yarım ya da bitmiş) sırası gelmese de soluk değil.
                       soluk: siradaki >= 0 && i > siradaki && ilerleme[liste[i].id] == null,
                       efekt: efekt,
+                      azHareket: azHareket,
                       secildi: () => setState(() => _secili = liste[i].id),
                     ),
                   ),
@@ -212,7 +214,11 @@ class BolumKarti extends StatefulWidget {
     this.siradaki = false,
     this.soluk = false,
     this.efekt,
+    this.azHareket = false,
   });
+
+  /// Hareketi azalt: kart büyümez, kaydırma anında, çarpı kısa sürede.
+  final bool azHareket;
 
   /// İzlenecek sıradaki bölüm: köşesinde "Sıradaki" yazar.
   final bool siradaki;
@@ -250,10 +256,11 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
     await Scrollable.ensureVisible(
       context,
       alignment: 0.4,
-      duration: const Duration(milliseconds: 380),
+      duration: widget.azHareket ? Duration.zero : const Duration(milliseconds: 380),
       curve: Curves.easeInOut,
     );
     if (!mounted) return;
+    _ac.duration = Duration(milliseconds: widget.azHareket ? 500 : 1300);
     await _ac.forward(from: 0);
     if (!mounted) return;
     // Sahne verilmez: oynatıcı kayıtlı ilerlemeden başlar.
@@ -384,7 +391,7 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
       animation: _ac,
       builder: (context, cocuk) {
         final t = _ac.value;
-        final yakin = Curves.easeOutBack.transform((t / 0.35).clamp(0.0, 1.0));
+        final yakin = widget.azHareket ? 0.0 : Curves.easeOutBack.transform((t / 0.35).clamp(0.0, 1.0));
         return Transform.rotate(
           angle: widget.aci * (1 - yakin.clamp(0.0, 1.0)),
           child: Transform.scale(

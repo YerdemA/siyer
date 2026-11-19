@@ -316,4 +316,24 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(DevamKarti), findsNothing);
   });
+
+  testWidgets('hareketi azalt: harita geçişi kısa sürer, ayar saklanır', (tester) async {
+    await tester.pumpWidget(_sar(Oynatici(
+      bolum: _bolum(),
+      kaynakca: const {},
+      yerler: const [_mekke, _busra],
+      azHareket: true,
+    )));
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(find.byType(HaritaGecisi), findsOneWidget);
+    await tester.pump(const Duration(milliseconds: 1600));
+    expect(find.byType(HaritaGecisi), findsNothing);
+
+    await tester.pumpWidget(_sar(const AyarlarEkrani()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Hareketi azalt'));
+    await tester.pumpAndSettle();
+    final p = await SharedPreferences.getInstance();
+    expect(p.getBool('tercih.hareketiAzalt'), isTrue);
+  });
 }
