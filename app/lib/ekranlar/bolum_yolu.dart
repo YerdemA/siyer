@@ -1,0 +1,533 @@
+import 'dart:math' as math;
+
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+
+import '../icerik/depo.dart';
+import '../icerik/model.dart';
+import '../ilerleme/ilerleme.dart';
+import '../l10n/app_localizations.dart';
+import '../tema.dart';
+
+/// Ana sayfa: bölümler eski bir yol haritası gibi aşağı doğru, farklı açılarla
+/// birbirini izler; aralarında noktalı yol. Bir bölüme dokununca kart
+/// büyür, üstüne kına kırmızısı bir çarpı düşer, sonra bölüm açılır.
+class BolumYolu extends ConsumerStatefulWidget {
+  const BolumYolu({super.key});
+
+  @override
+  ConsumerState<BolumYolu> createState() => _BolumYoluState();
+}
+
+/// Kartların yeri ve açısı; ekran genişliğine göre hesaplanır.
+class YolYerlesimi {
+  YolYerlesimi(this.genislik, int sayi) {
+    for (var i = 0; i < sayi; i++) {
+      final serbest = math.max(0.0, genislik - kartGenisligi - 2 * kenar);
+      // Sola ve sağa salınan, her seferinde biraz farklı bir yol.
+      final sol = kenar + serbest * _salinim[i % _salinim.length];
+      kartlar.add(Rect.fromLTWH(sol, ust + i * adim, kartGenisligi, kartYuksekligi));
+      acilar.add(0.05 * math.sin(i * 2.3 + 1.1));
+    }
+  }
+
+  final double genislik;
+  static const kenar = 18.0;
+  static const ust = 150.0;
+  static const kartYuksekligi = 136.0;
+  static const adim = kartYuksekligi + 76;
+
+  /// Kartların yatay yeri (0 sol, 1 sağ): düzenli zikzak değil, elle
+  /// çizilmiş bir yol gibi.
+  static const _salinim = [0.2, 0.9, 0.35, 1.0, 0.0, 0.75, 0.15, 0.95, 0.45, 0.05];
+  final kartlar = <Rect>[];
+  final acilar = <double>[];
+
+  double get kartGenisligi => math.min(genislik * 0.68, 330);
+  double get yukseklik => (kartlar.isEmpty ? ust : kartlar.last.bottom) + 140;
+}
+
+class _BolumYoluState extends ConsumerState<BolumYolu> {
+  /// Büyüyen kart en üstte çizilsin diye seçili bölümün kimliği.
+  String? _secili;
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    final bolumler = ref.watch(bolumListesiProvider);
+    // İlerleme okunamazsa yol yine gösterilir; yalnız ilerleme bilgisi eksik kalır.
+    final ilerleme = ref.watch(ilerlemeProvider).value ?? const {};
+    return bolumler.when(
+      loading: () => const Center(child: CircularProgressIndicator()),
+      error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
+      data: (liste) => LayoutBuilder(builder: (context, k) {
+        final y = YolYerlesimi(k.maxWidth, liste.length);
+        final sira = [
+          for (var i = 0; i < liste.length; i++)
+            if (liste[i].id != _secili) i,
+          for (var i = 0; i < liste.length; i++)
+            if (liste[i].id == _secili) i,
+        ];
+        return SingleChildScrollView(
+          child: SizedBox(
+            height: y.yukseklik,
+            child: Stack(
+              children: [
+                Positioned.fill(child: CustomPaint(painter: YolCizici(y))),
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  height: YolYerlesimi.ust,
+                  child: SafeArea(bottom: false, child: _Baslik(m: m)),
+                ),
+                if (liste.isEmpty)
+                  Positioned(
+                    left: 24,
+                    right: 24,
+                    top: YolYerlesimi.ust + 40,
+                    child: Text(m.bolumYok, textAlign: TextAlign.center),
+                  ),
+                for (final i in sira)
+                  // Anahtar dışta: sıra değişince kartın durumu (animasyon) korunsun.
+                  Positioned.fromRect(
+                    key: ValueKey(liste[i].id),
+                    rect: y.kartlar[i],
+                    child: BolumKarti(
+                      bolum: liste[i],
+                      ilerleme: ilerleme[liste[i].id],
+                      aci: y.acilar[i],
+                      secildi: () => setState(() => _secili = liste[i].id),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        );
+      }),
+    );
+  }
+}
+
+class _Baslik extends StatelessWidget {
+  const _Baslik({required this.m});
+
+  final Metinler m;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(20, 12, 8, 0),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  m.uygulamaAdi,
+                  style: const TextStyle(
+                    fontFamily: baslikYazisi,
+                    fontSize: 26,
+                    height: 1.15,
+                    fontWeight: FontWeight.w700,
+                    color: Palet.murekkep,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  m.yolAltBaslik,
+                  style: const TextStyle(
+                    fontFamily: baslikYazisi,
+                    fontSize: 15,
+                    fontStyle: FontStyle.italic,
+                    color: Palet.murekkepSoluk,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          IconButton(
+            tooltip: m.zamanCizelgesi,
+            color: Palet.murekkep,
+            icon: const Icon(Icons.timeline),
+            onPressed: () => context.push('/zaman'),
+          ),
+          IconButton(
+            tooltip: m.ayarlar,
+            color: Palet.murekkep,
+            icon: const Icon(Icons.settings_outlined),
+            onPressed: () => context.push('/ayarlar'),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Bir bölüm kartı. Dokununca: kart görünür alana kaydırılır, büyüyüp
+/// düzleşir, üstüne çarpı çizilir, bölüm açılır; dönüşte eski hâline gelir.
+class BolumKarti extends StatefulWidget {
+  const BolumKarti({
+    super.key,
+    required this.bolum,
+    required this.aci,
+    this.ilerleme,
+    this.secildi,
+  });
+
+  final Bolum bolum;
+  final BolumIlerlemesi? ilerleme;
+
+  /// Kartın eğikliği (radyan).
+  final double aci;
+  final VoidCallback? secildi;
+
+  @override
+  State<BolumKarti> createState() => _BolumKartiState();
+}
+
+class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateMixin {
+  late final _ac = AnimationController(vsync: this, duration: const Duration(milliseconds: 1300));
+
+  @override
+  void dispose() {
+    _ac.dispose();
+    super.dispose();
+  }
+
+  Future<void> _sec() async {
+    if (_ac.isAnimating) return;
+    widget.secildi?.call();
+    await Scrollable.ensureVisible(
+      context,
+      alignment: 0.4,
+      duration: const Duration(milliseconds: 380),
+      curve: Curves.easeInOut,
+    );
+    if (!mounted) return;
+    await _ac.forward(from: 0);
+    if (!mounted) return;
+    // Sahne verilmez: oynatıcı kayıtlı ilerlemeden başlar.
+    await context.push('/bolum/${widget.bolum.id}');
+    if (mounted) _ac.reset();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    final b = widget.bolum;
+    final il = widget.ilerleme;
+    final bitti = il?.bitti == true;
+    final toplam = b.sahneler.length;
+    final devam = il != null && !bitti && il.sonSahne > 1 && toplam > 0;
+    final kart = Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: _sec,
+        borderRadius: BorderRadius.circular(6),
+        child: Ink(
+          decoration: BoxDecoration(
+            color: Palet.kagitAcik,
+            borderRadius: BorderRadius.circular(6),
+            border: Border.all(color: Palet.murekkep.withValues(alpha: 0.55), width: 1.2),
+            boxShadow: [
+              BoxShadow(
+                color: Palet.murekkep.withValues(alpha: 0.18),
+                blurRadius: 10,
+                offset: const Offset(2, 5),
+              ),
+            ],
+          ),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              m.bolumNo(b.sira).toUpperCase(),
+                              style: const TextStyle(
+                                fontSize: 11,
+                                letterSpacing: 1.6,
+                                fontWeight: FontWeight.w600,
+                                color: Palet.murekkepSoluk,
+                              ),
+                            ),
+                          ),
+                          if (bitti)
+                            Padding(
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text(
+                                m.izlendi,
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w700,
+                                  color: Palet.zeytin,
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        b.baslik,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontFamily: baslikYazisi,
+                          fontSize: 19,
+                          height: 1.2,
+                          fontWeight: FontWeight.w700,
+                          color: Palet.murekkep,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      Flexible(
+                        child: Text(
+                          b.ozet,
+                          maxLines: devam ? 2 : 3,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 13, height: 1.3, color: Palet.murekkepSoluk),
+                        ),
+                      ),
+                      if (devam) ...[
+                        const SizedBox(height: 8),
+                        LinearProgressIndicator(
+                          value: (il.sonSahne - 1) / toplam,
+                          minHeight: 3,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          m.kaldiginYer(il.sonSahne, toplam),
+                          style: const TextStyle(fontSize: 11, color: Palet.murekkepSoluk),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+    return AnimatedBuilder(
+      animation: _ac,
+      builder: (context, cocuk) {
+        final t = _ac.value;
+        final yakin = Curves.easeOutBack.transform((t / 0.35).clamp(0.0, 1.0));
+        return Transform.rotate(
+          angle: widget.aci * (1 - yakin.clamp(0.0, 1.0)),
+          child: Transform.scale(
+            scale: 1 + 0.12 * yakin,
+            child: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                Positioned.fill(child: cocuk!),
+                // Numara mührü kartın sağ üst köşesine basılmış gibi.
+                Positioned(
+                  right: -14,
+                  top: -16,
+                  child: IgnorePointer(child: _NumaraMuhru(sira: b.sira, bitti: bitti)),
+                ),
+                if (t > 0)
+                  Positioned.fill(
+                    child: IgnorePointer(
+                      child: CustomPaint(
+                        painter: CarpiCizici(
+                          ((t - 0.38) / 0.2).clamp(0.0, 1.0),
+                          ((t - 0.58) / 0.2).clamp(0.0, 1.0),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        );
+      },
+      child: Semantics(
+        button: true,
+        label: '${m.bolumNo(b.sira)}: ${b.baslik}',
+        child: kart,
+      ),
+    );
+  }
+}
+
+/// Bölüm numarası mühür gibi: kına kırmızısı daire; izlenmişse zeytin ve tik.
+class _NumaraMuhru extends StatelessWidget {
+  const _NumaraMuhru({required this.sira, required this.bitti});
+
+  final int sira;
+  final bool bitti;
+
+  @override
+  Widget build(BuildContext context) {
+    final renk = bitti ? Palet.zeytin : Palet.kina;
+    return Container(
+      width: 46,
+      height: 46,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: renk,
+        border: Border.all(color: Palet.kagitAcik, width: 2),
+        boxShadow: [BoxShadow(color: renk.withValues(alpha: 0.6), spreadRadius: 1.5)],
+      ),
+      alignment: Alignment.center,
+      child: bitti
+          ? const Icon(Icons.check, color: Palet.kagitAcik, size: 24)
+          : Text(
+              '$sira',
+              style: const TextStyle(
+                fontFamily: baslikYazisi,
+                fontSize: 21,
+                fontWeight: FontWeight.w700,
+                color: Palet.kagitAcik,
+              ),
+            ),
+    );
+  }
+}
+
+/// Kartın ortasına iki fırça darbesiyle çizilen çarpı (eski haritalardaki
+/// "burası" işareti). [birinci] ve [ikinci] darbelerin ne kadarının
+/// çizildiği (0–1).
+class CarpiCizici extends CustomPainter {
+  const CarpiCizici(this.birinci, this.ikinci);
+
+  final double birinci;
+  final double ikinci;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (birinci <= 0) return;
+    final m = size.center(Offset.zero);
+    final r = math.min(size.width, size.height) * 0.36;
+    final kalem = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round
+      ..strokeWidth = math.max(6, r * 0.14)
+      ..color = Palet.kina.withValues(alpha: 0.88);
+    void darbe(Offset a, Offset b, Offset bukum, double oran) {
+      if (oran <= 0) return;
+      final p = Path()
+        ..moveTo(a.dx, a.dy)
+        ..quadraticBezierTo(bukum.dx, bukum.dy, b.dx, b.dy);
+      for (final olcu in p.computeMetrics()) {
+        canvas.drawPath(olcu.extractPath(0, olcu.length * oran), kalem);
+      }
+    }
+
+    darbe(m + Offset(-r, -r), m + Offset(r, r), m + Offset(r * 0.12, -r * 0.1), birinci);
+    darbe(m + Offset(r, -r), m + Offset(-r, r), m + Offset(r * 0.08, r * 0.12), ikinci);
+  }
+
+  @override
+  bool shouldRepaint(CarpiCizici eski) => eski.birinci != birinci || eski.ikinci != ikinci;
+}
+
+/// Sayfanın parşömen zemini ve kartları bağlayan noktalı yol.
+class YolCizici extends CustomPainter {
+  const YolCizici(this.yerlesim);
+
+  final YolYerlesimi yerlesim;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final alan = Offset.zero & size;
+    canvas.drawRect(alan, Paint()..color = Palet.kagit);
+    // Hafif lekeler (sabit tohum): eski kâğıt.
+    final rnd = math.Random(605);
+    final leke = Paint()..maskFilter = const MaskFilter.blur(BlurStyle.normal, 24);
+    for (var i = 0; i < (size.height / 120).ceil(); i++) {
+      leke.color = Color.fromARGB(10 + rnd.nextInt(14), 120, 80, 40);
+      canvas.drawCircle(
+        Offset(rnd.nextDouble() * size.width, rnd.nextDouble() * size.height),
+        size.width * (0.08 + rnd.nextDouble() * 0.16),
+        leke,
+      );
+    }
+    // Kenarlarda kararma.
+    final kenar = Paint()
+      ..shader = LinearGradient(colors: [
+        Palet.murekkep.withValues(alpha: 0.16),
+        Palet.murekkep.withValues(alpha: 0),
+        Palet.murekkep.withValues(alpha: 0),
+        Palet.murekkep.withValues(alpha: 0.16),
+      ], stops: const [0, 0.12, 0.88, 1]).createShader(alan);
+    canvas.drawRect(alan, kenar);
+
+    // Noktalı yol: başlıktan ilk karta, kartlar arasında ve sondan aşağı.
+    final nokta = Paint()..color = Palet.murekkep.withValues(alpha: 0.5);
+    void yol(Offset a, Offset b) {
+      final p = Path()
+        ..moveTo(a.dx, a.dy)
+        ..cubicTo(a.dx, a.dy + 46, b.dx, b.dy - 46, b.dx, b.dy);
+      for (final olcu in p.computeMetrics()) {
+        for (var d = 6.0; d < olcu.length - 4; d += 11) {
+          canvas.drawCircle(olcu.getTangentForOffset(d)!.position, 2.3, nokta);
+        }
+      }
+    }
+
+    final k = yerlesim.kartlar;
+    if (k.isNotEmpty) {
+      yol(Offset(size.width * 0.18, YolYerlesimi.ust - 44), k.first.topCenter + Offset(-k.first.width * 0.12, 0));
+    }
+    for (var i = 0; i + 1 < k.length; i++) {
+      yol(k[i].bottomCenter + Offset(k[i].width * 0.12 * (i.isEven ? 1 : -1), 0),
+          k[i + 1].topCenter + Offset(k[i + 1].width * 0.12 * (i.isEven ? -1 : 1), 0));
+    }
+    if (k.isNotEmpty) {
+      // Yolun sonu: aşağıda solan birkaç nokta (devamı sonraki dönemlerde).
+      final son = k.last.bottomCenter;
+      for (var i = 1; i <= 6; i++) {
+        canvas.drawCircle(
+          son + Offset(math.sin(i * 0.7) * 10, i * 12.0),
+          2.3,
+          Paint()..color = Palet.murekkep.withValues(alpha: 0.5 * (1 - i / 7)),
+        );
+      }
+    }
+
+    // Kenar süsleri: kartların boş bıraktığı yanlarda küçük kum tepeleri.
+    final kalem = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..strokeCap = StrokeCap.round
+      ..color = Palet.murekkep.withValues(alpha: 0.3);
+    final rt = math.Random(17);
+    for (var i = 0; i < k.length * 2; i++) {
+      final p = Offset(20 + rt.nextDouble() * (size.width - 40), YolYerlesimi.ust + rt.nextDouble() * (size.height - YolYerlesimi.ust - 60));
+      final r = Rect.fromCenter(center: p, width: 44, height: 22);
+      if (k.any((x) => x.inflate(14).overlaps(r))) continue;
+      canvas.drawPath(
+        Path()
+          ..moveTo(p.dx - 14, p.dy)
+          ..quadraticBezierTo(p.dx - 3, p.dy - 10, p.dx + 10, p.dy),
+        kalem,
+      );
+      canvas.drawPath(
+        Path()
+          ..moveTo(p.dx - 2, p.dy + 5)
+          ..quadraticBezierTo(p.dx + 7, p.dy - 2, p.dx + 17, p.dy + 4),
+        kalem,
+      );
+    }
+  }
+
+  @override
+  bool shouldRepaint(YolCizici eski) =>
+      eski.yerlesim.genislik != yerlesim.genislik || eski.yerlesim.kartlar.length != yerlesim.kartlar.length;
+}

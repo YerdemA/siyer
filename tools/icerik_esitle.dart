@@ -23,7 +23,7 @@ void main() {
   if (hedef.existsSync()) hedef.deleteSync(recursive: true);
 
   // Henüz görsel ya da ses yokken de klasörler bulunmalı; pubspec bunları listeler.
-  Directory('${hedef.path}/gorseller').createSync(recursive: true);
+  Directory('${hedef.path}/gorseller/sahislar').createSync(recursive: true);
   for (final dil in kaynak.listSync().whereType<Directory>()) {
     final ad = dil.uri.pathSegments.lastWhere((s) => s.isNotEmpty);
     if (ad == 'gorseller') continue;

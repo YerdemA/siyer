@@ -45,5 +45,11 @@
   "konumYaklasik": "Locations are approximate; the map is not to scale.",
   "haritaMekkeCevresi": "Around Mecca",
   "haritaKizildeniz": "Red Sea",
-  "pusulaKuzey": "N"
+  "pusulaKuzey": "N",
+  "sahisAra": "Search people",
+  "sahisKilitNotu": "{sayi} more people will appear here as you watch the episodes.",
+  "sahisAramaBos": "No one matches your search.",
+  "izlendi": "Watched",
+  "yolAltBaslik": "Before prophethood",
+  "haritaGec": "Skip"
 }

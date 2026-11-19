@@ -52,5 +52,12 @@
   "konumYaklasik": "Konum yaklaşıktır; harita ölçekli değildir.",
   "haritaMekkeCevresi": "Mekke çevresi",
   "haritaKizildeniz": "Kızıldeniz",
-  "pusulaKuzey": "K"
+  "pusulaKuzey": "K",
+  "sahisAra": "Şahıs ara",
+  "sahisKilitNotu": "Bölümleri izledikçe {sayi} şahıs daha burada açılacak.",
+  "@sahisKilitNotu": { "placeholders": { "sayi": { "type": "int" } } },
+  "sahisAramaBos": "Aramaya uyan şahıs yok.",
+  "izlendi": "İzlendi",
+  "yolAltBaslik": "Peygamberlik öncesi",
+  "haritaGec": "Geç"
 }

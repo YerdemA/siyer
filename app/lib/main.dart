@@ -3,19 +3,20 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'ekranlar/ana_sayfa.dart';
 import 'ekranlar/ayarlar.dart';
-import 'ekranlar/bolum_listesi.dart';
 import 'ekranlar/harita.dart';
 import 'ekranlar/sahislar.dart';
 import 'ekranlar/zaman_cizelgesi.dart';
 import 'l10n/app_localizations.dart';
 import 'oynatici/oynatici_ekrani.dart';
+import 'tema.dart';
 
 void main() => runApp(const ProviderScope(child: Uygulama()));
 
 final _yonlendirici = GoRouter(
   routes: [
-    GoRoute(path: '/', builder: (_, _) => const BolumListesi()),
+    GoRoute(path: '/', builder: (_, _) => const AnaSayfa()),
     GoRoute(path: '/ayarlar', builder: (_, _) => const AyarlarEkrani()),
     GoRoute(path: '/sahislar', builder: (_, _) => const SahislarEkrani()),
     GoRoute(
@@ -59,12 +60,7 @@ class Uygulama extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF8B6B4A),
-          brightness: Brightness.dark,
-        ),
-      ),
+      theme: uygulamaTemasi(),
     );
   }
 }

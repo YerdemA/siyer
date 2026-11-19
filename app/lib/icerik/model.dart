@@ -170,6 +170,7 @@ class Sahne {
     required this.gorsel,
     required this.sesAnlatim,
     this.sahislar = const [],
+    this.yer = '',
   });
 
   factory Sahne.fromJson(Map<String, dynamic> j) {
@@ -184,6 +185,7 @@ class Sahne {
           : const Gorsel(tarif: '', saat: 'gunduz', katmanlar: [], kamera: ''),
       sesAnlatim: _metin(ses, 'anlatim'),
       sahislar: _metinler(j, 'sahislar'),
+      yer: _metin(j, 'yer'),
     );
   }
 
@@ -194,6 +196,10 @@ class Sahne {
 
   /// Sahnede geçen şahısların `sahislar.json` kimlikleri.
   final List<String> sahislar;
+
+  /// Olayın geçtiği yerin `yerler.json` kimliği; boşsa belirsiz (harita
+  /// geçişinde önceki yer korunur).
+  final String yer;
 
   /// Ana görsel ve ardından gelen çekimler, oynatılma sırasıyla.
   List<Gorsel> get cekimler => [gorsel, ...gorsel.cekimler];
@@ -314,6 +320,8 @@ class Sahis {
     this.ozet = '',
     this.bolumler = const [],
     this.iddialar = const [],
+    this.portre = '',
+    this.temsil = '',
   });
 
   factory Sahis.fromJson(Map<String, dynamic> j) => Sahis(
@@ -324,6 +332,8 @@ class Sahis {
         ozet: _metin(j, 'ozet'),
         bolumler: _metinler(j, 'bolumler'),
         iddialar: _metinler(j, 'iddialar'),
+        portre: _metin(j, 'portre'),
+        temsil: _metin(j, 'temsil'),
       );
 
   final String id;
@@ -335,6 +345,14 @@ class Sahis {
   final String ozet;
   final List<String> bolumler;
   final List<String> iddialar;
+
+  /// Portre görseli (`gorseller/` altında yol); boşsa baş harf madalyonu.
+  final String portre;
+
+  /// CLAUDE.md kural 5: `nur` (Efendimiz, peygamberler, melek) ya da
+  /// `yuzsuz` (anne-babası, eşleri, çocukları, süt anneleri). Bunlara
+  /// portre konmaz.
+  final String temsil;
 }
 
 class ZamanOlayi {

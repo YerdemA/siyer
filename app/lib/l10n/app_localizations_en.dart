@@ -165,4 +165,24 @@ class MetinlerEn extends Metinler {
 
   @override
   String get pusulaKuzey => 'N';
+
+  @override
+  String get sahisAra => 'Search people';
+
+  @override
+  String sahisKilitNotu(int sayi) {
+    return '$sayi more people will appear here as you watch the episodes.';
+  }
+
+  @override
+  String get sahisAramaBos => 'No one matches your search.';
+
+  @override
+  String get izlendi => 'Watched';
+
+  @override
+  String get yolAltBaslik => 'Before prophethood';
+
+  @override
+  String get haritaGec => 'Skip';
 }

@@ -12,6 +12,7 @@ import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 import 'anlatim_sesi.dart';
 import 'gorsel_onbellek.dart';
+import 'harita_gecisi.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
 
@@ -45,12 +46,15 @@ class OynaticiEkrani extends ConsumerWidget {
     final notifier = ref.read(ilerlemeProvider.notifier);
     // Ses süreleri okunamazsa bölüm sessiz (süreler metinden) oynar.
     final sureler = ref.watch(sesSureleriProvider(bolumId));
+    // Yerler okunamazsa bölüm harita geçişi olmadan oynar.
+    final yerler = ref.watch(yerlerProvider);
     return Scaffold(
       backgroundColor: Colors.black,
-      body: switch ((bolum, kaynakca, ilerleme, sureler)) {
+      body: switch ((bolum, kaynakca, ilerleme, sureler, yerler)) {
         (
           AsyncData(value: final b),
           AsyncData(value: final k),
+          AsyncData() || AsyncError(),
           AsyncData() || AsyncError(),
           AsyncData() || AsyncError(),
         ) =>
@@ -58,6 +62,8 @@ class OynaticiEkrani extends ConsumerWidget {
             bolum: b,
             kaynakca: k,
             sesSureleri: sureler.value ?? const {},
+            // Revize açılışlarında (belirli çekim ya da durmuş) harita araya girmez.
+            yerler: duraklatilmis || baslangicCekimi > 1 ? const [] : yerler.value ?? const [],
             sesFabrikasi: ref.read(anlatimSesiFabrikasi),
             baslangicSahnesi: baslangicSahnesi ??
                 ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
@@ -67,7 +73,7 @@ class OynaticiEkrani extends ConsumerWidget {
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
-        (AsyncError(:final error), _, _, _) || (_, AsyncError(:final error), _, _) =>
+        (AsyncError(:final error), _, _, _, _) || (_, AsyncError(:final error), _, _, _) =>
           Center(child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white))),
         _ => const Center(child: CircularProgressIndicator()),
       },
@@ -87,7 +93,11 @@ class Oynatici extends StatefulWidget {
     this.bitti,
     this.sesSureleri = const {},
     this.sesFabrikasi,
+    this.yerler = const [],
   });
+
+  /// Harita geçişleri için `yerler.json`; boşsa geçiş gösterilmez.
+  final List<Yer> yerler;
 
   /// Sahne kimliğinden anlatım sesinin süresine (saniye); bkz. [sesSureleriProvider].
   final Map<String, double> sesSureleri;
@@ -125,6 +135,13 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   bool _altyazi = true;
   final _gorseller = GorselOnbellek();
 
+  /// Gösterilen harita geçişi; varken zaman ve ses durur.
+  ({Yer? onceki, Yer hedef})? _gecis;
+
+  /// Son bilinen yer (yeri boş sahneler öncekini korur) ve son sahne sırası.
+  Yer? _sonYer;
+  int _sonSahne = -1;
+
   @override
   void initState() {
     super.initState();
@@ -138,6 +155,11 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
         ? _plan.cekimBasi(i, widget.baslangicCekimi - 1)
         : _plan.sahneler[i].bas;
     _oynuyor = !widget.duraklatilmis;
+    _sonSahne = i;
+    // Bölüm açılınca: bütün harita, sonra olayın geçtiği yer.
+    final ilkYer = _sahneYeri(i, geriye: false);
+    if (ilkYer != null) _gecis = (onceki: null, hedef: ilkYer);
+    _sonYer = ilkYer;
     _ticker = createTicker(_tik)..start();
     // Uygulama arka plana geçince oynatma (ve ses) durur.
     _yasamDongusu = AppLifecycleListener(onHide: () {
@@ -160,18 +182,52 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     final dt = (gecen - _oncekiTik).inMicroseconds / 1e6;
     _oncekiTik = gecen;
     _sesiEsitle();
-    if (!_oynuyor) return;
+    if (!_oynuyor || _gecis != null) return;
     setState(() {
       _an = math.min(_an + dt, _plan.toplam);
       if (_an >= _plan.toplam) _oynuyor = false;
+      _yerDegistiMi();
     });
   }
 
-  void _git(double an) => setState(() => _an = an.clamp(0.0, _plan.toplam));
+  void _git(double an) => setState(() {
+        _an = an.clamp(0.0, _plan.toplam);
+        _yerDegistiMi(atlama: true);
+      });
 
   void _sahneyeGit(int fark) {
     final i = (_plan.sahneSirasi(_an) + fark).clamp(0, _plan.sahneler.length - 1);
-    _git(_plan.sahneler[i].bas + (i == 0 ? 0 : 0.01));
+    setState(() {
+      _an = _plan.sahneler[i].bas + (i == 0 ? 0 : 0.01);
+      _yerDegistiMi(atlama: fark != 1);
+    });
+  }
+
+  /// [sira]daki sahnenin yeri; boşsa [geriye] doğru (ya da ileri) ilk dolu yer.
+  Yer? _sahneYeri(int sira, {bool geriye = true}) {
+    if (widget.yerler.isEmpty) return null;
+    final s = _plan.sahneler;
+    for (var i = sira; i >= 0 && i < s.length; i += geriye ? -1 : 1) {
+      final id = s[i].sahne.yer;
+      if (id.isNotEmpty) return widget.yerler.where((y) => y.id == id).firstOrNull;
+    }
+    return null;
+  }
+
+  /// Sahne sırası değiştiyse yeri izler. Bir sonraki sahneye (kendiliğinden
+  /// ya da "sonraki sahne"yle) geçilip uzak bir yere varıldıysa harita
+  /// geçişi başlar; kaydırma ve geri atlamada yalnız yer güncellenir.
+  void _yerDegistiMi({bool atlama = false}) {
+    final i = _plan.sahneSirasi(_an);
+    if (i == _sonSahne) return;
+    final ileri = i == _sonSahne + 1 && !atlama;
+    _sonSahne = i;
+    final yeni = _plan.sahneler[i].sahne.yer.isEmpty ? null : _sahneYeri(i);
+    if (yeni == null) return;
+    if (ileri && _sonYer != null && haritaGecisiGerekir(_sonYer, yeni)) {
+      _gecis = (onceki: _sonYer, hedef: yeni);
+    }
+    _sonYer = yeni;
   }
 
   bool get _bitti => _an >= _plan.toplam;
@@ -183,7 +239,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     if (ses == null || _sesIstegiSuruyor) return;
     final s = _plan.sahneler[_plan.sahneSirasi(_an)];
     switch (sesKarari(
-      oynuyor: _oynuyor,
+      oynuyor: _oynuyor && _gecis == null,
       dosya: s.sahne.sesAnlatim,
       sesKonumu: s.sesKonumu(_an),
       etkinDosya: ses.etkinDosya,
@@ -270,6 +326,14 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               if (_altyazi && konum.parca != null) _Altyazi(parca: konum.parca!, an: _an),
               if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
               if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
+              if (_gecis case final g?)
+                HaritaGecisi(
+                  key: ValueKey(g),
+                  yerler: widget.yerler,
+                  onceki: g.onceki,
+                  hedef: g.hedef,
+                  bitti: () => setState(() => _gecis = null),
+                ),
               if (_bitti)
                 _BolumSonu(
                   bolum: widget.bolum,

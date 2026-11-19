@@ -68,7 +68,8 @@ class HaritaEkrani extends ConsumerWidget {
                       Positioned.fill(
                         child: CustomPaint(
                           painter: ParsomenCizici(
-                            bolge: b,
+                            pencere: b.alan,
+                            suslerKagitta: tum,
                             yerler: konumlar,
                             bos: [
                               for (final e in yerlesim) ...[e.etiket, Rect.fromCircle(center: e.nokta, radius: 10)],
@@ -76,7 +77,7 @@ class HaritaEkrani extends ConsumerWidget {
                               ?cerceveEtiketi,
                             ],
                             kuzey: m.pusulaKuzey,
-                            kizildeniz: m.haritaKizildeniz,
+                            kizildeniz: tum ? m.haritaKizildeniz : '',
                           ),
                         ),
                       ),
@@ -318,19 +319,27 @@ class _CizgiCizici extends CustomPainter {
 }
 
 /// Parşömen zemini ve mürekkep çizimi: kâğıt, deniz (kıyıya koşut dalga
-/// çizgileriyle), kıyı, dağ süsleri, kervan yolları, pusula ve kenar
-/// çerçevesi. Hepsi [bolge]'ye göre ölçeklenir; [bos] alanlara (nokta,
-/// etiket) dağ süsü konmaz.
+/// çizgileriyle), kıyı, dağ ve kum süsleri, kervan yolları, pusula ve kenar
+/// çerçevesi. [pencere] haritanın ekranda görünen bölümüdür (0–1 harita
+/// koordinatlarında; bütün harita için (0, 0, 1, 1)). [bos] alanlara (nokta,
+/// etiket) süs konmaz.
+///
+/// [suslerKagitta]: kenar kararması, lekeler, pusula ve çerçeve kâğıdın
+/// kendisine çizilir; pencere kâğıttan genişse dışı karanlık masa olur
+/// (oynatıcıdaki harita geçişinde kamera kâğıdın üstünde gezer). Yanlışsa
+/// bunlar ekrana çizilir (büyütülmüş "Mekke çevresi" haritası).
 class ParsomenCizici extends CustomPainter {
   const ParsomenCizici({
-    this.bolge = tumHarita,
+    this.pencere = const Rect.fromLTRB(0, 0, 1, 1),
+    this.suslerKagitta = true,
     this.yerler = const {},
     this.bos = const [],
     this.kuzey = 'K',
     this.kizildeniz = '',
   });
 
-  final HaritaBolgesi bolge;
+  final Rect pencere;
+  final bool suslerKagitta;
 
   /// Yer kimliği → harita koordinatı (0–1); kervan yolları için.
   final Map<String, Offset> yerler;
@@ -340,11 +349,12 @@ class ParsomenCizici extends CustomPainter {
 
   static const _kagit = Color(0xFFE6D3A8);
   static const _deniz = Color(0xFFC9C6A6);
+  static const masa = Color(0xFF1B1511);
 
   @override
   void paint(Canvas canvas, Size size) {
     final alan = Offset.zero & size;
-    final b = bolge.alan;
+    final b = pencere;
     Offset ekran(Offset p) => Offset(
           (p.dx - b.left) / b.width * size.width,
           (p.dy - b.top) / b.height * size.height,
@@ -359,11 +369,17 @@ class ParsomenCizici extends CustomPainter {
       return p;
     }
 
-    // Ölçek: bütün haritada genişliğe göre; büyütülmüş bölgede çizgiler
-    // kalınlaşmasın diye aynı kalır.
-    final birim = size.width * bolge.alan.width;
+    final kagit = Rect.fromPoints(ekran(Offset.zero), ekran(const Offset(1, 1)));
+    // Süslerin çerçevesi: kâğıt ya da ekran.
+    final cerceve = suslerKagitta ? kagit : alan;
+    // Haritanın kendi ölçeği (kâğıt genişliği); süsler buna göre büyür.
+    final birim = kagit.width;
     canvas.save();
     canvas.clipRect(alan);
+    if (suslerKagitta) {
+      canvas.drawRect(alan, Paint()..color = masa);
+      canvas.clipRect(kagit);
+    }
     canvas.drawRect(alan, Paint()..color = _kagit);
 
     // Deniz: Kızıldeniz (iki kıyı arası) ve Akdeniz (sol üst köşe).
@@ -392,7 +408,7 @@ class ParsomenCizici extends CustomPainter {
     final afrika = cizgi(afrikaKiyisi);
     final akdenizKiyi = cizgi(akdenizKiyisi);
     for (var i = 1; i <= 3; i++) {
-      final d = i * 0.012 * size.width;
+      final d = i * 0.012 * cerceve.width;
       dalga.color = _murekkep.withValues(alpha: 0.32 - i * 0.07);
       canvas.drawPath(arabistan.shift(Offset(-d, 0)), dalga);
       canvas.drawPath(akdenizKiyi.shift(Offset(-d, 0)), dalga);
@@ -410,19 +426,44 @@ class ParsomenCizici extends CustomPainter {
     canvas.drawPath(afrika, kiyi);
     canvas.drawPath(akdenizKiyi, kiyi);
 
-    // Deniz adı (yalnız bütün haritada; Akdeniz köşede çok dar, adı yazılmaz).
-    if (bolge.id == tumHarita.id) {
+    // Deniz adı (Akdeniz köşede çok dar, adı yazılmaz).
+    if (kizildeniz.isNotEmpty) {
       final a = nokta((25.8, 35.6)), z = nokta((17.8, 40.6));
-      _yazi(canvas, kizildeniz, Offset.lerp(nokta((22.6, 37.6)), nokta((22.3, 37.9)), 0.5)!,
-          math.atan2(z.dy - a.dy, z.dx - a.dx), size.width * 0.032);
+      _yazi(canvas, kizildeniz, nokta((22.45, 37.75)), math.atan2(z.dy - a.dy, z.dx - a.dx), birim * 0.032);
+    }
+
+    // Kum: kara üstünde ince serpinti ve küçük kum tepeleri.
+    final sus = cerceve.deflate(16);
+    final serpinti = Paint()..color = _murekkep.withValues(alpha: 0.16);
+    final rs = math.Random(9);
+    for (var i = 0; i < 420; i++) {
+      final p = ekran(Offset(rs.nextDouble(), rs.nextDouble()));
+      final r = 0.5 + rs.nextDouble() * 0.5;
+      if (!sus.contains(p) || deniz.contains(p)) continue;
+      canvas.drawCircle(p, r, serpinti);
+    }
+    final daglarEkranda = [for (final d in daglar) nokta(d)];
+    final tepeBoyu = math.min(birim * 0.03, 15.0);
+    final rt = math.Random(41);
+    for (var i = 0; i < 34; i++) {
+      final p = ekran(Offset(0.06 + rt.nextDouble() * 0.9, 0.08 + rt.nextDouble() * 0.88));
+      final r = Rect.fromCenter(center: p, width: tepeBoyu * 3, height: tepeBoyu * 1.8);
+      if (!sus.contains(p) ||
+          deniz.contains(p) ||
+          deniz.contains(r.centerLeft) ||
+          deniz.contains(r.centerRight) ||
+          bos.any((x) => x.overlaps(r)) ||
+          daglarEkranda.any((d) => (d - p).distance < tepeBoyu * 3)) {
+        continue;
+      }
+      _kumTepesi(canvas, p, tepeBoyu);
     }
 
     // Dağ süsleri: noktaların ve etiketlerin üstüne gelmez.
     final dagBoyu = math.min(birim * 0.03, 16.0);
-    for (final d in daglar) {
-      final p = nokta(d);
+    for (final p in daglarEkranda) {
       final r = Rect.fromCenter(center: p, width: dagBoyu * 3, height: dagBoyu * 1.6);
-      if (!alan.deflate(4).contains(p) || bos.any((x) => x.overlaps(r))) continue;
+      if (!sus.contains(p) || bos.any((x) => x.overlaps(r))) continue;
       _dag(canvas, p, dagBoyu);
     }
 
@@ -434,41 +475,68 @@ class ParsomenCizici extends CustomPainter {
     for (final y in kervanYollari) {
       final noktalar = [for (final id in y) if (yerler[id] != null) ekran(yerler[id]!)];
       for (var i = 0; i + 1 < noktalar.length; i++) {
-        _kesik(canvas, noktalar[i], noktalar[i + 1], yol, size.width * 0.012);
+        _kesik(canvas, noktalar[i], noktalar[i + 1], yol, math.min(cerceve.width * 0.012, 10));
       }
     }
 
     // Kâğıt dokusu: kenarlarda kararma, sabit tohumlu hafif lekeler.
     canvas.drawRect(
-      alan,
+      cerceve,
       Paint()
         ..shader = const RadialGradient(
           radius: 0.85,
           colors: [Color(0x00000000), Color(0x00000000), Color(0x664A2F1B)],
           stops: [0, 0.6, 1],
-        ).createShader(alan),
+        ).createShader(cerceve),
     );
     final rnd = math.Random(605);
     final leke = Paint()..maskFilter = const MaskFilter.blur(BlurStyle.normal, 18);
     for (var i = 0; i < 14; i++) {
       leke.color = Color.fromARGB(14 + rnd.nextInt(14), 120, 80, 40);
       canvas.drawCircle(
-        Offset(rnd.nextDouble() * size.width, rnd.nextDouble() * size.height),
-        size.shortestSide * (0.04 + rnd.nextDouble() * 0.1),
+        cerceve.topLeft + Offset(rnd.nextDouble() * cerceve.width, rnd.nextDouble() * cerceve.height),
+        cerceve.shortestSide * (0.04 + rnd.nextDouble() * 0.1),
         leke,
       );
     }
 
     // Pusula: sağ üst köşe.
-    _pusula(canvas, Offset(size.width * 0.86, size.width * 0.14), size.width * 0.07);
+    final kisa = math.min(cerceve.width, cerceve.height * 1.2);
+    _pusula(canvas, cerceve.topLeft + Offset(cerceve.width - kisa * 0.14, kisa * 0.14), kisa * 0.07);
 
     // Çift kenar çerçevesi.
     final kenar = Paint()
       ..style = PaintingStyle.stroke
       ..color = const Color(0x994A2F1B);
-    canvas.drawRect(alan.deflate(10), kenar..strokeWidth = 1.5);
-    canvas.drawRect(alan.deflate(14), kenar..strokeWidth = 0.6);
+    canvas.drawRect(cerceve.deflate(10), kenar..strokeWidth = 1.5);
+    canvas.drawRect(cerceve.deflate(14), kenar..strokeWidth = 0.6);
     canvas.restore();
+  }
+
+  /// Küçük bir kum tepesi: üst üste iki yay, altında birkaç kum tanesi.
+  void _kumTepesi(Canvas canvas, Offset p, double s) {
+    final kalem = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1
+      ..strokeCap = StrokeCap.round
+      ..color = _murekkep.withValues(alpha: 0.42);
+    canvas.drawPath(
+      Path()
+        ..moveTo(p.dx - s, p.dy)
+        ..quadraticBezierTo(p.dx - s * 0.25, p.dy - s * 0.75, p.dx + s * 0.7, p.dy - s * 0.05),
+      kalem,
+    );
+    kalem.color = _murekkep.withValues(alpha: 0.3);
+    canvas.drawPath(
+      Path()
+        ..moveTo(p.dx - s * 0.1, p.dy + s * 0.35)
+        ..quadraticBezierTo(p.dx + s * 0.5, p.dy - s * 0.15, p.dx + s * 1.2, p.dy + s * 0.3),
+      kalem,
+    );
+    final tane = Paint()..color = _murekkep.withValues(alpha: 0.3);
+    for (final d in const [Offset(-0.5, 0.35), Offset(0.05, 0.6), Offset(0.6, 0.62)]) {
+      canvas.drawCircle(p + d * s, 0.8, tane);
+    }
   }
 
   void _yazi(Canvas canvas, String metin, Offset merkez, double aci, double boy) {
@@ -551,5 +619,5 @@ class ParsomenCizici extends CustomPainter {
 
   @override
   bool shouldRepaint(ParsomenCizici eski) =>
-      eski.bolge != bolge || eski.yerler != yerler || eski.bos != bos || eski.kuzey != kuzey;
+      eski.pencere != pencere || eski.yerler != yerler || eski.bos != bos || eski.kuzey != kuzey;
 }

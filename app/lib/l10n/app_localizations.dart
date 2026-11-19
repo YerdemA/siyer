@@ -372,6 +372,42 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'K'**
   String get pusulaKuzey;
+
+  /// No description provided for @sahisAra.
+  ///
+  /// In tr, this message translates to:
+  /// **'Şahıs ara'**
+  String get sahisAra;
+
+  /// No description provided for @sahisKilitNotu.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölümleri izledikçe {sayi} şahıs daha burada açılacak.'**
+  String sahisKilitNotu(int sayi);
+
+  /// No description provided for @sahisAramaBos.
+  ///
+  /// In tr, this message translates to:
+  /// **'Aramaya uyan şahıs yok.'**
+  String get sahisAramaBos;
+
+  /// No description provided for @izlendi.
+  ///
+  /// In tr, this message translates to:
+  /// **'İzlendi'**
+  String get izlendi;
+
+  /// No description provided for @yolAltBaslik.
+  ///
+  /// In tr, this message translates to:
+  /// **'Peygamberlik öncesi'**
+  String get yolAltBaslik;
+
+  /// No description provided for @haritaGec.
+  ///
+  /// In tr, this message translates to:
+  /// **'Geç'**
+  String get haritaGec;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

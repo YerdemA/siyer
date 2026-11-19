@@ -163,4 +163,24 @@ class MetinlerTr extends Metinler {
 
   @override
   String get pusulaKuzey => 'K';
+
+  @override
+  String get sahisAra => 'Şahıs ara';
+
+  @override
+  String sahisKilitNotu(int sayi) {
+    return 'Bölümleri izledikçe $sayi şahıs daha burada açılacak.';
+  }
+
+  @override
+  String get sahisAramaBos => 'Aramaya uyan şahıs yok.';
+
+  @override
+  String get izlendi => 'İzlendi';
+
+  @override
+  String get yolAltBaslik => 'Peygamberlik öncesi';
+
+  @override
+  String get haritaGec => 'Geç';
 }
