@@ -296,6 +296,24 @@ DilIcerigi diliDenetle(Directory klasor, String dil, Rapor rapor) {
   for (final (i, s) in nesneler(sahislar ?? const [], sahislarYolu, rapor)) {
     final yer = '$sahislarYolu[${metin(s, 'id').isEmpty ? i : metin(s, 'id')}]';
     if (metin(s, 'ad').isEmpty) rapor.hata(yer, '`ad` boş');
+    // Madalyon (docs/ICERIK_SEMASI.md → sahislar.json; CLAUDE.md kural 5).
+    final temsil = metin(s, 'temsil');
+    final portre = metin(s, 'portre');
+    if (temsil.isNotEmpty && temsil != 'nur' && temsil != 'yuzsuz') {
+      rapor.hata(yer, '`temsil` "nur" ya da "yuzsuz" olmalı (bulunan: "$temsil")');
+    }
+    if (temsil.isNotEmpty && portre.isNotEmpty) {
+      rapor.hata(yer, '`temsil: $temsil` olan şahsa portre konmaz (kural 5)');
+    }
+    if (portre.isNotEmpty) {
+      // Görseller dilden bağımsızdır: content/<dil>/sahislar.json → content/gorseller/
+      final gorseller = File(sahislarYolu).parent.parent.path;
+      if (!portre.toLowerCase().endsWith('.webp')) {
+        rapor.hata(yer, '`portre` .webp olmalı: $portre');
+      } else if (!File('$gorseller/gorseller/$portre').existsSync()) {
+        rapor.hata(yer, 'portre görseli bulunamadı: gorseller/$portre');
+      }
+    }
     bagDenetle(s, yer);
   }
   for (final (i, y) in nesneler(yerler ?? const [], yerlerYolu, rapor)) {
