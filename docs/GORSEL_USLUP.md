@@ -41,6 +41,7 @@ Harita kodla çizilir (`app/lib/ekranlar/harita.dart`, `harita_cografya.dart`): 
 ## Renk ve ışık
 
 - Ana palet: kum, toprak, koyu lacivert gece, şafak turuncusu. Doygunluk düşük.
+- Uygulama arayüzü (ana sayfa, sözlük, harita): parşömen ve mürekkep; vurgu kına kırmızısı, seçim şafak altını, tamamlanan bölüm zeytin. Renkler `app/lib/tema.dart` → `Palet`.
 - Nur: sıcak beyaz-altın; başka hiçbir ışık kaynağı bu tonu kullanmaz.
 - Dönemlere göre ton: Câhiliye sahneleri daha soğuk ve sert; şefkat ve umut sahneleri daha sıcak.
 

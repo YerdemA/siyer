@@ -55,7 +55,9 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Bölüm oynatıcı (katman, kamera, geçiş, altyazı)
 - [x] Bölüm sonu kaynak listesi
 - [x] Ayarlar'da tam kaynakça
-- [x] Şahıslar sözlüğü
+- [x] Şahıslar sözlüğü (portre madalyonları, arama, izlenen sahnelere göre açılır)
+- [x] Ana sayfa: yol haritası düzeninde bölüm kartları, çarpı animasyonu, alt sekmeler (Bölümler, Harita, Şahıslar)
+- [x] Oynatıcıda harita geçişi (bölüm başı ve uzak yere geçiş)
 - [x] Zaman çizelgesi
 - [x] Harita ekranı
 - [x] İlerleme takibi

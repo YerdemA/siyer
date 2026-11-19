@@ -33,7 +33,7 @@ content/tr/
 | `anlatim[]` | `{ "metin": "...", "iddialar": ["i-b03-004"] }` — her anlatım parçası dayandığı iddiaları gösterir |
 | `gorsel` | `{ "tarif": "...", "saat": "gunduz", "katmanlar": [...], "kamera": "yavas-yaklasma" }` — aşağıda |
 | `ses` | `{ "anlatim": "b03-s02.mp3", "muzik": "huzun-01", "ortam": "col-ruzgari" }`  Anlatım sesi dil başınadır: `content/<dil>/ses/<dosya>` (mp3, m4a ya da ogg). Sahne başına bir dosya; süresi uygulama açılınca dosyadan okunur, JSON'a yazılmaz. Dosya yoksa süre metinden tahmin edilir; yayın denetimi bunu hata sayar. |
-| `sahislar[]`, `yer` | `sahislar.json` ve `yerler.json` kimlikleri |
+| `sahislar[]`, `yer` | `sahislar.json` ve `yerler.json` kimlikleri. `sahislar` şahıslar sözlüğünü açar (izleyici bir şahsı ancak onun geçtiği sahneyi görünce sözlükte görür). `yer` oynatıcıdaki harita geçişini belirler: bölüm başında ve uzak bir yere geçilince harita araya girer (Mekke çevresindeki yerler arası hariç); boş `yer` öncekini korur |
 
 Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listesi dolu olmalıdır. Geçiş cümleleri boş bırakılabilir.
 
@@ -79,7 +79,7 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 ## Diğer dosyalar
 
 - `kaynakca.json`: `{ id, yazar, eser, baski, katman (A–E), dil, erisim }`
-- `sahislar.json`: `{ id, ad, lakap, yakinlik, ozet, bolumler[], iddialar[] }`
+- `sahislar.json`: `{ id, ad, lakap, yakinlik, ozet, bolumler[], iddialar[], portre?, temsil? }` — `portre`: `gorseller/` altında madalyon görseli (`tools/portre_kirp.py` karakter kartından kırpar). `temsil`: `nur` (Efendimiz, diğer peygamberler, melek) ya da `yuzsuz` (anne-babası, eşleri, çocukları, süt anneleri); bunlara portre konmaz (CLAUDE.md kural 5).
 - `yerler.json`: `{ id, ad, harita: { x, y }, ozet, bolumler[], iddialar[] }` — harita gerçek harita değil, ahşap/parşömen illüstrasyonudur. `x`, `y` parşömen üzerindeki yaklaşık konumdur (0–1, sol üst köşe 0,0); yeni yer eklerken enlem-boylamdan `docs/GORSEL_USLUP.md` → Harita'daki izdüşümle hesaplanır, yoksa kıyıyla örtüşmez. Konum göreli olduğundan atıf gerektirmez, ama yerlerin birbirine göre durumu (ör. Cidde'nin Mekke'nin batısında, kıyıda olması) kaynaklarla çelişmemelidir. `ozet` içindeki tarihî bilgi `iddialar` ile bağlanır. İsteğe bağlı `konumKaynagi` (atıf biçiminde: `eser`, `konum`, `dogrulama`), konumun kaynaktaki yön/uzaklıkla uyumunu kontrol etmek içindir; konum yine yaklaşıktır. Kaynakta konumu bulunmayan yer haritaya konmaz.
 - `zaman-cizelgesi.json`: `{ id, yil (miladî, yaklaşık ise "yaklasik": true), hicriOncesi, olay, bolum, iddia }`
 

@@ -6,7 +6,15 @@ Son güncelleme: 2026-11-19.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-18).** b06'nın 12 görseli geldi, işlendi ve yerleştirildi; Erdem onayladı, commit'lendi (önizleme `İndirilenler\siyer\_onizleme-b06.jpg`; paftadaki nur kaba bir taklit, oynatıcıdakinden sert görünür).
+**Kaldığımız yer (2026-11-20).** Ana sayfa ve gezinme yenilendi; Erdem'in görmesi ve telefonda denemesi bekleniyor:
+- **Tema** (`app/lib/tema.dart`): parşömen-mürekkep paleti (kına kırmızısı, şafak altını, zeytin), açık tema; başlıklarda serif (Android'de Noto Serif; web'de Roboto görünür).
+- **Ana sayfa** (`ana_sayfa.dart`, `bolum_yolu.dart`): alt sekmeler Bölümler / Harita / Şahıslar; zaman çizelgesi ve ayarlar başlıkta. Bölüm kartları elle çizilmiş bir yol gibi sola-sağa salınır, ±3° eğik, aralarında noktalı yol; köşede numara mührü (izlenince zeytin + tik), açıklama, yarım bölümde ilerleme. Dokununca kart düzleşip büyür, kına kırmızısı çarpı iki darbeyle çizilir, bölüm açılır.
+- **Şahıslar**: yalnız izlenen sahnelerde geçenler (`ilerleme/gorulenler.dart`; hiç izlenmemişse yalnız Efendimiz), arama (şapka/Türkçe harf duyarsız), madalyon: 17 portre karakter kartlarından kırpıldı (`tools/portre_kirp.py`, `content/gorseller/sahislar/`), Efendimiz/İbrâhim/İsmâil/Cebrâil nur, anne-baba/Hatice/Halîme/Süveybe/Hâcer/Kâsım yüzsüz siluet, kartı olmayanlar baş harf. `sahislar.json`'a `portre`, `temsil` eklendi.
+- **Harita geçişi** (`oynatici/harita_gecisi.dart`): bölüm açılınca bütün harita → olayın yerine yakınlaşma ve ad; sahne uzak bir yere geçince önceki yer → bütün harita → yeni yer. Mekke çevresi içi (Mekke↔Hira vb.) geçiş yok. Zaman ve ses bu sırada durur; "Geç" ya da dokunuşla biter. Her açılışta gösterilir (devam edilen bölümde de). Revize açılışlarında (`?dur=1`, `?cekim=`) gösterilmez.
+- **Harita**: kum serpintisi ve kum tepeleri eklendi; çizici artık kamera penceresiyle çizebiliyor (geçiş için).
+- Testler 59/59, analiz temiz; web'de telefon boyutunda denendi.
+
+**Önceki (2026-11-18).** b06'nın 12 görseli geldi, işlendi ve yerleştirildi; Erdem onayladı, commit'lendi (önizleme `İndirilenler\siyer\_onizleme-b06.jpg`; paftadaki nur kaba bir taklit, oynatıcıdakinden sert görünür).
 
 - Denetim: kartlarla tek tek bakıldı, red yok. Notlar: `b06-manastir`'da ağacın dalları istendiği kadar alçak değil, bulut gölgesi ağaç gölgesiyle birleşik; Ebû Tâlib'in cüppesi b06'da zeytin tonlu (kartta kahverengi), bölüm içinde tutarlı.
 - Hamlar `gorsel-ham/b06`. Kayıt `istemler/b06.json` → `uretimler`.
