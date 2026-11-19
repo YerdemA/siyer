@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../ilerleme/ilerleme.dart';
@@ -13,11 +14,38 @@ class AyarlarEkrani extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final m = Metinler.of(context);
     final kaynakca = ref.watch(kaynakcaProvider);
+    final tercih = ref.watch(tercihlerProvider).value ?? const Tercihler();
+    final depo = ref.read(tercihlerProvider.notifier);
     final tema = Theme.of(context).textTheme;
     return Scaffold(
       appBar: AppBar(title: Text(m.ayarlar)),
       body: ListView(
         children: [
+          ListTile(
+            leading: const Icon(Icons.subtitles_outlined),
+            title: Text(m.altyaziBoyutu),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: SegmentedButton<AltyaziBoyutu>(
+                showSelectedIcon: false,
+                segments: [
+                  ButtonSegment(value: AltyaziBoyutu.kucuk, label: Text(m.boyutKucuk)),
+                  ButtonSegment(value: AltyaziBoyutu.orta, label: Text(m.boyutOrta)),
+                  ButtonSegment(value: AltyaziBoyutu.buyuk, label: Text(m.boyutBuyuk)),
+                ],
+                selected: {tercih.altyazi},
+                onSelectionChanged: (s) => depo.altyaziSec(s.first),
+              ),
+            ),
+          ),
+          SwitchListTile(
+            secondary: const Icon(Icons.music_note_outlined),
+            title: Text(m.efektSesleri),
+            subtitle: Text(m.efektSesleriAciklama),
+            value: tercih.efektSesleri,
+            onChanged: depo.efektSesleriSec,
+          ),
+          const Divider(),
           ListTile(
             leading: const Icon(Icons.restart_alt),
             title: Text(m.ilerlemeyiSifirla),

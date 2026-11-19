@@ -53,7 +53,11 @@ class HaritaGecisi extends StatefulWidget {
     required this.hedef,
     this.onceki,
     required this.bitti,
+    this.efekt,
   });
+
+  /// Açılışta `parsomen` sesini çalmak için.
+  final void Function(String ad)? efekt;
 
   final List<Yer> yerler;
   final Yer hedef;
@@ -81,6 +85,12 @@ class _HaritaGecisiState extends State<HaritaGecisi> with SingleTickerProviderSt
       if (d == AnimationStatus.completed) widget.bitti();
     })
     ..forward();
+
+  @override
+  void initState() {
+    super.initState();
+    widget.efekt?.call('parsomen');
+  }
 
   @override
   void dispose() {

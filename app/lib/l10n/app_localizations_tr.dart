@@ -183,4 +183,47 @@ class MetinlerTr extends Metinler {
 
   @override
   String get haritaGec => 'Geç';
+
+  @override
+  String bolumEtiketi(int no) {
+    return 'Bölüm $no';
+  }
+
+  @override
+  String get yolBaslik => 'Resulü Ekrem\'in Hayatı';
+
+  @override
+  String get altyaziBoyutu => 'Altyazı boyutu';
+
+  @override
+  String get boyutKucuk => 'Küçük';
+
+  @override
+  String get boyutOrta => 'Orta';
+
+  @override
+  String get boyutBuyuk => 'Büyük';
+
+  @override
+  String get efektSesleri => 'Efekt sesleri';
+
+  @override
+  String get efektSesleriAciklama =>
+      'Bölüm kartı ve harita geçişinde kısa sesler';
+
+  @override
+  String siradakiBolum(String baslik) {
+    return 'Sıradaki bölüm: $baslik';
+  }
+
+  @override
+  String get siradaki => 'Sıradaki';
+
+  @override
+  String get ilkGorundugu => 'İlk göründüğü yer';
+
+  @override
+  String ilkGorunduguAyrinti(String bolum, int sahne) {
+    return '$bolum, $sahne. sahne';
+  }
 }

@@ -67,6 +67,7 @@ flutter:
     - assets/icerik/tr/ses/
     - assets/icerik/gorseller/
     - assets/icerik/gorseller/sahislar/
+    - assets/sesler/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

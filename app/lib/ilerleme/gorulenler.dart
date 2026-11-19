@@ -28,3 +28,34 @@ final gorulenSahislarProvider = Provider<Set<String>>((ref) {
   final ilerleme = ref.watch(ilerlemeProvider).value ?? const {};
   return gorulenSahislar(bolumler, ilerleme);
 });
+
+/// İzlenen sahnelerin geçtiği yerler (haritada koyu gösterilir); aynı kural.
+Set<String> gorulenYerler(List<Bolum> bolumler, Map<String, BolumIlerlemesi> ilerleme) {
+  final sonuc = <String>{};
+  for (final b in bolumler) {
+    final il = ilerleme[b.id];
+    if (il == null) continue;
+    final kac = il.bitti ? b.sahneler.length : il.sonSahne.clamp(0, b.sahneler.length);
+    for (final s in b.sahneler.take(kac)) {
+      if (s.yer.isNotEmpty) sonuc.add(s.yer);
+    }
+  }
+  return sonuc;
+}
+
+final gorulenYerlerProvider = Provider<Set<String>>((ref) {
+  final bolumler = ref.watch(bolumListesiProvider).value ?? const <Bolum>[];
+  final ilerleme = ref.watch(ilerlemeProvider).value ?? const {};
+  return gorulenYerler(bolumler, ilerleme);
+});
+
+/// Bir şahsın ilk göründüğü bölüm ve sahne (1'den); hiç geçmiyorsa null.
+({Bolum bolum, int sahne})? ilkGorunus(List<Bolum> bolumler, String sahisId) {
+  final sirali = [...bolumler]..sort((a, b) => a.sira.compareTo(b.sira));
+  for (final b in sirali) {
+    for (var i = 0; i < b.sahneler.length; i++) {
+      if (b.sahneler[i].sahislar.contains(sahisId)) return (bolum: b, sahne: i + 1);
+    }
+  }
+  return null;
+}

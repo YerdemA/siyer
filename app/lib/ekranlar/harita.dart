@@ -6,6 +6,7 @@ import 'package:go_router/go_router.dart';
 
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../ilerleme/gorulenler.dart';
 import '../l10n/app_localizations.dart';
 import 'atif_listesi.dart';
 import 'harita_cografya.dart';
@@ -28,6 +29,8 @@ class HaritaEkrani extends ConsumerWidget {
     final b = haritaBolgeleri[bolge] ?? tumHarita;
     final tum = b.id == tumHarita.id;
     final yerler = ref.watch(yerlerProvider);
+    // İzlenen sahnelerin yerleri koyu, diğerleri soluk (yine dokunulabilir).
+    final gorulen = ref.watch(gorulenYerlerProvider);
     return Scaffold(
       appBar: AppBar(title: Text(tum ? m.harita : m.haritaMekkeCevresi)),
       backgroundColor: const Color(0xFF1B1511),
@@ -71,6 +74,7 @@ class HaritaEkrani extends ConsumerWidget {
                             pencere: b.alan,
                             suslerKagitta: tum,
                             yerler: konumlar,
+                            koyuYerler: gorulen,
                             bos: [
                               for (final e in yerlesim) ...[e.etiket, Rect.fromCircle(center: e.nokta, radius: 10)],
                               ?cerceve,
@@ -106,11 +110,17 @@ class HaritaEkrani extends ConsumerWidget {
                         Positioned(
                           left: e.nokta.dx - 8,
                           top: e.nokta.dy - 8,
-                          child: _Nokta(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                          child: Opacity(
+                            opacity: gorulen.contains(e.yer.id) ? 1 : 0.45,
+                            child: _Nokta(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                          ),
                         ),
                         Positioned.fromRect(
                           rect: e.etiket,
-                          child: _Etiket(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                          child: Opacity(
+                            opacity: gorulen.contains(e.yer.id) ? 1 : 0.5,
+                            child: _Etiket(yer: e.yer, onTap: () => _yerGoster(context, e.yer)),
+                          ),
                         ),
                       ],
                     ],
@@ -336,7 +346,12 @@ class ParsomenCizici extends CustomPainter {
     this.bos = const [],
     this.kuzey = 'K',
     this.kizildeniz = '',
+    this.koyuYerler,
   });
+
+  /// Verilirse kervan yolunun yalnız iki ucu da bu kümede olan parçaları koyu,
+  /// diğerleri soluk çizilir (izlenen yolculuklar). Null: hepsi aynı.
+  final Set<String>? koyuYerler;
 
   final Rect pencere;
   final bool suslerKagitta;
@@ -472,10 +487,16 @@ class ParsomenCizici extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.3
       ..color = const Color(0xFF7A3B1E).withValues(alpha: 0.55);
+    final solukYol = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.1
+      ..color = const Color(0xFF7A3B1E).withValues(alpha: 0.22);
     for (final y in kervanYollari) {
-      final noktalar = [for (final id in y) if (yerler[id] != null) ekran(yerler[id]!)];
-      for (var i = 0; i + 1 < noktalar.length; i++) {
-        _kesik(canvas, noktalar[i], noktalar[i + 1], yol, math.min(cerceve.width * 0.012, 10));
+      final ids = [for (final id in y) if (yerler[id] != null) id];
+      for (var i = 0; i + 1 < ids.length; i++) {
+        final koyu = koyuYerler == null || (koyuYerler!.contains(ids[i]) && koyuYerler!.contains(ids[i + 1]));
+        _kesik(canvas, ekran(yerler[ids[i]]!), ekran(yerler[ids[i + 1]]!), koyu ? yol : solukYol,
+            math.min(cerceve.width * 0.012, 10));
       }
     }
 
@@ -619,5 +640,9 @@ class ParsomenCizici extends CustomPainter {
 
   @override
   bool shouldRepaint(ParsomenCizici eski) =>
-      eski.pencere != pencere || eski.yerler != yerler || eski.bos != bos || eski.kuzey != kuzey;
+      eski.pencere != pencere ||
+      eski.yerler != yerler ||
+      eski.bos != bos ||
+      eski.kuzey != kuzey ||
+      eski.koyuYerler != koyuYerler;
 }

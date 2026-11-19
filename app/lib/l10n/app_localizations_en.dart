@@ -185,4 +185,47 @@ class MetinlerEn extends Metinler {
 
   @override
   String get haritaGec => 'Skip';
+
+  @override
+  String bolumEtiketi(int no) {
+    return 'Episode $no';
+  }
+
+  @override
+  String get yolBaslik => 'The Life of the Prophet';
+
+  @override
+  String get altyaziBoyutu => 'Subtitle size';
+
+  @override
+  String get boyutKucuk => 'Small';
+
+  @override
+  String get boyutOrta => 'Medium';
+
+  @override
+  String get boyutBuyuk => 'Large';
+
+  @override
+  String get efektSesleri => 'Sound effects';
+
+  @override
+  String get efektSesleriAciklama =>
+      'Short sounds on episode cards and map transitions';
+
+  @override
+  String siradakiBolum(String baslik) {
+    return 'Next episode: $baslik';
+  }
+
+  @override
+  String get siradaki => 'Up next';
+
+  @override
+  String get ilkGorundugu => 'First appears in';
+
+  @override
+  String ilkGorunduguAyrinti(String bolum, int sahne) {
+    return '$bolum, scene $sahne';
+  }
 }

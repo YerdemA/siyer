@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:siyer/ayarlar/tercihler.dart';
+import 'package:siyer/ekranlar/ayarlar.dart';
 import 'package:siyer/ekranlar/bolum_yolu.dart';
 import 'package:siyer/ekranlar/sahislar.dart';
 import 'package:siyer/icerik/depo.dart';
@@ -50,8 +52,19 @@ Bolum _bolum({String yer1 = 'mekke', String yer2 = 'busra'}) {
   );
 }
 
+/// Testte gerçek ses eklentisi yok; çalınan sesler kaydedilir.
+class _SahteEfekt implements EfektSesi {
+  final calinan = <String>[];
+  @override
+  Future<void> cal(String ad) async => calinan.add(ad);
+  @override
+  Future<void> kapat() async {}
+}
+
 Widget _sar(Widget w, {List<Bolum>? bolumler}) => ProviderScope(
       overrides: [
+        efektSesiProvider.overrideWithValue(_SahteEfekt()),
+        kaynakcaProvider.overrideWith((_) async => const {}),
         sahislarProvider.overrideWith((_) async => _sahislar),
         bolumListesiProvider.overrideWith((_) async => bolumler ?? [_bolum()]),
         iddiaDiziniProvider.overrideWith((_) async => const {}),
@@ -127,6 +140,7 @@ void main() {
     tester.view.physicalSize = const Size(1080, 2200);
     tester.view.devicePixelRatio = 2.6;
     addTearDown(tester.view.reset);
+    final efekt = _SahteEfekt();
     final yonlendirici = GoRouter(routes: [
       GoRoute(path: '/', builder: (_, _) => const Scaffold(body: BolumYolu())),
       GoRoute(path: '/bolum/:id', builder: (_, d) => Text('açıldı ${d.pathParameters['id']}')),
@@ -134,6 +148,7 @@ void main() {
     await tester.pumpWidget(ProviderScope(
       // Birden çok bölüm: dokunulan kart üste alınırken durumu korunmalı.
       overrides: [
+        efektSesiProvider.overrideWithValue(efekt),
         bolumListesiProvider.overrideWith((_) async {
           final b = _bolum();
           final ikinci = Bolum(
@@ -163,12 +178,15 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Deneme Bölümü'), findsOneWidget);
     expect(find.text('Kısa açıklama.'), findsOneWidget);
+    // Hiç izlenmemiş: ilk bölüm sıradaki, ikincisi soluk.
+    expect(find.text('Sıradaki'), findsOneWidget);
     await tester.tap(find.text('Deneme Bölümü'));
     await tester.pump(const Duration(milliseconds: 500));
     await tester.pump(const Duration(milliseconds: 700));
     expect(find.byWidgetPredicate((w) => w is CustomPaint && w.painter is CarpiCizici), findsOneWidget);
     await tester.pumpAndSettle();
     expect(find.text('açıldı b99-deneme'), findsOneWidget);
+    expect(efekt.calinan, ['kalem']);
   });
 
   testWidgets('bölüm açılınca harita gösterilir, uzak yere geçişte yine', (tester) async {
@@ -205,5 +223,58 @@ void main() {
     await tester.tap(find.byTooltip('Sonraki sahne'));
     await tester.pump();
     expect(find.byType(HaritaGecisi), findsNothing);
+  });
+
+  test('görülen yerler ve ilk görünüş', () {
+    final b = _bolum();
+    expect(gorulenYerler([b], const {}), isEmpty);
+    expect(gorulenYerler([b], {b.id: const BolumIlerlemesi(sonSahne: 1)}), {'mekke'});
+    expect(gorulenYerler([b], {b.id: const BolumIlerlemesi(bitti: true)}), {'mekke', 'busra'});
+    final ilk = ilkGorunus([b], 'kisi-a');
+    expect(ilk?.bolum.id, b.id);
+    expect(ilk?.sahne, 2);
+    expect(ilkGorunus([b], 'yok'), isNull);
+  });
+
+  testWidgets('bölüm sonunda sıradaki bölüm düğmesi, altyazı ölçeği', (tester) async {
+    final sonraki = Bolum(id: 'b100', sira: 2, baslik: 'Öteki', ozet: '', durum: '', sahneler: const [], iddialar: const []);
+    await tester.pumpWidget(_sar(Oynatici(
+      bolum: _bolum(),
+      kaynakca: const {},
+      sonrakiBolum: sonraki,
+      altyaziOlcegi: 1.3,
+    )));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(seconds: 1));
+    final yazi = tester.widget<Text>(find.text('bir iki üç'));
+    expect(yazi.style?.fontSize, closeTo(18 * 1.3, 0.01));
+    for (var i = 0; i < 25; i++) {
+      await tester.pump(const Duration(seconds: 1));
+    }
+    expect(find.text('Sıradaki bölüm: Öteki'), findsOneWidget);
+  });
+
+  testWidgets('ayarlar: altyazı boyutu ve efekt sesleri saklanır', (tester) async {
+    await tester.pumpWidget(_sar(const AyarlarEkrani()));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Büyük'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Efekt sesleri'));
+    await tester.pumpAndSettle();
+    final p = await SharedPreferences.getInstance();
+    expect(p.getString('tercih.altyazi'), 'buyuk');
+    expect(p.getBool('tercih.efekt'), isFalse);
+  });
+
+  testWidgets('harita geçişi açılışta parşömen sesi çalar', (tester) async {
+    final calinan = <String>[];
+    await tester.pumpWidget(_sar(Oynatici(
+      bolum: _bolum(),
+      kaynakca: const {},
+      yerler: const [_mekke, _busra],
+      efekt: calinan.add,
+    )));
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(calinan, ['parsomen']);
   });
 }

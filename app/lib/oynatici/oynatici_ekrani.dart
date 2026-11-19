@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../ilerleme/ilerleme.dart';
@@ -65,6 +66,9 @@ class OynaticiEkrani extends ConsumerWidget {
             // Revize açılışlarında (belirli çekim ya da durmuş) harita araya girmez.
             yerler: duraklatilmis || baslangicCekimi > 1 ? const [] : yerler.value ?? const [],
             sesFabrikasi: ref.read(anlatimSesiFabrikasi),
+            altyaziOlcegi: ref.read(tercihlerProvider).value?.altyazi.olcek ?? 1,
+            efekt: ref.read(efektCalProvider),
+            sonrakiBolum: _sonraki(ref.read(bolumListesiProvider).value ?? const [], b),
             baslangicSahnesi: baslangicSahnesi ??
                 ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
                 1,
@@ -78,6 +82,12 @@ class OynaticiEkrani extends ConsumerWidget {
         _ => const Center(child: CircularProgressIndicator()),
       },
     );
+  }
+
+  /// Sırada [b]'den sonra gelen bölüm; yoksa null.
+  static Bolum? _sonraki(List<Bolum> liste, Bolum b) {
+    final sonrakiler = liste.where((x) => x.sira > b.sira).toList()..sort((x, y) => x.sira.compareTo(y.sira));
+    return sonrakiler.firstOrNull;
   }
 }
 
@@ -94,7 +104,19 @@ class Oynatici extends StatefulWidget {
     this.sesSureleri = const {},
     this.sesFabrikasi,
     this.yerler = const [],
+    this.altyaziOlcegi = 1,
+    this.efekt,
+    this.sonrakiBolum,
   });
+
+  /// Ayarlar'daki altyazı boyutu (1 = orta).
+  final double altyaziOlcegi;
+
+  /// Efekt sesi çalar (ör. harita geçişinde `parsomen`); verilmezse sessiz.
+  final void Function(String ad)? efekt;
+
+  /// Bölüm sonunda "Sıradaki bölüm" düğmesi için.
+  final Bolum? sonrakiBolum;
 
   /// Harita geçişleri için `yerler.json`; boşsa geçiş gösterilmez.
   final List<Yer> yerler;
@@ -323,7 +345,8 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     ),
                   ),
                 ),
-              if (_altyazi && konum.parca != null) _Altyazi(parca: konum.parca!, an: _an),
+              if (_altyazi && konum.parca != null)
+                _Altyazi(parca: konum.parca!, an: _an, olcek: widget.altyaziOlcegi),
               if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
               if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
               if (_gecis case final g?)
@@ -332,12 +355,14 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                   yerler: widget.yerler,
                   onceki: g.onceki,
                   hedef: g.hedef,
+                  efekt: widget.efekt,
                   bitti: () => setState(() => _gecis = null),
                 ),
               if (_bitti)
                 _BolumSonu(
                   bolum: widget.bolum,
                   kaynakca: widget.kaynakca,
+                  sonraki: widget.sonrakiBolum,
                   yenidenOynat: () => setState(() {
                     _an = 0;
                     _oynuyor = true;
@@ -548,10 +573,11 @@ class _CubukCizici extends CustomPainter {
 }
 
 class _Altyazi extends StatelessWidget {
-  const _Altyazi({required this.parca, required this.an});
+  const _Altyazi({required this.parca, required this.an, this.olcek = 1});
 
   final ParcaZamani parca;
   final double an;
+  final double olcek;
 
   @override
   Widget build(BuildContext context) {
@@ -578,7 +604,7 @@ class _Altyazi extends StatelessWidget {
             child: Text(
               parca.parca.metin,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Color(0xFFF4EEE2), fontSize: 18, height: 1.35),
+              style: TextStyle(color: const Color(0xFFF4EEE2), fontSize: 18 * olcek, height: 1.35),
             ),
           ),
         ),
@@ -633,9 +659,10 @@ class _TarifPaneli extends StatelessWidget {
 }
 
 class _BolumSonu extends StatelessWidget {
-  const _BolumSonu({required this.bolum, required this.kaynakca, required this.yenidenOynat});
+  const _BolumSonu({required this.bolum, required this.kaynakca, required this.yenidenOynat, this.sonraki});
 
   final Bolum bolum;
+  final Bolum? sonraki;
   final Map<String, Eser> kaynakca;
   final VoidCallback yenidenOynat;
 
@@ -667,6 +694,14 @@ class _BolumSonu extends StatelessWidget {
                   icon: const Icon(Icons.replay),
                   label: Text(m.yenidenOynat),
                 ),
+                if (sonraki case final s?) ...[
+                  const SizedBox(width: 8),
+                  FilledButton.icon(
+                    onPressed: () => context.pushReplacement('/bolum/${s.id}'),
+                    icon: const Icon(Icons.skip_next),
+                    label: Text(m.siradakiBolum(s.baslik)),
+                  ),
+                ],
               ],
             ),
             const SizedBox(height: 8),

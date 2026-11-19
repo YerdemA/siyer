@@ -51,5 +51,17 @@
   "sahisAramaBos": "No one matches your search.",
   "izlendi": "Watched",
   "yolAltBaslik": "Before prophethood",
-  "haritaGec": "Skip"
+  "haritaGec": "Skip",
+  "bolumEtiketi": "Episode {no}",
+  "yolBaslik": "The Life of the Prophet",
+  "altyaziBoyutu": "Subtitle size",
+  "boyutKucuk": "Small",
+  "boyutOrta": "Medium",
+  "boyutBuyuk": "Large",
+  "efektSesleri": "Sound effects",
+  "efektSesleriAciklama": "Short sounds on episode cards and map transitions",
+  "siradakiBolum": "Next episode: {baslik}",
+  "siradaki": "Up next",
+  "ilkGorundugu": "First appears in",
+  "ilkGorunduguAyrinti": "{bolum}, scene {sahne}"
 }

@@ -408,6 +408,78 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Geç'**
   String get haritaGec;
+
+  /// No description provided for @bolumEtiketi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüm {no}'**
+  String bolumEtiketi(int no);
+
+  /// No description provided for @yolBaslik.
+  ///
+  /// In tr, this message translates to:
+  /// **'Resulü Ekrem\'in Hayatı'**
+  String get yolBaslik;
+
+  /// No description provided for @altyaziBoyutu.
+  ///
+  /// In tr, this message translates to:
+  /// **'Altyazı boyutu'**
+  String get altyaziBoyutu;
+
+  /// No description provided for @boyutKucuk.
+  ///
+  /// In tr, this message translates to:
+  /// **'Küçük'**
+  String get boyutKucuk;
+
+  /// No description provided for @boyutOrta.
+  ///
+  /// In tr, this message translates to:
+  /// **'Orta'**
+  String get boyutOrta;
+
+  /// No description provided for @boyutBuyuk.
+  ///
+  /// In tr, this message translates to:
+  /// **'Büyük'**
+  String get boyutBuyuk;
+
+  /// No description provided for @efektSesleri.
+  ///
+  /// In tr, this message translates to:
+  /// **'Efekt sesleri'**
+  String get efektSesleri;
+
+  /// No description provided for @efektSesleriAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüm kartı ve harita geçişinde kısa sesler'**
+  String get efektSesleriAciklama;
+
+  /// No description provided for @siradakiBolum.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sıradaki bölüm: {baslik}'**
+  String siradakiBolum(String baslik);
+
+  /// No description provided for @siradaki.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sıradaki'**
+  String get siradaki;
+
+  /// No description provided for @ilkGorundugu.
+  ///
+  /// In tr, this message translates to:
+  /// **'İlk göründüğü yer'**
+  String get ilkGorundugu;
+
+  /// No description provided for @ilkGorunduguAyrinti.
+  ///
+  /// In tr, this message translates to:
+  /// **'{bolum}, {sahne}. sahne'**
+  String ilkGorunduguAyrinti(String bolum, int sahne);
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

@@ -59,5 +59,20 @@
   "sahisAramaBos": "Aramaya uyan şahıs yok.",
   "izlendi": "İzlendi",
   "yolAltBaslik": "Peygamberlik öncesi",
-  "haritaGec": "Geç"
+  "haritaGec": "Geç",
+  "bolumEtiketi": "Bölüm {no}",
+  "@bolumEtiketi": { "placeholders": { "no": { "type": "int" } } },
+  "yolBaslik": "Resulü Ekrem'in Hayatı",
+  "altyaziBoyutu": "Altyazı boyutu",
+  "boyutKucuk": "Küçük",
+  "boyutOrta": "Orta",
+  "boyutBuyuk": "Büyük",
+  "efektSesleri": "Efekt sesleri",
+  "efektSesleriAciklama": "Bölüm kartı ve harita geçişinde kısa sesler",
+  "siradakiBolum": "Sıradaki bölüm: {baslik}",
+  "@siradakiBolum": { "placeholders": { "baslik": { "type": "String" } } },
+  "siradaki": "Sıradaki",
+  "ilkGorundugu": "İlk göründüğü yer",
+  "ilkGorunduguAyrinti": "{bolum}, {sahne}. sahne",
+  "@ilkGorunduguAyrinti": { "placeholders": { "bolum": { "type": "String" }, "sahne": { "type": "int" } } }
 }

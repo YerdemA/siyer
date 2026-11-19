@@ -156,6 +156,21 @@ class SahisEkrani extends ConsumerWidget {
             const SizedBox(height: 16),
             Text(s.ozet, style: kaynakli ? tema.bodyLarge : tema.bodyLarge?.copyWith(fontStyle: FontStyle.italic)),
           ],
+          if (ilkGorunus(bolumler, s.id) case final ilk?)
+            Card(
+              margin: const EdgeInsets.only(top: 16),
+              color: Palet.kagitAcik,
+              child: ListTile(
+                leading: const Icon(Icons.place_outlined, color: Palet.kina),
+                title: Text(m.ilkGorundugu),
+                subtitle: Text(m.ilkGorunduguAyrinti(
+                  '${m.bolumNo(ilk.bolum.sira)} · ${ilk.bolum.baslik}',
+                  ilk.sahne,
+                )),
+                trailing: const Icon(Icons.play_circle_outline),
+                onTap: () => context.push('/bolum/${ilk.bolum.id}?sahne=${ilk.sahne}'),
+              ),
+            ),
           const SizedBox(height: 16),
           Text(m.kaynaklar, style: tema.titleSmall),
           const SizedBox(height: 4),

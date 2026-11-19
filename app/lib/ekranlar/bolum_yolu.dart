@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../ilerleme/ilerleme.dart';
@@ -63,6 +64,9 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
       error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
       data: (liste) => LayoutBuilder(builder: (context, k) {
         final y = YolYerlesimi(k.maxWidth, liste.length);
+        // Sıradaki: bitirilmemiş ilk bölüm. Ondan sonrakiler soluk (yine açılabilir).
+        final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
+        final efekt = ref.read(efektCalProvider);
         final sira = [
           for (var i = 0; i < liste.length; i++)
             if (liste[i].id != _secili) i,
@@ -98,6 +102,9 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                       bolum: liste[i],
                       ilerleme: ilerleme[liste[i].id],
                       aci: y.acilar[i],
+                      siradaki: i == siradaki,
+                      soluk: siradaki >= 0 && i > siradaki,
+                      efekt: efekt,
                       secildi: () => setState(() => _secili = liste[i].id),
                     ),
                   ),
@@ -176,7 +183,19 @@ class BolumKarti extends StatefulWidget {
     required this.aci,
     this.ilerleme,
     this.secildi,
+    this.siradaki = false,
+    this.soluk = false,
+    this.efekt,
   });
+
+  /// İzlenecek sıradaki bölüm: köşesinde "Sıradaki" yazar.
+  final bool siradaki;
+
+  /// Sırası henüz gelmemiş bölüm: soluk görünür ama açılabilir.
+  final bool soluk;
+
+  /// Çarpı çizilirken `kalem` sesi.
+  final void Function(String ad)? efekt;
 
   final Bolum bolum;
   final BolumIlerlemesi? ilerleme;
@@ -201,6 +220,7 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
   Future<void> _sec() async {
     if (_ac.isAnimating) return;
     widget.secildi?.call();
+    widget.efekt?.call('kalem');
     await Scrollable.ensureVisible(
       context,
       alignment: 0.4,
@@ -263,6 +283,19 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                               ),
                             ),
                           ),
+                          if (widget.siradaki && !bitti)
+                            Padding(
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text(
+                                m.siradaki,
+                                style: const TextStyle(
+                                  fontSize: 11,
+                                  letterSpacing: 1.2,
+                                  fontWeight: FontWeight.w700,
+                                  color: Palet.kina,
+                                ),
+                              ),
+                            ),
                           if (bitti)
                             Padding(
                               padding: const EdgeInsets.only(right: 30),
@@ -338,7 +371,12 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                 Positioned(
                   right: -14,
                   top: -16,
-                  child: IgnorePointer(child: _NumaraMuhru(sira: b.sira, bitti: bitti)),
+                  child: IgnorePointer(
+                    child: Opacity(
+                      opacity: widget.soluk && t == 0 ? 0.55 : 1,
+                      child: _NumaraMuhru(sira: b.sira, bitti: bitti),
+                    ),
+                  ),
                 ),
                 if (t > 0)
                   Positioned.fill(
@@ -359,7 +397,12 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
       child: Semantics(
         button: true,
         label: '${m.bolumNo(b.sira)}: ${b.baslik}',
-        child: kart,
+        // Sırası gelmemiş bölüm soluk; dokununca (büyürken) canlanır.
+        child: AnimatedBuilder(
+          animation: _ac,
+          builder: (context, c) => Opacity(opacity: widget.soluk && _ac.value == 0 ? 0.55 : 1, child: c),
+          child: kart,
+        ),
       ),
     );
   }
