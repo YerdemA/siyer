@@ -63,7 +63,8 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Şahıs sayfasında "İlk göründüğü yer" (bölüm ve sahneye atlama)
 - [x] Efekt sesleri (çarpıda kalem, haritada parşömen; `tools/efekt_sesleri.py` ile sentezlendi) ve Ayarlar'da açma-kapama
 - [x] Ayarlar'da altyazı boyutu (küçük / orta / büyük)
-- [ ] Uygulama simgesi ve açılış ekranı aynı paletle (parşömen üstünde mühür ya da pusula) — not, 2026-11-20
+- [x] Ana sayfada "kaldığın yerden devam et" kartı
+- [ ] Uygulama simgesi ve açılış ekranı: taslaklar `tasarim/simge-acilis/`; Erdem'in seçimi ve paket onayı bekleniyor
 - [ ] Erişilebilirlik: "hareketi azalt" seçeneği (kart ve harita animasyonları kısalır) — not, 2026-11-20
 - [ ] Doğrulama betiği `sahislar.json` → `portre` dosyasının varlığını denetlesin — not, 2026-11-20
 - [x] Zaman çizelgesi

@@ -6,7 +6,14 @@ Son güncelleme: 2026-11-19.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-20, akşam).** Erdem'in kararları: harita geçişi her açılışta kalır ("Geç" var); Zeyd b. Hârise evlatlık olduğu için yüzüyle çizilebilir, öz çocuklar çizilmez (CLAUDE.md kural 5 güncellendi). Öneri listesinden ilk altısı yapıldı:
+**Kaldığımız yer (2026-11-20, gece).**
+- Hâcer ve Süveybe yüzsüz siluet kalır (Erdem; CLAUDE.md kural 5'e yazıldı).
+- **Devam kartı:** Ana sayfanın en üstünde, en son izlenen yarım bölüme dönüş kartı (gece laciverdi, altın ilerleme, kına oynat düğmesi); dokununca bölüm kalınan sahneden açılır. İlerleme kaydına `zaman` (Unix ms) eklendi; eski kayıtlar 0 sayılır. Başlanmış bölümler sırası gelmese de soluk gösterilmez.
+- **Kontrol nüshası:** `docs/BOLUM_METINLERI.md` (10 bölüm, 135 sahne, 200 iddia, 499 atıf; sahne sahne anlatım, yer, şahıslar, görsel tarifi; her bölüm sonunda iddialar, kaynaklar, gerekçe, alternatif rivayetler; ekler: şahıslar, yerler, zaman çizelgesi). `python tools/bolum_metni.py` ile üretilir; düzeltme JSON'a yapılır, dosya yeniden üretilir. **İçerik değişince yeniden üretilmeli.**
+- **Simge ve açılış taslakları:** `tasarim/simge-acilis/` (4 simge, 3 açılış, `onizleme.html/png`, README'de öneri: mühür simgesi + parşömen açılış). Uygulamaya geçirmek için `flutter_launcher_icons` ve `flutter_native_splash` paketleri gerekir; Erdem'in seçimi ve paket onayı bekleniyor.
+- Testler 66/66.
+
+**Önceki (2026-11-20, akşam).** Erdem'in kararları: harita geçişi her açılışta kalır ("Geç" var); Zeyd b. Hârise evlatlık olduğu için yüzüyle çizilebilir, öz çocuklar çizilmez (CLAUDE.md kural 5 güncellendi). Öneri listesinden ilk altısı yapıldı:
 1. Bölüm sonunda "Sıradaki bölüm: …" düğmesi (sonrakini açar).
 2. Ana sayfada bitirilmemiş ilk bölüm "Sıradaki" işaretli; sonrakiler soluk (%55), yine açılabilir.
 3. Haritada izlenen sahnelerin yerleri ve iki ucu görülen kervan yolları koyu, diğerleri soluk (`gorulenYerlerProvider`).
