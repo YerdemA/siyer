@@ -6,7 +6,13 @@ Son güncelleme: 2026-11-19.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-20, gece).**
+**Kaldığımız yer (2026-11-20, kapanış).** Gün burada kapandı.
+- **Hareketi azalt** (Ayarlar; telefonun "animasyonları kaldır" ayarı açıksa kendiliğinden): bölüm kartı büyümez, kaydırma anında, çarpı 0,5 sn; harita geçişi kamerasız, doğrudan hedef, nabız halkası yok, 1,5 sn.
+- **Doğrulama betiği** `sahislar.json`'da `temsil` değerini (nur/yuzsuz), temsilli şahsa portre konmamasını (kural 5) ve `portre` dosyasının `content/gorseller/` altında var olmasını denetler. Bozuk kopyada üç hata da yakalandı; gerçek içerikte 0 hata.
+- Testler 67/67, analiz temiz.
+- **Sıradaki (Erdem'den):** telefonda deneme (nur kenarı, efekt sesleri, ana sayfa, harita geçişi); simge/açılış taslağı seçimi ve iki paket onayı; `docs/BOLUM_METINLERI.md` üzerinden içerik kontrolü ve atıf doğrulaması (582 bekliyor).
+
+**Önceki (2026-11-20, gece).**
 - Hâcer ve Süveybe yüzsüz siluet kalır (Erdem; CLAUDE.md kural 5'e yazıldı).
 - **Devam kartı:** Ana sayfanın en üstünde, en son izlenen yarım bölüme dönüş kartı (gece laciverdi, altın ilerleme, kına oynat düğmesi); dokununca bölüm kalınan sahneden açılır. İlerleme kaydına `zaman` (Unix ms) eklendi; eski kayıtlar 0 sayılır. Başlanmış bölümler sırası gelmese de soluk gösterilmez.
 - **Kontrol nüshası:** `docs/BOLUM_METINLERI.md` (10 bölüm, 135 sahne, 200 iddia, 499 atıf; sahne sahne anlatım, yer, şahıslar, görsel tarifi; her bölüm sonunda iddialar, kaynaklar, gerekçe, alternatif rivayetler; ekler: şahıslar, yerler, zaman çizelgesi). `python tools/bolum_metni.py` ile üretilir; düzeltme JSON'a yapılır, dosya yeniden üretilir. **İçerik değişince yeniden üretilmeli.**

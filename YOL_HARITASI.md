@@ -65,8 +65,8 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Ayarlar'da altyazı boyutu (küçük / orta / büyük)
 - [x] Ana sayfada "kaldığın yerden devam et" kartı
 - [ ] Uygulama simgesi ve açılış ekranı: taslaklar `tasarim/simge-acilis/`; Erdem'in seçimi ve paket onayı bekleniyor
-- [ ] Erişilebilirlik: "hareketi azalt" seçeneği (kart ve harita animasyonları kısalır) — not, 2026-11-20
-- [ ] Doğrulama betiği `sahislar.json` → `portre` dosyasının varlığını denetlesin — not, 2026-11-20
+- [x] Erişilebilirlik: "hareketi azalt" seçeneği (telefonun animasyon ayarına da uyar)
+- [x] Doğrulama betiği `portre` dosyasını ve `temsil` kuralını denetler
 - [x] Zaman çizelgesi
 - [x] Harita ekranı
 - [x] İlerleme takibi
