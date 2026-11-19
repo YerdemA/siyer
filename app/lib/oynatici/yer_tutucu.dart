@@ -711,7 +711,8 @@ class YerTutucu {
 
   /// Efendimiz'in nurlu figürü: kesilip yapıştırılmış gibi durmasın diye
   /// kenarları yumuşak, ortası parlak, ayakları ışığa karışan ve zemine
-  /// ışık düşüren bir nur. Gövde yine seçilir (saydam değil). Sarık yok:
+  /// ışık düşüren bir nur. Gövde seçilir ama biraz saydamdır, arkası belli
+  /// belirsiz görünür (Erdem, 2026-11-19). Sarık yok:
   /// peygamberlik öncesi bölümlerde sarıksız (Erdem, 2026-11-18).
   void _nurFigur(Path bicim, double x, double ust, double yk, double omuz, double gorunurluk) {
     final g = math.min(1.0, gorunurluk / 2.5) * (0.96 + 0.04 * math.sin(t * 1.4));
@@ -741,26 +742,15 @@ class YerTutucu {
           _nurAltin.withValues(alpha: 0),
         ], const [0, 0.45, 1]),
     );
-    // Sıcak kenar ışıması (normal karışım): açık duvar ya da kum önünde de
-    // biçim seçilsin; kenarı geniş ve yumuşak.
-    c.drawPath(
-      bicim,
-      Paint()
-        ..color = _nurAltin.withValues(alpha: 0.5 * g)
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.05),
-    );
-    // Gövde: yukarıda dolu, aşağıya doğru ışığa karışan; kenarları yumuşak.
-    c.drawPath(
-      bicim,
-      Paint()
-        ..shader = Gradient.linear(Offset(x, ust), Offset(x, zemin), [
-          _nurAcik.withValues(alpha: 0.98 * g),
-          Color.lerp(_nurAcik, _nurAltin, 0.15)!.withValues(alpha: 0.94 * g),
-          _nurAltin.withValues(alpha: 0.5 * g),
-        ], const [0, 0.65, 1])
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.022),
-    );
-    // Çekirdek: ortada daha parlak, dar bir ışık.
+    // Kenar ışıması ve gövde, ayrı katmanlarda düz renkle çizilip katmanın
+    // tamamı bulanıklaştırılır. Renk geçişli şekle `MaskFilter.blur`
+    // uygulamak bazı çizim motorlarında (Android/Impeller) kenarda koyu bir
+    // saçak bırakıyordu (Erdem, 2026-11-19: "kenarları siyah").
+    _nurKatmani(bicim, yk * 0.05, 0.5 * g, () {
+      c.drawPath(bicim, Paint()..color = _nurAltin);
+    });
+    // Gövde: biraz saydam (Erdem, 2026-11-19); yukarıda dolgun, aşağıya
+    // doğru ışığa karışır. Ortada daha parlak, dar bir çekirdek.
     final sx = 0.5;
     final cekirdek = bicim.transform(Float64List.fromList([
       sx, 0, 0, 0, //
@@ -768,13 +758,41 @@ class YerTutucu {
       0, 0, 1, 0, //
       (1 - sx) * x, ust * 0.08 + yk * 0.04, 0, 1,
     ]));
-    c.drawPath(
-      cekirdek,
+    _nurKatmani(bicim, yk * 0.022, 0.9 * g, () {
+      c.drawPath(bicim, Paint()..color = Color.lerp(_nurAcik, _nurAltin, 0.08)!);
+      c.drawPath(
+        cekirdek,
+        Paint()..color = const Color(0xFFFFFFFF).withValues(alpha: 0.6),
+      );
+      // Aşağı doğru solma: katmandaki çizimi yukarıdan aşağıya incelt.
+      c.drawRect(
+        Rect.fromLTRB(x - yk, ust - yk * 0.2, x + yk, zemin + yk * 0.2),
+        Paint()
+          ..blendMode = BlendMode.dstIn
+          ..shader = Gradient.linear(Offset(x, ust), Offset(x, zemin), [
+            const Color(0xFFFFFFFF),
+            const Color(0xF0FFFFFF),
+            const Color(0x8CFFFFFF),
+          ], const [0, 0.6, 1]),
+      );
+    });
+  }
+
+  /// [ciz]'in çizdiklerini ayrı bir katmanda toplar; katmanın tamamını
+  /// [bulanik] kadar bulanıklaştırıp [opaklik] ile sahneye işler.
+  void _nurKatmani(Path bicim, double bulanik, double opaklik, void Function() ciz) {
+    c.saveLayer(
+      bicim.getBounds().inflate(bulanik * 4),
       Paint()
-        ..blendMode = BlendMode.screen
-        ..color = const Color(0xFFFFFFFF).withValues(alpha: 0.55 * g)
-        ..maskFilter = MaskFilter.blur(BlurStyle.normal, yk * 0.06),
+        ..color = Color.fromRGBO(255, 255, 255, opaklik.clamp(0.0, 1.0))
+        ..imageFilter = ImageFilter.blur(
+          sigmaX: bulanik,
+          sigmaY: bulanik,
+          tileMode: TileMode.decal,
+        ),
     );
+    ciz();
+    c.restore();
   }
 
   void _toz() {
