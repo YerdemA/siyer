@@ -57,7 +57,15 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Ayarlar'da tam kaynakça
 - [x] Şahıslar sözlüğü (portre madalyonları, arama, izlenen sahnelere göre açılır)
 - [x] Ana sayfa: yol haritası düzeninde bölüm kartları, çarpı animasyonu, alt sekmeler (Bölümler, Harita, Şahıslar)
-- [x] Oynatıcıda harita geçişi (bölüm başı ve uzak yere geçiş)
+- [x] Oynatıcıda harita geçişi (bölüm başı ve uzak yere geçiş; her açılışta, "Geç" düğmesiyle)
+- [x] Bölüm sonunda "Sıradaki bölüm" düğmesi; ana sayfada sıradaki bölüm işaretli, sonrakiler soluk
+- [x] Haritada izlenen yerler ve yolculuklar koyu, diğerleri soluk
+- [x] Şahıs sayfasında "İlk göründüğü yer" (bölüm ve sahneye atlama)
+- [x] Efekt sesleri (çarpıda kalem, haritada parşömen; `tools/efekt_sesleri.py` ile sentezlendi) ve Ayarlar'da açma-kapama
+- [x] Ayarlar'da altyazı boyutu (küçük / orta / büyük)
+- [ ] Uygulama simgesi ve açılış ekranı aynı paletle (parşömen üstünde mühür ya da pusula) — not, 2026-11-20
+- [ ] Erişilebilirlik: "hareketi azalt" seçeneği (kart ve harita animasyonları kısalır) — not, 2026-11-20
+- [ ] Doğrulama betiği `sahislar.json` → `portre` dosyasının varlığını denetlesin — not, 2026-11-20
 - [x] Zaman çizelgesi
 - [x] Harita ekranı
 - [x] İlerleme takibi

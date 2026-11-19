@@ -6,7 +6,19 @@ Son güncelleme: 2026-11-19.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-20).** Ana sayfa ve gezinme yenilendi; Erdem'in görmesi ve telefonda denemesi bekleniyor:
+**Kaldığımız yer (2026-11-20, akşam).** Erdem'in kararları: harita geçişi her açılışta kalır ("Geç" var); Zeyd b. Hârise evlatlık olduğu için yüzüyle çizilebilir, öz çocuklar çizilmez (CLAUDE.md kural 5 güncellendi). Öneri listesinden ilk altısı yapıldı:
+1. Bölüm sonunda "Sıradaki bölüm: …" düğmesi (sonrakini açar).
+2. Ana sayfada bitirilmemiş ilk bölüm "Sıradaki" işaretli; sonrakiler soluk (%55), yine açılabilir.
+3. Haritada izlenen sahnelerin yerleri ve iki ucu görülen kervan yolları koyu, diğerleri soluk (`gorulenYerlerProvider`).
+4. Şahıs sayfasında "İlk göründüğü yer" kartı: bölüm ve sahne, dokununca o sahneden açılır.
+5. Efekt sesleri `app/assets/sesler/` (kalem.wav: çarpının iki darbesiyle zamanlı; parsomen.wav: harita açılışı); `tools/efekt_sesleri.py` gürültüden sentezler, telifsiz. **Erdem telefonda dinleyip beğenmeli**; Claude dinleyemedi. Ayarlar'da kapatılabilir.
+6. Ayarlar'da altyazı boyutu (küçük 0,85 / orta / büyük 1,3); `ayarlar/tercihler.dart`.
+- Not alınanlar (YOL_HARITASI): simge ve açılış ekranı, hareketi azalt, portre dosyası denetimi.
+- Açık soru: Hâcer ve Süveybe ihtiyaten yüzsüz siluet; Erdem'e soruldu, cevap bekleniyor.
+- Dart'ın `toUpperCase()`'i Türkçe i'yi bilmiyor ("SIRADAKI"); Türkçe metinlerde büyük harfe çevirmeden yazılmalı.
+- Testler 63/63, analiz temiz.
+
+**Önceki (2026-11-20).** Ana sayfa ve gezinme yenilendi; Erdem'in görmesi ve telefonda denemesi bekleniyor:
 - **Tema** (`app/lib/tema.dart`): parşömen-mürekkep paleti (kına kırmızısı, şafak altını, zeytin), açık tema; başlıklarda serif (Android'de Noto Serif; web'de Roboto görünür).
 - **Ana sayfa** (`ana_sayfa.dart`, `bolum_yolu.dart`): alt sekmeler Bölümler / Harita / Şahıslar; zaman çizelgesi ve ayarlar başlıkta. Bölüm kartları elle çizilmiş bir yol gibi sola-sağa salınır, ±3° eğik, aralarında noktalı yol; köşede numara mührü (izlenince zeytin + tik), açıklama, yarım bölümde ilerleme. Dokununca kart düzleşip büyür, kına kırmızısı çarpı iki darbeyle çizilir, bölüm açılır.
 - **Şahıslar**: yalnız izlenen sahnelerde geçenler (`ilerleme/gorulenler.dart`; hiç izlenmemişse yalnız Efendimiz), arama (şapka/Türkçe harf duyarsız), madalyon: 17 portre karakter kartlarından kırpıldı (`tools/portre_kirp.py`, `content/gorseller/sahislar/`), Efendimiz/İbrâhim/İsmâil/Cebrâil nur, anne-baba/Hatice/Halîme/Süveybe/Hâcer/Kâsım yüzsüz siluet, kartı olmayanlar baş harf. `sahislar.json`'a `portre`, `temsil` eklendi.
