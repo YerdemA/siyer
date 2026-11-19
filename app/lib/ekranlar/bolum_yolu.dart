@@ -23,7 +23,8 @@ class BolumYolu extends ConsumerStatefulWidget {
 
 /// Kartların yeri ve açısı; ekran genişliğine göre hesaplanır.
 class YolYerlesimi {
-  YolYerlesimi(this.genislik, int sayi) {
+  YolYerlesimi(this.genislik, int sayi, {this.devamKarti = false})
+      : ust = devamKarti ? baslikAlani + devamYuksekligi + 46 : 150 {
     for (var i = 0; i < sayi; i++) {
       final serbest = math.max(0.0, genislik - kartGenisligi - 2 * kenar);
       // Sola ve sağa salınan, her seferinde biraz farklı bir yol.
@@ -35,7 +36,15 @@ class YolYerlesimi {
 
   final double genislik;
   static const kenar = 18.0;
-  static const ust = 150.0;
+  /// Başlığın yüksekliği; "devam et" kartı bunun altına gelir.
+  static const baslikAlani = 108.0;
+  static const devamYuksekligi = 104.0;
+
+  /// Yarım bölüm varsa en üstte "kaldığın yerden devam et" kartı.
+  final bool devamKarti;
+
+  /// İlk bölüm kartının üstü.
+  final double ust;
   static const kartYuksekligi = 136.0;
   static const adim = kartYuksekligi + 76;
 
@@ -63,7 +72,9 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
       loading: () => const Center(child: CircularProgressIndicator()),
       error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
       data: (liste) => LayoutBuilder(builder: (context, k) {
-        final y = YolYerlesimi(k.maxWidth, liste.length);
+        final yarimId = sonYarimBolum(ilerleme);
+        final yarim = liste.where((b) => b.id == yarimId).firstOrNull;
+        final y = YolYerlesimi(k.maxWidth, liste.length, devamKarti: yarim != null);
         // Sıradaki: bitirilmemiş ilk bölüm. Ondan sonrakiler soluk (yine açılabilir).
         final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
         final efekt = ref.read(efektCalProvider);
@@ -83,14 +94,22 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                   left: 0,
                   right: 0,
                   top: 0,
-                  height: YolYerlesimi.ust,
+                  height: YolYerlesimi.baslikAlani,
                   child: SafeArea(bottom: false, child: _Baslik(m: m)),
                 ),
+                if (yarim != null)
+                  Positioned(
+                    left: YolYerlesimi.kenar,
+                    right: YolYerlesimi.kenar,
+                    top: YolYerlesimi.baslikAlani,
+                    height: YolYerlesimi.devamYuksekligi,
+                    child: DevamKarti(bolum: yarim, ilerleme: ilerleme[yarim.id]!),
+                  ),
                 if (liste.isEmpty)
                   Positioned(
                     left: 24,
                     right: 24,
-                    top: YolYerlesimi.ust + 40,
+                    top: y.ust + 40,
                     child: Text(m.bolumYok, textAlign: TextAlign.center),
                   ),
                 for (final i in sira)
@@ -103,7 +122,8 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                       ilerleme: ilerleme[liste[i].id],
                       aci: y.acilar[i],
                       siradaki: i == siradaki,
-                      soluk: siradaki >= 0 && i > siradaki,
+                      // Başlanmış bölüm (yarım ya da bitmiş) sırası gelmese de soluk değil.
+                      soluk: siradaki >= 0 && i > siradaki && ilerleme[liste[i].id] == null,
                       efekt: efekt,
                       secildi: () => setState(() => _secili = liste[i].id),
                     ),
@@ -133,14 +153,20 @@ class _Baslik extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  m.uygulamaAdi,
-                  style: const TextStyle(
-                    fontFamily: baslikYazisi,
-                    fontSize: 26,
-                    height: 1.15,
-                    fontWeight: FontWeight.w700,
-                    color: Palet.murekkep,
+                // Dar ekranda iki satıra bölünmesin; gerekirse küçülür.
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    m.uygulamaAdi,
+                    maxLines: 1,
+                    style: const TextStyle(
+                      fontFamily: baslikYazisi,
+                      fontSize: 26,
+                      height: 1.15,
+                      fontWeight: FontWeight.w700,
+                      color: Palet.murekkep,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -526,7 +552,7 @@ class YolCizici extends CustomPainter {
 
     final k = yerlesim.kartlar;
     if (k.isNotEmpty) {
-      yol(Offset(size.width * 0.18, YolYerlesimi.ust - 44), k.first.topCenter + Offset(-k.first.width * 0.12, 0));
+      yol(Offset(size.width * 0.18, yerlesim.ust - 44), k.first.topCenter + Offset(-k.first.width * 0.12, 0));
     }
     for (var i = 0; i + 1 < k.length; i++) {
       yol(k[i].bottomCenter + Offset(k[i].width * 0.12 * (i.isEven ? 1 : -1), 0),
@@ -552,7 +578,7 @@ class YolCizici extends CustomPainter {
       ..color = Palet.murekkep.withValues(alpha: 0.3);
     final rt = math.Random(17);
     for (var i = 0; i < k.length * 2; i++) {
-      final p = Offset(20 + rt.nextDouble() * (size.width - 40), YolYerlesimi.ust + rt.nextDouble() * (size.height - YolYerlesimi.ust - 60));
+      final p = Offset(20 + rt.nextDouble() * (size.width - 40), yerlesim.ust + rt.nextDouble() * (size.height - yerlesim.ust - 60));
       final r = Rect.fromCenter(center: p, width: 44, height: 22);
       if (k.any((x) => x.inflate(14).overlaps(r))) continue;
       canvas.drawPath(
@@ -572,5 +598,92 @@ class YolCizici extends CustomPainter {
 
   @override
   bool shouldRepaint(YolCizici eski) =>
-      eski.yerlesim.genislik != yerlesim.genislik || eski.yerlesim.kartlar.length != yerlesim.kartlar.length;
+      eski.yerlesim.genislik != yerlesim.genislik ||
+      eski.yerlesim.kartlar.length != yerlesim.kartlar.length ||
+      eski.yerlesim.ust != yerlesim.ust;
+}
+
+/// Ana sayfanın en üstünde, yarım bırakılmış son bölüme dönüş kartı.
+/// Dokununca bölüm kalınan sahneden açılır (oynatıcı kayıtlı ilerlemeden başlar).
+class DevamKarti extends StatelessWidget {
+  const DevamKarti({super.key, required this.bolum, required this.ilerleme});
+
+  final Bolum bolum;
+  final BolumIlerlemesi ilerleme;
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    final toplam = bolum.sahneler.length;
+    return Semantics(
+      button: true,
+      label: '${m.devamEt}: ${bolum.baslik}',
+      excludeSemantics: true,
+      child: Material(
+        color: Palet.gece,
+        elevation: 4,
+        shadowColor: Palet.murekkep.withValues(alpha: 0.5),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+          side: BorderSide(color: Palet.altin.withValues(alpha: 0.7), width: 1.2),
+        ),
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: () => context.push('/bolum/${bolum.id}'),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16, 12, 12, 12),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        m.devamEt,
+                        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Palet.altin),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        '${m.bolumNo(bolum.sira)} · ${bolum.baslik}',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          fontFamily: baslikYazisi,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
+                          color: Palet.kagitAcik,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      if (toplam > 0)
+                        LinearProgressIndicator(
+                          value: (ilerleme.sonSahne - 1) / toplam,
+                          minHeight: 3,
+                          color: Palet.altin,
+                          backgroundColor: Palet.kagitAcik.withValues(alpha: 0.2),
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      const SizedBox(height: 3),
+                      Text(
+                        m.sahneSayaci(ilerleme.sonSahne, toplam),
+                        style: TextStyle(fontSize: 11, color: Palet.kagitAcik.withValues(alpha: 0.75)),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Container(
+                  width: 48,
+                  height: 48,
+                  decoration: const BoxDecoration(shape: BoxShape.circle, color: Palet.kina),
+                  child: const Icon(Icons.play_arrow, color: Palet.kagitAcik, size: 30),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }

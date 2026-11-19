@@ -226,4 +226,7 @@ class MetinlerTr extends Metinler {
   String ilkGorunduguAyrinti(String bolum, int sahne) {
     return '$bolum, $sahne. sahne';
   }
+
+  @override
+  String get devamEt => 'Kaldığın yerden devam et';
 }

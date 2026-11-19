@@ -63,5 +63,6 @@
   "siradakiBolum": "Next episode: {baslik}",
   "siradaki": "Up next",
   "ilkGorundugu": "First appears in",
-  "ilkGorunduguAyrinti": "{bolum}, scene {sahne}"
+  "ilkGorunduguAyrinti": "{bolum}, scene {sahne}",
+  "devamEt": "Continue where you left off"
 }

@@ -74,5 +74,6 @@
   "siradaki": "Sıradaki",
   "ilkGorundugu": "İlk göründüğü yer",
   "ilkGorunduguAyrinti": "{bolum}, {sahne}. sahne",
-  "@ilkGorunduguAyrinti": { "placeholders": { "bolum": { "type": "String" }, "sahne": { "type": "int" } } }
+  "@ilkGorunduguAyrinti": { "placeholders": { "bolum": { "type": "String" }, "sahne": { "type": "int" } } },
+  "devamEt": "Kaldığın yerden devam et"
 }

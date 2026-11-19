@@ -277,4 +277,43 @@ void main() {
     await tester.pump(const Duration(milliseconds: 100));
     expect(calinan, ['parsomen']);
   });
+
+  testWidgets('yarım bölüm varsa en üstte devam kartı çıkar ve bölümü açar', (tester) async {
+    SharedPreferences.setMockInitialValues({
+      'ilerleme.b99-deneme': '{"sahne":2,"bitti":false,"zaman":5}',
+    });
+    final yonlendirici = GoRouter(routes: [
+      GoRoute(path: '/', builder: (_, _) => const Scaffold(body: BolumYolu())),
+      GoRoute(path: '/bolum/:id', builder: (_, d) => Text('açıldı ${d.pathParameters['id']}')),
+    ]);
+    await tester.pumpWidget(ProviderScope(
+      overrides: [
+        efektSesiProvider.overrideWithValue(_SahteEfekt()),
+        bolumListesiProvider.overrideWith((_) async => [_bolum()]),
+      ],
+      child: MaterialApp.router(
+        routerConfig: yonlendirici,
+        locale: const Locale('tr'),
+        supportedLocales: Metinler.supportedLocales,
+        localizationsDelegates: const [
+          Metinler.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+      ),
+    ));
+    await tester.pumpAndSettle();
+    expect(find.byType(DevamKarti), findsOneWidget);
+    expect(find.text('Sahne 2 / 2'), findsOneWidget);
+    await tester.tap(find.byType(DevamKarti));
+    await tester.pumpAndSettle();
+    expect(find.text('açıldı b99-deneme'), findsOneWidget);
+  });
+
+  testWidgets('yarım bölüm yoksa devam kartı yok', (tester) async {
+    await tester.pumpWidget(_sar(const Scaffold(body: BolumYolu())));
+    await tester.pumpAndSettle();
+    expect(find.byType(DevamKarti), findsNothing);
+  });
 }

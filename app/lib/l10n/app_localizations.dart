@@ -480,6 +480,12 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'{bolum}, {sahne}. sahne'**
   String ilkGorunduguAyrinti(String bolum, int sahne);
+
+  /// No description provided for @devamEt.
+  ///
+  /// In tr, this message translates to:
+  /// **'Kaldığın yerden devam et'**
+  String get devamEt;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

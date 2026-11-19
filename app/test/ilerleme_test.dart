@@ -52,9 +52,24 @@ void main() {
       await n.sahneKaydet('b09', 7);
       await n.bitir('b09');
       await n.sahneKaydet('b09', 2);
-      expect(c.read(ilerlemeProvider).value!['b09'], const BolumIlerlemesi(sonSahne: 2, bitti: true));
+      final il = c.read(ilerlemeProvider).value!['b09']!;
+      expect((il.sonSahne, il.bitti), (2, true));
+      expect(il.zaman, greaterThan(0));
       final p = await SharedPreferences.getInstance();
-      expect(p.getString('ilerleme.b09'), '{"sahne":2,"bitti":true}');
+      expect(p.getString('ilerleme.b09'), '{"sahne":2,"bitti":true,"zaman":${il.zaman}}');
+    });
+
+    test('en son izlenen yarım bölüm seçilir', () {
+      expect(sonYarimBolum(const {}), isNull);
+      expect(
+        sonYarimBolum(const {
+          'b01': BolumIlerlemesi(sonSahne: 3, zaman: 10),
+          'b02': BolumIlerlemesi(sonSahne: 5, zaman: 30),
+          'b03': BolumIlerlemesi(sonSahne: 4, bitti: true, zaman: 50),
+          'b04': BolumIlerlemesi(sonSahne: 1, zaman: 60),
+        }),
+        'b02',
+      );
     });
   });
 

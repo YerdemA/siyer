@@ -228,4 +228,7 @@ class MetinlerEn extends Metinler {
   String ilkGorunduguAyrinti(String bolum, int sahne) {
     return '$bolum, scene $sahne';
   }
+
+  @override
+  String get devamEt => 'Continue where you left off';
 }
