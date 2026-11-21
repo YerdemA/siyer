@@ -72,7 +72,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] İlerleme takibi
 - [x] Anlatım sesi altyapısı
 - [x] Saat tonu (deneme; akşam ve şafak)
-- [ ] Anlatım sesiyle gerçek cihazda deneme
+- [x] Anlatım sesiyle gerçek cihazda deneme (10 bölüm seslendirildi, 2026-11-21)
 - [ ] Müzik ve ortam sesi çalma
 - [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
