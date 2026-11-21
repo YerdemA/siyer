@@ -19,7 +19,13 @@ Son güncelleme: 2026-11-21.
 - Listelerin altı gezinme çubuğuna kalıyordu (Android 15 kenardan kenara); `tema.dart`'taki `altPayli` ile düzeltildi (v4).
 - **Dikkat:** Yeni ses dosyası eklenince `flutter build` eski varlık listesini kullanıp yeni dosyaları pakete almadı (APK'da 51 dosya kaldı). `flutter clean` sonrası 135. Yeni varlık klasörüne dosya eklendiğinde temiz derle ve `unzip -l` ile say.
 - APK: `siyer-tam-sesli-v5.apk` (temiz derleme, 135 ses) — telefonda doğrulanmadı.
-- **Kapalı test hazırlığı başladı** (Erdem, 2026-11-21). Yayın denetimi: 15 hata = 499 atıf `bekliyor` (10 bölüm) + Buhârî/Müslim `baski` boş + 3 iddiada dayanak yetersiz (i-b05-002, i-b06-007, i-b08-024). Görsel katmanları eksiksiz.
+- **Kapalı test hazırlığı** (Erdem, 2026-11-21; Play hesabı var).
+  - **Kapalı test derlemesi** (Erdem seçti): `flutter build appbundle --release --android-project-arg=kapaliTest=true` → `icerik_dogrula --kapali-test`. Yalnız `bekliyor` atıflar uyarı olur, diğer bütün yayın kuralları hata kalır. Herkese açık yayın `--yayin` ile, değişmedi. Uygulama doğrulanmamış atıfları zaten "doğrulama bekliyor" diye gösteriyor.
+  - **Tek kaynak istisnası** (`KAYNAK_POLITIKASI` §2.1) artık iddiada `"istisna": "tek-kaynak"` ile işaretleniyor (şema güncel); betik hata değil uyarı verir. İşaretlenenler: i-b06-007 (İbn Sa'd dayanağı), i-b08-024 (Buhârî/Müslim/Müsned dayanağı). **Erdem iki gerekçeyi onaylamalı.**
+  - i-b05-002'ye İbn Hişâm s. 107 eklendi (taramadan okundu: «ثم أرسله إلى أمه آمنة», «فكان رسول الله مع أمه آمنة ... وجده عبد المطلب»).
+  - **Kalan engel (Erdem):** kaynakçada Buhârî ve Müslim `baski` boş. Kullanılan baskı/numaralandırma yazılmalı (Müslim atıfları sunnah.com numaralandırmasından; Buhârî'ninkiler ikincil kaynaklardan kitap-bab numarasıyla). Bunlar dolunca kapalı test AAB'si derlenir.
+  - **Yükleme anahtarı:** `C:\Users\yusuf\siyer-anahtar\siyer-yukleme.jks` (alias `yukleme`), şifreler `app/android/key.properties` (git dışı) ve aynı klasörde yedek. Erdem güvenli yere yedeklemeli. Anahtar yoksa release debug anahtarıyla imzalanır.
+  - Sırada: gizlilik politikası metni ve adresi, mağaza metinleri ve ekran görüntüleri, Play Console'da uygulama kaydı (veri güvenliği formu, içerik derecelendirmesi, kapalı test kanalı ve test eden listesi).
 
 **Önceki (2026-11-21).**
 - **Simge ve açılış uygulamada** (Erdem seçti: `simge-1-muhur` + `acilis-1-parsomen`; iki paket onaylandı, `dev_dependencies`). PNG'ler `tasarim/simge-acilis/uygulama_varliklari.py` ile `app/assets/simge/`'ye; ayarlar `app/flutter_launcher_icons.yaml`, `app/flutter_native_splash.yaml`. Uyarlanabilir simge (ön plan mühür, arka plan parşömen), Android 12+ açılışı (parşömen rengi + mühür), eski Android/iOS açılışı (parşömen zemin + mühür + başlık). Görünüm: `tasarim/simge-acilis/uygulamada.png`. Debug APK derlendi; telefonda henüz görülmedi.
