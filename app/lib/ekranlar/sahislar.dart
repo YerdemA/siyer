@@ -45,7 +45,7 @@ class _SahislarEkraniState extends ConsumerState<SahislarEkrani> {
                 ];
           final kapali = liste.length - acik.length;
           return ListView.separated(
-            padding: const EdgeInsets.only(bottom: 24),
+            padding: altPayli(context, const EdgeInsets.only(bottom: 24)),
             itemCount: gorunen.length + 2,
             separatorBuilder: (_, i) => i == 0 ? const SizedBox.shrink() : const Divider(height: 1, indent: 76),
             itemBuilder: (context, i) {
@@ -141,7 +141,7 @@ class SahisEkrani extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(title: Text(s.ad)),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: altPayli(context, const EdgeInsets.all(16)),
         children: [
           Center(child: SahisMadalyonu(sahis: s, boyut: 148)),
           const SizedBox(height: 12),

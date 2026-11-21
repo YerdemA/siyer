@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../icerik/depo.dart';
 import '../l10n/app_localizations.dart';
 import 'atif_listesi.dart';
+import '../tema.dart';
 
 class ZamanCizelgesiEkrani extends ConsumerWidget {
   const ZamanCizelgesiEkrani({super.key});
@@ -20,7 +21,7 @@ class ZamanCizelgesiEkrani extends ConsumerWidget {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
         data: (liste) => ListView.builder(
-          padding: const EdgeInsets.symmetric(vertical: 8),
+          padding: altPayli(context, const EdgeInsets.symmetric(vertical: 8)),
           itemCount: liste.length,
           itemBuilder: (context, i) {
             final o = liste[i];

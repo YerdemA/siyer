@@ -16,6 +16,7 @@ import 'gorsel_onbellek.dart';
 import 'harita_gecisi.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
+import '../tema.dart';
 
 class OynaticiEkrani extends ConsumerWidget {
   const OynaticiEkrani({
@@ -469,6 +470,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
           final sahislar = ref.watch(sahislarProvider).value ?? const <Sahis>[];
           return ListView(
             shrinkWrap: true,
+            padding: altPayli(c),
             children: [
               for (final id in kimlikler)
                 ListTile(

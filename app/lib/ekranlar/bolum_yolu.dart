@@ -86,6 +86,7 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
             if (liste[i].id == _secili) i,
         ];
         return SingleChildScrollView(
+          padding: altPayli(context),
           child: SizedBox(
             height: y.yukseklik,
             child: Stack(

@@ -10,6 +10,7 @@ import '../ilerleme/gorulenler.dart';
 import '../l10n/app_localizations.dart';
 import 'atif_listesi.dart';
 import 'harita_cografya.dart';
+import '../tema.dart';
 
 /// Parşömen harita (docs/GORSEL_USLUP.md → Harita). Gerçek harita değildir;
 /// yerler yaklaşık konumlarıyla işaretlenir. Kıyı, dağ süsleri, pusula ve
@@ -143,7 +144,7 @@ class HaritaEkrani extends ConsumerWidget {
         final tema = Theme.of(c).textTheme;
         return ListView(
           shrinkWrap: true,
-          padding: const EdgeInsets.all(16),
+          padding: altPayli(c, const EdgeInsets.all(16)),
           children: [
             Text(y.ad, style: tema.titleLarge),
             if (y.ozet.isNotEmpty) ...[

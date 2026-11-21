@@ -88,3 +88,9 @@ ThemeData uygulamaTemasi() {
     ),
   );
 }
+
+/// [p]'ye alttaki sistem gezinme çubuğunun payını ekler. Android 15'te
+/// uygulama ekranın altına kadar uzanır; kendi boşluğu verilmiş listeler bu
+/// payı kendiliğinden almaz ve son satırlar çubuğun altında kalır.
+EdgeInsets altPayli(BuildContext context, [EdgeInsets p = EdgeInsets.zero]) =>
+    p.copyWith(bottom: p.bottom + MediaQuery.paddingOf(context).bottom);
