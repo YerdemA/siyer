@@ -12,6 +12,8 @@ Son güncelleme: 2026-11-21.
 - Etiketlerin okunmadığı b01-s01 hizalamasıyla görüldü (her etiket ~0,05 sn). Telaffuzu Claude dinleyemedi; **Erdem telefonda dinlemeli** (özellikle Arapça adlar, «s.a.v.», ayetler).
 - Altyazı hâlâ sesi kelime sayısına göre paylaştırıyor; kayma görülürse ElevenLabs hizalamasıyla (kelime zamanları) parça sınırları kesinleştirilebilir.
 - Test APK'sı: `İndirilenler\siyer\siyer-sesli-b01-b04.apk` (profile derleme; release yayın kapısına takılır, doğrulanmamış atıf var).
+- Telefon testi (Erdem): sahne geçişinden sonra ses kesik/hiç gelmiyordu. Sebep: dosya yüklenirken saat ilerliyor, gecikme kayma sayılıp ses tekrar tekrar aranıyordu. Düzeltme: sessizlikte sıradaki ses önceden yüklenir; ses akmadan saat bekler (en çok 2 sn), akarken saat sese uyar; arama yalnız kaydırma/atlamada. Yeni APK: `siyer-sesli-b01-b04-v2.apk` — telefonda doğrulanmadı.
+- Altyazı varsayılan kapalı (Erdem: animasyonun keyfini kaçırıyor); Ayarlar'da ve oynatıcı düğmesinde açılır, tercih saklanır. Sesi olmayan sahnede metin her zaman görünür.
 - Kalan kredi ~19.000; b05–b10 için ~19.200 gerekir (az eksik). Sonraki ay yenilenir.
 
 **Önceki (2026-11-21).**
