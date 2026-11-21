@@ -427,6 +427,12 @@ abstract class Metinler {
   /// **'Altyazı boyutu'**
   String get altyaziBoyutu;
 
+  /// No description provided for @altyaziAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'Anlatım sesli sahnelerde metni de göster. Sesi olmayan sahnelerde metin her zaman görünür.'**
+  String get altyaziAciklama;
+
   /// No description provided for @boyutKucuk.
   ///
   /// In tr, this message translates to:

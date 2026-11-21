@@ -98,11 +98,13 @@ void main() {
     SharedPreferences.setMockInitialValues({'ilerleme.b09': '{"sahne":3,"bitti":false}'});
     await tester.pumpWidget(_sar(const AyarlarEkrani()));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Yazar, Eser'), 200);
     expect(find.text('Yazar, Eser'), findsOneWidget);
     expect(find.textContaining('https://ornek.org/eser'), findsOneWidget);
     expect(find.textContaining('kaynaklar/eser.pdf'), findsNothing);
     expect(find.textContaining('Kaynak katmanı C'), findsOneWidget);
 
+    await tester.ensureVisible(find.text('İlerlemeyi sıfırla'));
     await tester.tap(find.text('İlerlemeyi sıfırla'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Sıfırla'));

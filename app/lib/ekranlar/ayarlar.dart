@@ -21,8 +21,15 @@ class AyarlarEkrani extends ConsumerWidget {
       appBar: AppBar(title: Text(m.ayarlar)),
       body: ListView(
         children: [
+          SwitchListTile(
+            secondary: const Icon(Icons.subtitles_outlined),
+            title: Text(m.altyazi),
+            subtitle: Text(m.altyaziAciklama),
+            value: tercih.altyaziAcik,
+            onChanged: depo.altyaziAcikSec,
+          ),
           ListTile(
-            leading: const Icon(Icons.subtitles_outlined),
+            leading: const Icon(Icons.format_size),
             title: Text(m.altyaziBoyutu),
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 8),

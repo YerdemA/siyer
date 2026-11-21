@@ -32,6 +32,19 @@ class _SahteSes implements AnlatimSesi {
   Future<void> ara(Duration konum) async => _konum = konum;
 
   @override
+  Future<void> hazirla(String dosya) async {
+    olaylar.add('hazirla $dosya');
+    _etkin = dosya;
+    _konum = Duration.zero;
+  }
+
+  /// false: ses yükleniyor/tamponluyor gibi davranır.
+  bool yuklendi = true;
+
+  @override
+  bool get hazir => yuklendi;
+
+  @override
   Future<void> duraklat() async {
     olaylar.add('duraklat');
     _caliyor = false;
@@ -98,13 +111,23 @@ void main() {
   });
 
   group('sesKarari', () {
-    SesKarari k({bool oynuyor = true, double? an = 1, String? etkin = 'a.mp3', bool caliyor = true, int konumMs = 1000}) =>
+    SesKarari k({
+      bool oynuyor = true,
+      double? an = 1,
+      String? etkin = 'a.mp3',
+      bool caliyor = true,
+      bool hazir = true,
+      String? siradaki,
+      int konumMs = 1000,
+    }) =>
         sesKarari(
           oynuyor: oynuyor,
           dosya: 'a.mp3',
           sesKonumu: an,
           etkinDosya: etkin,
           caliyor: caliyor,
+          hazir: hazir,
+          siradaki: siradaki,
           konum: Duration(milliseconds: konumMs),
         );
 
@@ -118,9 +141,17 @@ void main() {
       expect(k(etkin: 'b.mp3'), isA<SesCal>());
       expect((k(caliyor: false, an: 2.5) as SesCal).konum, const Duration(milliseconds: 2500));
     });
-    test('kaydırınca (kayma > 200 ms) yeniden konumlanır', () {
-      expect(k(konumMs: 1150), isA<SesBekle>());
+    test('kaydırınca (kayma > 400 ms) yeniden konumlanır', () {
+      expect(k(konumMs: 1350), isA<SesBekle>());
       expect((k(an: 3, konumMs: 1000) as SesAra).konum, const Duration(seconds: 3));
+    });
+    test('ses yüklenirken konum farkı arama sebebi değildir', () {
+      expect(k(an: 3, konumMs: 0, hazir: false), isA<SesBekle>());
+    });
+    test('sessizlikte sıradaki dosya önceden yüklenir', () {
+      expect((k(an: null, caliyor: false, siradaki: 'b.mp3') as SesHazirla).dosya, 'b.mp3');
+      expect(k(an: null, caliyor: false, etkin: 'b.mp3', siradaki: 'b.mp3'), isA<SesBekle>());
+      expect(k(an: null, caliyor: true, siradaki: 'b.mp3'), isA<SesDuraklat>());
     });
   });
 
@@ -137,7 +168,7 @@ void main() {
       )));
       await tester.pump(const Duration(milliseconds: 100));
       await tester.pump(const Duration(milliseconds: 300));
-      expect(ses.olaylar, isEmpty, reason: 'sahne başı sessizliğinde ses yok');
+      expect(ses.olaylar, ['hazirla b99-s01.mp3'], reason: 'sahne başı sessizliğinde yalnız yüklenir');
       expect(find.textContaining('Anlatım sesi henüz yok'), findsNothing);
 
       await tester.pump(const Duration(seconds: 1));
@@ -151,6 +182,29 @@ void main() {
 
       await tester.pumpWidget(const SizedBox());
       expect(ses.olaylar.last, 'kapat');
+    });
+
+    testWidgets('ses yüklenirken saat bekler, ses hiç gelmezse 2 sn sonra yürür', (tester) async {
+      final ses = _SahteSes()..yuklendi = false;
+      await tester.pumpWidget(_sar(Oynatici(
+        bolum: ornekBolum(),
+        kaynakca: kaynakca,
+        sesSureleri: const {'b99-s01': 4.0},
+        sesFabrikasi: () => ses,
+      )));
+      // 60 fps'e yakın kareler: saat 1 sn'de sesin başına (0,8 sn) varır.
+      for (var i = 0; i < 60; i++) {
+        await tester.pump(const Duration(milliseconds: 16));
+      }
+      expect(ses.olaylar, contains('cal b99-s01.mp3'));
+      for (var i = 0; i < 60; i++) {
+        await tester.pump(const Duration(milliseconds: 16));
+      }
+      expect(find.textContaining('0:00 /'), findsOneWidget, reason: 'ses akmadan saat ilerlemez');
+      for (var i = 0; i < 150; i++) {
+        await tester.pump(const Duration(milliseconds: 16));
+      }
+      expect(find.textContaining('0:00 /'), findsNothing, reason: 'bekleme sınırı aşılınca saat yürür');
     });
 
     testWidgets('sesi olmayan sahnede ses uyarısı görünür', (tester) async {

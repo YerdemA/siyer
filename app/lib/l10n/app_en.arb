@@ -55,6 +55,7 @@
   "bolumEtiketi": "Episode {no}",
   "yolBaslik": "The Life of the Prophet",
   "altyaziBoyutu": "Subtitle size",
+  "altyaziAciklama": "Also show the text in narrated scenes. Scenes without narration always show it.",
   "boyutKucuk": "Small",
   "boyutOrta": "Medium",
   "boyutBuyuk": "Large",

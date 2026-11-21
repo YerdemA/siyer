@@ -196,6 +196,10 @@ class MetinlerTr extends Metinler {
   String get altyaziBoyutu => 'Altyazı boyutu';
 
   @override
+  String get altyaziAciklama =>
+      'Anlatım sesli sahnelerde metni de göster. Sesi olmayan sahnelerde metin her zaman görünür.';
+
+  @override
   String get boyutKucuk => 'Küçük';
 
   @override

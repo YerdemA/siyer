@@ -64,6 +64,7 @@
   "@bolumEtiketi": { "placeholders": { "no": { "type": "int" } } },
   "yolBaslik": "Resulü Ekrem'in Hayatı",
   "altyaziBoyutu": "Altyazı boyutu",
+  "altyaziAciklama": "Anlatım sesli sahnelerde metni de göster. Sesi olmayan sahnelerde metin her zaman görünür.",
   "boyutKucuk": "Küçük",
   "boyutOrta": "Orta",
   "boyutBuyuk": "Büyük",

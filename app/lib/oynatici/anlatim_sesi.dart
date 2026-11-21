@@ -6,8 +6,8 @@ import 'package:just_audio/just_audio.dart';
 
 import '../icerik/depo.dart';
 
-/// Sahne başına bir anlatım sesi dosyası. Oynatıcının saati asıl saattir;
-/// ses ona uyar (bkz. `_OynaticiState._sesiEsitle`). Testlerde sahtesi kullanılır.
+/// Sahne başına bir anlatım sesi dosyası. Ses çalarken saat sese uyar,
+/// sessizlikte kendi işler (bkz. `_OynaticiState._tik`). Testlerde sahtesi kullanılır.
 abstract class AnlatimSesi {
   /// Dosyanın süresi; bulunamaz ya da okunamazsa null.
   Future<Duration?> sure(String dosya);
@@ -18,10 +18,19 @@ abstract class AnlatimSesi {
   /// Çalan dosyada konum değiştirir.
   Future<void> ara(Duration konum);
 
+  /// [dosya]yı çalmadan yükler; sıradaki ses başlarken bekleme olmasın diye.
+  Future<void> hazirla(String dosya);
+
   Future<void> duraklat();
 
   String? get etkinDosya;
+
+  /// Çalma istendi mi (yükleniyor olsa da).
   bool get caliyor;
+
+  /// Ses gerçekten akıyor mu (yükleme/tamponlama bitti). Değilse saat bekler.
+  bool get hazir;
+
   Duration get konum;
 
   Future<void> kapat();
@@ -48,15 +57,37 @@ class JustAudioSesi implements AnlatimSesi {
     }
   }
 
-  @override
-  Future<void> cal(String dosya, Duration konum) async {
-    if (_etkin != dosya) {
+  /// Yüklenemeyen dosyalar; her karede yeniden denenmesin.
+  final _bozuk = <String>{};
+
+  Future<bool> _yukle(String dosya) async {
+    if (_etkin == dosya) return true;
+    if (_bozuk.contains(dosya)) return false;
+    try {
       await _oynatici.setAsset('$kok/$dosya');
       _etkin = dosya;
+      return true;
+    } catch (hata) {
+      _bozuk.add(dosya);
+      _etkin = null;
+      debugPrint('Anlatım sesi yüklenemedi: $dosya ($hata)');
+      return false;
     }
-    await _oynatici.seek(konum);
+  }
+
+  @override
+  Future<void> cal(String dosya, Duration konum) async {
+    if (!await _yukle(dosya)) return;
+    // Hazırlanmış dosya zaten baştadır; gereksiz arama sesi kesik başlatır.
+    if ((_oynatici.position - konum).inMilliseconds.abs() > 150) await _oynatici.seek(konum);
     // play() çalma bitene kadar tamamlanmaz; beklenmez.
     unawaited(_oynatici.play());
+  }
+
+  @override
+  Future<void> hazirla(String dosya) async {
+    if (_oynatici.playing) await _oynatici.pause();
+    await _yukle(dosya);
   }
 
   @override
@@ -70,6 +101,12 @@ class JustAudioSesi implements AnlatimSesi {
 
   @override
   bool get caliyor => _oynatici.playing;
+
+  @override
+  bool get hazir => switch (_oynatici.processingState) {
+        ProcessingState.ready || ProcessingState.completed => true,
+        _ => false,
+      };
 
   @override
   Duration get konum => _oynatici.position;
@@ -131,8 +168,16 @@ class SesAra extends SesKarari {
   final Duration konum;
 }
 
-/// Saat asıl, ses ona uyar. [sesKonumu]: sahnenin sesi içindeki konum (saniye),
-/// ses dışındaysa (sahne başı/sonu sessizliği, sessiz sahne) null.
+class SesHazirla extends SesKarari {
+  const SesHazirla(this.dosya);
+  final String dosya;
+}
+
+/// Ses çalarken saat sese uyar (bkz. `_OynaticiState._tik`); kayma yalnız
+/// kullanıcı kaydırınca ya da sahne atlayınca olur ve o zaman ses yeniden
+/// konumlanır. [sesKonumu]: sahnenin sesi içindeki konum (saniye), ses
+/// dışındaysa (sahne başı/sonu sessizliği, sessiz sahne) null. Sessizlikte
+/// [siradaki] (sıradaki sesli dosya) önceden yüklenir.
 SesKarari sesKarari({
   required bool oynuyor,
   required String dosya,
@@ -140,11 +185,19 @@ SesKarari sesKarari({
   required String? etkinDosya,
   required bool caliyor,
   required Duration konum,
-  int kaymaSiniriMs = 200,
+  bool hazir = true,
+  String? siradaki,
+  int kaymaSiniriMs = 400,
 }) {
-  if (!oynuyor || sesKonumu == null) return caliyor ? const SesDuraklat() : const SesBekle();
+  if (!oynuyor || sesKonumu == null) {
+    if (caliyor) return const SesDuraklat();
+    if (siradaki != null && siradaki != etkinDosya) return SesHazirla(siradaki);
+    return const SesBekle();
+  }
   final hedef = Duration(microseconds: (sesKonumu * 1e6).round());
   if (etkinDosya != dosya || !caliyor) return SesCal(dosya, hedef);
+  // Yüklenirken/tamponlarken konum güvenilmez; aramak döngüye sokar.
+  if (!hazir) return const SesBekle();
   if ((konum - hedef).inMilliseconds.abs() > kaymaSiniriMs) return SesAra(hedef);
   return const SesBekle();
 }

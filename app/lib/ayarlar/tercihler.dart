@@ -15,16 +15,27 @@ enum AltyaziBoyutu {
 
 /// Kullanıcı tercihleri; yalnız cihazda saklanır.
 class Tercihler {
-  const Tercihler({this.altyazi = AltyaziBoyutu.orta, this.efektSesleri = true, this.hareketiAzalt = false});
+  const Tercihler({
+    this.altyazi = AltyaziBoyutu.orta,
+    this.altyaziAcik = false,
+    this.efektSesleri = true,
+    this.hareketiAzalt = false,
+  });
 
   final AltyaziBoyutu altyazi;
+
+  /// Sesli sahnelerde altyazı. Varsayılan kapalı: animasyonu örtmesin
+  /// (Erdem, 2026-11-21). Sesi olmayan sahnede metin her zaman görünür.
+  final bool altyaziAcik;
   final bool efektSesleri;
 
   /// Kart ve harita animasyonları kısalır (erişilebilirlik).
   final bool hareketiAzalt;
 
-  Tercihler kopya({AltyaziBoyutu? altyazi, bool? efektSesleri, bool? hareketiAzalt}) => Tercihler(
+  Tercihler kopya({AltyaziBoyutu? altyazi, bool? altyaziAcik, bool? efektSesleri, bool? hareketiAzalt}) =>
+      Tercihler(
         altyazi: altyazi ?? this.altyazi,
+        altyaziAcik: altyaziAcik ?? this.altyaziAcik,
         efektSesleri: efektSesleri ?? this.efektSesleri,
         hareketiAzalt: hareketiAzalt ?? this.hareketiAzalt,
       );
@@ -32,6 +43,7 @@ class Tercihler {
 
 class TercihDeposu extends AsyncNotifier<Tercihler> {
   static const _altyazi = 'tercih.altyazi';
+  static const _altyaziAcik = 'tercih.altyaziAcik';
   static const _efekt = 'tercih.efekt';
   static const _hareket = 'tercih.hareketiAzalt';
 
@@ -41,6 +53,7 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
     return Tercihler(
       altyazi: AltyaziBoyutu.values.where((b) => b.name == p.getString(_altyazi)).firstOrNull ??
           AltyaziBoyutu.orta,
+      altyaziAcik: p.getBool(_altyaziAcik) ?? false,
       efektSesleri: p.getBool(_efekt) ?? true,
       hareketiAzalt: p.getBool(_hareket) ?? false,
     );
@@ -49,6 +62,11 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   Future<void> altyaziSec(AltyaziBoyutu b) async {
     state = AsyncData((state.value ?? const Tercihler()).kopya(altyazi: b));
     await (await SharedPreferences.getInstance()).setString(_altyazi, b.name);
+  }
+
+  Future<void> altyaziAcikSec(bool acik) async {
+    state = AsyncData((state.value ?? const Tercihler()).kopya(altyaziAcik: acik));
+    await (await SharedPreferences.getInstance()).setBool(_altyaziAcik, acik);
   }
 
   Future<void> efektSesleriSec(bool acik) async {

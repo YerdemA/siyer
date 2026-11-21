@@ -67,6 +67,8 @@ class OynaticiEkrani extends ConsumerWidget {
             yerler: duraklatilmis || baslangicCekimi > 1 ? const [] : yerler.value ?? const [],
             sesFabrikasi: ref.read(anlatimSesiFabrikasi),
             altyaziOlcegi: ref.read(tercihlerProvider).value?.altyazi.olcek ?? 1,
+            altyaziAcik: ref.read(tercihlerProvider).value?.altyaziAcik ?? false,
+            altyaziDegisti: ref.read(tercihlerProvider.notifier).altyaziAcikSec,
             efekt: ref.read(efektCalProvider),
             azHareket: hareketAz(context, ref),
             sonrakiBolum: _sonraki(ref.read(bolumListesiProvider).value ?? const [], b),
@@ -106,6 +108,8 @@ class Oynatici extends StatefulWidget {
     this.sesFabrikasi,
     this.yerler = const [],
     this.altyaziOlcegi = 1,
+    this.altyaziAcik = false,
+    this.altyaziDegisti,
     this.efekt,
     this.sonrakiBolum,
     this.azHareket = false,
@@ -116,6 +120,12 @@ class Oynatici extends StatefulWidget {
 
   /// Ayarlar'daki altyazı boyutu (1 = orta).
   final double altyaziOlcegi;
+
+  /// Sesli sahnelerde altyazı gösterilsin mi (sessiz sahnede her zaman görünür).
+  final bool altyaziAcik;
+
+  /// Oynatıcıdaki altyazı düğmesi tercihi değiştirince (kalıcı kayıt için).
+  final ValueChanged<bool>? altyaziDegisti;
 
   /// Efekt sesi çalar (ör. harita geçişinde `parsomen`); verilmezse sessiz.
   final void Function(String ad)? efekt;
@@ -159,7 +169,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   bool _oynuyor = true;
   bool _kontroller = true;
   bool _tarif = false;
-  bool _altyazi = true;
+  late bool _altyazi = widget.altyaziAcik;
   final _gorseller = GorselOnbellek();
 
   /// Gösterilen harita geçişi; varken zaman ve ses durur.
@@ -210,8 +220,9 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     _oncekiTik = gecen;
     _sesiEsitle();
     if (!_oynuyor || _gecis != null) return;
+    final sesAni = _sesSaati(dt);
     setState(() {
-      _an = math.min(_an + dt, _plan.toplam);
+      _an = math.min(sesAni ?? _an + dt, _plan.toplam);
       if (_an >= _plan.toplam) _oynuyor = false;
       _yerDegistiMi();
     });
@@ -259,23 +270,60 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
 
   bool get _bitti => _an >= _plan.toplam;
 
+  /// Sesin akmasını bekleyen süre (saniye); bkz. [_sesSaati].
+  double _sesBekleme = 0;
+
+  /// Anlatım bölgesinde saati sese bağlar. Ses yüklenirken saat durur (en çok
+  /// [enCokBekleme] sn; ses hiç gelmezse saat kendi işler), ses akarken sesin
+  /// konumunu izler. Böylece yükleme gecikmesi kayma sayılıp ses tekrar tekrar
+  /// başa sarılmaz. null: saat kendi işler.
+  double? _sesSaati(double dt) {
+    final ses = _ses;
+    if (ses == null) return null;
+    final s = _plan.sahneler[_plan.sahneSirasi(_an)];
+    final k = s.sesKonumu(_an);
+    if (k == null) {
+      _sesBekleme = 0;
+      return null;
+    }
+    final akiyor =
+        !_sesIstegiSuruyor && ses.etkinDosya == s.sahne.sesAnlatim && ses.caliyor && ses.hazir;
+    if (!akiyor) {
+      _sesBekleme += dt;
+      return _sesBekleme < enCokBekleme ? _an : null;
+    }
+    _sesBekleme = 0;
+    final sesAni = s.sesBas + ses.konum.inMicroseconds / 1e6;
+    // Büyük fark kullanıcının kaydırmasıdır; ses saate uyar (_sesiEsitle arar).
+    if ((sesAni - _an).abs() * 1000 > sesKaymaSiniri) return null;
+    // Saat geri gitmez; ses konumundaki küçük titremeler görüntüyü sarsmasın.
+    return math.max(_an, sesAni);
+  }
+
+  static const enCokBekleme = 2.0;
+
   /// Saat asıl; ses ona uyar. Her karede çağrılır: duraklatma, kaydırma,
   /// sahne atlama, bölüm sonu ve sahne başı/sonu sessizlikleri buradan yönetilir.
   void _sesiEsitle() {
     final ses = _ses;
     if (ses == null || _sesIstegiSuruyor) return;
-    final s = _plan.sahneler[_plan.sahneSirasi(_an)];
+    final i = _plan.sahneSirasi(_an);
+    final s = _plan.sahneler[i];
     switch (sesKarari(
       oynuyor: _oynuyor && _gecis == null,
       dosya: s.sahne.sesAnlatim,
       sesKonumu: s.sesKonumu(_an),
       etkinDosya: ses.etkinDosya,
       caliyor: ses.caliyor,
+      hazir: ses.hazir,
       konum: ses.konum,
+      siradaki: _siradakiSes(i),
       kaymaSiniriMs: sesKaymaSiniri,
     )) {
       case SesBekle():
         break;
+      case SesHazirla(:final dosya):
+        _sesIstegi(ses.hazirla(dosya));
       case SesDuraklat():
         _sesIstegi(ses.duraklat());
       case SesCal(:final dosya, :final konum):
@@ -285,8 +333,19 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     }
   }
 
-  /// Ses saatten bu kadar (ms) ayrılırsa yeniden konumlanır.
-  static const sesKaymaSiniri = 200;
+  /// Sessizlikte önceden yüklenecek dosya: sahnenin sesi henüz başlamadıysa
+  /// kendisininki, bittiyse sıradaki sesli sahneninki.
+  String? _siradakiSes(int i) {
+    final s = _plan.sahneler[i];
+    if (s.sesli && _an < s.sesBas) return s.sahne.sesAnlatim;
+    for (var j = i + 1; j < _plan.sahneler.length; j++) {
+      if (_plan.sahneler[j].sesli) return _plan.sahneler[j].sahne.sesAnlatim;
+    }
+    return null;
+  }
+
+  /// Ses saatten bu kadar (ms) ayrılırsa (kaydırma, atlama) yeniden konumlanır.
+  static const sesKaymaSiniri = 400;
 
   void _sesIstegi(Future<void> istek) {
     _sesIstegiSuruyor = true;
@@ -350,8 +409,14 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     ),
                   ),
                 ),
-              if (_altyazi && konum.parca != null)
-                _Altyazi(parca: konum.parca!, an: _an, olcek: widget.altyaziOlcegi),
+              if ((_altyazi || !konum.sahne.sesli) && konum.parca != null)
+                _Altyazi(
+                  parca: konum.parca!,
+                  an: _an,
+                  olcek: widget.altyaziOlcegi,
+                  // Kontroller gizliyken altyazı kenara iner, görüntüyü az örter.
+                  alt: _kontroller && !_bitti ? 64 : 16,
+                ),
               if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
               if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
               if (_gecis case final g?)
@@ -494,7 +559,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     tooltip: m.altyazi,
                     color: _altyazi ? beyaz : Colors.white38,
                     icon: const Icon(Icons.subtitles_outlined),
-                    onPressed: () => setState(() => _altyazi = !_altyazi),
+                    onPressed: () {
+                      setState(() => _altyazi = !_altyazi);
+                      widget.altyaziDegisti?.call(_altyazi);
+                    },
                   ),
                   if (konum.sahne.sahne.sahislar.isNotEmpty)
                     IconButton(
@@ -579,9 +647,10 @@ class _CubukCizici extends CustomPainter {
 }
 
 class _Altyazi extends StatelessWidget {
-  const _Altyazi({required this.parca, required this.an, this.olcek = 1});
+  const _Altyazi({required this.parca, required this.an, this.olcek = 1, this.alt = 64});
 
   final ParcaZamani parca;
+  final double alt;
   final double an;
   final double olcek;
 
@@ -595,7 +664,7 @@ class _Altyazi extends StatelessWidget {
     return Positioned(
       left: 0,
       right: 0,
-      bottom: 64,
+      bottom: alt,
       child: Opacity(
         opacity: gorunur,
         child: Center(

@@ -198,6 +198,10 @@ class MetinlerEn extends Metinler {
   String get altyaziBoyutu => 'Subtitle size';
 
   @override
+  String get altyaziAciklama =>
+      'Also show the text in narrated scenes. Scenes without narration always show it.';
+
+  @override
   String get boyutKucuk => 'Small';
 
   @override
