@@ -35,7 +35,8 @@ void main() {
     if (varlik is! File) continue;
     if (!_uzantilar.any(varlik.path.toLowerCase().endsWith)) continue;
     // Üretim istemleri uygulamaya girmez.
-    if (varlik.path.replaceAll(r'\', '/').contains('gorseller/istemler/')) continue;
+    final yol = varlik.path.replaceAll(r'\', '/');
+    if (yol.contains('gorseller/istemler/') || yol.contains('ses/istemler/')) continue;
     final goreli = varlik.path.substring(kaynak.path.length + 1);
     final yeni = File('${hedef.path}/$goreli');
     yeni.parent.createSync(recursive: true);
