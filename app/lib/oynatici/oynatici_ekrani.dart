@@ -270,6 +270,15 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
 
   bool get _bitti => _an >= _plan.toplam;
 
+  /// Son [kararmaSuresi] saniyede 0'dan 1'e; sonra bölüm sonu kartı açılır.
+  double get _kararma {
+    final bas = _plan.toplam - kararmaSuresi;
+    if (_an <= bas) return 0;
+    return Curves.easeInOut.transform(((_an - bas) / kararmaSuresi).clamp(0.0, 1.0));
+  }
+
+  static const kararmaSuresi = 3.0;
+
   /// Sesin akmasını bekleyen süre (saniye); bkz. [_sesSaati].
   double _sesBekleme = 0;
 
@@ -409,6 +418,8 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     ),
                   ),
                 ),
+              // Bölüm sonu: son sahnenin kapanış sessizliğinde görüntü kararır.
+              if (_kararma > 0) ColoredBox(color: Colors.black.withValues(alpha: _kararma)),
               if ((_altyazi || !konum.sahne.sesli) && konum.parca != null)
                 _Altyazi(
                   parca: konum.parca!,
@@ -431,6 +442,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                 ),
               if (_bitti)
                 _BolumSonu(
+                  azHareket: widget.azHareket,
                   bolum: widget.bolum,
                   kaynakca: widget.kaynakca,
                   sonraki: widget.sonrakiBolum,
@@ -733,8 +745,92 @@ class _TarifPaneli extends StatelessWidget {
   }
 }
 
-class _BolumSonu extends StatelessWidget {
-  const _BolumSonu({required this.bolum, required this.kaynakca, required this.yenidenOynat, this.sonraki});
+/// Kararmanın ardından önce bölüm adı, biraz sonra kaynaklar ve düğmeler
+/// belirir; bölüm birden kesilmez.
+class _BolumSonu extends StatefulWidget {
+  const _BolumSonu({
+    required this.bolum,
+    required this.kaynakca,
+    required this.yenidenOynat,
+    this.sonraki,
+    this.azHareket = false,
+  });
+
+  final Bolum bolum;
+  final Bolum? sonraki;
+  final Map<String, Eser> kaynakca;
+  final VoidCallback yenidenOynat;
+  final bool azHareket;
+
+  @override
+  State<_BolumSonu> createState() => _BolumSonuState();
+}
+
+class _BolumSonuState extends State<_BolumSonu> with SingleTickerProviderStateMixin {
+  late final _zaman = AnimationController(
+    vsync: this,
+    duration: Duration(milliseconds: widget.azHareket ? 600 : 4200),
+  )..forward();
+
+  @override
+  void dispose() {
+    _zaman.dispose();
+    super.dispose();
+  }
+
+  /// Zaman çizelgesinin [bas]–[son] aralığında 0→1.
+  Animation<double> _aralik(double bas, double son) =>
+      CurvedAnimation(parent: _zaman, curve: Interval(bas, son, curve: Curves.easeInOut));
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    // Kart: ilk %25'te belirir, %60'ta çekilir; liste %60'tan sonra gelir.
+    final kartGir = _aralik(0, 0.25);
+    final kartCik = _aralik(0.55, 0.7);
+    final liste = _aralik(0.6, 0.85);
+    return ColoredBox(
+      color: Colors.black,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          AnimatedBuilder(
+            animation: _zaman,
+            builder: (context, _) => Opacity(
+              opacity: (kartGir.value - kartCik.value).clamp(0.0, 1.0),
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      widget.bolum.baslik,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Color(0xFFF2C46B), fontSize: 30, letterSpacing: 0.5),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(m.bolumSonu, style: const TextStyle(color: Colors.white54, fontSize: 15, letterSpacing: 2)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          FadeTransition(
+            opacity: liste,
+            child: _BolumSonuListesi(
+              bolum: widget.bolum,
+              kaynakca: widget.kaynakca,
+              sonraki: widget.sonraki,
+              yenidenOynat: widget.yenidenOynat,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BolumSonuListesi extends StatelessWidget {
+  const _BolumSonuListesi({required this.bolum, required this.kaynakca, required this.yenidenOynat, this.sonraki});
 
   final Bolum bolum;
   final Bolum? sonraki;

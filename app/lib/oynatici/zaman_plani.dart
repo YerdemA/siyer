@@ -15,6 +15,7 @@ class ZamanAyari {
     this.parcaArasi = 0.6,
     this.sahneBasi = 0.8,
     this.sahneSonu = 1.2,
+    this.bolumSonu = 4.0,
     this.gecis = 0.9,
     this.cekimGecisi = 0.8,
   });
@@ -29,6 +30,10 @@ class ZamanAyari {
 
   /// Son cümleden sonra görüntünün nefes alması için süre.
   final double sahneSonu;
+
+  /// Son sahnede [sahneSonu] yerine: görüntü yavaşça kararır, izleyici
+  /// bölümün bittiğini hisseder (Erdem, 2026-11-21).
+  final double bolumSonu;
 
   /// Sahneler arası çapraz geçiş süresi (bir sonraki sahnenin içine taşar).
   final double gecis;
@@ -154,7 +159,7 @@ class ZamanPlani {
           t += sure;
         }
       }
-      t += ayar.sahneSonu;
+      t += i == bolum.sahneler.length - 1 ? ayar.bolumSonu : ayar.sahneSonu;
       sahneler.add(SahneZamani(i, sahne, bas, t, parcalar,
           sesBas: sesBas,
           sesSure: sesSure != null && sesSure > 0 ? sesSure : null,

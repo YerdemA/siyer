@@ -66,7 +66,8 @@ void main() {
     expect(c[1].bas, closeTo(3.9, 1e-9));
     expect(c[0].son, c[1].bas);
     expect(c[2].bas, closeTo(14.5, 1e-9));
-    expect(c[2].son, closeTo(18.2, 1e-9));
+    // Tek sahne = son sahne: kapanışta 1,2 yerine 4 sn bölüm sonu (18,2 + 2,8).
+    expect(c[2].son, closeTo(21.0, 1e-9));
   });
 
   test('çekim geçişi parçadan önce biter, kamera her çekimde baştan başlar', () {
@@ -81,12 +82,12 @@ void main() {
     expect(gecis.cekim.sira, 0);
     expect(gecis.gelenCekim!.sira, 1);
     expect(gecis.gecisOrani, closeTo(0.5, 1e-9));
-    expect(gecis.gelenCekimIlerleme, closeTo(0.4 / (18.2 - 3.1), 1e-9));
+    expect(gecis.gelenCekimIlerleme, closeTo(0.4 / (21.0 - 3.1), 1e-9));
 
     final sonra = plan.konum(5.0);
     expect(sonra.cekim.sira, 1);
     expect(sonra.gelenCekim, isNull);
-    expect(sonra.cekimIlerleme, closeTo((5.0 - 3.1) / (18.2 - 3.1), 1e-9));
+    expect(sonra.cekimIlerleme, closeTo((5.0 - 3.1) / (21.0 - 3.1), 1e-9));
   });
 
   test('geçersiz ya da çok yakın çekimler atlanır', () {
