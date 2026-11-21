@@ -14,6 +14,7 @@ Son güncelleme: 2026-11-21.
 - Test APK'sı: `İndirilenler\siyer\siyer-sesli-b01-b04.apk` (profile derleme; release yayın kapısına takılır, doğrulanmamış atıf var).
 - Telefon testi (Erdem): sahne geçişinden sonra ses kesik/hiç gelmiyordu. Sebep: dosya yüklenirken saat ilerliyor, gecikme kayma sayılıp ses tekrar tekrar aranıyordu. Düzeltme: sessizlikte sıradaki ses önceden yüklenir; ses akmadan saat bekler (en çok 2 sn), akarken saat sese uyar; arama yalnız kaydırma/atlamada. Yeni APK: `siyer-sesli-b01-b04-v2.apk` — telefonda doğrulanmadı.
 - Altyazı varsayılan kapalı (Erdem: animasyonun keyfini kaçırıyor); Ayarlar'da ve oynatıcı düğmesinde açılır, tercih saklanır. Sesi olmayan sahnede metin her zaman görünür.
+- Telefon testi 2: ses düzgün (v2 doğrulandı). Bölüm sonu yumuşatıldı: son sahne 4 sn sürer, son 3 sn görüntü kararır, sonra bölüm adı kartı, ardından kaynaklar. Anlatıcı sesindeki ani iniş çıkışlar `tools/ses_dengele.py` ile giderildi (hafif sıkıştırıcı + -16 LUFS; sahneler arası fark 5,5 dB → 0, iç dalgalanma en çok 7,9 → 3,7 LU). Yeni seslerden sonra bu betik çalıştırılmalı. APK: `siyer-sesli-b01-b04-v3.apk` — telefonda doğrulanmadı.
 - Kalan kredi ~19.000; b05–b10 için ~19.200 gerekir (az eksik). Sonraki ay yenilenir.
 
 **Önceki (2026-11-21).**
