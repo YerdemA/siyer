@@ -898,8 +898,15 @@
       "id": "i-b05-002",
       "ifade": "Süt annesinin yanından döndükten sonra bir süre annesinin yanında kaldı.",
       "guc": "guclu",
-      "gerekce": "ÂMİNE (s. 64): Âmine onu muhtemelen dört yaşlarında tekrar yanına almış ve iki yıl daha onunla kalmıştır. b04 i-b04-013 dönüş yaşını 'dört ya da beş' diye verdiği için anlatım süre vermez, 'bir süre' der.",
+      "gerekce": "ÂMİNE (s. 64): Âmine onu muhtemelen dört yaşlarında tekrar yanına almış ve iki yıl daha onunla kalmıştır. İbn Hişâm s. 107 (İbn İshak): Abdülmuttalib onu annesi Âmine'ye gönderdi; Resûlullah annesi Âmine ve dedesi Abdülmuttalib'in yanında kaldı (taramadan okundu, 2026-11-21). b04 i-b04-013 dönüş yaşını 'dört ya da beş' diye verdiği için anlatım süre vermez, 'bir süre' der.",
       "kaynaklar": [
+        {
+          "eser": "ibn-hisam-sire",
+          "konum": "s. 107",
+          "dogrulama": "bekliyor",
+          "dogrulayan": "",
+          "tarih": ""
+        },
         {
           "eser": "tdv-dia",
           "konum": "Bekir Topaloğlu, \"ÂMİNE\", c. 3, s. 64 (İstanbul 1991)",
