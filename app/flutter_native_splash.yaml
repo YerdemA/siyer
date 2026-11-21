@@ -1,0 +1,18 @@
+# Açılış ekranı: parşömen (tasarim/simge-acilis/acilis-1-parsomen, Erdem 2026-11-21).
+# PNG'ler: python tasarim/simge-acilis/uygulama_varliklari.py
+# Üretmek için: dart run flutter_native_splash:create
+flutter_native_splash:
+  # Eski Android ve iOS: parşömen zemin, ortada mühür ve başlık.
+  color: "#E6D3A8"
+  background_image: "assets/simge/acilis-zemin.png"
+  image: "assets/simge/acilis.png"
+
+  # Android 12+: yalnız zemin rengi ve ortadaki simge gösterilir.
+  android_12:
+    color: "#E6D3A8"
+    image: "assets/simge/acilis-simge.png"
+
+  android: true
+  ios: true
+  web: false
+  fullscreen: false

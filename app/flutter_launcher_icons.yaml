@@ -1,0 +1,15 @@
+# Uygulama simgesi: mühür (tasarim/simge-acilis/simge-1-muhur, Erdem 2026-11-21).
+# PNG'ler: python tasarim/simge-acilis/uygulama_varliklari.py
+# Üretmek için: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/simge/simge.png"
+  android: "ic_launcher"
+  min_sdk_android: 21
+  adaptive_icon_foreground: "assets/simge/simge-on.png"
+  adaptive_icon_background: "assets/simge/simge-zemin.png"
+  # Boşluk ön plan PNG'sinde zaten var; paket ayrıca küçültmesin.
+  adaptive_icon_foreground_inset: 0
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: false

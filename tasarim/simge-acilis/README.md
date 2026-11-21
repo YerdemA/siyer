@@ -26,15 +26,20 @@ Sekiz köşeli yıldız, İslâm sanatında yaygın bir geometrik motiftir; iste
 | `acilis-2-gece` | Gece laciverdi, seyrek yıldızlar, altın pusula, parşömen renginde başlık |
 | `acilis-3-harita` | Haritadan bir kesit: Kızıldeniz kıyısı, Şam'dan Mekke'ye kervan yolu, Mekke'de çarpı |
 
-## Öneri
+## Seçim (Erdem, 2026-11-21)
 
-**`simge-1-muhur` + `acilis-1-parsomen`.**
+**`simge-1-muhur` + `acilis-1-parsomen`**, uygulamaya geçirildi. Görünüm: `uygulamada.png`.
 
-- Mühür küçük boyutta en iyi okunan simge ve ana sayfadaki mührün aynısı. Kullanıcı simgeye dokunur, aynı mührü açılışta, sonra bölüm kartlarında görür.
-- Android 12 ve sonrasında açılış ekranı yalnız ortadaki simgeyi ve zemin rengini gösterir. Bu yüzden zemin `#E6D3A8` (parşömen), ortada mühür olur. Tam ekran taslak eski Android sürümleri içindir.
+- Android 12 ve sonrasında açılış ekranı yalnız zemin rengini (`#E6D3A8`) ve ortadaki mührü gösterir; eski Android ve iOS'ta tam parşömen zemin, mühür ve başlık.
+- Uyarlanabilir simge: ön plan saydam mühür, arka plan parşömen; mühür görünen alanın ~%65'i.
+- Başlık yazısı Chrome'un bulduğu serif yazı tipiyle (Noto Serif yoksa Georgia) PNG'ye basılır.
 
-## Uygulamaya geçirmek için
+## Yeniden üretmek
 
-- Seçimden sonra iki geliştirme paketi gerekir: `flutter_launcher_icons` (uyarlanabilir simge: ön plan mühür, arka plan parşömen) ve `flutter_native_splash` (açılış). Paket eklemek Erdem'in onayına bağlı (CLAUDE.md → Teknik yön).
-- Uyarlanabilir simgede önemli öğeler ortadaki %66'lık dairede kalmalı; mühür buna göre ölçeklendi.
-- Başlıklarda Noto Serif kullanıldı (yoksa Georgia). Simgede yazı yok.
+```
+python tasarim/simge-acilis/uygulama_varliklari.py      # app/assets/simge/*.png
+cd app && dart run flutter_launcher_icons               # ayar: app/flutter_launcher_icons.yaml
+cd app && dart run flutter_native_splash:create         # ayar: app/flutter_native_splash.yaml
+```
+
+Paketler `dev_dependencies`'te: `flutter_launcher_icons`, `flutter_native_splash` (Erdem onayladı).
