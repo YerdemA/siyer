@@ -1,0 +1,22 @@
+{
+  "bolum": "b09",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b09-s01": "Mekke vadisinin ortasında Kâbe duruyordu: harçsız, üst üste konmuş taşlardan örülmüş, boyu bir insanı aşan duvarlar. [pause] Yıl milâdî 605'ti. Hz. Muhammed (s.a.v.) otuz beş yaşındaydı.",
+    "b09-s02": "[serious] Duvarlar yangın ve sel yüzünden zarar görmüştü. Üstelik Kâbe'nin içindeki kuyuda saklanan hazine çalınmış, sonra Huzâa'dan Düveyk adında, azat edilmiş bir kölenin yanında bulunmuştu. [pause] [calm] Kureyş, duvarları yükseltip yapının üzerini bir tavanla örtmeye karar verdi.",
+    "b09-s03": "O günlerde Rum bir tüccarın gemisi kıyıda karaya vurup parçalandı. Kureyş geminin kerestesini Kâbe'nin tavanı için aldı.",
+    "b09-s04": "[serious] İşe başlamadan Ebû Vehb b. Amr bir uyarıda bulundu: Kâbe'nin yapımına kazancınızdan yalnızca temiz olanı katın. Faiz de, kimseden haksızca alınmış mal da, utanç verici yollardan kazanılmış para da oraya girmemeliydi.",
+    "b09-s05": "[nervous] Ama Kâbe'yi yıkmaya kimse cesaret edemiyordu. [pause] [serious] Sonunda Velîd b. Mugīre kazmayı aldı. \"Allah'ım, biz yalnız hayır istiyoruz\" diyerek ilk taşları o söktü. [pause] [calm] Halk o gece bekledi. [relieved] Velîd'e bir şey olmadığını görünce ertesi gün herkes yıkıma katıldı.",
+    "b09-s06": "Duvarlar sökülüp temele inildiğinde Hz. İbrâhim'in attığı temele ulaştılar: deve hörgüçlerine benzeyen yeşil taşlar. [pause] [softly] Daha aşağı inmediler.",
+    "b09-s07": "Yeni duvarların yapımı kabileler arasında paylaştırılmıştı; her kabile kendi payı için taş topladı. [warmly] Çalışanlar arasında Resûlullah da vardı; amcası Abbas ile birlikte bu işte bizzat çalışıyordu.",
+    "b09-s08": "Duvarlar Hacerülesved'in konacağı yere kadar yükseldiğinde iş durdu. [serious] Her kabile bu şerefi kendisi istiyordu. Tartışma büyüdü ve savaş noktasına geldi.",
+    "b09-s09": "[serious] [slowly] Abdüddâroğulları kan dolu bir kap getirdi. Adîoğulları ile birlikte ellerini kana batırıp ölümüne ant içtiler; bu yüzden onlara \"kan yalayanlar\" dendi. [pause] [worried] Kureyş dört ya da beş gece bu halde bekledi.",
+    "b09-s10": "Sonunda Kureyş'in en yaşlısı Ebû Ümeyye b. Mugīre bir teklifte bulundu: mescidin kapısından ilk girecek kişi aralarında hakem olsun. [pause] Teklif kabul edildi ve Benî Şeybe kapısından gelecek kişiyi beklemeye başladılar.",
+    "b09-s11": "[warmly] Kapıdan ilk giren Resûlullah oldu. [relieved] Onu görünce şöyle dediler: \"Bu el-Emîn'dir, ona razıyız; bu Muhammed'dir.\" [pause] [calm] Kureyş, vahiy gelmeden önce de ona el-Emîn, yani güvenilir derdi.",
+    "b09-s12": "Resûlullah bir örtü istedi: \"Bana bir örtü getirin.\" Hacerülesved'i kendi eliyle örtünün üzerine koydu ve her kabilenin örtünün bir kenarından tutmasını istedi. [warmly] Taşı hep birlikte kaldırdılar.",
+    "b09-s13": "Taş yerinin hizasına gelince Resûlullah onu kendi eliyle yerine koydu; duvar onun üzerine örülmeye devam etti. [pause] [warmly] Böylece bu şerefe bütün kabileler ortak oldu ve bir çatışma önlendi.",
+    "b09-s14": "Kureyş'in yaptığı yeni Kâbe on sekiz arşın yüksekliğindeydi. Kapısını yerden yükselttiler; istediklerini içeri almak, istemediklerini almamak için. İmkânları yetmediğinden Hicr denilen kısım ise binanın dışında kaldı. [pause] [warmly] [slowly] Kâbe, yeni duvarlarıyla vadinin ortasında yeniden yükseldi."
+  }
+}

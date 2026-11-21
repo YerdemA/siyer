@@ -1,0 +1,21 @@
+{
+  "bolum": "b06",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b06-s01": "Dedesi Abdülmuttalib vefat ettiğinde Efendimiz sekiz yaşındaydı. Artık onu amcası Ebû Tâlib yanına alıp büyütecek ve koruyacaktı. [warmly] Efendimiz bundan sonra amcasının yanında, onunla birlikte büyüdü.",
+    "b06-s02": "Ebû Tâlib, Kureyş içinde sözü dinlenen, saygı duyulan biriydi. Ailesi ise kalabalıktı.",
+    "b06-s03": "[warmly] Ebû Tâlib yeğenini çok severdi. Onun uğurlu olduğuna inanır, üzerine titrer, iyi yetişmesi için elinden geleni yapardı. Ebû Tâlib'in hanımı Fâtıma bint Esed de ona kendi çocuklarından daha çok özen gösterirdi.",
+    "b06-s04": "Efendimiz on yaşlarındayken, kalabalık ailesi olan amcasına yardım olsun diye koyun güttü.",
+    "b06-s05": "Yıllar sonra, peygamberliğinden sonra bir gün şöyle buyurdu: [reverently] “Allah'ın gönderdiği her peygamber koyun gütmüştür.” [pause] [calm] Yanındakiler, “Ya sen?” diye sorunca şöyle dedi: [reverently] “Evet, ben de bir miktar ücret karşılığında Mekkelilerin koyunlarını güttüm.”",
+    "b06-s06": "Ebû Tâlib yeğenini yolculuklarında bile yanından ayırmazdı. Efendimiz on iki yaşındayken Ebû Tâlib, bir Kureyş kervanıyla ticaret için Şam diyarına, yani Suriye'ye gitmeye karar verdi.",
+    "b06-s07": "[softly] Yola çıkma vakti gelince, rivayete göre Efendimiz amcasından ayrılmak istemedi. [warmly] Ebû Tâlib'in yüreği yumuşadı ve şöyle dedi: “Vallahi onu yanımda götüreceğim. O benden, ben de ondan hiç ayrılmayız.”",
+    "b06-s08": "Kervan kuzeye, Suriye topraklarına doğru yol aldı ve Busrâ'da konakladı. Busrâ, Şam şehrinin güneyinde bir pazar şehriydi; Kureyş kervanları buraya sık sık uğrardı.",
+    "b06-s09": "Siyer kaynaklarında anlatılan bir rivayete göre, Busrâ'da manastırında yaşayan Bahîrâ adında bir rahip vardı. Bahîrâ, daha önce oradan geçen Kureyş kervanlarıyla hiç ilgilenmez, kimseyle konuşmazdı. [pause] [curious] Ama bu kez kervanda bir bulutun Efendimiz'i gölgelediğini, onun oturduğu ağacın dallarının üzerine eğildiğini gördü.",
+    "b06-s10": "Hemen bir yemek hazırlatıp bütün kafileyi davet etti. Efendimiz yaşı küçük olduğu için yüklerin yanında bırakılmıştı. Bahîrâ onun da gelmesini istedi.",
+    "b06-s11": "[curious] Bahîrâ, Kureyşlilerin yemin ederken adını andığı Lât ve Uzzâ putları adına ona bazı sorular sormak istedi. [pause] [serious] Efendimiz şöyle cevap verdi: “Bana Lât ve Uzzâ adına sorma. Vallahi onlardan daha çok nefret ettiğim bir şey yok.” [pause] [calm] Bahîrâ bu kez Allah adına sordu; uykusundaki hâlini, görünüşünü ve işlerini sordu. Verdiği cevaplar Bahîrâ'nın bildiği tarife uyuyordu. [softly] Sonra sırtına baktı ve orada peygamberlik mührünü gördü.",
+    "b06-s12": "[serious] Sonra Ebû Tâlib'e döndü; yeğenini memleketine geri götürmesini ve onu Yahudilerden korumasını söyledi. “Bu yeğeninin büyük bir şanı olacak” dedi. [pause] [calm] Ebû Tâlib de Suriye'deki işini çabucak bitirdi ve yeğeniyle Mekke'ye döndü.",
+    "b06-s13": "Bu karşılaşmayı anlatan rivayetin sağlamlığı tartışmalıdır; bazı âlimler onu sahih bulmayıp reddetmiş, bazıları ise doğru kabul etmiştir. [pause] [warmly] Efendimiz ise Allah'ın koruması altında, Câhiliye'nin kötülüklerinden uzak büyümeye devam etti."
+  }
+}

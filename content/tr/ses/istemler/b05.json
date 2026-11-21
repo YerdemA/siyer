@@ -1,0 +1,18 @@
+{
+  "bolum": "b05",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b05-s01": "[warmly] Hz. Muhammed (s.a.v.) annesi Âmine ve dedesi Abdülmuttalib'in yanında, Allah'ın koruması altında güzel bir şekilde büyüdü. Süt annesinin yanından döndükten sonra bir süre annesinin yanında kaldı.",
+    "b05-s02": "Efendimiz altı yaşındayken annesi onu Yesrib'e götürdü. Amaç Neccâroğulları'nı ziyaret etmekti. Abdülmuttalib'in annesi Selmâ bu kabiledendi; bu yüzden Neccâroğulları ailenin dayıları sayılırdı. [pause] Yolculukta evlerinde hizmet eden Ümmü Eymen de onlarla birlikteydi. [softly] Âmine, Abdullah'ın Yesrib'deki kabrini de ziyaret etmek istiyordu.",
+    "b05-s03": "Yesrib'de bir ay kadar kaldılar.",
+    "b05-s04": "[sad] [slowly] Mekke'ye dönerken, Mekke ile Yesrib arasındaki Ebvâ'da Âmine vefat etti ve oraya defnedildi. [pause] [calm] Ebvâ, Yesrib'e yaklaşık yüz doksan kilometre uzaklıktaydı.",
+    "b05-s05": "[softly] Annesinin vefatından sonra Ümmü Eymen, altı yaşındaki Efendimiz'i Mekke'ye getirip dedesi Abdülmuttalib'e teslim etti. [calm] Ümmü Eymen Habeş asıllıydı ve Efendimiz'in dadısıydı; o büyüyünceye kadar dadılığını sürdürdü. [pause] [warmly] Resûlullah onun için «Annemden sonraki annemdir» derdi.",
+    "b05-s06": "[sad] Yıllar sonra Resûlullah, Ebvâ'daki annesinin kabrini ziyaret etti; ağladı, yanındakiler de ağladı. [pause] [calm] Rivayete göre bu ziyaret hicretin altıncı yılında oldu.",
+    "b05-s07": "Abdülmuttalib için Kâbe'nin gölgesine bir döşek serilirdi. Oğulları döşeğin çevresine oturur; ona saygılarından hiçbiri döşeğin üstüne oturmazdı.",
+    "b05-s08": "[warmly] Efendimiz gelip o döşeğe otururdu. Amcaları onu geri çekmek için tutunca Abdülmuttalib şöyle derdi: «Bırakın oğlumu! Vallahi onun bir şanı var.» [pause] Sonra onu yanına oturtur, sırtını sıvazlar, yaptığından hoşnut olurdu. Abdülmuttalib torununa gereken ilgiyi gösterdi.",
+    "b05-s09": "[sad] [slowly] Efendimiz sekiz yaşındayken Abdülmuttalib vefat etti.",
+    "b05-s10": "Abdülmuttalib ölmeden önce torununun bakımını oğlu Ebû Tâlib'e vasiyet etmişti. Çünkü Ebû Tâlib ile Efendimiz'in babası Abdullah'ın yalnız babaları değil, anneleri de aynıydı. [pause] [warmly] Efendimiz artık amcası Ebû Tâlib'in yanındaydı."
+  }
+}

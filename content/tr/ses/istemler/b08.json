@@ -1,0 +1,23 @@
+{
+  "bolum": "b08",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b08-s01": "Efendimiz gençliğinde ticaretle uğraştı. Yemen'deki Hubâşe panayırına, Suhâr ve Debâ panayırlarına gitti. [warmly] Onu tanıyan herkes doğru sözlü ve güvenilir biri olduğunu bilirdi. Kureyş ona daha peygamber olmadan 'el-Emîn', yani 'güvenilir' derdi.",
+    "b08-s02": "Mekke'de Huveylid'in kızı Hatice adında soylu ve zengin bir hanım vardı. Hatice kendi malıyla adamlarını ticarete gönderir, kazancı onlarla paylaşırdı. Daha önce iki kez evlenmiş, iki eşini de kaybetmişti.",
+    "b08-s03": "Hatice, Efendimiz'in ne kadar doğru ve güvenilir olduğunu duydu. Ona, malını Şam'a götürüp ticaret yapmasını teklif etti. Başka tüccarlara verdiğinden daha fazlasını verecekti. Kölesi Meysere de onunla birlikte gidecekti.",
+    "b08-s04": "Efendimiz teklifi kabul etti. Meysere ile birlikte kervana katılıp Şam'a doğru yola çıktı.",
+    "b08-s05": "Rivayete göre Şam topraklarına vardıklarında, bir rahibin manastırına yakın bir ağacın gölgesinde konakladılar. [curious] Rahip Meysere'ye ağacın altında dinlenen kişinin kim olduğunu sordu ve şöyle dedi: [softly] 'Bu ağacın altına peygamberden başkası inmedi.'",
+    "b08-s06": "Efendimiz Şam'da getirdiği malları sattı, almak istediklerini aldı ve Mekke'ye döndü. [warmly] Hatice getirilen malları sattı; kazancı iki katına ya da ona yakın çıktı.",
+    "b08-s07": "Bir süre sonra Hatice, Efendimiz'e haber gönderdi. [warmly] Akrabalığı, kavmi içindeki saygın yeri, güvenilirliği, güzel ahlâkı ve doğru sözlülüğü için onunla evlenmek istediğini bildirdi.",
+    "b08-s08": "Efendimiz bu teklifi amcalarına anlattı. Amcaları da gidip Hatice'yi ailesinden istedi.",
+    "b08-s09": "[warmly] Böylece evlendiler. Efendimiz mehir olarak yirmi genç dişi deve verdi. [calm] Efendimiz o sırada yirmi beş yaşındaydı. Hatice'nin ise kırk yaşlarında olduğu rivayet edilir.",
+    "b08-s10": "[warmly] Hatice, Efendimiz'in ilk eşiydi. Efendimiz o hayattayken başka biriyle evlenmedi. [calm] İbrâhim dışındaki bütün çocukları Hatice'dendir. Kızları Zeyneb, Rukıyye, Ümmü Külsûm ve Fâtıma'ydı. Oğullarının adları rivayetlerde Kâsım, Abdullah, Tayyib ve Tâhir olarak geçer. [pause] İlk çocukları Kâsım'dı. Efendimiz, 'Kâsım'ın babası' anlamına gelen 'Ebü'l-Kâsım' diye anıldı. [sad] Kâsım küçük yaşta öldü. Oğullarının hepsi Efendimiz peygamber olmadan önce öldü. [pause] [calm] Kızları ise İslâm'ı gördü, Müslüman oldu ve onunla birlikte hicret etti.",
+    "b08-s11": "Evlilikten sonra eve Zeyd b. Hârise adında bir genç katıldı. [softly] Zeyd, Kelb kabilesindendi. Daha çocukken annesiyle akrabalarını ziyarete giderken kaçırılmış, köle olarak satılmıştı. [calm] Hatice'nin yeğeni Hakîm b. Hizâm bazı köleler getirmişti. Hatice aralarından Zeyd'i seçti. Efendimiz Zeyd'i Hatice'den istedi, Hatice de ona verdi.",
+    "b08-s12": "[sad] Zeyd'in babası Hârise, oğlunun kaybına çok üzülmüştü. [calm] Sonunda nerede olduğunu öğrenip Mekke'ye geldi. Efendimiz seçimi Zeyd'e bıraktı: isterse babasıyla gidebilirdi. [pause] [warmly] Zeyd ise Efendimiz'in yanında kalmayı seçti.",
+    "b08-s13": "[warmly] Efendimiz Zeyd'i âzat etti ve evlat edindi. [calm] Zeyd bundan sonra, evlatlıkların öz babalarının adıyla anılmasını emreden âyet inene kadar 'Zeyd b. Muhammed' diye anıldı.",
+    "b08-s14": "[serious] Bir yıl Kureyş'i şiddetli bir kıtlık vurdu. Ebû Tâlib'in ailesi kalabalıktı ve geçimi zorlaşmıştı. [calm] Efendimiz, Hâşimoğulları'nın en varlıklısı olan amcası Abbas'la konuştu. Ebû Tâlib'in yükünü hafifletmek için çocuklarından birer tanesini yanlarına alacaklardı. [warmly] Efendimiz Ali'yi, Abbas da Ca'fer'i aldı. Ali, Efendimiz peygamber olana kadar hep onun yanında kaldı.",
+    "b08-s15": "[softly] [warmly] Resûlullah, Hatice'nin vefatından sonra da onu hep andı. Kimse inanmazken onun inandığını, insanlar yalanlarken onun doğruladığını, kimse bir şey vermezken onun malıyla destek olduğunu ve Allah'ın kendisine ondan çocuklar verdiğini söylerdi."
+  }
+}

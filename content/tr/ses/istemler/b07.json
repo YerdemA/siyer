@@ -1,0 +1,22 @@
+{
+  "bolum": "b07",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b07-s01": "Efendimiz amcası Ebû Tâlib'in yanında büyüyordu. Her yıl zilkade ayında, Mekke'nin güneydoğusunda, Tâif ile Nahle arasındaki Ukâz'da büyük bir panayır kurulurdu. Arapların en büyük panayırı buydu; alışveriş yapılır, şairler en güzel şiirlerini burada okurdu.",
+    "b07-s02": "Panayırların önemli bir kısmı haram aylarda kurulurdu. Araplar zilkade, zilhicce, muharrem ve receb aylarını haram ay sayardı. Bu aylarda savaşmak ve kan dökmek yasaktı; kabileler arasındaki savaşlar kesilirdi.",
+    "b07-s03": "[serious] Ama bu yasak her zaman korunmadı. Haram aylarda Kinâne kabilesiyle komşu kabileler arasında birkaç savaş çıktı. Birinin sebebi Ukâz'da bir adamın 'Arapların en şereflisi benim' diye övünmesi, birinin sebebi de orada bir kadına yapılan saldırıydı. [pause] [calm] Haram aylarda yapıldıkları için bu savaşlara 'Ficâr savaşları' denir. Ficâr, 'haktan ayrılmak, günaha dalmak' demektir.",
+    "b07-s04": "[serious] Bu savaşların dördüncüsü en şiddetlisi oldu. Bir yanda müttefik Kureyş ve Kinâne, öbür yanda Kays-Aylân kabileleri vardı. [pause] [calm] Hîre hükümdarı Nu'mân b. Münzir Ukâz'a bir kervan göndermişti. Hevâzin'den Urve er-Rahhâl kervanı korumayı üstlendi. [serious] Kinâne'den Berrâd b. Kays onu takip etti ve haram ayda öldürdü.",
+    "b07-s05": "[serious] Haber Kureyş'e Ukâz'dayken ulaştı. Kureyşliler Hevâzin'e sezdirmeden oradan ayrıldı. Hevâzin haberi alınca peşlerine düştü. İki taraf, Kureyş Harem'e girene kadar çarpıştı; sonraki günlerde de birçok kez karşılaştılar.",
+    "b07-s06": "Kureyş ve Kinâne'nin başkomutanı Harb b. Ümeyye'ydi; her kolun başında ayrıca bir komutan vardı. Ebû Tâlib, haram aylarda bulundukları için Hâşimoğulları'nın savaşa katılmasına razı olmadı. Ama Abdullah b. Cüd'ân ile Harb b. Ümeyye, 'Hâşimoğulları katılmazsa biz de katılmayız' diye ısrar etti. [pause] Sonunda Hâşimoğulları, Efendimiz'in amcası Zübeyr b. Abdülmuttalib'in komutasında savaşa katıldı.",
+    "b07-s07": "Amcaları Efendimiz'i de yanlarında götürdü. Efendimiz o sırada genç bir delikanlıydı; yaşı rivayetlerde on dört, on beş, on yedi ya da yirmi olarak geçer.",
+    "b07-s08": "Efendimiz o günleri şöyle anlatmıştır: 'Amcalarıma ok verirdim.' Düşmanın attığı okları toplar, amcalarına verirdi. Kaynaklarda tercih edilen görüşe göre kendisi savaşmadı.",
+    "b07-s09": "Savaşın başında Kays-Aylân üstündü; sonra Kureyş ve Kinâne kazandı.",
+    "b07-s10": "O yıllarda Mekke'ye hac ve ticaret için dışarıdan gelen güçsüz kimselere zaman zaman haksızlık yapılıyordu. Yemen'in Zübeyd kabilesinden bir tüccar Mekke'de mallarını Kureyş'in ileri gelenlerinden Âs b. Vâil'e sattı. [serious] Ama Âs parasını ödemedi.",
+    "b07-s11": "[sad] Tüccar Mekke'nin nüfuzlu kimselerine gidip yardım istedi, ama başvurduğu kimseler ona yardım etmedi. [pause] [determined] Ertesi gün Ebûkubeys tepesine çıktı ve başına geleni yüksek sesle bir şiirle duyurdu.",
+    "b07-s12": "Bunun üzerine Efendimiz'in amcası Zübeyr b. Abdülmuttalib, Teymoğulları'nın reisi, Mekke'nin en zengin, yaşlı ve sözü geçen kişilerinden Abdullah b. Cüd'ân'a gidip onu bir toplantı yapmaya ikna etti. Abdullah b. Cüd'ân'ın evinde Kureyş'ten Hâşim, Muttalib, Esed, Zühre ve Teymoğulları toplandı.",
+    "b07-s13": "[serious] Orada şöyle yemin ettiler: Mekke'de, ister Mekkeli ister dışarıdan gelmiş olsun, kim zulme uğrarsa, hakkı geri verilinceye kadar hep birlikte onun yanında olacaklardı. [pause] [warmly] Efendimiz de yirmi yaşlarındayken bu antlaşmaya katıldı. [calm] Kureyş buna Hilfü'l-fudûl dedi; bu ad 'erdemliler antlaşması' diye açıklanır. Bundan sonra haksızlığa uğrayanlar bu antlaşmanın üyelerine başvurur, hakları onların yardımıyla alınırdı.",
+    "b07-s14": "[warmly] Resûlullah peygamberliğinden sonra bu antlaşmayı övgüyle andı; böyle bir antlaşmaya yeniden çağrılsa tereddütsüz katılacağını söyledi ve şöyle buyurdu: [reverently] 'Abdullah b. Cüd'ân'ın evinde bir antlaşmada bulundum; karşılığında bana kızıl develer verilmesini istemem. İslâm döneminde ona çağrılsam, bu çağrıya uyarım.'"
+  }
+}

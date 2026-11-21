@@ -1,0 +1,26 @@
+{
+  "bolum": "b10",
+  "model": "eleven_v4",
+  "ses": "mF7tIc9VLrznhGooGjaT",
+  "not": "Seslendirme metni. Kelimeler bölüm dosyasındaki anlatımla aynıdır; yalnız ElevenLabs duygu etiketleri eklenir. Kredi sınırlı olduğundan etiketler seyrek, sahne başında varsayılan ton [calm] yazılmaz; ani seviye sıçraması yapan sert etiketler ([excited], [breathless]) kullanılmaz.",
+  "sahneler": {
+    "b10-s01": "[slowly] Kâbe'nin onarımından sonraki yıllarda Hz. Muhammed (s.a.v.), Allah'a nasıl kulluk edileceğini giderek daha çok düşünüyordu.",
+    "b10-s02": "Putlara tapmanın kimseye bir yarar getirmediğini görmüştü. Kaynaklar, onun Hz. İbrâhim'in tek Allah inancına bağlı kalmaya çalışan hanîfler gibi düşündüğünü tahmin eder.",
+    "b10-s03": "Kureyş arasında putlara tapmayı sorgulayan başkaları da vardı. Kureyş her yıl putlarından birinin başında bayram yapardı: ona kurban keser, yanında kalır, etrafında dönerdi. [pause] [softly] Böyle bir bayram günü dört kişi kalabalıktan gizlice ayrıldı: Varaka b. Nevfel, Ubeydullah b. Cahş, Osman b. Hüveyris ve Zeyd b. Amr b. Nüfeyl.",
+    "b10-s04": "[serious] Kavimlerinin, babaları İbrâhim'in dininden saptığını konuştular: duymayan, görmeyen, ne zarar ne fayda veren bir taşın etrafında dönüyorlardı. [determined] Her biri kendine bir din aramalıydı. İbrâhim'in dinini bulmak için ayrı ayrı yerlere dağıldılar. [pause] [calm] Varaka Hıristiyanlığı benimsedi ve Yahudi ve Hıristiyanların kutsal kitaplarından bilgi edindi. Osman, Bizans imparatorunun yanına gidip Hıristiyan oldu. Ubeydullah ise Müslüman olana kadar kararsız kaldı.",
+    "b10-s05": "Zeyd hak dini bulmak için Şam'a kadar gitti. Önce bir Yahudi, sonra bir Hıristiyan âlimle konuştu. İkisi de ona aynı dini gösterdi: Hanîflik, yani İbrâhim'in dini. İbrâhim ne Yahudi ne Hıristiyandı; yalnız Allah'a kulluk ederdi. [pause] [reverently] Zeyd oradan çıkınca ellerini kaldırıp şöyle dedi: «Allah'ım! İbrâhim'in dini üzere olduğuma şahitlik ederim.»",
+    "b10-s06": "Zeyd ne Yahudi ne Hıristiyan oldu. Kavminin dinini bıraktı; putlardan, leşten, kandan ve putlar adına kesilen hayvanlardan uzak durdu. [warmly] Kızını öldürmek isteyen birine «Onu öldürme, geçimini ben üstlenirim» der, çocuğu yanına alırdı. «Ben İbrâhim'in Rabbine ibadet ederim» derdi. [pause] [softly] Hz. Ebû Bekir'in kızı Esmâ onu yaşlılığında, sırtını Kâbe'ye dayamış hâlde şöyle derken görmüştü: «Ey Kureyş! Allah'a yemin ederim ki sizden benden başka İbrâhim'in dini üzere kimse yok.»",
+    "b10-s07": "Peygamberlik gelmeden önce bir gün Efendimiz, Mekke yolu üzerindeki Beldah vadisinin aşağısında Zeyd ile karşılaştı. Aralarına bir sofra getirildi. [serious] Zeyd şöyle dedi: «Putlarınızın taşları üzerinde kestiklerinizden yemem; yalnız üzerine Allah'ın adı anılandan yerim.» [pause] [sad] Zeyd, peygamberliğe yetişmeden vefat etti.",
+    "b10-s08": "Mekke'de, yılın belirli aylarında bir köşeye çekilip ibadet eden bazı kimseler vardı. Kureyş buna tahannüs derdi. Dedesi Abdülmuttalib de zaman zaman Hira'daki mağaraya çekilip ibadet ederdi.",
+    "b10-s09": "[slowly] Hira, Mekke'nin kuzeydoğusunda yükselen bir dağdır.",
+    "b10-s10": "Resûlullah, peygamber olduktan sonra şöyle buyurdu: [reverently] «Mekke'de, peygamber olarak gönderilmemden önce bana selâm veren bir taşı tanırım; onu şimdi de tanırım.»",
+    "b10-s11": "[softly] Hz. Âişe'nin anlattığına göre, vahiy uykuda görülen sadık rüyalarla başladı; gördüğü her rüya sabah aydınlığı gibi aynen çıkardı.",
+    "b10-s12": "[softly] Sonra ona yalnızlık sevdirildi. [calm] Her yıl ramazan ayı gelince bir ay boyunca şehri ardında bırakır, Hira'ya çıkardı.",
+    "b10-s13": "[softly] [slowly] Orada, ailesinin yanına dönmeden geceler boyu ibadet ederdi. [calm] Kaynaklar bu ibadeti tahannüs diye anar; kelime, Hz. İbrâhim'in yoluna, hanîfliğe yönelmek diye açıklanır.",
+    "b10-s14": "Yanına azık alırdı. Azığı bitince Hz. Hatice'nin yanına döner, bir o kadar süre için yine azık alırdı.",
+    "b10-s15": "[warmly] Hira'da kaldığı o ay, yanına gelen yoksulları doyururdu.",
+    "b10-s16": "Ay bitince evine gitmeden önce Kâbe'ye uğrar, yedi kez ya da dilediği kadar tavaf eder, sonra evine dönerdi.",
+    "b10-s17": "[warmly] Zaman zaman Hz. Hatice de onunla birlikte Hira'ya çıkardı.",
+    "b10-s18": "[slowly] Yıllar böyle geçti. [pause] [softly] Ve bir ramazan gecesi, yine Hira'daydı."
+  }
+}
