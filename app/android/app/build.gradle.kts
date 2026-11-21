@@ -1,7 +1,16 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+// Yükleme anahtarı (Play App Signing): app/android/key.properties, git'e girmez.
+// Dosya yoksa release derlemesi debug anahtarıyla imzalanır (yalnız yerel deneme).
+val anahtarDosyasi = rootProject.file("key.properties")
+val anahtar = Properties().apply {
+    if (anahtarDosyasi.exists()) anahtarDosyasi.inputStream().use { load(it) }
 }
 
 android {
@@ -15,7 +24,6 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.yerdema.siyer"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
@@ -29,11 +37,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (anahtarDosyasi.exists()) {
+            create("yukleme") {
+                keyAlias = anahtar.getProperty("keyAlias")
+                keyPassword = anahtar.getProperty("keyPassword")
+                storeFile = file(anahtar.getProperty("storeFile"))
+                storePassword = anahtar.getProperty("storePassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.findByName("yukleme") ?: signingConfigs.getByName("debug")
         }
     }
 }
@@ -60,13 +77,19 @@ val icerikEsitle by tasks.registering(Exec::class) {
     commandLine(if (System.getProperty("os.name").startsWith("Windows")) listOf("cmd", "/c") + dart else dart)
 }
 
+// Play kapalı testi için: `flutter build appbundle --android-project-arg=kapaliTest=true`.
+// Doğrulama bekleyen atıf uyarı olur; diğer bütün yayın kuralları aynen geçerli
+// (Erdem, 2026-11-21). Herkese açık yayın bu seçenek olmadan derlenir.
+val kapaliTest = (findProperty("kapaliTest") as String?) == "true"
+
 val icerikYayinDenetimi by tasks.registering(Exec::class) {
     dependsOn(icerikEsitle)
     group = "verification"
     description = "İçeriği yayın kurallarıyla denetler (tools/icerik_dogrula.dart --yayin)."
     val depoKoku = rootProject.projectDir.parentFile.parentFile
     workingDir = depoKoku
-    val dart = listOf("dart", "run", "tools/icerik_dogrula.dart", "--yayin", "--kok", "app/assets/icerik")
+    val kip = if (kapaliTest) "--kapali-test" else "--yayin"
+    val dart = listOf("dart", "run", "tools/icerik_dogrula.dart", kip, "--kok", "app/assets/icerik")
     // Windows'ta dart bir .bat dosyasıdır; doğrudan çalıştırılamaz.
     commandLine(if (System.getProperty("os.name").startsWith("Windows")) listOf("cmd", "/c") + dart else dart)
 }

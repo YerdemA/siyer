@@ -3,12 +3,18 @@
 // Kullanım (depo kökünden):
 //   dart run tools/icerik_dogrula.dart            geliştirme denetimi
 //   dart run tools/icerik_dogrula.dart --yayin    yayın denetimi
+//   dart run tools/icerik_dogrula.dart --kapali-test
+//                                                 kapalı test denetimi
 //   dart run tools/icerik_dogrula.dart --kok <klasör>
 //
 // Kurallar docs/ICERIK_SEMASI.md ve docs/KAYNAK_POLITIKASI.md belgelerinden gelir.
 // Yayın denetiminde `dogrulama` değeri `dogrulandi` olmayan tek bir atıf bile
 // hatadır. Adı `_` ile başlayan dosyalar şablondur: geliştirme denetiminde
 // denetlenir, yayın denetiminde atlanır.
+//
+// Kapalı test denetimi yayın denetimidir; tek farkı `bekliyor` atıfların uyarı
+// sayılmasıdır (Erdem, 2026-11-21). Uygulama bu atıfları zaten "doğrulama
+// bekliyor" diye gösterir. Herkese açık yayın yalnız --yayin ile derlenir.
 //
 // Çıkış kodu: 0 hata yok, 1 hata var, 2 yanlış kullanım.
 
@@ -27,9 +33,12 @@ final tarihDeseni = RegExp(r'^\d{4}-\d{2}-\d{2}$');
 final maddeDeseni = RegExp(r'"([^"]+)"');
 
 class Rapor {
-  Rapor(this.yayin);
+  Rapor(this.yayin, {this.kapaliTest = false});
 
   final bool yayin;
+
+  /// Yalnız Play kapalı testi için: doğrulama bekleyen atıf hata değil uyarı.
+  final bool kapaliTest;
   final hatalar = <String>[];
   final uyarilar = <String>[];
 
@@ -61,16 +70,20 @@ class DilIcerigi {
 void main(List<String> args) {
   var kok = 'content';
   var yayin = false;
+  var kapaliTest = false;
   for (var i = 0; i < args.length; i++) {
     switch (args[i]) {
       case '--yayin':
         yayin = true;
+      case '--kapali-test':
+        yayin = true;
+        kapaliTest = true;
       case '--kok' when i + 1 < args.length:
         kok = args[++i];
       default:
         stderr.writeln('Bilinmeyen seçenek: ${args[i]}');
         stderr.writeln(
-          'Kullanım: dart run tools/icerik_dogrula.dart [--yayin] [--kok <klasör>]',
+          'Kullanım: dart run tools/icerik_dogrula.dart [--yayin | --kapali-test] [--kok <klasör>]',
         );
         exit(2);
     }
@@ -82,7 +95,7 @@ void main(List<String> args) {
     exit(2);
   }
 
-  final rapor = Rapor(yayin);
+  final rapor = Rapor(yayin, kapaliTest: kapaliTest);
   final diller =
       kokKlasor
           .listSync()
@@ -108,7 +121,7 @@ void main(List<String> args) {
     stdout.writeln('HATA   $h');
   }
   stdout.writeln(
-    '\n${yayin ? "Yayın denetimi" : "Geliştirme denetimi"}: ${diller.length} dil, '
+    '\n${kapaliTest ? "Kapalı test denetimi" : yayin ? "Yayın denetimi" : "Geliştirme denetimi"}: ${diller.length} dil, '
     '$bolumSayisi bölüm, ${rapor.hatalar.length} hata, ${rapor.uyarilar.length} uyarı.',
   );
   exit(rapor.hatalar.isEmpty ? 0 : 1);
@@ -571,8 +584,10 @@ BolumOzeti bolumuDenetle(
         yol,
         'durum "$durum" ama $bekleyen atıf doğrulanmamış; bölüm taslak kalmalı',
       );
-    } else if (rapor.yayin) {
+    } else if (rapor.yayin && !rapor.kapaliTest) {
       rapor.hata(yol, '$bekleyen atıf doğrulanmamış (`dogrulandi` değil)');
+    } else if (rapor.kapaliTest) {
+      rapor.uyari(yol, '$bekleyen atıf doğrulanmamış (kapalı testte izinli, herkese açık yayında hata)');
     } else {
       rapor.uyari(yol, '$bekleyen atıf doğrulama bekliyor');
     }
@@ -595,6 +610,8 @@ BolumOzeti bolumuDenetle(
 /// Bir iddianın ya da alternatif rivayetin `kaynaklar` listesini denetler.
 /// Doğrulanmamış atıf sayısını döndürür. [dayanak] doğruysa kaynak politikası
 /// madde 2.1 de aranır: en az bir A/B/C kaynağı ya da en az iki D kaynağı.
+/// Politikanın tek kaynak istisnası `"istisna": "tek-kaynak"` ile açıkça
+/// işaretlenir; gerekçe boş olamaz ve her denetimde uyarı olarak listelenir.
 int kaynaklariDenetle(
   Map<String, dynamic> sahip,
   String yer,
@@ -651,7 +668,17 @@ int kaynaklariDenetle(
   if (dayanak && katmanBilinir) {
     final abc = ['A', 'B', 'C'].any(katmanaGore.containsKey);
     final dSayisi = katmanaGore['D']?.length ?? 0;
-    if (!abc && dSayisi < 2) {
+    final istisna = metin(sahip, 'istisna');
+    if (istisna.isNotEmpty && istisna != 'tek-kaynak') {
+      rapor.hata(yer, '`istisna` yalnız "tek-kaynak" olabilir');
+    }
+    if (!abc && dSayisi < 2 && istisna == 'tek-kaynak') {
+      if (metin(sahip, 'gerekce').isEmpty) {
+        rapor.hata(yer, 'tek kaynak istisnasında `gerekce` boş olamaz (KAYNAK_POLITIKASI 2.1)');
+      } else {
+        rapor.uyari(yer, 'tek kaynak istisnası (KAYNAK_POLITIKASI 2.1); Erdem gerekçeyi onaylamalı');
+      }
+    } else if (!abc && dSayisi < 2) {
       rapor.yayinHatasi(
         yer,
         'dayanak yetersiz: en az bir A/B/C kaynağı ya da iki ayrı D kaynağı '

@@ -66,6 +66,7 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 | `gerekce` | Gücün neye göre belirlendiği |
 | `kaynaklar[]` | Aşağıda |
 | `alternatifRivayetler[]` | `{ "ifade": "...", "kaynaklar": [...] }` — dipnot olarak gösterilir |
+| `istisna` | İsteğe bağlı. `"tek-kaynak"`: iddia tek bir D kaynağına dayanır (`KAYNAK_POLITIKASI` §2.1 istisnası); `gerekce` kaynağın klasik dayanağını göstermeli. Doğrulama betiği bunu hata değil uyarı sayar |
 
 ### Kaynak kaydı
 
