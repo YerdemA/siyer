@@ -6,7 +6,15 @@ Son güncelleme: 2026-11-21.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-21).**
+**Kaldığımız yer (2026-11-21, akşam): anlatım sesi.**
+- Erdem ElevenLabs Starter aldı. **b01–b04'ün 51 sahnesi seslendirildi** (Seyfullah Kartal `mF7tIc9VLrznhGooGjaT`, `eleven_v4`, sahne başına 1 üretim; ~17.400 kredi). Dosyalar `content/tr/ses/<sahne>.mp3` (18,6 MB, 6–48 sn).
+- Seslendirme metinleri `content/tr/ses/istemler/b0N.json`: altyazıyla aynı kelimeler + duygu etiketleri ([calm], [warmly], [serious], [sad], [softly], [reverently] ayet/hadislerde, [dramatically] Fil Vakası'nda, [happy]/[excited] yalnız doğum haberinde). [playful] gibi şakacı etiketler üslup kuralı (7) gereği kullanılmadı. Ayraçlar akıcı okunsun diye kaldırıldı ("fil(in" → "filin"). `icerik_esitle` bu klasörü uygulamaya kopyalamaz.
+- Etiketlerin okunmadığı b01-s01 hizalamasıyla görüldü (her etiket ~0,05 sn). Telaffuzu Claude dinleyemedi; **Erdem telefonda dinlemeli** (özellikle Arapça adlar, «s.a.v.», ayetler).
+- Altyazı hâlâ sesi kelime sayısına göre paylaştırıyor; kayma görülürse ElevenLabs hizalamasıyla (kelime zamanları) parça sınırları kesinleştirilebilir.
+- Test APK'sı: `İndirilenler\siyer\siyer-sesli-b01-b04.apk` (profile derleme; release yayın kapısına takılır, doğrulanmamış atıf var).
+- Kalan kredi ~19.000; b05–b10 için ~19.200 gerekir (az eksik). Sonraki ay yenilenir.
+
+**Önceki (2026-11-21).**
 - **Simge ve açılış uygulamada** (Erdem seçti: `simge-1-muhur` + `acilis-1-parsomen`; iki paket onaylandı, `dev_dependencies`). PNG'ler `tasarim/simge-acilis/uygulama_varliklari.py` ile `app/assets/simge/`'ye; ayarlar `app/flutter_launcher_icons.yaml`, `app/flutter_native_splash.yaml`. Uyarlanabilir simge (ön plan mühür, arka plan parşömen), Android 12+ açılışı (parşömen rengi + mühür), eski Android/iOS açılışı (parşömen zemin + mühür + başlık). Görünüm: `tasarim/simge-acilis/uygulamada.png`. Debug APK derlendi; telefonda henüz görülmedi.
 - `android/gradle.properties`'e `kotlin.incremental=false` eklendi: proje D:, pub önbelleği C: sürücüsünde olduğu için Kotlin artımlı önbelleği kapanamıyor, derleme düşüyordu.
 - Testler 67/67, analiz temiz.
