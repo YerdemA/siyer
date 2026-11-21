@@ -2,15 +2,21 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-19.
+Son güncelleme: 2026-11-21.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
+
+**Kaldığımız yer (2026-11-21).**
+- **Simge ve açılış uygulamada** (Erdem seçti: `simge-1-muhur` + `acilis-1-parsomen`; iki paket onaylandı, `dev_dependencies`). PNG'ler `tasarim/simge-acilis/uygulama_varliklari.py` ile `app/assets/simge/`'ye; ayarlar `app/flutter_launcher_icons.yaml`, `app/flutter_native_splash.yaml`. Uyarlanabilir simge (ön plan mühür, arka plan parşömen), Android 12+ açılışı (parşömen rengi + mühür), eski Android/iOS açılışı (parşömen zemin + mühür + başlık). Görünüm: `tasarim/simge-acilis/uygulamada.png`. Debug APK derlendi; telefonda henüz görülmedi.
+- `android/gradle.properties`'e `kotlin.incremental=false` eklendi: proje D:, pub önbelleği C: sürücüsünde olduğu için Kotlin artımlı önbelleği kapanamıyor, derleme düşüyordu.
+- Testler 67/67, analiz temiz.
+- **Sıradaki:** telefonda deneme (Erdem "az sonra konuşalım" dedi), sonra içerik kontrolü.
 
 **Kaldığımız yer (2026-11-20, kapanış).** Gün burada kapandı.
 - **Hareketi azalt** (Ayarlar; telefonun "animasyonları kaldır" ayarı açıksa kendiliğinden): bölüm kartı büyümez, kaydırma anında, çarpı 0,5 sn; harita geçişi kamerasız, doğrudan hedef, nabız halkası yok, 1,5 sn.
 - **Doğrulama betiği** `sahislar.json`'da `temsil` değerini (nur/yuzsuz), temsilli şahsa portre konmamasını (kural 5) ve `portre` dosyasının `content/gorseller/` altında var olmasını denetler. Bozuk kopyada üç hata da yakalandı; gerçek içerikte 0 hata.
 - Testler 67/67, analiz temiz.
-- **Sıradaki (Erdem'den):** telefonda deneme (nur kenarı, efekt sesleri, ana sayfa, harita geçişi); simge/açılış taslağı seçimi ve iki paket onayı; `docs/BOLUM_METINLERI.md` üzerinden içerik kontrolü ve atıf doğrulaması (582 bekliyor).
+- **Sıradaki (Erdem'den):** telefonda deneme (nur kenarı, efekt sesleri, ana sayfa, harita geçişi); ~~simge/açılış taslağı seçimi ve iki paket onayı~~ (2026-11-21 yapıldı); `docs/BOLUM_METINLERI.md` üzerinden içerik kontrolü ve atıf doğrulaması (582 bekliyor).
 
 **Önceki (2026-11-20, gece).**
 - Hâcer ve Süveybe yüzsüz siluet kalır (Erdem; CLAUDE.md kural 5'e yazıldı).

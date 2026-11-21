@@ -64,7 +64,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Efekt sesleri (çarpıda kalem, haritada parşömen; `tools/efekt_sesleri.py` ile sentezlendi) ve Ayarlar'da açma-kapama
 - [x] Ayarlar'da altyazı boyutu (küçük / orta / büyük)
 - [x] Ana sayfada "kaldığın yerden devam et" kartı
-- [ ] Uygulama simgesi ve açılış ekranı: taslaklar `tasarim/simge-acilis/`; Erdem'in seçimi ve paket onayı bekleniyor
+- [x] Uygulama simgesi ve açılış ekranı: mühür + parşömen (2026-11-21, `tasarim/simge-acilis/`)
 - [x] Erişilebilirlik: "hareketi azalt" seçeneği (telefonun animasyon ayarına da uyar)
 - [x] Doğrulama betiği `portre` dosyasını ve `temsil` kuralını denetler
 - [x] Zaman çizelgesi
@@ -77,7 +77,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
 - [ ] "Hata bildir" bağlantısı
-- [ ] Uygulama simgesi, açılış ekranı, mağaza görselleri
+- [ ] Mağaza görselleri (simge ve açılış hazır)
 - [ ] Android imzalama (`key.properties`) ve Play Store kaydı
 - [ ] Gerçek cihazlarda test (en az bir telefon ve bir tablet)
 
