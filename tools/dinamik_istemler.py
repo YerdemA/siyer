@@ -93,7 +93,6 @@ def k(karakter=None, tarif=None, sayi=1, poz=None, hayvan=False, yaklasik=False)
 
 KUREYS = "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool"
 BEDEVI = "Bedouin men in plain undyed wool tunics and loosely wrapped dark head cloths"
-HABES = "Abyssinian soldiers: dark-skinned men in plain off-white wrapped garments with a dark sash, short spears held upright, no armour detail"
 
 KAYITLAR = {
     # ------------------------------------------------------------------ b01
@@ -244,10 +243,10 @@ KAYITLAR = {
           yasak="bodies, bones, blood, writing on stones"),
         m("b02-d-esved-atlilar", "b02-s07", [0], "A",
           "s07 tek görsel 22 sn.",
-          "Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by a commander (al-Aswad) in a dark red sash; dust rises behind them.",
+          "Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by their commander (al-Aswad); dust rises behind them.",
           cekim="uzak",
-          kisiler=[k(tarif="al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, white wrapped garments and a dark red sash, on a horse", poz="in front, riding to the right."),
-                   k(tarif=HABES + ", on horses", sayi=8, yaklasik=True, poz="riding behind him.")],
+          kisiler=[k(tarif="al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, dressed like the Abyssinian soldiers of the attached sheet but with a longer dark red cloak, on a horse", poz="in front, riding to the right."),
+                   k(karakter="habes_askeri", sayi=8, yaklasik=True, poz="on horses, riding behind him.")],
           yasak="blood, weapons in use"),
         m("b02-d-kureys-istisare", "b02-s07", [2], "A",
           "Aynı sahnenin son parçası: Kureyş, Kinâne ve Hüzeyl savaşmaktan vazgeçiyor.",
@@ -781,6 +780,17 @@ def iddialar(sahne_id: str, parcalar: list[int]) -> list[str]:
     return cikti
 
 
+# Referans sayfası üretilmemiş karakterlerde tutarlılık için kabul edilmiş sahne görseli
+# (referans/sahne-*.png; şeffaf katman açık zemine basıldı) mesaja iliştirilir.
+SAHNE_REFERANSI = {
+    "hunata": "sahne-b02-hunata-abdulmuttalib.png",
+    "zu_nefer": "sahne-b02-esirler.png",
+    "nestura": "sahne-b08-rahip.png",
+    "kuslar": "sahne-b02-kuslar.png",
+    "abdulmuttalib_ogullari": "sahne-b03-on-ogul.png",
+}
+
+
 def kayit(bolum: str, r: dict) -> dict:
     ids = iddialar(r["sahne"], r["parca"])
     not_ = f"Dinamizm turu d1 ({r['oncelik']}). {r['gerekce']} Dayanak: {r['sahne']} parça {', '.join(map(str, r['parca']))}; {', '.join(ids)}."
@@ -793,8 +803,10 @@ def kayit(bolum: str, r: dict) -> dict:
     }
     if r["kisiler"]:
         k["kisiler"] = r["kisiler"]
-    if r["ekle"]:
-        k["ekle"] = r["ekle"]
+    ekle = list(r["ekle"]) + [SAHNE_REFERANSI[p["karakter"]] for p in r["kisiler"]
+                              if p.get("karakter") in SAHNE_REFERANSI]
+    if ekle:
+        k["ekle"] = list(dict.fromkeys(ekle))
     k["isik"] = r["isik"]
     if r.get("denetim"):
         k["denetim"] = r["denetim"]

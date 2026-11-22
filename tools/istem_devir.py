@@ -237,10 +237,10 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path, ek: str = "") -> Pat
         f"# {veri['bolum']}: ChatGPT ile görsel üretimi",
         "",
         "**Hazırlık:** ChatGPT'de yeni bir sohbet aç. Üslup referansı olarak seçilen görseli (u01-d) ekle ve **Mesaj 0**'ı gönder.",
-        f"Referans dosyası: Higgsfield galerisindeki iş `{uslup['referans']['is_id']}` ya da Claude Code'un verdiği `u01d.png`.",
+        f"Referans dosyası: Higgsfield galerisindeki iş `{uslup['referans']['is_id']}` ya da `content/gorseller/istemler/referans/uslup-u01d.png`.",
         "",
         "**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\\siyer` klasörüne, "
-        "mesaj başlığındaki kimlikle kaydet (ör. `s03-deniz.png`). Atladığın olursa Claude Code'a söyle.",
+        "mesaj başlığındaki kimlikle kaydet (ör. `b02-d-kasva.png`). Atladığın olursa Claude Code'a söyle.",
         "",
         "**Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.",
         "",
