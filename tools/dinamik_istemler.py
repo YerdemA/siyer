@@ -40,6 +40,21 @@ GOZ_DENETIM = [
     "no text, letters, crosses, minarets, domes or crescents",
 ]
 
+# Kâbe'nin içi (Erdem, 2026-11-22: deneyen arkadaşların önerisi). Dayanak: anlatım (Hübel
+# içerideydi, i-b03-004, i-b01-008; içeride kuyu vardı, i-b09-005; Kureyş'ten önce tavan yoktu,
+# i-b09-003) ve TDV "KÂBE" (S. Ünal, c. 24, s. 14-21; inşa paragrafı i-b09-002 ile aynı yer, s. 16):
+# Kureyş duvarları bir sıra taş bir sıra ahşap hatılla ördü, 9 arşından 18 arşına çıkardı,
+# içeriden Rüknüşşâmî tarafına merdiven ve dama oluk koydu, tek kanatlı kapı taktı.
+# Önce iki ana görsel üretilir; onaylananlar referans/ klasörüne bu adlarla konur ve sahne
+# görsellerine iliştirilir.
+KABE_IC = "kabe-ic-alcak.png"
+KABE_IC_Y = "kabe-ic-yuksek.png"
+KABE_IC_NOT = "Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur."
+IC_ALCAK = ("Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure "
+            "a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, "
+            "daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; "
+            "a plain wooden door at ground level in one wall.")
+
 KABE = "nesne-kabe-alcak.png"
 KABE_Y = "nesne-kabe-yuksek.png"
 EVLER = "nesne-mekke-evler.png"
@@ -130,6 +145,13 @@ KAYITLAR = {
           ekle=[KABE, EVLER],
           kisiler=[k(tarif=KUREYS, sayi=8, yaklasik=True, poz="working: carrying mudbricks, laying courses, folding a tent.")],
           yasak="women's faces, idols in the foreground"),
+        m("b01-d-kabe-ic", "b01-s10", [1], "A",
+          "Kâbe'nin içi, 605 öncesi ANA GÖRSEL (b03 ve b09'daki iç sahnelere referans). 'İçine ve çevresine putlar dikildi; en büyükleri Hübel'.",
+          "Dawn. " + IC_ALCAK + " Along the walls stand idols: " + PUTLAR + ". Against the far wall stands the largest idol of all (Hubal): "
+          "a big, crude statue roughly shaped like a standing human figure, clearly taller than the others, of dark reddish stone. "
+          "In the floor near one side wall, a stone-lined pit opening, its mouth half covered by a flat stone. Nobody inside.",
+          isik=SAFAK.replace("low on the horizon", "falling in from the open sky above"), ekle=[KABE],
+          yasak="any person, roof, beams, lamps, gold, cloth hangings, writing, blood"),
         m("b01-d-uzlasma", "b01-s09", [2], "B",
           "s09'un son çekimi (9 sn) yalnız ortak Kâbe.",
           "Evening, medium shot in the open court of the Ka'ba: two elders of Quraysh step forward from two separate groups and grasp each other's forearms in agreement; the men behind them lower their hands, calm. " + CERCEVE_KABE,
@@ -137,7 +159,7 @@ KAYITLAR = {
           kisiler=[k(tarif="two elderly Qurayshi chiefs with grey beards, off-white head cloths, long cloaks (one grey-blue, one ochre)", sayi=2, poz="in the centre, grasping forearms."),
                    k(tarif=KUREYS, sayi=8, yaklasik=True, poz="in two groups behind each elder, left and right.")],
           yasak="weapons, idols in the foreground"),
-        m("b01-d-putlar", "b01-s10", [0, 1], "A",
+        m("b01-d-putlar", "b01-s10", [0], "A",
           "s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor.",
           "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: " + PUTLAR + "; no gold. " + CERCEVE_KABE,
           isik=SAFAK, ekle=[KABE],
@@ -345,11 +367,23 @@ KAYITLAR = {
           yasak="writing, banners, maps"),
         m("b03-d-kura-oklari", "b03-s03", [0], "A",
           "s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır.",
-          "Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large idol roughly shaped like a human figure with primitive carved features, out of focus.",
-          isik=GECE.replace("night: deep indigo blues", "dim interior: deep brown shadows").replace("small orange-red flame described in the scene", "small oil lamp at the left"),
-          cekim="yakin",
+          "Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall.",
+          isik="LIGHT: daylight falling in from the open sky above; the hands in light, the wall behind in soft shadow; no glow.",
+          cekim="yakin", ekle=[KABE_IC], ek_not=KABE_IC_NOT,
           kisiler=[k(tarif="the custodian of the idol, only his hands and forearms in a dark cloak are visible", poz="hands in the centre holding the quiver.")],
           yasak="human faces, blood, knives, writing on arrows"),
+        m("b03-d-kabe-ic-kura", "b03-s03", [0], "A",
+          "Kura 'Kâbe'nin içindeki Hübel putunun yanında' çekiliyor; bugün dışarıdan gösteriliyor.",
+          "Daytime. " + IC_ALCAK + " Before the large crude idol (Hubal) at the far wall, the custodian holds up a bundle of divining arrows; "
+          "Abdul-Muttalib stands facing him, and his sons stand in a row along the side wall, Abdullah among them seen strictly from behind. "
+          "Other idols stand along the walls in shadow.",
+          isik="LIGHT: daylight falling in from the open sky above onto the upper walls and the people's heads; the floor in soft shadow; no glow.",
+          ekle=[KABE_IC], ek_not=KABE_IC_NOT,
+          kisiler=[k(tarif="the custodian of the idol, an Arab man of about 50 with a black-and-grey beard, a dark head cloth and a dark brown cloak", poz="at the right, before the idol, holding up the arrows."),
+                   k(karakter="abdulmuttalib", poz="at the left of centre, facing the custodian."),
+                   k(karakter="abdulmuttalib_ogullari", sayi=4, poz="in a row along the left wall."),
+                   k(karakter="abdullah", poz="among the sons, strictly from behind.")],
+          yasak="blood, knives, sacrifice, roof, lamps, gold, writing"),
         m("b03-d-on-deve", "b03-s04", [1], "A",
           "s04 tek uzak görsel 26 sn; kura usulü (on deve) anlatılıyor.",
           "Daytime, in an open space near the Ka'ba: ten camels stand in a line; a little apart stands Abdullah, seen strictly from behind; Abdul-Muttalib stands beside him. " + CERCEVE_KABE,
@@ -371,6 +405,13 @@ KAYITLAR = {
           isik=AKSAM, ekle=[EVLER],
           kisiler=[k(karakter="amine", poz="in the doorway, strictly from behind.")],
           yasak="Amina's face or profile, any other person"),
+        m("b03-d-kabe-ic-dua", "b03-s12", [0], "A",
+          "s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu.",
+          "Daytime. " + IC_ALCAK + " Abdul-Muttalib stands alone in the middle of the enclosure, seen strictly from behind, head raised towards the open sky, as if praying and giving thanks; his arms are in front of him and not visible. The idols stand along the walls in deep shadow, ignored.",
+          isik="LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib; the walls and idols in shadow; no glow, no rays.",
+          ekle=[KABE_IC], ek_not=KABE_IC_NOT,
+          kisiler=[k(karakter="abdulmuttalib", poz="in the centre, strictly from behind, head raised.")],
+          yasak="any baby, bundle or child, any glow, any other person, roof, lamps, gold"),
         m("b03-d-sut-anne-arayis", "b03-s12", [1], "B",
           "s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu.",
           "Daytime, at the edge of Mecca: Abdul-Muttalib stands at the mouth of the valley looking out towards the desert road where a few small travellers come and go.",
@@ -600,6 +641,14 @@ KAYITLAR = {
                    k(tarif="a woman wrapped in a dark cloak on a camel, from behind", poz="far at the left."),
                    k(tarif="camel", hayvan=True, poz="carrying the woman.")],
           yasak="blood, weapons in use, chains"),
+        m("b08-d-hatice-oda", "b08-s07", [1], "B",
+          "s07 tek avlu görseli; haber evin içinden gönderiliyor (iç mekân önerisi).",
+          "Evening, a room inside Khadija's house: plain plastered walls, a woven mat, cushions, a small oil lamp in a wall niche, a window with a cloth curtain. Khadija sits on a cushion seen strictly from behind; before her a woman messenger, also seen from behind, bows slightly as she receives the message.",
+          isik=GECE.replace("night: deep indigo blues", "evening interior: warm browns and dusk-blue at the window").replace("small orange-red flame described in the scene", "small oil lamp"),
+          ekle=[EVLER],
+          kisiler=[k(karakter="hatice", poz="seated at the right, strictly from behind."),
+                   k(tarif="a woman messenger wrapped in a plain sand-coloured cloak and head covering, seen strictly from behind", poz="standing at the left, bowing slightly.")],
+          yasak="any face or profile, any man"),
         m("b08-d-kitlik", "b08-s14", [0], "B",
           "s14'ün ikinci çekimi 19 sn aynı görsel.",
           "Daytime, a dry courtyard in Mecca during a famine: empty storage jars stand open, a single thin goat, a few dry date stones on a mat.",
@@ -627,6 +676,21 @@ KAYITLAR = {
           kisiler=[k(tarif="Duwayk, a thin man of about 40 with a short beard, a worn brown tunic and no head cloth", poz="at the right, holding an open bundle."),
                    k(karakter="kureysli", sayi=3, poz="at the left, one pointing.")],
           yasak="gold glowing, writing, blood"),
+        m("b09-d-kabe-ic-kuyu", "b09-s02", [1], "A",
+          "s02 tek görsel 17 sn; hazine 'Kâbe'nin içindeki kuyuda' saklanıyordu.",
+          "Daytime. " + IC_ALCAK + " The flat stone that covered the stone-lined pit in the floor has been pushed aside; the pit is empty and dark. A man of Quraysh kneels at its edge looking down in dismay; another stands behind him with a raised hand.",
+          isik="LIGHT: daylight falling in from the open sky above; the pit very dark; no glow.",
+          ekle=[KABE_IC], ek_not=KABE_IC_NOT,
+          kisiler=[k(karakter="kureysli", sayi=2, poz="one kneeling at the pit's edge, one standing behind.")],
+          yasak="gold, treasure, coins, roof, lamps, writing"),
+        m("b09-d-kabe-ic-tavan", "b09-s14", [0, 3], "A",
+          "Kâbe'nin içi, 605 sonrası ANA GÖRSEL: yeni tavan (gemi kerestesi, b09-s03) ve yükselen duvarlar. Onaylanınca referans/kabe-ic-yuksek.png.",
+          "Inside the rebuilt Ka'ba, looking up: tall walls built in alternating courses, one course of rough stone, then one wooden beam, then stone again, rising about twice as high as before; "
+          "a new flat roof of heavy, weathered wooden beams and planks (old ship timber) closes the top; a plain wooden stair rises along one wall to a corner of the roof; "
+          "a single-leaf wooden door is set high in the opposite wall, and daylight comes in only through that door, leaving the room dim. Packed earth floor. Nobody inside.",
+          isik="LIGHT: dim interior; one soft patch of daylight from the high door falls on the floor and walls; warm brown shadows; no glow, no rays.",
+          ekle=[KABE_Y],
+          yasak="any person, idols in the foreground, lamps, gold, cloth hangings, writing, columns of marble"),
         m("b09-d-yuksek-kapi", "b09-s14", [1], "A",
           "s14 tek ortak Kâbe görseli 21 sn.",
           "Daytime, close view of the rebuilt Ka'ba's single-leaf wooden door set high above the ground; a man of Quraysh at the foot of the wall looks up at it. " + CERCEVE_KABE_Y,
