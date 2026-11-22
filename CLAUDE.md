@@ -50,6 +50,7 @@ cd app && flutter analyze
 cd app && flutter test
 dart run tools/icerik_dogrula.dart      # şema + kaynak kontrolü (yazılacak)
 python tools/bolum_metni.py             # docs/BOLUM_METINLERI.md kontrol nüshası (içerik değişince)
+python tools/gorsel_yardimci.py         # elle ChatGPT üretimi: istem/ek kopyalama, indirileni yeni\<kimlik>.png yapar
 ```
 
 İçerik değiştiren her işten sonra doğrulama betiğini çalıştır. Yayın derlemesi, `dogrulama` değeri `dogrulandi` olmayan iddia varsa başarısız olmalı.

@@ -6,6 +6,8 @@ Son güncelleme: 2026-11-22.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
+**Görsel yardımcısı (2026-11-22):** `python tools/gorsel_yardimci.py` → tarayıcıda http://127.0.0.1:8765. Mesaj dosyası seçilir; her kartta "Ekleri kopyala" (referanslar panoya dosya olarak, ChatGPT'de Ctrl+V), "İstemi kopyala" (metin panoya + kimlik indirme kuyruğuna). İndirilenler ve İndirilenler\siyer izlenir; yeni görsel kuyruktaki kimlikle `yeni\<kimlik>.png` olur, kuyruk boşsa sağdaki "atanmamış" listesinden elle atanır; aynı kimlikte eskisi `yeni\_onceki\`'ne. Sahte indirmeyle ve pano ile denendi; ChatGPT'ye Ctrl+V ile dosya yapıştırma Erdem'in tarayıcısında denenmedi (olmazsa "Klasörde aç").
+
 **En son (2026-11-22, gece): b02 d1 görselleri işlendi, Erdem önizlemeyi onayladı, commit'lendi** (`İndirilenler\siyer\_onizleme-b02-d1.jpg`; kaba pafta, saat tonu ve kamera yok).
 - 22 görselden **20 kabul**, katmanları `content/gorseller/b02-d-*.webp`. 3:2 görsellerde başlar kesilmesin diye 9'u (arap-kabileler, ebrehe-ofke, ebrehe-saygi, tepede-bekleyis, ordugaha-varis, kureys-istisare, ebrehe-yakin, hunata-gelis, kasva) üstten %2,5 kırpılıp 16:9'a çevrildi, gerisi ortadan.
 - **2 red, istemleri düzeltildi** (`b02-d1-chatgpt.md` Mesaj 13 ve 16): `ordu-hazir` (filin baş örtüsü yok; referansta ve öteki görsellerde var → fil kartına baş örtüsü eklendi), `develer-donus` (develer insandan küçük ve yüklü; kaynakta otlaktan alınan develer). Reddedilenler `arsiv\b02\*-red.png`.
