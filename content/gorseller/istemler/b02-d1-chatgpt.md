@@ -146,7 +146,7 @@ SUBJECT: Daytime, a desert track between low hills: Nufayl walks at the head of 
 PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count (2 individually listed people). Keep every listed colour and feature exactly as written:
 1. Nufayl ibn Habib of Khath'am, the army's guide: an Arab man of about 45 with a short dark beard; an off-white head cloth wrapped loosely without a cord; a cream tunic and a red cloak with a narrow white edge. Pose and place: in front at the left, walking, pointing forward.
 2. about 12 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: a column following him into the distance.
-3. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: small, far back in the column.
+3. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back, and a matching red head cloth with a golden-yellow border and a row of round yellow tassels over its forehead; no tower, no rider seat, no armour, no second elephant. Pose and place: small, far back in the column.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
@@ -287,7 +287,7 @@ PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 9 people in tota
 1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: at the left, walking in front.
 2. 3 × the sons of Abdul-Muttalib: grown men aged roughly 20 to 50, all clearly younger than their father; mixed beard lengths, all beards black or dark brown except the eldest with a little grey; off-white or sand head cloths and plain cloaks in muted brown, grey-blue and ochre. Pose and place: behind him.
 3. 3 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: at the right by the tents.
-4. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: far in the background.
+4. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back, and a matching red head cloth with a golden-yellow border and a row of round yellow tassels over its forehead; no tower, no rider seat, no armour, no second elephant. Pose and place: far in the background.
 5. an Abyssinian elephant keeper (Unays) in white wrapped garments. Pose and place: beside the elephant, small.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
@@ -317,7 +317,7 @@ SUBJECT: Daytime, beside the elephant in the camp: Dhu Nafar, his hands bound in
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 3 people in total). Keep every listed colour and feature exactly as written:
 1. Dhu Nafar, a Yemeni nobleman held captive: a man of about 50 with a short greying beard; a white head cloth with a dark cord; a beige tunic and a brown cloak; hands bound in front of him with a simple rope. Pose and place: at the left, hands bound in front, speaking.
 2. Unays, an Abyssinian elephant keeper of about 35 with a short black beard, white wrapped garments and a brown sash, holding a short goad. Pose and place: at the right, listening.
-3. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: standing behind them.
+3. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back, and a matching red head cloth with a golden-yellow border and a row of round yellow tassels over its forehead; no tower, no rider seat, no armour, no second elephant. Pose and place: standing behind them.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
@@ -370,10 +370,10 @@ Scene b02-d-develer-donus. ONE image, landscape 3:2. Flat paper cut-out style of
 
 CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
-SUBJECT: Daytime, outside the camp: Abyssinian handlers drive a large herd of camels back towards the hills of Mecca; men of Quraysh receive them at the right; dust in the air.
+SUBJECT: Daytime, outside the camp: Abyssinian handlers drive a large herd of camels back towards the hills of Mecca; men of Quraysh receive them at the right; dust in the air. These are grazing camels taken from the pasture: no loads, no bundles, no saddles, no packs. Camels are big animals: a standing camel's hump is clearly higher than a standing man's head; keep this size relation at every depth.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 7 people in total). Keep every listed colour and feature exactly as written:
-1. about 40 × camels. Pose and place: a herd moving from left to right.
+1. about 40 × unloaded camels with bare backs. Pose and place: a herd moving from left to right, each camel taller than the men beside it.
 2. 3 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: at the left, driving the herd.
 3. 4 × men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool. Pose and place: at the right, receiving the herd.
 
@@ -455,12 +455,12 @@ Scene b02-d-ordu-hazir. ONE image, landscape 3:2. Flat paper cut-out style of th
 
 CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
-SUBJECT: Dawn, the Abyssinian army is drawn up in lines facing towards the hills of Mecca; the large elephant stands at the head of the army; officers give orders.
+SUBJECT: Dawn, the Abyssinian army is drawn up in lines facing towards the hills of Mecca; the large elephant stands at the head of the army; officers give orders. The elephant looks exactly like the attached elephant sheet, including the red head cloth with round yellow tassels over its forehead.
 
 PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count (2 individually listed people). Keep every listed colour and feature exactly as written:
-1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: at the head of the army, centre-right.
-2. about 20 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: in lines behind the elephant.
-3. Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin. Pose and place: small, at the left among the officers.
+1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back, and a matching red head cloth with a golden-yellow border and a row of round yellow tassels over its forehead; no tower, no rider seat, no armour, no second elephant. Pose and place: at the head of the army, centre-right, in front of the lines.
+2. about 20 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: in lines behind the elephant; nobody stands between its legs.
+3. Abraha, the Abyssinian ruler of Yemen: a short, stout, heavy-set man of about 60 with dark brown skin; a long diagonal scar running from his brow down across the eye toward the nose; short, tightly curled black hair and a short, curly black beard; a cream-white ankle-length tunic with a wide dark-brown sash; over it a large deep-red cloak with a broad golden-yellow border, draped over both shoulders; brown leather sandals; no crown, no jewels, no cross, no animal skin. Pose and place: small, at the left among the officers, in the middle distance, not in the foreground.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
@@ -487,7 +487,7 @@ CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (
 SUBJECT: Dawn, the same army: the elephant, turned away to the left (away from Mecca), walks easily; soldiers around it gesture in astonishment; at the right edge, the hills of Mecca.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 6 people in total). Keep every listed colour and feature exactly as written:
-1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back; no tower, no rider seat, no armour, no second elephant. Pose and place: walking to the left.
+1. Mahmud, the single war elephant: one large grey African elephant with long ivory tusks; a red saddle cloth with a broad golden-yellow border and a row of yellow tassels on its back, and a matching red head cloth with a golden-yellow border and a row of round yellow tassels over its forehead; no tower, no rider seat, no armour, no second elephant. Pose and place: walking to the left.
 2. 5 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: around the elephant, astonished.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.

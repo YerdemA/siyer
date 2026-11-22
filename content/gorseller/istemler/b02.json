@@ -880,14 +880,14 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "uzak",
-      "konu": "Daytime, outside the camp: Abyssinian handlers drive a large herd of camels back towards the hills of Mecca; men of Quraysh receive them at the right; dust in the air.",
+      "konu": "Daytime, outside the camp: Abyssinian handlers drive a large herd of camels back towards the hills of Mecca; men of Quraysh receive them at the right; dust in the air. These are grazing camels taken from the pasture: no loads, no bundles, no saddles, no packs. Camels are big animals: a standing camel's hump is clearly higher than a standing man's head; keep this size relation at every depth.",
       "kisiler": [
         {
-          "tarif": "camels",
+          "tarif": "unloaded camels with bare backs",
           "sayi": 40,
           "hayvan": true,
           "yaklasik": true,
-          "poz": "a herd moving from left to right."
+          "poz": "a herd moving from left to right, each camel taller than the men beside it."
         },
         {
           "karakter": "habes_askeri",
@@ -996,21 +996,21 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "uzak",
-      "konu": "Dawn, the Abyssinian army is drawn up in lines facing towards the hills of Mecca; the large elephant stands at the head of the army; officers give orders.",
+      "konu": "Dawn, the Abyssinian army is drawn up in lines facing towards the hills of Mecca; the large elephant stands at the head of the army; officers give orders. The elephant looks exactly like the attached elephant sheet, including the red head cloth with round yellow tassels over its forehead.",
       "kisiler": [
         {
           "karakter": "fil",
-          "poz": "at the head of the army, centre-right."
+          "poz": "at the head of the army, centre-right, in front of the lines."
         },
         {
           "karakter": "habes_askeri",
           "sayi": 20,
           "yaklasik": true,
-          "poz": "in lines behind the elephant."
+          "poz": "in lines behind the elephant; nobody stands between its legs."
         },
         {
           "karakter": "ebrehe",
-          "poz": "small, at the left among the officers."
+          "poz": "small, at the left among the officers, in the middle distance, not in the foreground."
         }
       ],
       "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
