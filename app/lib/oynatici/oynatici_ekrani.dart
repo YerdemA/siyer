@@ -367,6 +367,22 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   int? _bildirilenSahne;
   bool _bitisBildirildi = false;
 
+  int _hazirlananSahne = -1;
+
+  /// Bulunulan ve sıradaki sahnenin görselleri önceden yüklenir; bir önceki
+  /// sahneninkiler geri sarmaya karşı tutulur, gerisi bellekten atılır.
+  void _gorselleriHazirla(int sira) {
+    if (sira == _hazirlananSahne) return;
+    _hazirlananSahne = sira;
+    final yakin = [
+      for (var i = sira - 1; i <= sira + 1; i++)
+        if (i >= 0 && i < _plan.sahneler.length) _plan.sahneler[i].sahne,
+    ];
+    _gorseller.sinirla(yakin);
+    _gorseller.onYukle(_plan.sahneler[sira].sahne);
+    if (sira + 1 < _plan.sahneler.length) _gorseller.onYukle(_plan.sahneler[sira + 1].sahne);
+  }
+
   /// İlerleme kaydı build sırasında değil, kare bittikten sonra yapılır.
   void _ilerlemeBildir(int sahneNo) {
     final sahneDegisti = sahneNo != _bildirilenSahne;
@@ -386,10 +402,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   Widget build(BuildContext context) {
     final konum = _plan.konum(_an);
     _ilerlemeBildir(konum.sahne.sira + 1);
-    // Bulunulan ve sıradaki sahnenin görselleri önceden yüklenir.
-    _gorseller.onYukle(konum.sahne.sahne);
-    final sonraki = konum.sahne.sira + 1;
-    if (sonraki < _plan.sahneler.length) _gorseller.onYukle(_plan.sahneler[sonraki].sahne);
+    _gorselleriHazirla(konum.sahne.sira);
     return Center(
       child: AspectRatio(
         aspectRatio: 16 / 9,

@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:siyer/icerik/model.dart';
 import 'package:siyer/oynatici/gorsel_onbellek.dart';
 
 /// 1×1 PNG. Codec biçimden bağımsız olduğundan WebP ile aynı yolu izler.
@@ -17,7 +18,7 @@ class _SahtePaket extends CachingAssetBundle {
   @override
   Future<ByteData> load(String key) async {
     yuklenen.add(key);
-    if (key.endsWith('var.webp')) return ByteData.sublistView(Uint8List.fromList(_png));
+    if (key.endsWith('var.webp') || key.endsWith('-a.webp') || key.endsWith('-b.webp')) return ByteData.sublistView(Uint8List.fromList(_png));
     throw FlutterError('yok: $key');
   }
 }
@@ -61,6 +62,53 @@ void main() {
     final onbellek = GorselOnbellek(paket: paket);
     expect(onbellek.al(''), isNull);
     expect(paket.yuklenen, isEmpty);
+    onbellek.dispose();
+  });
+
+  test('sinirla yakın sahnelerin dışındaki görselleri bellekten atar', () async {
+    Sahne sahne(String dosya) => Sahne.fromJson({
+          'id': dosya,
+          'anlatim': [],
+          'gorsel': {
+            'tarif': '',
+            'kamera': 'sabit',
+            'katmanlar': [
+              {'id': 'k', 'dosya': dosya, 'derinlik': 0},
+            ],
+          },
+        });
+    final a = sahne('s-a.webp');
+    final b = sahne('s-b.webp');
+    final onbellek = GorselOnbellek(paket: _SahtePaket());
+    var bekleyen = 2;
+    final hazir = Completer<void>();
+    onbellek.addListener(() {
+      if (--bekleyen == 0) hazir.complete();
+    });
+    onbellek
+      ..onYukle(a)
+      ..onYukle(b);
+    await hazir.future.timeout(const Duration(seconds: 10));
+    expect(onbellek.bellektekiler, unorderedEquals(['s-a.webp', 's-b.webp']));
+
+    onbellek.sinirla([b]);
+    expect(onbellek.bellektekiler, ['s-b.webp']);
+    expect(onbellek.al('s-a.webp'), isNull, reason: 'yeniden istenince baştan yüklenir');
+    onbellek.dispose();
+  });
+
+  test('okuyucu verilince baytlar ondan okunur', () async {
+    final okunan = <String>[];
+    final onbellek = GorselOnbellek(okuyucu: (d) async {
+      okunan.add(d);
+      return Uint8List.fromList(_png);
+    });
+    final hazir = Completer<void>();
+    onbellek.addListener(() => hazir.complete());
+    onbellek.al('paket.webp');
+    await hazir.future.timeout(const Duration(seconds: 10));
+    expect(okunan, ['paket.webp']);
+    expect(onbellek.al('paket.webp'), isNotNull);
     onbellek.dispose();
   });
 }
