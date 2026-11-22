@@ -8,8 +8,9 @@ Son güncelleme: 2026-11-21.
 
 **Kaldığımız yer (2026-11-22, akşam): dinamizm turu d1** (Erdem istedi: uzun tek görselli ve yalnız Kâbe'li sahneler sıkıcı).
 - 10 bölüm ölçüldü: 39 dakikanın ~%37'si ya yalnız ortak Mekke/Kâbe çekimi ya da 20 sn'den uzun tek görsel; en kötüleri b02 (%62), b10 (%58), b07 (%55). Değerlendirme ve görsel listesi: `docs/DINAMIZM.md`.
-- **90 yeni görsel istemi** (57 A, 33 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
+- **96 yeni görsel istemi** (63 A, 33 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
 - Erdem'in kararları (2026-11-22): putlar şekli kaynakta yoksa farklı biçimlerde yaklaşık put; göğsün yarılması çocukların gözündeki yansımada, 5 göz yakın planı (`b04-d-goz-1…5`, ışıklar istisna olarak görselde); b01 ve b02'de inisiyatif bende (Necâşî çıkarıldı, Kasvâ'da Efendimiz yok). `GORSEL_USLUP.md` güncellendi.
+- Kâbe'nin içi (deneyenlerin önerisi): iki ana görsel (`b01-d-kabe-ic` 605 öncesi, `b09-d-kabe-ic-tavan` 605 sonrası; TDV KÂBE c. 24 ve anlatımdaki iddialara dayanır), onaylanınca `referans/kabe-ic-alcak.png` / `kabe-ic-yuksek.png`; iç sahneler b03-s03 (kura), b03-s12 (dua), b09-s02 (kuyu), b09-s14, ayrıca `b08-d-hatice-oda`.
 - **Sırada:** Erdem görselleri üretir (önerilen sıra b02 → b10 → b07 → b01 → b08 → b03 → diğerleri) Görseller gelince: denetim, `gorsel_katman.py --opak`, `cekimler[]`'e yerleştirme (uzun parçalar metin değişmeden bölünür), doğrulama, önizleme.
 
 **Önceki (2026-11-22): boyut küçültme ve bölüm indirme** (Erdem, kapalı testten önce istedi).

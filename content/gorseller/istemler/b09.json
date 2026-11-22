@@ -588,6 +588,62 @@
       "not": "Dinamizm turu d1 (B). s02 tek görsel 17 sn; hazinenin bulunması. Dayanak: b09-s02 parça 1; i-b09-005."
     },
     {
+      "id": "b09-d-kabe-ic-kuyu",
+      "tur": "d1",
+      "dosya": "b09-d-kabe-ic-kuyu.webp",
+      "katman": "kabe-ic-kuyu",
+      "isleme": "opak",
+      "sahneler": [
+        "b09-s02"
+      ],
+      "sahne": "b09-s02",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. The flat stone that covered the stone-lined pit in the floor has been pushed aside; the pit is empty and dark. A man of Quraysh kneels at its edge looking down in dismay; another stands behind him with a raised hand.",
+      "kisiler": [
+        {
+          "karakter": "kureysli",
+          "sayi": 2,
+          "poz": "one kneeling at the pit's edge, one standing behind."
+        }
+      ],
+      "ekle": [
+        "kabe-ic-alcak.png"
+      ],
+      "isik": "LIGHT: daylight falling in from the open sky above; the pit very dark; no glow.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, gold, treasure, coins, roof, lamps, writing",
+      "not": "Dinamizm turu d1 (A). s02 tek görsel 17 sn; hazine 'Kâbe'nin içindeki kuyuda' saklanıyordu. Dayanak: b09-s02 parça 1; i-b09-005. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur."
+    },
+    {
+      "id": "b09-d-kabe-ic-tavan",
+      "tur": "d1",
+      "dosya": "b09-d-kabe-ic-tavan.webp",
+      "katman": "kabe-ic-tavan",
+      "isleme": "opak",
+      "sahneler": [
+        "b09-s14"
+      ],
+      "sahne": "b09-s14",
+      "parca": [
+        0,
+        3
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Inside the rebuilt Ka'ba, looking up: tall walls built in alternating courses, one course of rough stone, then one wooden beam, then stone again, rising about twice as high as before; a new flat roof of heavy, weathered wooden beams and planks (old ship timber) closes the top; a plain wooden stair rises along one wall to a corner of the roof; a single-leaf wooden door is set high in the opposite wall, and daylight comes in only through that door, leaving the room dim. Packed earth floor. Nobody inside.",
+      "ekle": [
+        "nesne-kabe-yuksek.png"
+      ],
+      "isik": "LIGHT: dim interior; one soft patch of daylight from the high door falls on the floor and walls; warm brown shadows; no glow, no rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, idols in the foreground, lamps, gold, cloth hangings, writing, columns of marble",
+      "not": "Dinamizm turu d1 (A). Kâbe'nin içi, 605 sonrası ANA GÖRSEL: yeni tavan (gemi kerestesi, b09-s03) ve yükselen duvarlar. Onaylanınca referans/kabe-ic-yuksek.png. Dayanak: b09-s14 parça 0, 3; i-b09-022."
+    },
+    {
       "id": "b09-d-yuksek-kapi",
       "tur": "d1",
       "dosya": "b09-d-yuksek-kapi.webp",

@@ -347,16 +347,62 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "yakin",
-      "konu": "Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large idol roughly shaped like a human figure with primitive carved features, out of focus.",
+      "konu": "Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall.",
       "kisiler": [
         {
           "tarif": "the custodian of the idol, only his hands and forearms in a dark cloak are visible",
           "poz": "hands in the centre holding the quiver."
         }
       ],
-      "isik": "LIGHT: dim interior: deep brown shadows; the only warm light is the small oil lamp at the left; no moon glow, no halo.",
+      "ekle": [
+        "kabe-ic-alcak.png"
+      ],
+      "isik": "LIGHT: daylight falling in from the open sky above; the hands in light, the wall behind in soft shadow; no glow.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, human faces, blood, knives, writing on arrows",
-      "not": "Dinamizm turu d1 (A). s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. Dayanak: b03-s03 parça 0; i-b03-004."
+      "not": "Dinamizm turu d1 (A). s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. Dayanak: b03-s03 parça 0; i-b03-004. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur."
+    },
+    {
+      "id": "b03-d-kabe-ic-kura",
+      "tur": "d1",
+      "dosya": "b03-d-kabe-ic-kura.webp",
+      "katman": "kabe-ic-kura",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s03"
+      ],
+      "sahne": "b03-s03",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. Before the large crude idol (Hubal) at the far wall, the custodian holds up a bundle of divining arrows; Abdul-Muttalib stands facing him, and his sons stand in a row along the side wall, Abdullah among them seen strictly from behind. Other idols stand along the walls in shadow.",
+      "kisiler": [
+        {
+          "tarif": "the custodian of the idol, an Arab man of about 50 with a black-and-grey beard, a dark head cloth and a dark brown cloak",
+          "poz": "at the right, before the idol, holding up the arrows."
+        },
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "at the left of centre, facing the custodian."
+        },
+        {
+          "karakter": "abdulmuttalib_ogullari",
+          "sayi": 4,
+          "poz": "in a row along the left wall."
+        },
+        {
+          "karakter": "abdullah",
+          "poz": "among the sons, strictly from behind."
+        }
+      ],
+      "ekle": [
+        "kabe-ic-alcak.png"
+      ],
+      "isik": "LIGHT: daylight falling in from the open sky above onto the upper walls and the people's heads; the floor in soft shadow; no glow.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, knives, sacrifice, roof, lamps, gold, writing",
+      "not": "Dinamizm turu d1 (A). Kura 'Kâbe'nin içindeki Hübel putunun yanında' çekiliyor; bugün dışarıdan gösteriliyor. Dayanak: b03-s03 parça 0; i-b03-004. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur."
     },
     {
       "id": "b03-d-on-deve",
@@ -459,6 +505,36 @@
       "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Amina's face or profile, any other person",
       "not": "Dinamizm turu d1 (B). Aynı sahne: Âmine hamileyken Abdullah'ın ölümü. Dayanak: b03-s08 parça 1; i-b03-010."
+    },
+    {
+      "id": "b03-d-kabe-ic-dua",
+      "tur": "d1",
+      "dosya": "b03-d-kabe-ic-dua.webp",
+      "katman": "kabe-ic-dua",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s12"
+      ],
+      "sahne": "b03-s12",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. Abdul-Muttalib stands alone in the middle of the enclosure, seen strictly from behind, head raised towards the open sky, as if praying and giving thanks; his arms are in front of him and not visible. The idols stand along the walls in deep shadow, ignored.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "in the centre, strictly from behind, head raised."
+        }
+      ],
+      "ekle": [
+        "kabe-ic-alcak.png"
+      ],
+      "isik": "LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib; the walls and idols in shadow; no glow, no rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any baby, bundle or child, any glow, any other person, roof, lamps, gold",
+      "not": "Dinamizm turu d1 (A). s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu. Dayanak: b03-s12 parça 0; i-b03-015. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur."
     },
     {
       "id": "b03-d-sut-anne-arayis",

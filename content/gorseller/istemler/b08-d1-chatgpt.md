@@ -182,7 +182,35 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 5 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 7: b08-d-kitlik
+## Mesaj 7: b08-d-hatice-oda
+
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`, `karakter-hatice.png`
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s07 tek avlu görseli; haber evin içinden gönderiliyor (iç mekân önerisi). Dayanak: b08-s07 parça 1; i-b08-009.*
+
+```text
+Scene b08-d-hatice-oda. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Evening, a room inside Khadija's house: plain plastered walls, a woven mat, cushions, a small oil lamp in a wall niche, a window with a cloth curtain. Khadija sits on a cushion seen strictly from behind; before her a woman messenger, also seen from behind, bows slightly as she receives the message.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
+1. Khadija, a dignified woman ALWAYS seen from behind, in silhouette or completely in shadow, face never visible; wrapped in a long deep wine-red-brown cloak of fine wool with a narrow woven border, and a cream head covering that hides her hair and the sides of her face. Pose and place: seated at the right, strictly from behind.
+2. a woman messenger wrapped in a plain sand-coloured cloak and head covering, seen strictly from behind. Pose and place: standing at the left, bowing slightly.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: evening interior: warm browns and dusk-blue at the window; the only warm light is the small oil lamp; no moon glow, no halo.
+
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any face or profile, any man
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 2 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
+```
+
+## Mesaj 8: b08-d-kitlik
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`
 
@@ -209,7 +237,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 8: b08-d-hatira
+## Mesaj 9: b08-d-hatira
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s15 tek ortak Kâbe görseli 16 sn. Dayanak: b08-s15 parça 0; i-b08-024.*
 

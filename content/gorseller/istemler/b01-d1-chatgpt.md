@@ -218,7 +218,31 @@ BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 9: b01-d-uzlasma
+## Mesaj 9: b01-d-kabe-ic
+
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Kâbe'nin içi, 605 öncesi ANA GÖRSEL (b03 ve b09'daki iç sahnelere referans). 'İçine ve çevresine putlar dikildi; en büyükleri Hübel'. Dayanak: b01-s10 parça 1; i-b01-008.*
+
+```text
+Scene b01-d-kabe-ic. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Dawn. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. Along the walls stand idols: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them. Against the far wall stands the largest idol of all (Hubal): a big, crude statue roughly shaped like a standing human figure, clearly taller than the others, of dark reddish stone. In the floor near one side wall, a stone-lined pit opening, its mouth half covered by a flat stone. Nobody inside.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: dawn: soft apricot light falling in from the open sky above, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.
+
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, roof, beams, lamps, gold, cloth hangings, writing, blood
+
+BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
+```
+
+## Mesaj 10: b01-d-uzlasma
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`
 
@@ -246,11 +270,11 @@ BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 10: b01-d-putlar
+## Mesaj 11: b01-d-putlar
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0, 1; i-b01-008.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0; i-b01-008.*
 
 ```text
 Scene b01-d-putlar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
@@ -270,7 +294,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 11: b01-d-pazar
+## Mesaj 12: b01-d-pazar
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`
 
@@ -298,7 +322,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 12: b01-d-antlasma
+## Mesaj 13: b01-d-antlasma
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s11'in ikinci çekimi genel kervan görseli; antlaşma anlatılıyor. Dayanak: b01-s11 parça 2; i-b01-016.*
 
@@ -325,7 +349,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 13: b01-d-huzur
+## Mesaj 14: b01-d-huzur
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`, `nesne-mekke-evler.png`
 
@@ -352,7 +376,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, 
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 14: b01-d-siginma
+## Mesaj 15: b01-d-siginma
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s12'nin üçüncü çekimi aynı konak görseli. Dayanak: b01-s12 parça 2; i-b01-018.*
 
@@ -380,7 +404,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 5 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 15: b01-d-zulum
+## Mesaj 16: b01-d-zulum
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s12'nin son çekimi (15 sn) konak görselinin kadrajı. Parça bölünür: önce b01-d-putlar (putlara tapma), sonra bu ('güçlünün zayıfı ezdiği'). Dayanak: b01-s12 parça 3; i-b01-019.*
 

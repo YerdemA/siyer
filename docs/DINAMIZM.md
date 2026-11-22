@@ -11,17 +11,17 @@ Her sahnenin anlatım süresi ses dosyasından alındı ve metin uzunluğuna gö
 
 | Bölüm | Süre | Ortak ya da uzun çekim süresi | Oran | Yeni görsel (A + B) |
 |---|---|---|---|---|
-| b01 Câhiliye Mekke'si | 5:30 | 94 sn | %28 | 10 + 5 |
+| b01 Câhiliye Mekke'si | 5:30 | 94 sn | %28 | 11 + 5 |
 | b02 Fil Vakası | 5:46 | 215 sn | **%62** | 15 + 7 |
-| b03 Doğum | 3:37 | 80 sn | %37 | 4 + 2 |
+| b03 Doğum | 3:37 | 80 sn | %37 | 6 + 2 |
 | b04 Süt Anne | 3:34 | 46 sn | %21 | 8 + 3 |
 | b05 Yetimlik | 2:12 | 35 sn | %26 | 1 + 1 |
 | b06 Ebû Tâlib | 3:11 | 31 sn | %16 | 2 + 2 |
 | b07 Gençlik | 4:17 | 141 sn | **%55** | 6 + 3 |
-| b08 el-Emîn | 4:02 | 56 sn | %23 | 5 + 3 |
-| b09 Hakem | 3:21 | 38 sn | %19 | 2 + 1 |
+| b08 el-Emîn | 4:02 | 56 sn | %23 | 5 + 4 |
+| b09 Hakem | 3:21 | 38 sn | %19 | 4 + 1 |
 | b10 Hira'nın Eşiği | 4:06 | 143 sn | **%58** | 6 + 4 |
-| **Toplam** | **39 dk** | **~880 sn** | **%37** | **57 + 33 = 90** |
+| **Toplam** | **39 dk** | **~880 sn** | **%37** | **63 + 33 = 96** |
 
 En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnız Kâbe), b10-s06 (38 sn), b06-s11 (31 sn), b07-s13 (29 sn), b10-s04 (29 sn), b02-s12, b02-s09, b02-s10 (27 sn).
 
@@ -43,6 +43,32 @@ En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnı
 - Putlar (Erdem, 2026-11-22): şekli kaynakta olan kaynaktaki gibi; olmayan farklı biçimlerde, yaklaşık put görünümünde (kaba insan biçimli taş ve ahşap heykeller, dikili taşlar). Yerel kaynaklarda Hübel'in şekli yok. Kan, kesim, kurban yok.
 - Karakter kartı olan herkes kartıyla gelir, mesaja referans sayfası iliştirilir. Kartı olmayan yeni kişiler (Kusay, Hâşim, Üneys, Esved, Düveyk, Ebû Rigāl'in kabri) için kaynakta görünüş yok; istemde sade, belirgin özellik uydurulmadan tarif edildi. Tekrar etmedikleri için kart açılmadı.
 - Her istemin `not` alanında dayandığı anlatım parçası ve iddia kimlikleri yazılı. Görsel, anlatımın söylediğinden fazlasını göstermez.
+
+## Kâbe'nin içi ve iç mekânlar (2026-11-22, deneyenlerin önerisi)
+
+Kâbe'nin içinde geçen olaylar bugün hep dışarıdan gösteriliyor. Kaynakta içerisi hakkında okunanlar:
+
+- **605 öncesi** (anlatım ve iddialar): Hübel Kâbe'nin içindeydi (i-b03-004, i-b01-008); içeride hazinenin saklandığı bir kuyu vardı (i-b09-005); duvarlar harçsız taştandı, tavan yoktu (i-b09-003). Görselde: harçsız taş duvarlı, üstü açık küçük bir avlu; duvar diplerinde putlar, karşı duvarda en büyükleri Hübel (şekli kaynakta yok, put kuralına göre yaklaşık), yerde ağzı yassı taşla yarı örtülü kuyu, zemin hizasında kapı.
+- **605 sonrası** (TDV "KÂBE", S. Ünal, c. 24, s. 14-21; inşa paragrafı s. 16): duvarlar bir sıra taş, bir sıra ahşap hatılla örüldü; 9 arşından 18 arşına çıktı; içeriden bir köşeye merdiven, dama oluk; tek kanatlı, yüksek kapı. Tavanın kerestesi anlatımda karaya vuran gemiden (b09-s03). Görselde: hatıllı yüksek duvarlar, ağır kalaslı düz tavan, duvar boyunca ahşap merdiven, ışık yalnız yüksek kapıdan.
+- Kaynakta olmayan ayrıntı (süs, örtü, kandil, sütun) çizilmez.
+
+**Önce iki ana görsel** üretilir ve onaylanır; sonra iç sahnelerde referans olarak iliştirilir:
+1. `b01-d-kabe-ic` (605 öncesi; b01-s10'da Hübel cümlesi). Onaylanınca `istemler/referans/kabe-ic-alcak.png`.
+2. `b09-d-kabe-ic-tavan` (605 sonrası; b09-s14). Onaylanınca `istemler/referans/kabe-ic-yuksek.png` (ileride peygamberlik sonrası bölümlerde de kullanılır).
+
+İç sahneler:
+
+| Görsel | Olay |
+|---|---|
+| `b03-d-kabe-ic-kura` (+ yakın plan `b03-d-kura-oklari`) | Hübel'in yanında oklarla kura (b03-s03) |
+| `b03-d-kabe-ic-dua` | Abdülmuttalib torununu Kâbe'ye alıp dua ediyor (b03-s12); bebek çizilmez, Abdülmuttalib arkadan |
+| `b09-d-kabe-ic-kuyu` | Hazinenin saklandığı kuyu boş (b09-s02) |
+| `b09-d-kabe-ic-tavan` | Yeni tavan ve yükselen duvarlar (b09-s14) |
+| `b08-d-hatice-oda` (B) | Hz. Hatice'nin evlilik haberini gönderdiği oda (b08-s07); iç mekân önerisi |
+
+Diğer iç mekânlar zaten var (Dârünnedve'nin içi, Âmine'nin ve Ebû Tâlib'in evi, Abdülmuttalib'in son gecesi, Hira mağarası, Varaka'nın odası).
+
+**b01 üretim sırası:** `b01-d-kabe-ic` b01 mesaj dosyasında; b03 ve b09'daki iç sahnelerden önce üretilmeli.
 
 ## Üretim
 
@@ -85,7 +111,7 @@ En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnı
 
 ## Bölüm bölüm
 
-### b01 (10 A, 5 B)
+### b01 (11 A, 5 B)
 
 Genel durum iyi; sorun s02 (iki çekim de boş vadi, 24 sn), s05/s06/s09/s10'daki ortak Kâbe çekimleri ve s11–s12'nin son uzun parçaları (Kureyş suresi 16 sn, Ca'fer'in sözleri 15 sn). Hz. İbrâhim ve Hz. İsmâil sahnelerinde kişi çizilmediği için oralara yalnız mekân ve taş görüntüleri önerildi.
 
@@ -99,8 +125,9 @@ Genel durum iyi; sorun s02 (iki çekim de boş vadi, 24 sn), s05/s06/s09/s10'dak
 | `b01-d-put-tasima` | s06 · 0 | A | s06'nın ilk çekimi (10 sn) yalnız gece Kâbe'si. |
 | `b01-d-kusay-ittifak` | s07 · 1 | A | s07'nin ilk çekimi çadır uzak planında 17 sn kalıyor. |
 | `b01-d-ev-yapimi` | s08 · 0, 1 | A | s08'in iki çekimi aynı Dârünnedve görseli (19 sn). |
+| `b01-d-kabe-ic` | s10 · 1 | A | Kâbe'nin içi, 605 öncesi ANA GÖRSEL (b03 ve b09'daki iç sahnelere referans). 'İçine ve çevresine putlar dikildi; en büyükleri Hübel'. |
 | `b01-d-uzlasma` | s09 · 2 | B | s09'un son çekimi (9 sn) yalnız ortak Kâbe. |
-| `b01-d-putlar` | s10 · 0, 1 | A | s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. |
+| `b01-d-putlar` | s10 · 0 | A | s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. |
 | `b01-d-pazar` | s11 · 1 | A | s11'in ilk çekimi 14 sn kervan uzak planı; güvenle gelen tüccar ve pazar görülmüyor. |
 | `b01-d-antlasma` | s11 · 2 | B | s11'in ikinci çekimi genel kervan görseli; antlaşma anlatılıyor. |
 | `b01-d-huzur` | s11 · 4 | A | s11'in son çekimi (16 sn) yalnız ortak geniş plan; Kureyş suresinin 'doyuran, emin kılan' anlamı görüntüsüz. |
@@ -136,7 +163,7 @@ En durağan bölüm. 16 sahnenin 11'i tek görselle oynuyor; s09–s14 arası al
 | `b02-d-sana-donus` | s15 · 1 | B | s15 tek görsel 13 sn; Ebrehe'nin San'a'ya taşınması. |
 | `b02-d-kasva` | s16 · 2 | A | s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. Efendimiz bu görselde yok (peygamberlik sonrası nur kararı verilmedi). |
 
-### b03 (4 A, 2 B)
+### b03 (6 A, 2 B)
 
 s01 (26 sn ortak Kâbe) ve s03–s04'ün tek görselleri asıl sorun. Kalanı mevcut görsellerin yeniden kullanımı ve sıralamasıyla çözülüyor.
 
@@ -144,9 +171,11 @@ s01 (26 sn ortak Kâbe) ve s03–s04'ün tek görselleri asıl sorun. Kalanı me
 |---|---|---|---|
 | `b03-d-kabileler` | s01 · 1 | A | s01 tek ortak Kâbe görseli 26 sn; hadis kabilelerden söz ediyor. |
 | `b03-d-kura-oklari` | s03 · 0 | A | s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. |
+| `b03-d-kabe-ic-kura` | s03 · 0 | A | Kura 'Kâbe'nin içindeki Hübel putunun yanında' çekiliyor; bugün dışarıdan gösteriliyor. |
 | `b03-d-on-deve` | s04 · 1 | A | s04 tek uzak görsel 26 sn; kura usulü (on deve) anlatılıyor. |
 | `b03-d-yesrib-hasta` | s08 · 0 | A | s08 tek kervan görseli 18 sn; Yesrib'deki hastalık ve vefat görüntüsüz. |
 | `b03-d-amine-bekleyis` | s08 · 1 | B | Aynı sahne: Âmine hamileyken Abdullah'ın ölümü. |
+| `b03-d-kabe-ic-dua` | s12 · 0 | A | s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu. |
 | `b03-d-sut-anne-arayis` | s12 · 1 | B | s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu. |
 
 ### b04 (8 A, 3 B)
@@ -203,7 +232,7 @@ s03, s04, s12, s13 ve s14 her biri 20–29 sn tek görsel; s14 yalnız Kâbe. Fi
 | `b07-d-hak-teslim` | s13 · 2 | B | Aynı sahne: antlaşmadan sonra hakların geri alınması (genel). |
 | `b07-d-kizil-develer` | s14 · 1 | A | s14 tek ortak Kâbe görseli 21 sn; 'kızıl develer' sözü görsel bir benzetme. |
 
-### b08 (5 A, 3 B)
+### b08 (5 A, 4 B)
 
 s10 bütün projenin en uzun durağan çekimi (40 sn); s15 tek ortak Kâbe görseli. Diğerleri kabul edilebilir.
 
@@ -215,10 +244,11 @@ s10 bütün projenin en uzun durağan çekimi (40 sn); s15 tek ortak Kâbe görs
 | `b08-d-kasim-kabir` | s10 · 2 | A | Aynı sahne: Kâsım'ın vefatı. |
 | `b08-d-hicret-yolu` | s10 · 3 | B | Aynı sahne: kızlarının hicreti. |
 | `b08-d-zeyd-kacirilis` | s11 · 1 | A | s11'in ikinci çekimi aynı görsel (20 sn). |
+| `b08-d-hatice-oda` | s07 · 1 | B | s07 tek avlu görseli; haber evin içinden gönderiliyor (iç mekân önerisi). |
 | `b08-d-kitlik` | s14 · 0 | B | s14'ün ikinci çekimi 19 sn aynı görsel. |
 | `b08-d-hatira` | s15 · 0 | A | s15 tek ortak Kâbe görseli 16 sn. |
 
-### b09 (2 A, 1 B)
+### b09 (4 A, 1 B)
 
 Önceki revizyonlarla en akıcı bölüm. Açılış (s01) ve kapanış (s14) yalnız Kâbe; ikisi de kısa yeni görsellerle bölünür.
 
@@ -226,6 +256,8 @@ s10 bütün projenin en uzun durağan çekimi (40 sn); s15 tek ortak Kâbe görs
 |---|---|---|---|
 | `b09-d-duvar-boy` | s01 · 0 | A | s01 tek ortak Kâbe görseli 17 sn; duvarların tarifi. |
 | `b09-d-duveyk` | s02 · 1 | B | s02 tek görsel 17 sn; hazinenin bulunması. |
+| `b09-d-kabe-ic-kuyu` | s02 · 1 | A | s02 tek görsel 17 sn; hazine 'Kâbe'nin içindeki kuyuda' saklanıyordu. |
+| `b09-d-kabe-ic-tavan` | s14 · 0, 3 | A | Kâbe'nin içi, 605 sonrası ANA GÖRSEL: yeni tavan (gemi kerestesi, b09-s03) ve yükselen duvarlar. Onaylanınca referans/kabe-ic-yuksek.png. |
 | `b09-d-yuksek-kapi` | s14 · 1 | A | s14 tek ortak Kâbe görseli 21 sn. |
 
 ### b10 (6 A, 4 B)

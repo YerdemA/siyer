@@ -78,7 +78,58 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 4 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 3: b09-d-yuksek-kapi
+## Mesaj 3: b09-d-kabe-ic-kuyu
+
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `kabe-ic-alcak.png`
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s02 tek görsel 17 sn; hazine 'Kâbe'nin içindeki kuyuda' saklanıyordu. Dayanak: b09-s02 parça 1; i-b09-005. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
+
+```text
+Scene b09-d-kabe-ic-kuyu. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. The flat stone that covered the stone-lined pit in the floor has been pushed aside; the pit is empty and dark. A man of Quraysh kneels at its edge looking down in dismay; another stands behind him with a raised hand.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
+1. 2 × men of Quraysh: Arab men of mixed ages in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool; no bright colours, no jewellery. Pose and place: one kneeling at the pit's edge, one standing behind.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: daylight falling in from the open sky above; the pit very dark; no glow.
+
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, gold, treasure, coins, roof, lamps, writing
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 2 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
+```
+
+## Mesaj 4: b09-d-kabe-ic-tavan
+
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-yuksek.png`
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Kâbe'nin içi, 605 sonrası ANA GÖRSEL: yeni tavan (gemi kerestesi, b09-s03) ve yükselen duvarlar. Onaylanınca referans/kabe-ic-yuksek.png. Dayanak: b09-s14 parça 0, 3; i-b09-022.*
+
+```text
+Scene b09-d-kabe-ic-tavan. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
+
+CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
+
+SUBJECT: Inside the rebuilt Ka'ba, looking up: tall walls built in alternating courses, one course of rough stone, then one wooden beam, then stone again, rising about twice as high as before; a new flat roof of heavy, weathered wooden beams and planks (old ship timber) closes the top; a plain wooden stair rises along one wall to a corner of the roof; a single-leaf wooden door is set high in the opposite wall, and daylight comes in only through that door, leaving the room dim. Packed earth floor. Nobody inside.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: dim interior; one soft patch of daylight from the high door falls on the floor and walls; warm brown shadows; no glow, no rays.
+
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, idols in the foreground, lamps, gold, cloth hangings, writing, columns of marble
+
+BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
+```
+
+## Mesaj 5: b09-d-yuksek-kapi
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-yuksek.png`
 

@@ -530,6 +530,40 @@
       "not": "Dinamizm turu d1 (A). s11'in ikinci çekimi aynı görsel (20 sn). Dayanak: b08-s11 parça 1; i-b08-018."
     },
     {
+      "id": "b08-d-hatice-oda",
+      "tur": "d1",
+      "dosya": "b08-d-hatice-oda.webp",
+      "katman": "hatice-oda",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s07"
+      ],
+      "sahne": "b08-s07",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Evening, a room inside Khadija's house: plain plastered walls, a woven mat, cushions, a small oil lamp in a wall niche, a window with a cloth curtain. Khadija sits on a cushion seen strictly from behind; before her a woman messenger, also seen from behind, bows slightly as she receives the message.",
+      "kisiler": [
+        {
+          "karakter": "hatice",
+          "poz": "seated at the right, strictly from behind."
+        },
+        {
+          "tarif": "a woman messenger wrapped in a plain sand-coloured cloak and head covering, seen strictly from behind",
+          "poz": "standing at the left, bowing slightly."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: evening interior: warm browns and dusk-blue at the window; the only warm light is the small oil lamp; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any face or profile, any man",
+      "not": "Dinamizm turu d1 (B). s07 tek avlu görseli; haber evin içinden gönderiliyor (iç mekân önerisi). Dayanak: b08-s07 parça 1; i-b08-009."
+    },
+    {
       "id": "b08-d-kitlik",
       "tur": "d1",
       "dosya": "b08-d-kitlik.webp",

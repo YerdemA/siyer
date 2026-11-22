@@ -690,6 +690,30 @@
       "not": "Dinamizm turu d1 (A). s08'in iki çekimi aynı Dârünnedve görseli (19 sn). Dayanak: b01-s08 parça 0, 1; i-b01-012."
     },
     {
+      "id": "b01-d-kabe-ic",
+      "tur": "d1",
+      "dosya": "b01-d-kabe-ic.webp",
+      "katman": "kabe-ic",
+      "isleme": "opak",
+      "sahneler": [
+        "b01-s10"
+      ],
+      "sahne": "b01-s10",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dawn. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. Along the walls stand idols: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them. Against the far wall stands the largest idol of all (Hubal): a big, crude statue roughly shaped like a standing human figure, clearly taller than the others, of dark reddish stone. In the floor near one side wall, a stone-lined pit opening, its mouth half covered by a flat stone. Nobody inside.",
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: dawn: soft apricot light falling in from the open sky above, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, roof, beams, lamps, gold, cloth hangings, writing, blood",
+      "not": "Dinamizm turu d1 (A). Kâbe'nin içi, 605 öncesi ANA GÖRSEL (b03 ve b09'daki iç sahnelere referans). 'İçine ve çevresine putlar dikildi; en büyükleri Hübel'. Dayanak: b01-s10 parça 1; i-b01-008."
+    },
+    {
       "id": "b01-d-uzlasma",
       "tur": "d1",
       "dosya": "b01-d-uzlasma.webp",
@@ -737,8 +761,7 @@
       ],
       "sahne": "b01-s10",
       "parca": [
-        0,
-        1
+        0
       ],
       "oncelik": "A",
       "tip": "mekan",
@@ -749,7 +772,7 @@
       ],
       "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing",
-      "not": "Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0, 1; i-b01-008."
+      "not": "Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0; i-b01-008."
     },
     {
       "id": "b01-d-pazar",
