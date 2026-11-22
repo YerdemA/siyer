@@ -24,3 +24,12 @@ plugins {
 }
 
 include(":app")
+
+// Bölüm paketleri (Play Asset Delivery); tools/icerik_esitle.dart üretir.
+file("paketler").listFiles()
+    ?.filter { File(it, "build.gradle.kts").exists() }
+    ?.sortedBy { it.name }
+    ?.forEach {
+        include(":${it.name}")
+        project(":${it.name}").projectDir = it
+    }

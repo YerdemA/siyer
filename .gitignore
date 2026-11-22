@@ -22,9 +22,13 @@ key.properties
 .claude/settings.local.json
 .env
 app/assets/icerik/
+app/android/paketler/
 
 # Üretilen görsellerin ham hâlleri (yeniden dönüştürme için)
 gorsel-ham/
 
 # Python önbelleği
 __pycache__/
+
+# Tasarım aracının yerel durumu
+.impeccable/

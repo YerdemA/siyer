@@ -67,6 +67,19 @@ class DilIcerigi {
   final bolumler = <String, BolumOzeti>{};
 }
 
+/// Bölüm paketleri klasörü (`app/android/paketler`); verilirse ses ve
+/// görseller içerik kökünde yoksa bölümün kendi paketinde aranır.
+String? paketKlasoru;
+
+/// [kok]/[goreli] var mı; yoksa [bolumYolu]nun paketinde var mı.
+bool medyaVar(String kok, String goreli, String bolumYolu) {
+  if (File('$kok/$goreli').existsSync()) return true;
+  final paketler = paketKlasoru;
+  if (paketler == null) return false;
+  final paket = File(bolumYolu).uri.pathSegments.last.split('-').first;
+  return File('$paketler/$paket/src/main/assets/$paket/$goreli').existsSync();
+}
+
 void main(List<String> args) {
   var kok = 'content';
   var yayin = false;
@@ -80,10 +93,12 @@ void main(List<String> args) {
         kapaliTest = true;
       case '--kok' when i + 1 < args.length:
         kok = args[++i];
+      case '--paketler' when i + 1 < args.length:
+        paketKlasoru = args[++i];
       default:
         stderr.writeln('Bilinmeyen seçenek: ${args[i]}');
         stderr.writeln(
-          'Kullanım: dart run tools/icerik_dogrula.dart [--yayin | --kapali-test] [--kok <klasör>]',
+          'Kullanım: dart run tools/icerik_dogrula.dart [--yayin | --kapali-test] [--kok <klasör>] [--paketler <klasör>]',
         );
         exit(2);
     }
@@ -533,7 +548,7 @@ BolumOzeti bolumuDenetle(
             // (app/lib/icerik/model.dart → Gorsel.efektler ile aynı liste).
             if (efektKatmanlari.contains(metin(k, 'yerTutucu'))) continue;
             yerTutucuKatman++;
-          } else if (!File('$gorselKlasoru/gorseller/$dosya').existsSync()) {
+          } else if (!medyaVar(gorselKlasoru, 'gorseller/$dosya', yol)) {
             rapor.yayinHatasi(gYer, 'katman görseli bulunamadı: gorseller/$dosya');
           }
         }
@@ -542,7 +557,11 @@ BolumOzeti bolumuDenetle(
     final ses = s['ses'];
     if (ses is! Map<String, dynamic> || metin(ses, 'anlatim').isEmpty) {
       rapor.yayinHatasi(yer, '`ses.anlatim` boş');
-    } else if (!File('${File(yol).parent.parent.path}/ses/${metin(ses, 'anlatim')}').existsSync()) {
+    } else if (!medyaVar(
+      File(yol).parent.parent.parent.path,
+      '${File(yol).parent.parent.uri.pathSegments.lastWhere((p) => p.isNotEmpty)}/ses/${metin(ses, 'anlatim')}',
+      yol,
+    )) {
       // Anlatım sesi dil başınadır: content/<dil>/ses/<dosya>.
       sesYok++;
     }

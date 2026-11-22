@@ -84,6 +84,17 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 - `yerler.json`: `{ id, ad, harita: { x, y }, ozet, bolumler[], iddialar[] }` — harita gerçek harita değil, ahşap/parşömen illüstrasyonudur. `x`, `y` parşömen üzerindeki yaklaşık konumdur (0–1, sol üst köşe 0,0); yeni yer eklerken enlem-boylamdan `docs/GORSEL_USLUP.md` → Harita'daki izdüşümle hesaplanır, yoksa kıyıyla örtüşmez. Konum göreli olduğundan atıf gerektirmez, ama yerlerin birbirine göre durumu (ör. Cidde'nin Mekke'nin batısında, kıyıda olması) kaynaklarla çelişmemelidir. `ozet` içindeki tarihî bilgi `iddialar` ile bağlanır. İsteğe bağlı `konumKaynagi` (atıf biçiminde: `eser`, `konum`, `dogrulama`), konumun kaynaktaki yön/uzaklıkla uyumunu kontrol etmek içindir; konum yine yaklaşıktır. Kaynakta konumu bulunmayan yer haritaya konmaz.
 - `zaman-cizelgesi.json`: `{ id, yil (miladî, yaklaşık ise "yaklasik": true), hicriOncesi, olay, bolum, iddia }`
 
+## Bölüm paketleri (indirme)
+
+Bölüm JSON'ları, kaynakça, sözlük, harita ve zaman çizelgesi her zaman uygulamayla gelir. Ses ve görsellerde ise:
+
+- **Uygulamaya gömülü** (`app/assets/icerik/`): ilk bölümün (`b01`) kullandığı her ses ve görsel (Mekke gök/dağ/zemin/evler gibi ortak arka planlar dahil) ve şahıs portreleri.
+- **Bölüm paketi** (`app/android/paketler/<paket>/`, Play Asset Delivery, isteğe bağlı): o bölümün kullanıp uygulamada olmayan ses ve görselleri. Paket adı bölüm kimliğinin ilk parçasıdır (`b02-fil-vakasi` → `b02`). Birden çok bölümün kullandığı görsel her birinin paketine kopyalanır; her paket tek başına yeter.
+
+Dağıtımı `tools/icerik_esitle.dart` bölüm JSON'larındaki dosya adlarından hesaplar; paketlerin Gradle modüllerini ve `paketler.json` (paket boyutları) dosyasını da o üretir. Hiçbir bölümün kullanmadığı medya dosyası uygulamaya alınmaz. Paket içindeki yol gömülü kopyadaki yolla aynıdır (`<paket>/gorseller/x.webp` ↔ `assets/icerik/gorseller/x.webp`). Gömülü bölümler betikte `gomuluBolumler`, uygulamada `gomuluPaketler` (`app/lib/icerik/paketler.dart`) ile aynı tutulmalıdır.
+
+Uygulama bölüm açılınca paketi indirir; inen paket internetsiz çalışır, Ayarlar'dan silinebilir. iOS karşılığı (On-Demand Resources) henüz yok.
+
 ## Doğrulama betiği (`tools/icerik_dogrula.dart`)
 
 Şunları denetler:

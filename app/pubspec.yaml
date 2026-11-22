@@ -64,6 +64,8 @@ flutter:
 
   # İçerik `content/` klasöründen `dart run tools/icerik_esitle.dart` ile kopyalanır.
   assets:
+    # Kökte yalnız paketler.json (bölüm paketlerinin boyutları).
+    - assets/icerik/
     - assets/icerik/tr/
     - assets/icerik/tr/bolumler/
     - assets/icerik/tr/ses/

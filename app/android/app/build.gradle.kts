@@ -48,6 +48,11 @@ android {
         }
     }
 
+    // Bölüm paketleri (settings.gradle.kts'te tanımlı, isteğe bağlı indirilir).
+    assetPacks += rootProject.subprojects
+        .filter { it.projectDir.parentFile.name == "paketler" }
+        .map { it.path }
+
     buildTypes {
         release {
             signingConfig = signingConfigs.findByName("yukleme") ?: signingConfigs.getByName("debug")
@@ -63,6 +68,11 @@ kotlin {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Bölüm paketlerini Google Play'den indirir (MainActivity → BolumPaketleri).
+    implementation("com.google.android.play:asset-delivery:2.3.0")
 }
 
 // Yayın kapısı (CLAUDE.md): doğrulanmamış atıf ya da eksik katman görseli varken
@@ -89,7 +99,10 @@ val icerikYayinDenetimi by tasks.registering(Exec::class) {
     val depoKoku = rootProject.projectDir.parentFile.parentFile
     workingDir = depoKoku
     val kip = if (kapaliTest) "--kapali-test" else "--yayin"
-    val dart = listOf("dart", "run", "tools/icerik_dogrula.dart", kip, "--kok", "app/assets/icerik")
+    val dart = listOf(
+        "dart", "run", "tools/icerik_dogrula.dart", kip,
+        "--kok", "app/assets/icerik", "--paketler", "app/android/paketler",
+    )
     // Windows'ta dart bir .bat dosyasıdır; doğrudan çalıştırılamaz.
     commandLine(if (System.getProperty("os.name").startsWith("Windows")) listOf("cmd", "/c") + dart else dart)
 }
