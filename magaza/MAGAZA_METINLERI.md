@@ -34,11 +34,12 @@ Sade ve saygılı bir dil. Efendimiz, yüz ve beden ayrıntısı olmadan, nur ol
 • Mekke ve çevresini gösteren illüstre harita
 • Olayları sıralayan zaman çizelgesi
 • Bölümlerde adı geçen kişileri tanıtan şahıslar sözlüğü
-• İsteğe bağlı altyazı, yazı boyutu ayarı
+• İsteğe bağlı altyazı, yazı boyutu ayarı, 1,5× ve 2× hız
+• Ekran kapalıyken de anlatımı dinleyebilme
 • İzleme ilerlemesi cihazınızda saklanır
 
 REKLAMSIZ, HESAPSIZ, ÇEVRİMDIŞI
-Uygulama ücretsizdir. Reklam, hesap ya da veri toplama yoktur; internet bağlantısı gerektirmez.
+Uygulama ücretsizdir. Reklam, hesap ya da veri toplama yoktur. İlk bölüm uygulamayla gelir; diğerleri ilk açılışta Google Play'den bir kez iner (2–8 MB), sonra internetsiz izlenir.
 ```
 
 ## Kapalı test notu (test edenlere)
@@ -57,7 +58,7 @@ Bu bir kapalı test sürümüdür. Kaynak atıflarının bir kısmı henüz ası
 
 ## Play Console formları
 
-**Uygulama içeriği → Gizlilik politikası:** `magaza/gizlilik.html` yayımlandıktan sonraki adres. İçindeki `ILETISIM_EPOSTASI` yerine geliştirici e-postası yazılmalı.
+**Uygulama içeriği → Gizlilik politikası:** https://yerdema.github.io/siyer-gizlilik/ (GitHub Pages, herkese açık `YerdemA/siyer-gizlilik` deposu, 2026-11-22). `magaza/gizlilik.html` değişirse o depodaki `index.html` da güncellenmeli.
 
 **Veri güvenliği**
 - Uygulama kullanıcı verisi topluyor ya da paylaşıyor mu? → **Hayır**
@@ -78,3 +79,14 @@ Bu bir kapalı test sürümüdür. Kaynak atıflarının bir kısmı henüz ası
 **Haber uygulaması:** Hayır. **Devlet uygulaması:** Hayır. **Finans/sağlık:** Hayır.
 
 **Kategori:** Eğitim (alternatif: Kitaplar ve Referans). **Etiketler:** din, tarih.
+
+## Play Console adımları (kapalı test, sıfırdan)
+
+1. **Uygulama oluştur:** ad "Resulü Ekrem'in Hayatı", varsayılan dil Türkçe, Uygulama, Ücretsiz; beyanları onayla.
+2. **Play Uygulama İmzalama:** ilk AAB yüklenince Google'ın uygulama imzalama anahtarı kabul edilir; bizim `siyer-yukleme.jks` yalnız yükleme anahtarıdır (yedeklenmeli).
+3. **Test → Kapalı test → Yeni kanal** (ör. "kapali-test"): **Test edenler** sekmesinde e-posta listesi oluştur (en az 12 kişi; kişisel hesaplarda üretime çıkmak için 14 gün kapalı test şartı). Geri bildirim adresi ve katılım bağlantısı burada.
+4. **Yeni sürüm oluştur:** `İndirilenler\siyer\siyer-kapali-test-1.0.0+1-v3.aab` yükle. Sürüm adı `1.0.0 (1)`, sürüm notu: yukarıdaki "Kapalı test notu". Yükledikten sonra **Uygulama paketi gezgini**'nde b02–b10 isteğe bağlı paketler görünmeli. Gizleme eşleme dosyası istenirse `app/build/semboller` (Dart) — zorunlu değil.
+5. **Uygulama içeriği** (sol menü, alt kısım): gizlilik politikası adresi, uygulama erişimi, reklamlar, içerik derecelendirmesi, hedef kitle, veri güvenliği, haber uygulaması, devlet uygulaması — cevaplar yukarıda. Hedef kitle kararı Erdem'in.
+6. **Ana mağaza girişi:** kısa/tam açıklama, simge, öne çıkan grafik, en az 2 telefon ekran görüntüsü (`magaza/ekran-goruntuleri/`).
+7. **Ülkeler:** kapalı kanalda Türkiye (+ istenen ülkeler).
+8. **İncelemeye gönder** (Yayın özeti). İlk inceleme birkaç gün sürebilir. Onaydan sonra test edenler katılım bağlantısından katılıp Play'den kurar; bölüm indirmesi gerçek ağda ilk kez orada denenir.
