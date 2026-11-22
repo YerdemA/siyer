@@ -119,7 +119,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s01.mp3",
+        "anlatim": "b04-s01.m4a",
         "muzik": "sakin-isik",
         "ortam": "sabah-sessiz"
       },
@@ -221,7 +221,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s02.mp3",
+        "anlatim": "b04-s02.m4a",
         "muzik": "yalnizlik",
         "ortam": "ruzgar-hafif"
       },
@@ -327,7 +327,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s03.mp3",
+        "anlatim": "b04-s03.m4a",
         "muzik": "dusunceli-01",
         "ortam": "kalabalik-uzak"
       },
@@ -436,7 +436,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s04.mp3",
+        "anlatim": "b04-s04.m4a",
         "muzik": "sicak-ev",
         "ortam": "gece-sessiz"
       },
@@ -500,7 +500,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b04-s05.mp3",
+        "anlatim": "b04-s05.m4a",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -609,7 +609,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s06.mp3",
+        "anlatim": "b04-s06.m4a",
         "muzik": "sicak-ev",
         "ortam": "sabah-sessiz"
       },
@@ -674,7 +674,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b04-s07.mp3",
+        "anlatim": "b04-s07.m4a",
         "muzik": "esik",
         "ortam": "ruzgar-hafif"
       },
@@ -774,7 +774,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s08.mp3",
+        "anlatim": "b04-s08.m4a",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -898,7 +898,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b04-s09.mp3",
+        "anlatim": "b04-s09.m4a",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },
@@ -947,7 +947,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b04-s10.mp3",
+        "anlatim": "b04-s10.m4a",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },

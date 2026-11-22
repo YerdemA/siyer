@@ -81,7 +81,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s01.mp3",
+        "anlatim": "b01-s01.m4a",
         "muzik": "acilis-01",
         "ortam": "col-ruzgari"
       },
@@ -167,7 +167,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s02.mp3",
+        "anlatim": "b01-s02.m4a",
         "muzik": "dua-01",
         "ortam": "safak-ruzgar"
       },
@@ -267,7 +267,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s03.mp3",
+        "anlatim": "b01-s03.m4a",
         "muzik": "acilis-01",
         "ortam": "kervan-uzak"
       },
@@ -405,7 +405,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s04.mp3",
+        "anlatim": "b01-s04.m4a",
         "muzik": "dua-01",
         "ortam": "col-ruzgari"
       },
@@ -496,7 +496,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s05.mp3",
+        "anlatim": "b01-s05.m4a",
         "muzik": "gerilim-hafif",
         "ortam": "col-ruzgari"
       },
@@ -585,7 +585,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s06.mp3",
+        "anlatim": "b01-s06.m4a",
         "muzik": "gerilim-hafif",
         "ortam": "gece-sessiz"
       },
@@ -740,7 +740,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s07.mp3",
+        "anlatim": "b01-s07.m4a",
         "muzik": "gerilim-hafif",
         "ortam": "col-ruzgari"
       },
@@ -866,7 +866,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s08.mp3",
+        "anlatim": "b01-s08.m4a",
         "muzik": "sehir-01",
         "ortam": "sehir-gunduz"
       },
@@ -997,7 +997,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s09.mp3",
+        "anlatim": "b01-s09.m4a",
         "muzik": "gerilim-hafif",
         "ortam": "aksam-sehir"
       },
@@ -1132,7 +1132,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s10.mp3",
+        "anlatim": "b01-s10.m4a",
         "muzik": "dusunceli-01",
         "ortam": "safak-ruzgar"
       },
@@ -1277,7 +1277,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s11.mp3",
+        "anlatim": "b01-s11.m4a",
         "muzik": "yolculuk-01",
         "ortam": "kervan-uzak"
       },
@@ -1409,7 +1409,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s12.mp3",
+        "anlatim": "b01-s12.m4a",
         "muzik": "gerilim-hafif",
         "ortam": "col-gece"
       },
@@ -1565,7 +1565,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b01-s13.mp3",
+        "anlatim": "b01-s13.m4a",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },

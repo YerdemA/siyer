@@ -1,8 +1,8 @@
 # Bölüm Metinleri (kontrol nüshası)
 
-Üretildi: 2026-11-20 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
+Üretildi: 2026-11-22 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
 
-10 bölüm, 135 sahne, 200 iddia, 499 atıf.
+10 bölüm, 135 sahne, 200 iddia, 500 atıf.
 
 ## İçindekiler
 
@@ -1391,9 +1391,10 @@ Efendimiz artık amcası Ebû Tâlib'in yanındaydı. `[i-b05-015]`
 
 **i-b05-002** (güçlü) — Süt annesinin yanından döndükten sonra bir süre annesinin yanında kaldı.
 
+- İbn Hişâm, es-Sîretü'n-nebeviyye, s. 107 — *doğrulama bekliyor*
 - Türkiye Diyanet Vakfı, TDV İslâm Ansiklopedisi, Bekir Topaloğlu, "ÂMİNE", c. 3, s. 64 (İstanbul 1991) — *doğrulama bekliyor*
 
-*Gerekçe:* ÂMİNE (s. 64): Âmine onu muhtemelen dört yaşlarında tekrar yanına almış ve iki yıl daha onunla kalmıştır. b04 i-b04-013 dönüş yaşını 'dört ya da beş' diye verdiği için anlatım süre vermez, 'bir süre' der.
+*Gerekçe:* ÂMİNE (s. 64): Âmine onu muhtemelen dört yaşlarında tekrar yanına almış ve iki yıl daha onunla kalmıştır. İbn Hişâm s. 107 (İbn İshak): Abdülmuttalib onu annesi Âmine'ye gönderdi; Resûlullah annesi Âmine ve dedesi Abdülmuttalib'in yanında kaldı (taramadan okundu, 2026-11-21). b04 i-b04-013 dönüş yaşını 'dört ya da beş' diye verdiği için anlatım süre vermez, 'bir süre' der.
 
 **i-b05-003** (güçlü) — Efendimiz altı yaşındayken annesi onu Yesrib'e götürdü. Amaç Neccâroğulları'nı ziyaret etmekti: Abdülmuttalib'in annesi Selmâ bu kabiledendi, bu yüzden Neccâroğulları ailenin dayıları sayılırdı.
 

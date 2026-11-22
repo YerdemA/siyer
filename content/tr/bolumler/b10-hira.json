@@ -70,7 +70,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b10-s01.mp3",
+        "anlatim": "b10-s01.m4a",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },
@@ -150,7 +150,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b10-s02.mp3",
+        "anlatim": "b10-s02.m4a",
         "muzik": "dusunceli-01",
         "ortam": "gece-sessiz"
       },
@@ -260,7 +260,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b10-s03.mp3",
+        "anlatim": "b10-s03.m4a",
         "muzik": "dusunceli-01",
         "ortam": "kalabalik-uzak"
       },
@@ -326,7 +326,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s04.mp3",
+        "anlatim": "b10-s04.m4a",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },
@@ -423,7 +423,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b10-s05.mp3",
+        "anlatim": "b10-s05.m4a",
         "muzik": "dusunceli-01",
         "ortam": "ruzgar-hafif"
       },
@@ -505,7 +505,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s06.mp3",
+        "anlatim": "b10-s06.m4a",
         "muzik": "dusunceli-01",
         "ortam": "kalabalik-uzak"
       },
@@ -589,7 +589,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b10-s07.mp3",
+        "anlatim": "b10-s07.m4a",
         "muzik": "dusunceli-01",
         "ortam": "ruzgar-hafif"
       },
@@ -641,7 +641,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b10-s08.mp3",
+        "anlatim": "b10-s08.m4a",
         "muzik": "dusunceli-01",
         "ortam": "safak-ruzgar"
       },
@@ -692,7 +692,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s09.mp3",
+        "anlatim": "b10-s09.m4a",
         "muzik": "dusunceli-01",
         "ortam": "ruzgar-hafif"
       },
@@ -744,7 +744,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s10.mp3",
+        "anlatim": "b10-s10.m4a",
         "muzik": "sakin-isik",
         "ortam": "safak-ruzgar"
       },
@@ -783,7 +783,7 @@
         "kamera": "sabit-gecis"
       },
       "ses": {
-        "anlatim": "b10-s11.mp3",
+        "anlatim": "b10-s11.m4a",
         "muzik": "sakin-isik",
         "ortam": "sabah-sessiz"
       },
@@ -834,7 +834,7 @@
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
-        "anlatim": "b10-s12.mp3",
+        "anlatim": "b10-s12.m4a",
         "muzik": "yalnizlik",
         "ortam": "ruzgar-hafif"
       },
@@ -896,7 +896,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s13.mp3",
+        "anlatim": "b10-s13.m4a",
         "muzik": "yalnizlik",
         "ortam": "gece-sessiz"
       },
@@ -941,7 +941,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b10-s14.mp3",
+        "anlatim": "b10-s14.m4a",
         "muzik": "sicak-ev",
         "ortam": "aksam-sehir"
       },
@@ -987,7 +987,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b10-s15.mp3",
+        "anlatim": "b10-s15.m4a",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -1051,7 +1051,7 @@
         "kamera": "bakis-acisi-giris"
       },
       "ses": {
-        "anlatim": "b10-s16.mp3",
+        "anlatim": "b10-s16.m4a",
         "muzik": "sakin-isik",
         "ortam": "safak-ruzgar"
       },
@@ -1096,7 +1096,7 @@
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
-        "anlatim": "b10-s17.mp3",
+        "anlatim": "b10-s17.m4a",
         "muzik": "sicak-ev",
         "ortam": "ruzgar-hafif"
       },
@@ -1159,7 +1159,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b10-s18.mp3",
+        "anlatim": "b10-s18.m4a",
         "muzik": "esik",
         "ortam": "gece-sessiz"
       },
