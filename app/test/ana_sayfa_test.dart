@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:siyer/ekranlar/harita_cografya.dart';
 import 'package:siyer/ayarlar/tercihler.dart';
 import 'package:siyer/ekranlar/ayarlar.dart';
 import 'package:siyer/ekranlar/bolum_yolu.dart';
@@ -115,6 +116,21 @@ void main() {
     expect(kaliciYer(yerler, 3), isFalse, reason: 'son sahne tek kalır');
     expect(kaliciYer(['busra', 'mekke', 'busra'], 0), isTrue, reason: 'ardışık olmasa da sayılır');
     expect(kaliciYer([null, 'mekke'], 0), isFalse);
+  });
+
+  test('harita penceresi ekranı doldurur, bölge ortada kalır', () {
+    // Bütün harita 3:4; dikey telefonda (9:16) üst-alt genişler.
+    final p = tumHarita.ekranaGore(9 / 16);
+    expect(p.width, 1);
+    expect(p.height, closeTo(4 / 3, 1e-9));
+    expect(p.center.dx, closeTo(0.5, 1e-9));
+    expect(p.center.dy, closeTo(0.5, 1e-9));
+    // Mekke çevresi geniş; dikeyde yine yalnız yükseklik artar.
+    final m = mekkeCevresi.ekranaGore(9 / 16);
+    expect(m.width, closeTo(mekkeCevresi.alan.width, 1e-9));
+    expect(m.height, greaterThan(mekkeCevresi.alan.height));
+    // Yatay geniş ekranda genişlik artar.
+    expect(tumHarita.ekranaGore(2).height, 1);
   });
 
   test('harita geçişi Mekke çevresi içinde gösterilmez', () {

@@ -39,21 +39,24 @@ class HaritaEkrani extends ConsumerWidget {
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => Center(child: Text(m.yuklemeHatasi('$e'))),
         data: (liste) {
-          final gorunen = [
-            for (final y in liste)
-              if (b.icerir(Offset(y.x, y.y)) && (!tum || y.id == 'mekke' || !mekkeCevresi.icerir(Offset(y.x, y.y)))) y,
-          ];
           final konumlar = {for (final y in liste) y.id: Offset(y.x, y.y)};
           return InteractiveViewer(
             maxScale: 6,
             child: Center(
-              child: AspectRatio(
-                aspectRatio: b.oran,
-                child: LayoutBuilder(builder: (context, k) {
+              child: LayoutBuilder(builder: (context, k) {
                   final boyut = Size(k.maxWidth, k.maxHeight);
+                  // Bölge ekranın oranına genişletilir: parşömen ekranı
+                  // doldurur, kenarda koyu şerit kalmaz (Erdem, 2026-11-22).
+                  final pencere = b.ekranaGore(boyut.width / boyut.height);
+                  final gorunen = [
+                    for (final y in liste)
+                      if (pencere.contains(Offset(y.x, y.y)) &&
+                          (!tum || y.id == 'mekke' || !mekkeCevresi.icerir(Offset(y.x, y.y))))
+                        y,
+                  ];
                   Offset ekran(Offset p) => Offset(
-                        (p.dx - b.alan.left) / b.alan.width * boyut.width,
-                        (p.dy - b.alan.top) / b.alan.height * boyut.height,
+                        (p.dx - pencere.left) / pencere.width * boyut.width,
+                        (p.dy - pencere.top) / pencere.height * boyut.height,
                       );
                   final cerceve = tum
                       ? Rect.fromPoints(ekran(mekkeCevresi.alan.topLeft), ekran(mekkeCevresi.alan.bottomRight))
@@ -72,8 +75,8 @@ class HaritaEkrani extends ConsumerWidget {
                       Positioned.fill(
                         child: CustomPaint(
                           painter: ParsomenCizici(
-                            pencere: b.alan,
-                            suslerKagitta: tum,
+                            pencere: pencere,
+                            suslerKagitta: false,
                             yerler: konumlar,
                             koyuYerler: gorulen,
                             bos: [
@@ -127,7 +130,6 @@ class HaritaEkrani extends ConsumerWidget {
                     ],
                   );
                 }),
-              ),
             ),
           );
         },
@@ -406,7 +408,7 @@ class ParsomenCizici extends CustomPainter {
     }
     kizil.close();
     final ak = cizgi(akdenizKiyisi);
-    for (final n in const <Nokta>[(36.0, 30.0), (30.0, 30.0)]) {
+    for (final n in const <Nokta>[(36.7, 28.0), (30.0, 28.0)]) {
       final e = nokta(n);
       ak.lineTo(e.dx, e.dy);
     }
