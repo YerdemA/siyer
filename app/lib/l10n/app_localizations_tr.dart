@@ -42,6 +42,24 @@ class MetinlerTr extends Metinler {
   String get tarifGoster => 'Sahne tarifi';
 
   @override
+  String get oynatmaHizi => 'Oynatma hızı';
+
+  @override
+  String saniyeIleri(int sn) {
+    return '$sn saniye ileri';
+  }
+
+  @override
+  String saniyeGeri(int sn) {
+    return '$sn saniye geri';
+  }
+
+  @override
+  String saniyeKisa(int sn) {
+    return '$sn sn';
+  }
+
+  @override
   String get altyazi => 'Altyazı';
 
   @override

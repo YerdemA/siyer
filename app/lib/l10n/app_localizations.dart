@@ -157,6 +157,30 @@ abstract class Metinler {
   /// **'Sahne tarifi'**
   String get tarifGoster;
 
+  /// No description provided for @oynatmaHizi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Oynatma hızı'**
+  String get oynatmaHizi;
+
+  /// No description provided for @saniyeIleri.
+  ///
+  /// In tr, this message translates to:
+  /// **'{sn} saniye ileri'**
+  String saniyeIleri(int sn);
+
+  /// No description provided for @saniyeGeri.
+  ///
+  /// In tr, this message translates to:
+  /// **'{sn} saniye geri'**
+  String saniyeGeri(int sn);
+
+  /// No description provided for @saniyeKisa.
+  ///
+  /// In tr, this message translates to:
+  /// **'{sn} sn'**
+  String saniyeKisa(int sn);
+
   /// No description provided for @altyazi.
   ///
   /// In tr, this message translates to:

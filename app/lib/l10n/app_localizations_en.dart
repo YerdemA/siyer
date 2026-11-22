@@ -42,6 +42,24 @@ class MetinlerEn extends Metinler {
   String get tarifGoster => 'Scene brief';
 
   @override
+  String get oynatmaHizi => 'Playback speed';
+
+  @override
+  String saniyeIleri(int sn) {
+    return 'Forward $sn seconds';
+  }
+
+  @override
+  String saniyeGeri(int sn) {
+    return 'Back $sn seconds';
+  }
+
+  @override
+  String saniyeKisa(int sn) {
+    return '$sn s';
+  }
+
+  @override
   String get altyazi => 'Subtitles';
 
   @override

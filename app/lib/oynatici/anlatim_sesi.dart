@@ -24,6 +24,9 @@ abstract class AnlatimSesi {
 
   Future<void> duraklat();
 
+  /// Çalma hızı (1 = normal); ses perdesi korunur.
+  Future<void> hizAyarla(double hiz);
+
   String? get etkinDosya;
 
   /// Çalma istendi mi (yükleniyor olsa da).
@@ -105,6 +108,9 @@ class JustAudioSesi implements AnlatimSesi {
 
   @override
   Future<void> duraklat() => _oynatici.pause();
+
+  @override
+  Future<void> hizAyarla(double hiz) => _oynatici.setSpeed(hiz);
 
   @override
   String? get etkinDosya => _etkin;

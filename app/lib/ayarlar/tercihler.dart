@@ -13,6 +13,9 @@ enum AltyaziBoyutu {
   final double olcek;
 }
 
+/// Oynatıcıdaki hız düğmesinin sırayla geçtiği hızlar.
+const oynatmaHizlari = [1.0, 1.5, 2.0];
+
 /// Kullanıcı tercihleri; yalnız cihazda saklanır.
 class Tercihler {
   const Tercihler({
@@ -20,6 +23,7 @@ class Tercihler {
     this.altyaziAcik = false,
     this.efektSesleri = true,
     this.hareketiAzalt = false,
+    this.hiz = 1,
   });
 
   final AltyaziBoyutu altyazi;
@@ -32,12 +36,16 @@ class Tercihler {
   /// Kart ve harita animasyonları kısalır (erişilebilirlik).
   final bool hareketiAzalt;
 
-  Tercihler kopya({AltyaziBoyutu? altyazi, bool? altyaziAcik, bool? efektSesleri, bool? hareketiAzalt}) =>
+  /// Oynatma hızı; [oynatmaHizlari]'ndan biri.
+  final double hiz;
+
+  Tercihler kopya({AltyaziBoyutu? altyazi, bool? altyaziAcik, bool? efektSesleri, bool? hareketiAzalt, double? hiz}) =>
       Tercihler(
         altyazi: altyazi ?? this.altyazi,
         altyaziAcik: altyaziAcik ?? this.altyaziAcik,
         efektSesleri: efektSesleri ?? this.efektSesleri,
         hareketiAzalt: hareketiAzalt ?? this.hareketiAzalt,
+        hiz: hiz ?? this.hiz,
       );
 }
 
@@ -46,16 +54,17 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   static const _altyaziAcik = 'tercih.altyaziAcik';
   static const _efekt = 'tercih.efekt';
   static const _hareket = 'tercih.hareketiAzalt';
+  static const _hiz = 'tercih.hiz';
 
   @override
   Future<Tercihler> build() async {
     final p = await SharedPreferences.getInstance();
     return Tercihler(
-      altyazi: AltyaziBoyutu.values.where((b) => b.name == p.getString(_altyazi)).firstOrNull ??
-          AltyaziBoyutu.orta,
+      altyazi: AltyaziBoyutu.values.where((b) => b.name == p.getString(_altyazi)).firstOrNull ?? AltyaziBoyutu.orta,
       altyaziAcik: p.getBool(_altyaziAcik) ?? false,
       efektSesleri: p.getBool(_efekt) ?? true,
       hareketiAzalt: p.getBool(_hareket) ?? false,
+      hiz: oynatmaHizlari.contains(p.getDouble(_hiz)) ? p.getDouble(_hiz)! : 1,
     );
   }
 
@@ -77,6 +86,11 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   Future<void> hareketiAzaltSec(bool acik) async {
     state = AsyncData((state.value ?? const Tercihler()).kopya(hareketiAzalt: acik));
     await (await SharedPreferences.getInstance()).setBool(_hareket, acik);
+  }
+
+  Future<void> hizSec(double hiz) async {
+    state = AsyncData((state.value ?? const Tercihler()).kopya(hiz: hiz));
+    await (await SharedPreferences.getInstance()).setDouble(_hiz, hiz);
   }
 }
 
@@ -130,4 +144,7 @@ void efektCal(Ref ref, String ad) {
 }
 
 /// Bir sesin çalınıp çalınmayacağını ve neyin çalınacağını widget'tan bildirir.
-final efektCalProvider = Provider<void Function(String ad)>((ref) => (ad) => efektCal(ref, ad));
+final efektCalProvider = Provider<void Function(String ad)>(
+  (ref) =>
+      (ad) => efektCal(ref, ad),
+);

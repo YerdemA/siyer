@@ -65,6 +65,59 @@ void main() {
     expect(find.byTooltip('Şahıslar'), findsOneWidget);
   });
 
+  testWidgets('hız düğmesi 1×, 1,5×, 2× arasında döner ve saati hızlandırır', (tester) async {
+    final secilen = <double>[];
+    await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca, hizDegisti: secilen.add)));
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(find.text('1×'), findsOneWidget);
+    await tester.tap(find.text('1×'));
+    await tester.pump();
+    await tester.tap(find.text('1,5×'));
+    await tester.pump();
+    expect(find.text('2×'), findsOneWidget);
+    expect(secilen, [1.5, 2.0]);
+    await tester.pump(const Duration(seconds: 3));
+    expect(find.textContaining('0:06 /'), findsOneWidget, reason: '2× hızda 3 sn, 6 sn ilerletir');
+    await tester.tap(find.text('2×'));
+    await tester.pump();
+    expect(find.text('1×'), findsOneWidget);
+  });
+
+  testWidgets('kayıtlı hızla açılır', (tester) async {
+    await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca, hiz: 1.5)));
+    await tester.pump();
+    expect(find.text('1,5×'), findsOneWidget);
+    expect(hizMetni(1.5, 'en'), '1.5×');
+  });
+
+  testWidgets('sağa çift dokunma 10 sn ileri, sola geri sarar', (tester) async {
+    await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca, duraklatilmis: true)));
+    await tester.pump();
+    final alan = tester.getRect(find.byType(Oynatici));
+    Future<void> ciftDokun(double oran) async {
+      final nokta = Offset(alan.left + alan.width * oran, alan.center.dy);
+      await tester.tapAt(nokta);
+      await tester.pump(const Duration(milliseconds: 50));
+      await tester.tapAt(nokta);
+      await tester.pump();
+    }
+
+    await ciftDokun(0.75);
+    expect(find.textContaining('0:10 /'), findsOneWidget);
+    expect(find.text('+10 sn'), findsOneWidget);
+    // Gösterge açıkken art arda sarmalar birikir.
+    await ciftDokun(0.75);
+    expect(find.textContaining('0:20 /'), findsOneWidget);
+    expect(find.text('+20 sn'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.text('+20 sn'), findsNothing);
+
+    await ciftDokun(0.25);
+    expect(find.textContaining('0:10 /'), findsOneWidget);
+    expect(find.text('−10 sn'), findsOneWidget);
+    await tester.pump(const Duration(seconds: 1));
+  });
+
   test('efekt katmanları yer tutucu sayılmaz', () {
     const g = Gorsel(tarif: '', saat: 'gunduz', kamera: '', katmanlar: [
       Katman(id: 'toz', dosya: '', yerTutucu: 'toz', derinlik: 0.9),

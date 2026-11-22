@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
@@ -77,12 +78,12 @@ class OynaticiEkrani extends ConsumerWidget {
             altyaziOlcegi: ref.read(tercihlerProvider).value?.altyazi.olcek ?? 1,
             altyaziAcik: ref.read(tercihlerProvider).value?.altyaziAcik ?? false,
             altyaziDegisti: ref.read(tercihlerProvider.notifier).altyaziAcikSec,
+            hiz: ref.read(tercihlerProvider).value?.hiz ?? 1,
+            hizDegisti: ref.read(tercihlerProvider.notifier).hizSec,
             efekt: ref.read(efektCalProvider),
             azHareket: hareketAz(context, ref),
             sonrakiBolum: _sonraki(ref.read(bolumListesiProvider).value ?? const [], b),
-            baslangicSahnesi: baslangicSahnesi ??
-                ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ??
-                1,
+            baslangicSahnesi: baslangicSahnesi ?? ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ?? 1,
             baslangicCekimi: baslangicCekimi,
             duraklatilmis: duraklatilmis,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
@@ -90,8 +91,9 @@ class OynaticiEkrani extends ConsumerWidget {
           ),
         (AsyncError(:final error), _, _, _, _, _) ||
         (_, AsyncError(:final error), _, _, _, _) ||
-        (_, _, _, _, _, AsyncError(:final error)) =>
-          Center(child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white))),
+        (_, _, _, _, _, AsyncError(:final error)) => Center(
+          child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white)),
+        ),
         _ => const Center(child: CircularProgressIndicator()),
       },
     );
@@ -121,6 +123,8 @@ class Oynatici extends StatefulWidget {
     this.altyaziOlcegi = 1,
     this.altyaziAcik = false,
     this.altyaziDegisti,
+    this.hiz = 1,
+    this.hizDegisti,
     this.efekt,
     this.sonrakiBolum,
     this.azHareket = false,
@@ -137,6 +141,12 @@ class Oynatici extends StatefulWidget {
 
   /// Oynatıcıdaki altyazı düğmesi tercihi değiştirince (kalıcı kayıt için).
   final ValueChanged<bool>? altyaziDegisti;
+
+  /// Oynatma hızı (bkz. [oynatmaHizlari]); saat ve anlatım sesi birlikte hızlanır.
+  final double hiz;
+
+  /// Hız düğmesi hızı değiştirince (kalıcı kayıt için).
+  final ValueChanged<double>? hizDegisti;
 
   /// Efekt sesi çalar (ör. harita geçişinde `parsomen`); verilmezse sessiz.
   final void Function(String ad)? efekt;
@@ -185,6 +195,13 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   bool _kontroller = true;
   bool _tarif = false;
   late bool _altyazi = widget.altyaziAcik;
+  late double _hiz = widget.hiz;
+
+  /// Çift dokunmayla sarmanın göstergesi: yön ve art arda dokunmalarla
+  /// biriken saniye. Kısa süre görünür, sonra kaybolur.
+  ({bool ileri, int saniye})? _sarma;
+  Timer? _sarmaSayaci;
+  double? _ciftDokunmaX;
   late final _gorseller = GorselOnbellek(okuyucu: widget.gorselOkuyucu);
 
   /// Gösterilen harita geçişi; varken zaman ve ses durur.
@@ -197,15 +214,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   @override
   void initState() {
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.landscapeRight,
-    ]);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     final i = (widget.baslangicSahnesi - 1).clamp(0, _plan.sahneler.length - 1);
-    _an = widget.baslangicCekimi > 1
-        ? _plan.cekimBasi(i, widget.baslangicCekimi - 1)
-        : _plan.sahneler[i].bas;
+    _an = widget.baslangicCekimi > 1 ? _plan.cekimBasi(i, widget.baslangicCekimi - 1) : _plan.sahneler[i].bas;
     _oynuyor = !widget.duraklatilmis;
     _sonSahne = i;
     // Bölüm açılınca: bütün harita, sonra olayın geçtiği yer.
@@ -213,15 +225,19 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     if (ilkYer != null) _gecis = (onceki: null, hedef: ilkYer);
     _sonYer = ilkYer;
     _ticker = createTicker(_tik)..start();
+    if (_hiz != 1) _ses?.hizAyarla(_hiz);
     // Uygulama arka plana geçince oynatma (ve ses) durur.
-    _yasamDongusu = AppLifecycleListener(onHide: () {
-      if (mounted && _oynuyor) setState(() => _oynuyor = false);
-    });
+    _yasamDongusu = AppLifecycleListener(
+      onHide: () {
+        if (mounted && _oynuyor) setState(() => _oynuyor = false);
+      },
+    );
   }
 
   @override
   void dispose() {
     _yasamDongusu.dispose();
+    _sarmaSayaci?.cancel();
     _ses?.kapat();
     _ticker.dispose();
     _gorseller.dispose();
@@ -237,16 +253,43 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     if (!_oynuyor || _gecis != null) return;
     final sesAni = _sesSaati(dt);
     setState(() {
-      _an = math.min(sesAni ?? _an + dt, _plan.toplam);
+      _an = math.min(sesAni ?? _an + dt * _hiz, _plan.toplam);
       if (_an >= _plan.toplam) _oynuyor = false;
       _yerDegistiMi();
     });
   }
 
   void _git(double an) => setState(() {
-        _an = an.clamp(0.0, _plan.toplam);
-        _yerDegistiMi(atlama: true);
-      });
+    _an = an.clamp(0.0, _plan.toplam);
+    _yerDegistiMi(atlama: true);
+  });
+
+  /// Çift dokunmayla sarılan süre (saniye).
+  static const sarmaAdimi = 10;
+
+  /// Ekranın sağ yarısına çift dokunma ileri, sol yarısına geri sarar.
+  /// Art arda dokunmalar gösterge açıkken birikir (10, 20, 30 sn).
+  void _ciftDokunmaylaSar(double genislik) {
+    final x = _ciftDokunmaX;
+    if (x == null || _bitti || _gecis != null) return;
+    final ileri = x > genislik / 2;
+    final onceki = _sarma;
+    final saniye = onceki != null && onceki.ileri == ileri ? onceki.saniye + sarmaAdimi : sarmaAdimi;
+    _git(_an + (ileri ? sarmaAdimi : -sarmaAdimi));
+    setState(() => _sarma = (ileri: ileri, saniye: saniye));
+    _sarmaSayaci?.cancel();
+    _sarmaSayaci = Timer(const Duration(milliseconds: 700), () {
+      if (mounted) setState(() => _sarma = null);
+    });
+  }
+
+  void _hizDegistir() {
+    final i = oynatmaHizlari.indexOf(_hiz);
+    final yeni = oynatmaHizlari[(i + 1) % oynatmaHizlari.length];
+    setState(() => _hiz = yeni);
+    _ses?.hizAyarla(yeni);
+    widget.hizDegisti?.call(yeni);
+  }
 
   void _sahneyeGit(int fark) {
     final i = (_plan.sahneSirasi(_an) + fark).clamp(0, _plan.sahneler.length - 1);
@@ -310,8 +353,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
       _sesBekleme = 0;
       return null;
     }
-    final akiyor =
-        !_sesIstegiSuruyor && ses.etkinDosya == s.sahne.sesAnlatim && ses.caliyor && ses.hazir;
+    final akiyor = !_sesIstegiSuruyor && ses.etkinDosya == s.sahne.sesAnlatim && ses.caliyor && ses.hazir;
     if (!akiyor) {
       _sesBekleme += dt;
       return _sesBekleme < enCokBekleme ? _an : null;
@@ -373,9 +415,11 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
 
   void _sesIstegi(Future<void> istek) {
     _sesIstegiSuruyor = true;
-    istek.catchError((Object hata) {
-      debugPrint('Anlatım sesi hatası: $hata');
-    }).whenComplete(() => _sesIstegiSuruyor = false);
+    istek
+        .catchError((Object hata) {
+          debugPrint('Anlatım sesi hatası: $hata');
+        })
+        .whenComplete(() => _sesIstegiSuruyor = false);
   }
 
   int? _bildirilenSahne;
@@ -420,67 +464,79 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     return Center(
       child: AspectRatio(
         aspectRatio: 16 / 9,
-        child: GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onTap: () => setState(() => _kontroller = !_kontroller),
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              CustomPaint(
-                painter: SahneCizici(
-                  gorsel: konum.cekim.gorsel,
-                  ilerleme: konum.cekimIlerleme,
-                  zaman: _an,
-                  gorseller: _gorseller,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Dokunma algılayıcısı yalnız görüntüyü sarar: çift dokunma
+            // beklemesi kontrol düğmelerini geciktirmesin.
+            LayoutBuilder(
+              builder: (context, alan) => GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => setState(() => _kontroller = !_kontroller),
+                onDoubleTapDown: (d) => _ciftDokunmaX = d.localPosition.dx,
+                onDoubleTap: () => _ciftDokunmaylaSar(alan.maxWidth),
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    CustomPaint(
+                      painter: SahneCizici(
+                        gorsel: konum.cekim.gorsel,
+                        ilerleme: konum.cekimIlerleme,
+                        zaman: _an,
+                        gorseller: _gorseller,
+                      ),
+                    ),
+                    if (konum.gelenCekim != null)
+                      Opacity(
+                        opacity: konum.gecisOrani,
+                        child: CustomPaint(
+                          painter: SahneCizici(
+                            gorsel: konum.gelenCekim!.gorsel,
+                            ilerleme: konum.gelenCekimIlerleme,
+                            zaman: _an,
+                            gorseller: _gorseller,
+                          ),
+                        ),
+                      ),
+                    // Bölüm sonu: son sahnenin kapanış sessizliğinde görüntü kararır.
+                    if (_kararma > 0) ColoredBox(color: Colors.black.withValues(alpha: _kararma)),
+                    if ((_altyazi || !konum.sahne.sesli) && konum.parca != null)
+                      _Altyazi(
+                        parca: konum.parca!,
+                        an: _an,
+                        olcek: widget.altyaziOlcegi,
+                        // Kontroller gizliyken altyazı kenara iner, görüntüyü az örter.
+                        alt: _kontroller && !_bitti ? 64 : 16,
+                      ),
+                  ],
                 ),
               ),
-              if (konum.gelenCekim != null)
-                Opacity(
-                  opacity: konum.gecisOrani,
-                  child: CustomPaint(
-                    painter: SahneCizici(
-                      gorsel: konum.gelenCekim!.gorsel,
-                      ilerleme: konum.gelenCekimIlerleme,
-                      zaman: _an,
-                      gorseller: _gorseller,
-                    ),
-                  ),
-                ),
-              // Bölüm sonu: son sahnenin kapanış sessizliğinde görüntü kararır.
-              if (_kararma > 0) ColoredBox(color: Colors.black.withValues(alpha: _kararma)),
-              if ((_altyazi || !konum.sahne.sesli) && konum.parca != null)
-                _Altyazi(
-                  parca: konum.parca!,
-                  an: _an,
-                  olcek: widget.altyaziOlcegi,
-                  // Kontroller gizliyken altyazı kenara iner, görüntüyü az örter.
-                  alt: _kontroller && !_bitti ? 64 : 16,
-                ),
-              if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
-              if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
-              if (_gecis case final g?)
-                HaritaGecisi(
-                  key: ValueKey(g),
-                  yerler: widget.yerler,
-                  onceki: g.onceki,
-                  hedef: g.hedef,
-                  efekt: widget.efekt,
-                  azHareket: widget.azHareket,
-                  bitti: () => setState(() => _gecis = null),
-                ),
-              if (_bitti)
-                _BolumSonu(
-                  azHareket: widget.azHareket,
-                  bolum: widget.bolum,
-                  kaynakca: widget.kaynakca,
-                  sonraki: widget.sonrakiBolum,
-                  yenidenOynat: () => setState(() {
-                    _an = 0;
-                    _oynuyor = true;
-                  }),
-                ),
-            ],
-          ),
+            ),
+            if (_sarma case final s?) _SarmaGostergesi(ileri: s.ileri, saniye: s.saniye),
+            if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
+            if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
+            if (_gecis case final g?)
+              HaritaGecisi(
+                key: ValueKey(g),
+                yerler: widget.yerler,
+                onceki: g.onceki,
+                hedef: g.hedef,
+                efekt: widget.efekt,
+                azHareket: widget.azHareket,
+                bitti: () => setState(() => _gecis = null),
+              ),
+            if (_bitti)
+              _BolumSonu(
+                azHareket: widget.azHareket,
+                bolum: widget.bolum,
+                kaynakca: widget.kaynakca,
+                sonraki: widget.sonrakiBolum,
+                yenidenOynat: () => setState(() {
+                  _an = 0;
+                  _oynuyor = true;
+                }),
+              ),
+          ],
         ),
       ),
     );
@@ -544,10 +600,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               Flexible(
                 flex: 2,
                 child: Text(
-                  [
-                    if (konum.cekim.gorsel.yerTutucuVar) m.yerTutucuUyari,
-                    if (!konum.sahne.sesli) m.sesYok,
-                  ].join(' '),
+                  [if (konum.cekim.gorsel.yerTutucuVar) m.yerTutucuUyari, if (!konum.sahne.sesli) m.sesYok].join(' '),
                   style: const TextStyle(color: Colors.white54, fontSize: 11),
                   textAlign: TextAlign.end,
                   maxLines: 2,
@@ -591,10 +644,24 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     icon: const Icon(Icons.skip_next),
                     onPressed: () => _sahneyeGit(1),
                   ),
-                  Expanded(child: _IlerlemeCubugu(plan: _plan, an: _an, git: _git)),
-                  Text(
-                    '${_sure(_an)} / ${_sure(_plan.toplam)}',
-                    style: const TextStyle(color: beyaz, fontSize: 12),
+                  Expanded(
+                    child: _IlerlemeCubugu(plan: _plan, an: _an, git: _git),
+                  ),
+                  Text('${_sure(_an)} / ${_sure(_plan.toplam)}', style: const TextStyle(color: beyaz, fontSize: 12)),
+                  TextButton(
+                    onPressed: _hizDegistir,
+                    style: TextButton.styleFrom(
+                      foregroundColor: _hiz == 1 ? Colors.white70 : beyaz,
+                      minimumSize: const Size(48, 40),
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                    ),
+                    child: Tooltip(
+                      message: m.oynatmaHizi,
+                      child: Text(
+                        hizMetni(_hiz, Localizations.localeOf(context).languageCode),
+                        style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600),
+                      ),
+                    ),
                   ),
                   IconButton(
                     tooltip: m.altyazi,
@@ -633,6 +700,52 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   }
 }
 
+/// Hız düğmesinin metni: `1×`, `1,5×` (Türkçe), `1.5×` (İngilizce).
+String hizMetni(double hiz, String dilKodu) {
+  final s = hiz == hiz.roundToDouble() ? '${hiz.toInt()}' : '$hiz';
+  return '${dilKodu == 'tr' ? s.replaceAll('.', ',') : s}×';
+}
+
+/// Çift dokunmayla sarmada dokunulan yarıda beliren ok ve saniye.
+class _SarmaGostergesi extends StatelessWidget {
+  const _SarmaGostergesi({required this.ileri, required this.saniye});
+
+  final bool ileri;
+  final int saniye;
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    return IgnorePointer(
+      child: Align(
+        alignment: ileri ? const Alignment(0.6, 0) : const Alignment(-0.6, 0),
+        child: Semantics(
+          liveRegion: true,
+          label: ileri ? m.saniyeIleri(saniye) : m.saniyeGeri(saniye),
+          child: ExcludeSemantics(
+            child: DecoratedBox(
+              decoration: const BoxDecoration(color: Color(0x88000000), shape: BoxShape.circle),
+              child: SizedBox.square(
+                dimension: 88,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(ileri ? Icons.fast_forward_rounded : Icons.fast_rewind_rounded, color: Colors.white, size: 32),
+                    Text(
+                      '${ileri ? '+' : '−'}${m.saniyeKisa(saniye)}',
+                      style: const TextStyle(color: Colors.white, fontSize: 13),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 /// Sahne sınırları işaretli ilerleme çubuğu.
 class _IlerlemeCubugu extends StatelessWidget {
   const _IlerlemeCubugu({required this.plan, required this.an, required this.git});
@@ -651,10 +764,7 @@ class _IlerlemeCubugu extends StatelessWidget {
           behavior: HitTestBehavior.opaque,
           onTapDown: (d) => dokun(d.localPosition),
           onHorizontalDragUpdate: (d) => dokun(d.localPosition),
-          child: SizedBox(
-            height: 32,
-            child: CustomPaint(painter: _CubukCizici(plan, an)),
-          ),
+          child: SizedBox(height: 32, child: CustomPaint(painter: _CubukCizici(plan, an))),
         );
       },
     );
@@ -698,10 +808,7 @@ class _Altyazi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Cümle başında ve sonunda kısa yumuşak geçiş.
-    final gorunur = math.min(
-      ((an - parca.bas) / 0.3).clamp(0.0, 1.0),
-      ((parca.son - an) / 0.3 + 0.4).clamp(0.0, 1.0),
-    );
+    final gorunur = math.min(((an - parca.bas) / 0.3).clamp(0.0, 1.0), ((parca.son - an) / 0.3 + 0.4).clamp(0.0, 1.0));
     return Positioned(
       left: 0,
       right: 0,
@@ -713,10 +820,7 @@ class _Altyazi extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 720),
             margin: const EdgeInsets.symmetric(horizontal: 32),
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-            decoration: BoxDecoration(
-              color: const Color(0x99000000),
-              borderRadius: BorderRadius.circular(6),
-            ),
+            decoration: BoxDecoration(color: const Color(0x99000000), borderRadius: BorderRadius.circular(6)),
             child: Text(
               parca.parca.metin,
               textAlign: TextAlign.center,
@@ -759,13 +863,18 @@ class _TarifPaneli extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(cekimSayisi > 1 ? '${sahne.id} · ${cekim.sira + 1}/$cekimSayisi' : sahne.id, style: const TextStyle(color: Color(0xFFF2C46B), fontWeight: FontWeight.bold)),
+              Text(
+                cekimSayisi > 1 ? '${sahne.id} · ${cekim.sira + 1}/$cekimSayisi' : sahne.id,
+                style: const TextStyle(color: Color(0xFFF2C46B), fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 4),
               Text(g.tarif),
               const SizedBox(height: 6),
               Text('${m.kamera}: ${g.kamera} · ${m.saat}: ${g.saat}'),
-              Text('${m.katmanlar}: ${g.katmanlar.map((k) => '${k.yerTutucu}(${k.derinlik})').join(', ')}',
-                  style: const TextStyle(color: Colors.white70, fontSize: 11)),
+              Text(
+                '${m.katmanlar}: ${g.katmanlar.map((k) => '${k.yerTutucu}(${k.derinlik})').join(', ')}',
+                style: const TextStyle(color: Colors.white70, fontSize: 11),
+              ),
             ],
           ),
         ),
@@ -808,8 +917,10 @@ class _BolumSonuState extends State<_BolumSonu> with SingleTickerProviderStateMi
   }
 
   /// Zaman çizelgesinin [bas]–[son] aralığında 0→1.
-  Animation<double> _aralik(double bas, double son) =>
-      CurvedAnimation(parent: _zaman, curve: Interval(bas, son, curve: Curves.easeInOut));
+  Animation<double> _aralik(double bas, double son) => CurvedAnimation(
+    parent: _zaman,
+    curve: Interval(bas, son, curve: Curves.easeInOut),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -886,14 +997,12 @@ class _BolumSonuListesi extends StatelessWidget {
                   onPressed: () => context.pop(),
                 ),
                 Expanded(
-                  child: Text('${m.bolumSonu} · ${m.kaynaklar}',
-                      style: const TextStyle(color: Color(0xFFF2C46B), fontSize: 18)),
+                  child: Text(
+                    '${m.bolumSonu} · ${m.kaynaklar}',
+                    style: const TextStyle(color: Color(0xFFF2C46B), fontSize: 18),
+                  ),
                 ),
-                TextButton.icon(
-                  onPressed: yenidenOynat,
-                  icon: const Icon(Icons.replay),
-                  label: Text(m.yenidenOynat),
-                ),
+                TextButton.icon(onPressed: yenidenOynat, icon: const Icon(Icons.replay), label: Text(m.yenidenOynat)),
                 if (sonraki case final s?) ...[
                   const SizedBox(width: 8),
                   FilledButton.icon(
@@ -914,14 +1023,16 @@ class _BolumSonuListesi extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.symmetric(vertical: 2),
                     child: Text.rich(
-                      TextSpan(children: [
-                        TextSpan(text: '$eser, ${a.konum}'),
-                        if (!a.dogrulandi)
-                          TextSpan(
-                            text: '  (${m.dogrulamaBekliyor})',
-                            style: const TextStyle(color: Colors.white38),
-                          ),
-                      ]),
+                      TextSpan(
+                        children: [
+                          TextSpan(text: '$eser, ${a.konum}'),
+                          if (!a.dogrulandi)
+                            TextSpan(
+                              text: '  (${m.dogrulamaBekliyor})',
+                              style: const TextStyle(color: Colors.white38),
+                            ),
+                        ],
+                      ),
                       style: const TextStyle(color: Colors.white, fontSize: 13),
                     ),
                   );

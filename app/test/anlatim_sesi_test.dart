@@ -50,6 +50,14 @@ class _SahteSes implements AnlatimSesi {
     _caliyor = false;
   }
 
+  double hiz = 1;
+
+  @override
+  Future<void> hizAyarla(double hiz) async {
+    olaylar.add('hiz $hiz');
+    this.hiz = hiz;
+  }
+
   @override
   String? get etkinDosya => _etkin;
 
@@ -205,6 +213,22 @@ void main() {
         await tester.pump(const Duration(milliseconds: 16));
       }
       expect(find.textContaining('0:00 /'), findsNothing, reason: 'bekleme sınırı aşılınca saat yürür');
+    });
+
+    testWidgets('hız değişince ses de hızlanır; kayıtlı hız açılışta verilir', (tester) async {
+      final ses = _SahteSes();
+      await tester.pumpWidget(_sar(Oynatici(
+        bolum: ornekBolum(),
+        kaynakca: kaynakca,
+        hiz: 1.5,
+        sesSureleri: const {'b99-s01': 4.0},
+        sesFabrikasi: () => ses,
+      )));
+      await tester.pump();
+      expect(ses.hiz, 1.5);
+      await tester.tap(find.text('1,5×'));
+      await tester.pump();
+      expect(ses.hiz, 2.0);
     });
 
     testWidgets('sesi olmayan sahnede ses uyarısı görünür', (tester) async {
