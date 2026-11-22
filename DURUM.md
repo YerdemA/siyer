@@ -14,8 +14,12 @@ Son güncelleme: 2026-11-21.
   - AAB derlendi (`--obfuscate --split-debug-info=build/semboller`): içinde b02–b10 on-demand modülleri; temel paketteki içerik 77 → 14,5 MB. Telefona inen boyut bundletool `get-size total` ile ölçülmedi (bundletool indirme izni verilmedi).
   - Görsel önbelleği artık yalnız önceki/şimdiki/sonraki sahneyi tutar (önce bütün bölüm bellekte kalıyordu, ~12 MB/katman).
   - Testler 80/80, analiz temiz.
-- **Bekleyen (Erdem onayı):** medya sıkıştırma. Ses 128k MP3 → 48k mono AAC (`.m4a`, ~%60 küçük); görsel WebP q86 → q72 (~%35 küçük, çözünürlük aynı). Karşılaştırma örnekleri Erdem'e gönderildi. Onaylanınca: `ses_dengele.py` çıktısı m4a/48k, 135 ses dönüştürülür, JSON'larda `.mp3` → `.m4a`, `gorsel_katman.py` kalitesi 72, 163 görsel yeniden kodlanır, `bolum_metni.py` yeniden.
-- **Sırada:** bundletool ile `--local-testing` kurulumunda gerçek indirmeyi telefonda denemek (USB), sonra kapalı test.
+- **Medya sıkıştırıldı** (Erdem sesi dinleyip onayladı): 135 ses 48k mono AAC `.m4a` (39 → 16 MB; `ses_dengele.py` artık ham MP3'ü m4a'ya çevirip MP3'ü siler), 163 görsel WebP q72 (37,8 → 22,8 MB; `gorsel_katman.py` q72). Görseller telefonda henüz görülmedi.
+- **Ölçüm** (bundletool 1.18.3, `C:\Users\yusuf\siyer-araclar\bundletool.jar`, Android Studio JBR java'sıyla): Play'den inen boyut ~17 MB (arm64); önce ~90 MB. Gömülü içerik 8,5 MB; bölüm paketleri 2,0–4,7 MB.
+- Tek dosyalık (universal) APK'ya on-demand paketler girmiyor. Elle kurulacak test APK'sı için paketler install-time derlenir (`--android-project-arg=paketTeslimi=install-time`), sonra `bundletool build-apks --mode=universal` yükleme anahtarıyla. Uygulama paketi APK'dan `files/paketler/` altına çıkarır.
+- **Test APK'sı:** `İndirilenler\siyer\siyer-paketli-test-v6.apk` (99 MB, bütün bölümler içinde; gerçek indirmeyi değil APK'dan çıkarmayı sınar) — telefonda denenmedi.
+- **Kapalı test AAB'si yenilendi:** `İndirilenler\siyer\siyer-kapali-test-1.0.0+1.aab` (on-demand paketli, obfuscate; semboller `app/build/semboller`).
+- **Sırada:** Erdem test APK'sını dener (b02+ açılışı, görsel kalitesi, Ayarlar'da sil). Gerçek indirme ya telefon USB ile bağlıyken `bundletool build-apks --local-testing` + `install-apks` ile ya da kapalı test kanalında denenir.
 
 **Önceki (2026-11-21, akşam): anlatım sesi.**
 - Erdem ElevenLabs Starter aldı. **b01–b04'ün 51 sahnesi seslendirildi** (Seyfullah Kartal `mF7tIc9VLrznhGooGjaT`, `eleven_v4`, sahne başına 1 üretim; ~17.400 kredi). Dosyalar `content/tr/ses/<sahne>.mp3` (18,6 MB, 6–48 sn).
