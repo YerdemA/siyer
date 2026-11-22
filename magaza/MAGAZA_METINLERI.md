@@ -85,7 +85,7 @@ Bu bir kapalı test sürümüdür. Kaynak atıflarının bir kısmı henüz ası
 1. **Uygulama oluştur:** ad "Resulü Ekrem'in Hayatı", varsayılan dil Türkçe, Uygulama, Ücretsiz; beyanları onayla.
 2. **Play Uygulama İmzalama:** ilk AAB yüklenince Google'ın uygulama imzalama anahtarı kabul edilir; bizim `siyer-yukleme.jks` yalnız yükleme anahtarıdır (yedeklenmeli).
 3. **Test → Kapalı test → Yeni kanal** (ör. "kapali-test"): **Test edenler** sekmesinde e-posta listesi oluştur (en az 12 kişi; kişisel hesaplarda üretime çıkmak için 14 gün kapalı test şartı). Geri bildirim adresi ve katılım bağlantısı burada.
-4. **Yeni sürüm oluştur:** `İndirilenler\siyer\siyer-kapali-test-1.0.0+1-v3.aab` yükle. Sürüm adı `1.0.0 (1)`, sürüm notu: yukarıdaki "Kapalı test notu". Yükledikten sonra **Uygulama paketi gezgini**'nde b02–b10 isteğe bağlı paketler görünmeli. Gizleme eşleme dosyası istenirse `app/build/semboller` (Dart) — zorunlu değil.
+4. **Yeni sürüm oluştur:** `İndirilenler\siyer\siyer-kapali-test-1.0.0+1-v4.aab` yükle. Sürüm adı `1.0.0 (1)`, sürüm notu: yukarıdaki "Kapalı test notu". Yükledikten sonra **Uygulama paketi gezgini**'nde b02–b10 isteğe bağlı paketler görünmeli. Gizleme eşleme dosyası istenirse `app/build/semboller` (Dart) — zorunlu değil.
 5. **Uygulama içeriği** (sol menü, alt kısım): gizlilik politikası adresi, uygulama erişimi, reklamlar, içerik derecelendirmesi, hedef kitle, veri güvenliği, haber uygulaması, devlet uygulaması — cevaplar yukarıda. Hedef kitle kararı Erdem'in.
 6. **Ana mağaza girişi:** kısa/tam açıklama, simge, öne çıkan grafik, en az 2 telefon ekran görüntüsü (`magaza/ekran-goruntuleri/`).
 7. **Ülkeler:** kapalı kanalda Türkiye (+ istenen ülkeler).
