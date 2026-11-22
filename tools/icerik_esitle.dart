@@ -133,8 +133,10 @@ plugins {
 
 assetPack {
     packName.set("$p")
+    // Elle kurulacak test APK'sı için: -PpaketTeslimi=install-time
+    // (flutter build: --android-project-arg=paketTeslimi=install-time).
     dynamicDelivery {
-        deliveryType.set("on-demand")
+        deliveryType.set(providers.gradleProperty("paketTeslimi").orElse("on-demand"))
     }
 }
 ''');
