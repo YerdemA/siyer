@@ -94,7 +94,7 @@ def main(argv: list[str]) -> int:
         if seffaf < 0.05:
             print(f"UYARI: görselin yalnız %{seffaf * 100:.0f}'i silindi; {perde} perde zemin yok gibi.")
     cikti.parent.mkdir(parents=True, exist_ok=True)
-    img.save(cikti, "WEBP", quality=86, method=6)
+    img.save(cikti, "WEBP", quality=72, method=6)  # 86 → 72: ~%35 küçük, fark görünmüyor (2026-11-22)
     print(f"{cikti} ({img.width}×{img.height}, {'opak' if opak else 'şeffaf'}, {cikti.stat().st_size // 1024} KB)")
     return 0
 
