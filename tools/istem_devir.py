@@ -4,6 +4,8 @@ verilecek tek parça devir metni üretir.
 Kullanım (depo kökünden):
   .venv\\Scripts\\python.exe -I tools/istem_devir.py content/gorseller/istemler/b09.json [--varyant 2] [--atla u01,...] [--tur 4] [--chatgpt]
 
+--tur d1: yalnız dinamizm turu (tools/dinamik_istemler.py); sayısal olmayan tur
+ayrı dosyaya yazılır (<ad>-d1-chatgpt.md).
 --chatgpt: Higgsfield yerine tek bir ChatGPT sohbetine sırayla yapıştırılacak
 mesajlar (<ad>-chatgpt.md).
 --karakterler [kimlik ...]: karakterler.json'dan referans sayfası mesajları
@@ -206,7 +208,7 @@ def mesaj(uslup: dict, k: dict, kartlar: dict) -> tuple[str, list[str]]:
     return metin, ekle
 
 
-def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
+def chatgpt(veri: dict, istemler: list[dict], kaynak: Path, ek: str = "") -> Path:
     """Tek ChatGPT sohbeti için: ilk mesaj üslubu ve kuralları sabitler, sonraki
     her mesaj tek görsel ister. ChatGPT 16:9 vermez; 3:2 yatay istenir. 16:9'a
     kırpma ve %10 taşma payıyla 1536×1024 görselin dinlenik kadrajda görünen
@@ -269,7 +271,7 @@ def chatgpt(veri: dict, istemler: list[dict], kaynak: Path) -> Path:
         if notlar:
             satirlar += [f"*Kontrol: {'; '.join(notlar)}*", ""]
         satirlar += ["```text", metin, "```", ""]
-    cikti = kaynak.with_name(kaynak.stem + "-chatgpt.md")
+    cikti = kaynak.with_name(kaynak.stem + ek + "-chatgpt.md")
     cikti.write_text("\n".join(satirlar), encoding="utf-8")
     return cikti
 
@@ -351,7 +353,11 @@ def main(argv: list[str]) -> int:
         istemler = [k for k in istemler if str(k.get("tur")) in turlar]
 
     if "--chatgpt" in argv:
-        cikti = chatgpt(veri, istemler, kaynak)
+        # Sayısal olmayan tur (ör. d1) ayrı dosyaya yazılır; eski turların mesaj dosyası korunur.
+        ek = ""
+        if "--tur" in argv and not all(t.isdigit() for t in turlar):
+            ek = "-" + "-".join(sorted(turlar))
+        cikti = chatgpt(veri, istemler, kaynak, ek)
         print(f"{cikti} ({len(istemler)} görsel + 1 hazırlık mesajı)")
         return 0
 
