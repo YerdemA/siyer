@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -12,7 +13,13 @@ import 'l10n/app_localizations.dart';
 import 'oynatici/oynatici_ekrani.dart';
 import 'tema.dart';
 
-void main() => runApp(const ProviderScope(child: Uygulama()));
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  // Oynatıcı dışındaki bütün ekranlar dikey (Erdem, 2026-11-22); oynatıcı
+  // açılınca yataya geçer, kapanınca dikeye döner.
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  runApp(const ProviderScope(child: Uygulama()));
+}
 
 final _yonlendirici = GoRouter(
   routes: [

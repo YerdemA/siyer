@@ -14,6 +14,7 @@ import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 import 'anlatim_sesi.dart';
+import 'ekran.dart';
 import 'bolum_indirme.dart';
 import 'gorsel_onbellek.dart';
 import 'harita_gecisi.dart';
@@ -128,6 +129,7 @@ class Oynatici extends StatefulWidget {
     this.efekt,
     this.sonrakiBolum,
     this.azHareket = false,
+    this.ekran = const Ekran(),
   });
 
   /// Hareketi azalt: harita geçişi kısa ve kamerasız.
@@ -179,6 +181,9 @@ class Oynatici extends StatefulWidget {
   /// Bölüm sonuna gelinince bir kez çağrılır.
   final VoidCallback? bitti;
 
+  /// Ekranı açık tutma, ekran kapalı mı sorusu; testlerde sahtesi verilir.
+  final Ekran ekran;
+
   @override
   State<Oynatici> createState() => _OynaticiState();
 }
@@ -226,30 +231,97 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     _sonYer = ilkYer;
     _ticker = createTicker(_tik)..start();
     if (_hiz != 1) _ses?.hizAyarla(_hiz);
-    // Uygulama arka plana geçince oynatma (ve ses) durur.
+    // Başka uygulamaya geçilince oynatma (ve ses) durur; yalnız ekran
+    // kapandıysa sürer: kullanıcı yalnız anlatımı dinlemek isteyebilir
+    // (Erdem, 2026-11-22). Ekran kapalıyken kare çizilmez, saati
+    // [_arkaPlanSaati] ilerletir.
     _yasamDongusu = AppLifecycleListener(
-      onHide: () {
-        if (mounted && _oynuyor) setState(() => _oynuyor = false);
+      onHide: () async {
+        final ekranAcik = await widget.ekran.acikMi();
+        if (!mounted) return;
+        if (ekranAcik) {
+          if (_oynuyor) setState(() => _oynuyor = false);
+        } else if (_oynuyor) {
+          _arkaPlanaGec();
+        }
       },
+      onShow: _onPlanaDon,
     );
   }
 
   @override
   void dispose() {
     _yasamDongusu.dispose();
+    _arkaPlanSaati?.cancel();
     _sarmaSayaci?.cancel();
     _ses?.kapat();
     _ticker.dispose();
     _gorseller.dispose();
-    SystemChrome.setPreferredOrientations(DeviceOrientation.values);
+    widget.ekran.acikTut(false);
+    widget.ekran.uyanikTut(false);
+    // Oynatıcı dışındaki ekranlar dikey (bkz. main.dart).
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
     super.dispose();
   }
 
+  /// Ekran kapalıyken saati ilerleten zamanlayıcı; ekran açıkken null.
+  Timer? _arkaPlanSaati;
+
+  /// Ön plana dönünce ticker'ın ilk karesi aradaki süreyi yeniden saymasın.
+  bool _tikYenile = false;
+
+  void _arkaPlanaGec() {
+    if (_arkaPlanSaati != null) return;
+    // Harita geçişi çizilmeden ilerlemez; ekran kapalıyken atlanır.
+    _gecis = null;
+    widget.ekran.uyanikTut(true);
+    // Timer.tick geciken çağrılarda atlanan adımları da sayar; süre kaymaz.
+    const adim = 0.1;
+    var onceki = 0;
+    _arkaPlanSaati = Timer.periodic(const Duration(milliseconds: 100), (t) {
+      _ilerle((t.tick - onceki) * adim);
+      onceki = t.tick;
+      if (!_oynuyor) _onPlanaDon(); // bölüm bitti ya da durdu: kilit bırakılır
+    });
+  }
+
+  void _onPlanaDon() {
+    if (_arkaPlanSaati == null) return;
+    _arkaPlanSaati!.cancel();
+    _arkaPlanSaati = null;
+    _tikYenile = true;
+    widget.ekran.uyanikTut(false);
+  }
+
+  bool get _arkaPlanda => _arkaPlanSaati != null;
+
+  /// Ekranı açık tutma isteğinin son gönderilen değeri.
+  bool? _acikTutuluyor;
+
+  /// Bölüm oynarken ekran kendiliğinden kararmasın; duraklayınca kararabilir.
+  void _ekraniAcikTut() {
+    final istenen = _oynuyor && !_bitti;
+    if (istenen == _acikTutuluyor) return;
+    _acikTutuluyor = istenen;
+    widget.ekran.acikTut(istenen);
+  }
+
   void _tik(Duration gecen) {
+    if (_tikYenile) {
+      _tikYenile = false;
+      _oncekiTik = gecen;
+      return;
+    }
     final dt = (gecen - _oncekiTik).inMicroseconds / 1e6;
     _oncekiTik = gecen;
+    if (_arkaPlanda) return; // saati zamanlayıcı ilerletiyor
+    _ilerle(dt);
+  }
+
+  void _ilerle(double dt) {
     _sesiEsitle();
+    if (_arkaPlanda) _ilerlemeBildir(_plan.sahneSirasi(_an) + 1, hemen: true);
     if (!_oynuyor || _gecis != null) return;
     final sesAni = _sesSaati(dt);
     setState(() {
@@ -268,7 +340,9 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   static const sarmaAdimi = 10;
 
   /// Ekranın sağ yarısına çift dokunma ileri, sol yarısına geri sarar.
-  /// Art arda dokunmalar gösterge açıkken birikir (10, 20, 30 sn).
+  /// Art arda dokunmalar gösterge açıkken birikir (10, 20, 30 sn); tek
+  /// dokunuş ancak çift dokunma beklemesinden (300 ms) sonra geldiği için
+  /// gösterge 900 ms açık kalır.
   void _ciftDokunmaylaSar(double genislik) {
     final x = _ciftDokunmaX;
     if (x == null || _bitti || _gecis != null) return;
@@ -278,7 +352,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     _git(_an + (ileri ? sarmaAdimi : -sarmaAdimi));
     setState(() => _sarma = (ileri: ileri, saniye: saniye));
     _sarmaSayaci?.cancel();
-    _sarmaSayaci = Timer(const Duration(milliseconds: 700), () {
+    _sarmaSayaci = Timer(const Duration(milliseconds: 900), () {
       if (mounted) setState(() => _sarma = null);
     });
   }
@@ -320,7 +394,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     _sonSahne = i;
     final yeni = _plan.sahneler[i].sahne.yer.isEmpty ? null : _sahneYeri(i);
     if (yeni == null) return;
-    if (ileri && _sonYer != null && haritaGecisiGerekir(_sonYer, yeni)) {
+    // Tek sahnelik uğrak (ör. Yesrib'deki kabir) harita açtırmaz; dönüşte de
+    // açılmasın diye son yer değişmez (Erdem, 2026-11-22).
+    if (!kaliciYer([for (var j = 0; j < _plan.sahneler.length; j++) _sahneYeri(j)?.id], i)) return;
+    if (ileri && !_arkaPlanda && _sonYer != null && haritaGecisiGerekir(_sonYer, yeni)) {
       _gecis = (onceki: _sonYer, hedef: yeni);
     }
     _sonYer = yeni;
@@ -442,24 +519,32 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   }
 
   /// İlerleme kaydı build sırasında değil, kare bittikten sonra yapılır.
-  void _ilerlemeBildir(int sahneNo) {
+  /// Ekran kapalıyken kare çizilmez; [hemen] ise beklemeden bildirilir.
+  void _ilerlemeBildir(int sahneNo, {bool hemen = false}) {
     final sahneDegisti = sahneNo != _bildirilenSahne;
     final yeniBitis = _bitti && !_bitisBildirildi;
     if (!sahneDegisti && !yeniBitis) return;
     _bildirilenSahne = sahneNo;
     if (yeniBitis) _bitisBildirildi = true;
     if (!_bitti) _bitisBildirildi = false;
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    void bildir() {
       if (!mounted) return;
       if (sahneDegisti) widget.sahneDegisti?.call(sahneNo);
       if (yeniBitis) widget.bitti?.call();
-    });
+    }
+
+    if (hemen) {
+      bildir();
+    } else {
+      WidgetsBinding.instance.addPostFrameCallback((_) => bildir());
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     final konum = _plan.konum(_an);
     _ilerlemeBildir(konum.sahne.sira + 1);
+    _ekraniAcikTut();
     _gorselleriHazirla(konum.sahne.sira);
     return Center(
       child: AspectRatio(
@@ -472,7 +557,16 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
             LayoutBuilder(
               builder: (context, alan) => GestureDetector(
                 behavior: HitTestBehavior.opaque,
-                onTap: () => setState(() => _kontroller = !_kontroller),
+                // Sarma göstergesi açıkken tek dokunuş da sarar (üç dokunuş
+                // 20 sn); kapalıyken kontrolleri açıp kapar.
+                onTapUp: (d) {
+                  if (_sarma != null) {
+                    _ciftDokunmaX = d.localPosition.dx;
+                    _ciftDokunmaylaSar(alan.maxWidth);
+                  } else {
+                    setState(() => _kontroller = !_kontroller);
+                  }
+                },
                 onDoubleTapDown: (d) => _ciftDokunmaX = d.localPosition.dx,
                 onDoubleTap: () => _ciftDokunmaylaSar(alan.maxWidth),
                 child: Stack(

@@ -373,7 +373,9 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                       Flexible(
                         child: Text(
                           b.ozet,
-                          maxLines: devam ? 2 : 3,
+                          // Alttaki ilerleme ya da indirme satırı yer kaplar;
+                          // üç satır sığmayıp satır ortasından kesiliyordu.
+                          maxLines: devam || widget.paket is PaketYok || widget.paket is PaketIniyor ? 2 : 3,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(fontSize: 13, height: 1.3, color: Palet.murekkepSoluk),
                         ),

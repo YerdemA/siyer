@@ -279,3 +279,16 @@ class _IsaretCizici extends CustomPainter {
   @override
   bool shouldRepaint(_IsaretCizici eski) => eski.t != t || eski.pencere != pencere;
 }
+
+/// [i]. sahnenin yeri bölümün kalanında (bu sahne dahil) birden çok sahnede
+/// geçiyorsa kalıcıdır; yalnız kalıcı yere varışta harita geçişi gösterilir.
+/// [yerler]: sahne başına (boşsa öncekinden devralınmış) yer kimliği.
+bool kaliciYer(List<String?> yerler, int i) {
+  final id = yerler[i];
+  if (id == null) return false;
+  var sayi = 0;
+  for (var j = i; j < yerler.length; j++) {
+    if (yerler[j] == id && ++sayi > 1) return true;
+  }
+  return false;
+}
