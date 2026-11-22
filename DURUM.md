@@ -6,6 +6,13 @@ Son güncelleme: 2026-11-22.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
+**En son (2026-11-22, gece): b02 d1 görselleri işlendi, Erdem önizlemeyi onayladı, commit'lendi** (`İndirilenler\siyer\_onizleme-b02-d1.jpg`; kaba pafta, saat tonu ve kamera yok).
+- 22 görselden **20 kabul**, katmanları `content/gorseller/b02-d-*.webp`. 3:2 görsellerde başlar kesilmesin diye 9'u (arap-kabileler, ebrehe-ofke, ebrehe-saygi, tepede-bekleyis, ordugaha-varis, kureys-istisare, ebrehe-yakin, hunata-gelis, kasva) üstten %2,5 kırpılıp 16:9'a çevrildi, gerisi ortadan.
+- **2 red, istemleri düzeltildi** (`b02-d1-chatgpt.md` Mesaj 13 ve 16): `ordu-hazir` (filin baş örtüsü yok; referansta ve öteki görsellerde var → fil kartına baş örtüsü eklendi), `develer-donus` (develer insandan küçük ve yüklü; kaynakta otlaktan alınan develer). Reddedilenler `arsiv\b02\*-red.png`.
+- Yerleşim: s07, s08, s09, s11, s13'te yeni görsel ana görüntü oldu, eski ana görüntü sonraki parçaya çekim olarak taşındı. Metin ve ses değişmeden bölünen parçalar: s08 [1], s09 [0], s14 [1] (ayet üçe), s16 [2]. s08'deki eski kadrajlı Hunâta yakın planı kalktı (ana görüntü değişince kadraj yanlış yere düşüyordu). s10'da Ebrehe yakın planından sonra Abdülmuttalib'in cevabı yine yakın planda. s12 [0] `ordu-hazir` gelene kadar eski fil görseli.
+- Doğrulama 0 hata, testler 84/84. Gerçek oynatıcıda (web/telefon) denenmedi.
+- Sırada: `ordu-hazir` ve `develer-donus` yeniden üretilince yerleştirilir (s12 [0], s10 [3]); sonra b10 görselleri.
+
 **Kaldığımız yer (2026-11-22, akşam): dinamizm turu d1** (Erdem istedi: uzun tek görselli ve yalnız Kâbe'li sahneler sıkıcı).
 - 10 bölüm ölçüldü: 39 dakikanın ~%37'si ya yalnız ortak Mekke/Kâbe çekimi ya da 20 sn'den uzun tek görsel; en kötüleri b02 (%62), b10 (%58), b07 (%55). Değerlendirme ve görsel listesi: `docs/DINAMIZM.md`.
 - **96 yeni görsel istemi** (63 A, 33 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
