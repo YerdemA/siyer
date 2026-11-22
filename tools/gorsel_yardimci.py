@@ -16,11 +16,16 @@ Ne yapar:
   kimlik seçilir. Aynı kimlikte görsel varsa eskisi `yeni\\_onceki\\`'ne gider.
 
 Yalnız 127.0.0.1'de dinler; dışarıya bağlanmaz.
+
+Kısayol: `python tools/gorsel_yardimci.py --kisayol` masaüstüne "Görsel yardımcısı"
+kısayolunu koyar (pythonw ile, konsolsuz). Zaten çalışıyorsa kısayol yalnız sayfayı
+açar. Kapatmak: sayfadaki "Kapat" düğmesi; sekme kapanırsa ~1 dakikada kendisi kapanır.
 """
 import json
 import os
 import re
 import shutil
+import socket
 import subprocess
 import sys
 import threading
@@ -47,6 +52,8 @@ kilit = threading.Lock()
 kuyruk: list[str] = []          # indirme bekleyen kimlikler (sırayla)
 atanmamis: list[str] = []       # kuyruk boşken inen dosyaların tam yolu
 olaylar: list[dict] = []        # son atamalar (en yeni sonda)
+son_yoklama = 0.0               # sayfanın son durum sorgusu (0: henüz açılmadı)
+BOSTA_KAPAN = 60                # sayfa bu kadar saniye sormazsa kapan
 
 
 # ---------------------------------------------------------------- mesajlar
@@ -209,6 +216,8 @@ class Isleyici(BaseHTTPRequestHandler):
             ad = Path(q.get("md", [""])[0]).name
             self._json(mesajlari_oku(ISTEM / ad))
         elif u.path == "/api/durum":
+            global son_yoklama
+            son_yoklama = time.time()
             with kilit:
                 self._json({"kuyruk": list(kuyruk), "olaylar": olaylar[-15:],
                             "atanmamis": [Path(p).name for p in atanmamis if Path(p).exists()]})
@@ -250,6 +259,9 @@ class Isleyici(BaseHTTPRequestHandler):
                     hedef = yeniye_tasi(yol, veri["kimlik"])
                     olaylar.append({"kimlik": veri["kimlik"], "dosya": hedef.name, "kaynak": yol.name, "saat": time.strftime("%H:%M:%S")})
                 self._json({"tamam": True})
+            elif u.path == "/api/kapat":
+                self._json({"tamam": True})
+                threading.Thread(target=self.server.shutdown, daemon=True).start()
             elif u.path == "/api/yoksay":
                 with kilit:
                     atanmamis[:] = [p for p in atanmamis if Path(p).name != veri["dosya"]]
@@ -287,6 +299,7 @@ aside img{width:100%;border-radius:4px}
 </style></head><body>
 <header>
   <b>Görsel yardımcısı</b>
+  <button onclick="kapat()" style="margin-left:auto">Kapat</button>
   <select id="md"></select>
   <label><input type="checkbox" id="yalnizEksik" checked> yalnız eksikler</label>
   <span>Sıradaki indirme → <span id="kuyruk">—</span></span>
@@ -361,15 +374,69 @@ async function durum(){
   if(veri&&s!==sonOlay){sonOlay=s;sonKuyruk=k;yukle()} else if(veri&&k!==sonKuyruk){sonKuyruk=k;ciz()}
 }
 $('#md').onchange=yukle; $('#yalnizEksik').onchange=ciz;
-dosyalar(); setInterval(durum,2000);
+async function kapat(){
+  try{await post('/api/kapat',{})}catch(e){}
+  clearInterval(zamanlayici);
+  document.body.innerHTML='<p style="padding:30px;font-size:18px">Görsel yardımcısı kapandı. Bu sekmeyi kapatabilirsin; yeniden açmak için masaüstündeki kısayolu kullan.</p>';
+}
+dosyalar(); const zamanlayici=setInterval(durum,2000);
 </script></body></html>"""
 
 
+def calisiyor_mu() -> bool:
+    try:
+        with socket.create_connection(("127.0.0.1", PORT), timeout=0.5):
+            return True
+    except OSError:
+        return False
+
+
+def bekci(sunucu):
+    """Sayfa açıldıktan sonra uzun süre yoklama gelmezse (sekme kapandı) sunucuyu kapatır."""
+    baslangic = time.time()
+    while True:
+        time.sleep(5)
+        son = son_yoklama or baslangic + 120   # ilk açılışta tarayıcıya 3 dk süre
+        if time.time() - son > BOSTA_KAPAN:
+            sunucu.shutdown()
+            return
+
+
+def kisayol_olustur():
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    pythonw = Path(sys.executable).with_name("pythonw.exe")
+    simge = Path(__file__).with_name("gorsel_yardimci.ico")
+    ps = (
+        "[Console]::OutputEncoding=[Text.Encoding]::UTF8;$m=[Environment]::GetFolderPath('Desktop');"
+        "$k=(New-Object -ComObject WScript.Shell).CreateShortcut((Join-Path $m 'Görsel yardımcısı.lnk'));"
+        f"$k.TargetPath='{pythonw}';"
+        f"$k.Arguments='\"{Path(__file__).resolve()}\"';"
+        f"$k.WorkingDirectory='{KOK}';"
+        + (f"$k.IconLocation='{simge}';" if simge.exists() else "")
+        + "$k.Description='Resulü Ekrem: elle görsel üretimi yardımcısı';$k.Save();Write-Output (Join-Path $m 'Görsel yardımcısı.lnk')"
+    )
+    cikti = subprocess.run(["powershell", "-NoProfile", "-Command", ps], capture_output=True, encoding="utf-8", errors="replace", check=True)
+    print("Kısayol:", cikti.stdout.strip())
+
+
 def main():
+    if "--kisayol" in sys.argv:
+        kisayol_olustur()
+        return
+    adres = f"http://127.0.0.1:{PORT}"
+    if calisiyor_mu():           # ikinci açılış: yalnız sayfayı aç
+        webbrowser.open(adres)
+        return
+    if sys.stdout is None:       # pythonw: konsol yok, hatalar dosyaya
+        SIYER.mkdir(parents=True, exist_ok=True)
+        sys.stdout = sys.stderr = open(SIYER / "_yardimci.log", "a", encoding="utf-8", buffering=1)
+    else:
+        for akis in (sys.stdout, sys.stderr):
+            akis.reconfigure(encoding="utf-8", errors="replace")
     threading.Thread(target=izleyici, daemon=True).start()
     sunucu = ThreadingHTTPServer(("127.0.0.1", PORT), Isleyici)
-    adres = f"http://127.0.0.1:{PORT}"
-    print(f"Görsel yardımcısı: {adres}  (kapatmak için Ctrl+C)")
+    threading.Thread(target=bekci, args=(sunucu,), daemon=True).start()
+    print(f"{time.strftime('%Y-%m-%d %H:%M')} Görsel yardımcısı: {adres}")
     print(f"İzlenen: {', '.join(str(d) for d in IZLENEN)} → {YENI}")
     if "--tarayicisiz" not in sys.argv:
         webbrowser.open(adres)
@@ -377,6 +444,7 @@ def main():
         sunucu.serve_forever()
     except KeyboardInterrupt:
         pass
+    print(f"{time.strftime('%Y-%m-%d %H:%M')} kapandı")
 
 
 if __name__ == "__main__":
