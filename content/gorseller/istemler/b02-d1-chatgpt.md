@@ -1,9 +1,9 @@
 # b02-fil-vakasi: ChatGPT ile görsel üretimi
 
 **Hazırlık:** ChatGPT'de yeni bir sohbet aç. Üslup referansı olarak seçilen görseli (u01-d) ekle ve **Mesaj 0**'ı gönder.
-Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da Claude Code'un verdiği `u01d.png`.
+Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da `content/gorseller/istemler/referans/uslup-u01d.png`.
 
-**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `s03-deniz.png`). Atladığın olursa Claude Code'a söyle.
+**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `b02-d-kasva.png`). Atladığın olursa Claude Code'a söyle.
 
 **Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.
 
@@ -186,18 +186,20 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 7: b02-d-esved-atlilar
 
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-habes_askeri.png`
+
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s07 tek görsel 22 sn. Dayanak: b02-s07 parça 0; i-b02-008.*
 
 ```text
-Scene b02-d-esved-atlilar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+Scene b02-d-esved-atlilar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
-SUBJECT: Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by a commander (al-Aswad) in a dark red sash; dust rises behind them.
+SUBJECT: Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by their commander (al-Aswad); dust rises behind them.
 
 PEOPLE AND ANIMALS: draw only these; groups marked 'about' are approximate, every other item is an exact count (1 individually listed people). Keep every listed colour and feature exactly as written:
-1. al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, white wrapped garments and a dark red sash, on a horse. Pose and place: in front, riding to the right.
-2. about 8 × Abyssinian soldiers: dark-skinned men in plain off-white wrapped garments with a dark sash, short spears held upright, no armour detail, on horses. Pose and place: riding behind him.
+1. al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, dressed like the Abyssinian soldiers of the attached sheet but with a longer dark red cloak, on a horse. Pose and place: in front, riding to the right.
+2. about 8 × Abyssinian soldiers: dark-brown-skinned men, short black hair under a plain white cloth cap, short black beards; cream knee-length tunics, a simple brown leather vest, a red shoulder cloak; each holds at most one plain wooden spear; no helmets, no shields, no banners, no crosses. Pose and place: on horses, riding behind him.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
@@ -240,7 +242,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 9: b02-d-hunata-gelis
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`, `sahne-b02-hunata-abdulmuttalib.png`
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s08'in iki çekimi aynı görsel (27 sn). Dayanak: b02-s08 parça 0; i-b02-009.*
 
@@ -270,7 +272,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 10: b02-d-ordugaha-varis
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-abdulmuttalib.png`, `karakter-habes_askeri.png`, `karakter-fil.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `sahne-b03-on-ogul.png`, `karakter-abdulmuttalib.png`, `karakter-habes_askeri.png`, `karakter-fil.png`
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s09 tek görsel 27 sn. Dayanak: b02-s09 parça 0; i-b02-010.*
 
@@ -301,7 +303,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 11: b02-d-uneys
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-fil.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `sahne-b02-esirler.png`, `karakter-fil.png`
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). Aynı parça: Zû Nefer'in fil bakıcısından aracılık istemesi. Dayanak: b02-s09 parça 0; i-b02-010.*
 
@@ -501,10 +503,12 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 18: b02-d-denizden-kuslar
 
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `sahne-b02-kuslar.png`
+
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s13 tek görsel 22 sn. Dayanak: b02-s13 parça 0; i-b02-014.*
 
 ```text
-Scene b02-d-denizden-kuslar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+Scene b02-d-denizden-kuslar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.
 
@@ -526,10 +530,12 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 19: b02-d-kus-yakin
 
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `sahne-b02-kuslar.png`
+
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Aynı sahne: kuşların üç taşı (kaynakta ayrıntılı). Dayanak: b02-s13 parça 1; i-b02-020.*
 
 ```text
-Scene b02-d-kus-yakin. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+Scene b02-d-kus-yakin. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.
 

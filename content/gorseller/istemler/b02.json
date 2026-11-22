@@ -640,17 +640,17 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "uzak",
-      "konu": "Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by a commander (al-Aswad) in a dark red sash; dust rises behind them.",
+      "konu": "Daytime, dusty plain: a band of Abyssinian horsemen rides out from a camp of tents at a fast pace, led by their commander (al-Aswad); dust rises behind them.",
       "kisiler": [
         {
-          "tarif": "al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, white wrapped garments and a dark red sash, on a horse",
+          "tarif": "al-Aswad ibn Maqsud, an Abyssinian commander of about 40 with a short black beard, dressed like the Abyssinian soldiers of the attached sheet but with a longer dark red cloak, on a horse",
           "poz": "in front, riding to the right."
         },
         {
-          "tarif": "Abyssinian soldiers: dark-skinned men in plain off-white wrapped garments with a dark sash, short spears held upright, no armour detail, on horses",
+          "karakter": "habes_askeri",
           "sayi": 8,
           "yaklasik": true,
-          "poz": "riding behind him."
+          "poz": "on horses, riding behind him."
         }
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
@@ -732,7 +732,8 @@
         }
       ],
       "ekle": [
-        "nesne-mekke-evler.png"
+        "nesne-mekke-evler.png",
+        "sahne-b02-hunata-abdulmuttalib.png"
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, weapons drawn, blood",
@@ -779,6 +780,9 @@
           "poz": "beside the elephant, small."
         }
       ],
+      "ekle": [
+        "sahne-b03-on-ogul.png"
+      ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, weapons in use",
       "not": "Dinamizm turu d1 (A). s09 tek görsel 27 sn. Dayanak: b02-s09 parça 0; i-b02-010."
@@ -813,6 +817,9 @@
           "karakter": "fil",
           "poz": "standing behind them."
         }
+      ],
+      "ekle": [
+        "sahne-b02-esirler.png"
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, chains on the elephant",
@@ -1065,6 +1072,9 @@
           "poz": "flocks in the sky, coming from the sea on the left."
         }
       ],
+      "ekle": [
+        "sahne-b02-kuslar.png"
+      ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, fire, glow",
       "not": "Dinamizm turu d1 (A). s13 tek görsel 22 sn. Dayanak: b02-s13 parça 0; i-b02-014."
@@ -1091,6 +1101,9 @@
           "karakter": "kuslar",
           "poz": "five birds close to the viewer, wings spread."
         }
+      ],
+      "ekle": [
+        "sahne-b02-kuslar.png"
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, fire, glow, large stones",

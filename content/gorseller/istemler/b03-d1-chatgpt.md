@@ -1,9 +1,9 @@
 # b03-dogum: ChatGPT ile görsel üretimi
 
 **Hazırlık:** ChatGPT'de yeni bir sohbet aç. Üslup referansı olarak seçilen görseli (u01-d) ekle ve **Mesaj 0**'ı gönder.
-Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da Claude Code'un verdiği `u01d.png`.
+Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da `content/gorseller/istemler/referans/uslup-u01d.png`.
 
-**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `s03-deniz.png`). Atladığın olursa Claude Code'a söyle.
+**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `b02-d-kasva.png`). Atladığın olursa Claude Code'a söyle.
 
 **Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.
 
@@ -77,7 +77,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 3: b03-d-kabe-ic-kura
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `kabe-ic-alcak.png`, `karakter-abdulmuttalib.png`, `karakter-abdullah.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `kabe-ic-alcak.png`, `sahne-b03-on-ogul.png`, `karakter-abdulmuttalib.png`, `karakter-abdullah.png`
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Kura 'Kâbe'nin içindeki Hübel putunun yanında' çekiliyor; bugün dışarıdan gösteriliyor. Dayanak: b03-s03 parça 0; i-b03-004. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
 

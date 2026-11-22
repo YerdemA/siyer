@@ -1,9 +1,9 @@
 # b08-el-emin: ChatGPT ile görsel üretimi
 
 **Hazırlık:** ChatGPT'de yeni bir sohbet aç. Üslup referansı olarak seçilen görseli (u01-d) ekle ve **Mesaj 0**'ı gönder.
-Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da Claude Code'un verdiği `u01d.png`.
+Referans dosyası: Higgsfield galerisindeki iş `a5e23296-85b4-40f2-9289-f94ea4dd0085` ya da `content/gorseller/istemler/referans/uslup-u01d.png`.
 
-**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `s03-deniz.png`). Atladığın olursa Claude Code'a söyle.
+**Akış:** Mesajları sırayla, her birini ayrı gönder. Her görseli `İndirilenler\siyer` klasörüne, mesaj başlığındaki kimlikle kaydet (ör. `b02-d-kasva.png`). Atladığın olursa Claude Code'a söyle.
 
 **Uzun sohbet üslubu kaydırır.** Görseller fotoğraf gibi olmaya başlarsa yeni sohbet aç, Mesaj 0'ı görselle yeniden gönder, kaldığın yerden devam et.
 
@@ -52,7 +52,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 2: b08-d-rahip-meysere
 
-**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `karakter-meysere.png`
+**Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `sahne-b08-rahip.png`, `karakter-meysere.png`
 
 *Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s05 tek görsel 16 sn. Dayanak: b08-s05 parça 1; i-b08-007.*
 
