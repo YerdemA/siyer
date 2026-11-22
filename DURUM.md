@@ -2,7 +2,7 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-21.
+Son güncelleme: 2026-11-22.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
@@ -11,7 +11,12 @@ Son güncelleme: 2026-11-21.
 - **96 yeni görsel istemi** (63 A, 33 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
 - Erdem'in kararları (2026-11-22): putlar şekli kaynakta yoksa farklı biçimlerde yaklaşık put; göğsün yarılması çocukların gözündeki yansımada, 5 göz yakın planı (`b04-d-goz-1…5`, ışıklar istisna olarak görselde); b01 ve b02'de inisiyatif bende (Necâşî çıkarıldı, Kasvâ'da Efendimiz yok). `GORSEL_USLUP.md` güncellendi.
 - Kâbe'nin içi (deneyenlerin önerisi): iki ana görsel (`b01-d-kabe-ic` 605 öncesi, `b09-d-kabe-ic-tavan` 605 sonrası; TDV KÂBE c. 24 ve anlatımdaki iddialara dayanır), onaylanınca `referans/kabe-ic-alcak.png` / `kabe-ic-yuksek.png`; iç sahneler b03-s03 (kura), b03-s12 (dua), b09-s02 (kuyu), b09-s14, ayrıca `b08-d-hatice-oda`.
-- **Sırada:** Erdem görselleri üretir (önerilen sıra b02 → b10 → b07 → b01 → b08 → b03 → diğerleri) Görseller gelince: denetim, `gorsel_katman.py --opak`, `cekimler[]`'e yerleştirme (uzun parçalar metin değişmeden bölünür), doğrulama, önizleme.
+- Referans kontrolü yapıldı: mesajlarda adı geçen bütün referanslar `istemler/referans/`'ta var; yalnız `kabe-ic-alcak.png` ve `kabe-ic-yuksek.png` bilerek eksik (ana iç görsellerden çıkacak). Kartı olmayan karakterler (Hunâta, Zû Nefer, rahip, Ebâbîl kuşları, Abdülmuttalib'in oğulları) için onaylı sahne görselleri `referans/sahne-*.png` olarak eklendi ve `SAHNE_REFERANSI` ile mesajlara otomatik iliştiriliyor. Habeşli asker tarifi karta bağlandı (zırh + kırmızı pelerin).
+- **Erdem şimdi görselleri üretiyor; bitince yeni oturum açacak.** Üretim sırası:
+  1. **Önce `b01-d-kabe-ic`** (605 öncesi Kâbe içi). Onaylanınca `referans/kabe-ic-alcak.png` olarak konur; b03-d-kabe-ic-kura, b03-d-kura-oklari, b03-d-kabe-ic-dua, b09-d-kabe-ic-kuyu bu referansı ister. `b09-d-kabe-ic-tavan` onaylanınca `referans/kabe-ic-yuksek.png`.
+  2. Sonra bölüm sırası b02 → b10 → b07 → b01 → b08 → b03 → diğerleri; her bölümde önce A, sonra B öncelikliler.
+  3. Görseller ChatGPT'den `İndirilenler\siyer\yeni\`'ye, dosya adı istem kimliğiyle (ör. `b02-d-kasva.png`).
+- **Görseller gelince (oturum başında):** `yeni\` klasörünü listele, her görseli istemindeki karta, üç kesin red kuralına (kaynak, tutarlılık, gerçek dışı) ve bileşime göre denetle; özellikle b04 göz dizisinde yansımada insan/melek biçimi olmamalı, Efendimiz yalnız küçük ışık. Kabul edilenler `gorsel_katman.py --opak` → `cekimler[]`'e yerleştirme (uzun parçalar metin ve ses değişmeden bölünür; yerleşim önerileri `docs/DINAMIZM.md` bölüm tablolarında) → `icerik_dogrula` + `bolum_metni.py` → sahne önizlemesi → bölüm bölüm commit; kullanılan görseller `arsiv\<bölüm>\`'e, `yeni\` boşaltılır. Reddedilenler için düzeltilmiş istem yazılır.
 
 **Önceki (2026-11-22): boyut küçültme ve bölüm indirme** (Erdem, kapalı testten önce istedi).
 - **Bölüm indirme: Play Asset Delivery** (Erdem seçti; sunucu yok, INTERNET izni yok, gizlilik metni değişmez). b01 uygulamaya gömülü; b02–b10 isteğe bağlı paket (`app/android/paketler/bNN`, `icerik_esitle` üretir, git dışı). Ayrıntı: `docs/ICERIK_SEMASI.md` → Bölüm paketleri.
