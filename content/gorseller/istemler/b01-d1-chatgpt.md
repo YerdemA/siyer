@@ -149,7 +149,7 @@ Scene b01-d-put-tasima. ONE image, landscape 3:2. Flat paper cut-out style of th
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a rough, heavy, faceless block shaped only roughly like a standing figure. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
+SUBJECT: Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a crude, heavy stone statue roughly shaped like a standing human figure with simple, primitive carved features. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 3 people in total). Keep every listed colour and feature exactly as written:
 1. 3 × Arab men of the Khuza'a in plain dark tunics and head cloths. Pose and place: two carrying the litter on their shoulders, one walking ahead with a small torch, all in profile.
@@ -158,7 +158,7 @@ LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important con
 
 LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, detailed idol faces, gold, jewels
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, gold, jewels
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 3 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
@@ -257,13 +257,13 @@ Scene b01-d-putlar. ONE image, landscape 3:2. Flat paper cut-out style of the st
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it in rows: crudely carved stone figures of different sizes and plain standing stones, some on low bases; no recognisable faces, no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
+SUBJECT: Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
 LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, detailed faces on idols, writing
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing
 
 BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
@@ -380,36 +380,9 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 5 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 15: b01-d-necasi
+## Mesaj 15: b01-d-zulum
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s12'nin son çekimi (15 sn) konak görselinin kadrajı; Ca'fer'in konuşması görüntüsüz. Dayanak: b01-s12 parça 3; i-b01-019.*
-
-```text
-Scene b01-d-necasi. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
-
-CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
-
-SUBJECT: Daytime, the plain stone audience hall of the king of Abyssinia: the king, an African ruler of about 50 with a short grey-black beard, sits on a simple wooden throne in a white robe with a dark red mantle; before him a young Arab man (Ja'far) of about 25 with a short black beard, off-white head cloth and a short brown cloak speaks calmly with one hand open; Abyssinian courtiers stand at the sides.
-
-PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 6 people in total). Keep every listed colour and feature exactly as written:
-1. the king of Abyssinia (the Negus), an African ruler of about 50 with a short grey-black beard, a white robe and a dark red mantle, no crown. Pose and place: seated on a plain wooden throne at the right.
-2. Ja'far ibn Abi Talib as a young man of about 25 with a short black beard, an off-white head cloth, a cream tunic and a short brown cloak. Pose and place: standing at the left, facing the king, one hand open.
-3. 4 × Abyssinian courtiers in white wrapped garments. Pose and place: standing at both sides.
-
-LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
-
-LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.
-
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, crowns, writing, gold ornaments
-
-BEFORE YOU OUTPUT, CHECK AND FIX: exactly 6 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
-
-Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
-```
-
-## Mesaj 16: b01-d-zulum
-
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). Aynı uzun parçanın ikinci yarısı: 'güçlünün zayıfı ezdiği' cümlesi. Dayanak: b01-s12 parça 3; i-b01-019.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s12'nin son çekimi (15 sn) konak görselinin kadrajı. Parça bölünür: önce b01-d-putlar (putlara tapma), sonra bu ('güçlünün zayıfı ezdiği'). Dayanak: b01-s12 parça 3; i-b01-019.*
 
 ```text
 Scene b01-d-zulum. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.

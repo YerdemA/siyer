@@ -50,7 +50,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 2: b04-d-oyun
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s07 tek görsel 23 sn; olay bilinçli olarak gösterilmiyor (Erdem'e soru: aşağıda). Dayanak: b04-s07 parça 0; i-b04-011.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s07 tek görsel 23 sn. Açılış: çocukların oynadığı yamaç; olay ardından çocukların gözlerindeki yansımayla anlatılır (b04-d-goz-1…5). Dayanak: b04-s07 parça 0; i-b04-011.*
 
 ```text
 Scene b04-d-oyun. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
@@ -74,7 +74,142 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 3 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 3: b04-d-mekkeye-donus
+## Mesaj 3: b04-d-cocuk-yuzler
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor. Dayanak: b04-s07 parça 0; i-b04-011.*
+
+```text
+Scene b04-d-cocuk-yuzler. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.
+
+SUBJECT: Daytime, on the hillside: close shot of three small Bedouin children side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame.
+
+PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 3 people in total). Keep every listed colour and feature exactly as written:
+1. 3 × Bedouin children of about 4 to 7, simple undyed tunics, small dark head cloths, faces simple and dignified. Pose and place: side by side, heads turned to the left.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.
+
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, anything they are looking at, light beams, angels
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly 3 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
+```
+
+## Mesaj 4: b04-d-goz-1
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Göz yansıması dizisi 1/5: Cebrâil'in gelişi. Dayanak: b04-s07 parça 0; i-b04-011.*
+
+```text
+Scene b04-d-goz-1. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.
+
+SUBJECT: Extreme close-up of one eye of a small Bedouin boy with light-brown skin and thick black brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: a few lambs on the slope and the tiny warm golden-white light among them; from the sky a tall white light descends towards it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.
+
+DO NOT DRAW: any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids; the reflection sits inside the iris and shows only the hillside and what the prompt lists; no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light; no blood, heart, chest, knife or body parts; no text, letters, crosses, minarets, domes or crescents.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
+```
+
+## Mesaj 5: b04-d-goz-2
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Göz yansıması dizisi 2/5: yere yatırılması. Dayanak: b04-s07 parça 1; i-b04-011.*
+
+```text
+Scene b04-d-goz-2. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.
+
+SUBJECT: Extreme close-up of one eye of a small Bedouin girl with darker skin and fine brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a dark head covering drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light lies low on the ground; the tall white light bends over it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.
+
+DO NOT DRAW: any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids; the reflection sits inside the iris and shows only the hillside and what the prompt lists; no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light; no blood, heart, chest, knife or body parts; no text, letters, crosses, minarets, domes or crescents.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
+```
+
+## Mesaj 6: b04-d-goz-3
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Göz yansıması dizisi 3/5: kalbinden pıhtının alınması (yalnız ışık ve koyu bir nokta). Dayanak: b04-s07 parça 1; i-b04-011.*
+
+```text
+Scene b04-d-goz-3. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.
+
+SUBJECT: Extreme close-up of one eye of an older Bedouin boy with sun-browned skin and a scar-free, smooth brow: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: out of the tiny warm golden-white light, the tall white light lifts away one small dark speck, which dissolves into the air like smoke. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.
+
+DO NOT DRAW: any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids; the reflection sits inside the iris and shows only the hillside and what the prompt lists; no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light; no blood, heart, chest, knife or body parts; no text, letters, crosses, minarets, domes or crescents.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
+```
+
+## Mesaj 7: b04-d-goz-4
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Göz yansıması dizisi 4/5: altın leğende Zemzem'le yıkanma. Dayanak: b04-s07 parça 2; i-b04-011.*
+
+```text
+Scene b04-d-goz-4. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.
+
+SUBJECT: Extreme close-up of one eye of a small Bedouin boy with olive skin and curly black hair at the temple: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: beside the tiny warm golden-white light stands a simple golden basin filled with clear water, the tall white light above it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.
+
+DO NOT DRAW: any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids; the reflection sits inside the iris and shows only the hillside and what the prompt lists; no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light; no blood, heart, chest, knife or body parts; no text, letters, crosses, minarets, domes or crescents.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
+```
+
+## Mesaj 8: b04-d-goz-5
+
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). Göz yansıması dizisi 5/5: yerine konup kapatılması; ışığın çekilişi. Dayanak: b04-s07 parça 2; i-b04-011.*
+
+```text
+Scene b04-d-goz-5. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
+
+CAMERA: Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.
+
+SUBJECT: Extreme close-up of one eye of the first boy again (light-brown skin, thick black brows): the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light stands upright alone on the slope; the tall white light rises and fades into the sky. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.
+
+LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
+
+LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.
+
+DO NOT DRAW: any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears
+
+BEFORE YOU OUTPUT, CHECK AND FIX: exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids; the reflection sits inside the iris and shows only the hillside and what the prompt lists; no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light; no blood, heart, chest, knife or body parts; no text, letters, crosses, minarets, domes or crescents.
+
+Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks.
+```
+
+## Mesaj 9: b04-d-mekkeye-donus
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`, `karakter-halime.png`, `karakter-haris.png`
 
@@ -103,7 +238,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 2 people; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 4: b04-d-ust-mahalle
+## Mesaj 10: b04-d-ust-mahalle
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`, `karakter-halime.png`
 
@@ -130,7 +265,7 @@ BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, t
 Rules: faces only for people the prompt allows, in simple paper cut-out style; no extra people beyond what is described; the Prophet never appears unless this prompt explicitly asks for him; no other prophet in any form; no minarets, domes, crescents, arches or tiles; no text or watermarks. No soft golden-white glow or halo anywhere; torch flames are orange-red, daylight is neutral.
 ```
 
-## Mesaj 5: b04-d-varaka-bulus
+## Mesaj 11: b04-d-varaka-bulus
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-mekke-evler.png`, `karakter-varaka.png`
 

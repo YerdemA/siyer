@@ -607,7 +607,7 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "orta",
-      "konu": "Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a rough, heavy, faceless block shaped only roughly like a standing figure. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
+      "konu": "Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a crude, heavy stone statue roughly shaped like a standing human figure with simple, primitive carved features. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
       "kisiler": [
         {
           "tarif": "Arab men of the Khuza'a in plain dark tunics and head cloths",
@@ -619,7 +619,7 @@
         "nesne-kabe-alcak.png"
       ],
       "isik": "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.",
-      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, detailed idol faces, gold, jewels",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, gold, jewels",
       "not": "Dinamizm turu d1 (A). s06'nın ilk çekimi (10 sn) yalnız gece Kâbe'si. Dayanak: b01-s06 parça 0; i-b01-007."
     },
     {
@@ -743,12 +743,12 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "orta",
-      "konu": "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it in rows: crudely carved stone figures of different sizes and plain standing stones, some on low bases; no recognisable faces, no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
+      "konu": "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
       "ekle": [
         "nesne-kabe-alcak.png"
       ],
       "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
-      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, detailed faces on idols, writing",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing",
       "not": "Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0, 1; i-b01-008."
     },
     {
@@ -901,42 +901,6 @@
       "not": "Dinamizm turu d1 (B). s12'nin üçüncü çekimi aynı konak görseli. Dayanak: b01-s12 parça 2; i-b01-018."
     },
     {
-      "id": "b01-d-necasi",
-      "tur": "d1",
-      "dosya": "b01-d-necasi.webp",
-      "katman": "necasi",
-      "isleme": "opak",
-      "sahneler": [
-        "b01-s12"
-      ],
-      "sahne": "b01-s12",
-      "parca": [
-        3
-      ],
-      "oncelik": "A",
-      "tip": "mekan",
-      "cekim": "orta",
-      "konu": "Daytime, the plain stone audience hall of the king of Abyssinia: the king, an African ruler of about 50 with a short grey-black beard, sits on a simple wooden throne in a white robe with a dark red mantle; before him a young Arab man (Ja'far) of about 25 with a short black beard, off-white head cloth and a short brown cloak speaks calmly with one hand open; Abyssinian courtiers stand at the sides.",
-      "kisiler": [
-        {
-          "tarif": "the king of Abyssinia (the Negus), an African ruler of about 50 with a short grey-black beard, a white robe and a dark red mantle, no crown",
-          "poz": "seated on a plain wooden throne at the right."
-        },
-        {
-          "tarif": "Ja'far ibn Abi Talib as a young man of about 25 with a short black beard, an off-white head cloth, a cream tunic and a short brown cloak",
-          "poz": "standing at the left, facing the king, one hand open."
-        },
-        {
-          "tarif": "Abyssinian courtiers in white wrapped garments",
-          "sayi": 4,
-          "poz": "standing at both sides."
-        }
-      ],
-      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
-      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, crowns, writing, gold ornaments",
-      "not": "Dinamizm turu d1 (A). s12'nin son çekimi (15 sn) konak görselinin kadrajı; Ca'fer'in konuşması görüntüsüz. Dayanak: b01-s12 parça 3; i-b01-019."
-    },
-    {
       "id": "b01-d-zulum",
       "tur": "d1",
       "dosya": "b01-d-zulum.webp",
@@ -949,7 +913,7 @@
       "parca": [
         3
       ],
-      "oncelik": "B",
+      "oncelik": "A",
       "tip": "mekan",
       "cekim": "orta",
       "konu": "Daytime, at a well in a dry valley: a broad, richly dressed man pushes an old, poor man in a ragged cloak away from the well; the old man's empty water skin falls to the ground; two bystanders turn their faces away.",
@@ -970,7 +934,7 @@
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, weapons, beating, women",
-      "not": "Dinamizm turu d1 (B). Aynı uzun parçanın ikinci yarısı: 'güçlünün zayıfı ezdiği' cümlesi. Dayanak: b01-s12 parça 3; i-b01-019."
+      "not": "Dinamizm turu d1 (A). s12'nin son çekimi (15 sn) konak görselinin kadrajı. Parça bölünür: önce b01-d-putlar (putlara tapma), sonra bu ('güçlünün zayıfı ezdiği'). Dayanak: b01-s12 parça 3; i-b01-019."
     }
   ],
   "uretimler": []

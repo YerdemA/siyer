@@ -404,7 +404,175 @@
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, angels, light beams, any adult",
-      "not": "Dinamizm turu d1 (B). s07 tek görsel 23 sn; olay bilinçli olarak gösterilmiyor (Erdem'e soru: aşağıda). Dayanak: b04-s07 parça 0; i-b04-011."
+      "not": "Dinamizm turu d1 (B). s07 tek görsel 23 sn. Açılış: çocukların oynadığı yamaç; olay ardından çocukların gözlerindeki yansımayla anlatılır (b04-d-goz-1…5). Dayanak: b04-s07 parça 0; i-b04-011."
+    },
+    {
+      "id": "b04-d-cocuk-yuzler",
+      "tur": "d1",
+      "dosya": "b04-d-cocuk-yuzler.webp",
+      "katman": "cocuk-yuzler",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        0
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Daytime, on the hillside: close shot of three small Bedouin children side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame.",
+      "kisiler": [
+        {
+          "tarif": "Bedouin children of about 4 to 7, simple undyed tunics, small dark head cloths, faces simple and dignified",
+          "sayi": 3,
+          "poz": "side by side, heads turned to the left."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, anything they are looking at, light beams, angels",
+      "not": "Dinamizm turu d1 (B). Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor. Dayanak: b04-s07 parça 0; i-b04-011."
+    },
+    {
+      "id": "b04-d-goz-1",
+      "tur": "d1",
+      "dosya": "b04-d-goz-1.webp",
+      "katman": "goz-1",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "detay",
+      "konu": "Extreme close-up of one eye of a small Bedouin boy with light-brown skin and thick black brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: a few lambs on the slope and the tiny warm golden-white light among them; from the sky a tall white light descends towards it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+      "isik": "LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.",
+      "denetim": [
+        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+        "no blood, heart, chest, knife or body parts",
+        "no text, letters, crosses, minarets, domes or crescents"
+      ],
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 1/5: Cebrâil'in gelişi. Dayanak: b04-s07 parça 0; i-b04-011."
+    },
+    {
+      "id": "b04-d-goz-2",
+      "tur": "d1",
+      "dosya": "b04-d-goz-2.webp",
+      "katman": "goz-2",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "detay",
+      "konu": "Extreme close-up of one eye of a small Bedouin girl with darker skin and fine brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a dark head covering drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light lies low on the ground; the tall white light bends over it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+      "isik": "LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.",
+      "denetim": [
+        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+        "no blood, heart, chest, knife or body parts",
+        "no text, letters, crosses, minarets, domes or crescents"
+      ],
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 2/5: yere yatırılması. Dayanak: b04-s07 parça 1; i-b04-011."
+    },
+    {
+      "id": "b04-d-goz-3",
+      "tur": "d1",
+      "dosya": "b04-d-goz-3.webp",
+      "katman": "goz-3",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "detay",
+      "konu": "Extreme close-up of one eye of an older Bedouin boy with sun-browned skin and a scar-free, smooth brow: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: out of the tiny warm golden-white light, the tall white light lifts away one small dark speck, which dissolves into the air like smoke. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+      "isik": "LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.",
+      "denetim": [
+        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+        "no blood, heart, chest, knife or body parts",
+        "no text, letters, crosses, minarets, domes or crescents"
+      ],
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 3/5: kalbinden pıhtının alınması (yalnız ışık ve koyu bir nokta). Dayanak: b04-s07 parça 1; i-b04-011."
+    },
+    {
+      "id": "b04-d-goz-4",
+      "tur": "d1",
+      "dosya": "b04-d-goz-4.webp",
+      "katman": "goz-4",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "detay",
+      "konu": "Extreme close-up of one eye of a small Bedouin boy with olive skin and curly black hair at the temple: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: beside the tiny warm golden-white light stands a simple golden basin filled with clear water, the tall white light above it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+      "isik": "LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.",
+      "denetim": [
+        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+        "no blood, heart, chest, knife or body parts",
+        "no text, letters, crosses, minarets, domes or crescents"
+      ],
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 4/5: altın leğende Zemzem'le yıkanma. Dayanak: b04-s07 parça 2; i-b04-011."
+    },
+    {
+      "id": "b04-d-goz-5",
+      "tur": "d1",
+      "dosya": "b04-d-goz-5.webp",
+      "katman": "goz-5",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "detay",
+      "konu": "Extreme close-up of one eye of the first boy again (light-brown skin, thick black brows): the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light stands upright alone on the slope; the tall white light rises and fades into the sky. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+      "isik": "LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.",
+      "denetim": [
+        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+        "no blood, heart, chest, knife or body parts",
+        "no text, letters, crosses, minarets, domes or crescents"
+      ],
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 5/5: yerine konup kapatılması; ışığın çekilişi. Dayanak: b04-s07 parça 2; i-b04-011."
     },
     {
       "id": "b04-d-mekkeye-donus",

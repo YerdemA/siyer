@@ -8,8 +8,9 @@ Son güncelleme: 2026-11-21.
 
 **Kaldığımız yer (2026-11-22, akşam): dinamizm turu d1** (Erdem istedi: uzun tek görselli ve yalnız Kâbe'li sahneler sıkıcı).
 - 10 bölüm ölçüldü: 39 dakikanın ~%37'si ya yalnız ortak Mekke/Kâbe çekimi ya da 20 sn'den uzun tek görsel; en kötüleri b02 (%62), b10 (%58), b07 (%55). Değerlendirme ve görsel listesi: `docs/DINAMIZM.md`.
-- **85 yeni görsel istemi** (54 A, 31 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
-- **Sırada:** Erdem görselleri üretir (önerilen sıra b02 → b10 → b07 → b01 → b08 → b03 → diğerleri) ve `DINAMIZM.md` sonundaki 3 soruyu cevaplar. Görseller gelince: denetim, `gorsel_katman.py --opak`, `cekimler[]`'e yerleştirme (uzun parçalar metin değişmeden bölünür), doğrulama, önizleme.
+- **90 yeni görsel istemi** (57 A, 33 B), hepsi tam dolu `mekan`: `content/gorseller/istemler/bXX.json` içinde `tur: "d1"` (kaynak `tools/dinamik_istemler.py`), mesajlar `bXX-d1-chatgpt.md`. Efendimiz çizilmez; gereken 7 görselde yeri boş bırakılır.
+- Erdem'in kararları (2026-11-22): putlar şekli kaynakta yoksa farklı biçimlerde yaklaşık put; göğsün yarılması çocukların gözündeki yansımada, 5 göz yakın planı (`b04-d-goz-1…5`, ışıklar istisna olarak görselde); b01 ve b02'de inisiyatif bende (Necâşî çıkarıldı, Kasvâ'da Efendimiz yok). `GORSEL_USLUP.md` güncellendi.
+- **Sırada:** Erdem görselleri üretir (önerilen sıra b02 → b10 → b07 → b01 → b08 → b03 → diğerleri) Görseller gelince: denetim, `gorsel_katman.py --opak`, `cekimler[]`'e yerleştirme (uzun parçalar metin değişmeden bölünür), doğrulama, önizleme.
 
 **Önceki (2026-11-22): boyut küçültme ve bölüm indirme** (Erdem, kapalı testten önce istedi).
 - **Bölüm indirme: Play Asset Delivery** (Erdem seçti; sunucu yok, INTERNET izni yok, gizlilik metni değişmez). b01 uygulamaya gömülü; b02–b10 isteğe bağlı paket (`app/android/paketler/bNN`, `icerik_esitle` üretir, git dışı). Ayrıntı: `docs/ICERIK_SEMASI.md` → Bölüm paketleri.

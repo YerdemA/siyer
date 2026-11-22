@@ -57,7 +57,7 @@ Scene b03-d-kura-oklari. ONE image, landscape 3:2. Flat paper cut-out style of t
 
 CAMERA: Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.
 
-SUBJECT: Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large carved stone idol, out of focus, no face detail.
+SUBJECT: Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large idol roughly shaped like a human figure with primitive carved features, out of focus.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
 1. the custodian of the idol, only his hands and forearms in a dark cloak are visible. Pose and place: hands in the centre holding the quiver.
@@ -66,7 +66,7 @@ LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important con
 
 LIGHT: dim interior: deep brown shadows; the only warm light is the small oil lamp at the left; no moon glow, no halo.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, faces, blood, knives, writing on arrows
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, human faces, blood, knives, writing on arrows
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 

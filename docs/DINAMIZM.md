@@ -11,17 +11,17 @@ Her sahnenin anlatım süresi ses dosyasından alındı ve metin uzunluğuna gö
 
 | Bölüm | Süre | Ortak ya da uzun çekim süresi | Oran | Yeni görsel (A + B) |
 |---|---|---|---|---|
-| b01 Câhiliye Mekke'si | 5:30 | 94 sn | %28 | 10 + 6 |
+| b01 Câhiliye Mekke'si | 5:30 | 94 sn | %28 | 10 + 5 |
 | b02 Fil Vakası | 5:46 | 215 sn | **%62** | 15 + 7 |
 | b03 Doğum | 3:37 | 80 sn | %37 | 4 + 2 |
-| b04 Süt Anne | 3:34 | 46 sn | %21 | 3 + 2 |
+| b04 Süt Anne | 3:34 | 46 sn | %21 | 8 + 3 |
 | b05 Yetimlik | 2:12 | 35 sn | %26 | 1 + 1 |
 | b06 Ebû Tâlib | 3:11 | 31 sn | %16 | 2 + 2 |
 | b07 Gençlik | 4:17 | 141 sn | **%55** | 6 + 3 |
 | b08 el-Emîn | 4:02 | 56 sn | %23 | 5 + 3 |
 | b09 Hakem | 3:21 | 38 sn | %19 | 2 + 1 |
 | b10 Hira'nın Eşiği | 4:06 | 143 sn | **%58** | 6 + 4 |
-| **Toplam** | **39 dk** | **~880 sn** | **%37** | **54 + 31 = 85** |
+| **Toplam** | **39 dk** | **~880 sn** | **%37** | **57 + 33 = 90** |
 
 En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnız Kâbe), b10-s06 (38 sn), b06-s11 (31 sn), b07-s13 (29 sn), b10-s04 (29 sn), b02-s12, b02-s09, b02-s10 (27 sn).
 
@@ -40,8 +40,8 @@ En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnı
 - Efendimiz hiçbir görsele çizilmez. Görünmesi gereken yerde istem o noktayı **boş bıraktırır** ("a tall figure will be added there later"); nurlu figürü oynatıcı çizer. Bu yerler: `b04-d-oyun`, `b04-d-varaka-bulus`, `b05-d-ev-avlu`, `b06-d-yol`, `b06-d-bahira-soru`, `b07-d-genc-katilim`, `b08-d-emanet`.
 - Diğer peygamberler hiçbir biçimde yok (b01-s02, s04: yalnız mekân ve taş).
 - Âmine, Abdullah, Halîme, Hz. Hatice ve Efendimiz'in çocukları yalnız arkadan; Ümmü Eymen kart gereği arkadan.
-- Putlar kaba yontulmuş taş figür ve dikili taş; Hübel'in özelliği çizilmez. Kan, kesim, kurban yok.
-- Karakter kartı olan herkes kartıyla gelir, mesaja referans sayfası iliştirilir. Kartı olmayan yeni kişiler (Kusay, Hâşim, Necâşî, Üneys, Esved, Düveyk, Ebû Rigāl'in kabri) için kaynakta görünüş yok; istemde sade, belirgin özellik uydurulmadan tarif edildi. Tekrar etmedikleri için kart açılmadı.
+- Putlar (Erdem, 2026-11-22): şekli kaynakta olan kaynaktaki gibi; olmayan farklı biçimlerde, yaklaşık put görünümünde (kaba insan biçimli taş ve ahşap heykeller, dikili taşlar). Yerel kaynaklarda Hübel'in şekli yok. Kan, kesim, kurban yok.
+- Karakter kartı olan herkes kartıyla gelir, mesaja referans sayfası iliştirilir. Kartı olmayan yeni kişiler (Kusay, Hâşim, Üneys, Esved, Düveyk, Ebû Rigāl'in kabri) için kaynakta görünüş yok; istemde sade, belirgin özellik uydurulmadan tarif edildi. Tekrar etmedikleri için kart açılmadı.
 - Her istemin `not` alanında dayandığı anlatım parçası ve iddia kimlikleri yazılı. Görsel, anlatımın söylediğinden fazlasını göstermez.
 
 ## Üretim
@@ -70,15 +70,22 @@ En durağan çekimler: b08-s10 (40 sn tek aile görseli), b02-s16 (39 sn, yalnı
 - **b06-s13:** `b06-ev-ici` ile bölünür. **b07-s06 [2]:** Zübeyr'in komutası mevcut `b07-hasimogullari` ile.
 - **b10-s02:** Putlar yeni `b01-d-putlar`'ın gece tonuyla.
 
-## Erdem'e sorular
+## Kararlar (Erdem, 2026-11-22)
 
-1. **b04-s07 (göğsün yarılması):** Olay bugün bilinçli olarak gösterilmiyor; tepede kuzular ve boşluk var (23 sn). Önerim olayı yine göstermemek, yalnız çocukların oynadığı yamaçla (`b04-d-oyun`, nur çocuk boyunda) açmak. Altın leğen gibi bir nesne de çizilmez. Uygun mu?
-2. **b02-d-kasva (Hudeybiye, peygamberlik sonrası):** Efendimiz bu görselde yok; yalnız çökmüş Kasvâ ve çevresindekiler. Peygamberlik sonrası nurun sarıklı olup olmayacağına henüz karar vermediğimiz için böyle bıraktım. Nurlu figür istersen yanına boşluk açarım.
-3. **b01-d-necasi:** Ca'fer'in Necâşî huzurundaki konuşması peygamberlik sonrası bir sahne. Necâşî'nin görünüşü kaynakta yok; sade tarif edildi. İstersen bunun yerine yalnız `b01-d-zulum` kullanılır.
+1. **Putlar:** Yukarıdaki kural; `b01-d-put-tasima`, `b01-d-putlar`, `b03-d-kura-oklari` buna göre yazıldı.
+2. **b04-s07 (göğsün yarılması), Erdem'in fikri:** Yamaçta oynayan çocuklar (`b04-d-oyun`), sonra isteğe bağlı köprü (`b04-d-cocuk-yuzler`: çocuklar dönüp bakıyor), sonra beş çocuğun gözü aşırı yakın planda, kamera sağdan sola kayarak; her gözün yansıması olayın bir adımı:
+   1. Cebrâil'in gelişi (`goz-1`, parça 0),
+   2. yere yatırılması (`goz-2`, parça 1),
+   3. pıhtının alınması (`goz-3`, parça 1),
+   4. altın leğen ve Zemzem (`goz-4`, parça 2),
+   5. kalbin yerine konması ve ışığın çekilişi (`goz-5`, parça 2).
+   Yansımada siluet yok: Efendimiz küçük sıcak altın-beyaz ışık, Cebrâil biçimsiz uzun beyaz ışık (melek tasviri yasağı ve nur kuralı). Göğüs, kalp, kan hiç çizilmez; pıhtı ışıktan kopup dağılan koyu bir nokta. Beşinci göz ilk çocuğun gözüdür; dizi ilk bakışa döner. Yansıma çok küçük olduğundan ışıklar oynatıcıda değil görselde çizilir (`GORSEL_USLUP.md`'ye istisna olarak yazıldı).
+3. **b02 (inisiyatif bende):** Kasvâ görselinde Efendimiz yok; peygamberlik sonrası nurun biçimi o bölümlere gelince konuşulur. Diğer b02 önerileri olduğu gibi.
+4. **b01 (inisiyatif bende):** Necâşî görseli çıkarıldı (peygamberlik sonrası, kralın görünüşü kaynakta yok). Ca'fer'in sözleri anlattığı kötülüklerle görüntülenir: önce `b01-d-putlar` (yeniden kullanım), sonra `b01-d-zulum` (A'ya çıktı).
 
 ## Bölüm bölüm
 
-### b01 (10 A, 6 B)
+### b01 (10 A, 5 B)
 
 Genel durum iyi; sorun s02 (iki çekim de boş vadi, 24 sn), s05/s06/s09/s10'daki ortak Kâbe çekimleri ve s11–s12'nin son uzun parçaları (Kureyş suresi 16 sn, Ca'fer'in sözleri 15 sn). Hz. İbrâhim ve Hz. İsmâil sahnelerinde kişi çizilmediği için oralara yalnız mekân ve taş görüntüleri önerildi.
 
@@ -98,8 +105,7 @@ Genel durum iyi; sorun s02 (iki çekim de boş vadi, 24 sn), s05/s06/s09/s10'dak
 | `b01-d-antlasma` | s11 · 2 | B | s11'in ikinci çekimi genel kervan görseli; antlaşma anlatılıyor. |
 | `b01-d-huzur` | s11 · 4 | A | s11'in son çekimi (16 sn) yalnız ortak geniş plan; Kureyş suresinin 'doyuran, emin kılan' anlamı görüntüsüz. |
 | `b01-d-siginma` | s12 · 2 | B | s12'nin üçüncü çekimi aynı konak görseli. |
-| `b01-d-necasi` | s12 · 3 | A | s12'nin son çekimi (15 sn) konak görselinin kadrajı; Ca'fer'in konuşması görüntüsüz. |
-| `b01-d-zulum` | s12 · 3 | B | Aynı uzun parçanın ikinci yarısı: 'güçlünün zayıfı ezdiği' cümlesi. |
+| `b01-d-zulum` | s12 · 3 | A | s12'nin son çekimi (15 sn) konak görselinin kadrajı. Parça bölünür: önce b01-d-putlar (putlara tapma), sonra bu ('güçlünün zayıfı ezdiği'). |
 
 ### b02 (15 A, 7 B)
 
@@ -128,7 +134,7 @@ En durağan bölüm. 16 sahnenin 11'i tek görselle oynuyor; s09–s14 arası al
 | `b02-d-kus-yakin` | s13 · 1 | A | Aynı sahne: kuşların üç taşı (kaynakta ayrıntılı). |
 | `b02-d-yenik-ekin` | s14 · 1 | B | s14 tek görsel 22 sn; ayetin son benzetmesi ('yenilip çiğnenmiş ekin'). |
 | `b02-d-sana-donus` | s15 · 1 | B | s15 tek görsel 13 sn; Ebrehe'nin San'a'ya taşınması. |
-| `b02-d-kasva` | s16 · 2 | A | s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. |
+| `b02-d-kasva` | s16 · 2 | A | s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. Efendimiz bu görselde yok (peygamberlik sonrası nur kararı verilmedi). |
 
 ### b03 (4 A, 2 B)
 
@@ -143,14 +149,20 @@ s01 (26 sn ortak Kâbe) ve s03–s04'ün tek görselleri asıl sorun. Kalanı me
 | `b03-d-amine-bekleyis` | s08 · 1 | B | Aynı sahne: Âmine hamileyken Abdullah'ın ölümü. |
 | `b03-d-sut-anne-arayis` | s12 · 1 | B | s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu. |
 
-### b04 (3 A, 2 B)
+### b04 (8 A, 3 B)
 
 s09 (32 sn, iki çekim aynı görsel) ve s02 (23 sn) sorunlu. s07'deki olay bilinçli olarak gösterilmiyor; soruya bak.
 
 | Görsel | Sahne · parça | Öncelik | Neden |
 |---|---|---|---|
 | `b04-d-kitlik` | s02 · 1 | A | s02'nin ilk çekimi 23 sn aynı yolculuk görseli; kıtlık görüntüsüz. |
-| `b04-d-oyun` | s07 · 0 | B | s07 tek görsel 23 sn; olay bilinçli olarak gösterilmiyor (Erdem'e soru: aşağıda). |
+| `b04-d-oyun` | s07 · 0 | B | s07 tek görsel 23 sn. Açılış: çocukların oynadığı yamaç; olay ardından çocukların gözlerindeki yansımayla anlatılır (b04-d-goz-1…5). |
+| `b04-d-cocuk-yuzler` | s07 · 0 | B | Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor. |
+| `b04-d-goz-1` | s07 · 0 | A | Göz yansıması dizisi 1/5: Cebrâil'in gelişi. |
+| `b04-d-goz-2` | s07 · 1 | A | Göz yansıması dizisi 2/5: yere yatırılması. |
+| `b04-d-goz-3` | s07 · 1 | A | Göz yansıması dizisi 3/5: kalbinden pıhtının alınması (yalnız ışık ve koyu bir nokta). |
+| `b04-d-goz-4` | s07 · 2 | A | Göz yansıması dizisi 4/5: altın leğende Zemzem'le yıkanma. |
+| `b04-d-goz-5` | s07 · 2 | A | Göz yansıması dizisi 5/5: yerine konup kapatılması; ışığın çekilişi. |
 | `b04-d-mekkeye-donus` | s09 · 0 | A | s09'un iki çekimi aynı görsel (32 sn). |
 | `b04-d-ust-mahalle` | s09 · 1 | A | Aynı sahne: Efendimiz'in şehrin yukarısında kaybolması. |
 | `b04-d-varaka-bulus` | s09 · 2 | B | Aynı sahne: Varaka ve bir Kureyşli'nin onu bulup getirmesi. |

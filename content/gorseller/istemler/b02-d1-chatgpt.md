@@ -601,7 +601,7 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 ## Mesaj 22: b02-d-kasva
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. Dayanak: b02-s16 parça 2; i-b02-019.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. Efendimiz bu görselde yok (peygamberlik sonrası nur kararı verilmedi). Dayanak: b02-s16 parça 2; i-b02-019.*
 
 ```text
 Scene b02-d-kasva. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.

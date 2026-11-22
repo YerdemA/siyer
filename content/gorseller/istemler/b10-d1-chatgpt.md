@@ -67,7 +67,7 @@ LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important con
 
 LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, knives, detailed idol face
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, knives
 
 BEFORE YOU OUTPUT, CHECK AND FIX: the individually listed people are all there, nobody extra; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
@@ -237,7 +237,7 @@ LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important con
 
 LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, slaughter, knives, detailed idol face
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, blood, slaughter, knives
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 4 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
