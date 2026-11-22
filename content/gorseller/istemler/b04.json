@@ -341,6 +341,173 @@
       ],
       "yasak": "child, light, glow, Kaaba, ground.",
       "eski_istem": "A handsome, imposing Arab man of Quraysh in a simple head cloth, standing with his back to the viewer, hands raised in prayer. Full figure. No child, no light, no glow. {yesil_perde_eki}"
+    },
+    {
+      "id": "b04-d-kitlik",
+      "tur": "d1",
+      "dosya": "b04-d-kitlik.webp",
+      "katman": "kitlik",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s02"
+      ],
+      "sahne": "b04-s02",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a Bedouin camp in a drought: dry, cracked ground, a few thin goats with ribs showing nose at bare stones, an empty, flattened water skin hangs from a tent pole; no green anywhere.",
+      "kisiler": [
+        {
+          "tarif": "thin goats",
+          "sayi": 4,
+          "hayvan": true,
+          "poz": "around the tents."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, bodies, bones, blood",
+      "not": "Dinamizm turu d1 (A). s02'nin ilk çekimi 23 sn aynı yolculuk görseli; kıtlık görüntüsüz. Dayanak: b04-s02 parça 1; i-b04-004."
+    },
+    {
+      "id": "b04-d-oyun",
+      "tur": "d1",
+      "dosya": "b04-d-oyun.webp",
+      "katman": "oyun",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        0
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, a grassy-brown hillside in the land of the Banu Sa'd: a few small children play among grazing lambs, seen from far and from behind; at the centre-left, an open spot on the hillside: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow.",
+      "kisiler": [
+        {
+          "tarif": "small Bedouin children seen from behind",
+          "sayi": 3,
+          "poz": "playing at the right."
+        },
+        {
+          "tarif": "lambs",
+          "sayi": 6,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "grazing around."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, angels, light beams, any adult",
+      "not": "Dinamizm turu d1 (B). s07 tek görsel 23 sn; olay bilinçli olarak gösterilmiyor (Erdem'e soru: aşağıda). Dayanak: b04-s07 parça 0; i-b04-011."
+    },
+    {
+      "id": "b04-d-mekkeye-donus",
+      "tur": "d1",
+      "dosya": "b04-d-mekkeye-donus.webp",
+      "katman": "mekkeye-donus",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s09"
+      ],
+      "sahne": "b04-s09",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Late afternoon, the road into the Mecca valley: Halima riding her grey donkey and al-Harith walking beside it come down towards the first houses; Halima seen strictly from behind.",
+      "kisiler": [
+        {
+          "karakter": "halime",
+          "poz": "on the donkey, strictly from behind."
+        },
+        {
+          "karakter": "haris",
+          "poz": "walking beside the donkey."
+        },
+        {
+          "tarif": "thin grey donkey",
+          "hayvan": true,
+          "poz": "carrying Halima."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Halima's face or profile, glow",
+      "not": "Dinamizm turu d1 (A). s09'un iki çekimi aynı görsel (32 sn). Dayanak: b04-s09 parça 0; i-b04-012."
+    },
+    {
+      "id": "b04-d-ust-mahalle",
+      "tur": "d1",
+      "dosya": "b04-d-ust-mahalle.webp",
+      "katman": "ust-mahalle",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s09"
+      ],
+      "sahne": "b04-s09",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the upper part of Mecca: a narrow, stony lane climbing between flat-roofed houses on the slope; Halima, seen strictly from behind, hurries up the lane looking left and right; nobody else.",
+      "kisiler": [
+        {
+          "karakter": "halime",
+          "poz": "in the lane, strictly from behind, hurrying."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Halima's face or profile, children, glow",
+      "not": "Dinamizm turu d1 (A). Aynı sahne: Efendimiz'in şehrin yukarısında kaybolması. Dayanak: b04-s09 parça 1; i-b04-014."
+    },
+    {
+      "id": "b04-d-varaka-bulus",
+      "tur": "d1",
+      "dosya": "b04-d-varaka-bulus.webp",
+      "katman": "varaka-bulus",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s09"
+      ],
+      "sahne": "b04-s09",
+      "parca": [
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a lane in Mecca: Waraqa ibn Nawfal and another man of Quraysh walk towards the viewer; between them, at child height, a spot is left empty: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow (a small child's figure).",
+      "kisiler": [
+        {
+          "karakter": "varaka",
+          "poz": "at the left, walking, one hand lowered towards the empty spot."
+        },
+        {
+          "tarif": "a man of Quraysh of about 40 with a black beard, sand head cloth and brown cloak",
+          "poz": "at the right, walking."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any child drawn, glow",
+      "not": "Dinamizm turu d1 (B). Aynı sahne: Varaka ve bir Kureyşli'nin onu bulup getirmesi. Dayanak: b04-s09 parça 2; i-b04-014."
     }
   ],
   "uretimler": [

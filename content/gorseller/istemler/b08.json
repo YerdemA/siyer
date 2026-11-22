@@ -335,6 +335,251 @@
       "yerlesim": "All four stand on one horizontal foot line in the lower part of the image; leave an empty gap about one person wide at the far right, next to Ali.",
       "yasak": "the Prophet, any glowing figure, halo, any figure in the gap, food, women, ground, buildings.",
       "not": "İbn Hişâm (s. 159), ALİ (s. 371): kıtlıkta Efendimiz Ali'yi, Abbas Ca'fer'i aldı. Ebû Tâlib 535 doğumlu → ~605'te 70; Ali ~5 (ALİ s. 371)."
+    },
+    {
+      "id": "b08-d-emanet",
+      "tur": "d1",
+      "dosya": "b08-d-emanet.webp",
+      "katman": "emanet",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s01"
+      ],
+      "sahne": "b08-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in front of a house in Mecca: two men of Quraysh hold out a tied, sealed bundle of goods towards the right, trusting; at the right, a place is left empty at the height of a tall man: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow.",
+      "kisiler": [
+        {
+          "karakter": "kureysli",
+          "sayi": 2,
+          "poz": "at the left, holding out the bundle."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, coins with writing",
+      "not": "Dinamizm turu d1 (A). s01 tek devralınmış görsel 18 sn; 'el-Emîn' cümlesi. Dayanak: b08-s01 parça 1; i-b08-002."
+    },
+    {
+      "id": "b08-d-rahip-meysere",
+      "tur": "d1",
+      "dosya": "b08-d-rahip-meysere.webp",
+      "katman": "rahip-meysere",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s05"
+      ],
+      "sahne": "b08-s05",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, beside the stone monastery near Busra: the monk speaks to Maysara and points towards a large shade tree in the distance; Maysara listens.",
+      "kisiler": [
+        {
+          "karakter": "nestura",
+          "poz": "at the left, pointing to the right."
+        },
+        {
+          "karakter": "meysere",
+          "poz": "at the right, listening."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, anyone under the tree",
+      "not": "Dinamizm turu d1 (B). s05 tek görsel 16 sn. Dayanak: b08-s05 parça 1; i-b08-007."
+    },
+    {
+      "id": "b08-d-kizlar",
+      "tur": "d1",
+      "dosya": "b08-d-kizlar.webp",
+      "katman": "kizlar",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s10"
+      ],
+      "sahne": "b08-s10",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the courtyard of Khadija's house: four young girls of different ages sit together on a mat, seen strictly from behind: one spins wool, one holds a small basket, two talk; Khadija sits behind them in the shade, also from behind.",
+      "kisiler": [
+        {
+          "tarif": "girls of about 6 to 14 seen strictly from behind, simple dresses in muted colours and head coverings",
+          "sayi": 4,
+          "poz": "seated in a row on the mat."
+        },
+        {
+          "karakter": "hatice",
+          "poz": "seated behind them, strictly from behind."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any face or profile, glow",
+      "not": "Dinamizm turu d1 (A). s10 tek görsel 40 sn (en uzun durağan çekimlerden). Dayanak: b08-s10 parça 1; i-b08-015."
+    },
+    {
+      "id": "b08-d-kasim-kabir",
+      "tur": "d1",
+      "dosya": "b08-d-kasim-kabir.webp",
+      "katman": "kasim-kabir",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s10"
+      ],
+      "sahne": "b08-s10",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dusk, a small, simple grave marked by a few stones in a quiet place at the foot of a bare hill near Mecca; no one there.",
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, writing, flowers, glow",
+      "not": "Dinamizm turu d1 (A). Aynı sahne: Kâsım'ın vefatı. Dayanak: b08-s10 parça 2; i-b08-016."
+    },
+    {
+      "id": "b08-d-hicret-yolu",
+      "tur": "d1",
+      "dosya": "b08-d-hicret-yolu.webp",
+      "katman": "hicret-yolu",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s10"
+      ],
+      "sahne": "b08-s10",
+      "parca": [
+        3
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Dawn, a long desert road leading north: a few women on camels travel in a small group, seen very small and from behind.",
+      "kisiler": [
+        {
+          "tarif": "women wrapped in dark cloaks, seen from behind on camels",
+          "sayi": 3,
+          "poz": "small, far on the road."
+        },
+        {
+          "tarif": "camels",
+          "sayi": 3,
+          "hayvan": true,
+          "poz": "carrying them."
+        }
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, faces, glow",
+      "not": "Dinamizm turu d1 (B). Aynı sahne: kızlarının hicreti. Dayanak: b08-s10 parça 3; i-b08-017."
+    },
+    {
+      "id": "b08-d-zeyd-kacirilis",
+      "tur": "d1",
+      "dosya": "b08-d-zeyd-kacirilis.webp",
+      "katman": "zeyd-kacirilis",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s11"
+      ],
+      "sahne": "b08-s11",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, desert: a band of mounted raiders leads away a small boy on foot by the hand; the boy is seen from behind; in the distance, a woman on a camel reaches out after him.",
+      "kisiler": [
+        {
+          "tarif": "raiders on horses, dark wrapped head cloths covering most of their faces",
+          "sayi": 3,
+          "poz": "at the right, riding away."
+        },
+        {
+          "tarif": "a boy of about 8 seen from behind, plain tunic",
+          "poz": "led by the hand."
+        },
+        {
+          "tarif": "a woman wrapped in a dark cloak on a camel, from behind",
+          "poz": "far at the left."
+        },
+        {
+          "tarif": "camel",
+          "hayvan": true,
+          "poz": "carrying the woman."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, weapons in use, chains",
+      "not": "Dinamizm turu d1 (A). s11'in ikinci çekimi aynı görsel (20 sn). Dayanak: b08-s11 parça 1; i-b08-018."
+    },
+    {
+      "id": "b08-d-kitlik",
+      "tur": "d1",
+      "dosya": "b08-d-kitlik.webp",
+      "katman": "kitlik",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s14"
+      ],
+      "sahne": "b08-s14",
+      "parca": [
+        0
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a dry courtyard in Mecca during a famine: empty storage jars stand open, a single thin goat, a few dry date stones on a mat.",
+      "kisiler": [
+        {
+          "tarif": "thin goat",
+          "hayvan": true,
+          "poz": "at the right."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, bodies, bones",
+      "not": "Dinamizm turu d1 (B). s14'ün ikinci çekimi 19 sn aynı görsel. Dayanak: b08-s14 parça 0; i-b08-023."
+    },
+    {
+      "id": "b08-d-hatira",
+      "tur": "d1",
+      "dosya": "b08-d-hatira.webp",
+      "katman": "hatira",
+      "isleme": "opak",
+      "sahneler": [
+        "b08-s15"
+      ],
+      "sahne": "b08-s15",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Night, inside the room of a house, lit by a small oil lamp: a cushion on a mat with a folded deep wine-red-brown cloak of fine wool laid on it; a spindle and a small wooden box beside it; nobody in the room.",
+      "isik": "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, faces, glow around objects",
+      "not": "Dinamizm turu d1 (A). s15 tek ortak Kâbe görseli 16 sn. Dayanak: b08-s15 parça 0; i-b08-024."
     }
   ],
   "uretimler": [

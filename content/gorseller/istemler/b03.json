@@ -301,6 +301,199 @@
       ],
       "yasak": "people, animals, ground, domes, arches, decorations, inscriptions.",
       "not": "İbn Hişâm s. 100: Abdülmuttalib, Abdullah'ı Vehb b. Abdümenâf'a götürür. Evin biçimi kaynakta yok: mekke-evler'le aynı sade ev. Atıf sayfası taramadan doğrulanmalı (b03-dogum.json iddiası)."
+    },
+    {
+      "id": "b03-d-kabileler",
+      "tur": "d1",
+      "dosya": "b03-d-kabileler.webp",
+      "katman": "kabileler",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s01"
+      ],
+      "sahne": "b03-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Dawn, a vast Arabian landscape seen from far: several tribal encampments of goat-hair tents with herds spread across valleys and plains, smoke rising; far away, the narrow valley of Mecca between bare mountains.",
+      "kisiler": [
+        {
+          "tarif": "tiny figures and herds",
+          "sayi": 20,
+          "yaklasik": true,
+          "poz": "scattered among the camps, very small."
+        }
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, writing, banners, maps",
+      "not": "Dinamizm turu d1 (A). s01 tek ortak Kâbe görseli 26 sn; hadis kabilelerden söz ediyor. Dayanak: b03-s01 parça 1; i-b03-002."
+    },
+    {
+      "id": "b03-d-kura-oklari",
+      "tur": "d1",
+      "dosya": "b03-d-kura-oklari.webp",
+      "katman": "kura-oklari",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s03"
+      ],
+      "sahne": "b03-s03",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large carved stone idol, out of focus, no face detail.",
+      "kisiler": [
+        {
+          "tarif": "the custodian of the idol, only his hands and forearms in a dark cloak are visible",
+          "poz": "hands in the centre holding the quiver."
+        }
+      ],
+      "isik": "LIGHT: dim interior: deep brown shadows; the only warm light is the small oil lamp at the left; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, faces, blood, knives, writing on arrows",
+      "not": "Dinamizm turu d1 (A). s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. Dayanak: b03-s03 parça 0; i-b03-004."
+    },
+    {
+      "id": "b03-d-on-deve",
+      "tur": "d1",
+      "dosya": "b03-d-on-deve.webp",
+      "katman": "on-deve",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s04"
+      ],
+      "sahne": "b03-s04",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in an open space near the Ka'ba: ten camels stand in a line; a little apart stands Abdullah, seen strictly from behind; Abdul-Muttalib stands beside him. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
+      "kisiler": [
+        {
+          "karakter": "abdullah",
+          "poz": "at the left, strictly from behind."
+        },
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "beside him, three-quarter view."
+        },
+        {
+          "tarif": "camels",
+          "sayi": 10,
+          "hayvan": true,
+          "poz": "in one line at the right."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, knives, sacrifice",
+      "not": "Dinamizm turu d1 (A). s04 tek uzak görsel 26 sn; kura usulü (on deve) anlatılıyor. Dayanak: b03-s04 parça 1; i-b03-005."
+    },
+    {
+      "id": "b03-d-yesrib-hasta",
+      "tur": "d1",
+      "dosya": "b03-d-yesrib-hasta.webp",
+      "katman": "yesrib-hasta",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s08"
+      ],
+      "sahne": "b03-s08",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Night, a simple room in a house in Yathrib, lit by a small oil lamp: a young man lies covered on a bed, seen only from behind (back of the head and the blanket); two older men of the Banu Najjar sit beside him with bowed heads.",
+      "kisiler": [
+        {
+          "karakter": "abdullah",
+          "poz": "lying on the bed, strictly from behind, mostly covered."
+        },
+        {
+          "tarif": "older men of Yathrib with grey beards, plain cloaks",
+          "sayi": 2,
+          "poz": "sitting beside the bed, heads bowed."
+        }
+      ],
+      "isik": "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Abdullah's face or profile, blood, death detail",
+      "not": "Dinamizm turu d1 (A). s08 tek kervan görseli 18 sn; Yesrib'deki hastalık ve vefat görüntüsüz. Dayanak: b03-s08 parça 0; i-b03-010."
+    },
+    {
+      "id": "b03-d-amine-bekleyis",
+      "tur": "d1",
+      "dosya": "b03-d-amine-bekleyis.webp",
+      "katman": "amine-bekleyis",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s08"
+      ],
+      "sahne": "b03-s08",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dusk, the doorway of a house in Mecca: Amina stands in the doorway seen strictly from behind, looking out along a lane towards the northern road.",
+      "kisiler": [
+        {
+          "karakter": "amine",
+          "poz": "in the doorway, strictly from behind."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Amina's face or profile, any other person",
+      "not": "Dinamizm turu d1 (B). Aynı sahne: Âmine hamileyken Abdullah'ın ölümü. Dayanak: b03-s08 parça 1; i-b03-010."
+    },
+    {
+      "id": "b03-d-sut-anne-arayis",
+      "tur": "d1",
+      "dosya": "b03-d-sut-anne-arayis.webp",
+      "katman": "sut-anne-arayis",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s12"
+      ],
+      "sahne": "b03-s12",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, at the edge of Mecca: Abdul-Muttalib stands at the mouth of the valley looking out towards the desert road where a few small travellers come and go.",
+      "kisiler": [
+        {
+          "karakter": "abdulmuttalib",
+          "poz": "at the left, looking to the right."
+        },
+        {
+          "tarif": "small distant travellers on donkeys",
+          "sayi": 3,
+          "poz": "far away on the road."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any baby, glow",
+      "not": "Dinamizm turu d1 (B). s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu. Dayanak: b03-s12 parça 1; i-b03-015."
     }
   ],
   "uretimler": [

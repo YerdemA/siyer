@@ -521,6 +521,101 @@
       "istem": "Far away and small in the frame: two groups of men in robes and head cloths standing apart with an empty gap between them, the groups turned toward each other, tense postures, harsh midday shadows. Faces are flat dark shapes under the head cloths: no eyes, no noses, no beards, no mouths, no profiles with visible features. {yesil_perde_eki}",
       "not": "Önceki denemede birbirine dönük figürler profilden burun ve sakal gösterdi; uzaklık kaldıraç.",
       "ham": "s08b-iki-grup.png"
+    },
+    {
+      "id": "b09-d-duvar-boy",
+      "tur": "d1",
+      "dosya": "b09-d-duvar-boy.webp",
+      "katman": "duvar-boy",
+      "isleme": "opak",
+      "sahneler": [
+        "b09-s01"
+      ],
+      "sahne": "b09-s01",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dawn, the corner of the low, roofless Ka'ba seen close: rough, unmortared stones stacked in uneven courses, the wall a little taller than a man; one man of Quraysh stands beside it for scale, looking up at it. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
+      "kisiler": [
+        {
+          "karakter": "kureysli",
+          "poz": "at the left, beside the wall, looking up."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, roof, cloth covering, idols in the foreground",
+      "not": "Dinamizm turu d1 (A). s01 tek ortak Kâbe görseli 17 sn; duvarların tarifi. Dayanak: b09-s01 parça 0; i-b09-003."
+    },
+    {
+      "id": "b09-d-duveyk",
+      "tur": "d1",
+      "dosya": "b09-d-duveyk.webp",
+      "katman": "duveyk",
+      "isleme": "opak",
+      "sahneler": [
+        "b09-s02"
+      ],
+      "sahne": "b09-s02",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a lane in Mecca: men of Quraysh confront a frightened man (Duwayk, a freed slave of the Khuza'a) who holds an open cloth bundle; one of them points at it.",
+      "kisiler": [
+        {
+          "tarif": "Duwayk, a thin man of about 40 with a short beard, a worn brown tunic and no head cloth",
+          "poz": "at the right, holding an open bundle."
+        },
+        {
+          "karakter": "kureysli",
+          "sayi": 3,
+          "poz": "at the left, one pointing."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, gold glowing, writing, blood",
+      "not": "Dinamizm turu d1 (B). s02 tek görsel 17 sn; hazinenin bulunması. Dayanak: b09-s02 parça 1; i-b09-005."
+    },
+    {
+      "id": "b09-d-yuksek-kapi",
+      "tur": "d1",
+      "dosya": "b09-d-yuksek-kapi.webp",
+      "katman": "yuksek-kapi",
+      "isleme": "opak",
+      "sahneler": [
+        "b09-s14"
+      ],
+      "sahne": "b09-s14",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, close view of the rebuilt Ka'ba's single-leaf wooden door set high above the ground; a man of Quraysh at the foot of the wall looks up at it. The Ka'ba looks exactly like the attached reference: rebuilt, clearly taller, with a flat roof and a single-leaf door set high above the ground.",
+      "kisiler": [
+        {
+          "karakter": "kureysli",
+          "poz": "at the bottom left, looking up."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-yuksek.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, stairs, ladders, cloth covering, writing",
+      "not": "Dinamizm turu d1 (A). s14 tek ortak Kâbe görseli 21 sn. Dayanak: b09-s14 parça 1; i-b09-023."
     }
   ],
   "uretimler": [

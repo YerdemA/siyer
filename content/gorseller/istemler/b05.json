@@ -275,6 +275,75 @@
       ],
       "yasak": "child, door, house, ground.",
       "eski_istem": "In front of a modest mudbrick house in Mecca at dusk: an Arab man of Quraysh in simple clothes standing by the door, face drawn simply and calm. No child visible. {yesil_perde_eki}"
+    },
+    {
+      "id": "b05-d-ev-avlu",
+      "tur": "d1",
+      "dosya": "b05-d-ev-avlu.webp",
+      "katman": "ev-avlu",
+      "isleme": "opak",
+      "sahneler": [
+        "b05-s01"
+      ],
+      "sahne": "b05-s01",
+      "parca": [
+        0,
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Morning, the small courtyard of a house in Mecca: Amina sits in the shade by the wall, seen strictly from behind; a little in front of her, at child height, a spot is left empty: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow (a small child's figure). Simple jars and a palm-fibre mat.",
+      "kisiler": [
+        {
+          "karakter": "amine",
+          "poz": "seated at the left, strictly from behind."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: soft early-morning light, pale sky, long soft shadows; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, Amina's face or profile, any child drawn, any other person",
+      "not": "Dinamizm turu d1 (A). s01 tek ortak Kâbe görseli 14 sn. Dayanak: b05-s01 parça 0, 1; i-b05-001, i-b05-002."
+    },
+    {
+      "id": "b05-d-gece-konak",
+      "tur": "d1",
+      "dosya": "b05-d-gece-konak.webp",
+      "katman": "gece-konak",
+      "isleme": "opak",
+      "sahneler": [
+        "b05-s02"
+      ],
+      "sahne": "b05-s02",
+      "parca": [
+        1,
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Night, a caravan camp on the road to Yathrib: camels kneel by a small fire; Umm Ayman sits by the fire seen strictly from behind; beside her Amina, also from behind.",
+      "kisiler": [
+        {
+          "karakter": "ummu_eymen",
+          "poz": "by the fire, strictly from behind."
+        },
+        {
+          "karakter": "amine",
+          "poz": "beside her, strictly from behind."
+        },
+        {
+          "tarif": "camels",
+          "sayi": 3,
+          "hayvan": true,
+          "poz": "kneeling at the back."
+        }
+      ],
+      "isik": "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, women's faces or profiles, any child drawn",
+      "not": "Dinamizm turu d1 (B). s02'nin ikinci çekimi 21 sn aynı kervan. Dayanak: b05-s02 parça 1, 2; i-b05-003, i-b05-004."
     }
   ],
   "uretimler": [

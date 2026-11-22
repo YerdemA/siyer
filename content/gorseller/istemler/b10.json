@@ -347,6 +347,319 @@
       "isik": "LIGHT: soft early dawn, cool blue-grey shadows and a faint apricot sky; no glow, no light rays.",
       "yasak": "people, face or features on the stone, glow, light rays, the viewer's hands, arms, feet or body.",
       "eski_istem": "Eye-level view at dawn of a quiet corner in Mecca near mudbrick houses: a single plain, medium-sized stone standing by itself next to a wall. No people, no face or features on the stone, no glow, no light rays. No hands, arms, feet or body of the viewer anywhere in frame. {yesil_perde_eki}"
+    },
+    {
+      "id": "b10-d-tepeden",
+      "tur": "d1",
+      "dosya": "b10-d-tepeden.webp",
+      "katman": "tepeden",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s01"
+      ],
+      "sahne": "b10-s01",
+      "parca": [
+        0
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "bakis",
+      "konu": "Late afternoon, seen through his eyes from a rocky hillside above Mecca: the valley below with its houses and the tall rebuilt Ka'ba; the viewer's body, hands and feet never appear. The Ka'ba looks exactly like the attached reference: rebuilt, clearly taller, with a flat roof and a single-leaf door set high above the ground.",
+      "ekle": [
+        "nesne-kabe-yuksek.png",
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, the viewer's hands, arms or feet, any close person",
+      "not": "Dinamizm turu d1 (B). s01 tek ortak Kâbe görseli 9 sn. Dayanak: b10-s01 parça 0; i-b10-001."
+    },
+    {
+      "id": "b10-d-tavaf-put",
+      "tur": "d1",
+      "dosya": "b10-d-tavaf-put.webp",
+      "katman": "tavaf-put",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s03"
+      ],
+      "sahne": "b10-s03",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, an open area in the Mecca valley: a crowd walks in a circle around a crudely carved stone idol (the same idol as in the attached festival image); some tie cloth strips to it. No slaughter shown.",
+      "kisiler": [
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 16,
+          "yaklasik": true,
+          "poz": "walking in a circle around the idol."
+        }
+      ],
+      "ekle": [
+        "b10-put-bayrami.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, sacrifice, knives, detailed idol face",
+      "not": "Dinamizm turu d1 (A). s03'ün ikinci çekimi 19 sn aynı bileşim. Dayanak: b10-s03 parça 1; i-b10-013."
+    },
+    {
+      "id": "b10-d-dagilis",
+      "tur": "d1",
+      "dosya": "b10-d-dagilis.webp",
+      "katman": "dagilis",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s04"
+      ],
+      "sahne": "b10-s04",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Dawn, a crossroads outside Mecca: four men part ways, each walking off along a different road; two look back over their shoulders.",
+      "kisiler": [
+        {
+          "karakter": "varaka",
+          "poz": "walking to the far left."
+        },
+        {
+          "karakter": "ubeydullah",
+          "poz": "walking to the near left."
+        },
+        {
+          "karakter": "osman_huveyris",
+          "poz": "walking to the near right."
+        },
+        {
+          "karakter": "zeyd_amr",
+          "poz": "walking to the far right."
+        }
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, weapons",
+      "not": "Dinamizm turu d1 (A). s04 tek görsel 29 sn. Dayanak: b10-s04 parça 1; i-b10-014."
+    },
+    {
+      "id": "b10-d-varaka-kitap",
+      "tur": "d1",
+      "dosya": "b10-d-varaka-kitap.webp",
+      "katman": "varaka-kitap",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s04"
+      ],
+      "sahne": "b10-s04",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Night, a small room lit by an oil lamp: Waraqa sits on a mat reading a long scroll (no readable writing, only faint marks); more scrolls lie beside him.",
+      "kisiler": [
+        {
+          "karakter": "varaka",
+          "poz": "seated, reading."
+        }
+      ],
+      "isik": "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, readable writing, icons",
+      "not": "Dinamizm turu d1 (A). Aynı sahne: Varaka'nın kitaplardan bilgi edinmesi. Dayanak: b10-s04 parça 2; i-b10-015."
+    },
+    {
+      "id": "b10-d-osman-bizans",
+      "tur": "d1",
+      "dosya": "b10-d-osman-bizans.webp",
+      "katman": "osman-bizans",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s04"
+      ],
+      "sahne": "b10-s04",
+      "parca": [
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, the great stone gate of a Byzantine city with high walls: Uthman ibn al-Huwayrith arrives on a camel, looking up at the walls; guards in plain tunics at the gate.",
+      "kisiler": [
+        {
+          "karakter": "osman_huveyris",
+          "poz": "on a camel, at the left."
+        },
+        {
+          "tarif": "Byzantine guards in plain tunics and simple helmets",
+          "sayi": 2,
+          "poz": "at the gate."
+        },
+        {
+          "tarif": "camel",
+          "hayvan": true,
+          "poz": "carrying Uthman."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, domes, writing",
+      "not": "Dinamizm turu d1 (B). Aynı parça: Osman'ın Bizans'a gidişi. Dayanak: b10-s04 parça 2; i-b10-015."
+    },
+    {
+      "id": "b10-d-yahudi-alim",
+      "tur": "d1",
+      "dosya": "b10-d-yahudi-alim.webp",
+      "katman": "yahudi-alim",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s05"
+      ],
+      "sahne": "b10-s05",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the shaded portico of a stone house in Syria: Zayd ibn Amr sits on a mat listening to an old Jewish scholar with a long grey beard, a dark robe and a striped prayer shawl over his shoulders, who holds a closed scroll.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr",
+          "poz": "seated at the left, listening."
+        },
+        {
+          "tarif": "an old Jewish scholar with a long grey beard, a dark robe and a cream shawl with dark stripes over his shoulders",
+          "poz": "seated at the right, holding a closed scroll."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, writing, symbols, stars, menorahs",
+      "not": "Dinamizm turu d1 (A). s05'in ikinci çekimi aynı dua görseli 25 sn. Dayanak: b10-s05 parça 1; i-b10-017."
+    },
+    {
+      "id": "b10-d-hristiyan-alim",
+      "tur": "d1",
+      "dosya": "b10-d-hristiyan-alim.webp",
+      "katman": "hristiyan-alim",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s05"
+      ],
+      "sahne": "b10-s05",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in front of a small stone monastery in Syria: Zayd ibn Amr stands before an old monk with a white beard in a long dark-grey robe, who raises one open hand as he speaks.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr",
+          "poz": "at the left, listening."
+        },
+        {
+          "tarif": "an old monk with a white beard, a long dark-grey robe and a small black cap",
+          "poz": "at the right, speaking."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, writing",
+      "not": "Dinamizm turu d1 (B). Aynı parça: ardından bir Hıristiyan âlimle konuşma. Dayanak: b10-s05 parça 1; i-b10-017."
+    },
+    {
+      "id": "b10-d-zeyd-yuz-cevirme",
+      "tur": "d1",
+      "dosya": "b10-d-zeyd-yuz-cevirme.webp",
+      "katman": "zeyd-yuz-cevirme",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s06"
+      ],
+      "sahne": "b10-s06",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, near a crudely carved stone idol in Mecca: men offer pieces of meat on a flat stone before the idol; Zayd ibn Amr turns away from them, raising one hand in refusal.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr_yasli",
+          "poz": "at the right, turning away."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 3,
+          "poz": "at the left by the idol."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, slaughter, knives, detailed idol face",
+      "not": "Dinamizm turu d1 (A). s06 tek görsel 38 sn (en uzun durağan çekim). Dayanak: b10-s06 parça 0; i-b10-016."
+    },
+    {
+      "id": "b10-d-kiz-kurtarma",
+      "tur": "d1",
+      "dosya": "b10-d-kiz-kurtarma.webp",
+      "katman": "kiz-kurtarma",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s06"
+      ],
+      "sahne": "b10-s06",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, at the edge of Mecca: Zayd ibn Amr gently takes the hand of a small girl (seen from behind) from a stern man and leads her towards himself; the man stands aside.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr_yasli",
+          "poz": "at the right, holding the girl's hand."
+        },
+        {
+          "tarif": "a small girl of about 5 seen strictly from behind, plain dress and head covering",
+          "poz": "in the centre."
+        },
+        {
+          "tarif": "a stern Arab man of about 40 with a black beard and a dark cloak",
+          "poz": "at the left, stepping aside."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, digging, graves, violence",
+      "not": "Dinamizm turu d1 (A). Aynı sahne: kız çocuğunu kurtarması. Dayanak: b10-s06 parça 1; i-b10-016."
+    },
+    {
+      "id": "b10-d-zeyd-kabir",
+      "tur": "d1",
+      "dosya": "b10-d-zeyd-kabir.webp",
+      "katman": "zeyd-kabir",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s07"
+      ],
+      "sahne": "b10-s07",
+      "parca": [
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Dusk, a simple grave of heaped stones in a dry valley; a lone thornbush beside it; no one there.",
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, writing, glow",
+      "not": "Dinamizm turu d1 (B). s07 tek görsel 24 sn; Zeyd'in vefatı. Dayanak: b10-s07 parça 2; i-b10-020."
     }
   ],
   "uretimler": [

@@ -350,6 +350,130 @@
       ],
       "yasak": "the Prophet, any glowing figure, halo, a child, any other person, cross, ground, buildings.",
       "not": "İbn Hişâm s. 116-117; BAHÎRÂ s. 486: Yahudilerden koru uyarısı."
+    },
+    {
+      "id": "b06-d-yol",
+      "tur": "d1",
+      "dosya": "b06-d-yol.webp",
+      "katman": "yol",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s01"
+      ],
+      "sahne": "b06-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a lane in Mecca: Abu Talib walks slowly, looking down kindly at a spot beside him at child height, which is left empty: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow (a boy of about 8).",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "at the left, walking, head turned to the right and down."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any child drawn",
+      "not": "Dinamizm turu d1 (B). s01 tek görsel 14 sn (b05'ten devralınan figür). Dayanak: b06-s01 parça 1; i-b06-001."
+    },
+    {
+      "id": "b06-d-cobanlar",
+      "tur": "d1",
+      "dosya": "b06-d-cobanlar.webp",
+      "katman": "cobanlar",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s05"
+      ],
+      "sahne": "b06-s05",
+      "parca": [
+        0,
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dusk, a stone watering trough at the foot of a bare slope near Mecca: a flock of sheep drinks; a plain shepherd's staff leans against the trough; no person.",
+      "kisiler": [
+        {
+          "tarif": "sheep",
+          "sayi": 12,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "around the trough."
+        }
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, hands, shadows of people",
+      "not": "Dinamizm turu d1 (B). s05 tek yamaç görseli 18 sn. Dayanak: b06-s05 parça 0, 1; i-b06-008."
+    },
+    {
+      "id": "b06-d-bahira-soru",
+      "tur": "d1",
+      "dosya": "b06-d-bahira-soru.webp",
+      "katman": "bahira-soru",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s11"
+      ],
+      "sahne": "b06-s11",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in front of the monastery at Busra: Bahira sits on a stone bench, leaning forward, one hand raised as he asks a question; men of Quraysh watch from behind; facing him, at the height of a boy of twelve, a spot is left empty: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow.",
+      "kisiler": [
+        {
+          "karakter": "bahira",
+          "poz": "seated at the left, leaning forward."
+        },
+        {
+          "karakter": "ebu_talib",
+          "poz": "standing at the back right."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 3,
+          "poz": "standing at the back."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, any child drawn",
+      "not": "Dinamizm turu d1 (A). s11 tek yakın görsel 31 sn. Dayanak: b06-s11 parça 0; i-b06-016."
+    },
+    {
+      "id": "b06-d-bahira-yakin",
+      "tur": "d1",
+      "dosya": "b06-d-bahira-yakin.webp",
+      "katman": "bahira-yakin",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s11"
+      ],
+      "sahne": "b06-s11",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Close shot of Bahira: head and shoulders, three-quarter view, his eyes wide with quiet amazement, one hand on his chest.",
+      "kisiler": [
+        {
+          "karakter": "bahira",
+          "poz": "head and shoulders, facing right."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, glow",
+      "not": "Dinamizm turu d1 (A). Aynı sahne: Bahîrâ'nın cevaplardan ve mühürden sonraki hâli. Dayanak: b06-s11 parça 2; i-b06-016."
     }
   ],
   "uretimler": [

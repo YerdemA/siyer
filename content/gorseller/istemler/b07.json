@@ -418,6 +418,304 @@
       "isik": "LIGHT: even, neutral daylight from the front-left, soft shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, any figure in the empty space, joined hands, raised swords, cups, women, children, writing.",
       "not": "İbn Hişâm (s. 85-86), HİLFÜ'L-FUDÛL (s. 32): yemin. Yemin biçimi kaynakta yok; el birleştirme çizilmez. Efendimiz'i oynatıcı nurlu figür olarak boşluğa koyar. 'b07-cudan-avlu' önce üretilmeli."
+    },
+    {
+      "id": "b07-d-ukaz-yakin",
+      "tur": "d1",
+      "dosya": "b07-d-ukaz-yakin.webp",
+      "katman": "ukaz-yakin",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s01"
+      ],
+      "sahne": "b07-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, jars of perfume and oil, dates; traders' hands weigh goods on a small balance.",
+      "kisiler": [
+        {
+          "tarif": "traders, only their hands and forearms in plain sleeves visible",
+          "sayi": 2,
+          "poz": "weighing at the centre."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, faces, writing, coins with writing",
+      "not": "Dinamizm turu d1 (B). s01 tek uzak görsel 19 sn. Dayanak: b07-s01 parça 1; i-b07-001."
+    },
+    {
+      "id": "b07-d-silah-birakma",
+      "tur": "d1",
+      "dosya": "b07-d-silah-birakma.webp",
+      "katman": "silah-birakma",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s02"
+      ],
+      "sahne": "b07-s02",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, at the fair of Ukaz: men of different tribes lay their swords in their scabbards and their spears on the ground beside a tent; two of them greet each other with clasped hands.",
+      "kisiler": [
+        {
+          "tarif": "Bedouin men in plain undyed wool tunics and loosely wrapped dark head cloths",
+          "sayi": 3,
+          "poz": "at the left, laying down weapons."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 3,
+          "poz": "at the right, two clasping hands."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, fighting",
+      "not": "Dinamizm turu d1 (A). s02 tek görsel 15 sn; haram ayda savaşın kesilmesi. Dayanak: b07-s02 parça 1; i-b07-002."
+    },
+    {
+      "id": "b07-d-ovunen",
+      "tur": "d1",
+      "dosya": "b07-d-ovunen.webp",
+      "katman": "ovunen",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s03"
+      ],
+      "sahne": "b07-s03",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, at the fair of Ukaz: a proud man stands on a low rock, chest out, one arm raised, boasting loudly; the crowd below reacts: some men angry, some pointing at him.",
+      "kisiler": [
+        {
+          "tarif": "a proud Arab man of about 35 with a black beard, a red-brown head cloth and a fine ochre cloak",
+          "poz": "on the rock in the centre."
+        },
+        {
+          "tarif": "Bedouin men in plain undyed wool tunics and loosely wrapped dark head cloths; men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 8,
+          "yaklasik": true,
+          "poz": "around the rock, reacting."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, weapons in use, women",
+      "not": "Dinamizm turu d1 (A). s03 tek görsel 26 sn. Dayanak: b07-s03 parça 1; i-b07-003."
+    },
+    {
+      "id": "b07-d-toz-savas",
+      "tur": "d1",
+      "dosya": "b07-d-toz-savas.webp",
+      "katman": "toz-savas",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s03"
+      ],
+      "sahne": "b07-s03",
+      "parca": [
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Late afternoon, a wide plain: in the distance two masses of men clash in a thick cloud of dust; nothing is seen clearly; the sky is dull orange.",
+      "kisiler": [
+        {
+          "tarif": "tiny figures in dust",
+          "sayi": 30,
+          "yaklasik": true,
+          "poz": "far away, blurred by dust."
+        }
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, bodies, close fighting",
+      "not": "Dinamizm turu d1 (B). Aynı sahne: Ficâr savaşları. Dayanak: b07-s03 parça 2; i-b07-004."
+    },
+    {
+      "id": "b07-d-iki-saf",
+      "tur": "d1",
+      "dosya": "b07-d-iki-saf.webp",
+      "katman": "iki-saf",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s04"
+      ],
+      "sahne": "b07-s04",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, a wide plain: two tribal armies face each other in long lines, a stretch of empty ground between them; camels and a few horses; nobody has attacked yet.",
+      "kisiler": [
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool (Quraysh and Kinana)",
+          "sayi": 20,
+          "yaklasik": true,
+          "poz": "a long line at the left."
+        },
+        {
+          "tarif": "Bedouin men in plain undyed wool tunics and loosely wrapped dark head cloths (Qays Aylan)",
+          "sayi": 20,
+          "yaklasik": true,
+          "poz": "a long line at the right."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, banners with writing",
+      "not": "Dinamizm turu d1 (A). s04 tek görsel 22 sn. Dayanak: b07-s04 parça 0; i-b07-005."
+    },
+    {
+      "id": "b07-d-toplanma",
+      "tur": "d1",
+      "dosya": "b07-d-toplanma.webp",
+      "katman": "toplanma",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s12"
+      ],
+      "sahne": "b07-s12",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Late afternoon, the gate of Abdullah ibn Jud'an's house in Mecca: elders of several clans of Quraysh arrive and enter one by one; Zubayr greets them at the gate.",
+      "kisiler": [
+        {
+          "karakter": "zubeyr",
+          "poz": "at the gate, greeting."
+        },
+        {
+          "tarif": "elderly men of Quraysh with grey beards, off-white head cloths, cloaks in muted brown, grey-blue and ochre",
+          "sayi": 6,
+          "poz": "arriving from the left, in pairs."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, the Prophet, weapons",
+      "not": "Dinamizm turu d1 (A). s12 tek avlu görseli 22 sn. Dayanak: b07-s12 parça 1; i-b07-016, i-b07-017."
+    },
+    {
+      "id": "b07-d-genc-katilim",
+      "tur": "d1",
+      "dosya": "b07-d-genc-katilim.webp",
+      "katman": "genc-katilim",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s13"
+      ],
+      "sahne": "b07-s13",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the courtyard of Abdullah ibn Jud'an: men of Quraysh stand in a circle for the oath; Abdullah ibn Jud'an and Zubayr among them; in the circle, between Zubayr and another man, a place is left empty at the height of a tall young man: a tall figure will be added there later by the app, so keep that spot completely empty: no person, no object, no shadow, no glow.",
+      "kisiler": [
+        {
+          "karakter": "abdullah_b_cudan",
+          "poz": "at the left of the circle."
+        },
+        {
+          "karakter": "zubeyr",
+          "poz": "right of the empty place."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 6,
+          "poz": "completing the circle."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, weapons, blood, swearing over fire",
+      "not": "Dinamizm turu d1 (A). s13 tek görsel 29 sn. Dayanak: b07-s13 parça 1; i-b07-019."
+    },
+    {
+      "id": "b07-d-hak-teslim",
+      "tur": "d1",
+      "dosya": "b07-d-hak-teslim.webp",
+      "katman": "hak-teslim",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s13"
+      ],
+      "sahne": "b07-s13",
+      "parca": [
+        2
+      ],
+      "oncelik": "B",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a market lane in Mecca: a few members of the alliance stand behind a stranger in foreign travelling clothes as a rich man hands him back a bundle of goods; the stranger holds it with relief.",
+      "kisiler": [
+        {
+          "tarif": "a stranger from outside Mecca of about 40 with a short beard, a dusty grey head cloth and a striped cloak",
+          "poz": "in the centre, receiving the bundle."
+        },
+        {
+          "tarif": "a rich man of Quraysh in a fine dark cloak",
+          "poz": "at the right, handing over the bundle."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 3,
+          "poz": "at the left behind the stranger."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, coins with writing, weapons",
+      "not": "Dinamizm turu d1 (B). Aynı sahne: antlaşmadan sonra hakların geri alınması (genel). Dayanak: b07-s13 parça 2; i-b07-020, i-b07-021."
+    },
+    {
+      "id": "b07-d-kizil-develer",
+      "tur": "d1",
+      "dosya": "b07-d-kizil-develer.webp",
+      "katman": "kizil-develer",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s14"
+      ],
+      "sahne": "b07-s14",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Late afternoon, a herd of fine red-brown camels grazing on a stony plain, their coats glowing warm in the low sun; no herdsman in sight.",
+      "kisiler": [
+        {
+          "tarif": "red-brown camels",
+          "sayi": 12,
+          "hayvan": true,
+          "yaklasik": true,
+          "poz": "grazing across the plain."
+        }
+      ],
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people",
+      "not": "Dinamizm turu d1 (A). s14 tek ortak Kâbe görseli 21 sn; 'kızıl develer' sözü görsel bir benzetme. Dayanak: b07-s14 parça 1; i-b07-023."
     }
   ],
   "uretimler": [
