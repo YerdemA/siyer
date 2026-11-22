@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 import '../tema.dart';
@@ -79,6 +80,7 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
         final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
         final efekt = ref.read(efektCalProvider);
         final azHareket = hareketAz(context, ref);
+        final boyutlar = ref.watch(paketBoyutlariProvider).value ?? const {};
         final sira = [
           for (var i = 0; i < liste.length; i++)
             if (liste[i].id != _secili) i,
@@ -128,6 +130,8 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                       soluk: siradaki >= 0 && i > siradaki && ilerleme[liste[i].id] == null,
                       efekt: efekt,
                       azHareket: azHareket,
+                      paket: ref.watch(paketDurumuProvider(liste[i].id)),
+                      paketBoyutu: boyutlar[paketAdi(liste[i].id)],
                       secildi: () => setState(() => _secili = liste[i].id),
                     ),
                   ),
@@ -216,7 +220,15 @@ class BolumKarti extends StatefulWidget {
     this.soluk = false,
     this.efekt,
     this.azHareket = false,
+    this.paket = const PaketHazir(),
+    this.paketBoyutu,
   });
+
+  /// Bölümün ses ve görselleri indirildi mi; inmemişse kartta boyutu görünür.
+  final PaketDurumu paket;
+
+  /// İndirme boyutu (bayt).
+  final int? paketBoyutu;
 
   /// Hareketi azalt: kart büyümez, kaydırma anında, çarpı kısa sürede.
   final bool azHareket;
@@ -366,6 +378,10 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                           style: const TextStyle(fontSize: 13, height: 1.3, color: Palet.murekkepSoluk),
                         ),
                       ),
+                      if (widget.paket case PaketYok() || PaketIniyor()) ...[
+                        const SizedBox(height: 6),
+                        _IndirmeIsareti(paket: widget.paket, boyut: widget.paketBoyutu),
+                      ],
                       if (devam) ...[
                         const SizedBox(height: 8),
                         LinearProgressIndicator(
@@ -438,6 +454,41 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
           child: kart,
         ),
       ),
+    );
+  }
+}
+
+/// İnmemiş bölüm kartında: indirme simgesi ve boyut; inerken ilerleme halkası.
+class _IndirmeIsareti extends StatelessWidget {
+  const _IndirmeIsareti({required this.paket, this.boyut});
+
+  final PaketDurumu paket;
+  final int? boyut;
+
+  @override
+  Widget build(BuildContext context) {
+    final m = Metinler.of(context);
+    const stil = TextStyle(fontSize: 11, color: Palet.murekkepSoluk);
+    return Row(
+      children: [
+        if (paket case PaketIniyor(:final oran))
+          SizedBox(
+            width: 12,
+            height: 12,
+            child: CircularProgressIndicator(value: oran, strokeWidth: 2, color: Palet.kina),
+          )
+        else
+          const Icon(Icons.download_outlined, size: 14, color: Palet.murekkepSoluk),
+        const SizedBox(width: 4),
+        Text(
+          paket is PaketIniyor
+              ? m.indiriliyor
+              : boyut != null
+                  ? m.indirmeBoyutu(mbMetni(boyut!, Localizations.localeOf(context).languageCode))
+                  : m.indirilmedi,
+          style: stil,
+        ),
+      ],
     );
   }
 }

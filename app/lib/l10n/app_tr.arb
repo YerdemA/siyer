@@ -78,5 +78,20 @@
   "@ilkGorunduguAyrinti": { "placeholders": { "bolum": { "type": "String" }, "sahne": { "type": "int" } } },
   "devamEt": "Kaldığın yerden devam et",
   "hareketiAzalt": "Hareketi azalt",
-  "hareketiAzaltAciklama": "Kart ve harita animasyonları kısalır"
+  "hareketiAzaltAciklama": "Kart ve harita animasyonları kısalır",
+  "indiriliyor": "Bölüm indiriliyor",
+  "indirmeIlerleme": "{inen} / {toplam} MB",
+  "@indirmeIlerleme": {"placeholders": {"inen": {"type": "String"}, "toplam": {"type": "String"}}},
+  "indirmeBoyutu": "{boyut} MB",
+  "@indirmeBoyutu": {"placeholders": {"boyut": {"type": "String"}}},
+  "indirmeBekliyor": "İndirme Wi-Fi ya da onay bekliyor",
+  "indirmeHatasi": "Bölüm indirilemedi. İnternet bağlantını denetleyip tekrar dene.",
+  "tekrarDene": "Tekrar dene",
+  "indir": "İndir",
+  "indirilmedi": "İndirilmedi",
+  "indirilenBolumler": "İndirilen bölümler",
+  "indirilenBolumlerAciklama": "İlk bölüm uygulamayla gelir; diğerleri açılınca indirilir ve internetsiz de izlenir.",
+  "indirilenYok": "Henüz indirilen bölüm yok.",
+  "sil": "Sil",
+  "uygulamaylaGelir": "Uygulamayla gelir"
 }

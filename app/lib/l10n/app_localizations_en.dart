@@ -241,4 +241,49 @@ class MetinlerEn extends Metinler {
 
   @override
   String get hareketiAzaltAciklama => 'Shorter card and map animations';
+
+  @override
+  String get indiriliyor => 'Downloading episode';
+
+  @override
+  String indirmeIlerleme(String inen, String toplam) {
+    return '$inen / $toplam MB';
+  }
+
+  @override
+  String indirmeBoyutu(String boyut) {
+    return '$boyut MB';
+  }
+
+  @override
+  String get indirmeBekliyor => 'Download is waiting for Wi-Fi or confirmation';
+
+  @override
+  String get indirmeHatasi =>
+      'The episode could not be downloaded. Check your connection and try again.';
+
+  @override
+  String get tekrarDene => 'Try again';
+
+  @override
+  String get indir => 'Download';
+
+  @override
+  String get indirilmedi => 'Not downloaded';
+
+  @override
+  String get indirilenBolumler => 'Downloaded episodes';
+
+  @override
+  String get indirilenBolumlerAciklama =>
+      'The first episode comes with the app; others download when opened and then work offline.';
+
+  @override
+  String get indirilenYok => 'No episodes downloaded yet.';
+
+  @override
+  String get sil => 'Delete';
+
+  @override
+  String get uygulamaylaGelir => 'Included with the app';
 }

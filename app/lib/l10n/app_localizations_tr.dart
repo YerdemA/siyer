@@ -239,4 +239,49 @@ class MetinlerTr extends Metinler {
 
   @override
   String get hareketiAzaltAciklama => 'Kart ve harita animasyonları kısalır';
+
+  @override
+  String get indiriliyor => 'Bölüm indiriliyor';
+
+  @override
+  String indirmeIlerleme(String inen, String toplam) {
+    return '$inen / $toplam MB';
+  }
+
+  @override
+  String indirmeBoyutu(String boyut) {
+    return '$boyut MB';
+  }
+
+  @override
+  String get indirmeBekliyor => 'İndirme Wi-Fi ya da onay bekliyor';
+
+  @override
+  String get indirmeHatasi =>
+      'Bölüm indirilemedi. İnternet bağlantını denetleyip tekrar dene.';
+
+  @override
+  String get tekrarDene => 'Tekrar dene';
+
+  @override
+  String get indir => 'İndir';
+
+  @override
+  String get indirilmedi => 'İndirilmedi';
+
+  @override
+  String get indirilenBolumler => 'İndirilen bölümler';
+
+  @override
+  String get indirilenBolumlerAciklama =>
+      'İlk bölüm uygulamayla gelir; diğerleri açılınca indirilir ve internetsiz de izlenir.';
+
+  @override
+  String get indirilenYok => 'Henüz indirilen bölüm yok.';
+
+  @override
+  String get sil => 'Sil';
+
+  @override
+  String get uygulamaylaGelir => 'Uygulamayla gelir';
 }

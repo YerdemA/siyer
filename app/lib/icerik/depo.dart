@@ -5,10 +5,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'model.dart';
 
-/// Şimdilik içerik uygulamayla paketlenir; bölüm indirme geldiğinde yalnız
-/// bu dosya değişir.
+/// Metinler (JSON) uygulamayla gelir; ilk bölüm dışındaki bölümlerin ses ve
+/// görselleri indirilir (bkz. `paketler.dart`).
 /// Dil şimdilik sabit; İngilizce gelince bu seçilebilir olur.
-const icerikKoku = 'assets/icerik/tr';
+const icerikDili = 'tr';
+const icerikKoku = 'assets/icerik/$icerikDili';
 const _kok = icerikKoku;
 
 Future<Map<String, dynamic>> _json(String yol) async =>

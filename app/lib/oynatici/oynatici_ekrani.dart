@@ -9,9 +9,11 @@ import 'package:go_router/go_router.dart';
 import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 import 'anlatim_sesi.dart';
+import 'bolum_indirme.dart';
 import 'gorsel_onbellek.dart';
 import 'harita_gecisi.dart';
 import 'sahne_cizici.dart';
@@ -41,6 +43,9 @@ class OynaticiEkrani extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final m = Metinler.of(context);
+    // İnmemiş bölüm önce indirilir; inince oynatıcı açılır.
+    if (ref.watch(paketDurumuProvider(bolumId)) is! PaketHazir) return BolumIndirme(bolumId: bolumId);
+    final dosyalar = ref.watch(bolumDosyalariProvider(bolumId));
     final bolum = ref.watch(bolumProvider(bolumId));
     final kaynakca = ref.watch(kaynakcaProvider);
     // Yalnız açılışta okunur: oynarken her kayıtta oynatıcı yeniden kurulmasın.
@@ -52,21 +57,23 @@ class OynaticiEkrani extends ConsumerWidget {
     final yerler = ref.watch(yerlerProvider);
     return Scaffold(
       backgroundColor: Colors.black,
-      body: switch ((bolum, kaynakca, ilerleme, sureler, yerler)) {
+      body: switch ((bolum, kaynakca, ilerleme, sureler, yerler, dosyalar)) {
         (
           AsyncData(value: final b),
           AsyncData(value: final k),
           AsyncData() || AsyncError(),
           AsyncData() || AsyncError(),
           AsyncData() || AsyncError(),
+          AsyncData(value: final d),
         ) =>
           Oynatici(
             bolum: b,
             kaynakca: k,
+            gorselOkuyucu: (dosya) => d.oku('gorseller/$dosya'),
             sesSureleri: sureler.value ?? const {},
             // Revize açılışlarında (belirli çekim ya da durmuş) harita araya girmez.
             yerler: duraklatilmis || baslangicCekimi > 1 ? const [] : yerler.value ?? const [],
-            sesFabrikasi: ref.read(anlatimSesiFabrikasi),
+            sesFabrikasi: () => ref.read(anlatimSesiFabrikasi)(d),
             altyaziOlcegi: ref.read(tercihlerProvider).value?.altyazi.olcek ?? 1,
             altyaziAcik: ref.read(tercihlerProvider).value?.altyaziAcik ?? false,
             altyaziDegisti: ref.read(tercihlerProvider.notifier).altyaziAcikSec,
@@ -81,7 +88,9 @@ class OynaticiEkrani extends ConsumerWidget {
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
-        (AsyncError(:final error), _, _, _, _) || (_, AsyncError(:final error), _, _, _) =>
+        (AsyncError(:final error), _, _, _, _, _) ||
+        (_, AsyncError(:final error), _, _, _, _) ||
+        (_, _, _, _, _, AsyncError(:final error)) =>
           Center(child: Text(m.yuklemeHatasi('$error'), style: const TextStyle(color: Colors.white))),
         _ => const Center(child: CircularProgressIndicator()),
       },
@@ -107,6 +116,7 @@ class Oynatici extends StatefulWidget {
     this.bitti,
     this.sesSureleri = const {},
     this.sesFabrikasi,
+    this.gorselOkuyucu,
     this.yerler = const [],
     this.altyaziOlcegi = 1,
     this.altyaziAcik = false,
@@ -143,6 +153,10 @@ class Oynatici extends StatefulWidget {
   /// Verilmezse ses çalınmaz (yalnız zaman planı ve altyazı).
   final AnlatimSesi Function()? sesFabrikasi;
 
+  /// Katman görselinin baytları (indirilen paketten ya da uygulamadan);
+  /// verilmezse uygulamaya gömülü varlıklardan okunur.
+  final Future<Uint8List> Function(String dosya)? gorselOkuyucu;
+
   final Bolum bolum;
   final Map<String, Eser> kaynakca;
   final int baslangicSahnesi;
@@ -171,7 +185,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   bool _kontroller = true;
   bool _tarif = false;
   late bool _altyazi = widget.altyaziAcik;
-  final _gorseller = GorselOnbellek();
+  late final _gorseller = GorselOnbellek(okuyucu: widget.gorselOkuyucu);
 
   /// Gösterilen harita geçişi; varken zaman ve ses durur.
   ({Yer? onceki, Yer hedef})? _gecis;

@@ -224,7 +224,7 @@ void main() {
     ProviderContainer kap(Set<String> varliklar, List<int> sayac) => ProviderContainer(overrides: [
           bolumProvider('b99-deneme').overrideWith((_) async => ornekBolum()),
           varliklarProvider.overrideWith((_) async => varliklar),
-          anlatimSesiFabrikasi.overrideWithValue(() {
+          anlatimSesiFabrikasi.overrideWithValue((_) {
             sayac.add(1);
             return _SahteSes();
           }),

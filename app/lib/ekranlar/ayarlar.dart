@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
 
@@ -66,6 +67,8 @@ class AyarlarEkrani extends ConsumerWidget {
             onTap: () => _sifirlaSor(context, ref),
           ),
           const Divider(),
+          const _IndirilenBolumler(),
+          const Divider(),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
             child: Text(m.hakkinda, style: tema.titleMedium),
@@ -123,5 +126,56 @@ class AyarlarEkrani extends ConsumerWidget {
       ),
     );
     if (onay == true) await ref.read(ilerlemeProvider.notifier).sifirla();
+  }
+}
+
+/// İndirilmiş bölüm paketleri; her biri silinebilir (yeniden açılınca iner).
+class _IndirilenBolumler extends ConsumerWidget {
+  const _IndirilenBolumler();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final m = Metinler.of(context);
+    final dil = Localizations.localeOf(context).languageCode;
+    final bolumler = ref.watch(bolumListesiProvider).value ?? const <Bolum>[];
+    final boyutlar = ref.watch(paketBoyutlariProvider).value ?? const {};
+    final inenler = [
+      for (final b in bolumler)
+        if (!gomuluPaketler.contains(paketAdi(b.id)) && ref.watch(paketDurumuProvider(b.id)) is PaketHazir) b,
+    ];
+    final toplam = inenler.fold<int>(0, (t, b) => t + (boyutlar[paketAdi(b.id)] ?? 0));
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+          child: Text(
+            toplam > 0 ? '${m.indirilenBolumler} · ${m.indirmeBoyutu(mbMetni(toplam, dil))}' : m.indirilenBolumler,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 4),
+          child: Text(m.indirilenBolumlerAciklama),
+        ),
+        if (inenler.isEmpty)
+          ListTile(dense: true, title: Text(m.indirilenYok))
+        else
+          for (final b in inenler)
+            ListTile(
+              dense: true,
+              title: Text('${m.bolumNo(b.sira)} · ${b.baslik}'),
+              subtitle: switch (boyutlar[paketAdi(b.id)]) {
+                final bayt? => Text(m.indirmeBoyutu(mbMetni(bayt, dil))),
+                null => null,
+              },
+              trailing: IconButton(
+                tooltip: m.sil,
+                icon: const Icon(Icons.delete_outline),
+                onPressed: () => ref.read(paketDurumlariProvider.notifier).sil(paketAdi(b.id)),
+              ),
+            ),
+      ],
+    );
   }
 }

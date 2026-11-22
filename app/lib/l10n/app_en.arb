@@ -67,5 +67,18 @@
   "ilkGorunduguAyrinti": "{bolum}, scene {sahne}",
   "devamEt": "Continue where you left off",
   "hareketiAzalt": "Reduce motion",
-  "hareketiAzaltAciklama": "Shorter card and map animations"
+  "hareketiAzaltAciklama": "Shorter card and map animations",
+  "indiriliyor": "Downloading episode",
+  "indirmeIlerleme": "{inen} / {toplam} MB",
+  "indirmeBoyutu": "{boyut} MB",
+  "indirmeBekliyor": "Download is waiting for Wi-Fi or confirmation",
+  "indirmeHatasi": "The episode could not be downloaded. Check your connection and try again.",
+  "tekrarDene": "Try again",
+  "indir": "Download",
+  "indirilmedi": "Not downloaded",
+  "indirilenBolumler": "Downloaded episodes",
+  "indirilenBolumlerAciklama": "The first episode comes with the app; others download when opened and then work offline.",
+  "indirilenYok": "No episodes downloaded yet.",
+  "sil": "Delete",
+  "uygulamaylaGelir": "Included with the app"
 }

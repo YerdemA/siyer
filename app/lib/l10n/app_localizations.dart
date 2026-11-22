@@ -504,6 +504,84 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Kart ve harita animasyonları kısalır'**
   String get hareketiAzaltAciklama;
+
+  /// No description provided for @indiriliyor.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüm indiriliyor'**
+  String get indiriliyor;
+
+  /// No description provided for @indirmeIlerleme.
+  ///
+  /// In tr, this message translates to:
+  /// **'{inen} / {toplam} MB'**
+  String indirmeIlerleme(String inen, String toplam);
+
+  /// No description provided for @indirmeBoyutu.
+  ///
+  /// In tr, this message translates to:
+  /// **'{boyut} MB'**
+  String indirmeBoyutu(String boyut);
+
+  /// No description provided for @indirmeBekliyor.
+  ///
+  /// In tr, this message translates to:
+  /// **'İndirme Wi-Fi ya da onay bekliyor'**
+  String get indirmeBekliyor;
+
+  /// No description provided for @indirmeHatasi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüm indirilemedi. İnternet bağlantını denetleyip tekrar dene.'**
+  String get indirmeHatasi;
+
+  /// No description provided for @tekrarDene.
+  ///
+  /// In tr, this message translates to:
+  /// **'Tekrar dene'**
+  String get tekrarDene;
+
+  /// No description provided for @indir.
+  ///
+  /// In tr, this message translates to:
+  /// **'İndir'**
+  String get indir;
+
+  /// No description provided for @indirilmedi.
+  ///
+  /// In tr, this message translates to:
+  /// **'İndirilmedi'**
+  String get indirilmedi;
+
+  /// No description provided for @indirilenBolumler.
+  ///
+  /// In tr, this message translates to:
+  /// **'İndirilen bölümler'**
+  String get indirilenBolumler;
+
+  /// No description provided for @indirilenBolumlerAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'İlk bölüm uygulamayla gelir; diğerleri açılınca indirilir ve internetsiz de izlenir.'**
+  String get indirilenBolumlerAciklama;
+
+  /// No description provided for @indirilenYok.
+  ///
+  /// In tr, this message translates to:
+  /// **'Henüz indirilen bölüm yok.'**
+  String get indirilenYok;
+
+  /// No description provided for @sil.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sil'**
+  String get sil;
+
+  /// No description provided for @uygulamaylaGelir.
+  ///
+  /// In tr, this message translates to:
+  /// **'Uygulamayla gelir'**
+  String get uygulamaylaGelir;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:just_audio/just_audio.dart';
 
 import '../icerik/depo.dart';
+import '../icerik/paketler.dart';
 
 /// Sahne başına bir anlatım sesi dosyası. Ses çalarken saat sese uyar,
 /// sessizlikte kendi işler (bkz. `_OynaticiState._tik`). Testlerde sahtesi kullanılır.
@@ -37,17 +38,26 @@ abstract class AnlatimSesi {
 }
 
 class JustAudioSesi implements AnlatimSesi {
-  JustAudioSesi({this.kok = '$icerikKoku/ses'});
+  /// [dosyalar] verilmezse yalnız uygulamaya gömülü sesler çalınır.
+  JustAudioSesi([this.dosyalar]);
 
-  final String kok;
+  final BolumDosyalari? dosyalar;
   final _oynatici = AudioPlayer();
   String? _etkin;
+
+  /// Gömülüyse varlıktan, değilse indirilen paketten yükler.
+  Future<Duration?> _kaynak(String dosya) {
+    final goreli = '$icerikDili/ses/$dosya';
+    final yol = dosyalar?.dosyaYolu(goreli);
+    if (yol != null && !(dosyalar?.gomulu(goreli) ?? false)) return _oynatici.setFilePath(yol);
+    return _oynatici.setAsset('$icerikKoku/ses/$dosya');
+  }
 
   @override
   Future<Duration?> sure(String dosya) async {
     try {
       // Yükleme süresi okur; dosya bir sonraki çalışta yeniden yüklenir.
-      final d = await _oynatici.setAsset('$kok/$dosya').timeout(const Duration(seconds: 5));
+      final d = await _kaynak(dosya).timeout(const Duration(seconds: 5));
       _etkin = dosya;
       return d;
     } catch (hata) {
@@ -64,7 +74,7 @@ class JustAudioSesi implements AnlatimSesi {
     if (_etkin == dosya) return true;
     if (_bozuk.contains(dosya)) return false;
     try {
-      await _oynatici.setAsset('$kok/$dosya');
+      await _kaynak(dosya);
       _etkin = dosya;
       return true;
     } catch (hata) {
@@ -116,23 +126,23 @@ class JustAudioSesi implements AnlatimSesi {
 }
 
 /// Testlerde sahte ses vermek için ezilir.
-final anlatimSesiFabrikasi = Provider<AnlatimSesi Function()>((ref) => JustAudioSesi.new);
+final anlatimSesiFabrikasi = Provider<AnlatimSesi Function(BolumDosyalari)>((ref) => JustAudioSesi.new);
 
 /// Bölümdeki anlatım seslerinin süreleri (sahne kimliği → saniye). Bölüm
 /// açılınca bir kez okunur; zaman planı bu sürelerle kurulur.
 final sesSureleriProvider =
     FutureProvider.autoDispose.family<Map<String, double>, String>((ref, bolumId) async {
   final bolum = await ref.watch(bolumProvider(bolumId).future);
-  // Yalnız pakette olan dosyalar denenir: eksik dosyayı denemek platforma göre
-  // saniyeler sürebilir ve bölüm açılışını bekletir.
-  final varliklar = await ref.watch(varliklarProvider.future);
+  // Yalnız uygulamada ya da pakette olan dosyalar denenir: eksik dosyayı
+  // denemek platforma göre saniyeler sürebilir ve bölüm açılışını bekletir.
+  final dosyalar = await ref.watch(bolumDosyalariProvider(bolumId).future);
   final sahneler = [
     for (final s in bolum.sahneler)
-      if (s.sesAnlatim.isNotEmpty && varliklar.contains('$icerikKoku/ses/${s.sesAnlatim}')) s,
+      if (s.sesAnlatim.isNotEmpty && dosyalar.bulunur('$icerikDili/ses/${s.sesAnlatim}')) s,
   ];
   final sonuc = <String, double>{};
   if (sahneler.isEmpty) return sonuc;
-  final ses = ref.read(anlatimSesiFabrikasi)();
+  final ses = ref.read(anlatimSesiFabrikasi)(dosyalar);
   try {
     for (final s in sahneler) {
       final d = await ses.sure(s.sesAnlatim);
