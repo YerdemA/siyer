@@ -709,8 +709,8 @@
               "olcek": 1.5,
               "gorsel": {
                 "x": 0.502,
-                "y": 0.662,
-                "olcek": 0.394
+                "y": 0.772,
+                "olcek": 0.328
               },
               "ton": "gece"
             }
@@ -726,8 +726,8 @@
               "olcek": 0.09,
               "gorsel": {
                 "x": 0.5,
-                "y": 0.62,
-                "olcek": 0.72
+                "y": 0.737,
+                "olcek": 0.6
               }
             }
           },
@@ -739,8 +739,8 @@
             "ayar": {
               "gorsel": {
                 "x": 0.5,
-                "y": 0.669,
-                "olcek": 0.172
+                "y": 0.778,
+                "olcek": 0.143
               }
             }
           }
@@ -792,15 +792,15 @@
             "id": "kalabalik",
             "dosya": "b09-s10-kalabalik.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.7,
+            "derinlik": 0.42,
             "ayar": {
               "sayi": 18,
               "y": 0.8,
               "olcek": 0.1,
               "gorsel": {
-                "x": 0.6,
-                "y": 0.613,
-                "olcek": 0.45
+                "x": 0.515,
+                "y": 0.668,
+                "olcek": 0.16
               }
             }
           },
