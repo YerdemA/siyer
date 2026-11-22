@@ -6,7 +6,18 @@ Son güncelleme: 2026-11-21.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-21, akşam): anlatım sesi.**
+**Kaldığımız yer (2026-11-22): boyut küçültme ve bölüm indirme** (Erdem, kapalı testten önce istedi).
+- **Bölüm indirme: Play Asset Delivery** (Erdem seçti; sunucu yok, INTERNET izni yok, gizlilik metni değişmez). b01 uygulamaya gömülü; b02–b10 isteğe bağlı paket (`app/android/paketler/bNN`, `icerik_esitle` üretir, git dışı). Ayrıntı: `docs/ICERIK_SEMASI.md` → Bölüm paketleri.
+  - Kotlin köprüsü `BolumPaketleri.kt` (`asset-delivery:2.3.0`); Dart `lib/icerik/paketler.dart`. İnmemiş bölüm açılınca indirme kendiliğinden başlar (`oynatici/bolum_indirme.dart`); ana sayfa kartında boyut ya da ilerleme; Ayarlar'da "İndirilen bölümler" ve sil.
+  - Elle kurulan tek APK'da (bundletool `--mode=universal`) paket APK'dan `files/paketler/` altına çıkarılır — **telefonda denenmedi**.
+  - Yayın denetimi `--paketler app/android/paketler` ile paketlerdeki dosyaları da arar.
+  - AAB derlendi (`--obfuscate --split-debug-info=build/semboller`): içinde b02–b10 on-demand modülleri; temel paketteki içerik 77 → 14,5 MB. Telefona inen boyut bundletool `get-size total` ile ölçülmedi (bundletool indirme izni verilmedi).
+  - Görsel önbelleği artık yalnız önceki/şimdiki/sonraki sahneyi tutar (önce bütün bölüm bellekte kalıyordu, ~12 MB/katman).
+  - Testler 80/80, analiz temiz.
+- **Bekleyen (Erdem onayı):** medya sıkıştırma. Ses 128k MP3 → 48k mono AAC (`.m4a`, ~%60 küçük); görsel WebP q86 → q72 (~%35 küçük, çözünürlük aynı). Karşılaştırma örnekleri Erdem'e gönderildi. Onaylanınca: `ses_dengele.py` çıktısı m4a/48k, 135 ses dönüştürülür, JSON'larda `.mp3` → `.m4a`, `gorsel_katman.py` kalitesi 72, 163 görsel yeniden kodlanır, `bolum_metni.py` yeniden.
+- **Sırada:** bundletool ile `--local-testing` kurulumunda gerçek indirmeyi telefonda denemek (USB), sonra kapalı test.
+
+**Önceki (2026-11-21, akşam): anlatım sesi.**
 - Erdem ElevenLabs Starter aldı. **b01–b04'ün 51 sahnesi seslendirildi** (Seyfullah Kartal `mF7tIc9VLrznhGooGjaT`, `eleven_v4`, sahne başına 1 üretim; ~17.400 kredi). Dosyalar `content/tr/ses/<sahne>.mp3` (18,6 MB, 6–48 sn).
 - Seslendirme metinleri `content/tr/ses/istemler/b0N.json`: altyazıyla aynı kelimeler + duygu etiketleri ([calm], [warmly], [serious], [sad], [softly], [reverently] ayet/hadislerde, [dramatically] Fil Vakası'nda, [happy]/[excited] yalnız doğum haberinde). [playful] gibi şakacı etiketler üslup kuralı (7) gereği kullanılmadı. Ayraçlar akıcı okunsun diye kaldırıldı ("fil(in" → "filin"). `icerik_esitle` bu klasörü uygulamaya kopyalamaz.
 - Etiketlerin okunmadığı b01-s01 hizalamasıyla görüldü (her etiket ~0,05 sn). Telaffuzu Claude dinleyemedi; **Erdem telefonda dinlemeli** (özellikle Arapça adlar, «s.a.v.», ayetler).
