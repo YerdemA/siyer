@@ -52,6 +52,27 @@
         "cekimler": [
           {
             "parca": 1,
+            "tarif": "Yakın plan: Ebrehe'nin yüzü; alnından burnuna inen yarık izi (İbn Hişâm s. 29: el-Eşrem).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebrehe-yakin",
+                "dosya": "b02-d-ebrehe-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
             "tarif": "Orta plan: San'a'da taş bir avluda tahtında oturan Ebrehe; yüzünde yarık izi.",
             "kamera": "yavas-yaklasma",
             "katmanlar": [
@@ -153,7 +174,30 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: San'a'da taş avluda bir kâtip deri tomara yazıyor; yanında eyerli devesiyle bekleyen Habeşli ulak. Yazı okunmaz.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "mektup",
+                "dosya": "b02-d-mektup.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s02.m4a",
@@ -243,7 +287,30 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: Ebrehe öfkeyle tahtından doğrulup ileriyi gösteriyor; Habeşli askerler başlarını eğmiş.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebrehe-ofke",
+                "dosya": "b02-d-ebrehe-ofke.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s03.m4a",
@@ -320,7 +387,31 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan, ikindi: çadırlarının önünde ufuktaki ordu tozuna endişeyle bakan bedevî Araplar.",
+            "saat": "aksam",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "arap-kabileler",
+                "dosya": "b02-d-arap-kabileler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s04.m4a",
@@ -383,7 +474,30 @@
             "derinlik": 0.6
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Uzak plan: Nüfeyl ordunun önünde yürüyüp yolu gösteriyor; arkasında Habeşli askerler, en geride fil.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "nufeyl-yol",
+                "dosya": "b02-d-nufeyl-yol.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s05.m4a",
@@ -483,6 +597,27 @@
                 }
               }
             ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Uzak plan: Mugammes'te taş yığını bir kabir; geçen Araplar ona taş atıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebu-rigal-kabir",
+                "dosya": "b02-d-ebu-rigal-kabir.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -521,41 +656,86 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, Mekke dışındaki vadide atlıların önünde toz kaldırarak sürülen deve sürüsü, uzak plan. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "tarif": "Uzak plan, gündüz: Esved b. Maksûd önde, Habeşli atlılar ordugâhtan dörtnala çıkıyor; arkalarında toz.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "mekke-zemin.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35
-          },
-          {
-            "id": "develer",
-            "dosya": "b02-develer-surulen.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.6
-          },
-          {
-            "id": "toz",
-            "dosya": "",
-            "yerTutucu": "toz",
-            "derinlik": 0.9
+            "id": "esved-atlilar",
+            "dosya": "b02-d-esved-atlilar.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
+            }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke dışındaki vadide atlıların önünde toz kaldırarak sürülen deve sürüsü, uzak plan. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+            "saat": "gunduz",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "develer",
+                "dosya": "b02-develer-surulen.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6
+              },
+              {
+                "id": "toz",
+                "dosya": "",
+                "yerTutucu": "toz",
+                "derinlik": 0.9
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Orta plan: Kureyş, Kinâne ve Hüzeyl'den adamlar halka olmuş; yaşlı biri konuşuyor, bazıları mızraklarını indiriyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kureys-istisare",
+                "dosya": "b02-d-kureys-istisare.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s07.m4a",
@@ -577,64 +757,34 @@
           ]
         },
         {
-          "metin": "Abdülmuttalib şöyle cevap verdi: Onunla savaşmak istemiyorlardı, buna güçleri de yoktu. Bu, Allah'ın kutsal evi, dostu İbrâhim'in eviydi. Onu korursa kendi evini korurdu; bırakırsa onların onu savunacak gücü yoktu.",
+          "metin": "Abdülmuttalib şöyle cevap verdi: Onunla savaşmak istemiyorlardı, buna güçleri de yoktu.",
+          "iddialar": [
+            "i-b02-009"
+          ]
+        },
+        {
+          "metin": "Bu, Allah'ın kutsal evi, dostu İbrâhim'in eviydi. Onu korursa kendi evini korurdu; bırakırsa onların onu savunacak gücü yoktu.",
           "iddialar": [
             "i-b02-009"
           ]
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, Mekke'de, Kâbe'ye yakın açıklıkta orta plan: yakışıklı, heybetli Abdülmuttalib (İbn Hişâm s. 34), karşısında Himyerli elçi Hunâta. Yaş ve sakal gibi ayrıntılar kaynakta yok. Arkada alçak, çatısız Kâbe. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "tarif": "Uzak plan, gündüz: Himyerli Hunâta devesiyle Mekke vadisinin girişine geliyor; yanında iki Yemenli hizmetkâr, ilk evlerin önünde onu izleyen Kureyşliler.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "mekke-zemin.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35
-          },
-          {
-            "id": "evler",
-            "dosya": "mekke-evler.webp",
-            "yerTutucu": "evler",
-            "derinlik": 0.4
-          },
-          {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
-            "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55,
+            "id": "hunata-gelis",
+            "dosya": "b02-d-hunata-gelis.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.501,
-                "y": 0.665,
-                "olcek": 0.269
-              }
-            }
-          },
-          {
-            "id": "hunata",
-            "dosya": "b02-hunata-abdulmuttalib.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.7,
-            "ayar": {
-              "gorsel": {
-                "x": 0.301,
-                "y": 0.698,
-                "olcek": 0.207
-              }
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
             }
           }
         ],
@@ -642,27 +792,96 @@
         "cekimler": [
           {
             "parca": 1,
-            "tarif": "Orta plan: Abdülmuttalib ile Himyerli elçi Hunâta konuşuyor; arkada alçak Kâbe.",
-            "kamera": "yavas-yaklasma",
-            "kadraj": {
-              "x": 0.32,
-              "y": 0.68,
-              "yakinlik": 1.5
-            },
-            "gizle": [
-              "hunata"
-            ],
+            "tarif": "Yakın plan: Abdülmuttalib cevap veriyor.",
+            "saat": "gunduz",
+            "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "hunata-yakin",
-                "dosya": "b02-hunata-abdulmuttalib.webp",
-                "yerTutucu": "kalabalik",
-                "derinlik": 0.8,
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.1
+              },
+              {
+                "id": "ordugah",
+                "dosya": "b02-ordugah.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.2
+              },
+              {
+                "id": "abdulmuttalib-yakin",
+                "dosya": "b02-abdulmuttalib-yakin.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.304,
-                    "y": 0.591,
-                    "olcek": 0.891
+                    "x": 0.55,
+                    "y": 0.53,
+                    "olcek": 1.1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, Mekke'de, Kâbe'ye yakın açıklıkta orta plan: yakışıklı, heybetli Abdülmuttalib (İbn Hişâm s. 34), karşısında Himyerli elçi Hunâta. Yaş ve sakal gibi ayrıntılar kaynakta yok. Arkada alçak, çatısız Kâbe. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+            "saat": "gunduz",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "evler",
+                "dosya": "mekke-evler.webp",
+                "yerTutucu": "evler",
+                "derinlik": 0.4
+              },
+              {
+                "id": "kabe-alcak",
+                "dosya": "kabe-alcak.webp",
+                "yerTutucu": "kabe-alcak",
+                "derinlik": 0.55,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.501,
+                    "y": 0.665,
+                    "olcek": 0.269
+                  }
+                }
+              },
+              {
+                "id": "hunata",
+                "dosya": "b02-hunata-abdulmuttalib.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.7,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.301,
+                    "y": 0.698,
+                    "olcek": 0.207
                   }
                 }
               }
@@ -685,7 +904,13 @@
       "id": "b02-s09",
       "anlatim": [
         {
-          "metin": "Abdülmuttalib bazı oğullarıyla Ebrehe'nin ordugâhına gitti. Esir dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi.",
+          "metin": "Abdülmuttalib bazı oğullarıyla Ebrehe'nin ordugâhına gitti.",
+          "iddialar": [
+            "i-b02-010"
+          ]
+        },
+        {
+          "metin": "Esir dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi.",
           "iddialar": [
             "i-b02-010"
           ]
@@ -704,42 +929,108 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, ordugâhta, orta plan: halının üzerinde yan yana oturan Ebrehe ve heybetli Abdülmuttalib; arkada boş taht, kenarda tercüman ve Habeşli askerler (İbn Hişâm s. 34: taht, halı, tercüman). Çadır ya da mekân ayrıntısı kaynakta yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "tarif": "Orta plan, gündüz: Abdülmuttalib oğullarıyla ordugâhın kenarına geliyor; çadırların yanında mızraklı Habeşli nöbetçiler, geride fil ve bakıcısı.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.1
-          },
-          {
-            "id": "ordugah",
-            "dosya": "b02-ordugah.webp",
+            "id": "ordugaha-varis",
+            "dosya": "b02-d-ordugaha-varis.webp",
             "yerTutucu": "kapi-cercevesi",
-            "derinlik": 0.2
-          },
-          {
-            "id": "gorusme",
-            "dosya": "b02-gorusme.webp",
-            "yerTutucu": "kalabalik",
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
                 "x": 0.5,
-                "y": 0.53,
-                "olcek": 0.9
-              }
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan: elleri bağlı Zû Nefer, filin önünde bakıcı Üneys'le konuşuyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "uneys",
+                "dosya": "b02-d-uneys.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Orta plan: tahtındaki Ebrehe, karşısına getirilen Abdülmuttalib'i saygıyla karşılıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ebrehe-saygi",
+                "dosya": "b02-d-ebrehe-saygi.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Gündüz, ordugâhta, orta plan: halının üzerinde yan yana oturan Ebrehe ve heybetli Abdülmuttalib; arkada boş taht, kenarda tercüman ve Habeşli askerler (İbn Hişâm s. 34: taht, halı, tercüman). Çadır ya da mekân ayrıntısı kaynakta yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+            "saat": "gunduz",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.1
+              },
+              {
+                "id": "ordugah",
+                "dosya": "b02-ordugah.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.2
+              },
+              {
+                "id": "gorusme",
+                "dosya": "b02-gorusme.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.53,
+                    "olcek": 0.9
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s09.m4a",
@@ -817,7 +1108,69 @@
             }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Yakın plan: Ebrehe konuşuyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "ebrehe-yakin",
+                "dosya": "b02-d-ebrehe-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Yakın plan: Abdülmuttalib cevap veriyor.",
+            "saat": "gunduz",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.1
+              },
+              {
+                "id": "ordugah",
+                "dosya": "b02-ordugah.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.2
+              },
+              {
+                "id": "abdulmuttalib-yakin",
+                "dosya": "b02-abdulmuttalib-yakin.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.55,
+                    "y": 0.53,
+                    "olcek": 1.1
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s10.m4a",
@@ -852,44 +1205,21 @@
         }
       ],
       "gorsel": {
-        "tarif": "Akşam, Kâbe'nin kapısı önünde orta plan: kapı halkasını tutup dua eden Abdülmuttalib, arkasında birkaç Kureyşli; uzakta dağlara tırmanan küçük insan kafileleri. Kâbe alçak ve çatısız. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+        "tarif": "Uzak plan, ikindi: Kureyşli aileler yükleri, keçileri ve develeriyle dağ yollarına tırmanıyor; aşağıda boşalan evler ve alçak Kâbe.",
         "saat": "aksam",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-aksam.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "mekke-zemin.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35
-          },
-          {
-            "id": "evler",
-            "dosya": "mekke-evler.webp",
-            "yerTutucu": "evler",
-            "derinlik": 0.4
-          },
-          {
-            "id": "kabe-alcak",
-            "dosya": "kabe-alcak.webp",
-            "yerTutucu": "kabe-alcak",
-            "derinlik": 0.55,
+            "id": "daglara-cekilis",
+            "dosya": "b02-d-daglara-cekilis.webp",
+            "yerTutucu": "kapi-cercevesi",
+            "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.501,
-                "y": 0.665,
-                "olcek": 0.269
-              }
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
             }
           }
         ],
@@ -903,6 +1233,28 @@
               {
                 "id": "dua",
                 "dosya": "b02-kapi-dua.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Orta plan, alacakaranlık: Abdülmuttalib ve Kureyşliler kayalıkta; aşağıda boş vadide yalnız kalan Kâbe.",
+            "saat": "aksam",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "tepede-bekleyis",
+                "dosya": "b02-d-tepede-bekleyis.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
@@ -1005,7 +1357,31 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 3,
+            "tarif": "Orta plan, şafak: Mekke'den çevrilen fil rahatça yürüyor; askerler şaşkın.",
+            "saat": "safak",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "fil-yuruyor",
+                "dosya": "b02-d-fil-yuruyor.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s12.m4a",
@@ -1040,62 +1416,107 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, ordunun üzerinde gökyüzünü dolduran sürü sürü küçük kuşlar (İbn Hişâm s. 35: kırlangıç benzeri; renk kaynakta yok, sade koyu kâğıt kesik biçimler), geniş plan; aşağıda dağılan, kaçışan askerler küçük. Yaralanma ve ölüm ayrıntısı yok. Kan yok. Nur tonu yok.",
+        "tarif": "Uzak plan, gündüz: deniz tarafından karaya doğru dalga dalga gelen kırlangıç benzeri kuş sürüleri.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "col",
-            "dosya": "b02-col.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.3,
-            "ayar": {
-              "gorsel": {
-                "x": 0.5,
-                "y": 0.27,
-                "olcek": 1.56
-              }
-            }
-          },
-          {
-            "id": "kacis",
-            "dosya": "b02-ordu-dagilan.webp",
-            "yerTutucu": "kalabalik",
+            "id": "denizden-kuslar",
+            "dosya": "b02-d-denizden-kuslar.webp",
+            "yerTutucu": "kapi-cercevesi",
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.498,
-                "y": 0.653,
-                "olcek": 0.695
-              }
-            }
-          },
-          {
-            "id": "kuslar",
-            "dosya": "b02-kuslar.webp",
-            "yerTutucu": "kalabalik",
-            "derinlik": 0.8,
-            "ayar": {
-              "gorsel": {
                 "x": 0.5,
-                "y": 0.43,
-                "olcek": 0.72
-              }
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
             }
           }
         ],
-        "kamera": "yukaridan-yavas-donus"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Yakın plan: beş kuş; her birinin gagasında bir, ayaklarında iki küçük taş.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kus-yakin",
+                "dosya": "b02-d-kus-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, ordunun üzerinde gökyüzünü dolduran sürü sürü küçük kuşlar (İbn Hişâm s. 35: kırlangıç benzeri; renk kaynakta yok, sade koyu kâğıt kesik biçimler), geniş plan; aşağıda dağılan, kaçışan askerler küçük. Yaralanma ve ölüm ayrıntısı yok. Kan yok. Nur tonu yok.",
+            "saat": "gunduz",
+            "kamera": "yukaridan-yavas-donus",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "col",
+                "dosya": "b02-col.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.3,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.27,
+                    "olcek": 1.56
+                  }
+                }
+              },
+              {
+                "id": "kacis",
+                "dosya": "b02-ordu-dagilan.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.498,
+                    "y": 0.653,
+                    "olcek": 0.695
+                  }
+                }
+              },
+              {
+                "id": "kuslar",
+                "dosya": "b02-kuslar.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.43,
+                    "olcek": 0.72
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s13.m4a",
@@ -1114,7 +1535,19 @@
           ]
         },
         {
-          "metin": "«Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı? Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu. Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.»",
+          "metin": "«Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı?",
+          "iddialar": [
+            "i-b02-015"
+          ]
+        },
+        {
+          "metin": "Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu.",
+          "iddialar": [
+            "i-b02-015"
+          ]
+        },
+        {
+          "metin": "Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.»",
           "iddialar": [
             "i-b02-015"
           ]
@@ -1156,7 +1589,110 @@
             "derinlik": 0.6
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, ordunun üzerinde gökyüzünü dolduran sürü sürü küçük kuşlar (İbn Hişâm s. 35: kırlangıç benzeri; renk kaynakta yok, sade koyu kâğıt kesik biçimler), geniş plan; aşağıda dağılan, kaçışan askerler küçük. Yaralanma ve ölüm ayrıntısı yok. Kan yok. Nur tonu yok.",
+            "saat": "gunduz",
+            "kamera": "yukaridan-yavas-donus",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "col",
+                "dosya": "b02-col.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.3,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.27,
+                    "olcek": 1.56
+                  }
+                }
+              },
+              {
+                "id": "kacis",
+                "dosya": "b02-ordu-dagilan.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.498,
+                    "y": 0.653,
+                    "olcek": 0.695
+                  }
+                }
+              },
+              {
+                "id": "kuslar",
+                "dosya": "b02-kuslar.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.8,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.43,
+                    "olcek": 0.72
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Yakın plan: taş taşıyan kuşlar.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kus-yakin",
+                "dosya": "b02-d-kus-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Yakın plan: çiğnenip dağılmış kuru saplar; ayetin benzetmesi.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "yenik-ekin",
+                "dosya": "b02-d-yenik-ekin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s14.m4a",
@@ -1230,7 +1766,31 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Orta plan, akşam: dört yorgun asker örtülü bir sedyeyi San'a kapısından içeri taşıyor; içindeki görünmez.",
+            "saat": "aksam",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "sana-donus",
+                "dosya": "b02-d-sana-donus.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s15.m4a",
@@ -1258,7 +1818,13 @@
           ]
         },
         {
-          "metin": "Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar «Kasvâ çöktü, yerinden kalkmıyor» dediler. Resûlullah şöyle buyurdu: «Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.»",
+          "metin": "Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar «Kasvâ çöktü, yerinden kalkmıyor» dediler.",
+          "iddialar": [
+            "i-b02-019"
+          ]
+        },
+        {
+          "metin": "Resûlullah şöyle buyurdu: «Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.»",
           "iddialar": [
             "i-b02-019"
           ]
@@ -1312,7 +1878,115 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'de evlerin arasında tek bir evin dışı, orta plan; sakin bir gün; kapı aralığı karanlık değil, sıradan gün ışığı. Olağanüstü ışık ya da parıltı çizilmez (o ayrıntı dipnottaki rivayette). İnsan yok; çocuk ve anne gösterilmez.",
+            "saat": "gunduz",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "evler",
+                "dosya": "mekke-evler.webp",
+                "yerTutucu": "evler",
+                "derinlik": 0.4
+              },
+              {
+                "id": "dogum-evi",
+                "dosya": "b03-dogum-evi.webp",
+                "yerTutucu": "kapi-araligi",
+                "derinlik": 0.55
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Orta plan, gündüz: Hudeybiye yolunda çöküp kalkmayan Kasvâ; çevresinde şaşıran yolcular. Resûlullah gösterilmez.",
+            "saat": "gunduz",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kasva",
+                "dosya": "b02-d-kasva.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Şafak, orta plan: yere çökmüş büyük fil; başında şaşkın Habeşli askerler. Filin yanında kulağına eğilmiş Nüfeyl. Fil dövülürken gösterilmez. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.",
+            "saat": "safak",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-safak.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "col",
+                "dosya": "b02-col.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.3,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.27,
+                    "olcek": 1.56
+                  }
+                }
+              },
+              {
+                "id": "fil-coken",
+                "dosya": "b02-fil-coken.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.614,
+                    "olcek": 1.038
+                  }
+                }
+              },
+              {
+                "id": "toz",
+                "dosya": "",
+                "yerTutucu": "toz",
+                "derinlik": 0.9
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b02-s16.m4a",

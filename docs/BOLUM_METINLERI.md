@@ -457,7 +457,7 @@ Esved, Kureyş'in ve Tihâme halkının mallarını sürüp götürdü. Araları
 
 Kureyş, Kinâne ve Hüzeyl savaşmayı düşündüler, ama güçlerinin yetmeyeceğini anlayıp vazgeçtiler. `[i-b02-008]`
 
-> *Görsel tarifi:* Gündüz, Mekke dışındaki vadide atlıların önünde toz kaldırarak sürülen deve sürüsü, uzak plan. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Uzak plan, gündüz: Esved b. Maksûd önde, Habeşli atlılar ordugâhtan dörtnala çıkıyor; arkalarında toz.
 
 ### Sahne 8 (`b02-s08`)
 
@@ -465,21 +465,25 @@ Yer: Mekke · Şahıslar: Abdülmuttalib, Hunâta el-Himyerî
 
 Ebrehe, Himyerli Hunâta'yı Mekke'ye gönderdi: Savaşmaya değil, yalnız bu evi yıkmaya gelmişti; karşı koymazlarsa kanlarına dokunmayacaktı. `[i-b02-009]`
 
-Abdülmuttalib şöyle cevap verdi: Onunla savaşmak istemiyorlardı, buna güçleri de yoktu. Bu, Allah'ın kutsal evi, dostu İbrâhim'in eviydi. Onu korursa kendi evini korurdu; bırakırsa onların onu savunacak gücü yoktu. `[i-b02-009]`
+Abdülmuttalib şöyle cevap verdi: Onunla savaşmak istemiyorlardı, buna güçleri de yoktu. `[i-b02-009]`
 
-> *Görsel tarifi:* Gündüz, Mekke'de, Kâbe'ye yakın açıklıkta orta plan: yakışıklı, heybetli Abdülmuttalib (İbn Hişâm s. 34), karşısında Himyerli elçi Hunâta. Yaş ve sakal gibi ayrıntılar kaynakta yok. Arkada alçak, çatısız Kâbe. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.
+Bu, Allah'ın kutsal evi, dostu İbrâhim'in eviydi. Onu korursa kendi evini korurdu; bırakırsa onların onu savunacak gücü yoktu. `[i-b02-009]`
+
+> *Görsel tarifi:* Uzak plan, gündüz: Himyerli Hunâta devesiyle Mekke vadisinin girişine geliyor; yanında iki Yemenli hizmetkâr, ilk evlerin önünde onu izleyen Kureyşliler.
 
 ### Sahne 9 (`b02-s09`)
 
 Yer: — · Şahıslar: Abdülmuttalib, Ebrehe, Zû Nefer, Üneys
 
-Abdülmuttalib bazı oğullarıyla Ebrehe'nin ordugâhına gitti. Esir dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi. `[i-b02-010]`
+Abdülmuttalib bazı oğullarıyla Ebrehe'nin ordugâhına gitti. `[i-b02-010]`
+
+Esir dostu Zû Nefer, fil bakıcısı Üneys'ten aracılık etmesini istedi. `[i-b02-010]`
 
 Abdülmuttalib insanların en yakışıklısı ve heybetlisiydi. Ebrehe onu görünce saygı gösterdi. `[i-b02-010]`
 
 Onu kendinden aşağıda oturtmak istemedi; Habeşlilerin onu tahtta yanında görmesini de istemedi. Tahtından inip halının üzerine oturdu ve onu yanına aldı. `[i-b02-010]`
 
-> *Görsel tarifi:* Gündüz, ordugâhta, orta plan: halının üzerinde yan yana oturan Ebrehe ve heybetli Abdülmuttalib; arkada boş taht, kenarda tercüman ve Habeşli askerler (İbn Hişâm s. 34: taht, halı, tercüman). Çadır ya da mekân ayrıntısı kaynakta yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Orta plan, gündüz: Abdülmuttalib oğullarıyla ordugâhın kenarına geliyor; çadırların yanında mızraklı Habeşli nöbetçiler, geride fil ve bakıcısı.
 
 ### Sahne 10 (`b02-s10`)
 
@@ -505,7 +509,7 @@ Sonra Kâbe'nin kapı halkasından tuttu ve Kureyş'ten birkaç kişiyle birlikt
 
 Ardından halkayı bırakıp onlarla dağlara çekildi ve beklemeye başladılar. `[i-b02-012]`
 
-> *Görsel tarifi:* Akşam, Kâbe'nin kapısı önünde orta plan: kapı halkasını tutup dua eden Abdülmuttalib, arkasında birkaç Kureyşli; uzakta dağlara tırmanan küçük insan kafileleri. Kâbe alçak ve çatısız. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Uzak plan, ikindi: Kureyşli aileler yükleri, keçileri ve develeriyle dağ yollarına tırmanıyor; aşağıda boşalan evler ve alçak Kâbe.
 
 ### Sahne 12 (`b02-s12`)
 
@@ -531,7 +535,7 @@ Rivayete göre kırlangıç benzeri bu kuşların her biri, biri gagasında, iki
 
 Taş değen ölüyordu; ama taşlar herkese değmedi. `[i-b02-014]`
 
-> *Görsel tarifi:* Gündüz, ordunun üzerinde gökyüzünü dolduran sürü sürü küçük kuşlar (İbn Hişâm s. 35: kırlangıç benzeri; renk kaynakta yok, sade koyu kâğıt kesik biçimler), geniş plan; aşağıda dağılan, kaçışan askerler küçük. Yaralanma ve ölüm ayrıntısı yok. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Uzak plan, gündüz: deniz tarafından karaya doğru dalga dalga gelen kırlangıç benzeri kuş sürüleri.
 
 ### Sahne 14 (`b02-s14`)
 
@@ -539,7 +543,11 @@ Yer: — · Şahıslar: —
 
 Kur'an bu olayı şöyle anlatır: `[i-b02-015]`
 
-«Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı? Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu. Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.» `[i-b02-015]`
+«Rabbin fil sahiplerine neler etti, görmedin mi? Onların kötü planlarını boşa çıkarmadı mı? `[i-b02-015]`
+
+Onların üstüne sürü sürü kuşlar gönderdi. O kuşlar, onların üzerlerine pişkin tuğladan yapılmış taşlar atıyordu. `[i-b02-015]`
+
+Böylece Allah onları yenilip çiğnenmiş ekine çevirdi.» `[i-b02-015]`
 
 > *Görsel tarifi:* Gündüz, boşalmış çöl, uzak plan: geride kalmış birkaç eşya, çökmüş bir yük; ufka doğru uzaklaşan son kuşlar. İnsan cesedi yok. Yüzler kâğıt kesik üslupta, sade. Kan yok. Nur tonu yok.
 
@@ -561,7 +569,9 @@ O yıl Araplar arasında 'Fil Yılı' diye anıldı. Kureyş bir süre onu tarih
 
 Hz. Muhammed'in (s.a.v.) bu Fil Yılı'nda, milâdî 571'de dünyaya geldiği kabul edilir. `[i-b02-018]`
 
-Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar «Kasvâ çöktü, yerinden kalkmıyor» dediler. Resûlullah şöyle buyurdu: «Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.» `[i-b02-019]`
+Yıllar sonra Hudeybiye yolunda Resûlullah'ın devesi Kasvâ çöküp kalkmayınca insanlar «Kasvâ çöktü, yerinden kalkmıyor» dediler. `[i-b02-019]`
+
+Resûlullah şöyle buyurdu: «Hayır, Kasvâ çökmedi. Onun böyle bir huyu yoktur. Ancak vaktiyle (Ebrehe'nin) fil(in Mekke'ye bırakmayıp) durduran Allah, şimdi de Kasvâ'yı (şehre girmekten) alıkoydu.» `[i-b02-019]`
 
 > *Görsel tarifi:* Şafak, Mekke vadisi uzak plan: alçak, çatısız Kâbe ve evler sakin; dağların arkasından doğan güneş. İnsan yok ya da çok küçük. Işık sıcak ama altın-beyaz değil (nur tonu kullanılmaz).
 
