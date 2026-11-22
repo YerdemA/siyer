@@ -2,11 +2,22 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-22.
+Son güncelleme: 2026-11-23.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Erdem'in telefon notları işlendi (2026-11-22, gece; Play Console'da henüz proje yok, sürüm yüklenmedi).**
+**Kaldığımız yer (2026-11-23): ilk sürüm Google incelemesinde** (kapalı test kanalı).
+- Play Console'da uygulama oluşturuldu, `siyer-kapali-test-1.0.0+1-v4.aab` (versionCode 1, `com.yerdema.siyer`) kapalı teste yüklendi ve incelemeye gönderildi. Kategori: Eğitim. Etiketler Erdem'in seçimi (öneri: Din, Tarih, Eğitim).
+- Gizlilik politikası: https://yerdema.github.io/siyer-gizlilik/ (herkese açık `YerdemA/siyer-gizlilik`; `magaza/gizlilik.html` değişirse orası da güncellenir). GitHub CLI kuruldu ve YerdemA hesabıyla girişli.
+- **Bundan sonra her yeni AAB'de `pubspec.yaml`'daki sürüm kodu artırılmalı** (`1.0.0+2`, `+3`…); Play aynı versionCode'u ikinci kez kabul etmez.
+- **İnceleme sonrası (sıradaki oturum):**
+  1. Onay gelince test edenler katılım bağlantısıyla kurar; gerçek ağda ilk kez denenecekler: bölüm indirme (b02–b10), yarıda kesilen indirme, internetsiz açılış, ekran kapalıyken uzun dinleme (Xiaomi gibi telefonlarda sistem durduruyor mu).
+  2. Red gelirse gerekçeye göre düzelt (olası konular: hedef kitle/Aileler, gizlilik, içerik derecelendirmesi).
+  3. Telefonda kontrol edilmedi: harita sekmesinin yeni hâli (yalnız test görüntüsünde doğrulandı).
+  4. Erdem bakacak: b09-s07 (kaya havada gibi), b04-s01 (küçük kervan); `ordu-hazir` ve `develer-donus` yeniden üretimi; b10 ve diğer d1 görselleri; 582 atıf doğrulaması (herkese açık yayından önce şart).
+  5. 12 test eden ve 14 gün kapalı test şartı (kişisel geliştirici hesabı) üretime çıkıştan önce.
+
+**Erdem'in telefon notları işlendi (2026-11-22, gece).**
 - **Sahne düzeltmeleri** (yalnız katman yerleşimi, görsel değişmedi): b06-s07 kervan zemine indi (`y .42→.53`, `olcek .62→.66`); b09-s09 halka + duvar + kap birlikte aşağı ve küçük (arka sıra evlerin önündeki zemine basıyor); b09-s10 kalabalık iki evin arasındaki geçitte, uzak plan (`x .515, y .668, olcek .16`, derinlik `.7→.42` geçitle birlikte kaysın diye). Önizleme betiği oynatıcının yerleşim hesabını kopyalar (geçici; oturum klasöründe). Bütün bölümlerin ana görselleri paftayla tarandı: kesin hata yok; Erdem bakmalı: **b09-s07** (soldaki kaya havada gibi), **b04-s01** (öndeki küçük kervan yerine göre küçük). Çekimler (`cekimler[]`) taranmadı.
 - **Ekran kapanınca bölüm sürer** (yalnız ekran kapanınca; başka uygulamaya geçince yine durur). Ekran kapalıyken kare çizilmediği için saati 100 ms'lik zamanlayıcı ilerletir (`Timer.tick` ile; harita geçişi atlanır, ilerleme hemen kaydedilir), `PARTIAL_WAKE_LOCK` (en çok 30 dk; bitince/durunca bırakılır) sahne aralarındaki sessizlikte işlemci uyumasın diye. Oynarken ekran kendiliğinden kararmaz (`FLAG_KEEP_SCREEN_ON`). Köprü: `lib/oynatici/ekran.dart` ↔ `MainActivity.kt` (`siyer/ekran`). Manifest'e `WAKE_LOCK` (normal izin, Play beyanı gerekmez). Ön plan servisi/kilit ekranı kontrolleri yok: Xiaomi gibi agresif pil yönetimli telefonlarda uzun süre ekran kapalıyken sistem uygulamayı durdurabilir; olursa `audio_service` paketi (Erdem onayı) gerekir.
 - **Harita geçişi** yalnız bölümün kalanında (o sahne dahil) en az iki sahnenin geçtiği yere açılır (`kaliciYer`); tek sahnelik uğrak (b03-s09 Yesrib kabri) ne gidişte ne dönüşte harita açtırır.

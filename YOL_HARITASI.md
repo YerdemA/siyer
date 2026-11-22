@@ -78,7 +78,8 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
 - [ ] "Hata bildir" bağlantısı
 - [ ] Mağaza görselleri (simge ve açılış hazır)
-- [ ] Android imzalama (`key.properties`) ve Play Store kaydı
+- [x] Android imzalama (`key.properties`) ve Play Store kaydı (2026-11-23: ilk sürüm kapalı test incelemesinde)
+- [ ] Kapalı test: 12 test eden, 14 gün; gerçek ağda bölüm indirme denemesi
 - [ ] Gerçek cihazlarda test (en az bir telefon ve bir tablet)
 
 ### Yan veriler ve yayın kapısı
