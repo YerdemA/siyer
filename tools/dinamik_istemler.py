@@ -25,6 +25,21 @@ AKSAM = "LIGHT: late afternoon going to dusk: warm, low light from the left, lon
 GECE = "LIGHT: night: deep indigo blues; the only warm light is the small orange-red flame described in the scene; no moon glow, no halo."
 GECE_AY = "LIGHT: night: deep indigo blues and cool moonlight from the upper left; no glow, no halo, no warm light."
 
+# Putlar (Erdem, 2026-11-22): şekli kaynakta olan kaynaktaki gibi çizilir; olmayan farklı
+# biçimlerde, yaklaşık bir put görünümünde. Yerel kaynaklarda (TDV "ARAP", "KUREYŞ") Hübel
+# dahil hiçbirinin şekli yok; ARAP maddesi putların çoğunu ilkel Arap işi heykeller diye anar.
+PUTLAR = ("idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures "
+          "with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; "
+          "plain standing stones and rough pillar stones among them")
+
+GOZ_DENETIM = [
+    "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
+    "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
+    "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
+    "no blood, heart, chest, knife or body parts",
+    "no text, letters, crosses, minarets, domes or crescents",
+]
+
 KABE = "nesne-kabe-alcak.png"
 KABE_Y = "nesne-kabe-yuksek.png"
 EVLER = "nesne-mekke-evler.png"
@@ -37,10 +52,11 @@ CERCEVE_KABE_Y = ("The Ka'ba looks exactly like the attached reference: rebuilt,
 
 
 def m(id, sahne, parca, oncelik, gerekce, konu, isik=GUNDUZ, kisiler=None, ekle=None, yasak=None,
-      cekim="orta", tip="mekan", ek_not=""):
+      cekim="orta", tip="mekan", ek_not="", nur_yasak=True, denetim=None):
     return dict(id=id, sahne=sahne, parca=parca, oncelik=oncelik, gerekce=gerekce, tip=tip, cekim=cekim,
                 konu=konu, kisiler=kisiler or [], ekle=ekle or [], isik=isik,
-                yasak=", ".join(x for x in [NUR_YASAK, yasak] if x), ek_not=ek_not)
+                yasak=", ".join(x for x in [NUR_YASAK if nur_yasak else None, yasak] if x), ek_not=ek_not,
+                denetim=denetim)
 
 
 def k(karakter=None, tarif=None, sayi=1, poz=None, hayvan=False, yaklasik=False):
@@ -96,11 +112,11 @@ KAYITLAR = {
           yasak="idols, statues, houses, banners"),
         m("b01-d-put-tasima", "b01-s06", [0], "A",
           "s06'nın ilk çekimi (10 sn) yalnız gece Kâbe'si.",
-          "Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a rough, heavy, faceless block shaped only roughly like a standing figure. " + CERCEVE_KABE,
+          "Night, medium shot near the low, roofless Ka'ba: three men carry a crudely carved stone idol on a wooden litter towards it; one walks ahead holding a small torch. The idol is a crude, heavy stone statue roughly shaped like a standing human figure with simple, primitive carved features. " + CERCEVE_KABE,
           isik=GECE, ekle=[KABE],
           kisiler=[k(tarif="Arab men of the Khuza'a in plain dark tunics and head cloths", sayi=3,
                      poz="two carrying the litter on their shoulders, one walking ahead with a small torch, all in profile.")],
-          yasak="blood, sacrifice, detailed idol faces, gold, jewels"),
+          yasak="blood, sacrifice, gold, jewels"),
         m("b01-d-kusay-ittifak", "b01-s07", [1], "A",
           "s07'nin ilk çekimi çadır uzak planında 17 sn kalıyor.",
           "Dusk, outside a valley: a gathering of allied tribesmen on camels and on foot around a tall, broad-shouldered Qurayshi leader of about 40 (Qusayy) with a full black beard, cream tunic and dark brown cloak, who raises one hand to speak; dust in the air. No fighting.",
@@ -123,9 +139,9 @@ KAYITLAR = {
           yasak="weapons, idols in the foreground"),
         m("b01-d-putlar", "b01-s10", [0, 1], "A",
           "s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor.",
-          "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it in rows: crudely carved stone figures of different sizes and plain standing stones, some on low bases; no recognisable faces, no gold. " + CERCEVE_KABE,
+          "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: " + PUTLAR + "; no gold. " + CERCEVE_KABE,
           isik=SAFAK, ekle=[KABE],
-          yasak="any person, blood, sacrifice, detailed faces on idols, writing"),
+          yasak="any person, blood, sacrifice, writing"),
         m("b01-d-pazar", "b01-s11", [1], "A",
           "s11'in ilk çekimi 14 sn kervan uzak planı; güvenle gelen tüccar ve pazar görülmüyor.",
           "Daytime, a busy open market in Mecca among flat-roofed mudbrick houses: traders from outside lay out sacks of grain, baskets of dates, rolls of cloth and leather; camels kneel unloaded; buyers and sellers talk calmly; nobody carries a drawn weapon.",
@@ -155,15 +171,8 @@ KAYITLAR = {
                    k(tarif=BEDEVI, sayi=3, poz="near the tents, watching."),
                    k(tarif="camel", hayvan=True, poz="behind the traveller.")],
           yasak="weapons drawn, blood"),
-        m("b01-d-necasi", "b01-s12", [3], "A",
-          "s12'nin son çekimi (15 sn) konak görselinin kadrajı; Ca'fer'in konuşması görüntüsüz.",
-          "Daytime, the plain stone audience hall of the king of Abyssinia: the king, an African ruler of about 50 with a short grey-black beard, sits on a simple wooden throne in a white robe with a dark red mantle; before him a young Arab man (Ja'far) of about 25 with a short black beard, off-white head cloth and a short brown cloak speaks calmly with one hand open; Abyssinian courtiers stand at the sides.",
-          kisiler=[k(tarif="the king of Abyssinia (the Negus), an African ruler of about 50 with a short grey-black beard, a white robe and a dark red mantle, no crown", poz="seated on a plain wooden throne at the right."),
-                   k(tarif="Ja'far ibn Abi Talib as a young man of about 25 with a short black beard, an off-white head cloth, a cream tunic and a short brown cloak", poz="standing at the left, facing the king, one hand open."),
-                   k(tarif="Abyssinian courtiers in white wrapped garments", sayi=4, poz="standing at both sides.")],
-          yasak="crosses, icons, crowns, writing, gold ornaments"),
-        m("b01-d-zulum", "b01-s12", [3], "B",
-          "Aynı uzun parçanın ikinci yarısı: 'güçlünün zayıfı ezdiği' cümlesi.",
+        m("b01-d-zulum", "b01-s12", [3], "A",
+          "s12'nin son çekimi (15 sn) konak görselinin kadrajı. Parça bölünür: önce b01-d-putlar (putlara tapma), sonra bu ('güçlünün zayıfı ezdiği').",
           "Daytime, at a well in a dry valley: a broad, richly dressed man pushes an old, poor man in a ragged cloak away from the well; the old man's empty water skin falls to the ground; two bystanders turn their faces away.",
           kisiler=[k(tarif="a broad, proud Arab man of about 40 with a black beard, a fine ochre cloak and a dark head cloth", poz="at the left, pushing with one arm."),
                    k(tarif="a thin old man with a white beard, a ragged grey cloak", poz="in the centre, stumbling back."),
@@ -320,7 +329,7 @@ KAYITLAR = {
                    k(tarif="townspeople in plain white garments", sayi=3, poz="by the gate.")],
           yasak="wounds, blood, any face or body on the litter, crosses"),
         m("b02-d-kasva", "b02-s16", [2], "A",
-          "s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz.",
+          "s16 tek ortak Kâbe görseli 39 sn; Hudeybiye'deki Kasvâ olayı görüntüsüz. Efendimiz bu görselde yok (peygamberlik sonrası nur kararı verilmedi).",
           "Daytime, a desert track near al-Hudaybiya: a she-camel (al-Qaswa) has knelt down on the path and will not rise; travellers around her stop and look at each other, one points at her.",
           kisiler=[k(tarif="al-Qaswa, a light tawny she-camel with a simple saddle", hayvan=True, poz="kneeling in the centre."),
                    k(tarif="Arab travellers in plain white and undyed garments", sayi=6, poz="around the camel, at the left and behind.")],
@@ -336,11 +345,11 @@ KAYITLAR = {
           yasak="writing, banners, maps"),
         m("b03-d-kura-oklari", "b03-s03", [0], "A",
           "s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır.",
-          "Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large carved stone idol, out of focus, no face detail.",
+          "Close shot in a dim stone interior: the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; in the dark background, the rough outline of a large idol roughly shaped like a human figure with primitive carved features, out of focus.",
           isik=GECE.replace("night: deep indigo blues", "dim interior: deep brown shadows").replace("small orange-red flame described in the scene", "small oil lamp at the left"),
           cekim="yakin",
           kisiler=[k(tarif="the custodian of the idol, only his hands and forearms in a dark cloak are visible", poz="hands in the centre holding the quiver.")],
-          yasak="faces, blood, knives, writing on arrows"),
+          yasak="human faces, blood, knives, writing on arrows"),
         m("b03-d-on-deve", "b03-s04", [1], "A",
           "s04 tek uzak görsel 26 sn; kura usulü (on deve) anlatılıyor.",
           "Daytime, in an open space near the Ka'ba: ten camels stand in a line; a little apart stands Abdullah, seen strictly from behind; Abdul-Muttalib stands beside him. " + CERCEVE_KABE,
@@ -378,12 +387,48 @@ KAYITLAR = {
           kisiler=[k(tarif="thin goats", sayi=4, hayvan=True, poz="around the tents.")],
           yasak="people, bodies, bones, blood"),
         m("b04-d-oyun", "b04-s07", [0], "B",
-          "s07 tek görsel 23 sn; olay bilinçli olarak gösterilmiyor (Erdem'e soru: aşağıda).",
+          "s07 tek görsel 23 sn. Açılış: çocukların oynadığı yamaç; olay ardından çocukların gözlerindeki yansımayla anlatılır (b04-d-goz-1…5).",
           "Daytime, a grassy-brown hillside in the land of the Banu Sa'd: a few small children play among grazing lambs, seen from far and from behind; at the centre-left, an open spot on the hillside: " + NUR_BOSLUK + ".",
           cekim="uzak",
           kisiler=[k(tarif="small Bedouin children seen from behind", sayi=3, poz="playing at the right."),
                    k(tarif="lambs", sayi=6, hayvan=True, yaklasik=True, poz="grazing around.")],
           yasak="angels, light beams, any adult"),
+        m("b04-d-cocuk-yuzler", "b04-s07", [0], "B",
+          "Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor.",
+          "Daytime, on the hillside: close shot of three small Bedouin children side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame.",
+          cekim="yakin",
+          kisiler=[k(tarif="Bedouin children of about 4 to 7, simple undyed tunics, small dark head cloths, faces simple and dignified", sayi=3, poz="side by side, heads turned to the left.")],
+          yasak="anything they are looking at, light beams, angels"),
+        m("b04-d-goz-1", "b04-s07", [0], "A",
+          "Göz yansıması dizisi 1/5: Cebrâil'in gelişi.",
+          "Extreme close-up of one eye of a small Bedouin boy with light-brown skin and thick black brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: a few lambs on the slope and the tiny warm golden-white light among them; from the sky a tall white light descends towards it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
+          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          nur_yasak=False, denetim=GOZ_DENETIM),
+        m("b04-d-goz-2", "b04-s07", [1], "A",
+          "Göz yansıması dizisi 2/5: yere yatırılması.",
+          "Extreme close-up of one eye of a small Bedouin girl with darker skin and fine brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a dark head covering drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light lies low on the ground; the tall white light bends over it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
+          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          nur_yasak=False, denetim=GOZ_DENETIM),
+        m("b04-d-goz-3", "b04-s07", [1], "A",
+          "Göz yansıması dizisi 3/5: kalbinden pıhtının alınması (yalnız ışık ve koyu bir nokta).",
+          "Extreme close-up of one eye of an older Bedouin boy with sun-browned skin and a scar-free, smooth brow: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: out of the tiny warm golden-white light, the tall white light lifts away one small dark speck, which dissolves into the air like smoke. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
+          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          nur_yasak=False, denetim=GOZ_DENETIM),
+        m("b04-d-goz-4", "b04-s07", [2], "A",
+          "Göz yansıması dizisi 4/5: altın leğende Zemzem'le yıkanma.",
+          "Extreme close-up of one eye of a small Bedouin boy with olive skin and curly black hair at the temple: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: beside the tiny warm golden-white light stands a simple golden basin filled with clear water, the tall white light above it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
+          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          nur_yasak=False, denetim=GOZ_DENETIM),
+        m("b04-d-goz-5", "b04-s07", [2], "A",
+          "Göz yansıması dizisi 5/5: yerine konup kapatılması; ışığın çekilişi.",
+          "Extreme close-up of one eye of the first boy again (light-brown skin, thick black brows): the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light stands upright alone on the slope; the tall white light rises and fades into the sky. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
+          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
+          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-mekkeye-donus", "b04-s09", [0], "A",
           "s09'un iki çekimi aynı görsel (32 sn).",
           "Late afternoon, the road into the Mecca valley: Halima riding her grey donkey and al-Harith walking beside it come down towards the first houses; Halima seen strictly from behind.",
@@ -601,7 +646,7 @@ KAYITLAR = {
           "Daytime, an open area in the Mecca valley: a crowd walks in a circle around a crudely carved stone idol (the same idol as in the attached festival image); some tie cloth strips to it. No slaughter shown.",
           ekle=["b10-put-bayrami.png"],
           kisiler=[k(tarif=KUREYS, sayi=16, yaklasik=True, poz="walking in a circle around the idol.")],
-          yasak="blood, sacrifice, knives, detailed idol face"),
+          yasak="blood, sacrifice, knives"),
         m("b10-d-dagilis", "b10-s04", [1], "A",
           "s04 tek görsel 29 sn.",
           "Dawn, a crossroads outside Mecca: four men part ways, each walking off along a different road; two look back over their shoulders.",
@@ -642,7 +687,7 @@ KAYITLAR = {
           "Daytime, near a crudely carved stone idol in Mecca: men offer pieces of meat on a flat stone before the idol; Zayd ibn Amr turns away from them, raising one hand in refusal.",
           kisiler=[k(karakter="zeyd_amr_yasli", poz="at the right, turning away."),
                    k(tarif=KUREYS, sayi=3, poz="at the left by the idol.")],
-          yasak="blood, slaughter, knives, detailed idol face"),
+          yasak="blood, slaughter, knives"),
         m("b10-d-kiz-kurtarma", "b10-s06", [1], "A",
           "Aynı sahne: kız çocuğunu kurtarması.",
           "Daytime, at the edge of Mecca: Zayd ibn Amr gently takes the hand of a small girl (seen from behind) from a stern man and leads her towards himself; the man stands aside.",
@@ -687,6 +732,8 @@ def kayit(bolum: str, r: dict) -> dict:
     if r["ekle"]:
         k["ekle"] = r["ekle"]
     k["isik"] = r["isik"]
+    if r.get("denetim"):
+        k["denetim"] = r["denetim"]
     k["yasak"] = r["yasak"]
     k["not"] = not_
     return k

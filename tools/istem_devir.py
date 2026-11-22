@@ -42,7 +42,8 @@ CEKIM = {
     "uzak": "Wide shot from far away, camera at standing eye level, looking straight ahead (no high angle, no bird's-eye view). People appear small.",
     "orta": "Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.",
     "yakin": "Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.",
-    "bakis": "Point of view of a person standing (or sitting, if stated) in the scene, at their eye level. The viewer's own body, hands, arms and feet never appear in the image.",
+    "detay": "Extreme close-up (macro detail), camera very close at eye level; only the described detail fills the frame.",
+    "bakis":"Point of view of a person standing (or sitting, if stated) in the scene, at their eye level. The viewer's own body, hands, arms and feet never appear in the image.",
 }
 YERLESIM = {
     "figur": (
@@ -157,6 +158,9 @@ def yapili_istem(kayit: dict, kartlar: dict) -> str:
     ]
     if tip in ("figur", "nesne"):
         denetim.append("the background is one flat, uniform green with no ground, horizon or shadow")
+    if kayit.get("denetim"):
+        # Genel liste bu görsele uymuyorsa (ör. göz yakın planındaki ışıklar) kayıt kendi listesini verir.
+        denetim = kayit["denetim"]
     parcalar.append("BEFORE YOU OUTPUT, CHECK AND FIX: " + "; ".join(denetim) + ".")
     return "\n\n".join(parcalar)
 
