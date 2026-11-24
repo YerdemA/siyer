@@ -599,7 +599,18 @@ class YerTutucu {
     // Sıcak beyaz-altın parıltı; başka hiçbir ışık bu tonu kullanmaz.
     final boy = k.sayi('boy', 0);
     if (boy > 0) {
+      // `aci` (derece): figür ayak noktası çevresinde döner; ör. yere yatırılan
+      // Efendimiz (b04-s07 göz yansımaları).
+      final aci = k.sayi('aci', 0);
+      if (aci != 0) {
+        final ayak = Offset(k.sayi('x', 0.5) * w, k.sayi('y', 0.7) * h);
+        c.save();
+        c.translate(ayak.dx, ayak.dy);
+        c.rotate(aci * math.pi / 180);
+        c.translate(-ayak.dx, -ayak.dy);
+      }
       _nurBoylu(boy);
+      if (aci != 0) c.restore();
       return;
     }
     final m = Offset(k.sayi('x', 0.5) * w, k.sayi('y', 0.5) * h);
@@ -654,7 +665,9 @@ class YerTutucu {
     final zemin = k.sayi('y', 0.7) * h;
     final ust = zemin - yk;
     final guc = k.sayi('guc', 1).clamp(0.0, 4.0);
-    final gorunurluk = math.min(1.0, p * 4) * guc;
+    // `hemen`: çekimin başında belirmeden, tam görünür (aynı nurun art arda
+    // çekimlerde sürdüğü yerlerde yanıp sönmesin).
+    final gorunurluk = (k.bayrak('hemen') ? 1.0 : math.min(1.0, p * 4)) * guc;
 
     // Gövde: omuzlardan (boyun %20'si) zemine; etek omuzdan biraz geniş.
     final omuzY = ust + yk * 0.2;

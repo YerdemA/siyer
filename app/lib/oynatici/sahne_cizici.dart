@@ -114,6 +114,17 @@ class SahneCizici extends CustomPainter {
       } else {
         canvas.translate(-size.width / 2, -size.height / 2);
       }
+      // `ayar.daire` {x, y, r}: katman bu dairenin içine kırpılır (kadraj
+      // birimi; r genişliğe oranla). Ör. göz bebeğindeki yansımaya çizilen nur.
+      final daire = katman.ayar['daire'];
+      if (daire is Map<String, dynamic>) {
+        double s(String ad) => (daire[ad] as num?)?.toDouble() ?? 0;
+        canvas.clipPath(Path()
+          ..addOval(Rect.fromCircle(
+            center: Offset(s('x') * size.width, s('y') * size.height),
+            radius: s('r') * size.width,
+          )));
+      }
       final resim = gorseller?.al(katman.dosya);
       if (resim != null) {
         paintImage(
