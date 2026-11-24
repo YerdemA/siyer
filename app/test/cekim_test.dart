@@ -100,6 +100,14 @@ void main() {
     expect(plan.sahneler[0].cekimler.map((e) => e.gorsel.tarif), ['ana', 'b']);
   });
 
+  test('uzun geçişten hemen sonra kısa geçişli çekim gelebilir', () {
+    final plan = ZamanPlani.olustur(_bolum([
+      {'parca': 1, 'an': 0.1, 'gecis': 1.5, 'tarif': 'b', 'katmanlar': []},
+      {'parca': 1, 'an': 0.13, 'gecis': 0.2, 'tarif': 'c', 'katmanlar': []},
+    ]));
+    expect(plan.sahneler[0].cekimler.map((e) => e.gorsel.tarif), ['ana', 'b', 'c']);
+  });
+
   test('kadrajlı çekim ana katmanları devralır, gizleneni atlar, kendininkini üste koyar', () {
     final g = Gorsel.fromJson({
       'tarif': 'ana',
@@ -173,8 +181,8 @@ void main() {
   test('geçişi öncekinin geçişiyle üst üste binecek çekim atlanır', () {
     final plan = ZamanPlani.olustur(_bolum([
       {'parca': 1, 'an': 0.1, 'gecis': 1.5, 'tarif': 'b', 'katmanlar': []},
-      // b 4.9'da başlar; c'nin geçişi (8.9 - 4) b bitmeden başlıyor.
-      {'parca': 1, 'an': 0.5, 'gecis': 4.0, 'tarif': 'c', 'katmanlar': []},
+      // b 4.9'da tam görünür; c'nin geçişi (8.9 - 4.5 = 4.4) b'nin geçişi bitmeden başlıyor.
+      {'parca': 1, 'an': 0.5, 'gecis': 4.5, 'tarif': 'c', 'katmanlar': []},
     ]));
     expect(plan.sahneler[0].cekimler.map((e) => e.gorsel.tarif), ['ana', 'b']);
   });

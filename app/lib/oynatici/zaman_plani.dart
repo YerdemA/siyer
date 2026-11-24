@@ -183,7 +183,8 @@ class ZamanPlani {
       final p = parcalar[c.parca];
       final b = p.bas + (p.son - p.bas) * c.an;
       final g = c.gecis ?? ayar.cekimGecisi;
-      if (b - g < baslar.last.$2 + baslar.last.$3) continue;
+      // Geçiş, önceki çekimin geçişi bittikten (önceki çekim tam göründükten) sonra başlar.
+      if (b - g < baslar.last.$2) continue;
       // Sahne sonu geçişine de yer kalsın.
       if (b > son - ayar.gecis - g) continue;
       baslar.add((c, b, g));
