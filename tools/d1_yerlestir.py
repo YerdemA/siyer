@@ -121,16 +121,47 @@ YENIDEN = {
                  "kamera": "yavas-yaklasma", "dosya": "b01-d-antlasma.webp"},
                 {"parca": 0, "an": 0.7, "tarif": "Kusay (b01'den): müttefik kabileler arasında konuşuyor.",
                  "kamera": "yatay-kayma", "dosya": "b01-d-kusay-ittifak.webp"}],
+    # "Omzuna alıp Kâbe'yi tavaf etti": Varaka'dan Abdülmuttalib'e (ana görsel) dönüş.
+    "b04-s09": [{"parca": 3, "tarif": "Abdülmuttalib Kâbe'nin yanında (ana görsel).", "kamera": "yavas-uzaklasma",
+                 "katmanlar": [], "kadraj": {"x": 0.42, "y": 0.64, "yakinlik": 1.45}}],
+    # "Ben de ... koyunlarını güttüm": çobanlardan Efendimiz'in yamacına (ana görsel) dönüş.
+    "b06-s05": [{"parca": 1, "tarif": "Yamaçta koyunlar; aralarında Efendimiz'in nuru (ana görselin yakın planı).",
+                 "kamera": "yavas-yaklasma", "kadraj": {"x": 0.5, "y": 0.55, "yakinlik": 1.15},
+                 "katmanlar": [{"id": "nur", "dosya": "", "yerTutucu": "nur", "derinlik": 0.6,
+                                "ayar": {"x": 0.6, "y": 0.8, "boy": 0.32, "guc": 2.5, "kim": "efendimiz"}}]}],
+}
+
+# Yeni görselin hedef parçası elle değişirse (istem kaydındakinin yerine).
+PARCA = {
+    "b05-d-gece-konak": 2,      # "Ümmü Eymen de onlarla birlikteydi"
 }
 
 # Yeni görselin parça içindeki başlangıcı elle verilirse (varsayılan hesap yerine).
 AN = {
     "b02-d-ordu-hazir": 0.04,   # ana görsel (çöken fil) metinden önce görünmesin
+    "b06-d-cobanlar": 0.3,
 }
 
 # Boş bırakılan yere Efendimiz'in nuru (kadraj birimi; ayak noktası x, y; boy).
 # Değerler görselin 16:9 kırpılmış hâline göre, ayar.gorsel olcek 1.05 hesaba katılarak.
-NUR = {}
+def _nur(x_disp, y_disp, boy_disp):
+    """900 px genişliğinde gösterilen özgün görseldeki ayak noktası ve boy → kadraj birimi
+    (16:9 kırpma üstten 80 px, ayar.gorsel olcek 1.05)."""
+    o = 1536 / 900
+    u, v = x_disp * o / 1536, (y_disp * o - 80) / 864
+    return {"id": "nur", "dosya": "", "yerTutucu": "nur", "derinlik": 0.6,
+            "ayar": {"x": round(0.5 + (u - 0.5) * 1.05, 3), "y": round(min(0.99, 0.5 + (v - 0.5) * 1.05), 3),
+                     "boy": round(boy_disp * o / 864 * 1.05, 3), "guc": 2.5, "kim": "efendimiz"}}
+
+
+NUR = {
+    "b04-d-varaka-bulus": _nur(450, 548, 250),    # Varaka ile Kureyşli arasında, çocuk (yaklaşık 5 yaş)
+    "b05-d-ev-avlu": _nur(470, 540, 250),         # Âmine'nin önünde, 6 yaş
+    "b06-d-yol": _nur(440, 560, 300),             # Ebû Tâlib'in yanında, 8 yaş
+    "b06-d-bahira-soru": _nur(340, 500, 310),     # Bahîrâ'nın karşısında, 12 yaş
+    "b07-d-genc-katilim": _nur(420, 495, 330),    # halkada Zübeyr'in solunda, genç adam
+    "b08-d-emanet": _nur(570, 548, 460),          # sağda, bohçanın uzatıldığı uzun boylu adam
+}
 
 
 def sure(dosya):
@@ -177,6 +208,8 @@ def main(argv):
         g = s["gorsel"]
         eski = g.get("cekimler", [])
         yeniler = [k for k in hazir if k["sahne"] == sid]
+        for k in yeniler:
+            k["parca"] = [PARCA.get(k["id"], k["parca"][0])]
         hedefler = {k["parca"][0] for k in yeniler}
         kalan, kaldirilan = [], []
         for c in eski:
