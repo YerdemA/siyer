@@ -43,7 +43,42 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Ukâz panayırında yakın: hasırlarda kumaş, deri, testiler, hurma; tüccar elleri küçük bir terazide tartıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ukaz-yakin",
+                "dosya": "b07-d-ukaz-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "an": 0.55,
+            "tarif": "Ukâz panayırı, geniş görüntü (ana görsel): şairler ve kalabalık.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.55,
+              "yakinlik": 1.1
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s01.mp3",
@@ -103,7 +138,30 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Ukâz'da: farklı kabilelerden adamlar kılıçlarını ve mızraklarını çadırın yanına bırakıyor; ikisi el sıkışıyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "silah-birakma",
+                "dosya": "b07-d-silah-birakma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s02.mp3",
@@ -166,7 +224,51 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Ukâz'da: alçak bir kayaya çıkmış biri göğsünü gere gere övünüyor; aşağıdakiler öfkeli, işaret ediyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "ovunen",
+                "dosya": "b07-d-ovunen.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "İkindi, geniş bir ova: uzakta iki kalabalık toz bulutu içinde çarpışıyor; hiçbir şey seçilmiyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "toz-savas",
+                "dosya": "b07-d-toz-savas.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s03.mp3",
@@ -248,7 +350,42 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gündüz, geniş ova: iki kabile ordusu uzun saflar hâlinde karşı karşıya; arada boş toprak.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "iki-saf",
+                "dosya": "b07-d-iki-saf.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Hîre kervanı ve Berrâd (ana görsel).",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.55,
+              "yakinlik": 1.05
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s04.mp3",
@@ -852,7 +989,30 @@
             }
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "İkindi, Abdullah b. Cüd'ân'ın evinin kapısı: Kureyş boylarının yaşlıları birer birer geliyor, Zübeyr karşılıyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "toplanma",
+                "dosya": "b07-d-toplanma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s12.mp3",
@@ -919,7 +1079,64 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Abdullah b. Cüd'ân'ın avlusu: Kureyşliler yemin için halka olmuş; Zübeyr'in yanında Efendimiz'in nuru.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "genc-katilim",
+                "dosya": "b07-d-genc-katilim.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.465,
+                  "y": 0.904,
+                  "boy": 0.684,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, Mekke'de pazar sokağı: varlıklı bir adam bohçayı yabancı tüccara geri veriyor; arkada antlaşmanın üyeleri.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "hak-teslim",
+                "dosya": "b07-d-hak-teslim.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s13.mp3",
@@ -991,7 +1208,30 @@
             }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "İkindi, taşlı bir ova: alçak güneşte kızıl tüylü develer otluyor; çoban yok.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "kizil-develer",
+                "dosya": "b07-d-kizil-develer.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b07-s14.mp3",

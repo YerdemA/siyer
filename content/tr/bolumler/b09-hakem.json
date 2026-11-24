@@ -74,7 +74,31 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Şafak, alçak Kâbe'nin köşesi yakından: harçsız taşlar; yanında bir Kureyşli yukarı bakıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "duvar-boy",
+                "dosya": "b09-d-duvar-boy.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          }
+        ]
       },
       "ses": {
         "anlatim": "b09-s01.mp3",
@@ -128,7 +152,52 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'de bir sokak: Kureyşliler açık bohça tutan Düveyk'i sıkıştırıyor, biri bohçayı gösteriyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "duveyk",
+                "dosya": "b09-d-duveyk.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "tarif": "Kâbe'nin içi: biri hazinenin saklandığı kuyunun başında diz çökmüş; arkasında bir Kureyşli, duvar dibinde putlar.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "kabe-ic-kuyu",
+                "dosya": "b09-d-kabe-ic-kuyu.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
+          }
+        ]
       },
       "ses": {
         "anlatim": "b09-s02.mp3",
@@ -1105,7 +1174,63 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Yeniden yapılan Kâbe'nin içi: bir sıra taş bir sıra ahşap hatıllı yüksek duvarlar, ağır kalaslı düz tavan, duvar boyunca merdiven.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kabe-ic-tavan",
+                "dosya": "b09-d-kabe-ic-tavan.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.2
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, yeni Kâbe'nin yerden yüksek tek kanatlı kapısı; dibinde bir Kureyşli yukarı bakıyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "yuksek-kapi",
+                "dosya": "b09-d-yuksek-kapi.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Yeni Kâbe vadinin ortasında, geniş görüntü (ana görsel).",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.55,
+              "yakinlik": 1.0
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b09-s14.mp3",

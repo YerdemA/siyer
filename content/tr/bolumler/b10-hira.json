@@ -67,7 +67,31 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "İkindi, Mekke'nin üstündeki kayalık yamaçtan (onun gözünden): vadide evler ve yeni, yüksek Kâbe.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "tepeden",
+                "dosya": "b10-d-tepeden.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s01.mp3",
@@ -234,6 +258,27 @@
         "cekimler": [
           {
             "parca": 1,
+            "tarif": "Gündüz, Mekke vadisinde açık bir alan: kalabalık kaba bir taş putun çevresinde dönüyor, bazıları ona bez bağlıyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "tavaf-put",
+                "dosya": "b10-d-tavaf-put.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
             "tarif": "Orta plan: putun çevresindeki kalabalıktan ayrılıp yürüyen dört adam, omuzlarının üstünden geriye bakıyor.",
             "kamera": "yatay-kayma",
             "kadraj": {
@@ -323,7 +368,73 @@
             "derinlik": 0.6
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Şafak, Mekke dışında bir yol ayrımı: dört adam ayrı yollara dağılıyor, ikisi dönüp bakıyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "dagilis",
+                "dosya": "b10-d-dagilis.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gece, kandille aydınlanan küçük bir oda: Varaka hasırda oturmuş uzun bir tomar okuyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "varaka-kitap",
+                "dosya": "b10-d-varaka-kitap.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, yüksek surlu bir Bizans şehrinin taş kapısı: Osman b. Hüveyris devesiyle geliyor, kapıda nöbetçiler.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "osman-bizans",
+                "dosya": "b10-d-osman-bizans.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s04.mp3",
@@ -394,6 +505,49 @@
         "cekimler": [
           {
             "parca": 1,
+            "tarif": "Gündüz, Şam'da taş bir evin gölgeli revakı: Zeyd b. Amr hasırda yaşlı bir Yahudi âlimi dinliyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "yahudi-alim",
+                "dosya": "b10-d-yahudi-alim.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Şam'da küçük taş bir manastırın önü: Zeyd b. Amr, elini kaldırıp konuşan yaşlı bir keşişi dinliyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "hristiyan-alim",
+                "dosya": "b10-d-hristiyan-alim.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
+          },
+          {
+            "parca": 2,
             "tarif": "Orta plan: Zeyd iki elini göğe kaldırmış dua ediyor; sırtında heybe.",
             "kamera": "yavas-yaklasma",
             "katmanlar": [
@@ -502,7 +656,63 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gündüz, Mekke'de kaba bir taş putun yanı: adamlar düz taşa et sunuyor; yaşlı Zeyd elini kaldırıp yüz çeviriyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "zeyd-yuz-cevirme",
+                "dosya": "b10-d-zeyd-yuz-cevirme.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'nin kenarı: yaşlı Zeyd sert bakışlı bir adamdan küçük bir kızın elini nazikçe alıyor; kız arkadan.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "kiz-kurtarma",
+                "dosya": "b10-d-kiz-kurtarma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Yaşlı Zeyd, sırtını Kâbe'ye dayamış (ana görsel).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.6,
+              "yakinlik": 1.15
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s06.mp3",
@@ -586,7 +796,30 @@
             }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 2,
+            "tarif": "Alacakaranlık, kuru bir vadi: üst üste yığılmış taşlardan sade bir kabir, yanında tek bir dikenli çalı.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "zeyd-kabir",
+                "dosya": "b10-d-zeyd-kabir.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b10-s07.mp3",

@@ -80,7 +80,43 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'de bir ev önü: iki Kureyşli mühürlü bir bohçayı Efendimiz'in nuruna uzatıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "emanet",
+                "dosya": "b08-d-emanet.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.64,
+                  "y": 0.99,
+                  "boy": 0.954,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s01.mp3",
@@ -339,7 +375,30 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Busrâ yakınındaki manastırın yanı: yaşlı rahip Meysere'ye uzaktaki gölgeli ağacı gösteriyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "rahip-meysere",
+                "dosya": "b08-d-rahip-meysere.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s05.mp3",
@@ -470,7 +529,30 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Akşam, Hz. Hatice'nin evinde bir oda: Hz. Hatice minderde arkadan; önünde haberci kadın hafifçe eğiliyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "hatice-oda",
+                "dosya": "b08-d-hatice-oda.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s07.mp3",
@@ -724,7 +806,72 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Hz. Hatice'nin evinin avlusu: dört kız hasırda arkadan oturuyor; Hz. Hatice arkalarında, gölgede.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kizlar",
+                "dosya": "b08-d-kizlar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Alacakaranlık, Mekke yakınında çıplak bir tepenin eteği: birkaç taşla belirlenmiş küçük, sade bir kabir.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kasim-kabir",
+                "dosya": "b08-d-kasim-kabir.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Şafak, kuzeye uzanan çöl yolu: develer üstünde birkaç kadın, çok küçük ve arkadan.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "hicret-yolu",
+                "dosya": "b08-d-hicret-yolu.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s10.mp3",
@@ -844,6 +991,28 @@
                 }
               }
             ]
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, çöl: atlı akıncılar küçük bir oğlanı elinden tutup götürüyor; uzakta devedeki kadın arkasından uzanıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "zeyd-kacirilis",
+                "dosya": "b08-d-zeyd-kacirilis.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
           }
         ]
       },
@@ -1235,6 +1404,28 @@
         "kamera": "yavas-yaklasma",
         "cekimler": [
           {
+            "parca": 0,
+            "tarif": "Gündüz, kıtlıkta Mekke'de bir avlu: boş, devrik küpler, tek zayıf keçi, hasırda birkaç kuru hurma çekirdeği.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kitlik",
+                "dosya": "b08-d-kitlik.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
             "parca": 1,
             "tarif": "Orta plan: yaşlı Ebû Tâlib, Abbas ve Ca'fer; küçük Ali yanındaki figüre bakıyor: boyu ve asaleti belli, baştan ayağa yumuşak, sıcak altın-beyaz nurla kaplı figür (Efendimiz); sarık yok; yüz, el ve beden ayrıntısı yok. Boş testiler.",
             "kamera": "yavas-yaklasma",
@@ -1344,7 +1535,31 @@
             }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gece, bir oda: hasır üstünde minder, üzerinde katlanmış şarap kırmızısı bir pelerin; yanında kirmen ve küçük bir sandık.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "hatira",
+                "dosya": "b08-d-hatira.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          }
+        ]
       },
       "ses": {
         "anlatim": "b08-s15.mp3",
