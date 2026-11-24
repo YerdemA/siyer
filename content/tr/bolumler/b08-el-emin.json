@@ -83,7 +83,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s01.m4a",
+        "anlatim": "b08-s01.mp3",
         "muzik": "acilis-sakin",
         "ortam": "sehir-gunduz"
       },
@@ -130,7 +130,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b08-s02.m4a",
+        "anlatim": "b08-s02.mp3",
         "muzik": "dusunceli-01",
         "ortam": "avlu-mirildanma"
       },
@@ -202,7 +202,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s03.m4a",
+        "anlatim": "b08-s03.mp3",
         "muzik": "umut-sicak",
         "ortam": "avlu-mirildanma"
       },
@@ -269,7 +269,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b08-s04.m4a",
+        "anlatim": "b08-s04.mp3",
         "muzik": "yolculuk-01",
         "ortam": "kervan-uzak"
       },
@@ -342,7 +342,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s05.m4a",
+        "anlatim": "b08-s05.mp3",
         "muzik": "sakin-isik",
         "ortam": "col-ruzgari"
       },
@@ -426,7 +426,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s06.m4a",
+        "anlatim": "b08-s06.mp3",
         "muzik": "huzur-dusuk",
         "ortam": "aksam-sehir"
       },
@@ -473,7 +473,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s07.m4a",
+        "anlatim": "b08-s07.mp3",
         "muzik": "umut-sicak",
         "ortam": "aksam-sehir"
       },
@@ -591,7 +591,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b08-s08.m4a",
+        "anlatim": "b08-s08.mp3",
         "muzik": "umut-sicak",
         "ortam": "sehir-gunduz"
       },
@@ -653,7 +653,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b08-s09.m4a",
+        "anlatim": "b08-s09.mp3",
         "muzik": "umut-sicak",
         "ortam": "avlu-mirildanma"
       },
@@ -727,7 +727,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b08-s10.m4a",
+        "anlatim": "b08-s10.mp3",
         "muzik": "sicak-ev",
         "ortam": "gece-sessiz"
       },
@@ -848,7 +848,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b08-s11.m4a",
+        "anlatim": "b08-s11.mp3",
         "muzik": "dusunceli-01",
         "ortam": "sehir-gunduz"
       },
@@ -990,7 +990,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b08-s12.m4a",
+        "anlatim": "b08-s12.mp3",
         "muzik": "dusunceli-01",
         "ortam": "sehir-gunduz"
       },
@@ -1132,7 +1132,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b08-s13.m4a",
+        "anlatim": "b08-s13.mp3",
         "muzik": "umut-sicak",
         "ortam": "aksam-sehir"
       },
@@ -1279,7 +1279,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b08-s14.m4a",
+        "anlatim": "b08-s14.mp3",
         "muzik": "dusunceli-01",
         "ortam": "sehir-gunduz"
       },
@@ -1347,7 +1347,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b08-s15.m4a",
+        "anlatim": "b08-s15.mp3",
         "muzik": "kapanis",
         "ortam": "aksam-sehir"
       },

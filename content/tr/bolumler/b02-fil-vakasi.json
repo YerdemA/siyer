@@ -94,7 +94,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s01.m4a",
+        "anlatim": "b02-s01.mp3",
         "muzik": "gerilim-uzak",
         "ortam": "saray"
       },
@@ -200,7 +200,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s02.m4a",
+        "anlatim": "b02-s02.mp3",
         "muzik": "gerilim-uzak",
         "ortam": "kalabalik-uzak"
       },
@@ -313,7 +313,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s03.m4a",
+        "anlatim": "b02-s03.mp3",
         "muzik": "gerilim-uzak",
         "ortam": "aksam-sehir"
       },
@@ -414,7 +414,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s04.m4a",
+        "anlatim": "b02-s04.mp3",
         "muzik": "gerilim",
         "ortam": "ordu-yuruyus"
       },
@@ -500,7 +500,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s05.m4a",
+        "anlatim": "b02-s05.mp3",
         "muzik": "gerilim",
         "ortam": "ordu-yuruyus"
       },
@@ -622,7 +622,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s06.m4a",
+        "anlatim": "b02-s06.mp3",
         "muzik": "gerilim",
         "ortam": "ruzgar-hafif"
       },
@@ -738,7 +738,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s07.m4a",
+        "anlatim": "b02-s07.mp3",
         "muzik": "gerilim",
         "ortam": "ruzgar-hafif"
       },
@@ -890,7 +890,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s08.m4a",
+        "anlatim": "b02-s08.mp3",
         "muzik": "dusunceli-01",
         "ortam": "ruzgar-hafif"
       },
@@ -1033,7 +1033,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s09.m4a",
+        "anlatim": "b02-s09.mp3",
         "muzik": "dusunceli-01",
         "ortam": "ordugah"
       },
@@ -1173,7 +1173,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s10.m4a",
+        "anlatim": "b02-s10.mp3",
         "muzik": "dusunceli-01",
         "ortam": "ordugah"
       },
@@ -1271,7 +1271,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s11.m4a",
+        "anlatim": "b02-s11.mp3",
         "muzik": "dusunceli-01",
         "ortam": "aksam-sehir"
       },
@@ -1384,7 +1384,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s12.m4a",
+        "anlatim": "b02-s12.mp3",
         "muzik": "gerilim",
         "ortam": "ordu-yuruyus"
       },
@@ -1519,7 +1519,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s13.m4a",
+        "anlatim": "b02-s13.mp3",
         "muzik": "gerilim",
         "ortam": "kuslar"
       },
@@ -1695,7 +1695,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s14.m4a",
+        "anlatim": "b02-s14.mp3",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -1793,7 +1793,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s15.m4a",
+        "anlatim": "b02-s15.mp3",
         "muzik": "sakin-isik",
         "ortam": "ruzgar-hafif"
       },
@@ -1989,7 +1989,7 @@
         ]
       },
       "ses": {
-        "anlatim": "b02-s16.m4a",
+        "anlatim": "b02-s16.mp3",
         "muzik": "sakin-isik",
         "ortam": "safak-ruzgar"
       },

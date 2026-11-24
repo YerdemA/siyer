@@ -77,7 +77,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b09-s01.m4a",
+        "anlatim": "b09-s01.mp3",
         "muzik": "acilis-sakin",
         "ortam": "safak-ruzgar"
       },
@@ -131,7 +131,7 @@
         "kamera": "yatay-kayma"
       },
       "ses": {
-        "anlatim": "b09-s02.m4a",
+        "anlatim": "b09-s02.mp3",
         "muzik": "acilis-sakin",
         "ortam": "ruzgar-hafif"
       },
@@ -205,7 +205,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b09-s03.m4a",
+        "anlatim": "b09-s03.mp3",
         "muzik": "",
         "ortam": "deniz-dalga"
       },
@@ -295,7 +295,7 @@
         "kamera": "sabit"
       },
       "ses": {
-        "anlatim": "b09-s04.m4a",
+        "anlatim": "b09-s04.mp3",
         "muzik": "ciddi-dusuk",
         "ortam": "avlu-ugultu"
       },
@@ -413,7 +413,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b09-s05.m4a",
+        "anlatim": "b09-s05.mp3",
         "muzik": "gerilim-dusuk",
         "ortam": "kazma-tas"
       },
@@ -458,7 +458,7 @@
         "kamera": "yukaridan-yavas-donus"
       },
       "ses": {
-        "anlatim": "b09-s06.m4a",
+        "anlatim": "b09-s06.mp3",
         "muzik": "huzur-dusuk",
         "ortam": "sessiz-ruzgar"
       },
@@ -556,7 +556,7 @@
         "kamera": "bakis-acisi-yuruyus"
       },
       "ses": {
-        "anlatim": "b09-s07.m4a",
+        "anlatim": "b09-s07.mp3",
         "muzik": "emek-sicak",
         "ortam": "insaat-uzak"
       },
@@ -640,7 +640,7 @@
         "kamera": "yavas-yaklasma"
       },
       "ses": {
-        "anlatim": "b09-s08.m4a",
+        "anlatim": "b09-s08.mp3",
         "muzik": "gerilim",
         "ortam": "kalabalik-gergin"
       },
@@ -748,7 +748,7 @@
         "kamera": "sabit-gecis"
       },
       "ses": {
-        "anlatim": "b09-s09.m4a",
+        "anlatim": "b09-s09.mp3",
         "muzik": "gerilim",
         "ortam": "gece-mesale"
       },
@@ -819,7 +819,7 @@
         "kamera": "donus-kapiya"
       },
       "ses": {
-        "anlatim": "b09-s10.m4a",
+        "anlatim": "b09-s10.mp3",
         "muzik": "bekleyis",
         "ortam": "avlu-sessiz"
       },
@@ -913,7 +913,7 @@
         "kamera": "bakis-acisi-giris"
       },
       "ses": {
-        "anlatim": "b09-s11.m4a",
+        "anlatim": "b09-s11.mp3",
         "muzik": "umut-sicak",
         "ortam": "avlu-mirildanma"
       },
@@ -963,7 +963,7 @@
         "kamera": "yukaridan-yukselis"
       },
       "ses": {
-        "anlatim": "b09-s12.m4a",
+        "anlatim": "b09-s12.mp3",
         "muzik": "umut-sicak",
         "ortam": "kumas-hisirti"
       },
@@ -1022,7 +1022,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b09-s13.m4a",
+        "anlatim": "b09-s13.mp3",
         "muzik": "huzur-sicak",
         "ortam": "avlu-dagilan"
       },
@@ -1108,7 +1108,7 @@
         "kamera": "yavas-uzaklasma"
       },
       "ses": {
-        "anlatim": "b09-s14.m4a",
+        "anlatim": "b09-s14.mp3",
         "muzik": "kapanis",
         "ortam": "aksam-ruzgar"
       },
