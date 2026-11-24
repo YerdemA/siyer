@@ -436,7 +436,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
       return _sesBekleme < enCokBekleme ? _an : null;
     }
     _sesBekleme = 0;
-    final sesAni = s.sesBas + ses.konum.inMicroseconds / 1e6;
+    final sesAni = s.sesAni(ses.konum.inMicroseconds / 1e6, yakin: _an);
     // Büyük fark kullanıcının kaydırmasıdır; ses saate uyar (_sesiEsitle arar).
     if ((sesAni - _an).abs() * 1000 > sesKaymaSiniri) return null;
     // Saat geri gitmez; ses konumundaki küçük titremeler görüntüyü sarsmasın.

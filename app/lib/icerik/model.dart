@@ -211,12 +211,22 @@ class AnlatimParcasi {
   final List<String> iddialar;
 }
 
+/// Anlatım sesinde bir durak: ses [an] saniyesinde (dosyanın içinde, bir
+/// sessizliğin ortası) [sure] saniye bekletilir, görüntü akmaya devam eder.
+/// Ses dosyası değişmez.
+class SesDuragi {
+  const SesDuragi(this.an, this.sure);
+  final double an;
+  final double sure;
+}
+
 class Sahne {
   const Sahne({
     required this.id,
     required this.anlatim,
     required this.gorsel,
     required this.sesAnlatim,
+    this.sesDuraklar = const [],
     this.sahislar = const [],
     this.yer = '',
   });
@@ -232,6 +242,11 @@ class Sahne {
           ? Gorsel.fromJson(j['gorsel'] as Map<String, dynamic>)
           : const Gorsel(tarif: '', saat: 'gunduz', katmanlar: [], kamera: ''),
       sesAnlatim: _metin(ses, 'anlatim'),
+      sesDuraklar: [
+        for (final d in _nesneler(ses, 'duraklar'))
+          if (d['an'] is num && d['sure'] is num)
+            SesDuragi((d['an'] as num).toDouble(), (d['sure'] as num).toDouble()),
+      ]..sort((a, b) => a.an.compareTo(b.an)),
       sahislar: _metinler(j, 'sahislar'),
       yer: _metin(j, 'yer'),
     );
@@ -241,6 +256,9 @@ class Sahne {
   final List<AnlatimParcasi> anlatim;
   final Gorsel gorsel;
   final String sesAnlatim;
+
+  /// Anlatım sesindeki duraklar, sırayla (docs/ICERIK_SEMASI.md → ses).
+  final List<SesDuragi> sesDuraklar;
 
   /// Sahnede geçen şahısların `sahislar.json` kimlikleri.
   final List<String> sahislar;

@@ -83,11 +83,39 @@ class SahneZamani {
   bool get sesli => sesSure != null;
   double get sure => son - bas;
 
-  /// [an] anında sesin içindeki konum (saniye); ses dışındaysa null.
+  List<SesDuragi> get duraklar => sahne.sesDuraklar;
+
+  /// [an] anında sesin içindeki konum (saniye); ses dışındaysa ya da bir
+  /// duraktaysa (ses bekler) null.
   double? sesKonumu(double an) {
     final s = sesSure;
-    if (s == null || an < sesBas || an >= sesBas + s) return null;
-    return an - sesBas;
+    if (s == null) return null;
+    var x = an - sesBas;
+    if (x < 0) return null;
+    for (final d in duraklar) {
+      if (x < d.an) break;
+      if (x < d.an + d.sure) return null;
+      x -= d.sure;
+    }
+    return x >= s ? null : x;
+  }
+
+  /// Sesin [konum]unun (saniye) bölüm zamanı; [sesKonumu]nun tersi. Ses bir
+  /// durağın hemen yanındaysa (bekleme başlarken/biterken konum kesin değil)
+  /// iki karşılıktan [yakin]a en yakını seçilir.
+  double sesAni(double konum, {double? yakin}) {
+    var t = sesBas + konum;
+    for (final d in duraklar) {
+      if (d.an <= konum) t += d.sure;
+    }
+    if (yakin == null) return t;
+    var en = t;
+    for (final d in duraklar) {
+      if ((konum - d.an).abs() > 0.35) continue;
+      final diger = d.an <= konum ? t - d.sure : t + d.sure;
+      if ((diger - yakin).abs() < (en - yakin).abs()) en = diger;
+    }
+    return en;
   }
 }
 
@@ -145,15 +173,27 @@ class ZamanPlani {
       final sesSure = sesSureleri[sahne.id];
       final parcalar = <ParcaZamani>[];
       if (sesSure != null && sesSure > 0) {
+        // Parçalar sesin içinde kelime sayısıyla paylaştırılır; duraklar
+        // bölüm zamanına eklenir (durak parçanın ortasındaysa parça uzar).
+        final duraklar = sahne.sesDuraklar;
+        double zamani(double a, {bool bitis = false}) {
+          var z = sesBas + a;
+          for (final d in duraklar) {
+            if (bitis ? d.an < a : d.an <= a) z += d.sure;
+          }
+          return z;
+        }
+
         final agirliklar = [for (final p in sahne.anlatim) math.max(1, kelimeSayisi(p.metin))];
         final toplamAgirlik = agirliklar.fold(0, (a, b) => a + b);
+        var a = 0.0;
         for (final (j, p) in sahne.anlatim.indexed) {
           final sure = sesSure * agirliklar[j] / toplamAgirlik;
-          parcalar.add(ParcaZamani(p, t, t + sure));
-          t += sure;
+          parcalar.add(ParcaZamani(p, zamani(a), zamani(a + sure, bitis: true)));
+          a += sure;
         }
-        // Parça yoksa da ses tam çalınsın.
-        t = sesBas + sesSure;
+        // Parça yoksa da ses tam çalınsın; sondaki durak da sahneyi uzatır.
+        t = sesBas + sesSure + duraklar.fold(0.0, (s, d) => s + d.sure);
       } else {
         for (final (j, p) in sahne.anlatim.indexed) {
           if (j > 0) t += ayar.parcaArasi;
@@ -184,7 +224,7 @@ class ZamanPlani {
       final b = p.bas + (p.son - p.bas) * c.an;
       final g = c.gecis ?? ayar.cekimGecisi;
       // Geçiş, önceki çekimin geçişi bittikten (önceki çekim tam göründükten) sonra başlar.
-      if (b - g < baslar.last.$2) continue;
+      if (b - g < baslar.last.$2 - 1e-6) continue;
       // Sahne sonu geçişine de yer kalsın.
       if (b > son - ayar.gecis - g) continue;
       baslar.add((c, b, g));

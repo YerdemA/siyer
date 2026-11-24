@@ -583,6 +583,21 @@ BolumOzeti bolumuDenetle(
       // Anlatım sesi dil başınadır: content/<dil>/ses/<dosya>.
       sesYok++;
     }
+    if (ses is Map<String, dynamic>) {
+      // Duraklar: sesin içindeki an (saniye, bir sessizliğin ortası) ve bekleme süresi.
+      var oncekiAn = -1.0;
+      for (final (j, d) in nesneler(liste(ses, 'duraklar', yer, rapor, zorunlu: false), '$yer ses.duraklar', rapor)) {
+        final an = d['an'], sure = d['sure'];
+        if (an is! num || an < 0 || an <= oncekiAn) {
+          rapor.hata('$yer ses.duraklar[$j]', '`an` 0 ya da büyük, öncekinden büyük bir sayı olmalı: $an');
+        } else {
+          oncekiAn = an.toDouble();
+        }
+        if (sure is! num || sure < 0.2 || sure > 20) {
+          rapor.hata('$yer ses.duraklar[$j]', '`sure` 0.2 ile 20 saniye arasında olmalı: $sure');
+        }
+      }
+    }
 
     // Şablon, henüz kaydı olmayan örnek kimliklere gönderme yapabilir.
     final tanimsiz = sablon ? rapor.uyari : rapor.hata;
