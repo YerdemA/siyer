@@ -642,36 +642,491 @@
         }
       ],
       "gorsel": {
-        "tarif": "Gündüz, bozkırda geniş bir tepe yamacı, uzak plan: otlayan birkaç kuzu. İnsan yok, çocuk yok. Olay gösterilmez; melek, ışık ya da beden çizilmez. Sakin, boş bir manzara. Kan yok. Nur tonu yok.",
+        "tarif": "Gündüz, Sa'doğulları yurdunda otlu bir yamaç: uzakta kuzular arasında oynayan üç çocuk (arkadan); solda boş bırakılan yerde Efendimiz'in nuru. Olay bundan sonra çocukların gözlerindeki yansımayla anlatılır.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "sad-yurdu",
-            "dosya": "b04-sad-yurdu.webp",
+            "id": "oyun",
+            "dosya": "b04-d-oyun.webp",
             "yerTutucu": "zemin",
-            "derinlik": 0.3
-          },
-          {
-            "id": "kuzular",
-            "dosya": "b04-kuzular-yamac.webp",
-            "yerTutucu": "kalabalik",
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.499,
-                "y": 0.602,
-                "olcek": 0.363
-              }
+                "x": 0.5,
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
+            }
+          },
+          {
+            "id": "nur",
+            "dosya": "",
+            "yerTutucu": "nur",
+            "derinlik": 0.6,
+            "ayar": {
+              "x": 0.36,
+              "y": 0.624,
+              "boy": 0.17,
+              "guc": 2.5,
+              "kim": "efendimiz"
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "an": 0.1387,
+            "gecis": 0.8,
+            "tarif": "Üç çocuk yan yana, hepsi kadrajın solundaki aynı noktaya kilitlenmiş, şaşkın bakıyor; baktıkları görünmez.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "bakis",
+                "dosya": "b04-d-cocuk-bakis.webp",
+                "yerTutucu": "kalabalik",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 0,
+            "an": 0.3544,
+            "gecis": 0.6,
+            "tarif": "Üç çocuk önden, izleyiciye bakar gibi şaşkın; kamera en soldaki çocuğun yüzüne kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "onden",
+                "dosya": "b04-d-cocuk-onden.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.5,
+                "y": 0.5,
+                "yakinlik": 1.0
+              },
+              "son": {
+                "x": 0.1513,
+                "y": 0.4459,
+                "yakinlik": 3.4
+              }
+            }
+          },
+          {
+            "parca": 0,
+            "an": 0.5239,
+            "gecis": 0.2,
+            "tarif": "Aynı görüntü: kamera en soldaki çocuğun gözlerine yaklaşır.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "onden",
+                "dosya": "b04-d-cocuk-onden.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.1513,
+                "y": 0.4459,
+                "yakinlik": 3.4
+              },
+              "son": {
+                "x": 0.1513,
+                "y": 0.4459,
+                "yakinlik": 10.091
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 0,
+            "an": 0.7858,
+            "gecis": 1.3,
+            "tarif": "Birinci çocuğun gözleri; yaklaşma sürerken önden görüntüden fark edilmeden geçilir. Sol gözde Cebrâil'in gelişi (ışık).",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-a-gecis.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.3,
+                "y": 0.6343,
+                "yakinlik": 0.823
+              },
+              "son": {
+                "x": 0.3,
+                "y": 0.6343,
+                "yakinlik": 2.0
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 0,
+            "an": 0.8243,
+            "gecis": 0.2,
+            "tarif": "Birinci çocuğun sol gözü: yansımada beyaz ışık sütunu inmiş, altın küre yanında.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-a.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.3,
+                "y": 0.6343,
+                "yakinlik": 2.0
+              },
+              "son": {
+                "x": 0.34,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 0,
+            "an": 0.9553,
+            "gecis": 0.2,
+            "tarif": "Birinci çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-a.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.34,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              }
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.0608,
+            "gecis": 0.2,
+            "tarif": "Birinci çocuğun sağ gözü: yansımada altın küre yere yatmış, beyaz ışık kemer gibi üstüne eğilmiş.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-a.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.7106,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.2004,
+            "gecis": 0.8,
+            "tarif": "İkinci çocuğun sol gözü: yansımada kemerin altında küreden parlak kıvılcım (kalp) yükseliyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-b.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.2894,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.3294,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.3898,
+            "gecis": 0.2,
+            "tarif": "İkinci çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-b.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.3294,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              }
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.5095,
+            "gecis": 0.2,
+            "tarif": "İkinci çocuğun sağ gözü: yansımada kıvılcımdan koyu bir iz (pıhtı) ayrılıp duman gibi dağılıyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-b.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.7106,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 2,
+            "an": 0.0819,
+            "gecis": 0.8,
+            "tarif": "Üçüncü çocuğun sol gözü: yansımada kıvılcım altın leğende, suyun üstünde; damlalar düşüyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-c.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.2894,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.3294,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 2,
+            "an": 0.5198,
+            "gecis": 0.2,
+            "tarif": "Üçüncü çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-c.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.3294,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              }
+            }
+          },
+          {
+            "parca": 2,
+            "an": 0.6893,
+            "gecis": 0.2,
+            "tarif": "Üçüncü çocuğun sağ gözü: yansımada kıvılcım yerine dönmüş, küre ayakta; beyaz ışık göğe çekiliyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gozler",
+                "dosya": "b04-d-gozler-c.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.0
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 0.6606,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "son": {
+                "x": 0.7106,
+                "y": 0.6343,
+                "yakinlik": 1.74
+              },
+              "egri": "duz"
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b04-s07.mp3",

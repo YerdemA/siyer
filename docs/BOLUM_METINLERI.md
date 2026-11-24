@@ -1,6 +1,6 @@
 # Bölüm Metinleri (kontrol nüshası)
 
-Üretildi: 2026-11-22 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
+Üretildi: 2026-11-24 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
 
 10 bölüm, 135 sahne, 200 iddia, 500 atıf.
 
@@ -1107,7 +1107,7 @@ Onu yere yatırdı, göğsünü yarıp kalbini çıkardı; kalbinden bir kan pı
 
 Sonra kalbi altın bir leğende Zemzem suyuyla yıkadı, kapattı ve yerine koydu. `[i-b04-011]`
 
-> *Görsel tarifi:* Gündüz, bozkırda geniş bir tepe yamacı, uzak plan: otlayan birkaç kuzu. İnsan yok, çocuk yok. Olay gösterilmez; melek, ışık ya da beden çizilmez. Sakin, boş bir manzara. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Gündüz, Sa'doğulları yurdunda otlu bir yamaç: uzakta kuzular arasında oynayan üç çocuk (arkadan); solda boş bırakılan yerde Efendimiz'in nuru. Olay bundan sonra çocukların gözlerindeki yansımayla anlatılır.
 
 ### Sahne 8 (`b04-s08`)
 
