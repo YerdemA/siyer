@@ -52,6 +52,50 @@ GOZLER_DENETIM = [
     "no text, letters, crosses, minarets, domes or crescents",
 ]
 
+# Göz dizisi, üçüncü yol (Erdem, 2026-11-25): her çocuğun yüz yakın planı ayrı, yeşil perdede;
+# kod üç yüzü çayır arka planının önüne yan yana dizer, kamera hiçbir efekt olmadan gözden göze
+# ve yüzden yüze sağa kayar. Üç görselde çerçeve birebir aynı olmalı (göz hizası, göz aralığı,
+# baş genişliği), yoksa yan yana konunca boyları tutmaz.
+YUZ_CERCEVE = (
+    "Extreme close-up of ONE boy's face, seen straight from the front, looking straight into the camera with wide, astonished eyes. "
+    "FRAMING, exactly the same in all three images of this series (the three faces will be placed side by side and must match in size): "
+    "the top edge of the image cuts through the hair or head cloth a little above the eyebrows; the bottom edge is just below the tip of the nose, so the mouth is not shown; "
+    "the face is centred and upright, not tilted; the centres of the two pupils lie on one horizontal line at exactly half the image height; "
+    "the left eye is centred at 30% of the image width and the right eye at 70%; the head, with its ears and hair or head cloth, takes about 84% of the image width, "
+    "so a band of flat green screen shows to the left and right of the head. "
+    "Both eyes are very large and wide open; each iris is about 40% of the image height and is filled by a large, sharp, easy-to-read reflection, "
+    "like a small round painting, with one small white highlight at its upper left. "
+    "The LEFT eye and the RIGHT eye show two DIFFERENT moments, described below; never repeat one reflection in both eyes. "
+)
+YUZ_YANSIMA = (
+    "WHAT EVERY REFLECTION SHOWS: the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, "
+    "far bluish-violet mountains, the broad tree at the left, dry golden-brown grass (not bright green) and two or three lambs; NOT dusk, NOT night. "
+    "Only two lights are in it, always drawn exactly the same way: "
+    "THE CHILD is one perfectly round, soft, warm golden-white ball of light, like a small sun, about as big as a lamb's head; "
+    "it is only a glowing ball: no head, no body, no limbs, no face, not a flame, not a candle. "
+    "THE VISITOR is one tall, slim, perfectly straight and upright column of soft pure-white light, standing on the grass, about four times as tall as the ball, "
+    "with a softly rounded top and gently glowing, blurred edges; it is always vertical and straight: it never bends, never leans, never curves into an arch or an upside-down U, "
+    "never has a head, shoulders, arms, hands or wings, and is not a beam or ray coming down from the sky. "
+    "Anything the visitor lifts simply floats in the air in front of the middle of the column. "
+)
+YUZ_YERLESIM = (
+    "The face fills the image as described in FRAMING; around the head (above the hair at the corners, and left and right of the ears) the background is flat chroma green."
+)
+YUZ_IZIN = "the small sunlit hillside scene inside each iris (the reflection) is part of the eye and must be drawn in full colour."
+YUZ_DENETIM = [
+    "exactly one boy's face, straight from the front, upright, looking into the camera; the mouth is cut off by the bottom edge",
+    "the pupils are on one horizontal line at half the image height, the left eye centred at 30% and the right eye at 70% of the width",
+    "the background around the head is flat chroma green; no ground, sky or scenery outside the eyes",
+    "the left and right eye show two different reflections, exactly as listed for each eye",
+    "in the reflections the child is a round golden ball of light with no head or limbs, and the visitor is a straight vertical column of white light: not bent, not an arch, not an upside-down U, no head, arms or wings",
+    "the reflections show bright daytime with a blue sky and dry golden-brown grass",
+    "no blood, anatomical heart, chest, knife or body parts in the reflections",
+    "no text, letters, crosses, minarets, domes or crescents",
+]
+YUZ_YASAK = ("any human, child or angel shape in the reflections, a light with a head, shoulders, arms or wings, an arch or upside-down U of light, "
+             "a bent or leaning column, a beam or ray from the sky, candle, flame, smoke on top of a light, comet, anatomical heart, heart symbol, blood, "
+             "red colour in the reflections, tears, the mouth, any background or scenery outside the eyes, dusk or night sky")
+
 # Kâbe'nin içi (Erdem, 2026-11-22: deneyen arkadaşların önerisi). Dayanak: anlatım (Hübel
 # içerideydi, i-b03-004, i-b01-008; içeride kuyu vardı, i-b09-005; Kureyş'ten önce tavan yoktu,
 # i-b09-003) ve TDV "KÂBE" (S. Ünal, c. 24, s. 14-21; inşa paragrafı i-b09-002 ile aynı yer, s. 16):
@@ -79,11 +123,11 @@ CERCEVE_KABE_Y = ("The Ka'ba looks exactly like the attached reference: rebuilt,
 
 
 def m(id, sahne, parca, oncelik, gerekce, konu, isik=GUNDUZ, kisiler=None, ekle=None, yasak=None,
-      cekim="orta", tip="mekan", ek_not="", nur_yasak=True, denetim=None):
+      cekim="orta", tip="mekan", ek_not="", nur_yasak=True, denetim=None, yerlesim=None, izin=None, isleme=None):
     return dict(id=id, sahne=sahne, parca=parca, oncelik=oncelik, gerekce=gerekce, tip=tip, cekim=cekim,
                 konu=konu, kisiler=kisiler or [], ekle=ekle or [], isik=isik,
                 yasak=", ".join(x for x in [NUR_YASAK if nur_yasak else None, yasak] if x), ek_not=ek_not,
-                denetim=denetim)
+                denetim=denetim, yerlesim=yerlesim, izin=izin, isleme=isleme)
 
 
 def k(karakter=None, tarif=None, sayi=1, poz=None, hayvan=False, yaklasik=False):
@@ -532,6 +576,34 @@ KAYITLAR = {
           isik=GOZ_ISIK, cekim="detay", ekle=[ONDEN, OYUN],
           yasak=GOZ_YASAK + ", the same reflection in both eyes",
           nur_yasak=False, denetim=GOZLER_DENETIM),
+        m("b04-d-yuz-a", "b04-s07", [0, 1], "A",
+          "Göz dizisi, üçüncü yol (Erdem, 2026-11-25): birinci çocuğun yüz yakın planı, yeşil perdede; üç yüz kodla çayırda yan yana dizilir, kamera efektsiz sağa kayar. Sol göz: Cebrâil'in gelişi. Sağ göz: yere yatırılması.",
+          YUZ_CERCEVE + "This is boy A: " + COCUK_A + "; his face exactly as the boy at the LEFT of the attached front-view image (same skin, brows, curly hair). " + YUZ_YANSIMA +
+          "LEFT EYE: the white column has just come down and now stands upright on the grass a few steps from the golden ball, which floats a little above the grass among the lambs; "
+          "high in the sky above the column a faint, wide, soft haze of light is fading away (not a beam, not a line); the lambs have lifted their heads. "
+          "RIGHT EYE: the golden ball now rests low on the grass; the white column stands straight right beside it, very close; the lambs have stepped back.",
+          isik=GOZ_ISIK, tip="figur", cekim="detay", ekle=[ONDEN, OYUN], yasak=YUZ_YASAK, nur_yasak=False,
+          denetim=YUZ_DENETIM, yerlesim=YUZ_YERLESIM, izin=YUZ_IZIN, isleme="perde"),
+        m("b04-d-yuz-b", "b04-s07", [1], "A",
+          "Göz dizisi, üçüncü yol: ikinci çocuğun yüz yakın planı. Sol göz: göğsünün yarılıp kalbinin çıkarılması (kalp: küreden yükselen parlak kıvılcım). Sağ göz: pıhtının alınması (kıvılcımdan ayrılıp duman gibi dağılan koyu nokta). Erdem: dizinin en önemli kareleri.",
+          YUZ_CERCEVE + "This is boy B: " + COCUK_B + "; his face exactly as the boy in the CENTRE of the attached front-view image (same skin, brows, off-white head cloth with dark band). " + YUZ_YANSIMA +
+          "These two eyes show the key moment of the sequence and must be the clearest. "
+          "LEFT EYE: the golden ball rests on the grass; the white column stands straight beside it; out of the golden ball a second, much smaller, very bright golden spark has risen "
+          "and floats in the air in front of the middle of the column. "
+          "RIGHT EYE: the same arrangement: the golden ball on the grass, the straight white column beside it, the bright spark floating in front of the middle of the column; "
+          "from the spark one tiny dark grey speck is coming away; it drifts to the side and thins into the air like a wisp of smoke; the bright spark itself stays clean and shining.",
+          isik=GOZ_ISIK, tip="figur", cekim="detay", ekle=[ONDEN, OYUN], yasak=YUZ_YASAK, nur_yasak=False,
+          denetim=YUZ_DENETIM, yerlesim=YUZ_YERLESIM, izin=YUZ_IZIN, isleme="perde"),
+        m("b04-d-yuz-c", "b04-s07", [2], "A",
+          "Göz dizisi, üçüncü yol: üçüncü çocuğun yüz yakın planı. Sol göz: kalbin altın leğende Zemzem suyuyla yıkanması. Sağ göz: yerine konup göğsün kapatılması, ışığın çekilişi.",
+          YUZ_CERCEVE + "This is boy C: " + COCUK_C + "; his face exactly as the boy at the RIGHT of the attached front-view image (same skin, brows, curly hair). " + YUZ_YANSIMA +
+          "LEFT EYE: a simple, plain golden basin filled with clear water stands on the grass between the golden ball (resting on the grass) and the straight white column; "
+          "the bright golden spark floats just above the water; the water sparkles and a few clear drops fall from the spark back into the basin. "
+          "RIGHT EYE: the bright spark has gone back into the golden ball, which is whole again and floats a little above the grass among the lambs, as in the beginning; "
+          "the golden basin is gone; the white column, still straight and upright, is rising up into the blue sky, its lower end already above the far mountains, and it is fading; "
+          "the lambs graze again.",
+          isik=GOZ_ISIK, tip="figur", cekim="detay", ekle=[ONDEN, OYUN], yasak=YUZ_YASAK, nur_yasak=False,
+          denetim=YUZ_DENETIM, yerlesim=YUZ_YERLESIM, izin=YUZ_IZIN, isleme="perde"),
         m("b04-d-mekkeye-donus", "b04-s09", [0], "A",
           "s09'un iki çekimi aynı görsel (32 sn).",
           "Late afternoon, the road into the Mecca valley: Halima riding her grey donkey and al-Harith walking beside it come down towards the first houses; Halima seen strictly from behind.",
@@ -873,6 +945,9 @@ def kayit(bolum: str, r: dict) -> dict:
     k["isik"] = r["isik"]
     if r.get("denetim"):
         k["denetim"] = r["denetim"]
+    for alan in ("yerlesim", "izin", "isleme"):
+        if r.get(alan):
+            k[alan] = r[alan]
     k["yasak"] = r["yasak"]
     k["not"] = not_
     return k
