@@ -154,15 +154,69 @@
         "kamera": "yavas-yaklasma",
         "cekimler": [
           {
-            "parca": 1,
-            "tarif": "Vadinin dibine yakın bakış: çıplak kum ve taş; ekin yok.",
+            "parca": 0,
+            "tarif": "Şafak, çıplak dağlar arasında bomboş bir vadi tabanı; tek bir kuru çalı, rüzgârın kaldırdığı ince kum.",
             "kamera": "yavas-yaklasma",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.66,
-              "yakinlik": 1.6
-            },
-            "katmanlar": []
+            "katmanlar": [
+              {
+                "id": "issiz-vadi",
+                "dosya": "b01-d-issiz-vadi.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Yere yakın bakış: çatlamış kuru toprak ve taşlar; ne bitki ne ekin, uzakta çıplak yamaçlar.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "vadi-tabani",
+                "dosya": "b01-d-vadi-tabani.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "tarif": "Vadiden yukarı bakış: sivri, çıplak bir dağ sırtı; ilk ışık yalnız tepelere vuruyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "safak-sirt",
+                "dosya": "b01-d-safak-sirt.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
           }
         ]
       },
@@ -390,17 +444,24 @@
           },
           {
             "parca": 2,
-            "tarif": "Temellerden yukarı, dağlara ve göğe doğru bakış.",
-            "kamera": "yukaridan-yukselis",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.35,
-              "yakinlik": 1.35
-            },
-            "gizle": [
-              "temel"
-            ],
-            "katmanlar": []
+            "tarif": "Harçsız taşlardan alçak duvarın üst sırası: bir taş daha yerine konmuş, havada ince toz.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "temel-tamam",
+                "dosya": "b01-d-temel-tamam.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -475,6 +536,28 @@
         ],
         "kamera": "yavas-uzaklasma",
         "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "İkindi: sade giyimli ziyaretçiler küçük gruplar hâlinde alçak, üstü açık Kâbe'ye yürüyor; uzakta birkaç çadır.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "ziyaretciler",
+                "dosya": "b01-d-ziyaretciler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
           {
             "parca": 2,
             "tarif": "Orta plan: Huzâa ve Kinâne yaya ve deve üstünde vadiye geliyor. Çarpışma yok.",
@@ -564,6 +647,28 @@
         ],
         "kamera": "sabit",
         "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gece: üç Huzâalı, kaba yontulmuş taş bir putu tahta sedye üstünde Kâbe'ye taşıyor; öndeki meşale tutuyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "put-tasima",
+                "dosya": "b01-d-put-tasima.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
           {
             "parca": 1,
             "tarif": "Orta plan: Amr b. Luhay; yerde putların yalnız gölgeleri.",
@@ -671,6 +776,27 @@
         ],
         "kamera": "yatay-kayma",
         "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Alacakaranlık: develi ve yaya müttefikler, elini kaldırıp konuşan Kusay'ın çevresinde.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kusay-ittifak",
+                "dosya": "b01-d-kusay-ittifak.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
           {
             "parca": 2,
             "tarif": "Orta plan: hakem iki taraf arasında elini kaldırıp kararını söylüyor.",
@@ -840,6 +966,28 @@
         "kamera": "yavas-yaklasma",
         "cekimler": [
           {
+            "parca": 0,
+            "tarif": "Gündüz, Kâbe çevresi: Kureyşliler kerpiç ve taştan evler yapıyor; kenarda keçi kılı çadır toplanıyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "ev-yapimi",
+                "dosya": "b01-d-ev-yapimi.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
             "parca": 2,
             "tarif": "Yakın plan: Dârünnedve'nin kapısı ve önündeki Kureyşliler; kapı sağdaki Kâbe'ye bakar.",
             "kamera": "yavas-yaklasma",
@@ -982,17 +1130,24 @@
           },
           {
             "parca": 2,
-            "tarif": "Uzlaşma: iki grubun arasındaki Kâbe yakından.",
+            "tarif": "Akşam, Kâbe avlusu: iki ayrı gruptan iki yaşlı Kureyşli öne çıkıp birbirinin kolunu tutuyor.",
             "kamera": "yavas-uzaklasma",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.62,
-              "yakinlik": 1.7
-            },
-            "gizle": [
-              "kalabalik"
-            ],
-            "katmanlar": []
+            "katmanlar": [
+              {
+                "id": "uzlasma",
+                "dosya": "b01-d-uzlasma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -1095,18 +1250,47 @@
         "kamera": "yatay-kayma",
         "cekimler": [
           {
-            "parca": 1,
-            "tarif": "Kâbe yakından; putlar çizilmez.",
-            "kamera": "yavas-yaklasma",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.62,
-              "yakinlik": 1.9
-            },
-            "gizle": [
-              "siluet-tek"
+            "parca": 0,
+            "tarif": "Şafak, Kâbe'nin çevresi: her biri farklı, Kâbe'den küçük kaba putlar ve dikili taşlar.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "putlar",
+                "dosya": "b01-d-putlar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
             ],
-            "katmanlar": []
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Şafak, eski Kâbe'nin içi: harçsız taş duvarlar, üstü açık; duvar diplerinde putlar, karşıda en büyükleri Hübel; yerde ağzı yarı örtülü kuyu.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kabe-ic",
+                "dosya": "b01-d-kabe-ic.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           },
           {
             "parca": 3,
@@ -1229,6 +1413,27 @@
         "kamera": "yatay-kayma",
         "cekimler": [
           {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'de pazar: dışarıdan gelen tüccarlar tahıl, hurma, kumaş ve deri seriyor; çökmüş develer.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "pazar",
+                "dosya": "b01-d-pazar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
             "parca": 2,
             "tarif": "Orta plan: Kureyşli tüccarlar yüklü develeri sağa doğru götürüyor.",
             "kamera": "yatay-kayma",
@@ -1250,6 +1455,28 @@
             ]
           },
           {
+            "parca": 2,
+            "tarif": "Gündüz, kervan yolunda bir kabile yurdu: Hâşim kabile reisiyle el sıkışıyor; arkada adamları ve yüklü develer.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "antlasma",
+                "dosya": "b01-d-antlasma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
+          },
+          {
             "parca": 3,
             "tarif": "Uzak plan: kervan yolu ufka uzanır.",
             "kamera": "yatay-kayma",
@@ -1262,17 +1489,24 @@
           },
           {
             "parca": 4,
-            "tarif": "Geniş plan: Mekke vadisi ve evler; kervan çıkmış.",
-            "kamera": "yukaridan-yukselis",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.5,
-              "yakinlik": 1.0
-            },
-            "gizle": [
-              "kalabalik"
-            ],
-            "katmanlar": []
+            "tarif": "Akşam, Mekke: aileler evlerinin önünde ekmek ve hurma paylaşıyor; ocak dumanları, arkada Kâbe.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "huzur",
+                "dosya": "b01-d-huzur.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -1386,25 +1620,67 @@
           },
           {
             "parca": 2,
-            "tarif": "Sağdaki çadırlara yakın bakış.",
-            "kamera": "yatay-kayma",
-            "kadraj": {
-              "x": 0.8,
-              "y": 0.78,
-              "yakinlik": 1.6
-            },
-            "katmanlar": []
+            "tarif": "İkindi, bir kabile yurdu: devesini çeken yalnız yolcuyu reis elini uzatarak karşılıyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "siginma",
+                "dosya": "b01-d-siginma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           },
           {
             "parca": 3,
-            "tarif": "Ateşin başı yakından.",
+            "tarif": "Şafak, Kâbe'nin çevresi: her biri farklı, Kâbe'den küçük kaba putlar ve dikili taşlar.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "putlar",
+                "dosya": "b01-d-putlar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Gündüz, bir kuyu başı: varlıklı bir adam yoksul yaşlıyı kuyudan itiyor; yaşlının kabı yere düşüyor.",
             "kamera": "yavas-yaklasma",
-            "kadraj": {
-              "x": 0.5,
-              "y": 0.8,
-              "yakinlik": 1.8
-            },
-            "katmanlar": []
+            "katmanlar": [
+              {
+                "id": "zulum",
+                "dosya": "b01-d-zulum.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.5
           }
         ]
       },
