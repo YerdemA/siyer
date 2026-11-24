@@ -2,9 +2,19 @@
 
 **Claude Code: oturuma başlarken ilk bu dosyayı oku.** Son yapılanlar ve sıradaki adımlar burada. Genel plan `YOL_HARITASI.md`'de, kurallar `CLAUDE.md`'de. Oturum sonunda bu dosyayı güncelle.
 
-Son güncelleme: 2026-11-23.
+Son güncelleme: 2026-11-24.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
+
+**Kaldığımız yer (2026-11-24): ses özgün hâline döndü, d1 görselleri denetlendi.**
+- **Anlatım sesi** (Erdem: kapalı testte ses Seyfullah Kartal'a benzemiyordu): 135 dosyanın hepsi ElevenLabs'ten gelen özgün MP3 (44,1 kHz 128 kbps) oldu; sıkıştırıcı, loudnorm ve 48k AAC kaldırıldı, `tools/ses_dengele.py` silindi. b01–b04 git geçmişinden (`b0bb6e6`), b05–b10 ElevenLabs akışından (`w7W5ESD14axY7ULG05AG`) alındı; her dosyanın süresi eski sürümle eşleşti. **Bundan sonra sese hiçbir işlem yok** (`ICERIK_SEMASI.md`). Ses 16 → 42 MB; b01 gömülü (13 dosya). Testler 90/90, doğrulama 0 hata. **Yeni AAB derlenmedi** (sürüm kodu `+2` olmalı); telefonda dinlenmedi.
+- **d1 görselleri** (`İndirilenler\siyer\yeni\`, 76 görsel): **66 kabul**, 10 red. Reddedilenler `arsiv\<bölüm>\<kimlik>-red.png`; düzeltilmiş istemler `istemler/bXX-d1-yeniden-chatgpt.md` (her biri yeni sohbet, Mesaj 0 ile başlar):
+  - `b01-d-putlar`: içerideki Hübel dışarıda duruyordu, bir put Kâbe'den yüksekti.
+  - `b03-d-kura-oklari`: alttaki el bedene bağlı değildi. `b03-d-kabe-ic-dua`: Abdülmuttalib Hübel'e dönük, puta dua ediyor gibi; yeni istemde putlar kameranın arkasında, yüzü göğe.
+  - `b04-d-cocuk-yuzler` + `b04-d-goz-1…5` (**kalp sahnesi, Erdem: "kesinlikle kafamdaki gibi"**): yansıma küçük ve okunaksız, gök akşam, Cebrâil'in ışığı her karede başka (huzme, kavis, kuyruklu yıldız), kalbin çıkarılışı seçilmiyordu, üç çocuk ikiz gibiydi. Yeni tasarım: göz bebeği karenin 2/3'ü, yansıma `b04-d-oyun` yamacı (gündüz, ağaç solda), iki ışık her karede aynı (küçük altın ışık / ayakta beyaz ışık sütunu); goz-3'te kalp küçük ışığın içinden kaldırılan parlak kıvılcım, pıhtı ondan ayrılıp duman gibi dağılan koyu nokta. Üç çocuk ayırt edilir (A kum rengi, B beyaz sarık, C gri-mavi; Müslim rivayetinde tanıklar oğlan). `b04-d-oyun` referans oldu: `referans/sahne-b04-oyun.png`. Önce `cocuk-yuzler`, sonra gözler aynı sohbette.
+  - `b07-d-ukaz-yakin` (isteğe bağlı): mantarlı cam şişeler günümüz işi gibiydi.
+- Kâbe içi referansları: `referans/kabe-ic-alcak.png` (= `b01-d-kabe-ic`, Erdem koymuştu) ve `referans/kabe-ic-yuksek.png` (= `b09-d-kabe-ic-tavan`, kabul). Küçük not: tavan görselinde kapı kapalı olduğu hâlde içeri ışık giriyor; referans olarak yeterli.
+- **Sırada:** 66 kabul görselin sahnelere yerleştirilmesi (`gorsel_katman.py --opak` → `cekimler[]`, öneriler `docs/DINAMIZM.md`) → doğrulama → bölüm bölüm önizleme → commit; kullanılanlar `arsiv\<bölüm>\`'e. Sonra yeni AAB (`1.0.0+2`).
 
 **Kaldığımız yer (2026-11-23): ilk sürüm Google incelemesinde** (kapalı test kanalı).
 - Play Console'da uygulama oluşturuldu, `siyer-kapali-test-1.0.0+1-v4.aab` (versionCode 1, `com.yerdema.siyer`) kapalı teste yüklendi ve incelemeye gönderildi. Kategori: Eğitim. Etiketler Erdem'in seçimi (öneri: Din, Tarih, Eğitim).
