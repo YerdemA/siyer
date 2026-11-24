@@ -508,16 +508,34 @@ BolumOzeti bolumuDenetle(
       // Ana görsel ve çekimleri (docs/ICERIK_SEMASI.md → Çekimler).
       final cekimler = <(String, Map<String, dynamic>)>[(yer, gorsel)];
       final parcaSayisi = anlatim.length;
-      var oncekiParca = 0;
+      // Çekimin başı: parça + parça içindeki oran (`an`, 0–1). Çekimden çekime artmalı.
+      var oncekiBas = 0.0;
       for (final (j, c) in nesneler(liste(gorsel, 'cekimler', yer, rapor, zorunlu: false), '$yer cekimler', rapor)) {
         final cYer = '$yer cekimler[$j]';
         final parca = c['parca'];
-        if (parca is! int || parca < 1 || parca >= parcaSayisi) {
-          rapor.hata(cYer, '`parca` 1 ile ${parcaSayisi - 1} arasında bir sayı olmalı: $parca');
-        } else if (parca <= oncekiParca) {
-          rapor.hata(cYer, '`parca` öncekinden büyük olmalı: $parca');
+        final an = c['an'] ?? 0;
+        if (an is! num || an < 0 || an >= 1) {
+          rapor.hata(cYer, '`an` 0 ile 1 arasında (1 hariç) bir sayı olmalı: $an');
+        } else if (parca is! int || parca < 0 || parca >= parcaSayisi) {
+          rapor.hata(cYer, '`parca` 0 ile ${parcaSayisi - 1} arasında bir sayı olmalı: $parca');
+        } else if (parca + an <= oncekiBas) {
+          rapor.hata(cYer, '`parca` + `an` öncekinden büyük olmalı (parça 0 ise `an` > 0): $parca, $an');
         } else {
-          oncekiParca = parca;
+          oncekiBas = parca + an.toDouble();
+        }
+        final gecis = c['gecis'];
+        if (gecis != null && (gecis is! num || gecis < 0.2 || gecis > 5)) {
+          rapor.hata(cYer, '`gecis` 0.2 ile 5 saniye arasında olmalı: $gecis');
+        }
+        final yol = c['yol'];
+        if (yol != null) {
+          bool kadrajMi(Object? k) =>
+              k is Map<String, dynamic> && ['x', 'y', 'yakinlik'].every((a) => k[a] == null || k[a] is num);
+          if (yol is! Map<String, dynamic> || !kadrajMi(yol['bas']) || (yol['son'] != null && !kadrajMi(yol['son']))) {
+            rapor.hata(cYer, '`yol` { bas: {x, y, yakinlik}, son: {...}, egri } biçiminde olmalı');
+          } else if (yol['egri'] != null && !['duz', 'yumusak'].contains(yol['egri'])) {
+            rapor.hata(cYer, '`yol.egri` "duz" ya da "yumusak" olmalı: ${yol['egri']}');
+          }
         }
         if (metin(c, 'tarif').isEmpty) rapor.yayinHatasi(cYer, '`tarif` boş');
         final kadraj = c['kadraj'];

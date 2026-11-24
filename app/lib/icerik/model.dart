@@ -1,6 +1,8 @@
 /// İçerik JSON'unun uygulamadaki karşılığı. Şema: docs/ICERIK_SEMASI.md.
 library;
 
+import 'dart:math' as math;
+
 String _metin(Map<String, dynamic> j, String alan) =>
     j[alan] is String ? j[alan] as String : '';
 
@@ -80,6 +82,36 @@ class Kadraj {
   final double yakinlik;
 }
 
+/// Çekimin kendi kamera yolu: çekim boyunca kadraj [bas]'tan [son]'a gider.
+/// Kadraj noktaları çekimin görseline göredir (0–1) ve bütün katmanlara aynı
+/// uygulanır (parallax yok), böylece "sol gözden sağ göze" gibi kesin
+/// hareketler yazılabilir. [duz]: doğrusal hız (çekimden çekime kesintisiz
+/// kayma için); değilse başta ve sonda yavaşlar.
+class KameraYolu {
+  const KameraYolu({required this.bas, required this.son, this.duz = false});
+
+  static KameraYolu? fromJson(Object? j) {
+    if (j is! Map<String, dynamic>) return null;
+    final bas = Kadraj.fromJson(j['bas']);
+    final son = Kadraj.fromJson(j['son']) ?? bas;
+    if (bas == null || son == null) return null;
+    return KameraYolu(bas: bas, son: son, duz: j['egri'] == 'duz');
+  }
+
+  final Kadraj bas;
+  final Kadraj son;
+  final bool duz;
+
+  /// [p] çekimin ilerlemesi (0–1).
+  Kadraj an(double p) {
+    final e = duz ? p : p * p * (3 - 2 * p);
+    double ara(double a, double b) => a + (b - a) * e;
+    // Yakınlık oranla değişir; böylece yaklaşma hızı göze sabit görünür.
+    final z = bas.yakinlik * math.pow(son.yakinlik / bas.yakinlik, e).toDouble();
+    return Kadraj(x: ara(bas.x, son.x), y: ara(bas.y, son.y), yakinlik: z);
+  }
+}
+
 class GorselYerlesim {
   const GorselYerlesim({required this.x, required this.y, required this.olcek});
 
@@ -95,6 +127,9 @@ class Gorsel {
     required this.katmanlar,
     required this.kamera,
     this.parca = 0,
+    this.an = 0,
+    this.gecis,
+    this.yol,
     this.cekimler = const [],
   });
 
@@ -123,6 +158,9 @@ class Gorsel {
             ],
       kamera: _metin(j, 'kamera'),
       parca: (j['parca'] as num?)?.toInt() ?? 0,
+      an: (j['an'] as num?)?.toDouble() ?? 0,
+      gecis: (j['gecis'] as num?)?.toDouble(),
+      yol: KameraYolu.fromJson(j['yol']),
       cekimler: [
         for (final c in _nesneler(j, 'cekimler'))
           Gorsel.fromJson(c, ustSaat: saat, ustKatmanlar: kendi),
@@ -138,6 +176,16 @@ class Gorsel {
   /// Çekimin başladığı anlatım parçasının sırası (0'dan). Sahnenin ana
   /// görselinde 0'dır.
   final int parca;
+
+  /// Çekimin parçanın içinde başladığı yer (0 = parça başı, 0.5 = ortası).
+  /// Parça süresi sesten geldiği için saniye yerine oran verilir.
+  final double an;
+
+  /// Bu çekime geçişin süresi (saniye); null ise varsayılan çapraz geçiş.
+  final double? gecis;
+
+  /// Verilirse `kamera` yerine bu yol kullanılır.
+  final KameraYolu? yol;
 
   /// Sahnenin ana görselinden sonra gelen çekimler (docs/ICERIK_SEMASI.md).
   /// Her biri kendi `parca`sında başlar, kendi kamera hareketini yapar.

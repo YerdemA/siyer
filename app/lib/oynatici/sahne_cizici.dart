@@ -81,13 +81,21 @@ class SahneCizici extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final g = gorsel;
-    final kamera = kameraHesapla(g.kamera, ilerleme, zaman);
+    // Kamera yolu olan çekimde hazır kamera hareketi yerine yol izlenir.
+    final yol = g.yol?.an(ilerleme);
+    final kamera = yol != null ? const KameraDurumu() : kameraHesapla(g.kamera, ilerleme, zaman);
     canvas.clipRect(Offset.zero & size);
     for (final katman in g.katmanlar) {
       final d = katman.derinlik;
       // Uzak katmanlar da biraz hareket etsin; yalnız gökyüzü (0) sabit kalmasın.
       final etki = 0.3 + 0.7 * d;
       canvas.save();
+      if (yol != null) {
+        // Yol noktası ekranın ortasına gelir; bütün katmanlara aynı (parallax yok).
+        canvas.translate(size.width / 2, size.height / 2);
+        canvas.scale(yol.yakinlik);
+        canvas.translate(-yol.x * size.width, -yol.y * size.height);
+      }
       canvas.translate(
         size.width / 2 + kamera.kaydirma.dx * size.width * d,
         size.height / 2 + kamera.kaydirma.dy * size.height * d,

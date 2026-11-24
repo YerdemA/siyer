@@ -137,4 +137,73 @@ void main() {
     expect(plan.cekimBasi(0, 5), closeTo(3.9, 1e-9));
     expect(plan.cekimBasi(0, 0), 0);
   });
+
+  test('an: çekim parçanın içinde, oranla verilen yerde başlar; parça 0 da olur', () {
+    // p0 0.8–3.3, p1 3.9–13.9.
+    final plan = ZamanPlani.olustur(_bolum([
+      {'parca': 0, 'an': 0.4, 'tarif': 'b', 'katmanlar': []},
+      {'parca': 1, 'an': 0.5, 'tarif': 'c', 'katmanlar': []},
+    ]));
+    final c = plan.sahneler[0].cekimler;
+    expect(c.map((e) => e.gorsel.tarif), ['ana', 'b', 'c']);
+    expect(c[1].bas, closeTo(1.8, 1e-9));
+    expect(c[2].bas, closeTo(8.9, 1e-9));
+  });
+
+  test('parça 0 ve an 0 olan çekim ana görselle çakışır, atlanır', () {
+    final plan = ZamanPlani.olustur(_bolum([
+      {'parca': 0, 'tarif': 'b', 'katmanlar': []},
+    ]));
+    expect(plan.sahneler[0].cekimler, hasLength(1));
+  });
+
+  test('gecis: çekime özgü geçiş süresi oranı ve kamera başlangıcını belirler', () {
+    final plan = ZamanPlani.olustur(_bolum([
+      {'parca': 1, 'an': 0.5, 'gecis': 2.0, 'tarif': 'b', 'katmanlar': []},
+    ]));
+    final c = plan.sahneler[0].cekimler[1];
+    expect(c.gecis, 2.0);
+    final k = plan.konum(c.bas - 1.0);
+    expect(k.gelenCekim!.sira, 1);
+    expect(k.gecisOrani, closeTo(0.5, 1e-9));
+    expect(k.gelenCekimIlerleme, greaterThan(0));
+    expect(plan.konum(c.bas - 2.1).gelenCekim, isNull);
+  });
+
+  test('geçişi öncekinin geçişiyle üst üste binecek çekim atlanır', () {
+    final plan = ZamanPlani.olustur(_bolum([
+      {'parca': 1, 'an': 0.1, 'gecis': 1.5, 'tarif': 'b', 'katmanlar': []},
+      // b 4.9'da başlar; c'nin geçişi (8.9 - 4) b bitmeden başlıyor.
+      {'parca': 1, 'an': 0.5, 'gecis': 4.0, 'tarif': 'c', 'katmanlar': []},
+    ]));
+    expect(plan.sahneler[0].cekimler.map((e) => e.gorsel.tarif), ['ana', 'b']);
+  });
+
+  test('kamera yolu başta bas, sonda son kadrajını verir; düz eğri doğrusaldır', () {
+    final g = Gorsel.fromJson({
+      'tarif': 'gözler',
+      'kamera': 'sabit',
+      'katmanlar': [],
+      'yol': {
+        'bas': {'x': 0.25, 'y': 0.5, 'yakinlik': 2},
+        'son': {'x': 0.75, 'y': 0.5, 'yakinlik': 2},
+        'egri': 'duz',
+      },
+    });
+    final y = g.yol!;
+    expect(y.an(0).x, closeTo(0.25, 1e-9));
+    expect(y.an(1).x, closeTo(0.75, 1e-9));
+    expect(y.an(0.25).x, closeTo(0.375, 1e-9));
+    expect(y.an(0.5).yakinlik, closeTo(2, 1e-9));
+  });
+
+  test('kamera yolunda yakınlık oranla artar; yumuşak eğri ortada simetriktir', () {
+    final y = KameraYolu.fromJson({
+      'bas': {'x': 0.2, 'y': 0.4, 'yakinlik': 1},
+      'son': {'x': 0.2, 'y': 0.4, 'yakinlik': 4},
+    })!;
+    expect(y.duz, isFalse);
+    expect(y.an(0.5).yakinlik, closeTo(2, 1e-9));
+    expect(KameraYolu.fromJson({'son': {'x': 1}}), isNull);
+  });
 }

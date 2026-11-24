@@ -50,14 +50,17 @@ class ParcaZamani {
   final double son;
 }
 
-/// Sahne içindeki bir çekim: [bas] anında tam görünür (geçişi [bas]'tan
-/// önce biter), [son]'da yerini sonrakine bırakır.
+/// Sahne içindeki bir çekim: [bas] anında tam görünür (kendi [gecis]i
+/// [bas]'tan önce biter), [son]'da yerini sonrakine bırakır.
 class CekimZamani {
-  const CekimZamani(this.sira, this.gorsel, this.bas, this.son);
+  const CekimZamani(this.sira, this.gorsel, this.bas, this.son, {this.gecis = 0.8});
   final int sira;
   final Gorsel gorsel;
   final double bas;
   final double son;
+
+  /// Bu çekime gelişteki çapraz geçişin süresi.
+  final double gecis;
 }
 
 class SahneZamani {
@@ -169,22 +172,25 @@ class ZamanPlani {
   }
 
   /// Çekim başları: ana görsel sahne başında, diğerleri kendi parçalarının
-  /// başında. Geçerli parçası olmayan ya da öncekine geçiş süresinden yakın
-  /// düşen çekim atlanır; böylece geçişler üst üste binmez.
+  /// içinde `an` oranındaki yerde (varsayılan parça başı). Geçerli parçası
+  /// olmayan ya da geçişi öncekinin geçişiyle üst üste binecek çekim atlanır.
   static List<CekimZamani> _cekimler(
       Sahne sahne, double bas, double son, List<ParcaZamani> parcalar, ZamanAyari ayar) {
-    final baslar = <(Gorsel, double)>[(sahne.gorsel, bas)];
+    final baslar = <(Gorsel, double, double)>[(sahne.gorsel, bas, 0)];
     for (final c in sahne.gorsel.cekimler) {
-      if (c.parca <= 0 || c.parca >= parcalar.length) continue;
-      final b = parcalar[c.parca].bas;
+      if (c.parca < 0 || c.parca >= parcalar.length) continue;
+      if (c.an < 0 || c.an >= 1 || (c.parca == 0 && c.an == 0)) continue;
+      final p = parcalar[c.parca];
+      final b = p.bas + (p.son - p.bas) * c.an;
+      final g = c.gecis ?? ayar.cekimGecisi;
+      if (b - g < baslar.last.$2 + baslar.last.$3) continue;
       // Sahne sonu geçişine de yer kalsın.
-      if (b - ayar.cekimGecisi < baslar.last.$2 + ayar.cekimGecisi) continue;
-      if (b > son - ayar.gecis - ayar.cekimGecisi) continue;
-      baslar.add((c, b));
+      if (b > son - ayar.gecis - g) continue;
+      baslar.add((c, b, g));
     }
     return [
-      for (final (k, (g, b)) in baslar.indexed)
-        CekimZamani(k, g, b, k + 1 < baslar.length ? baslar[k + 1].$2 : son),
+      for (final (k, (g, b, gs)) in baslar.indexed)
+        CekimZamani(k, g, b, k + 1 < baslar.length ? baslar[k + 1].$2 : son, gecis: gs),
     ];
   }
 
@@ -218,7 +224,7 @@ class ZamanPlani {
   /// Çekimin kamera ilerlemesi: görünmeye başladığı andan (geçiş dahil)
   /// bittiği ana kadar 0–1. Tek çekimli sahnede sahne ilerlemesiyle aynıdır.
   double _cekimIlerleme(SahneZamani s, CekimZamani c, double an) {
-    final bas = c.sira == 0 ? gorunurAralik(s).$1 : c.bas - ayar.cekimGecisi;
+    final bas = c.sira == 0 ? gorunurAralik(s).$1 : c.bas - c.gecis;
     if (c.son <= bas) return 1;
     return ((an - bas) / (c.son - bas)).clamp(0.0, 1.0);
   }
@@ -261,12 +267,12 @@ class ZamanPlani {
     final ci = cekim.sira + 1;
     if (ci < asil.cekimler.length) {
       final gelenCekim = asil.cekimler[ci];
-      final cekimGecisBasi = gelenCekim.bas - ayar.cekimGecisi;
+      final cekimGecisBasi = gelenCekim.bas - gelenCekim.gecis;
       if (an >= cekimGecisBasi) {
         return Konum(
           sahne: asil,
           ilerleme: _ilerleme(asil, an),
-          gecisOrani: ((an - cekimGecisBasi) / ayar.cekimGecisi).clamp(0.0, 1.0),
+          gecisOrani: ((an - cekimGecisBasi) / gelenCekim.gecis).clamp(0.0, 1.0),
           parca: parca,
           cekim: cekim,
           cekimIlerleme: cekimIlerleme,
