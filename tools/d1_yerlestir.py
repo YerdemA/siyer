@@ -108,8 +108,24 @@ TARIF = {
 
 # Yeni görsel gerekmeyen yerlerde mevcut bir d1 görselinin yeniden kullanımı (DINAMIZM.md):
 # sahne → [(parça, d1 kimliği)]. Parçaya eski çekim gibi girer; aynı parçanın yeni görseli ardından.
+# Öğe: (parça, d1 kimliği) ya da hazır çekim sözlüğü ({"parca", "an", "katmanlar"/"kadraj", "tarif"}).
 YENIDEN = {
     "b01-s12": [(3, "b01-d-putlar")],   # Ca'fer'in sözleri: önce putlara tapma, sonra zulüm
+    # Nüfeyl'in sözleri ve "fil çöktü": ana görselin (çöken fil) yakın planı.
+    "b02-s12": [{"parca": 1, "tarif": "Nüfeyl filin kulağına eğilmiş; fil çöküyor (ana görselin yakın planı).",
+                 "kamera": "yavas-yaklasma", "katmanlar": [], "kadraj": {"x": 0.55, "y": 0.55, "yakinlik": 1.25}},
+                {"parca": 2, "tarif": "Fil çökmüş; geniş plan (ana görsel).", "kamera": "yavas-uzaklasma",
+                 "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.5, "yakinlik": 1.0}}],
+    # Soy cümlesi: Hâşim ve Kusay (b01'in görselleri).
+    "b03-s01": [{"parca": 0, "an": 0.42, "tarif": "Hâşim (b01'den): kervan yolunda bir kabile reisiyle antlaşma.",
+                 "kamera": "yavas-yaklasma", "dosya": "b01-d-antlasma.webp"},
+                {"parca": 0, "an": 0.7, "tarif": "Kusay (b01'den): müttefik kabileler arasında konuşuyor.",
+                 "kamera": "yatay-kayma", "dosya": "b01-d-kusay-ittifak.webp"}],
+}
+
+# Yeni görselin parça içindeki başlangıcı elle verilirse (varsayılan hesap yerine).
+AN = {
+    "b02-d-ordu-hazir": 0.04,   # ana görsel (çöken fil) metinden önce görünmesin
 }
 
 # Boş bırakılan yere Efendimiz'in nuru (kadraj birimi; ayak noktası x, y; boy).
@@ -167,8 +183,18 @@ def main(argv):
             ortak = not c.get("katmanlar") and c.get("parca") in hedefler and not c.get("an")
             (kaldirilan if ortak else kalan).append(c)
         tum = {k["id"]: k for k in kayitlar}
-        for p, kid in YENIDEN.get(sid, []):
-            kalan.append({"parca": p, "tarif": TARIF[kid], "kamera": "yavas-uzaklasma", "katmanlar": [katman(tum[kid])]})
+        for o in YENIDEN.get(sid, []):
+            if isinstance(o, tuple):
+                p, kid = o
+                kalan.append({"parca": p, "tarif": TARIF[kid], "kamera": "yavas-uzaklasma", "katmanlar": [katman(tum[kid])]})
+            else:
+                c = {k: v for k, v in o.items() if k != "dosya"}
+                if "dosya" in o:
+                    c["katmanlar"] = [{"id": o["dosya"].split("-d-", 1)[-1][:-5], "dosya": o["dosya"],
+                                       "yerTutucu": "kapi-cercevesi", "derinlik": 0.6,
+                                       "ayar": {"gorsel": {"x": 0.5, "y": 0.5, "olcek": 1.05}, "ton": False}}]
+                c["_sabit"] = True
+                kalan.append(c)
         for k in yeniler:
             c = {"parca": k["parca"][0], "tarif": TARIF[k["id"]], "kamera": KAMERALAR[sayac % 3],
                  "katmanlar": [katman(k)] + ([NUR[k["id"]]] if k["id"] in NUR else [])}
@@ -187,7 +213,7 @@ def main(argv):
             bas = 0.35 if p == 0 else (0.0 if not eskiler else 0.5)
             adim = (1 - bas) / max(1, len(yeni_grup)) if (p == 0 or eskiler) else 1 / len(yeni_grup)
             for i, c in enumerate(yeni_grup):
-                a = round(bas + i * adim, 3)
+                a = AN.get(c["_yeni"], round(bas + i * adim, 3))
                 if a:
                     c["an"] = a
             grup = sorted(eskiler + yeni_grup, key=lambda c: c.get("an", 0))
@@ -217,6 +243,7 @@ def main(argv):
             onceki = t
         for c in sonuc:
             c.pop("_yeni", None)
+            c.pop("_sabit", None)
         g["cekimler"] = sonuc
     if yaz:
         for k in hazir:
