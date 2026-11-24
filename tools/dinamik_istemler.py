@@ -46,7 +46,7 @@ GOZLER_DENETIM = [
     "exactly two eyes of one boy, side by side, the left eye centred in the left half and the right eye in the right half; no third eye, no extra eyelids",
     "the left and right eye show two different reflections, exactly as listed for each eye",
     "no human, child or angel shape, wings or silhouette anywhere in the reflections: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-    "the two lights look the same in both eyes: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
+    "the two lights have the same simple shapes in both eyes: the child is a round or oval golden glow with no head or limbs, resting on the grass, not on a lamb; the visitor is a smooth white pillar with a rounded top (straight or curved into an arch), with no head, shoulders, arms, hands or wings, not a candle and with no smoke",
     "both reflections show bright daytime with a blue sky, the same hillside as the attached image",
     "no blood, anatomical heart, chest, knife or body parts",
     "no text, letters, crosses, minarets, domes or crescents",
@@ -110,6 +110,7 @@ COCUK_A = "boy A, about 7, light-brown skin, thick black brows, short curly blac
 COCUK_B = "boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic"
 COCUK_C = "boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic"
 OYUN = "sahne-b04-oyun.png"
+ONDEN = "sahne-b04-onden.png"  # göz yakın planlarında yüz bu görseldekiyle aynı olmalı
 # Göz dizisi akışı (Erdem, 2026-11-24): yamaç -> üç çocuk aynı yere kilitlenmiş bakıyor ->
 # üçü önden, izleyiciye bakar gibi -> kamera en soldakine yaklaşır -> fark edilmeyecek
 # yumuşaklıkta göz yakın planına geçilir -> kamera sağa kayarak sırayla A'nın sol ve sağ
@@ -119,15 +120,19 @@ OYUN = "sahne-b04-oyun.png"
 GOZLER_ORTAK = ("CAMERA: the camera is very close, straight in front of the face, at eye level; the boy looks straight into the camera. "
                 "FRAMING: only the band of the face from the middle of the forehead to just below the eyes fills the whole image: "
                 "both eyes are very large, side by side, the first eye centred in the LEFT half of the image and the second eye centred in the RIGHT half, the bridge of the nose in the middle; "
-                "brows, lashes, eyelids and skin are simple layered paper shapes; skin, brows, hair and head cloth exactly as this boy in the earlier image of this chat. "
+                "brows, lashes, eyelids and skin are simple layered paper shapes; skin, brows, hair and head cloth exactly as this boy in the attached front-view image. "
                 "Each iris is very large (about two thirds of the image height) and holds a large, sharp, easy-to-read reflection, like a small round painting set in the dark, glossy iris, "
                 "with one small white highlight at its upper left. The two eyes show TWO DIFFERENT moments: the reflection in the left eye is NOT repeated in the right eye. "
                 "Every reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few lambs; NOT dusk, NOT night. "
-                "Only two lights are in the reflections, drawn the same way in every eye: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; "
-                "THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. "
+                "Only two lights are in the reflections, drawn with exactly the same simple shapes in every eye: "
+                "THE CHILD is a soft, round, warm golden-white ORB of light, like a small sun resting on the grass, about as big as a lamb's body; lying, it is a slightly flattened oval glow on the grass; standing, a slightly taller oval glow. "
+                "It is only a glow: NO head, NO body, NO limbs, NO face, NOT a candle flame; it rests on the grass by itself, never on or near a lamb's head. "
+                "THE VISITOR is a tall, smooth PILLAR of soft white misty light with a rounded top and blurred edges, about three times taller than the orb and as wide as a lamb, standing on the grass. "
+                "It is only a smooth pillar: NO head, NO shoulders, NO arms, NO hands, NO wings, NOT a candle, no flame and no smoke on top. "
+                "When it bends over, the whole pillar curves over in one smooth arch, its rounded top coming down close to the orb. When it lifts or holds something, that thing simply floats in the glow at the top end of the pillar or arch; there are no hands. "
                 "There is no human, child or angel shape anywhere in the reflections. ")
 GOZ_ISIK = "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection."
-GOZ_YASAK = ("any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, "
+GOZ_YASAK = ("any human, child or angel shape in the reflection, a light with a head, shoulders or arms, a small glowing child figure, candle, candle flame, smoke on top of a light, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, "
              "blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky")
 
 
@@ -504,27 +509,27 @@ KAYITLAR = {
           yasak="anything reflected in their eyes, light beams, angels, three identical faces, matching head cloths, heads turned away"),
         m("b04-d-gozler-a", "b04-s07", [0, 1], "A",
           "Göz dizisi 3: A'nın iki gözü. Sol göz: Cebrâil'in gelişi. Sağ göz: yere yatırılması. Kamera b04-d-cocuk-onden'den buna fark edilmeden geçer, sonra soldan sağa kayar.",
-          "Extreme close-up of both eyes of " + COCUK_A + " (the same boy A as in the earlier images of this chat). " + GOZLER_ORTAK +
-          "LEFT EYE: the tall white light has just come down from the sky and now stands on the slope a little apart from the small golden light, which is among the lambs; a faint, short trail of white above the tall light shows it came down; the lambs lift their heads. "
-          "RIGHT EYE: the small golden light now lies low and flat on the grass; the tall white light stands right beside it and bends over it, its top curving down above it; the lambs have stepped back.",
-          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          "Extreme close-up of both eyes of " + COCUK_A + " (the boy at the LEFT of the attached front-view image of the three boys: same face, skin, brows, hair; the attached hillside image shows the place). " + GOZLER_ORTAK +
+          "LEFT EYE: the white pillar has just come down and now stands upright on the grass a little apart from the golden orb, which rests on the grass between the lambs; a faint, wide, soft glow fading in the sky above the pillar shows it came down (a soft haze, not smoke, not a line); the lambs lift their heads. "
+          "RIGHT EYE: the golden orb now lies low and flat on the grass; the white pillar stands right beside it and curves over it in an arch, its rounded top coming down above the orb; the lambs have stepped back.",
+          isik=GOZ_ISIK, cekim="detay", ekle=[ONDEN, OYUN],
           yasak=GOZ_YASAK + ", the same reflection in both eyes",
           nur_yasak=False, denetim=GOZLER_DENETIM),
         m("b04-d-gozler-b", "b04-s07", [1], "A",
           "Göz dizisi 4: B'nin iki gözü. Sol göz: göğsünün yarılıp kalbinin çıkarılması (kalp: küçük ışığın içinden kaldırılan parlak kıvılcım). Sağ göz: pıhtının alınması (kıvılcımdan ayrılıp duman gibi dağılan koyu nokta). Erdem: dizinin en önemli kareleri.",
-          "Extreme close-up of both eyes of " + COCUK_B + " (the same boy B as in the earlier images of this chat). " + GOZLER_ORTAK +
+          "Extreme close-up of both eyes of " + COCUK_B + " (the boy in the CENTRE of the attached front-view image of the three boys: same face, skin, brows, head cloth; the attached hillside image shows the place). " + GOZLER_ORTAK +
           "These two eyes show the key moment of the sequence and must be the clearest. "
-          "LEFT EYE: the small golden light lies flat on the grass; the tall white light bends low over it and, out of the middle of the small golden light, lifts a second, much smaller, very bright golden spark, holding it up just above, inside its own whiteness. "
-          "RIGHT EYE: the bright golden spark is held up in the white light above the small golden light; from the spark one tiny dark grey speck is being drawn out; it drifts away to the side and thins into the air like a wisp of smoke; the bright spark itself stays clean and shining.",
-          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          "LEFT EYE: the golden orb lies flat on the grass; the white pillar is curved over it in an arch, and out of the middle of the orb a second, much smaller, very bright golden spark rises and floats in the glow at the lowered top of the arch, just above the orb. "
+          "RIGHT EYE: the same arch as in the left eye: the white pillar is curved over the flat golden orb, and the bright golden spark floats in the glow at the lowered top of the arch; from the spark one tiny dark grey speck is coming away; it drifts to the side and thins into the air like a wisp of smoke; the bright spark itself stays clean and shining.",
+          isik=GOZ_ISIK, cekim="detay", ekle=[ONDEN, OYUN],
           yasak=GOZ_YASAK + ", the same reflection in both eyes",
           nur_yasak=False, denetim=GOZLER_DENETIM),
         m("b04-d-gozler-c", "b04-s07", [2], "A",
           "Göz dizisi 5: C'nin iki gözü. Sol göz: kalbin altın leğende Zemzem suyuyla yıkanması. Sağ göz: yerine konup göğsün kapatılması, ışığın çekilişi.",
-          "Extreme close-up of both eyes of " + COCUK_C + " (the same boy C as in the earlier images of this chat). " + GOZLER_ORTAK +
-          "LEFT EYE: a simple, plain golden basin filled with clear water stands on the grass beside the small golden light, which still lies flat; the tall white light bends over the basin and holds the bright golden spark just above the water; the water sparkles and a few clear drops fall from the spark back into the basin. "
-          "RIGHT EYE: the bright spark has gone back into the small golden light, which is whole again and now stands upright on the slope; the golden basin is gone; the tall white light rises away into the blue sky and fades; the lambs graze again.",
-          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          "Extreme close-up of both eyes of " + COCUK_C + " (the boy at the RIGHT of the attached front-view image of the three boys: same face, skin, brows, hair; the attached hillside image shows the place). " + GOZLER_ORTAK +
+          "LEFT EYE: a simple, plain golden basin filled with clear water stands on the grass beside the golden orb, which still lies flat as an oval glow; the white pillar is curved over the basin in an arch, and the bright golden spark floats at its lowered top just above the water; the water sparkles and a few clear drops fall from the spark back into the basin. "
+          "RIGHT EYE: the bright spark has gone back into the golden orb, which glows whole again and now rests upright on the slope as a slightly taller oval glow (still no head, no body); the golden basin is gone; high in the blue sky the white pillar, straight again, rises away and fades, still a smooth pillar with no arms and no wings; the lambs graze again.",
+          isik=GOZ_ISIK, cekim="detay", ekle=[ONDEN, OYUN],
           yasak=GOZ_YASAK + ", the same reflection in both eyes",
           nur_yasak=False, denetim=GOZLER_DENETIM),
         m("b04-d-mekkeye-donus", "b04-s09", [0], "A",
