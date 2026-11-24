@@ -116,6 +116,11 @@ YENIDEN = {
                  "kamera": "yavas-yaklasma", "katmanlar": [], "kadraj": {"x": 0.55, "y": 0.55, "yakinlik": 1.25}},
                 {"parca": 2, "tarif": "Fil çökmüş; geniş plan (ana görsel).", "kamera": "yavas-uzaklasma",
                  "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.5, "yakinlik": 1.0}}],
+    # Anlatım sırasına göre ana görsele dönüşler (2026-11-25).
+    "b07-s01": [{"parca": 1, "an": 0.55, "tarif": "Ukâz panayırı, geniş görüntü (ana görsel): şairler ve kalabalık.", "kamera": "yavas-uzaklasma", "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.55, "yakinlik": 1.1}}],
+    "b07-s04": [{"parca": 1, "tarif": "Hîre kervanı ve Berrâd (ana görsel).", "kamera": "yavas-uzaklasma", "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.55, "yakinlik": 1.05}}],
+    "b09-s14": [{"parca": 2, "tarif": "Yeni Kâbe vadinin ortasında, geniş görüntü (ana görsel).", "kamera": "yavas-uzaklasma", "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.55, "yakinlik": 1.0}}],
+    "b10-s06": [{"parca": 2, "tarif": "Yaşlı Zeyd, sırtını Kâbe'ye dayamış (ana görsel).", "kamera": "yavas-yaklasma", "katmanlar": [], "kadraj": {"x": 0.5, "y": 0.6, "yakinlik": 1.15}}],
     # Soy cümlesi: Hâşim ve Kusay (b01'in görselleri).
     "b03-s01": [{"parca": 0, "an": 0.42, "tarif": "Hâşim (b01'den): kervan yolunda bir kabile reisiyle antlaşma.",
                  "kamera": "yavas-yaklasma", "dosya": "b01-d-antlasma.webp"},
@@ -131,6 +136,12 @@ YENIDEN = {
                                 "ayar": {"x": 0.6, "y": 0.8, "boy": 0.32, "guc": 2.5, "kim": "efendimiz"}}]}],
 }
 
+# Mevcut (eski) bir çekimi başka parçaya taşı: sahne → {katman dosyası: (parça, an)}.
+TASI = {
+    "b10-s03": {"b10-dort-kisi.webp": (2, 0)},   # "dört kişi ayrıldı"; put bayramı p1'e
+    "b10-s05": {"b10-zeyd-dua.webp": (2, 0)},    # dua, âlimlerden sonra
+}
+
 # Yeni görselin hedef parçası elle değişirse (istem kaydındakinin yerine).
 PARCA = {
     "b05-d-gece-konak": 2,      # "Ümmü Eymen de onlarla birlikteydi"
@@ -140,6 +151,8 @@ PARCA = {
 AN = {
     "b02-d-ordu-hazir": 0.04,   # ana görsel (çöken fil) metinden önce görünmesin
     "b06-d-cobanlar": 0.3,
+    "b09-d-kabe-ic-tavan": 0.2,
+    "b07-d-ukaz-yakin": 0.0,     # panayır yakın planı cümle başında, geniş görüntü ardından
 }
 
 # Boş bırakılan yere Efendimiz'in nuru (kadraj birimi; ayak noktası x, y; boy).
@@ -213,6 +226,13 @@ def main(argv):
         hedefler = {k["parca"][0] for k in yeniler}
         kalan, kaldirilan = [], []
         for c in eski:
+            for d, (p_, a_) in TASI.get(sid, {}).items():
+                if any(l.get("dosya") == d for l in c.get("katmanlar", [])):
+                    c["parca"] = p_
+                    if a_:
+                        c["an"] = a_
+                    else:
+                        c.pop("an", None)
             ortak = not c.get("katmanlar") and c.get("parca") in hedefler and not c.get("an")
             (kaldirilan if ortak else kalan).append(c)
         tum = {k["id"]: k for k in kayitlar}
