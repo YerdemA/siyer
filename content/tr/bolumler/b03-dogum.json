@@ -73,7 +73,74 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "an": 0.42,
+            "tarif": "Hâşim (b01'den): kervan yolunda bir kabile reisiyle antlaşma.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "antlasma",
+                "dosya": "b01-d-antlasma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 0,
+            "an": 0.7,
+            "tarif": "Kusay (b01'den): müttefik kabileler arasında konuşuyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kusay-ittifak",
+                "dosya": "b01-d-kusay-ittifak.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "tarif": "Şafak, geniş Arap toprakları: sürüleriyle dağınık kabile yurtları, uzakta Mekke vadisi.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kabileler",
+                "dosya": "b03-d-kabileler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s01.mp3",
@@ -259,6 +326,50 @@
         "kamera": "yavas-yaklasma",
         "cekimler": [
           {
+            "parca": 0,
+            "tarif": "Kâbe'nin içi, yakın: bir bekçinin elleri deri sadaktan tüysüz fal oklarını çekiyor; arkada bulanık Hübel.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kura-oklari",
+                "dosya": "b03-d-kura-oklari.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 0,
+            "tarif": "Kâbe'nin içi: Hübel'in önünde bekçi fal oklarını kaldırıyor; Abdülmuttalib ve oğulları bekliyor, Abdullah arkadan.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "kabe-ic-kura",
+                "dosya": "b03-d-kabe-ic-kura.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.675
+          },
+          {
             "parca": 1,
             "tarif": "Orta plan: Kureyşliler ellerini kaldırıp Abdülmuttalib'e itiraz ediyor; Abdullah arkadan.",
             "kamera": "yavas-yaklasma",
@@ -364,7 +475,30 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Kâbe yakını: on deve sıra hâlinde; Abdullah arkadan, yanında Abdülmuttalib.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "on-deve",
+                "dosya": "b03-d-on-deve.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s04.mp3",
@@ -716,7 +850,52 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yatay-kayma"
+        "kamera": "yatay-kayma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gece, Yesrib'de bir oda: Abdullah yatakta, arkadan; iki yaşlı Neccâroğlu başı önde yanında oturuyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "yesrib-hasta",
+                "dosya": "b03-d-yesrib-hasta.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Alacakaranlık: Âmine kapı eşiğinde arkadan, kuzeye giden yola bakıyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "amine-bekleyis",
+                "dosya": "b03-d-amine-bekleyis.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b03-s08.mp3",
@@ -946,7 +1125,7 @@
         "kamera": "yavas-uzaklasma",
         "cekimler": [
           {
-            "parca": 1,
+            "parca": 0,
             "tarif": "Orta plan: Abdülmuttalib arkadan, Kâbe'nin kapısından içeri giriyor; kucağındaki görünmez.",
             "kamera": "yavas-yaklasma",
             "katmanlar": [
@@ -961,6 +1140,50 @@
                     "y": 0.5,
                     "olcek": 1.05
                   }
+                }
+              }
+            ],
+            "an": 0.28
+          },
+          {
+            "parca": 0,
+            "tarif": "Kâbe'nin içi: Abdülmuttalib putlara sırtını dönmüş, arkadan, başını göğe kaldırmış dua ediyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kabe-ic-dua",
+                "dosya": "b03-d-kabe-ic-dua.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.62
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'nin girişi: Abdülmuttalib vadinin ağzında çöl yoluna bakıyor; uzakta yolcular.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "sut-anne-arayis",
+                "dosya": "b03-d-sut-anne-arayis.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
                 }
               }
             ]

@@ -1169,6 +1169,27 @@
                 }
               }
             ]
+          },
+          {
+            "parca": 3,
+            "tarif": "Gündüz: Habeşli askerler otlaktan alınan yüksüz deve sürüsünü sürüyor; sağda Kureyşliler karşılıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "develer-donus",
+                "dosya": "b02-d-develer-donus.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -1359,6 +1380,50 @@
         ],
         "kamera": "yavas-yaklasma",
         "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Şafak: Habeş ordusu saf saf dizilmiş, başında süslü baş örtülü fil; bir komutan buyruk veriyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "ordu-hazir",
+                "dosya": "b02-d-ordu-hazir.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.04
+          },
+          {
+            "parca": 1,
+            "tarif": "Nüfeyl filin kulağına eğilmiş; fil çöküyor (ana görselin yakın planı).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.55,
+              "y": 0.55,
+              "yakinlik": 1.25
+            }
+          },
+          {
+            "parca": 2,
+            "tarif": "Fil çökmüş; geniş plan (ana görsel).",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.5,
+              "yakinlik": 1.0
+            }
+          },
           {
             "parca": 3,
             "tarif": "Orta plan, şafak: Mekke'den çevrilen fil rahatça yürüyor; askerler şaşkın.",
