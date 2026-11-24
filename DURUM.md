@@ -6,6 +6,10 @@ Son güncelleme: 2026-11-24.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
+**Kaldığımız yer (2026-11-25): bütün d1 görselleri sahnelerde.** `tools/d1_yerlestir.py <bölüm> [--yaz]` istem kaydındaki hedef parçaya çekim olarak koyar: hedef parçadaki yalnız kadraj olan ortak çekimi kaldırır, aynı parçadakileri `an` ile sıralar (metin bölünmedi), boş bırakılan yerlere nur (`NUR`), anlatım sırasına göre düzeltmeler (`YENIDEN`, `TASI`, `PARCA`, `AN`) ve oynatıcıyla aynı zamanlama denetimi. Bölüm bölüm oynatıcının çizim koduyla pafta kontrolü yapıldı (her çekimin bir karesi), sıra hataları düzeltildi (b02-s12 fil, b03-s12 kapı→dua, b04-s09 tavaf, b05-s02, b06-s05 nurlu yamaç, b07-s01/s04, b09-s14, b10-s03/s05/s06). `yeni\` boş; görseller `arsiv\<bölüm>\`. Doğrulama 0 hata. Telefonda/gerçek oynatıcıda denenmedi. **Yeni AAB gerekiyor** (özgün ses + görseller; sürüm kodu `+2`).
+- Bazı çekimler hâlâ uzun (12–18 sn): b03-s01 kabileler, b07-s04 kervan, b10-s06 Esmâ, b10-s07 ana görsel (22 sn), b06-s11 Bahîrâ. Erdem izleyince karar.
+- **Kilit ekranı kartı** yol haritasında (Erdem'in notu, 2026-11-25); `audio_service` paketi için Erdem onayı gerekir.
+
 **Kaldığımız yer (2026-11-24): ses özgün hâline döndü, d1 görselleri denetlendi.**
 - **Anlatım sesi** (Erdem: kapalı testte ses Seyfullah Kartal'a benzemiyordu): 135 dosyanın hepsi ElevenLabs'ten gelen özgün MP3 (44,1 kHz 128 kbps) oldu; sıkıştırıcı, loudnorm ve 48k AAC kaldırıldı, `tools/ses_dengele.py` silindi. b01–b04 git geçmişinden (`b0bb6e6`), b05–b10 ElevenLabs akışından (`w7W5ESD14axY7ULG05AG`) alındı; her dosyanın süresi eski sürümle eşleşti. **Bundan sonra sese hiçbir işlem yok** (`ICERIK_SEMASI.md`). Ses 16 → 42 MB; b01 gömülü (13 dosya). Testler 90/90, doğrulama 0 hata. **Yeni AAB derlenmedi** (sürüm kodu `+2` olmalı); telefonda dinlenmedi.
 - **d1 görselleri** (`İndirilenler\siyer\yeni\`, 76 görsel): **66 kabul**, 10 red. Reddedilenler `arsiv\<bölüm>\<kimlik>-red.png`; düzeltilmiş istemler `istemler/bXX-d1-yeniden-chatgpt.md` (her biri yeni sohbet, Mesaj 0 ile başlar):
