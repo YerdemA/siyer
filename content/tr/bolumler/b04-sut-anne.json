@@ -678,7 +678,7 @@
           {
             "parca": 0,
             "an": 0.1387,
-            "gecis": 0.8,
+            "gecis": 0.7,
             "tarif": "Üç çocuk yan yana, hepsi kadrajın solundaki aynı noktaya kilitlenmiş, şaşkın bakıyor; baktıkları görünmez.",
             "kamera": "yavas-yaklasma",
             "katmanlar": [
@@ -700,7 +700,7 @@
           },
           {
             "parca": 0,
-            "an": 0.3544,
+            "an": 0.339,
             "gecis": 0.6,
             "tarif": "Üç çocuk önden, izleyiciye bakar gibi şaşkın; kamera en soldaki çocuğun yüzüne kayar.",
             "kamera": "sabit",
@@ -727,15 +727,15 @@
                 "yakinlik": 1.0
               },
               "son": {
-                "x": 0.1513,
-                "y": 0.4459,
+                "x": 0.139,
+                "y": 0.4615,
                 "yakinlik": 3.4
               }
             }
           },
           {
             "parca": 0,
-            "an": 0.5239,
+            "an": 0.4777,
             "gecis": 0.2,
             "tarif": "Aynı görüntü: kamera en soldaki çocuğun gözlerine yaklaşır.",
             "kamera": "sabit",
@@ -757,14 +757,14 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.1513,
-                "y": 0.4459,
+                "x": 0.139,
+                "y": 0.4615,
                 "yakinlik": 3.4
               },
               "son": {
-                "x": 0.1513,
-                "y": 0.4459,
-                "yakinlik": 10.091
+                "x": 0.139,
+                "y": 0.4615,
+                "yakinlik": 9.0
               },
               "egri": "duz"
             }
@@ -773,12 +773,12 @@
             "parca": 0,
             "an": 0.7858,
             "gecis": 1.3,
-            "tarif": "Birinci çocuğun gözleri; yaklaşma sürerken önden görüntüden fark edilmeden geçilir. Sol gözde Cebrâil'in gelişi (ışık).",
+            "tarif": "Birinci çocuğun gözleri, yakın plan; yaklaşma sürerken önden görüntüden fark edilmeden geçilir.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-a-gecis.webp",
+                "id": "yama",
+                "dosya": "b04-d-yuz-a-gecis.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
@@ -794,13 +794,13 @@
             "yol": {
               "bas": {
                 "x": 0.3,
-                "y": 0.6343,
-                "yakinlik": 0.823
+                "y": 0.6053,
+                "yakinlik": 1.108
               },
               "son": {
                 "x": 0.3,
-                "y": 0.6343,
-                "yakinlik": 2.0
+                "y": 0.6053,
+                "yakinlik": 2.2
               },
               "egri": "duz"
             }
@@ -809,19 +809,19 @@
             "parca": 0,
             "an": 0.8243,
             "gecis": 0.2,
-            "tarif": "Birinci çocuğun sol gözü: yansımada beyaz ışık sütunu inmiş, altın küre yanında.",
+            "tarif": "Birinci çocuğun sol gözü: yansımada beyaz ışık sütunu inmiş, altın ışık topu yanında.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-a.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -830,13 +830,13 @@
             "yol": {
               "bas": {
                 "x": 0.3,
-                "y": 0.6343,
-                "yakinlik": 2.0
+                "y": 0.6053,
+                "yakinlik": 2.2
               },
               "son": {
-                "x": 0.34,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.3,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "egri": "duz"
             }
@@ -845,19 +845,19 @@
             "parca": 0,
             "an": 0.9553,
             "gecis": 0.2,
-            "tarif": "Birinci çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "tarif": "Kamera yüzler boyunca sağa kayar.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-a.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -865,14 +865,14 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.34,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.3,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.7054,
+                "y": 0.6053,
+                "yakinlik": 1.7
               }
             }
           },
@@ -880,19 +880,19 @@
             "parca": 1,
             "an": 0.0608,
             "gecis": 0.2,
-            "tarif": "Birinci çocuğun sağ gözü: yansımada altın küre yere yatmış, beyaz ışık kemer gibi üstüne eğilmiş.",
+            "tarif": "Birinci çocuğun sağ gözü: top çimene inmiş, sütun hemen yanında.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-a.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -900,71 +900,35 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.7054,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.7106,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.7154,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "egri": "duz"
             }
           },
           {
             "parca": 1,
-            "an": 0.2004,
-            "gecis": 0.8,
-            "tarif": "İkinci çocuğun sol gözü: yansımada kemerin altında küreden parlak kıvılcım (kalp) yükseliyor.",
-            "kamera": "sabit",
-            "katmanlar": [
-              {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-b.webp",
-                "yerTutucu": "kapi-cercevesi",
-                "derinlik": 0.6,
-                "ayar": {
-                  "gorsel": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "olcek": 1.0
-                  },
-                  "ton": false
-                }
-              }
-            ],
-            "yol": {
-              "bas": {
-                "x": 0.2894,
-                "y": 0.6343,
-                "yakinlik": 1.74
-              },
-              "son": {
-                "x": 0.3294,
-                "y": 0.6343,
-                "yakinlik": 1.74
-              },
-              "egri": "duz"
-            }
-          },
-          {
-            "parca": 1,
-            "an": 0.3898,
+            "an": 0.1605,
             "gecis": 0.2,
-            "tarif": "İkinci çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "tarif": "Kamera yüzler boyunca sağa kayar.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-b.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -972,14 +936,85 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.3294,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 0.7154,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 1.3623,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              }
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.2802,
+            "gecis": 0.2,
+            "tarif": "İkinci çocuğun sol gözü: toptan parlak kıvılcım (kalp) yükseliyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 1.5677,
+                    "y": 0.5,
+                    "olcek": 3.1354
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 1.3623,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "son": {
+                "x": 1.3723,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.4197,
+            "gecis": 0.2,
+            "tarif": "Kamera yüzler boyunca sağa kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 1.5677,
+                    "y": 0.5,
+                    "olcek": 3.1354
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 1.3723,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "son": {
+                "x": 1.7731,
+                "y": 0.6053,
+                "yakinlik": 1.7
               }
             }
           },
@@ -987,19 +1022,19 @@
             "parca": 1,
             "an": 0.5095,
             "gecis": 0.2,
-            "tarif": "İkinci çocuğun sağ gözü: yansımada kıvılcımdan koyu bir iz (pıhtı) ayrılıp duman gibi dağılıyor.",
+            "tarif": "İkinci çocuğun sağ gözü: kıvılcımdan koyu bir iz (pıhtı) ayrılıp dağılıyor.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-b.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -1007,71 +1042,106 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 1.7731,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.7106,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 1.7931,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "egri": "duz"
+            }
+          },
+          {
+            "parca": 1,
+            "an": 0.9581,
+            "gecis": 0.2,
+            "tarif": "Kamera yüzler boyunca sağa kayar.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 1.5677,
+                    "y": 0.5,
+                    "olcek": 3.1354
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 1.7931,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "son": {
+                "x": 2.43,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              }
+            }
+          },
+          {
+            "parca": 2,
+            "an": 0.1243,
+            "gecis": 0.2,
+            "tarif": "Üçüncü çocuğun sol gözü: kıvılcım altın leğende, suyun üstünde.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 1.5677,
+                    "y": 0.5,
+                    "olcek": 3.1354
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "yol": {
+              "bas": {
+                "x": 2.43,
+                "y": 0.6053,
+                "yakinlik": 1.7
+              },
+              "son": {
+                "x": 2.445,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "egri": "duz"
             }
           },
           {
             "parca": 2,
-            "an": 0.0819,
-            "gecis": 0.8,
-            "tarif": "Üçüncü çocuğun sol gözü: yansımada kıvılcım altın leğende, suyun üstünde; damlalar düşüyor.",
-            "kamera": "sabit",
-            "katmanlar": [
-              {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-c.webp",
-                "yerTutucu": "kapi-cercevesi",
-                "derinlik": 0.6,
-                "ayar": {
-                  "gorsel": {
-                    "x": 0.5,
-                    "y": 0.5,
-                    "olcek": 1.0
-                  },
-                  "ton": false
-                }
-              }
-            ],
-            "yol": {
-              "bas": {
-                "x": 0.2894,
-                "y": 0.6343,
-                "yakinlik": 1.74
-              },
-              "son": {
-                "x": 0.3294,
-                "y": 0.6343,
-                "yakinlik": 1.74
-              },
-              "egri": "duz"
-            }
-          },
-          {
-            "parca": 2,
-            "an": 0.5198,
+            "an": 0.6328,
             "gecis": 0.2,
-            "tarif": "Üçüncü çocuğun gözleri: kamera sol gözden sağ göze kayar.",
+            "tarif": "Kamera yüzler boyunca sağa kayar.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-c.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -1079,34 +1149,34 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.3294,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 2.445,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 2.8403,
+                "y": 0.6053,
+                "yakinlik": 1.7
               }
             }
           },
           {
             "parca": 2,
-            "an": 0.6893,
+            "an": 0.7599,
             "gecis": 0.2,
-            "tarif": "Üçüncü çocuğun sağ gözü: yansımada kıvılcım yerine dönmüş, küre ayakta; beyaz ışık göğe çekiliyor.",
+            "tarif": "Üçüncü çocuğun sağ gözü: kıvılcım topa dönmüş, sütun göğe çekiliyor.",
             "kamera": "sabit",
             "katmanlar": [
               {
-                "id": "gozler",
-                "dosya": "b04-d-gozler-c.webp",
+                "id": "yuzler",
+                "dosya": "b04-d-yuzler.webp",
                 "yerTutucu": "kapi-cercevesi",
                 "derinlik": 0.6,
                 "ayar": {
                   "gorsel": {
-                    "x": 0.5,
+                    "x": 1.5677,
                     "y": 0.5,
-                    "olcek": 1.0
+                    "olcek": 3.1354
                   },
                   "ton": false
                 }
@@ -1114,14 +1184,14 @@
             ],
             "yol": {
               "bas": {
-                "x": 0.6606,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 2.8403,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "son": {
-                "x": 0.7106,
-                "y": 0.6343,
-                "yakinlik": 1.74
+                "x": 2.8403,
+                "y": 0.6053,
+                "yakinlik": 1.7
               },
               "egri": "duz"
             }
