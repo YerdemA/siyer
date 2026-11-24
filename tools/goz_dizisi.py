@@ -1,9 +1,9 @@
-"""b04-s07 göz dizisinin çekimlerini hesaplar ve bölüm dosyasına yazar (üçüncü yol).
+r"""b04-s07 göz dizisinin çekimlerini hesaplar ve bölüm dosyasına yazar (üçüncü yol).
 
 Akış (Erdem, 2026-11-25): yamaç (ana görsel, nur) → üç çocuk aynı yere bakıyor →
 üçü önden → kamera en soldaki çocuğun gözlerine yaklaşır, yüz yakın planına geçilir →
 üç çocuğun yüzü yan yana (tools/yuz_birlestir.py, b04-d-yuzler.webp); kamera hiçbir
-efekt olmadan sağa kayar: A sol göz, A sağ göz, B sol, B sağ, C sol, C sağ. Ses durağı
+efekt olmadan sağa kayar (Efendimiz her yansımada oynatıcının nuru): A sol göz, A sağ göz, B sol, B sağ, C sol, C sağ. Ses durağı
 yok; süreler anlatımın kendi akışından.
 
 Tek geçiş, önden görselden yüzlere: birleşik görselin ilk 1536 px'i (kenarı yumuşak,
@@ -56,6 +56,45 @@ Z_ONDEN = 3.4
 SES, BAS = 23.6, 0.8
 
 
+# Efendimiz yansımada oynatıcının nuru (Erdem, 2026-11-25). Silinen altın topların merkezi
+# (yüz görselinde px; eski/yeni farkından), duruşu ve göz bebeği dairesi (merkez, yarıçap).
+NUR_BOY = 100              # px (yüz görselinde); kuzulardan belirgin uzun, yatıkken de seçilsin
+NUR_R = 176                # göz bebeği dairesi yarıçapı (px), halkanın içinde kalsın
+NURLAR = [
+    # (çocuk, göz, top x, top y, yatık mı, havada mı)
+    ("a", 0, 456, 626, False, True),    # Cebrâil'in gelişi: ayakta
+    ("a", 1, 1066, 677, True, False),   # yere yatırıldı
+    ("b", 0, 471, 682, True, False),    # kalbin çıkarılışı
+    ("b", 1, 1050, 682, True, False),   # pıhtı
+    ("c", 0, 402, 700, True, False),    # leğende yıkanış
+    ("c", 1, 1023, 649, False, True),   # yerine konuldu, ayakta
+]
+
+
+def nur_katmanlari(sadece=None):
+    """Birleşik görselde (kadraj birimi) her göze nur; [sadece] verilirse yalnız o çocuk."""
+    cikti = []
+    for i, (c, sag, x, y, yatik, havada) in enumerate(NURLAR):
+        if sadece and c != sadece:
+            continue
+        (gx, gy) = yb.GOZLER[c][sag]
+        dx, dy, o = yb.birlesik_nokta(c, gx, gy)
+        boy = NUR_BOY * o
+        if yatik:
+            # Ayak noktası sağda; -90° dönünce figür sola, yere uzanır. Gövde yere değsin.
+            zemin = y + 22
+            ax, ay, _ = yb.birlesik_nokta(c, x + NUR_BOY / 2, zemin - NUR_BOY * 0.17)
+        else:
+            ax, ay, _ = yb.birlesik_nokta(c, x, y + (34 if havada else 28))
+        ayar = {"x": round(ax / yb.GEN, 4), "y": round(ay / yb.YUK, 4), "boy": round(boy / yb.YUK, 4),
+                "guc": 3.0, "kim": "efendimiz", "hemen": True,
+                "daire": {"x": round(dx / yb.GEN, 4), "y": round(dy / yb.YUK, 4), "r": round(NUR_R * o / yb.GEN, 4)}}
+        if yatik:
+            ayar["aci"] = -90
+        cikti.append({"id": f"nur-{c}{sag}", "dosya": "", "yerTutucu": "nur", "derinlik": 0.6, "ayar": ayar})
+    return cikti
+
+
 def parcalar(sahne):
     kelime = [max(1, len(p["metin"].split())) for p in sahne["anlatim"]]
     t, cikti = BAS, []
@@ -97,7 +136,7 @@ def main():
         cekimler.append(c)
 
     onden_k = [tam("onden", "b04-d-cocuk-onden.webp")]
-    yuzler = [tam("yuzler", "b04-d-yuzler.webp", x=GEN_K / 2, olcek=GEN_K)]
+    yuzler = [tam("yuzler", "b04-d-yuzler.webp", x=GEN_K / 2, olcek=GEN_K)] + nur_katmanlari()
 
     ekle(1.7, 0.7, "Üç çocuk yan yana, hepsi kadrajın solundaki aynı noktaya kilitlenmiş, şaşkın bakıyor; baktıkları görünmez.",
          [{"id": "bakis", "dosya": "b04-d-cocuk-bakis.webp", "yerTutucu": "kalabalik", "derinlik": 0.6,
@@ -118,7 +157,7 @@ def main():
     ekle(T_O2, 0.2, "Aynı görüntü: kamera en soldaki çocuğun gözlerine yaklaşır.", onden_k,
          {"bas": kadraj(X, Y, zd(t0)), "son": kadraj(X, Y, zd(T_G)), "egri": "duz"})
     ekle(T_G, G_G, "Birinci çocuğun gözleri, yakın plan; yaklaşma sürerken önden görüntüden fark edilmeden geçilir.",
-         [tam("yama", "b04-d-yuz-a-gecis.webp")],
+         [tam("yama", "b04-d-yuz-a-gecis.webp")] + nur_katmanlari("a"),
          {"bas": kadraj(U_YAK, V, zd(T_G - G_G) / OLCEK), "son": kadraj(U_YAK, V, Z_YAK), "egri": "duz"})
 
     # Yüzler: kamera sağa kayar. Duruşta hafif sürüklenme (düz), aradaki kayma yumuşak.

@@ -5,6 +5,8 @@ hiçbir efekt olmadan sağa kayar.
 
 - Yeşil perde yalnız görselin kenarına bağlı yeşil bölgede silinir (yansımalardaki çimen
   ve gök korunur); kenar 1,5 px yumuşatılır, yeşil yansıması temizlenir.
+- 2026-11-25: altın top silindi (Efendimiz yansımada oynatıcının nuru); topların yeri
+  eski/yeni görsel farkından ölçüldü, nurlar tools/goz_dizisi.py'de.
 - Her yüz 16:9 banda kırpılır (üstten 80 px), göz aralığı A'nınkine (631 px) eşitlenir,
   göz hizası aynı yüksekliğe getirilir.
 - Yüz merkezleri ARALIK px arayla dizilir; arkada yamaç görselinin bulanık, aynalı kopyası.
@@ -37,6 +39,14 @@ ARALIK = 1640          # yüz merkezleri arası (px); başlar üst üste binmesi
 YUK = 864              # 16:9 bant yüksekliği
 GEN = 1536
 GOZ_Y = 523            # birleşik görselde göz hizası
+
+
+def birlesik_nokta(c, px, py):
+    """c yüz görselindeki (özgün 1536×1024) noktanın birleşik görseldeki pikseli."""
+    (lx, ly), (rx, ry) = GOZLER[c]
+    o = (GOZLER["a"][1][0] - GOZLER["a"][0][0]) / (rx - lx)
+    merkez = GEN / 2 + "abc".index(c) * ARALIK
+    return merkez + (px - (lx + rx) / 2) * o, GOZ_Y + (py - (ly + ry) / 2) * o, o
 
 
 def perdeyi_sil(img: Image.Image) -> Image.Image:
@@ -77,7 +87,8 @@ def main() -> int:
     arka = arka.filter(ImageFilter.GaussianBlur(18)).convert("RGBA")
 
     for i, c in enumerate("abc"):
-        img = perdeyi_sil(Image.open(YENI / f"b04-d-yuz-{c}.png"))
+        # Düzeltme görselleri bazen 1535×1025 geliyor; ölçüler 1536×1024 içindir.
+        img = perdeyi_sil(Image.open(YENI / f"b04-d-yuz-{c}.png").convert("RGB").resize((1536, 1024), Image.LANCZOS))
         (lx, ly), (rx, ry) = GOZLER[c]
         o = hedef_aralik / (rx - lx)
         img = img.resize((round(img.width * o), round(img.height * o)), Image.LANCZOS)
