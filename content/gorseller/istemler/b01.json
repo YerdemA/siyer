@@ -766,13 +766,13 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "orta",
-      "konu": "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
+      "konu": "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. SIZE: every idol is clearly smaller than the Ka'ba: most reach a man's waist or shoulder, none is taller than a standing man, and the Ka'ba wall rises above all of them. These are the idols OUTSIDE the Ka'ba: none of them is the big dark-red standing idol with crossed arms (Hubal), which stands inside the Ka'ba and must not appear here; do not repeat the idols seen inside it (no zigzag-painted pillar, no crossed-arm red statue). The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.",
       "ekle": [
         "nesne-kabe-alcak.png"
       ],
       "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
-      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing",
-      "not": "Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0; i-b01-008."
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing, Hubal, a large red idol, any idol taller than a man or taller than the Ka'ba",
+      "not": "Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. 2026-11-24 yeniden: ilk üretimde Hübel (içerideki büyük kızıl put) dışarıda duruyordu ve bir put Kâbe'den yüksekti. Dayanak: b01-s10 parça 0; i-b01-008."
     },
     {
       "id": "b01-d-pazar",

@@ -274,20 +274,20 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `nesne-kabe-alcak.png`
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. Dayanak: b01-s10 parça 0; i-b01-008.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. 2026-11-24 yeniden: ilk üretimde Hübel (içerideki büyük kızıl put) dışarıda duruyordu ve bir put Kâbe'den yüksekti. Dayanak: b01-s10 parça 0; i-b01-008.*
 
 ```text
 Scene b01-d-putlar. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
+SUBJECT: Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: idols of varied shapes and sizes, each one different: crude statues roughly shaped like standing or seated human figures with simple, primitive carved features, some of stone and some of dark wood, a few with faded ochre or red paint; plain standing stones and rough pillar stones among them; no gold. SIZE: every idol is clearly smaller than the Ka'ba: most reach a man's waist or shoulder, none is taller than a standing man, and the Ka'ba wall rises above all of them. These are the idols OUTSIDE the Ka'ba: none of them is the big dark-red standing idol with crossed arms (Hubal), which stands inside the Ka'ba and must not appear here; do not repeat the idols seen inside it (no zigzag-painted pillar, no crossed-arm red statue). The low, roofless Ka'ba looks exactly like the attached reference: rough, unmortared grey-brown stone walls a little taller than a man, no roof, no cloth covering, no door decoration.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
 LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any person, blood, sacrifice, writing, Hubal, a large red idol, any idol taller than a man or taller than the Ka'ba
 
 BEFORE YOU OUTPUT, CHECK AND FIX: no people at all; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 

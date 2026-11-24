@@ -52,23 +52,23 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `kabe-ic-alcak.png`
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. Dayanak: b03-s03 parça 0; i-b03-004. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. 2026-11-24 yeniden: ilk üretimde alttaki el bedene bağlı değildi. Dayanak: b03-s03 parça 0; i-b03-004. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
 
 ```text
 Scene b03-d-kura-oklari. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.
 
-SUBJECT: Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall.
+SUBJECT: Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall. HANDS: exactly two hands, both belonging to the same man whose two forearms in dark sleeves enter the image from the bottom-left corner: his left hand holds the quiver from below, his right hand pulls one arrow up out of it. Each hand is joined to its own sleeve; the wrists and sleeves are clearly visible; no hand comes from the right or from below without an arm.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
-1. the custodian of the idol, only his hands and forearms in a dark cloak are visible. Pose and place: hands in the centre holding the quiver.
+1. the custodian of the idol, an older man; only his two forearms in dark-brown sleeves and his two weathered hands are visible. Pose and place: arms entering from the bottom-left, hands in the centre holding the quiver and one arrow.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
 LIGHT: daylight falling in from the open sky above; the hands in light, the wall behind in soft shadow; no glow.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, human faces, blood, knives, writing on arrows
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, human faces, blood, knives, writing on arrows, a third hand, a hand without an arm, hands from the right edge
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
@@ -193,23 +193,23 @@ Rules: faces only for people the prompt allows, in simple paper cut-out style; n
 
 **Bu mesaja ekle** (`content/gorseller/istemler/referans/` klasöründen): `kabe-ic-alcak.png`, `karakter-abdulmuttalib.png`
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu. Dayanak: b03-s12 parça 0; i-b03-015. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (A). s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, Allah'a dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu. 2026-11-24 yeniden: ilk üretimde Abdülmuttalib doğrudan Hübel'e dönük duruyordu; puta dua ediyor gibi okunuyordu. Dayanak: b03-s12 parça 0; i-b03-015. Önce b01-d-kabe-ic üretilip onaylanmalı; onaylanan görsel referans/kabe-ic-alcak.png olarak konur.*
 
 ```text
 Scene b03-d-kabe-ic-dua. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render. The images attached to this message are references: character sheets show exactly how each named character must look (face, beard, clothing colours); object or building references (throne, sanctuary, houses) show exactly how that object must look; a wide shot shows the same scene. Match them exactly, but do not copy their composition or background.
 
 CAMERA: Medium-wide shot, camera at standing eye level, looking straight ahead (no high angle, no low angle). Full figures from head to feet.
 
-SUBJECT: Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. Abdul-Muttalib stands alone in the middle of the enclosure, seen strictly from behind, head raised towards the open sky, as if praying and giving thanks; his arms are in front of him and not visible. The idols stand along the walls in deep shadow, ignored.
+SUBJECT: Daytime. Inside the old, roofless Ka'ba (match the attached interior reference if one is attached): a small, nearly rectangular enclosure a few paces across, walled by the same rough, unmortared grey-brown stones as the outside; no roof, the sky open above, daylight falling in from above onto the upper walls while the lower walls stay in soft shadow; packed earth floor; a plain wooden door at ground level in one wall. CAMERA POSITION: the camera stands in front of the far wall where the idols are, so the idols are behind the camera and NOT in the picture; we look across the enclosure towards the opposite wall with the plain wooden door. Abdul-Muttalib stands in the middle of the enclosure with his back to the camera and to the idols, facing away from them; seen strictly from behind; his head is clearly tilted back, looking up at the open sky above the walls, as if praying to God and giving thanks; his arms are in front of him and not visible. Only bare stone walls, the wooden door and the open sky are seen; the stone-lined pit may show at the edge of the floor.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 1 person in total). Keep every listed colour and feature exactly as written:
-1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: in the centre, strictly from behind, head raised.
+1. Abdul-Muttalib, chief of Quraysh: an elderly man of about 75, tall, upright and imposing, with a handsome, dignified face and a few deep lines; a full, neatly kept, fist-length beard and moustache, grey-white (light grey with white streaks), no black hairs; an off-white head cloth falling to his shoulders, held by a dark brown cord band; a cream-white ankle-length tunic; over it a long open rust-brown cloak with a broad saffron-yellow border; brown leather sandals. Pose and place: in the centre, strictly from behind, back turned to the idols, head tilted up to the sky.
 
 LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important content inside the central area: the top 15%, the bottom 15% and 8% on each side will be cropped.
 
-LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib; the walls and idols in shadow; no glow, no rays.
+LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib's head and shoulders; the lower walls in soft shadow; no glow, no rays.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any baby, bundle or child, any glow, any other person, roof, lamps, gold
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, any idol or statue, any baby, bundle or child, any glow, any other person, roof, lamps, gold
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 1 person; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 

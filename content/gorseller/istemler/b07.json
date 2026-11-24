@@ -435,7 +435,7 @@
       "oncelik": "B",
       "tip": "mekan",
       "cekim": "yakin",
-      "konu": "Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, jars of perfume and oil, dates; traders' hands weigh goods on a small balance.",
+      "konu": "Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, small clay jars and leather flasks of perfume and oil sealed with cloth and cord, dates; traders' hands weigh goods on a small balance.",
       "kisiler": [
         {
           "tarif": "traders, only their hands and forearms in plain sleeves visible",
@@ -444,8 +444,8 @@
         }
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
-      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, faces, writing, coins with writing",
-      "not": "Dinamizm turu d1 (B). s01 tek uzak görsel 19 sn. Dayanak: b07-s01 parça 1; i-b07-001."
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, faces, writing, coins with writing, glass bottles, clear glass, corks, stoppers",
+      "not": "Dinamizm turu d1 (B). s01 tek uzak görsel 19 sn. 2026-11-24 yeniden (isteğe bağlı): ilk üretimde mantarlı, şeffaf cam şişeler günümüzden kalma gibi duruyordu. Dayanak: b07-s01 parça 1; i-b07-001."
     },
     {
       "id": "b07-d-silah-birakma",

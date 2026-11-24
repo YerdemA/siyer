@@ -25,14 +25,14 @@ Format for every image: landscape 3:2. Green-screen images are cut-out layers pl
 
 ## Mesaj 1: b07-d-ukaz-yakin
 
-*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s01 tek uzak görsel 19 sn. Dayanak: b07-s01 parça 1; i-b07-001.*
+*Kontrol: tam dolu görsel, perde yok; Dinamizm turu d1 (B). s01 tek uzak görsel 19 sn. 2026-11-24 yeniden (isteğe bağlı): ilk üretimde mantarlı, şeffaf cam şişeler günümüzden kalma gibi duruyordu. Dayanak: b07-s01 parça 1; i-b07-001.*
 
 ```text
 Scene b07-d-ukaz-yakin. ONE image, landscape 3:2. Flat paper cut-out style of the style reference: layered textured paper shapes, muted earth palette; not photorealistic, not a 3D render.
 
 CAMERA: Close shot, head and shoulders, camera at eye level, straight on or three-quarter view.
 
-SUBJECT: Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, jars of perfume and oil, dates; traders' hands weigh goods on a small balance.
+SUBJECT: Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, small clay jars and leather flasks of perfume and oil sealed with cloth and cord, dates; traders' hands weigh goods on a small balance.
 
 PEOPLE AND ANIMALS: draw exactly these and nobody else (exactly 2 people in total). Keep every listed colour and feature exactly as written:
 1. 2 × traders, only their hands and forearms in plain sleeves visible. Pose and place: weighing at the centre.
@@ -41,7 +41,7 @@ LAYOUT: Full frame, filled edge to edge; no green screen. Keep the important con
 
 LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.
 
-DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, faces, writing, coins with writing
+DO NOT DRAW: the Prophet, any glowing figure, halo, light rays from a person, faces, writing, coins with writing, glass bottles, clear glass, corks, stoppers
 
 BEFORE YOU OUTPUT, CHECK AND FIX: exactly 2 people; every person has one head, two arms, two hands with five fingers each and two legs; no extra, missing, merged or floating hands, arms or legs; every held object is held by a hand that belongs to a body; faces appear only where allowed above; anyone marked 'from behind' shows no face, profile or cheek; every clothing colour, beard colour and feature matches the description; no text, letters, crosses, minarets, domes, crescents or glow.
 
