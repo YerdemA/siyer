@@ -185,7 +185,7 @@ final paketBoyutlariProvider = FutureProvider<Map<String, int>>((ref) async {
 
 /// Bir bölümün ses ve görsellerinin nerede olduğunu bilir: önce uygulamaya
 /// gömülü varlıklara, yoksa indirilmiş paket klasörüne bakar. Yollar
-/// `assets/icerik/`e göredir (`gorseller/x.webp`, `tr/ses/x.m4a`).
+/// `assets/icerik/`e göredir (`gorseller/x.webp`, `tr/ses/x.mp3`).
 class BolumDosyalari {
   const BolumDosyalari({required this.varliklar, this.paketYolu, this.paketDosyalari = const {}});
 
