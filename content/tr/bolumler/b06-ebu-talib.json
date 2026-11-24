@@ -80,7 +80,43 @@
             }
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'de bir sokak: Ebû Tâlib yavaş yürüyor, yanındaki Efendimiz'in nuruna şefkatle bakıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "yol",
+                "dosya": "b06-d-yol.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.483,
+                  "y": 0.99,
+                  "boy": 0.622,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b06-s01.mp3",
@@ -270,7 +306,56 @@
             }
           }
         ],
-        "kamera": "yavas-uzaklasma"
+        "kamera": "yavas-uzaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Alacakaranlık, Mekke yakınında taş bir yalak: koyunlar su içiyor, yalağa dayalı bir çoban değneği.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "cobanlar",
+                "dosya": "b06-d-cobanlar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.3
+          },
+          {
+            "parca": 1,
+            "tarif": "Yamaçta koyunlar; aralarında Efendimiz'in nuru (ana görselin yakın planı).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.6,
+                  "y": 0.8,
+                  "boy": 0.32,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ],
+            "kadraj": {
+              "x": 0.5,
+              "y": 0.55,
+              "yakinlik": 1.15
+            }
+          }
+        ]
       },
       "ses": {
         "anlatim": "b06-s05.mp3",
@@ -797,7 +882,65 @@
             }
           }
         ],
-        "kamera": "sabit"
+        "kamera": "sabit",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Gündüz, Busrâ'daki manastırın önü: Bahîrâ taş sekide öne eğilmiş soru soruyor; karşısında Efendimiz'in nuru, arkada Kureyşliler.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "bahira-soru",
+                "dosya": "b06-d-bahira-soru.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.372,
+                  "y": 0.915,
+                  "boy": 0.643,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 2,
+            "tarif": "Bahîrâ yakın plan: gözleri sessiz bir hayretle açık, eli göğsünde.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "bahira-yakin",
+                "dosya": "b06-d-bahira-yakin.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          }
+        ]
       },
       "ses": {
         "anlatim": "b06-s11.mp3",

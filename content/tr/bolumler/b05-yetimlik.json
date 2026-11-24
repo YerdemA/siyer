@@ -73,7 +73,44 @@
             "derinlik": 0.9
           }
         ],
-        "kamera": "yavas-yaklasma"
+        "kamera": "yavas-yaklasma",
+        "cekimler": [
+          {
+            "parca": 0,
+            "tarif": "Sabah, Mekke'de küçük bir avlu: Âmine duvar dibinde arkadan oturuyor; önünde Efendimiz'in nuru.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "ev-avlu",
+                "dosya": "b05-d-ev-avlu.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.523,
+                  "y": 0.99,
+                  "boy": 0.519,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ],
+            "an": 0.35
+          }
+        ]
       },
       "ses": {
         "anlatim": "b05-s01.mp3",
@@ -173,6 +210,27 @@
             },
             "gizle": [
               "kervan"
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gece, Yesrib yolunda konak: çökmüş develer, ateş başında Ümmü Eymen ve Âmine arkadan.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "gece-konak",
+                "dosya": "b05-d-gece-konak.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
             ]
           }
         ]

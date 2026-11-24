@@ -191,6 +191,27 @@
         "kamera": "yatay-kayma",
         "cekimler": [
           {
+            "parca": 1,
+            "tarif": "Gündüz, kuraklıkta bir bedevi yurdu: çatlamış toprak, kaburgaları sayılan zayıf keçiler, direkte boş bir su tulumu.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kitlik",
+                "dosya": "b04-d-kitlik.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
             "parca": 2,
             "tarif": "Orta plan, arkadan: merkepteki Halîme, yürüyen Hâris ve yaşlı dişi deve.",
             "kamera": "yavas-yaklasma",
@@ -2730,6 +2751,49 @@
         "kamera": "yavas-uzaklasma",
         "cekimler": [
           {
+            "parca": 0,
+            "tarif": "İkindi, Mekke vadisine inen yol: Halîme eşeğinde arkadan, Hâris yanında yürüyor; ilk evler görünüyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "mekkeye-donus",
+                "dosya": "b04-d-mekkeye-donus.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ],
+            "an": 0.35
+          },
+          {
+            "parca": 1,
+            "tarif": "Gündüz, Mekke'nin üst mahallesi: dar, taşlı bir yokuş; Halîme arkadan, telaşla çıkıyor.",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [
+              {
+                "id": "ust-mahalle",
+                "dosya": "b04-d-ust-mahalle.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
             "parca": 2,
             "tarif": "Orta plan: Kâbe'nin önünde ellerini açıp dua eden Abdülmuttalib.",
             "kamera": "yavas-yaklasma",
@@ -2756,6 +2820,52 @@
             "gizle": [
               "abdulmuttalib-dua"
             ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, Mekke'de bir sokak: Varaka ve bir Kureyşli yürüyor; aralarında Efendimiz'in nuru.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "varaka-bulus",
+                "dosya": "b04-d-varaka-bulus.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              },
+              {
+                "id": "nur",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.5,
+                  "y": 0.99,
+                  "boy": 0.519,
+                  "guc": 2.5,
+                  "kim": "efendimiz"
+                }
+              }
+            ],
+            "an": 0.5
+          },
+          {
+            "parca": 3,
+            "tarif": "Abdülmuttalib Kâbe'nin yanında (ana görsel).",
+            "kamera": "yavas-uzaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.42,
+              "y": 0.64,
+              "yakinlik": 1.45
+            }
           }
         ]
       },
