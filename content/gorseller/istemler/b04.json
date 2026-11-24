@@ -407,10 +407,10 @@
       "not": "Dinamizm turu d1 (B). s07 tek görsel 23 sn. Açılış: çocukların oynadığı yamaç; olay ardından çocukların gözlerindeki yansımayla anlatılır (b04-d-goz-1…5). Dayanak: b04-s07 parça 0; i-b04-011."
     },
     {
-      "id": "b04-d-cocuk-yuzler",
+      "id": "b04-d-cocuk-bakis",
       "tur": "d1",
-      "dosya": "b04-d-cocuk-yuzler.webp",
-      "katman": "cocuk-yuzler",
+      "dosya": "b04-d-cocuk-bakis.webp",
+      "katman": "cocuk-bakis",
       "isleme": "opak",
       "sahneler": [
         "b04-s07"
@@ -419,22 +419,22 @@
       "parca": [
         0
       ],
-      "oncelik": "B",
+      "oncelik": "A",
       "tip": "mekan",
-      "cekim": "yakin",
-      "konu": "Daytime, on the same hillside as the attached hillside image: close shot of the three boys who were playing there, side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame. The three boys must look clearly different from each other (age, skin tone, hair, head cloth, tunic colour) and match the three children in the hillside image.",
+      "cekim": "orta",
+      "konu": "Daytime, on the same hillside as the attached hillside image: medium shot of the three boys who were playing there, standing close together, seen from the side in three-quarter view, all three frozen and staring at exactly the same point outside the left edge of the image, eyes wide, mouths slightly open in astonishment; one has stopped mid-step, one holds a small stick he was playing with. The three boys must look clearly different from each other (age, skin tone, hair, head cloth, tunic colour) and match the three children in the hillside image.",
       "kisiler": [
         {
           "tarif": "boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic",
-          "poz": "at the left, head turned to the left."
+          "poz": "at the left, nearest the point they stare at."
         },
         {
           "tarif": "boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic",
-          "poz": "in the centre, head turned to the left."
+          "poz": "in the centre."
         },
         {
           "tarif": "boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic",
-          "poz": "at the right, smallest, head turned to the left."
+          "poz": "at the right, smallest."
         }
       ],
       "ekle": [
@@ -442,13 +442,13 @@
       ],
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, anything they are looking at, light beams, angels, three identical faces, matching head cloths",
-      "not": "Dinamizm turu d1 (B). Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor. 2026-11-24 yeniden: ilk üretimde üç çocuk birbirinin aynısıydı ve yamaçtaki çocuklara benzemiyordu. Dayanak: b04-s07 parça 0; i-b04-011."
+      "not": "Dinamizm turu d1 (A). Göz dizisi 1: üç çocuk aynı yere kilitlenmiş, şaşkın bakıyor (Erdem'in akışı, 2026-11-24). Bakılan şey kadraj dışında. Dayanak: b04-s07 parça 0; i-b04-011."
     },
     {
-      "id": "b04-d-goz-1",
+      "id": "b04-d-cocuk-onden",
       "tur": "d1",
-      "dosya": "b04-d-goz-1.webp",
-      "katman": "goz-1",
+      "dosya": "b04-d-cocuk-onden.webp",
+      "katman": "cocuk-onden",
       "isleme": "opak",
       "sahneler": [
         "b04-s07"
@@ -459,29 +459,68 @@
       ],
       "oncelik": "A",
       "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Daytime, on the same hillside: the same three boys seen from straight in front, close shot from the chest up, standing shoulder to shoulder in one row, all three looking straight into the camera with wide, astonished eyes and slightly open mouths, as if what they stare at is exactly where the viewer stands. Their heads are at the same height and large in the frame; the face of the boy at the left is large, sharp and fully lit, because the camera will move in to his eyes.",
+      "kisiler": [
+        {
+          "tarif": "boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic",
+          "poz": "at the left, looking straight into the camera."
+        },
+        {
+          "tarif": "boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic",
+          "poz": "in the centre, looking straight into the camera."
+        },
+        {
+          "tarif": "boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic",
+          "poz": "at the right, looking straight into the camera."
+        }
+      ],
+      "ekle": [
+        "sahne-b04-oyun.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, anything reflected in their eyes, light beams, angels, three identical faces, matching head cloths, heads turned away",
+      "not": "Dinamizm turu d1 (A). Göz dizisi 2: üç çocuk önden, izleyiciye bakar gibi; kamera bu görselde en soldaki çocuğa (A) yaklaşır ve iki gözlü yakın plana (b04-d-gozler-a) yumuşakça geçer. A'nın yüzü büyük ve net olmalı. Dayanak: b04-s07 parça 0; i-b04-011."
+    },
+    {
+      "id": "b04-d-gozler-a",
+      "tur": "d1",
+      "dosya": "b04-d-gozler-a.webp",
+      "katman": "gozler-a",
+      "isleme": "opak",
+      "sahneler": [
+        "b04-s07"
+      ],
+      "sahne": "b04-s07",
+      "parca": [
+        0,
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
       "cekim": "detay",
-      "konu": "Extreme close-up of one eye of boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic (the same boy A as in the attached hillside image and earlier in this chat). The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflection. In the reflection: the tall white light has just come down from the sky and now stands on the slope a little apart from the small golden light, which is among the lambs; a faint, short trail of white above the tall light shows it came down; the lambs lift their heads.",
+      "konu": "Extreme close-up of both eyes of boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic (the same boy A as in the earlier images of this chat). CAMERA: the camera is very close, straight in front of the face, at eye level; the boy looks straight into the camera. FRAMING: only the band of the face from the middle of the forehead to just below the eyes fills the whole image: both eyes are very large, side by side, the first eye centred in the LEFT half of the image and the second eye centred in the RIGHT half, the bridge of the nose in the middle; brows, lashes, eyelids and skin are simple layered paper shapes; skin, brows, hair and head cloth exactly as this boy in the earlier image of this chat. Each iris is very large (about two thirds of the image height) and holds a large, sharp, easy-to-read reflection, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The two eyes show TWO DIFFERENT moments: the reflection in the left eye is NOT repeated in the right eye. Every reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few lambs; NOT dusk, NOT night. Only two lights are in the reflections, drawn the same way in every eye: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflections. LEFT EYE: the tall white light has just come down from the sky and now stands on the slope a little apart from the small golden light, which is among the lambs; a faint, short trail of white above the tall light shows it came down; the lambs lift their heads. RIGHT EYE: the small golden light now lies low and flat on the grass; the tall white light stands right beside it and bends over it, its top curving down above it; the lambs have stepped back.",
       "ekle": [
         "sahne-b04-oyun.png"
       ],
       "isik": "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection.",
       "denetim": [
-        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
-        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-        "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
-        "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
+        "exactly two eyes of one boy, side by side, the left eye centred in the left half and the right eye in the right half; no third eye, no extra eyelids",
+        "the left and right eye show two different reflections, exactly as listed for each eye",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflections: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
+        "the two lights look the same in both eyes: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
+        "both reflections show bright daytime with a blue sky, the same hillside as the attached image",
         "no blood, anatomical heart, chest, knife or body parts",
         "no text, letters, crosses, minarets, domes or crescents"
       ],
-      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky",
-      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 1/5: Cebrâil'in gelişi. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu. Dayanak: b04-s07 parça 0; i-b04-011."
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky, the same reflection in both eyes",
+      "not": "Dinamizm turu d1 (A). Göz dizisi 3: A'nın iki gözü. Sol göz: Cebrâil'in gelişi. Sağ göz: yere yatırılması. Kamera b04-d-cocuk-onden'den buna fark edilmeden geçer, sonra soldan sağa kayar. Dayanak: b04-s07 parça 0, 1; i-b04-011."
     },
     {
-      "id": "b04-d-goz-2",
+      "id": "b04-d-gozler-b",
       "tur": "d1",
-      "dosya": "b04-d-goz-2.webp",
-      "katman": "goz-2",
+      "dosya": "b04-d-gozler-b.webp",
+      "katman": "gozler-b",
       "isleme": "opak",
       "sahneler": [
         "b04-s07"
@@ -493,61 +532,28 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "detay",
-      "konu": "Extreme close-up of one eye of boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic (the same boy B as in the attached hillside image and earlier in this chat). The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflection. In the reflection: the small golden light now lies low and flat on the grass; the tall white light bends over it, its top curving down above it; the lambs have stepped back.",
+      "konu": "Extreme close-up of both eyes of boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic (the same boy B as in the earlier images of this chat). CAMERA: the camera is very close, straight in front of the face, at eye level; the boy looks straight into the camera. FRAMING: only the band of the face from the middle of the forehead to just below the eyes fills the whole image: both eyes are very large, side by side, the first eye centred in the LEFT half of the image and the second eye centred in the RIGHT half, the bridge of the nose in the middle; brows, lashes, eyelids and skin are simple layered paper shapes; skin, brows, hair and head cloth exactly as this boy in the earlier image of this chat. Each iris is very large (about two thirds of the image height) and holds a large, sharp, easy-to-read reflection, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The two eyes show TWO DIFFERENT moments: the reflection in the left eye is NOT repeated in the right eye. Every reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few lambs; NOT dusk, NOT night. Only two lights are in the reflections, drawn the same way in every eye: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflections. These two eyes show the key moment of the sequence and must be the clearest. LEFT EYE: the small golden light lies flat on the grass; the tall white light bends low over it and, out of the middle of the small golden light, lifts a second, much smaller, very bright golden spark, holding it up just above, inside its own whiteness. RIGHT EYE: the bright golden spark is held up in the white light above the small golden light; from the spark one tiny dark grey speck is being drawn out; it drifts away to the side and thins into the air like a wisp of smoke; the bright spark itself stays clean and shining.",
       "ekle": [
         "sahne-b04-oyun.png"
       ],
       "isik": "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection.",
       "denetim": [
-        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
-        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-        "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
-        "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
+        "exactly two eyes of one boy, side by side, the left eye centred in the left half and the right eye in the right half; no third eye, no extra eyelids",
+        "the left and right eye show two different reflections, exactly as listed for each eye",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflections: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
+        "the two lights look the same in both eyes: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
+        "both reflections show bright daytime with a blue sky, the same hillside as the attached image",
         "no blood, anatomical heart, chest, knife or body parts",
         "no text, letters, crosses, minarets, domes or crescents"
       ],
-      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky",
-      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 2/5: yere yatırılması. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu. Dayanak: b04-s07 parça 1; i-b04-011."
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky, the same reflection in both eyes",
+      "not": "Dinamizm turu d1 (A). Göz dizisi 4: B'nin iki gözü. Sol göz: göğsünün yarılıp kalbinin çıkarılması (kalp: küçük ışığın içinden kaldırılan parlak kıvılcım). Sağ göz: pıhtının alınması (kıvılcımdan ayrılıp duman gibi dağılan koyu nokta). Erdem: dizinin en önemli kareleri. Dayanak: b04-s07 parça 1; i-b04-011."
     },
     {
-      "id": "b04-d-goz-3",
+      "id": "b04-d-gozler-c",
       "tur": "d1",
-      "dosya": "b04-d-goz-3.webp",
-      "katman": "goz-3",
-      "isleme": "opak",
-      "sahneler": [
-        "b04-s07"
-      ],
-      "sahne": "b04-s07",
-      "parca": [
-        1
-      ],
-      "oncelik": "A",
-      "tip": "mekan",
-      "cekim": "detay",
-      "konu": "Extreme close-up of one eye of boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic (the same boy C as in the attached hillside image and earlier in this chat). The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflection. This is the key moment of the sequence and must be the clearest. In the reflection: the small golden light lies flat on the grass; the tall white light bends low over it. Out of the middle of the small golden light, the tall white light lifts a second, much smaller, very bright golden spark and holds it up just above, inside its own whiteness. From that bright spark one tiny dark grey speck is being drawn out; it drifts away to the side and thins into the air like a wisp of smoke. The bright spark itself stays clean and shining. The three elements (small golden light below, bright spark lifted above it, tiny dark speck drifting away) must be clearly readable at a glance.",
-      "ekle": [
-        "sahne-b04-oyun.png"
-      ],
-      "isik": "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection.",
-      "denetim": [
-        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
-        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-        "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
-        "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
-        "no blood, anatomical heart, chest, knife or body parts",
-        "no text, letters, crosses, minarets, domes or crescents"
-      ],
-      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky",
-      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 3/5: göğsünün yarılıp kalbinin çıkarılması ve pıhtının alınması (Erdem: dizinin en önemli karesi). Yalnız ışık: kalp, ışığın içinden kaldırılan küçük parlak kıvılcım; pıhtı ondan ayrılan küçük koyu nokta. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu. Dayanak: b04-s07 parça 1; i-b04-011."
-    },
-    {
-      "id": "b04-d-goz-4",
-      "tur": "d1",
-      "dosya": "b04-d-goz-4.webp",
-      "katman": "goz-4",
+      "dosya": "b04-d-gozler-c.webp",
+      "katman": "gozler-c",
       "isleme": "opak",
       "sahneler": [
         "b04-s07"
@@ -559,55 +565,22 @@
       "oncelik": "A",
       "tip": "mekan",
       "cekim": "detay",
-      "konu": "Extreme close-up of one eye of boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic (the same boy B as in the attached hillside image and earlier in this chat). The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflection. In the reflection: a simple, plain golden basin filled with clear water stands on the grass beside the small golden light, which still lies flat; the tall white light bends over the basin and holds the bright golden spark just above the water; the water sparkles and a few clear drops fall from the spark back into the basin.",
+      "konu": "Extreme close-up of both eyes of boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic (the same boy C as in the earlier images of this chat). CAMERA: the camera is very close, straight in front of the face, at eye level; the boy looks straight into the camera. FRAMING: only the band of the face from the middle of the forehead to just below the eyes fills the whole image: both eyes are very large, side by side, the first eye centred in the LEFT half of the image and the second eye centred in the RIGHT half, the bridge of the nose in the middle; brows, lashes, eyelids and skin are simple layered paper shapes; skin, brows, hair and head cloth exactly as this boy in the earlier image of this chat. Each iris is very large (about two thirds of the image height) and holds a large, sharp, easy-to-read reflection, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The two eyes show TWO DIFFERENT moments: the reflection in the left eye is NOT repeated in the right eye. Every reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few lambs; NOT dusk, NOT night. Only two lights are in the reflections, drawn the same way in every eye: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflections. LEFT EYE: a simple, plain golden basin filled with clear water stands on the grass beside the small golden light, which still lies flat; the tall white light bends over the basin and holds the bright golden spark just above the water; the water sparkles and a few clear drops fall from the spark back into the basin. RIGHT EYE: the bright spark has gone back into the small golden light, which is whole again and now stands upright on the slope; the golden basin is gone; the tall white light rises away into the blue sky and fades; the lambs graze again.",
       "ekle": [
         "sahne-b04-oyun.png"
       ],
       "isik": "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection.",
       "denetim": [
-        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
-        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-        "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
-        "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
+        "exactly two eyes of one boy, side by side, the left eye centred in the left half and the right eye in the right half; no third eye, no extra eyelids",
+        "the left and right eye show two different reflections, exactly as listed for each eye",
+        "no human, child or angel shape, wings or silhouette anywhere in the reflections: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
+        "the two lights look the same in both eyes: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
+        "both reflections show bright daytime with a blue sky, the same hillside as the attached image",
         "no blood, anatomical heart, chest, knife or body parts",
         "no text, letters, crosses, minarets, domes or crescents"
       ],
-      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky",
-      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 4/5: kalbin altın leğende Zemzem suyuyla yıkanması. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu. Dayanak: b04-s07 parça 2; i-b04-011."
-    },
-    {
-      "id": "b04-d-goz-5",
-      "tur": "d1",
-      "dosya": "b04-d-goz-5.webp",
-      "katman": "goz-5",
-      "isleme": "opak",
-      "sahneler": [
-        "b04-s07"
-      ],
-      "sahne": "b04-s07",
-      "parca": [
-        2
-      ],
-      "oncelik": "A",
-      "tip": "mekan",
-      "cekim": "detay",
-      "konu": "Extreme close-up of one eye of boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic (the same boy A as in the attached hillside image and earlier in this chat). The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. There is no human, child or angel shape anywhere in the reflection. In the reflection: the bright spark has gone back into the small golden light, which is whole again and now stands upright on the slope; the golden basin is gone; the tall white light rises away into the blue sky and fades; the lambs graze again.",
-      "ekle": [
-        "sahne-b04-oyun.png"
-      ],
-      "isik": "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection.",
-      "denetim": [
-        "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
-        "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-        "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
-        "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
-        "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
-        "no blood, anatomical heart, chest, knife or body parts",
-        "no text, letters, crosses, minarets, domes or crescents"
-      ],
-      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky",
-      "not": "Dinamizm turu d1 (A). Göz yansıması dizisi 5/5: kalbin yerine konup göğsün kapatılması; ışığın çekilişi. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu. Dayanak: b04-s07 parça 2; i-b04-011."
+      "yasak": "any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky, the same reflection in both eyes",
+      "not": "Dinamizm turu d1 (A). Göz dizisi 5: C'nin iki gözü. Sol göz: kalbin altın leğende Zemzem suyuyla yıkanması. Sağ göz: yerine konup göğsün kapatılması, ışığın çekilişi. Dayanak: b04-s07 parça 2; i-b04-011."
     },
     {
       "id": "b04-d-mekkeye-donus",
