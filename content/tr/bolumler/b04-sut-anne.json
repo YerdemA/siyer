@@ -789,6 +789,45 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
               }
             ],
             "yol": {
@@ -824,6 +863,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],
@@ -861,6 +1018,124 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
+                }
               }
             ],
             "yol": {
@@ -895,6 +1170,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],
@@ -932,6 +1325,124 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
+                }
               }
             ],
             "yol": {
@@ -966,6 +1477,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],
@@ -1003,6 +1632,124 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
+                }
               }
             ],
             "yol": {
@@ -1037,6 +1784,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],
@@ -1074,6 +1939,124 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
+                }
               }
             ],
             "yol": {
@@ -1108,6 +2091,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],
@@ -1145,6 +2246,124 @@
                   },
                   "ton": false
                 }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
+                }
               }
             ],
             "yol": {
@@ -1179,6 +2398,124 @@
                     "olcek": 3.1354
                   },
                   "ton": false
+                }
+              },
+              {
+                "id": "nur-a0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.2979,
+                  "y": 0.6713,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.2946,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  }
+                }
+              },
+              {
+                "id": "nur-a1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 0.7275,
+                  "y": 0.6968,
+                  "boy": 0.1157,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 0.7054,
+                    "y": 0.6053,
+                    "r": 0.1146
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.4098,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.3623,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-b1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 1.8023,
+                  "y": 0.7102,
+                  "boy": 0.1205,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 1.7731,
+                    "y": 0.6053,
+                    "r": 0.1193
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c0",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.4314,
+                  "y": 0.7317,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.43,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  },
+                  "aci": -90
+                }
+              },
+              {
+                "id": "nur-c1",
+                "dosya": "",
+                "yerTutucu": "nur",
+                "derinlik": 0.6,
+                "ayar": {
+                  "x": 2.8178,
+                  "y": 0.7052,
+                  "boy": 0.1203,
+                  "guc": 3.0,
+                  "kim": "efendimiz",
+                  "hemen": true,
+                  "daire": {
+                    "x": 2.8408,
+                    "y": 0.6053,
+                    "r": 0.1191
+                  }
                 }
               }
             ],

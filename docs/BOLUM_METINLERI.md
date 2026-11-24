@@ -1,6 +1,6 @@
 # Bölüm Metinleri (kontrol nüshası)
 
-Üretildi: 2026-11-24 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
+Üretildi: 2026-11-25 · `python tools/bolum_metni.py`. Bu dosya betikle üretilir; **düzeltmeler `content/tr/` altındaki JSON'a yapılır**, sonra dosya yeniden üretilir. Anlatımdaki `[i-…]` işaretleri, cümlenin bağlı olduğu iddiaları gösterir; iddialar ve kaynakları her bölümün sonundadır.
 
 10 bölüm, 135 sahne, 200 iddia, 500 atıf.
 
