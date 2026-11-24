@@ -35,8 +35,10 @@ PUTLAR = ("idols of varied shapes and sizes, each one different: crude statues r
 GOZ_DENETIM = [
     "exactly one eye, with a natural eyelid, lashes and brow, no second eye, no extra eyelids",
     "the reflection sits inside the iris and shows only the hillside and what the prompt lists",
-    "no human, child or angel shape, wings or silhouette anywhere in the reflection: only a tiny warm golden-white light and a tall pure white light",
-    "no blood, heart, chest, knife or body parts",
+    "no human, child or angel shape, wings or silhouette anywhere in the reflection: only the small warm golden-white light, the tall pure white light and the objects the prompt lists (bright spark, dark speck, golden basin)",
+    "the two lights look the same as described in every image: the visitor is an upright column of white light standing on the grass, never a beam, ray, arc or comet",
+    "the reflection shows bright daytime with a blue sky, the same hillside as the attached image",
+    "no blood, anatomical heart, chest, knife or body parts",
     "no text, letters, crosses, minarets, domes or crescents",
 ]
 
@@ -89,6 +91,25 @@ def k(karakter=None, tarif=None, sayi=1, poz=None, hayvan=False, yaklasik=False)
     if poz:
         d["poz"] = poz
     return d
+
+
+# Göz dizisinin çocukları (2026-11-24): b04-d-oyun'daki üç çocukla aynı; yüz görselinde ve
+# göz yakın planlarında tek tek tanınsınlar diye ayırt edici özellikler. Müslim'deki rivayette
+# tanıklar "gılmân" (oğlan çocukları); üçü de oğlan.
+COCUK_A = "boy A, about 7, light-brown skin, thick black brows, short curly black hair, no head cloth, a sand-coloured tunic"
+COCUK_B = "boy B, about 6, medium-brown skin, round face, an off-white head cloth wrapped round his head with a dark band, a brown tunic"
+COCUK_C = "boy C, about 5, darker brown skin, fine brows, curly black hair, no head cloth, a grey-blue tunic"
+OYUN = "sahne-b04-oyun.png"
+# Yansımanın ortak tarifi: büyük, okunur, gündüz; iki ışık her karede aynı biçimde.
+GOZ_ORTAK = ("The eye fills the image, a little right of centre (the camera will drift from right to left); lashes, part of the eyebrow and the cheek are simple layered paper shapes. "
+             "The iris is very large: it fills about two thirds of the image height, and the reflection inside it is large, sharp and easy to read, like a small round painting set in the dark, glossy iris, with one small white highlight at its upper left. "
+             "The reflection shows the same sunlit hillside as the attached hillside image, seen from where the children stand: clear blue daytime sky, the far mountains, the tree at the left, brown grass and a few grazing lambs; NOT dusk, NOT night. "
+             "Only two lights are in it, drawn the same way in every image: THE CHILD is a small, soft, warm golden-white light about the size of a lamb; "
+             "THE VISITOR is one tall, upright column of soft pure-white light with blurred edges, about three times taller than the small light, standing on the grass; it is never a beam or ray from the sky, never an arc, never a comet. "
+             "There is no human, child or angel shape anywhere in the reflection. ")
+GOZ_ISIK = "LIGHT: bright, neutral daylight on the skin and in the reflection; the only glowing points are the lights inside the reflection."
+GOZ_YASAK = ("any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, anatomical heart, heart symbol, "
+             "blood, red colour in the reflection, knife, tears, light beam or ray from the sky, comet, shooting star, dusk or night sky")
 
 
 KUREYS = "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool"
@@ -159,10 +180,13 @@ KAYITLAR = {
                    k(tarif=KUREYS, sayi=8, yaklasik=True, poz="in two groups behind each elder, left and right.")],
           yasak="weapons, idols in the foreground"),
         m("b01-d-putlar", "b01-s10", [0], "A",
-          "s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor.",
-          "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: " + PUTLAR + "; no gold. " + CERCEVE_KABE,
+          "s10'un ikinci çekimi (8 sn) yalnız ortak Kâbe; 360 put cümlesi görüntüsüz kalıyor. 2026-11-24 yeniden: ilk üretimde Hübel (içerideki büyük kızıl put) dışarıda duruyordu ve bir put Kâbe'den yüksekti.",
+          "Dawn, medium-wide view of the open court around the low, roofless Ka'ba: many idols stand around it, some on low bases: " + PUTLAR + "; no gold. "
+          "SIZE: every idol is clearly smaller than the Ka'ba: most reach a man's waist or shoulder, none is taller than a standing man, and the Ka'ba wall rises above all of them. "
+          "These are the idols OUTSIDE the Ka'ba: none of them is the big dark-red standing idol with crossed arms (Hubal), which stands inside the Ka'ba and must not appear here; "
+          "do not repeat the idols seen inside it (no zigzag-painted pillar, no crossed-arm red statue). " + CERCEVE_KABE,
           isik=SAFAK, ekle=[KABE],
-          yasak="any person, blood, sacrifice, writing"),
+          yasak="any person, blood, sacrifice, writing, Hubal, a large red idol, any idol taller than a man or taller than the Ka'ba"),
         m("b01-d-pazar", "b01-s11", [1], "A",
           "s11'in ilk çekimi 14 sn kervan uzak planı; güvenle gelen tüccar ve pazar görülmüyor.",
           "Daytime, a busy open market in Mecca among flat-roofed mudbrick houses: traders from outside lay out sacks of grain, baskets of dates, rolls of cloth and leather; camels kneel unloaded; buyers and sellers talk calmly; nobody carries a drawn weapon.",
@@ -367,12 +391,14 @@ KAYITLAR = {
           kisiler=[k(tarif="tiny figures and herds", sayi=20, yaklasik=True, poz="scattered among the camps, very small.")],
           yasak="writing, banners, maps"),
         m("b03-d-kura-oklari", "b03-s03", [0], "A",
-          "s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır.",
-          "Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall.",
+          "s03'ün iki çekimi aynı görsel (24 sn). Kura s05'te de kullanılır. 2026-11-24 yeniden: ilk üretimde alttaki el bedene bağlı değildi.",
+          "Close shot inside the roofless Ka'ba (as in the attached interior reference): the hands of an elderly custodian draw plain, featherless divining arrows from a leather quiver; behind, out of focus, the large crude idol (Hubal) against the shadowed stone wall. "
+          "HANDS: exactly two hands, both belonging to the same man whose two forearms in dark sleeves enter the image from the bottom-left corner: his left hand holds the quiver from below, his right hand pulls one arrow up out of it. "
+          "Each hand is joined to its own sleeve; the wrists and sleeves are clearly visible; no hand comes from the right or from below without an arm.",
           isik="LIGHT: daylight falling in from the open sky above; the hands in light, the wall behind in soft shadow; no glow.",
           cekim="yakin", ekle=[KABE_IC], ek_not=KABE_IC_NOT,
-          kisiler=[k(tarif="the custodian of the idol, only his hands and forearms in a dark cloak are visible", poz="hands in the centre holding the quiver.")],
-          yasak="human faces, blood, knives, writing on arrows"),
+          kisiler=[k(tarif="the custodian of the idol, an older man; only his two forearms in dark-brown sleeves and his two weathered hands are visible", poz="arms entering from the bottom-left, hands in the centre holding the quiver and one arrow.")],
+          yasak="human faces, blood, knives, writing on arrows, a third hand, a hand without an arm, hands from the right edge"),
         m("b03-d-kabe-ic-kura", "b03-s03", [0], "A",
           "Kura 'Kâbe'nin içindeki Hübel putunun yanında' çekiliyor; bugün dışarıdan gösteriliyor.",
           "Daytime. " + IC_ALCAK + " Before the large crude idol (Hubal) at the far wall, the custodian holds up a bundle of divining arrows; "
@@ -407,12 +433,14 @@ KAYITLAR = {
           kisiler=[k(karakter="amine", poz="in the doorway, strictly from behind.")],
           yasak="Amina's face or profile, any other person"),
         m("b03-d-kabe-ic-dua", "b03-s12", [0], "A",
-          "s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu.",
-          "Daytime. " + IC_ALCAK + " Abdul-Muttalib stands alone in the middle of the enclosure, seen strictly from behind, head raised towards the open sky, as if praying and giving thanks; his arms are in front of him and not visible. The idols stand along the walls in deep shadow, ignored.",
-          isik="LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib; the walls and idols in shadow; no glow, no rays.",
+          "s12'nin ilk çekimi yalnız ortak Kâbe; 'onu alıp Kâbe'ye girdi, Allah'a dua edip şükretti'. Mevcut b03-abdulmuttalib-kabe (kapıdan girerken) kısa açılış, sonra bu. 2026-11-24 yeniden: ilk üretimde Abdülmuttalib doğrudan Hübel'e dönük duruyordu; puta dua ediyor gibi okunuyordu.",
+          "Daytime. " + IC_ALCAK + " CAMERA POSITION: the camera stands in front of the far wall where the idols are, so the idols are behind the camera and NOT in the picture; we look across the enclosure towards the opposite wall with the plain wooden door. "
+          "Abdul-Muttalib stands in the middle of the enclosure with his back to the camera and to the idols, facing away from them; seen strictly from behind; his head is clearly tilted back, looking up at the open sky above the walls, as if praying to God and giving thanks; his arms are in front of him and not visible. "
+          "Only bare stone walls, the wooden door and the open sky are seen; the stone-lined pit may show at the edge of the floor.",
+          isik="LIGHT: soft daylight falling straight down from the open sky onto Abdul-Muttalib's head and shoulders; the lower walls in soft shadow; no glow, no rays.",
           ekle=[KABE_IC], ek_not=KABE_IC_NOT,
-          kisiler=[k(karakter="abdulmuttalib", poz="in the centre, strictly from behind, head raised.")],
-          yasak="any baby, bundle or child, any glow, any other person, roof, lamps, gold"),
+          kisiler=[k(karakter="abdulmuttalib", poz="in the centre, strictly from behind, back turned to the idols, head tilted up to the sky.")],
+          yasak="any idol or statue, any baby, bundle or child, any glow, any other person, roof, lamps, gold"),
         m("b03-d-sut-anne-arayis", "b03-s12", [1], "B",
           "s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu.",
           "Daytime, at the edge of Mecca: Abdul-Muttalib stands at the mouth of the valley looking out towards the desert road where a few small travellers come and go.",
@@ -436,40 +464,43 @@ KAYITLAR = {
                    k(tarif="lambs", sayi=6, hayvan=True, yaklasik=True, poz="grazing around.")],
           yasak="angels, light beams, any adult"),
         m("b04-d-cocuk-yuzler", "b04-s07", [0], "B",
-          "Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor.",
-          "Daytime, on the hillside: close shot of three small Bedouin children side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame.",
-          cekim="yakin",
-          kisiler=[k(tarif="Bedouin children of about 4 to 7, simple undyed tunics, small dark head cloths, faces simple and dignified", sayi=3, poz="side by side, heads turned to the left.")],
-          yasak="anything they are looking at, light beams, angels"),
+          "Yamaçtan göz yakın planlarına köprü: çocuklar bir şey görüp dönüyor. 2026-11-24 yeniden: ilk üretimde üç çocuk birbirinin aynısıydı ve yamaçtaki çocuklara benzemiyordu.",
+          "Daytime, on the same hillside as the attached hillside image: close shot of the three boys who were playing there, side by side, their heads turned towards the left edge of the image, eyes wide, mouths slightly open in wonder; what they see is outside the frame. "
+          "The three boys must look clearly different from each other (age, skin tone, hair, head cloth, tunic colour) and match the three children in the hillside image.",
+          cekim="yakin", ekle=[OYUN],
+          kisiler=[k(tarif=COCUK_A, poz="at the left, head turned to the left."),
+                   k(tarif=COCUK_B, poz="in the centre, head turned to the left."),
+                   k(tarif=COCUK_C, poz="at the right, smallest, head turned to the left.")],
+          yasak="anything they are looking at, light beams, angels, three identical faces, matching head cloths"),
         m("b04-d-goz-1", "b04-s07", [0], "A",
-          "Göz yansıması dizisi 1/5: Cebrâil'in gelişi.",
-          "Extreme close-up of one eye of a small Bedouin boy with light-brown skin and thick black brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: a few lambs on the slope and the tiny warm golden-white light among them; from the sky a tall white light descends towards it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
-          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
-          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          "Göz yansıması dizisi 1/5: Cebrâil'in gelişi. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu.",
+          "Extreme close-up of one eye of " + COCUK_A + " (the same boy A as in the attached hillside image and earlier in this chat). " + GOZ_ORTAK + 'In the reflection: the tall white light has just come down from the sky and now stands on the slope a little apart from the small golden light, which is among the lambs; a faint, short trail of white above the tall light shows it came down; the lambs lift their heads.',
+          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          yasak=GOZ_YASAK,
           nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-goz-2", "b04-s07", [1], "A",
-          "Göz yansıması dizisi 2/5: yere yatırılması.",
-          "Extreme close-up of one eye of a small Bedouin girl with darker skin and fine brows: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a dark head covering drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light lies low on the ground; the tall white light bends over it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
-          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
-          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          "Göz yansıması dizisi 2/5: yere yatırılması. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu.",
+          "Extreme close-up of one eye of " + COCUK_B + " (the same boy B as in the attached hillside image and earlier in this chat). " + GOZ_ORTAK + 'In the reflection: the small golden light now lies low and flat on the grass; the tall white light bends over it, its top curving down above it; the lambs have stepped back.',
+          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          yasak=GOZ_YASAK,
           nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-goz-3", "b04-s07", [1], "A",
-          "Göz yansıması dizisi 3/5: kalbinden pıhtının alınması (yalnız ışık ve koyu bir nokta).",
-          "Extreme close-up of one eye of an older Bedouin boy with sun-browned skin and a scar-free, smooth brow: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: out of the tiny warm golden-white light, the tall white light lifts away one small dark speck, which dissolves into the air like smoke. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
-          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
-          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          "Göz yansıması dizisi 3/5: göğsünün yarılıp kalbinin çıkarılması ve pıhtının alınması (Erdem: dizinin en önemli karesi). Yalnız ışık: kalp, ışığın içinden kaldırılan küçük parlak kıvılcım; pıhtı ondan ayrılan küçük koyu nokta. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu.",
+          "Extreme close-up of one eye of " + COCUK_C + " (the same boy C as in the attached hillside image and earlier in this chat). " + GOZ_ORTAK + 'This is the key moment of the sequence and must be the clearest. In the reflection: the small golden light lies flat on the grass; the tall white light bends low over it. Out of the middle of the small golden light, the tall white light lifts a second, much smaller, very bright golden spark and holds it up just above, inside its own whiteness. From that bright spark one tiny dark grey speck is being drawn out; it drifts away to the side and thins into the air like a wisp of smoke. The bright spark itself stays clean and shining. The three elements (small golden light below, bright spark lifted above it, tiny dark speck drifting away) must be clearly readable at a glance.',
+          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          yasak=GOZ_YASAK,
           nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-goz-4", "b04-s07", [2], "A",
-          "Göz yansıması dizisi 4/5: altın leğende Zemzem'le yıkanma.",
-          "Extreme close-up of one eye of a small Bedouin boy with olive skin and curly black hair at the temple: the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: beside the tiny warm golden-white light stands a simple golden basin filled with clear water, the tall white light above it. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
-          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
-          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          "Göz yansıması dizisi 4/5: kalbin altın leğende Zemzem suyuyla yıkanması. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu.",
+          "Extreme close-up of one eye of " + COCUK_B + " (the same boy B as in the attached hillside image and earlier in this chat). " + GOZ_ORTAK + 'In the reflection: a simple, plain golden basin filled with clear water stands on the grass beside the small golden light, which still lies flat; the tall white light bends over the basin and holds the bright golden spark just above the water; the water sparkles and a few clear drops fall from the spark back into the basin.',
+          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          yasak=GOZ_YASAK,
           nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-goz-5", "b04-s07", [2], "A",
-          "Göz yansıması dizisi 5/5: yerine konup kapatılması; ışığın çekilişi.",
-          "Extreme close-up of one eye of the first boy again (light-brown skin, thick black brows): the eye fills most of the image, a little right of centre (the camera will drift from right to left), with the lashes, part of the eyebrow, the cheek and the edge of a small dark head cloth drawn as simple layered paper shapes. In the dark, glossy iris a small, curved reflection of the hillside is clearly visible: the tiny warm golden-white light stands upright alone on the slope; the tall white light rises and fades into the sky. In the reflection there is no human or angel shape at all: the child is only a tiny soft warm golden-white light, the visitor only a tall, soft, pure white light with blurred edges.",
-          isik="LIGHT: soft daylight on the skin; the only bright points are the two lights inside the reflection.", cekim="detay",
-          yasak="any human, child or angel shape in the reflection, wings, silhouettes, faces in the reflection, hands, body, chest, heart, blood, knife, tears",
+          "Göz yansıması dizisi 5/5: kalbin yerine konup göğsün kapatılması; ışığın çekilişi. 2026-11-24 yeniden: ilk üretimde yansıma küçük ve okunaksızdı, gök akşamdı, iki ışık her karede başka biçimdeydi, kalp anı seçilmiyordu.",
+          "Extreme close-up of one eye of " + COCUK_A + " (the same boy A as in the attached hillside image and earlier in this chat). " + GOZ_ORTAK + 'In the reflection: the bright spark has gone back into the small golden light, which is whole again and now stands upright on the slope; the golden basin is gone; the tall white light rises away into the blue sky and fades; the lambs graze again.',
+          isik=GOZ_ISIK, cekim="detay", ekle=[OYUN],
+          yasak=GOZ_YASAK,
           nur_yasak=False, denetim=GOZ_DENETIM),
         m("b04-d-mekkeye-donus", "b04-s09", [0], "A",
           "s09'un iki çekimi aynı görsel (32 sn).",
@@ -541,11 +572,11 @@ KAYITLAR = {
     # ------------------------------------------------------------------ b07
     "b07": [
         m("b07-d-ukaz-yakin", "b07-s01", [1], "B",
-          "s01 tek uzak görsel 19 sn.",
-          "Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, jars of perfume and oil, dates; traders' hands weigh goods on a small balance.",
+          "s01 tek uzak görsel 19 sn. 2026-11-24 yeniden (isteğe bağlı): ilk üretimde mantarlı, şeffaf cam şişeler günümüzden kalma gibi duruyordu.",
+          "Daytime, close view inside the fair of Ukaz: goods laid out on mats: rolls of cloth, leather goods, small clay jars and leather flasks of perfume and oil sealed with cloth and cord, dates; traders' hands weigh goods on a small balance.",
           cekim="yakin",
           kisiler=[k(tarif="traders, only their hands and forearms in plain sleeves visible", sayi=2, poz="weighing at the centre.")],
-          yasak="faces, writing, coins with writing"),
+          yasak="faces, writing, coins with writing, glass bottles, clear glass, corks, stoppers"),
         m("b07-d-silah-birakma", "b07-s02", [1], "A",
           "s02 tek görsel 15 sn; haram ayda savaşın kesilmesi.",
           "Daytime, at the fair of Ukaz: men of different tribes lay their swords in their scabbards and their spears on the ground beside a tent; two of them greet each other with clasped hands.",

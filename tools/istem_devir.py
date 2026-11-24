@@ -8,6 +8,8 @@ Kullanım (depo kökünden):
 ayrı dosyaya yazılır (<ad>-d1-chatgpt.md).
 --chatgpt: Higgsfield yerine tek bir ChatGPT sohbetine sırayla yapıştırılacak
 mesajlar (<ad>-chatgpt.md).
+--sadece id1,id2: yalnız bu kimlikler; --chatgpt ile <ad>-<tur>-yeniden-chatgpt.md
+dosyasına yazılır (reddedilen görsellerin yeniden üretimi; asıl mesaj dosyası korunur).
 --karakterler [kimlik ...]: karakterler.json'dan referans sayfası mesajları
 (karakterler-chatgpt.md).
 
@@ -339,6 +341,7 @@ def main(argv: list[str]) -> int:
         return 2
     varyant = 2
     atla: set[str] = set()
+    sadece: set[str] = set()
     for i, a in enumerate(argv):
         if a == "--varyant":
             varyant = int(argv[i + 1])
@@ -346,6 +349,8 @@ def main(argv: list[str]) -> int:
             atla = set(argv[i + 1].split(","))
         if a == "--tur":
             turlar = set(argv[i + 1].split(","))
+        if a == "--sadece":
+            sadece = set(argv[i + 1].split(","))
     yollar = [y for y in yollar if y.endswith(".json")]
 
     kaynak = Path(yollar[0])
@@ -355,12 +360,16 @@ def main(argv: list[str]) -> int:
     istemler = [k for k in veri["istemler"] if k["id"] not in atla]
     if "--tur" in argv:
         istemler = [k for k in istemler if str(k.get("tur")) in turlar]
+    if sadece:
+        istemler = [k for k in istemler if k["id"] in sadece]
 
     if "--chatgpt" in argv:
         # Sayısal olmayan tur (ör. d1) ayrı dosyaya yazılır; eski turların mesaj dosyası korunur.
         ek = ""
         if "--tur" in argv and not all(t.isdigit() for t in turlar):
             ek = "-" + "-".join(sorted(turlar))
+        if sadece:
+            ek += "-yeniden"
         cikti = chatgpt(veri, istemler, kaynak, ek)
         print(f"{cikti} ({len(istemler)} görsel + 1 hazırlık mesajı)")
         return 0
