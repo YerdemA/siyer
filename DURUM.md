@@ -6,7 +6,7 @@ Son güncelleme: 2026-11-25.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Oturum sonu (2026-11-25, ikinci oturum): v9 test APK'sı, Erdem telefonda deneyecek.**
+**Oturum sonu (2026-11-25, ikinci oturum): v9 test APK'sı; Erdem denedi: kilit kartı tamam (düğmeler var), b09-s09 kabul edilebilir.**
 - `İndirilenler\siyer\siyer-kilit-karti-test-v9.apk` (145 MB, v8 ile aynı yoldan; bundletool Android Studio'nun Java'sıyla çalışır: `"C:\Program Files\Android\Android Studio\jbr\bin\java.exe" -jar ~/siyer-araclar/bundletool.jar`, sistemdeki Java 8 yetmez).
 - **Kilit kartında düğme yoktu (Erdem, v8):** başlık, sahne ve süre çubuğu vardı; durdur/oynat, önceki/sonraki yoktu. Neden: `audio_service` simgeleri adla aranıyor (`getIdentifier`), yayın derlemesindeki kaynak küçültme onları siliyordu (v8'in `resources.arsc`'ında `audio_service_*` yok). `app/android/app/src/main/res/raw/keep.xml` eklendi; v9'da simgeler var. **Telefonda denenecek.**
 - **Erdem'in üç sahne notu düzeltildi:** b02-s03 Kinâneli yolcunun başı/ayağı kesikti: ham görsel tamdı, katman `--sigdir` yerine kırpılarak işlenmişti → yeniden işlendi (`x .35, y .5, olcek .5`). Diğer `sigdir` katmanları tarandı, başka kesik yok. b02-s14 eşyalar ufuk çizgisindeydi → `bos-col` `ayar.gorsel {.5, .74, .9}`, kumda. b09-s09 yarım duvar ön plandaydı, kap duvarın önünde asılıydı → duvar halkanın arkasında (`.5, .56, .32`), kap halkanın ortasında yerde (`.5, .745, .1`); halkanın kendisi yukarıdan bakış açısıyla çizilmiş, hâlâ tuhaf gelirse görselin yeniden üretimi gerekir.

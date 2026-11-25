@@ -74,7 +74,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Saat tonu (deneme; akşam ve şafak)
 - [x] Anlatım sesiyle gerçek cihazda deneme (10 bölüm seslendirildi, 2026-11-21)
 - [ ] Müzik ve ortam sesi çalma
-- [x] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25; yapıldı; v8 telefonda: kart göründü ama düğmeler yoktu, simgeler küçültmede siliniyordu, v9'da düzeltildi, denenecek): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
+- [x] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25; yapıldı; v8 telefonda: kart göründü ama düğmeler yoktu, simgeler küçültmede siliniyordu, v9'da düzeltildi, Erdem telefonda onayladı): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
   - bölüm adı ve sahne (ör. "Süt Anne · 7/10"), sahnenin görseli kapak resmi olarak;
   - durdur/devam, önceki sahne, sonraki sahne;
   - ilerleme çubuğu (bölüm içinde, dokunarak/sürükleyerek atlanabilir);
