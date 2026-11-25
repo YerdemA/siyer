@@ -3023,7 +3023,7 @@ Aralarına bir sofra getirildi. Zeyd şöyle dedi: «Putlarınızın taşları �
 
 Zeyd, peygamberliğe yetişmeden vefat etti. `[i-b10-020]`
 
-> *Görsel tarifi:* Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gündüz, kuru bir vadi tabanı; yere serilmiş deri bir sofra, üzerinde kapalı ya da içi görünmeyen bir kap. Sofranın öbür yanında oturan Zeyd konuşuyor; yemeği iten ya da geri çeviren bir jest yok (rivayet farkı). Yaşı kaynakta yok. Kan yok. Nur tonu yok.
+> *Görsel tarifi:* Gündüz, onun gözünden: Beldah vadisinin aşağısında akasyalar arasında kıvrılan yol; uzakta karşıdan Zeyd b. Amr geliyor.
 
 ### Sahne 8 (`b10-s08`)
 

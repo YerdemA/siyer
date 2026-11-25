@@ -711,6 +711,40 @@
               "y": 0.6,
               "yakinlik": 1.15
             }
+          },
+          {
+            "parca": 2,
+            "an": 0.35,
+            "tarif": "Yaşlı Zeyd'in yakın planı, Kâbe'ye dayanmış konuşuyor (ana görsel).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [],
+            "kadraj": {
+              "x": 0.62,
+              "y": 0.4,
+              "yakinlik": 1.5
+            }
+          },
+          {
+            "parca": 2,
+            "an": 0.65,
+            "tarif": "Gündüz, Kâbe avlusu: Kureyşliler dönüp seslenene bakıyor; kimi kaşlarını çatmış, biri elini sallayıp yürüyor, yaşlı biri düşünceli.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kureys-dinler",
+                "dosya": "b10-d-kureys-dinler.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },
@@ -748,56 +782,152 @@
         }
       ],
       "gorsel": {
-        "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gündüz, kuru bir vadi tabanı; yere serilmiş deri bir sofra, üzerinde kapalı ya da içi görünmeyen bir kap. Sofranın öbür yanında oturan Zeyd konuşuyor; yemeği iten ya da geri çeviren bir jest yok (rivayet farkı). Yaşı kaynakta yok. Kan yok. Nur tonu yok.",
+        "tarif": "Gündüz, onun gözünden: Beldah vadisinin aşağısında akasyalar arasında kıvrılan yol; uzakta karşıdan Zeyd b. Amr geliyor.",
         "saat": "gunduz",
         "katmanlar": [
           {
-            "id": "gok",
-            "dosya": "mekke-gok-gunduz.webp",
-            "yerTutucu": "gok",
-            "derinlik": 0.0
-          },
-          {
-            "id": "daglar",
-            "dosya": "mekke-daglar.webp",
-            "yerTutucu": "daglar",
-            "derinlik": 0.15
-          },
-          {
-            "id": "zemin",
-            "dosya": "mekke-zemin.webp",
-            "yerTutucu": "zemin",
-            "derinlik": 0.35
-          },
-          {
-            "id": "zeyd-sofra",
-            "dosya": "b10-zeyd-sofra.webp",
-            "yerTutucu": "siluet-tek",
+            "id": "beldah",
+            "dosya": "b10-d-beldah.webp",
+            "yerTutucu": "kapi-cercevesi",
             "derinlik": 0.6,
             "ayar": {
               "gorsel": {
-                "x": 0.503,
-                "y": 0.63,
-                "olcek": 0.74
-              }
-            }
-          },
-          {
-            "id": "sofra",
-            "dosya": "b10-sofra.webp",
-            "yerTutucu": "kap",
-            "derinlik": 0.85,
-            "ayar": {
-              "gorsel": {
                 "x": 0.5,
-                "y": 0.801,
-                "olcek": 0.613
-              }
+                "y": 0.5,
+                "olcek": 1.05
+              },
+              "ton": false
             }
           }
         ],
-        "kamera": "sabit",
+        "kamera": "bakis-acisi-yuruyus",
         "cekimler": [
+          {
+            "parca": 0,
+            "an": 0.5,
+            "tarif": "Onun gözünden: bakış sahibinin hiçbir uzvu (el, kol, ayak) kadraja girmez. Gündüz, kuru bir vadi tabanı; yere serilmiş deri bir sofra, üzerinde kapalı ya da içi görünmeyen bir kap. Sofranın öbür yanında oturan Zeyd konuşuyor; yemeği iten ya da geri çeviren bir jest yok (rivayet farkı). Yaşı kaynakta yok. Kan yok. Nur tonu yok.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "zeyd-sofra",
+                "dosya": "b10-zeyd-sofra.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.503,
+                    "y": 0.63,
+                    "olcek": 0.74
+                  }
+                }
+              },
+              {
+                "id": "sofra",
+                "dosya": "b10-sofra.webp",
+                "yerTutucu": "kap",
+                "derinlik": 0.85,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.801,
+                    "olcek": 0.613
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "an": 0.36,
+            "tarif": "Gündüz, Mekke dışında alçak bir tümsek: dipleri isle kararmış dikili taşlar, önlerinde eski bir ateş halkası; kimse yok.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "dikili-taslar",
+                "dosya": "b10-d-dikili-taslar.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "an": 0.68,
+            "tarif": "Sofra başında Zeyd konuşuyor (bileşime dönüş).",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "gok",
+                "dosya": "mekke-gok-gunduz.webp",
+                "yerTutucu": "gok",
+                "derinlik": 0.0
+              },
+              {
+                "id": "daglar",
+                "dosya": "mekke-daglar.webp",
+                "yerTutucu": "daglar",
+                "derinlik": 0.15
+              },
+              {
+                "id": "zemin",
+                "dosya": "mekke-zemin.webp",
+                "yerTutucu": "zemin",
+                "derinlik": 0.35
+              },
+              {
+                "id": "zeyd-sofra",
+                "dosya": "b10-zeyd-sofra.webp",
+                "yerTutucu": "siluet-tek",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.503,
+                    "y": 0.63,
+                    "olcek": 0.74
+                  }
+                }
+              },
+              {
+                "id": "sofra",
+                "dosya": "b10-sofra.webp",
+                "yerTutucu": "kap",
+                "derinlik": 0.85,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.801,
+                    "olcek": 0.613
+                  }
+                }
+              }
+            ]
+          },
           {
             "parca": 2,
             "tarif": "Alacakaranlık, kuru bir vadi: üst üste yığılmış taşlardan sade bir kabir, yanında tek bir dikenli çalı.",

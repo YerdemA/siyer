@@ -920,6 +920,48 @@
             "an": 0.35
           },
           {
+            "parca": 1,
+            "tarif": "Gündüz, Busrâ'daki manastırın önü: Ebû Tâlib ve iki Kureyşli şaşkınlıkla birbirine bakıyor.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "kureys-bakisma",
+                "dosya": "b06-d-kureys-bakisma.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 2,
+            "tarif": "Gündüz, manastırın önü: Bahîrâ taş sekide öne eğilmiş, parmaklarıyla sayarak soru üstüne soru soruyor.",
+            "kamera": "sabit",
+            "katmanlar": [
+              {
+                "id": "bahira-sorgu",
+                "dosya": "b06-d-bahira-sorgu.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.53,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
             "parca": 2,
             "tarif": "Bahîrâ yakın plan: gözleri sessiz bir hayretle açık, eli göğsünde.",
             "kamera": "yavas-yaklasma",
@@ -938,7 +980,8 @@
                   "ton": false
                 }
               }
-            ]
+            ],
+            "an": 0.65
           }
         ]
       },

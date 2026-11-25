@@ -376,6 +376,27 @@
           },
           {
             "parca": 1,
+            "tarif": "Gündüz, taşlı geniş ova: Ukâz'a giden yüklü deve kervanı; başta devesinin üstünde mızraklı Urve er-Rahhâl.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "urve-kervan",
+                "dosya": "b07-d-urve-kervan.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
             "tarif": "Hîre kervanı ve Berrâd (ana görsel).",
             "kamera": "yavas-uzaklasma",
             "katmanlar": [],
@@ -383,7 +404,30 @@
               "x": 0.5,
               "y": 0.55,
               "yakinlik": 1.05
-            }
+            },
+            "an": 0.45
+          },
+          {
+            "parca": 1,
+            "an": 0.8,
+            "tarif": "İkindi, dar ve kayalık bir geçit: yükleri kaymış develer başıboş duruyor; yolda yere düşmüş bir mızrak, havada toz.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "sahipsiz-kervan",
+                "dosya": "b07-d-sahipsiz-kervan.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },

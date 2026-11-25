@@ -139,6 +139,50 @@
                 }
               }
             ]
+          },
+          {
+            "parca": 1,
+            "an": 0.35,
+            "tarif": "Şafak, alçak ve üstü açık Kâbe'nin çevresi: Kureyşliler küçük gruplar hâlinde duvarların yanında sessizce konuşuyor.",
+            "kamera": "yatay-kayma",
+            "katmanlar": [
+              {
+                "id": "kureys-kabe",
+                "dosya": "b03-d-kureys-kabe.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
+          },
+          {
+            "parca": 1,
+            "an": 0.7,
+            "tarif": "Şafak, Mekke'de çıplak bir dağın eteğinde dar bir mahalle: kapıları kapalı taş ve kerpiç evler, bir damdan ince duman; dışarıda kimse yok.",
+            "kamera": "yavas-yaklasma",
+            "katmanlar": [
+              {
+                "id": "hasim-mahalle",
+                "dosya": "b03-d-hasim-mahalle.webp",
+                "yerTutucu": "kapi-cercevesi",
+                "derinlik": 0.6,
+                "ayar": {
+                  "gorsel": {
+                    "x": 0.5,
+                    "y": 0.5,
+                    "olcek": 1.05
+                  },
+                  "ton": false
+                }
+              }
+            ]
           }
         ]
       },

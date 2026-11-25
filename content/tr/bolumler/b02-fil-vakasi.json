@@ -281,8 +281,8 @@
             "ayar": {
               "gorsel": {
                 "x": 0.35,
-                "y": 0.55,
-                "olcek": 0.55
+                "y": 0.5,
+                "olcek": 0.5
               }
             }
           }
@@ -1651,7 +1651,14 @@
             "id": "bos-col",
             "dosya": "b02-terk-edilmis.webp",
             "yerTutucu": "kalabalik",
-            "derinlik": 0.6
+            "derinlik": 0.6,
+            "ayar": {
+              "gorsel": {
+                "x": 0.5,
+                "y": 0.74,
+                "olcek": 0.9
+              }
+            }
           }
         ],
         "kamera": "yavas-uzaklasma",
