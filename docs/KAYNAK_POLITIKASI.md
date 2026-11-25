@@ -48,6 +48,17 @@ Peygamberlik öncesi dönem için özellikle dikkat: doğum tarihi, Şam yolculu
 
 Uygulamada bölüm sonunda kısa biçim, Ayarlar > Kaynakça'da tam künye gösterilir.
 
+### Başka dillerde âyet meali
+
+Türkçede Diyanet Vakfı meali. İngilizcede **Pickthall, _The Meaning of the Glorious Koran_ (1930)** kullanılır (telifsiz; Erdem, 2026-11-25), dili günümüz İngilizcesine şu sabit kurallarla uyarlanır (Erdem onayladı, 2026-11-25):
+
+- thee/thou/thee → you; thy/thine → your; ye → you
+- hath → has; doth → does; art → are; -est/-eth fiil ekleri günümüz biçimine (hast → have, knoweth → knows)
+- "Lo!" → "Indeed,"; "naught" → "nothing"; "unto" → "to" (anlam değişmiyorsa düşer: "near unto" → "near"); "provide Thou them" gibi devrik emirler düz sıraya
+- Kelime seçimi, cümle yapısı, Pickthall'ın parantezli eklemeleri ve âyet numaraları **değişmez**. Serbest yeniden yazma ya da "anlamı koruyan" yapay zekâ çevirisi yapılmaz.
+- Her uyarlama özgün metinle yan yana `kaynaklar/kuran/kuran-meal-pickthall.md`'de durur. Atıf: `Pickthall (1930), XIV:37, s. 259 (dili günümüz İngilizcesine uyarlandı)`.
+- Yayından önce İngilizce bilen bir okuyucu uyarlamaları özgünle karşılaştırır (uzman okumasıyla birlikte).
+
 ## 5. Yapay zekâ kullanımı
 
 - Yapay zekâ taslak yazar, kaynakta arama yapar, tutarsızlık bulur. Kaynak **olamaz**.
