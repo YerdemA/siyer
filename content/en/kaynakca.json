@@ -1,8 +1,38 @@
 [
-  {"id": "kuran-meal-dv", "yazar": "Türkiye Diyanet Vakfı", "baski": "Diyanet Qur'an Platform, \"Diyanet Vakfı\" translation (the site's default); the verse and mushaf page are given in each citation. Quoted verses in the English subtitles are from Pickthall, The Meaning of the Glorious Koran (1930), with archaic forms modernised."},
-  {"id": "ibn-hisam-sire", "yazar": "Ibn Hisham", "baski": "Wüstenfeld edition (scan: Arabic Wikisource); page numbers are the printed numbers in the scan"},
-  {"id": "buhari-sahih", "yazar": "al-Bukhari", "baski": "Numbering: the common single sequence used by sunnah.com; the book and chapter are also given in each citation. To be checked against a printed edition before public release"},
-  {"id": "muslim-sahih", "yazar": "Muslim", "baski": "Numbering: the hadith number on sunnah.com (lettered sub-numbers such as 162c are the site's); the book and its position on the site are also given. To be checked against a printed edition before public release"},
-  {"id": "tdv-dia", "yazar": "Türkiye Diyanet Vakfı", "eser": "TDV İslâm Ansiklopedisi (TDV Encyclopedia of Islam)", "baski": "Printed edition; the article, author, volume and year are given in each citation"},
-  {"id": "hadislerle-islam", "yazar": "Presidency of Religious Affairs (Diyanet)", "eser": "Hadislerle İslâm (Islam through Hadiths)", "baski": "Diyanet digital library PDF edition (no printed page numbers; location given by volume and footnote number)"}
+  {
+    "id": "kuran-meal-dv",
+    "yazar": "Türkiye Diyanet Vakfı",
+    "baski": "Diyanet Qur'an Platform, \"Diyanet Vakfı\" translation (the site's default); the verse and mushaf page are given in each citation. Quoted verses in the English subtitles are from Pickthall, The Meaning of the Glorious Koran (1930), with archaic forms modernised."
+  },
+  {
+    "id": "kuran-meal-pickthall",
+    "baski": "Alfred A. Knopf, 1930 (first edition; public domain). The verses in the English subtitles are from this translation, with archaic forms modernised; verse numbers are Pickthall's"
+  },
+  {
+    "id": "ibn-hisam-sire",
+    "yazar": "Ibn Hisham",
+    "baski": "Wüstenfeld edition (scan: Arabic Wikisource); page numbers are the printed numbers in the scan"
+  },
+  {
+    "id": "buhari-sahih",
+    "yazar": "al-Bukhari",
+    "baski": "Numbering: the common single sequence used by sunnah.com; the book and chapter are also given in each citation. To be checked against a printed edition before public release"
+  },
+  {
+    "id": "muslim-sahih",
+    "yazar": "Muslim",
+    "baski": "Numbering: the hadith number on sunnah.com (lettered sub-numbers such as 162c are the site's); the book and its position on the site are also given. To be checked against a printed edition before public release"
+  },
+  {
+    "id": "tdv-dia",
+    "yazar": "Türkiye Diyanet Vakfı",
+    "eser": "TDV İslâm Ansiklopedisi (TDV Encyclopedia of Islam)",
+    "baski": "Printed edition; the article, author, volume and year are given in each citation"
+  },
+  {
+    "id": "hadislerle-islam",
+    "yazar": "Presidency of Religious Affairs (Diyanet)",
+    "eser": "Hadislerle İslâm (Islam through Hadiths)",
+    "baski": "Diyanet digital library PDF edition (no printed page numbers; location given by volume and footnote number)"
+  }
 ]
