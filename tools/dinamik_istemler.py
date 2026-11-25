@@ -123,8 +123,9 @@ CERCEVE_KABE_Y = ("The Ka'ba looks exactly like the attached reference: rebuilt,
 
 
 def m(id, sahne, parca, oncelik, gerekce, konu, isik=GUNDUZ, kisiler=None, ekle=None, yasak=None,
-      cekim="orta", tip="mekan", ek_not="", nur_yasak=True, denetim=None, yerlesim=None, izin=None, isleme=None):
-    return dict(id=id, sahne=sahne, parca=parca, oncelik=oncelik, gerekce=gerekce, tip=tip, cekim=cekim,
+      cekim="orta", tip="mekan", ek_not="", nur_yasak=True, denetim=None, yerlesim=None, izin=None, isleme=None,
+      tur="d1"):
+    return dict(id=id, tur=tur, sahne=sahne, parca=parca, oncelik=oncelik, gerekce=gerekce, tip=tip, cekim=cekim,
                 konu=konu, kisiler=kisiler or [], ekle=ekle or [], isik=isik,
                 yasak=", ".join(x for x in [NUR_YASAK if nur_yasak else None, yasak] if x), ek_not=ek_not,
                 denetim=denetim, yerlesim=yerlesim, izin=izin, isleme=isleme)
@@ -903,6 +904,74 @@ KAYITLAR = {
 }
 
 
+# İkinci tur (d2, Erdem 2026-11-25): d1 yerleşiminden sonra hâlâ 15-22 sn tek görselde
+# kalan çekimler. Her biri uzun parçanın ikinci yarısını (ya da ilk yarısını) kendi
+# görüntüsüyle verir; yerleşim tools/d1_yerlestir.py'de `an` ile yapılır.
+D2 = {
+    "b03": [
+        m("b03-d-kureys-kabe", "b03-s01", [1], "A",
+          "s01'de b03-d-kabileler 16,7 sn; hadisin 'Kinâne'den Kureyş'i seçti' kısmı (parça içinde ~%35).",
+          "Dawn, the open ground around the low, roofless Ka'ba in the valley of Mecca: men of Quraysh gather in small groups near its walls, talking quietly; the first light touches the top of the walls and the mountain tops behind.",
+          isik=SAFAK, ekle=[KABE],
+          kisiler=[k(tarif=KUREYS, sayi=8, yaklasik=True, poz="in two or three small groups around the Ka'ba, middle distance.")],
+          yasak="writing, banners, idols in the foreground, any glow", tur="d2"),
+        m("b03-d-hasim-mahalle", "b03-s01", [1], "A",
+          "Aynı parça: 'Hâşimoğulları'ndan da beni seçti' (parça içinde ~%70). Kişi çizilmez; doğum bölümünün şafağı.",
+          "Dawn, a narrow quarter of old Mecca at the foot of a bare mountain: a few simple flat-roofed houses of stone and mud brick close together along a quiet lane, wooden doors shut, a thin line of smoke rising from one roof; the first apricot light on the mountain above, the lane still in cool shadow; no one outside.",
+          isik=SAFAK, cekim="orta", ekle=[EVLER],
+          yasak="any person, silhouette, animals, writing, lamps, glowing windows, the Ka'ba", tur="d2"),
+    ],
+    "b06": [
+        m("b06-d-kureys-bakisma", "b06-s11", [1], "A",
+          "s11'de b06-d-bahira-soru 15,4 sn; Efendimiz'in 'Bana Lât ve Uzzâ adına sorma' cevabı (parça 1 başı). Cevap verenin değil dinleyenlerin yüzü: Ebû Tâlib ve Kureyşliler şaşkın.",
+          "Daytime, in front of the monastery at Busra, closer view of the men standing behind the place where Bahira questions the boy: Abu Talib and two men of Quraysh glance at one another in surprise, one man's eyebrows raised, another with his hand stopped halfway to his beard; they look towards the right edge of the image, at someone out of frame.",
+          cekim="yakin",
+          kisiler=[k(karakter="ebu_talib", poz="in the centre, looking to the right."),
+                   k(tarif=KUREYS, sayi=2, poz="one on each side of Abu Talib, turning to look at each other.")],
+          yasak="crosses, icons, idols, any child drawn, glow", tur="d2"),
+        m("b06-d-bahira-sorgu", "b06-s11", [2], "A",
+          "Aynı sahnenin son parçası 14,8 sn tek yakın görselde; önce soruların sürdüğü an (parça 2 başı), b06-d-bahira-yakin mühürle birlikte (~%65) gelir.",
+          "Daytime, in front of the monastery at Busra: Bahira, seated on the stone bench, leans forward and asks one question after another, counting them off on the fingers of one raised hand, his face calm and attentive; he looks towards the right edge of the image, at someone out of frame.",
+          cekim="orta",
+          kisiler=[k(karakter="bahira", poz="seated, filling the left two thirds, facing right.")],
+          yasak="crosses, icons, books, scrolls, any child drawn, glow", tur="d2"),
+    ],
+    "b07": [
+        m("b07-d-urve-kervan", "b07-s04", [1], "A",
+          "s04'te kervan bileşimi 15,2 sn; parça 1'in başı: Nu'mân'ın Ukâz'a gönderdiği kervan ve onu korumayı üstlenen Urve er-Rahhâl. Urve'nin görünüşü kaynakta yok.",
+          "Daytime, a caravan crossing a wide, stony plain towards Ukaz: a line of camels loaded with bales wrapped in cloth and tied with ropes, a few drivers walking beside them; at the head of the line rides its guard, a Bedouin man of the Hawazin on a camel, a long spear upright in his hand, looking ahead with calm confidence.",
+          cekim="orta",
+          kisiler=[k(tarif=BEDEVI + "; the guard: a strong man of about 40 with a short black beard and a dark head cloth, a long spear", poz="riding at the front of the line, left of centre."),
+                   k(tarif="caravan drivers in plain tunics", sayi=3, poz="walking beside the camels, behind the guard.")],
+          yasak="blood, drawn swords, fighting, banners with writing, horses", tur="d2"),
+        m("b07-d-sahipsiz-kervan", "b07-s04", [1], "A",
+          "Aynı parça, cümlenin sonu: 'haram ayda öldürdü' (~%80). Öldürme anı ve ölü çizilmez (b07 kuralı); yalnız sahipsiz kalan kervan.",
+          "Late afternoon, a narrow rocky pass: the camels of the caravan stand scattered and still, their loads askew, with no one leading them; a long spear lies across the sandy track in the foreground; dust still hangs in the air; nobody is in sight.",
+          isik=AKSAM, cekim="orta",
+          yasak="any person, body, blood, wounds, weapons other than the one spear, vultures", tur="d2"),
+    ],
+    "b10": [
+        m("b10-d-kureys-dinler", "b10-s06", [2], "A",
+          "s06'da Esmâ parçası 17,6 sn tek bileşimde; Zeyd'in seslendiği Kureyşliler (parça içinde ~%65). Esmâ çizilmez.",
+          "Daytime, the open courtyard of the Ka'ba in Mecca, the Ka'ba itself out of frame behind the viewer: several men of Quraysh stop and turn their heads towards the viewer, as if someone behind the viewer were calling out to them; some listen with frowns, one waves his hand dismissively and walks on, one older man listens thoughtfully.",
+          ekle=[EVLER],
+          kisiler=[k(tarif=KUREYS, sayi=6, poz="spread across the middle ground, turning towards the viewer.")],
+          yasak="the Ka'ba, idols in the foreground, writing, any glow", tur="d2"),
+        m("b10-d-beldah", "b10-s07", [0], "A",
+          "s07'nin ilk iki parçası 22,3 sn tek bileşimde. Onun gözünden (b10-s07 gibi): Beldah vadisinin aşağısında yolda karşıdan gelen Zeyd (parça 0 başı); karşılaşma bileşime ~%50'de geçer.",
+          "Daytime, seen from the eye level of a man walking: the lower part of a dry, wide valley on the road to Mecca, a pale sandy track winding between low acacia trees and bare, brown hills; far ahead on the track, Zayd ibn Amr walks towards the viewer, small in the distance.",
+          cekim="uzak",
+          kisiler=[k(karakter="zeyd_amr", poz="small, far ahead on the track, walking towards the viewer.")],
+          yasak="any other person, camels, houses, the Ka'ba, glow", tur="d2"),
+        m("b10-d-dikili-taslar", "b10-s07", [1], "A",
+          "Aynı sahne, Zeyd'in sözü: 'Putlarınızın taşları üzerinde kestiklerinizden yemem' (parça 1, ~%40). Kesim ve kan çizilmez; yalnız taşlar. Sonra bileşime (Zeyd konuşurken) dönülür.",
+          "Daytime, on a low rise outside Mecca: a few rough, upright standing stones of different heights, darkened and smoke-blackened at their base, with an old ring of fire-blackened stones and ash before them; dry ground, a thornbush, the bare hills beyond; nobody there.",
+          cekim="orta",
+          yasak="any person, animals, blood, meat, knives, carved faces on the stones, writing", tur="d2"),
+    ],
+}
+
+
 def iddialar(sahne_id: str, parcalar: list[int]) -> list[str]:
     bolum = next(BOLUM.glob(f"{sahne_id[:3]}-*.json"))
     b = json.loads(bolum.read_text(encoding="utf-8"))
@@ -928,11 +997,11 @@ SAHNE_REFERANSI = {
 
 def kayit(bolum: str, r: dict) -> dict:
     ids = iddialar(r["sahne"], r["parca"])
-    not_ = f"Dinamizm turu d1 ({r['oncelik']}). {r['gerekce']} Dayanak: {r['sahne']} parça {', '.join(map(str, r['parca']))}; {', '.join(ids)}."
+    not_ = f"Dinamizm turu {r['tur']} ({r['oncelik']}). {r['gerekce']} Dayanak: {r['sahne']} parça {', '.join(map(str, r['parca']))}; {', '.join(ids)}."
     if r["ek_not"]:
         not_ += " " + r["ek_not"]
     k = {
-        "id": r["id"], "tur": "d1", "dosya": r["id"] + ".webp", "katman": r["id"].split("-d-", 1)[1],
+        "id": r["id"], "tur": r["tur"], "dosya": r["id"] + ".webp", "katman": r["id"].split("-d-", 1)[1],
         "isleme": "opak", "sahneler": [r["sahne"]], "sahne": r["sahne"], "parca": r["parca"],
         "oncelik": r["oncelik"], "tip": r["tip"], "cekim": r["cekim"], "konu": r["konu"],
     }
@@ -959,7 +1028,8 @@ KALDIRILAN = {"b04": {"b04-d-cocuk-yuzler", "b04-d-goz-1", "b04-d-goz-2", "b04-d
 
 def main() -> None:
     toplam = 0
-    for bolum, liste in KAYITLAR.items():
+    for bolum in KAYITLAR:
+        liste = KAYITLAR[bolum] + D2.get(bolum, [])
         yol = ISTEM / f"{bolum}.json"
         veri = json.loads(yol.read_text(encoding="utf-8"))
         idler = {r["id"] for r in liste} | KALDIRILAN.get(bolum, set())

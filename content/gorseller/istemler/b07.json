@@ -716,6 +716,59 @@
       "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people",
       "not": "Dinamizm turu d1 (A). s14 tek ortak Kâbe görseli 21 sn; 'kızıl develer' sözü görsel bir benzetme. Dayanak: b07-s14 parça 1; i-b07-023."
+    },
+    {
+      "id": "b07-d-urve-kervan",
+      "tur": "d2",
+      "dosya": "b07-d-urve-kervan.webp",
+      "katman": "urve-kervan",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s04"
+      ],
+      "sahne": "b07-s04",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, a caravan crossing a wide, stony plain towards Ukaz: a line of camels loaded with bales wrapped in cloth and tied with ropes, a few drivers walking beside them; at the head of the line rides its guard, a Bedouin man of the Hawazin on a camel, a long spear upright in his hand, looking ahead with calm confidence.",
+      "kisiler": [
+        {
+          "tarif": "Bedouin men in plain undyed wool tunics and loosely wrapped dark head cloths; the guard: a strong man of about 40 with a short black beard and a dark head cloth, a long spear",
+          "poz": "riding at the front of the line, left of centre."
+        },
+        {
+          "tarif": "caravan drivers in plain tunics",
+          "sayi": 3,
+          "poz": "walking beside the camels, behind the guard."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, blood, drawn swords, fighting, banners with writing, horses",
+      "not": "Dinamizm turu d2 (A). s04'te kervan bileşimi 15,2 sn; parça 1'in başı: Nu'mân'ın Ukâz'a gönderdiği kervan ve onu korumayı üstlenen Urve er-Rahhâl. Urve'nin görünüşü kaynakta yok. Dayanak: b07-s04 parça 1; i-b07-006."
+    },
+    {
+      "id": "b07-d-sahipsiz-kervan",
+      "tur": "d2",
+      "dosya": "b07-d-sahipsiz-kervan.webp",
+      "katman": "sahipsiz-kervan",
+      "isleme": "opak",
+      "sahneler": [
+        "b07-s04"
+      ],
+      "sahne": "b07-s04",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Late afternoon, a narrow rocky pass: the camels of the caravan stand scattered and still, their loads askew, with no one leading them; a long spear lies across the sandy track in the foreground; dust still hangs in the air; nobody is in sight.",
+      "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, body, blood, wounds, weapons other than the one spear, vultures",
+      "not": "Dinamizm turu d2 (A). Aynı parça, cümlenin sonu: 'haram ayda öldürdü' (~%80). Öldürme anı ve ölü çizilmez (b07 kuralı); yalnız sahipsiz kalan kervan. Dayanak: b07-s04 parça 1; i-b07-006."
     }
   ],
   "uretimler": [

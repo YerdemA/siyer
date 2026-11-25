@@ -74,13 +74,13 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Saat tonu (deneme; akşam ve şafak)
 - [x] Anlatım sesiyle gerçek cihazda deneme (10 bölüm seslendirildi, 2026-11-21)
 - [ ] Müzik ve ortam sesi çalma
-- [ ] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
+- [x] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25; yapıldı, telefonda denenmedi): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
   - bölüm adı ve sahne (ör. "Süt Anne · 7/10"), sahnenin görseli kapak resmi olarak;
   - durdur/devam, önceki sahne, sonraki sahne;
   - ilerleme çubuğu (bölüm içinde, dokunarak/sürükleyerek atlanabilir);
   - kartı kapatınca (kaydırınca) oynatma durur, ilerleme kaydedilir.
   - Ayrıca (Claude ekledi): kulaklık/Bluetooth tuşları ve kulaklık çıkınca otomatik durma; telefon araması ya da başka bir ses başlayınca durma (ses odağı); ekran kapalıyken sistemin uygulamayı öldürmemesi (ön plan medya servisi, Xiaomi sorunu da çözülür); kilit ekranından dönünce görüntünün kaldığı sahnede olması.
-  - Gerekenler: `audio_service` paketi (Erdem onayı gerekir; yalnız Android ve iOS sistem medya oturumu, internet yok), manifestte `FOREGROUND_SERVICE` ve `FOREGROUND_SERVICE_MEDIA_PLAYBACK` izinleri (Play Console'da ön plan servisi beyanı: "medya oynatma"), Android 13+ için bildirim izni (`POST_NOTIFICATIONS`, ilk oynatmada sorulur). Gizlilik metni değişmez (veri toplanmaz). Ana sayfa/oynatıcı akışında saat hâlâ asıl; servis yalnız sesi ve kartı yönetir.
+  - Gerekenler: `audio_service` paketi (Erdem onayladı, 2026-11-25; yalnız Android ve iOS sistem medya oturumu, internet yok), manifestte `FOREGROUND_SERVICE` ve `FOREGROUND_SERVICE_MEDIA_PLAYBACK` izinleri (Play Console'da ön plan servisi beyanı: "medya oynatma"), Android 13+ bildirim izni gerekmedi (medya oturumu bildirimi muaf). Gizlilik metni değişmez (veri toplanmaz). Ana sayfa/oynatıcı akışında saat hâlâ asıl; servis yalnız sesi ve kartı yönetir.
 - [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
 - [ ] "Hata bildir" bağlantısı

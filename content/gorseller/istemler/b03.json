@@ -571,6 +571,62 @@
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any baby, glow",
       "not": "Dinamizm turu d1 (B). s12'nin ilk çekimi yalnız ortak Kâbe; sıra değişir: önce mevcut Kâbe kapısı görseli, sonra bu. Dayanak: b03-s12 parça 1; i-b03-015."
+    },
+    {
+      "id": "b03-d-kureys-kabe",
+      "tur": "d2",
+      "dosya": "b03-d-kureys-kabe.webp",
+      "katman": "kureys-kabe",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s01"
+      ],
+      "sahne": "b03-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dawn, the open ground around the low, roofless Ka'ba in the valley of Mecca: men of Quraysh gather in small groups near its walls, talking quietly; the first light touches the top of the walls and the mountain tops behind.",
+      "kisiler": [
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 8,
+          "yaklasik": true,
+          "poz": "in two or three small groups around the Ka'ba, middle distance."
+        }
+      ],
+      "ekle": [
+        "nesne-kabe-alcak.png"
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, writing, banners, idols in the foreground, any glow",
+      "not": "Dinamizm turu d2 (A). s01'de b03-d-kabileler 16,7 sn; hadisin 'Kinâne'den Kureyş'i seçti' kısmı (parça içinde ~%35). Dayanak: b03-s01 parça 1; i-b03-002."
+    },
+    {
+      "id": "b03-d-hasim-mahalle",
+      "tur": "d2",
+      "dosya": "b03-d-hasim-mahalle.webp",
+      "katman": "hasim-mahalle",
+      "isleme": "opak",
+      "sahneler": [
+        "b03-s01"
+      ],
+      "sahne": "b03-s01",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Dawn, a narrow quarter of old Mecca at the foot of a bare mountain: a few simple flat-roofed houses of stone and mud brick close together along a quiet lane, wooden doors shut, a thin line of smoke rising from one roof; the first apricot light on the mountain above, the lane still in cool shadow; no one outside.",
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: dawn: soft apricot light low on the horizon, the rest of the scene in cool, muted blue-grey; no glow, no sun rays.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, silhouette, animals, writing, lamps, glowing windows, the Ka'ba",
+      "not": "Dinamizm turu d2 (A). Aynı parça: 'Hâşimoğulları'ndan da beni seçti' (parça içinde ~%70). Kişi çizilmez; doğum bölümünün şafağı. Dayanak: b03-s01 parça 1; i-b03-002."
     }
   ],
   "uretimler": [

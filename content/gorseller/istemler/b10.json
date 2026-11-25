@@ -660,6 +660,85 @@
       "isik": "LIGHT: late afternoon going to dusk: warm, low light from the left, long shadows, sky turning soft apricot; no glow, no sun rays.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, people, writing, glow",
       "not": "Dinamizm turu d1 (B). s07 tek görsel 24 sn; Zeyd'in vefatı. Dayanak: b10-s07 parça 2; i-b10-020."
+    },
+    {
+      "id": "b10-d-kureys-dinler",
+      "tur": "d2",
+      "dosya": "b10-d-kureys-dinler.webp",
+      "katman": "kureys-dinler",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s06"
+      ],
+      "sahne": "b10-s06",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, the open courtyard of the Ka'ba in Mecca, the Ka'ba itself out of frame behind the viewer: several men of Quraysh stop and turn their heads towards the viewer, as if someone behind the viewer were calling out to them; some listen with frowns, one waves his hand dismissively and walks on, one older man listens thoughtfully.",
+      "kisiler": [
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 6,
+          "poz": "spread across the middle ground, turning towards the viewer."
+        }
+      ],
+      "ekle": [
+        "nesne-mekke-evler.png"
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, the Ka'ba, idols in the foreground, writing, any glow",
+      "not": "Dinamizm turu d2 (A). s06'da Esmâ parçası 17,6 sn tek bileşimde; Zeyd'in seslendiği Kureyşliler (parça içinde ~%65). Esmâ çizilmez. Dayanak: b10-s06 parça 2; i-b10-018."
+    },
+    {
+      "id": "b10-d-beldah",
+      "tur": "d2",
+      "dosya": "b10-d-beldah.webp",
+      "katman": "beldah",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s07"
+      ],
+      "sahne": "b10-s07",
+      "parca": [
+        0
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "uzak",
+      "konu": "Daytime, seen from the eye level of a man walking: the lower part of a dry, wide valley on the road to Mecca, a pale sandy track winding between low acacia trees and bare, brown hills; far ahead on the track, Zayd ibn Amr walks towards the viewer, small in the distance.",
+      "kisiler": [
+        {
+          "karakter": "zeyd_amr",
+          "poz": "small, far ahead on the track, walking towards the viewer."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any other person, camels, houses, the Ka'ba, glow",
+      "not": "Dinamizm turu d2 (A). s07'nin ilk iki parçası 22,3 sn tek bileşimde. Onun gözünden (b10-s07 gibi): Beldah vadisinin aşağısında yolda karşıdan gelen Zeyd (parça 0 başı); karşılaşma bileşime ~%50'de geçer. Dayanak: b10-s07 parça 0; i-b10-019."
+    },
+    {
+      "id": "b10-d-dikili-taslar",
+      "tur": "d2",
+      "dosya": "b10-d-dikili-taslar.webp",
+      "katman": "dikili-taslar",
+      "isleme": "opak",
+      "sahneler": [
+        "b10-s07"
+      ],
+      "sahne": "b10-s07",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, on a low rise outside Mecca: a few rough, upright standing stones of different heights, darkened and smoke-blackened at their base, with an old ring of fire-blackened stones and ash before them; dry ground, a thornbush, the bare hills beyond; nobody there.",
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, any person, animals, blood, meat, knives, carved faces on the stones, writing",
+      "not": "Dinamizm turu d2 (A). Aynı sahne, Zeyd'in sözü: 'Putlarınızın taşları üzerinde kestiklerinizden yemem' (parça 1, ~%40). Kesim ve kan çizilmez; yalnız taşlar. Sonra bileşime (Zeyd konuşurken) dönülür. Dayanak: b10-s07 parça 1; i-b10-019."
     }
   ],
   "uretimler": [

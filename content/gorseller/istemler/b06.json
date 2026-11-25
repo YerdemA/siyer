@@ -474,6 +474,65 @@
       "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
       "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, glow",
       "not": "Dinamizm turu d1 (A). Aynı sahne: Bahîrâ'nın cevaplardan ve mühürden sonraki hâli. Dayanak: b06-s11 parça 2; i-b06-016."
+    },
+    {
+      "id": "b06-d-kureys-bakisma",
+      "tur": "d2",
+      "dosya": "b06-d-kureys-bakisma.webp",
+      "katman": "kureys-bakisma",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s11"
+      ],
+      "sahne": "b06-s11",
+      "parca": [
+        1
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "yakin",
+      "konu": "Daytime, in front of the monastery at Busra, closer view of the men standing behind the place where Bahira questions the boy: Abu Talib and two men of Quraysh glance at one another in surprise, one man's eyebrows raised, another with his hand stopped halfway to his beard; they look towards the right edge of the image, at someone out of frame.",
+      "kisiler": [
+        {
+          "karakter": "ebu_talib",
+          "poz": "in the centre, looking to the right."
+        },
+        {
+          "tarif": "men of Quraysh in simple 6th-century clothes: off-white or sand head cloths, plain tunics and long cloaks in muted brown, grey-blue, ochre and undyed wool",
+          "sayi": 2,
+          "poz": "one on each side of Abu Talib, turning to look at each other."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, idols, any child drawn, glow",
+      "not": "Dinamizm turu d2 (A). s11'de b06-d-bahira-soru 15,4 sn; Efendimiz'in 'Bana Lât ve Uzzâ adına sorma' cevabı (parça 1 başı). Cevap verenin değil dinleyenlerin yüzü: Ebû Tâlib ve Kureyşliler şaşkın. Dayanak: b06-s11 parça 1; i-b06-016."
+    },
+    {
+      "id": "b06-d-bahira-sorgu",
+      "tur": "d2",
+      "dosya": "b06-d-bahira-sorgu.webp",
+      "katman": "bahira-sorgu",
+      "isleme": "opak",
+      "sahneler": [
+        "b06-s11"
+      ],
+      "sahne": "b06-s11",
+      "parca": [
+        2
+      ],
+      "oncelik": "A",
+      "tip": "mekan",
+      "cekim": "orta",
+      "konu": "Daytime, in front of the monastery at Busra: Bahira, seated on the stone bench, leans forward and asks one question after another, counting them off on the fingers of one raised hand, his face calm and attentive; he looks towards the right edge of the image, at someone out of frame.",
+      "kisiler": [
+        {
+          "karakter": "bahira",
+          "poz": "seated, filling the left two thirds, facing right."
+        }
+      ],
+      "isik": "LIGHT: clear, neutral daylight from the front-left; soft paper shadows under people, animals and objects so they sit on the ground; no glow, no dramatic light.",
+      "yasak": "the Prophet, any glowing figure, halo, light rays from a person, crosses, icons, books, scrolls, any child drawn, glow",
+      "not": "Dinamizm turu d2 (A). Aynı sahnenin son parçası 14,8 sn tek yakın görselde; önce soruların sürdüğü an (parça 2 başı), b06-d-bahira-yakin mühürle birlikte (~%65) gelir. Dayanak: b06-s11 parça 2; i-b06-016."
     }
   ],
   "uretimler": [
