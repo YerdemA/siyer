@@ -79,6 +79,22 @@ void main() {
     expect(find.text('bir iki üç'), findsNothing);
   });
 
+  testWidgets('alt çubuktaki TR/EN düğmesi altyazı dilini değiştirir ve altyazıyı açar', (tester) async {
+    final secilen = <String>[];
+    final acik = <bool>[];
+    await tester.pumpWidget(_sar(Oynatici(
+      bolum: ornekBolum(),
+      kaynakca: kaynakca,
+      altyaziDiliDegisti: secilen.add,
+      altyaziDegisti: acik.add,
+    )));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.tap(find.text('TR'));
+    await tester.pump();
+    expect(secilen, ['en']);
+    expect(acik, [true]);
+  });
+
   testWidgets('duraklatınca zaman durur', (tester) async {
     await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca)));
     await tester.pump(const Duration(milliseconds: 100));

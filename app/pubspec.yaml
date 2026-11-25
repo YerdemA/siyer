@@ -74,6 +74,7 @@ flutter:
     - assets/icerik/tr/ses/
     - assets/icerik/gorseller/
     - assets/icerik/gorseller/sahislar/
+    - assets/icerik/en/
     - assets/icerik/en/altyazi/
     - assets/icerik/fon/muzik/
     - assets/icerik/fon/ortam/

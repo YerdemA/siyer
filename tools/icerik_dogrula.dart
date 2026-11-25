@@ -866,9 +866,53 @@ void altyazilariDenetle(Directory kok, DilIcerigi esas, Rapor rapor) {
       };
       altyaziDenetle(yol, j, parcalar, rapor);
     }
+    yanVerileriDenetle(kok, esas.dil, dilAdi, rapor);
     final eksik = bolumYollari.keys.where((k) => !cevrilen.contains(k)).toList()..sort();
     if (eksik.isNotEmpty) {
       rapor.yayinHatasi('${kok.path}/$dilAdi/altyazi', '${eksik.length} bölümün altyazısı yok: ${eksik.join(', ')}');
     }
+  }
+}
+
+/// `content/<dil>/{sahislar,yerler,zaman-cizelgesi,kaynakca}.json`: yalnız
+/// çevrilen metin alanları, kimliğe göre esas dildeki kaydın üstüne yazılır.
+const yanVeriAlanlari = {
+  'sahislar.json': {'ad', 'lakap', 'yakinlik', 'ozet'},
+  'yerler.json': {'ad', 'ozet'},
+  'zaman-cizelgesi.json': {'olay'},
+  'kaynakca.json': {'yazar', 'eser', 'baski'},
+};
+
+void yanVerileriDenetle(Directory kok, String esasDil, String dil, Rapor rapor) {
+  for (final MapEntry(key: ad, value: alanlar) in yanVeriAlanlari.entries) {
+    final esas = File('${kok.path}/$esasDil/$ad');
+    if (!esas.existsSync()) continue;
+    final yol = '${kok.path}/$dil/$ad';
+    final f = File(yol);
+    final kimlikler = {
+      for (final j in (jsonDecode(esas.readAsStringSync()) as List).whereType<Map<String, dynamic>>()) metin(j, 'id'),
+    };
+    if (!f.existsSync()) {
+      rapor.yayinHatasi(yol, 'çeviri yok');
+      continue;
+    }
+    final List<dynamic> liste;
+    try {
+      liste = jsonDecode(f.readAsStringSync()) as List<dynamic>;
+    } catch (e) {
+      rapor.hata(yol, 'okunamadı: $e');
+      continue;
+    }
+    final gorulen = <String>{};
+    for (final j in liste.whereType<Map<String, dynamic>>()) {
+      final id = metin(j, 'id');
+      if (!kimlikler.contains(id)) rapor.hata(yol, 'esas dilde olmayan kimlik: $id');
+      gorulen.add(id);
+      for (final k in j.keys) {
+        if (k != 'id' && !alanlar.contains(k)) rapor.hata('$yol $id', '`$k` çevrilmez (yalnız: ${alanlar.join(', ')})');
+      }
+    }
+    final eksik = kimlikler.difference(gorulen).toList()..sort();
+    if (eksik.isNotEmpty) rapor.yayinHatasi(yol, '${eksik.length} kaydın çevirisi yok: ${eksik.join(', ')}');
   }
 }

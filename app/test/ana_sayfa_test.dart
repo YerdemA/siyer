@@ -376,6 +376,11 @@ void main() {
     expect(b.cevirisiyle(const AltyaziCevirisi(baslik: 'Test Episode', ozet: '', sahneler: {})).baslik, 'Test Episode');
     expect(b.cevirisiyle(const AltyaziCevirisi(baslik: 'Test Episode', ozet: '', sahneler: {})).ozet, b.ozet);
     expect((await c.read(tercihlerProvider.future)).arayuzDili, 'en');
+    // Uygulama dili değişince altyazı dili de ona geçer.
+    await c.read(tercihlerProvider.notifier).arayuzDiliSec('tr');
+    expect(c.read(tercihlerProvider).value?.altyaziDili, 'tr');
+    await c.read(tercihlerProvider.notifier).arayuzDiliSec('en');
+    expect(c.read(tercihlerProvider).value?.altyaziDili, 'en');
   });
 
   testWidgets('yolun sonunda sıradaki dönem "Yakında" kartı', (tester) async {

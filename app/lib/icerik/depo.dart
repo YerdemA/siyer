@@ -60,23 +60,39 @@ Future<List<Map<String, dynamic>>> _liste(String yol) async =>
         .whereType<Map<String, dynamic>>()
         .toList();
 
+/// Türkçe kayıt listesi; arayüz başka dildeyse `content/<dil>/<ad>`
+/// çevirisinin alanları kimliğe göre üstüne yazılır (yalnız metin alanları;
+/// iddia bağları ve konumlar Türkçe kayıttan).
+Future<List<Map<String, dynamic>>> _yerelListe(Ref ref, String ad) async {
+  final liste = await _liste('$_kok/$ad');
+  final dil = ref.watch(tercihlerProvider.select((t) => t.value?.arayuzDili ?? icerikDili));
+  if (dil == icerikDili) return liste;
+  final yol = 'assets/icerik/$dil/$ad';
+  if (!(await ref.watch(varliklarProvider.future)).contains(yol)) return liste;
+  final ceviri = {for (final j in await _liste(yol)) j['id']: j};
+  return [
+    for (final j in liste)
+      if (ceviri[j['id']] case final c?) {...j, ...c} else j,
+  ];
+}
+
 final kaynakcaProvider = FutureProvider<Map<String, Eser>>((ref) async {
   return {
-    for (final j in await _liste('$_kok/kaynakca.json')) (j['id'] as String? ?? ''): Eser.fromJson(j),
+    for (final j in await _yerelListe(ref, 'kaynakca.json')) (j['id'] as String? ?? ''): Eser.fromJson(j),
   };
 });
 
 final sahislarProvider = FutureProvider<List<Sahis>>(
-  (ref) async => (await _liste('$_kok/sahislar.json')).map(Sahis.fromJson).toList(),
+  (ref) async => (await _yerelListe(ref, 'sahislar.json')).map(Sahis.fromJson).toList(),
 );
 
 final yerlerProvider = FutureProvider<List<Yer>>(
-  (ref) async => (await _liste('$_kok/yerler.json')).map(Yer.fromJson).toList(),
+  (ref) async => (await _yerelListe(ref, 'yerler.json')).map(Yer.fromJson).toList(),
 );
 
 /// Yıla göre sıralı.
 final zamanCizelgesiProvider = FutureProvider<List<ZamanOlayi>>((ref) async {
-  final l = (await _liste('$_kok/zaman-cizelgesi.json')).map(ZamanOlayi.fromJson).toList()
+  final l = (await _yerelListe(ref, 'zaman-cizelgesi.json')).map(ZamanOlayi.fromJson).toList()
     ..sort((a, b) => a.yil.compareTo(b.yil));
   return l;
 });

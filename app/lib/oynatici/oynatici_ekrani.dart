@@ -62,6 +62,7 @@ class OynaticiEkrani extends ConsumerWidget {
     final sureler = ref.watch(sesSureleriProvider(bolumId));
     // Yerler okunamazsa bölüm harita geçişi olmadan oynar.
     final yerler = ref.watch(yerlerProvider);
+    final altyaziDili = ref.watch(tercihlerProvider.select((t) => t.value?.altyaziDili ?? 'tr'));
     return Scaffold(
       backgroundColor: Colors.black,
       body: switch ((bolum, kaynakca, ilerleme, sureler, yerler, dosyalar)) {
@@ -93,9 +94,9 @@ class OynaticiEkrani extends ConsumerWidget {
             baslangicCekimi: baslangicCekimi,
             duraklatilmis: duraklatilmis,
             medyaKarti: ref.read(medyaKartiProvider),
-            altyaziCevirisi: ref
-                .watch(altyaziCevirisiProvider((bolumId, ref.read(tercihlerProvider).value?.altyaziDili ?? 'tr')))
-                .value,
+            altyaziCevirisi: ref.watch(altyaziCevirisiProvider((bolumId, altyaziDili))).value,
+            altyaziDili: altyaziDili,
+            altyaziDiliDegisti: ref.read(tercihlerProvider.notifier).altyaziDiliSec,
             fonFabrikasi: (ref.read(tercihlerProvider).value?.fonSesi ?? true) ? ref.read(fonSesiFabrikasi) : null,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
@@ -134,6 +135,8 @@ class Oynatici extends StatefulWidget {
     this.altyaziOlcegi = 1,
     this.altyaziAcik = false,
     this.altyaziDegisti,
+    this.altyaziDili = 'tr',
+    this.altyaziDiliDegisti,
     this.hiz = 1,
     this.hizDegisti,
     this.efekt,
@@ -165,6 +168,10 @@ class Oynatici extends StatefulWidget {
 
   /// Oynatıcıdaki altyazı düğmesi tercihi değiştirince (kalıcı kayıt için).
   final ValueChanged<bool>? altyaziDegisti;
+
+  /// Altyazının dili; alt çubuktaki TR/EN düğmesi değiştirir.
+  final String altyaziDili;
+  final ValueChanged<String>? altyaziDiliDegisti;
 
   /// Oynatma hızı (bkz. [oynatmaHizlari]); saat ve anlatım sesi birlikte hızlanır.
   final double hiz;
@@ -924,6 +931,30 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                       widget.altyaziDegisti?.call(_altyazi);
                     },
                   ),
+                  if (widget.altyaziDiliDegisti != null)
+                    TextButton(
+                      onPressed: () {
+                        final yeni = widget.altyaziDili == 'tr' ? 'en' : 'tr';
+                        widget.altyaziDiliDegisti!(yeni);
+                        // Dil seçen altyazıyı görmek ister.
+                        if (!_altyazi) {
+                          setState(() => _altyazi = true);
+                          widget.altyaziDegisti?.call(true);
+                        }
+                      },
+                      style: TextButton.styleFrom(
+                        foregroundColor: beyaz,
+                        minimumSize: const Size(44, 40),
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
+                      ),
+                      child: Tooltip(
+                        message: m.altyaziDili,
+                        child: Text(
+                          widget.altyaziDili.toUpperCase(),
+                          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700, letterSpacing: 0.8),
+                        ),
+                      ),
+                    ),
                   if (konum.sahne.sahne.sahislar.isNotEmpty)
                     IconButton(
                       tooltip: m.sahislar,

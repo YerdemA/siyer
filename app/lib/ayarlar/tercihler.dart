@@ -116,9 +116,13 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
     await (await SharedPreferences.getInstance()).setString(_altyaziDili, dil);
   }
 
+  /// Uygulama dili değişince altyazı da o dile geçer (oynatıcıdan ayrıca
+  /// değiştirilebilir).
   Future<void> arayuzDiliSec(String dil) async {
-    state = AsyncData((state.value ?? const Tercihler()).kopya(arayuzDili: dil));
-    await (await SharedPreferences.getInstance()).setString(_arayuzDili, dil);
+    state = AsyncData((state.value ?? const Tercihler()).kopya(arayuzDili: dil, altyaziDili: dil));
+    final p = await SharedPreferences.getInstance();
+    await p.setString(_arayuzDili, dil);
+    await p.setString(_altyaziDili, dil);
   }
 
   Future<void> efektSesleriSec(bool acik) async {
