@@ -349,4 +349,7 @@ class MetinlerTr extends Metinler {
 
   @override
   String get altyaziDili => 'Altyazı dili';
+
+  @override
+  String get uygulamaDili => 'Uygulama dili';
 }

@@ -362,6 +362,22 @@ void main() {
     expect(find.byType(DevamKarti), findsNothing);
   });
 
+  testWidgets('uygulama dili İngilizce ise bölüm adı çeviriden gelir', (tester) async {
+    SharedPreferences.setMockInitialValues({'tercih.arayuzDili': 'en'});
+    final c = ProviderContainer(overrides: [
+      bolumListesiProvider.overrideWith((_) async => [_bolum()]),
+      altyaziCevirisiProvider.overrideWith(
+        (ref, a) async => const AltyaziCevirisi(baslik: 'Test Episode', ozet: 'Short.', sahneler: {}),
+      ),
+    ]);
+    addTearDown(c.dispose);
+    await c.read(tercihlerProvider.future);
+    final b = _bolum();
+    expect(b.cevirisiyle(const AltyaziCevirisi(baslik: 'Test Episode', ozet: '', sahneler: {})).baslik, 'Test Episode');
+    expect(b.cevirisiyle(const AltyaziCevirisi(baslik: 'Test Episode', ozet: '', sahneler: {})).ozet, b.ozet);
+    expect((await c.read(tercihlerProvider.future)).arayuzDili, 'en');
+  });
+
   testWidgets('yolun sonunda sıradaki dönem "Yakında" kartı', (tester) async {
     await tester.pumpWidget(_sar(const Scaffold(body: BolumYolu())));
     await tester.pumpAndSettle();
@@ -383,6 +399,8 @@ void main() {
     expect(find.byType(HaritaGecisi), findsNothing);
 
     await tester.pumpWidget(_sar(const AyarlarEkrani()));
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Hareketi azalt'), 100);
     await tester.pumpAndSettle();
     await tester.tap(find.text('Hareketi azalt'));
     await tester.pumpAndSettle();

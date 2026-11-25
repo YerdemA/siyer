@@ -23,6 +23,22 @@ class AyarlarEkrani extends ConsumerWidget {
       appBar: AppBar(title: Text(m.ayarlar)),
       body: ListView(
         children: [
+          ListTile(
+            leading: const Icon(Icons.language),
+            title: Text(m.uygulamaDili),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: SegmentedButton<String>(
+                showSelectedIcon: false,
+                segments: const [
+                  ButtonSegment(value: 'tr', label: Text('Türkçe')),
+                  ButtonSegment(value: 'en', label: Text('English')),
+                ],
+                selected: {tercih.arayuzDili},
+                onSelectionChanged: (s) => depo.arayuzDiliSec(s.first),
+              ),
+            ),
+          ),
           SwitchListTile(
             secondary: const Icon(Icons.subtitles_outlined),
             title: Text(m.altyazi),

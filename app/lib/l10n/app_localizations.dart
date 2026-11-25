@@ -684,6 +684,12 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Altyazı dili'**
   String get altyaziDili;
+
+  /// No description provided for @uygulamaDili.
+  ///
+  /// In tr, this message translates to:
+  /// **'Uygulama dili'**
+  String get uygulamaDili;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

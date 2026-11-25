@@ -364,6 +364,17 @@ class Bolum {
   final List<Sahne> sahneler;
   final List<Iddia> iddialar;
 
+  /// Başlığı ve özeti başka dildeki çeviriyle değiştirilmiş kopya.
+  Bolum cevirisiyle(AltyaziCevirisi c) => Bolum(
+        id: id,
+        sira: sira,
+        baslik: c.baslik.isEmpty ? baslik : c.baslik,
+        ozet: c.ozet.isEmpty ? ozet : c.ozet,
+        durum: durum,
+        sahneler: sahneler,
+        iddialar: iddialar,
+      );
+
   /// Bölüm sonunda gösterilecek tekil atıflar, ilk geçiş sırasıyla.
   List<Atif> get tumAtiflar {
     final gorulen = <String>{};

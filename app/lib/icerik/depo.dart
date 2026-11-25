@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../ayarlar/tercihler.dart';
 import 'model.dart';
 
 /// Metinler (JSON) uygulamayla gelir; ilk bölüm dışındaki bölümlerin ses ve
@@ -16,8 +17,17 @@ Future<Map<String, dynamic>> _json(String yol) async =>
     jsonDecode(await rootBundle.loadString(yol)) as Map<String, dynamic>;
 
 final bolumProvider = FutureProvider.family<Bolum, String>(
-  (ref, id) async => Bolum.fromJson(await _json('$_kok/bolumler/$id.json')),
+  (ref, id) async => _yerellestir(ref, Bolum.fromJson(await _json('$_kok/bolumler/$id.json'))),
 );
+
+/// Arayüz dili Türkçe değilse bölümün başlığı ve özeti o dildeki altyazı
+/// çevirisinden gelir (varsa). Anlatım ve kayıtlar Türkçe kalır.
+Future<Bolum> _yerellestir(Ref ref, Bolum b) async {
+  final dil = ref.watch(tercihlerProvider.select((t) => t.value?.arayuzDili ?? icerikDili));
+  if (dil == icerikDili) return b;
+  final c = await ref.watch(altyaziCevirisiProvider((b.id, dil)).future);
+  return c == null ? b : b.cevirisiyle(c);
+}
 
 /// Bölümün [dil]deki altyazısı; dil Türkçe ya da çeviri yoksa null.
 final altyaziCevirisiProvider =
@@ -40,7 +50,7 @@ final bolumListesiProvider = FutureProvider<List<Bolum>>((ref) async {
   final yollar = (await ref.watch(varliklarProvider.future))
       .where((y) => y.startsWith('$_kok/bolumler/') && y.endsWith('.json'))
       .where((y) => !y.split('/').last.startsWith('_'));
-  final bolumler = [for (final y in yollar) Bolum.fromJson(await _json(y))]
+  final bolumler = [for (final y in yollar) await _yerellestir(ref, Bolum.fromJson(await _json(y)))]
     ..sort((a, b) => a.sira.compareTo(b.sira));
   return bolumler;
 });

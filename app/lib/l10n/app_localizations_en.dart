@@ -351,4 +351,7 @@ class MetinlerEn extends Metinler {
 
   @override
   String get altyaziDili => 'Subtitle language';
+
+  @override
+  String get uygulamaDili => 'App language';
 }

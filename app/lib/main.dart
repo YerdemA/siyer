@@ -8,6 +8,7 @@ import 'ekranlar/ana_sayfa.dart';
 import 'ekranlar/ayarlar.dart';
 import 'ekranlar/harita.dart';
 import 'ekranlar/sahislar.dart';
+import 'ayarlar/tercihler.dart';
 import 'ekranlar/zaman_cizelgesi.dart';
 import 'l10n/app_localizations.dart';
 import 'oynatici/oynatici_ekrani.dart';
@@ -51,15 +52,16 @@ final _yonlendirici = GoRouter(
   ],
 );
 
-class Uygulama extends StatelessWidget {
+class Uygulama extends ConsumerWidget {
   const Uygulama({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final dil = ref.watch(tercihlerProvider.select((t) => t.value?.arayuzDili ?? 'tr'));
     return MaterialApp.router(
       onGenerateTitle: (context) => Metinler.of(context).uygulamaAdi,
       routerConfig: _yonlendirici,
-      locale: const Locale('tr'),
+      locale: Locale(dil),
       supportedLocales: Metinler.supportedLocales,
       localizationsDelegates: const [
         Metinler.delegate,
