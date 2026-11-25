@@ -678,6 +678,12 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Bölümlerde anlatımın altında kısık fon müziği ve rüzgâr, kalabalık gibi sesler.'**
   String get fonSesiAciklama;
+
+  /// No description provided for @altyaziDili.
+  ///
+  /// In tr, this message translates to:
+  /// **'Altyazı dili'**
+  String get altyaziDili;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

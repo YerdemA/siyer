@@ -346,4 +346,7 @@ class MetinlerTr extends Metinler {
   @override
   String get fonSesiAciklama =>
       'Bölümlerde anlatımın altında kısık fon müziği ve rüzgâr, kalabalık gibi sesler.';
+
+  @override
+  String get altyaziDili => 'Altyazı dili';
 }

@@ -93,6 +93,9 @@ class OynaticiEkrani extends ConsumerWidget {
             baslangicCekimi: baslangicCekimi,
             duraklatilmis: duraklatilmis,
             medyaKarti: ref.read(medyaKartiProvider),
+            altyaziCevirisi: ref
+                .watch(altyaziCevirisiProvider((bolumId, ref.read(tercihlerProvider).value?.altyaziDili ?? 'tr')))
+                .value,
             fonFabrikasi: (ref.read(tercihlerProvider).value?.fonSesi ?? true) ? ref.read(fonSesiFabrikasi) : null,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
@@ -139,7 +142,11 @@ class Oynatici extends StatefulWidget {
     this.ekran = const Ekran(),
     this.medyaKarti = const SessizMedyaKarti(),
     this.fonFabrikasi,
+    this.altyaziCevirisi,
   });
+
+  /// Altyazı başka dilde seçildiyse çevirisi; parçası çevrilmemişse Türkçesi.
+  final AltyaziCevirisi? altyaziCevirisi;
 
   /// Fon müziği ve ortam sesi; verilmezse (testler, Ayarlar'da kapalı) sessiz.
   final FonSesi Function()? fonFabrikasi;
@@ -734,6 +741,10 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                     if ((_altyazi || !konum.sahne.sesli) && konum.parca != null)
                       _Altyazi(
                         parca: konum.parca!,
+                        metin: widget.altyaziCevirisi?.parca(
+                          konum.sahne.sahne.id,
+                          konum.sahne.sahne.anlatim.indexOf(konum.parca!.parca),
+                        ),
                         an: _an,
                         olcek: widget.altyaziOlcegi,
                         // Kontroller gizliyken altyazı kenara iner, görüntüyü az örter.
@@ -1039,7 +1050,10 @@ class _CubukCizici extends CustomPainter {
 }
 
 class _Altyazi extends StatelessWidget {
-  const _Altyazi({required this.parca, required this.an, this.olcek = 1, this.alt = 64});
+  const _Altyazi({required this.parca, required this.an, this.metin, this.olcek = 1, this.alt = 64});
+
+  /// Gösterilecek metin; null ise parçanın kendi (Türkçe) metni.
+  final String? metin;
 
   final ParcaZamani parca;
   final double alt;
@@ -1063,7 +1077,7 @@ class _Altyazi extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
             decoration: BoxDecoration(color: const Color(0x99000000), borderRadius: BorderRadius.circular(6)),
             child: Text(
-              parca.parca.metin,
+              metin ?? parca.parca.metin,
               textAlign: TextAlign.center,
               style: TextStyle(color: const Color(0xFFF4EEE2), fontSize: 18 * olcek, height: 1.35),
             ),

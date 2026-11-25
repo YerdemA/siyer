@@ -13,6 +13,9 @@ enum AltyaziBoyutu {
   final double olcek;
 }
 
+/// Seçilebilen altyazı dilleri.
+const altyaziDilleri = ['tr', 'en'];
+
 /// Oynatıcıdaki hız düğmesinin sırayla geçtiği hızlar.
 const oynatmaHizlari = [1.0, 1.5, 2.0];
 
@@ -21,6 +24,7 @@ class Tercihler {
   const Tercihler({
     this.altyazi = AltyaziBoyutu.orta,
     this.altyaziAcik = false,
+    this.altyaziDili = 'tr',
     this.efektSesleri = true,
     this.fonSesi = true,
     this.hareketiAzalt = false,
@@ -32,6 +36,9 @@ class Tercihler {
   /// Sesli sahnelerde altyazı. Varsayılan kapalı: animasyonu örtmesin
   /// (Erdem, 2026-11-21). Sesi olmayan sahnede metin her zaman görünür.
   final bool altyaziAcik;
+
+  /// Altyazının dili (`tr`, `en`); anlatım sesi her zaman Türkçe.
+  final String altyaziDili;
   final bool efektSesleri;
 
   /// Bölümlerde fon müziği ve ortam sesi.
@@ -46,6 +53,7 @@ class Tercihler {
   Tercihler kopya({
     AltyaziBoyutu? altyazi,
     bool? altyaziAcik,
+    String? altyaziDili,
     bool? efektSesleri,
     bool? fonSesi,
     bool? hareketiAzalt,
@@ -54,6 +62,7 @@ class Tercihler {
       Tercihler(
         altyazi: altyazi ?? this.altyazi,
         altyaziAcik: altyaziAcik ?? this.altyaziAcik,
+        altyaziDili: altyaziDili ?? this.altyaziDili,
         efektSesleri: efektSesleri ?? this.efektSesleri,
         fonSesi: fonSesi ?? this.fonSesi,
         hareketiAzalt: hareketiAzalt ?? this.hareketiAzalt,
@@ -64,6 +73,7 @@ class Tercihler {
 class TercihDeposu extends AsyncNotifier<Tercihler> {
   static const _altyazi = 'tercih.altyazi';
   static const _altyaziAcik = 'tercih.altyaziAcik';
+  static const _altyaziDili = 'tercih.altyaziDili';
   static const _efekt = 'tercih.efekt';
   static const _fon = 'tercih.fonSesi';
   static const _hareket = 'tercih.hareketiAzalt';
@@ -75,6 +85,7 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
     return Tercihler(
       altyazi: AltyaziBoyutu.values.where((b) => b.name == p.getString(_altyazi)).firstOrNull ?? AltyaziBoyutu.orta,
       altyaziAcik: p.getBool(_altyaziAcik) ?? false,
+      altyaziDili: altyaziDilleri.contains(p.getString(_altyaziDili)) ? p.getString(_altyaziDili)! : 'tr',
       efektSesleri: p.getBool(_efekt) ?? true,
       fonSesi: p.getBool(_fon) ?? true,
       hareketiAzalt: p.getBool(_hareket) ?? false,
@@ -90,6 +101,11 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   Future<void> altyaziAcikSec(bool acik) async {
     state = AsyncData((state.value ?? const Tercihler()).kopya(altyaziAcik: acik));
     await (await SharedPreferences.getInstance()).setBool(_altyaziAcik, acik);
+  }
+
+  Future<void> altyaziDiliSec(String dil) async {
+    state = AsyncData((state.value ?? const Tercihler()).kopya(altyaziDili: dil));
+    await (await SharedPreferences.getInstance()).setString(_altyaziDili, dil);
   }
 
   Future<void> efektSesleriSec(bool acik) async {

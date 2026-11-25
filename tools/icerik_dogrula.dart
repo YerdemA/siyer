@@ -116,8 +116,10 @@ void main(List<String> args) {
           .listSync()
           .whereType<Directory>()
           .map((d) => d.uri.pathSegments.lastWhere((s) => s.isNotEmpty))
-          // `gorseller/` dilden bağımsız görsellerdir, dil klasörü değil.
-          .where((ad) => ad != 'gorseller')
+          // `gorseller/` ve `fon/` dilden bağımsızdır; yalnız altyazısı olan
+          // dil (ör. `en/altyazi/`) tam içerik dili sayılmaz.
+          .where((ad) => ad != 'gorseller' && ad != 'fon')
+          .where((ad) => Directory('$kok/$ad/bolumler').existsSync())
           .toList()
         ..sort();
   if (diller.isEmpty) rapor.hata(kok, 'dil klasörü yok (ör. content/tr)');
@@ -126,6 +128,7 @@ void main(List<String> args) {
     for (final dil in diller) diliDenetle(Directory('$kok/$dil'), dil, rapor),
   ];
   dilleriKarsilastir(icerikler, rapor);
+  if (icerikler.isNotEmpty) altyazilariDenetle(kokKlasor, icerikler.first, rapor);
   final bolumSayisi = icerikler.fold(0, (t, i) => t + i.bolumler.length);
   if (yayin && bolumSayisi == 0) rapor.hata(kok, 'yayımlanacak bölüm yok');
 
@@ -799,6 +802,73 @@ void dilleriKarsilastir(List<DilIcerigi> icerikler, Rapor rapor) {
 
       fark('sahne', esasOzet.sahneler, digerOzet.sahneler);
       fark('iddia', esasOzet.iddialar, digerOzet.iddialar);
+    }
+  }
+}
+
+// ------------------------------------------------------------ altyazı çevirileri
+
+/// `content/<dil>/altyazi/<bölüm>.json`: anlatım Türkçe kalır, altyazı çevrilir.
+/// Her sahnenin parça sayısı esas dildekiyle aynı olmalı. Eksik çeviri
+/// geliştirmede uyarı, yayında hata.
+void altyaziDenetle(String yol, Map<String, dynamic> j, Map<String, int> parcalar, Rapor rapor) {
+  if (metin(j, 'baslik').isEmpty) rapor.yayinHatasi(yol, '`baslik` boş');
+  if (metin(j, 'ozet').isEmpty) rapor.yayinHatasi(yol, '`ozet` boş');
+  final s = j['sahneler'];
+  if (s is! Map<String, dynamic>) {
+    rapor.hata(yol, '`sahneler` nesne olmalı: {"<sahne>": ["parça", ...]}');
+    return;
+  }
+  for (final e in s.entries) {
+    final beklenen = parcalar[e.key];
+    if (beklenen == null) {
+      rapor.hata(yol, 'bölümde olmayan sahne: ${e.key}');
+    } else if (e.value is! List || (e.value as List).length != beklenen ||
+        (e.value as List).any((x) => x is! String || x.trim().isEmpty)) {
+      rapor.hata('$yol ${e.key}', '$beklenen dolu metin olmalı (anlatım parçalarıyla aynı sırada)');
+    }
+  }
+  final eksik = parcalar.keys.where((k) => !s.containsKey(k)).length;
+  if (eksik > 0) rapor.yayinHatasi(yol, '$eksik sahnenin çevirisi yok');
+}
+
+void altyazilariDenetle(Directory kok, DilIcerigi esas, Rapor rapor) {
+  final bolumYollari = <String, String>{
+    for (final f in Directory('${kok.path}/${esas.dil}/bolumler').listSync().whereType<File>())
+      if (f.path.endsWith('.json') && !f.uri.pathSegments.last.startsWith('_'))
+        f.uri.pathSegments.last.replaceAll('.json', ''): f.path,
+  };
+  for (final dil in kok.listSync().whereType<Directory>()) {
+    final klasor = Directory('${dil.path}/altyazi');
+    if (!klasor.existsSync()) continue;
+    final dilAdi = dil.uri.pathSegments.lastWhere((s) => s.isNotEmpty);
+    final cevrilen = <String>{};
+    for (final f in klasor.listSync().whereType<File>().where((f) => f.path.endsWith('.json'))) {
+      final ad = f.uri.pathSegments.last.replaceAll('.json', '');
+      final yol = f.path.replaceAll(r'\', '/');
+      final bolum = bolumYollari[ad];
+      if (bolum == null) {
+        rapor.hata(yol, 'bu adda bölüm yok (${esas.dil}/bolumler/$ad.json)');
+        continue;
+      }
+      cevrilen.add(ad);
+      final Map<String, dynamic> j, b;
+      try {
+        j = jsonDecode(f.readAsStringSync()) as Map<String, dynamic>;
+        b = jsonDecode(File(bolum).readAsStringSync()) as Map<String, dynamic>;
+      } catch (e) {
+        rapor.hata(yol, 'okunamadı: $e');
+        continue;
+      }
+      final parcalar = <String, int>{
+        for (final s in (b['sahneler'] as List? ?? const []).whereType<Map<String, dynamic>>())
+          metin(s, 'id'): (s['anlatim'] as List? ?? const []).length,
+      };
+      altyaziDenetle(yol, j, parcalar, rapor);
+    }
+    final eksik = bolumYollari.keys.where((k) => !cevrilen.contains(k)).toList()..sort();
+    if (eksik.isNotEmpty) {
+      rapor.yayinHatasi('${kok.path}/$dilAdi/altyazi', '${eksik.length} bölümün altyazısı yok: ${eksik.join(', ')}');
     }
   }
 }

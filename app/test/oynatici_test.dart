@@ -65,6 +65,20 @@ void main() {
     expect(fon.kapandi, true);
   });
 
+  testWidgets('altyazı çevirisi varsa o gösterilir, eksik parçada Türkçesi', (tester) async {
+    final b = ornekBolum();
+    final ceviri = AltyaziCevirisi(baslik: 'Test', ozet: '', sahneler: {
+      b.sahneler[0].id: ['one two three', ...List.filled(b.sahneler[0].anlatim.length - 1, '')],
+    });
+    expect(ceviri.parca(b.sahneler[0].id, 0), 'one two three');
+    expect(ceviri.parca(b.sahneler[0].id, 99), isNull);
+    await tester.pumpWidget(_sar(Oynatici(bolum: b, kaynakca: kaynakca, altyaziCevirisi: ceviri)));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.text('one two three'), findsOneWidget);
+    expect(find.text('bir iki üç'), findsNothing);
+  });
+
   testWidgets('duraklatınca zaman durur', (tester) async {
     await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca)));
     await tester.pump(const Duration(milliseconds: 100));

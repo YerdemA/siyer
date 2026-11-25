@@ -199,6 +199,35 @@ class Gorsel {
       katmanlar.any((k) => k.dosya.isEmpty && !efektler.contains(k.yerTutucu));
 }
 
+/// Bir bölümün başka dildeki altyazısı (`content/<dil>/altyazi/<bölüm>.json`):
+/// anlatım sesi Türkçe kalır, yalnız yazı değişir. Sahne başına anlatım
+/// parçalarının sırasıyla metinleri.
+class AltyaziCevirisi {
+  const AltyaziCevirisi({required this.baslik, required this.ozet, required this.sahneler});
+
+  factory AltyaziCevirisi.fromJson(Map<String, dynamic> j) {
+    final s = j['sahneler'] is Map<String, dynamic> ? j['sahneler'] as Map<String, dynamic> : const {};
+    return AltyaziCevirisi(
+      baslik: _metin(j, 'baslik'),
+      ozet: _metin(j, 'ozet'),
+      sahneler: {
+        for (final e in s.entries)
+          if (e.value is List) e.key: (e.value as List).whereType<String>().toList(),
+      },
+    );
+  }
+
+  final String baslik;
+  final String ozet;
+  final Map<String, List<String>> sahneler;
+
+  /// Sahnenin [sira]. parçasının çevirisi; yoksa null (Türkçesi gösterilir).
+  String? parca(String sahneId, int sira) {
+    final l = sahneler[sahneId];
+    return l != null && sira >= 0 && sira < l.length && l[sira].isNotEmpty ? l[sira] : null;
+  }
+}
+
 class AnlatimParcasi {
   const AnlatimParcasi({required this.metin, required this.iddialar});
 

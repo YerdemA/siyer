@@ -47,6 +47,22 @@ class AyarlarEkrani extends ConsumerWidget {
               ),
             ),
           ),
+          ListTile(
+            leading: const Icon(Icons.translate),
+            title: Text(m.altyaziDili),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 8),
+              child: SegmentedButton<String>(
+                showSelectedIcon: false,
+                segments: const [
+                  ButtonSegment(value: 'tr', label: Text('Türkçe')),
+                  ButtonSegment(value: 'en', label: Text('English')),
+                ],
+                selected: {tercih.altyaziDili},
+                onSelectionChanged: (s) => depo.altyaziDiliSec(s.first),
+              ),
+            ),
+          ),
           SwitchListTile(
             secondary: const Icon(Icons.queue_music_outlined),
             title: Text(m.fonSesi),

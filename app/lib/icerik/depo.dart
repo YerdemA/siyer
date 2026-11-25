@@ -19,6 +19,16 @@ final bolumProvider = FutureProvider.family<Bolum, String>(
   (ref, id) async => Bolum.fromJson(await _json('$_kok/bolumler/$id.json')),
 );
 
+/// Bölümün [dil]deki altyazısı; dil Türkçe ya da çeviri yoksa null.
+final altyaziCevirisiProvider =
+    FutureProvider.family<AltyaziCevirisi?, (String, String)>((ref, a) async {
+  final (bolumId, dil) = a;
+  if (dil == icerikDili) return null;
+  final yol = 'assets/icerik/$dil/altyazi/$bolumId.json';
+  if (!(await ref.watch(varliklarProvider.future)).contains(yol)) return null;
+  return AltyaziCevirisi.fromJson(await _json(yol));
+});
+
 /// Uygulamaya paketlenmiş bütün dosya yolları.
 final varliklarProvider = FutureProvider<Set<String>>((ref) async {
   final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
