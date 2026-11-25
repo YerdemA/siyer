@@ -630,7 +630,9 @@ BolumOzeti bolumuDenetle(
 
   if (fonEksik.isNotEmpty) {
     final l = fonEksik.toList()..sort();
-    rapor.yayinHatasi(yol, '${l.length} fon sesi dosyası yok (content/fon/): ${l.join(', ')}');
+    // Oynatıcı eksik fon sesini atlar: kapalı testte uyarı, herkese açık yayında hata.
+    final mesaj = '${l.length} fon sesi dosyası yok (content/fon/): ${l.join(', ')}';
+    rapor.kapaliTest ? rapor.uyari(yol, mesaj) : rapor.yayinHatasi(yol, mesaj);
   }
   if (sesYok > 0) {
     rapor.yayinHatasi(yol, '$sesYok sahnenin anlatım sesi bulunamadı (süre metinden tahmin edilir)');
