@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kilit ekranı kartının düğme simgeleri (audio_service) adla aranır
+     (getIdentifier); yayın derlemesindeki kaynak küçültme onları görmez ve
+     siler, düğmeler kartta görünmez. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/audio_service_*" />
