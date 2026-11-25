@@ -226,6 +226,8 @@ class Sahne {
     required this.anlatim,
     required this.gorsel,
     required this.sesAnlatim,
+    this.muzik = '',
+    this.ortam = '',
     this.sesDuraklar = const [],
     this.sahislar = const [],
     this.yer = '',
@@ -242,6 +244,8 @@ class Sahne {
           ? Gorsel.fromJson(j['gorsel'] as Map<String, dynamic>)
           : const Gorsel(tarif: '', saat: 'gunduz', katmanlar: [], kamera: ''),
       sesAnlatim: _metin(ses, 'anlatim'),
+      muzik: _metin(ses, 'muzik'),
+      ortam: _metin(ses, 'ortam'),
       sesDuraklar: [
         for (final d in _nesneler(ses, 'duraklar'))
           if (d['an'] is num && d['sure'] is num)
@@ -256,6 +260,11 @@ class Sahne {
   final List<AnlatimParcasi> anlatim;
   final Gorsel gorsel;
   final String sesAnlatim;
+
+  /// Fon müziğinin ve ortam sesinin adı (`content/fon/muzik/<ad>.mp3`,
+  /// `content/fon/ortam/<ad>.mp3`); boşsa o kanal sessiz.
+  final String muzik;
+  final String ortam;
 
   /// Anlatım sesindeki duraklar, sırayla (docs/ICERIK_SEMASI.md → ses).
   final List<SesDuragi> sesDuraklar;

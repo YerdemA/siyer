@@ -22,6 +22,7 @@ class Tercihler {
     this.altyazi = AltyaziBoyutu.orta,
     this.altyaziAcik = false,
     this.efektSesleri = true,
+    this.fonSesi = true,
     this.hareketiAzalt = false,
     this.hiz = 1,
   });
@@ -33,17 +34,28 @@ class Tercihler {
   final bool altyaziAcik;
   final bool efektSesleri;
 
+  /// Bölümlerde fon müziği ve ortam sesi.
+  final bool fonSesi;
+
   /// Kart ve harita animasyonları kısalır (erişilebilirlik).
   final bool hareketiAzalt;
 
   /// Oynatma hızı; [oynatmaHizlari]'ndan biri.
   final double hiz;
 
-  Tercihler kopya({AltyaziBoyutu? altyazi, bool? altyaziAcik, bool? efektSesleri, bool? hareketiAzalt, double? hiz}) =>
+  Tercihler kopya({
+    AltyaziBoyutu? altyazi,
+    bool? altyaziAcik,
+    bool? efektSesleri,
+    bool? fonSesi,
+    bool? hareketiAzalt,
+    double? hiz,
+  }) =>
       Tercihler(
         altyazi: altyazi ?? this.altyazi,
         altyaziAcik: altyaziAcik ?? this.altyaziAcik,
         efektSesleri: efektSesleri ?? this.efektSesleri,
+        fonSesi: fonSesi ?? this.fonSesi,
         hareketiAzalt: hareketiAzalt ?? this.hareketiAzalt,
         hiz: hiz ?? this.hiz,
       );
@@ -53,6 +65,7 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   static const _altyazi = 'tercih.altyazi';
   static const _altyaziAcik = 'tercih.altyaziAcik';
   static const _efekt = 'tercih.efekt';
+  static const _fon = 'tercih.fonSesi';
   static const _hareket = 'tercih.hareketiAzalt';
   static const _hiz = 'tercih.hiz';
 
@@ -63,6 +76,7 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
       altyazi: AltyaziBoyutu.values.where((b) => b.name == p.getString(_altyazi)).firstOrNull ?? AltyaziBoyutu.orta,
       altyaziAcik: p.getBool(_altyaziAcik) ?? false,
       efektSesleri: p.getBool(_efekt) ?? true,
+      fonSesi: p.getBool(_fon) ?? true,
       hareketiAzalt: p.getBool(_hareket) ?? false,
       hiz: oynatmaHizlari.contains(p.getDouble(_hiz)) ? p.getDouble(_hiz)! : 1,
     );
@@ -81,6 +95,11 @@ class TercihDeposu extends AsyncNotifier<Tercihler> {
   Future<void> efektSesleriSec(bool acik) async {
     state = AsyncData((state.value ?? const Tercihler()).kopya(efektSesleri: acik));
     await (await SharedPreferences.getInstance()).setBool(_efekt, acik);
+  }
+
+  Future<void> fonSesiSec(bool acik) async {
+    state = AsyncData((state.value ?? const Tercihler()).kopya(fonSesi: acik));
+    await (await SharedPreferences.getInstance()).setBool(_fon, acik);
   }
 
   Future<void> hareketiAzaltSec(bool acik) async {

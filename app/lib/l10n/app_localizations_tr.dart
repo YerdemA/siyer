@@ -339,4 +339,11 @@ class MetinlerTr extends Metinler {
 
   @override
   String get yakindaAlt => 'Yakında';
+
+  @override
+  String get fonSesi => 'Müzik ve ortam sesi';
+
+  @override
+  String get fonSesiAciklama =>
+      'Bölümlerde anlatımın altında kısık fon müziği ve rüzgâr, kalabalık gibi sesler.';
 }

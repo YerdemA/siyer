@@ -666,6 +666,18 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Yakında'**
   String get yakindaAlt;
+
+  /// No description provided for @fonSesi.
+  ///
+  /// In tr, this message translates to:
+  /// **'Müzik ve ortam sesi'**
+  String get fonSesi;
+
+  /// No description provided for @fonSesiAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölümlerde anlatımın altında kısık fon müziği ve rüzgâr, kalabalık gibi sesler.'**
+  String get fonSesiAciklama;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

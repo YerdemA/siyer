@@ -467,6 +467,8 @@ BolumOzeti bolumuDenetle(
   final kullanilan = <String>{};
   var yerTutucuKatman = 0;
   var sesYok = 0;
+  // Fon müziği ve ortam sesi: content/fon/<kanal>/<ad>.mp3 (bütün dillerde ortak).
+  final fonEksik = <String>{};
   final sahneler = liste(b, 'sahneler', yol, rapor);
   if (sahneler.isEmpty && b['sahneler'] is List) {
     rapor.yayinHatasi(yol, 'bölümde sahne yok');
@@ -584,6 +586,13 @@ BolumOzeti bolumuDenetle(
       sesYok++;
     }
     if (ses is Map<String, dynamic>) {
+      final icerik = File(yol).parent.parent.parent.path;
+      for (final kanal in ['muzik', 'ortam']) {
+        final ad = metin(ses, kanal);
+        if (ad.isNotEmpty && !File('$icerik/fon/$kanal/$ad.mp3').existsSync()) fonEksik.add('$kanal/$ad');
+      }
+    }
+    if (ses is Map<String, dynamic>) {
       // Duraklar: sesin içindeki an (saniye, bir sessizliğin ortası) ve bekleme süresi.
       var oncekiAn = -1.0;
       for (final (j, d) in nesneler(liste(ses, 'duraklar', yer, rapor, zorunlu: false), '$yer ses.duraklar', rapor)) {
@@ -616,6 +625,10 @@ BolumOzeti bolumuDenetle(
     }
   }
 
+  if (fonEksik.isNotEmpty) {
+    final l = fonEksik.toList()..sort();
+    rapor.yayinHatasi(yol, '${l.length} fon sesi dosyası yok (content/fon/): ${l.join(', ')}');
+  }
   if (sesYok > 0) {
     rapor.yayinHatasi(yol, '$sesYok sahnenin anlatım sesi bulunamadı (süre metinden tahmin edilir)');
   }

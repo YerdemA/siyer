@@ -15,6 +15,8 @@
 //   isteğe bağlı): o bölümün kullanıp uygulamada olmayan ses ve görselleri.
 //   Birden çok bölümün kullandığı görsel her birinin paketine kopyalanır;
 //   her paket tek başına yeter.
+// - Fon müziği ve ortam sesleri (`content/fon/`) bütün bölümlerde ortak;
+//   hep uygulamaya gömülür.
 // Paket içindeki yol, gömülü kopyadaki yolla aynıdır
 // (`<paket>/gorseller/x.webp` ↔ `assets/icerik/gorseller/x.webp`).
 
@@ -87,9 +89,11 @@ void main() {
 
   // Henüz görsel ya da ses yokken de klasörler bulunmalı; pubspec bunları listeler.
   Directory('${gomulu.path}/gorseller/sahislar').createSync(recursive: true);
+  Directory('${gomulu.path}/fon/muzik').createSync(recursive: true);
+  Directory('${gomulu.path}/fon/ortam').createSync(recursive: true);
   for (final dil in kaynak.listSync().whereType<Directory>()) {
     final ad = dil.uri.pathSegments.lastWhere((s) => s.isNotEmpty);
-    if (ad == 'gorseller') continue;
+    if (ad == 'gorseller' || ad == 'fon') continue;
     Directory('${gomulu.path}/$ad/ses').createSync(recursive: true);
   }
 
@@ -108,7 +112,9 @@ void main() {
     // Üretim istemleri uygulamaya girmez.
     if (yol.contains('gorseller/istemler/') || yol.contains('ses/istemler/')) continue;
 
-    final medya = _medya.any(yol.toLowerCase().endsWith) && !yol.startsWith('gorseller/sahislar/');
+    final medya = _medya.any(yol.toLowerCase().endsWith) &&
+        !yol.startsWith('gorseller/sahislar/') &&
+        !yol.startsWith('fon/');
     final paketleri = kullanan[yol] ?? const <String>{};
     if (!medya || paketleri.any(gomuluBolumler.contains)) {
       kopyala(varlik, '${gomulu.path}/$yol');

@@ -48,6 +48,13 @@ class AyarlarEkrani extends ConsumerWidget {
             ),
           ),
           SwitchListTile(
+            secondary: const Icon(Icons.queue_music_outlined),
+            title: Text(m.fonSesi),
+            subtitle: Text(m.fonSesiAciklama),
+            value: tercih.fonSesi,
+            onChanged: depo.fonSesiSec,
+          ),
+          SwitchListTile(
             secondary: const Icon(Icons.music_note_outlined),
             title: Text(m.efektSesleri),
             subtitle: Text(m.efektSesleriAciklama),

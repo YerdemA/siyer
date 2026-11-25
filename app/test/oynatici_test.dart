@@ -4,9 +4,27 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:siyer/icerik/model.dart';
 import 'package:siyer/l10n/app_localizations.dart';
 import 'package:siyer/oynatici/ekran.dart';
+import 'package:siyer/oynatici/fon_sesi.dart';
 import 'package:siyer/oynatici/oynatici_ekrani.dart';
 
 import 'ornek_bolum.dart';
+
+/// Oynatıcının fon sesine verdiği son durum.
+class _SahteFon implements FonSesi {
+  String? muzik, ortam;
+  bool? oynuyor;
+  bool kapandi = false;
+
+  @override
+  void guncelle({required String? muzik, required String? ortam, required bool oynuyor}) {
+    this.muzik = muzik;
+    this.ortam = ortam;
+    this.oynuyor = oynuyor;
+  }
+
+  @override
+  Future<void> kapat() async => kapandi = true;
+}
 
 Widget _sar(Widget w) => MaterialApp(
       locale: const Locale('tr'),
@@ -31,6 +49,20 @@ void main() {
     await tester.pump(const Duration(seconds: 1));
     expect(find.text('bir iki üç'), findsOneWidget);
     expect(find.textContaining('Sahne 1 / 2'), findsOneWidget);
+  });
+
+  testWidgets('fon sesi sahnenin müziğini ve ortamını çalar, duraklayınca susar', (tester) async {
+    final fon = _SahteFon();
+    await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca, fonFabrikasi: () => fon)));
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 100));
+    expect((fon.muzik, fon.ortam, fon.oynuyor), ('dusunceli', 'ruzgar', true));
+    await tester.tap(find.byTooltip('Duraklat'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(fon.oynuyor, false);
+    await tester.pumpWidget(const SizedBox());
+    expect(fon.kapandi, true);
   });
 
   testWidgets('duraklatınca zaman durur', (tester) async {

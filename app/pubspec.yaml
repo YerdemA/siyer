@@ -74,6 +74,8 @@ flutter:
     - assets/icerik/tr/ses/
     - assets/icerik/gorseller/
     - assets/icerik/gorseller/sahislar/
+    - assets/icerik/fon/muzik/
+    - assets/icerik/fon/ortam/
     - assets/sesler/
 
   # The following line ensures that the Material Icons font is

@@ -18,6 +18,7 @@ import '../hata_bildir.dart';
 import '../l10n/app_localizations.dart';
 import 'anlatim_sesi.dart';
 import 'ekran.dart';
+import 'fon_sesi.dart';
 import 'bolum_indirme.dart';
 import 'gorsel_onbellek.dart';
 import 'harita_gecisi.dart';
@@ -92,6 +93,7 @@ class OynaticiEkrani extends ConsumerWidget {
             baslangicCekimi: baslangicCekimi,
             duraklatilmis: duraklatilmis,
             medyaKarti: ref.read(medyaKartiProvider),
+            fonFabrikasi: (ref.read(tercihlerProvider).value?.fonSesi ?? true) ? ref.read(fonSesiFabrikasi) : null,
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
@@ -136,7 +138,11 @@ class Oynatici extends StatefulWidget {
     this.azHareket = false,
     this.ekran = const Ekran(),
     this.medyaKarti = const SessizMedyaKarti(),
+    this.fonFabrikasi,
   });
+
+  /// Fon müziği ve ortam sesi; verilmezse (testler, Ayarlar'da kapalı) sessiz.
+  final FonSesi Function()? fonFabrikasi;
 
   /// Kilit ekranı/bildirim kartı ve kulaklık tuşları; testlerde sessiz.
   final MedyaKarti medyaKarti;
@@ -200,6 +206,7 @@ class Oynatici extends StatefulWidget {
 class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin {
   late final ZamanPlani _plan = ZamanPlani.olustur(widget.bolum, sesSureleri: widget.sesSureleri);
   late final AnlatimSesi? _ses = widget.sesSureleri.isEmpty ? null : widget.sesFabrikasi?.call();
+  late final FonSesi _fon = widget.fonFabrikasi?.call() ?? const SessizFon();
   late final AppLifecycleListener _yasamDongusu;
   bool _sesIstegiSuruyor = false;
   late final Ticker _ticker;
@@ -284,6 +291,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     _arkaPlanSaati?.cancel();
     _sarmaSayaci?.cancel();
     _ses?.kapat();
+    _fon.kapat();
     _ticker.dispose();
     _gorseller.dispose();
     widget.ekran.acikTut(false);
@@ -350,6 +358,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
 
   void _ilerle(double dt) {
     _sesiEsitle();
+    _fonuEsitle();
     if (_arkaPlanda) _ilerlemeBildir(_plan.sahneSirasi(_an) + 1, hemen: true);
     if (_oynuyor && _gecis == null) {
       final sesAni = _sesSaati(dt);
@@ -595,6 +604,13 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
       case SesAra(:final konum):
         _sesIstegi(ses.ara(konum));
     }
+  }
+
+  /// Fon müziği ve ortam sesi o anki sahneninkidir; sahne değişince
+  /// yumuşakça geçer (aynı adsa kesintisiz sürer). Bölüm sonunda susar.
+  void _fonuEsitle() {
+    final s = _plan.sahneler[_plan.sahneSirasi(_an)].sahne;
+    _fon.guncelle(muzik: s.muzik, ortam: s.ortam, oynuyor: _oynuyor && _an < _plan.toplam);
   }
 
   /// Sessizlikte önceden yüklenecek dosya: sahnenin sesi henüz başlamadıysa

@@ -104,7 +104,8 @@ void main() {
     expect(find.textContaining('kaynaklar/eser.pdf'), findsNothing);
     expect(find.textContaining('Kaynak katmanı C'), findsOneWidget);
 
-    await tester.ensureVisible(find.text('İlerlemeyi sıfırla'));
+    await tester.scrollUntilVisible(find.text('İlerlemeyi sıfırla'), -200);
+    await tester.pumpAndSettle();
     await tester.tap(find.text('İlerlemeyi sıfırla'));
     await tester.pumpAndSettle();
     await tester.tap(find.text('Sıfırla'));

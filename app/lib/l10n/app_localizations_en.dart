@@ -341,4 +341,11 @@ class MetinlerEn extends Metinler {
 
   @override
   String get yakindaAlt => 'Coming soon';
+
+  @override
+  String get fonSesi => 'Music and ambience';
+
+  @override
+  String get fonSesiAciklama =>
+      'Soft background music and sounds such as wind and crowds under the narration.';
 }
