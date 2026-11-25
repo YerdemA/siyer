@@ -49,7 +49,6 @@ Harita kodla çizilir (`app/lib/ekranlar/harita.dart`, `harita_cografya.dart`): 
 
 ## Tutarlılık
 
-- Üretim yöntemi, katman tipleri, karakter kartları ve denetim akışı: `GORSEL_URETIM.md`.
 
 - Tek bir üslup istemi (style prompt) ve 5–10 referans görsel belirlenir; tüm üretimler bunlarla yapılır.
 - Tekrarlayan mekânlar (Mekke vadisi, Kâbe avlusu, Benî Sa'd yurdu, Hira) için sabit "mekân kartları" hazırlanır.

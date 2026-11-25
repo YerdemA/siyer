@@ -32,3 +32,34 @@ __pycache__/
 
 # Tasarım aracının yerel durumu
 .impeccable/
+
+# Yerel çalışma dosyaları (depoda değil, yalnız geliştiricinin diskinde):
+# Claude Code ayarları ve oturum notları, iç kontrol listeleri, görsel üretim
+# istemleri ve araçları, simge tasarım kaynakları, Play Console notları.
+CLAUDE.md
+DURUM.md
+YOL_HARITASI.md
+.claude/
+.mcp.json
+docs/ERDEM_KONTROL.md
+docs/NOTEBOOK_KURULUM.md
+docs/SCRAPLING_KURULUM.md
+docs/GORSEL_URETIM.md
+docs/DINAMIZM.md
+docs/BOLUM_METINLERI.md
+content/gorseller/istemler/
+tasarim/
+magaza/MAGAZA_METINLERI.md
+magaza/video/
+magaza/ekran-goruntuleri/ham/
+tools/gorsel_yardimci.py
+tools/gorsel_yardimci.ico
+tools/gorsel_al.py
+tools/gorsel_uret.py
+tools/istem_devir.py
+tools/dinamik_istemler.py
+tools/goz_dizisi.py
+tools/yuz_birlestir.py
+tools/portre_kirp.py
+tools/d1_yerlestir.py
+tools/bolum_metni.py

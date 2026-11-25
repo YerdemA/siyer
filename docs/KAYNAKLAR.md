@@ -4,8 +4,6 @@ Son kontrol: 13 Kasım 2026. Bağlantılar değişebilir; bulunamazsa eser adıy
 
 ## A. Yasal ve ücretsiz indirilebilenler
 
-Bu listedekiler Scrapling ile toplu edinilebilir: `docs/SCRAPLING_KURULUM.md`.
-
 ### Türkçe
 
 | #   | Eser                                        | Nereden                                                                                              | Not                                                                                                                                            |
@@ -73,4 +71,4 @@ Gemini Notebook (eski adıyla NotebookLM) ücretsiz planda not defteri başına 
 4. Çok ciltli eserlerin yalnızca ilgili ciltlerini yükle (peygamberlik öncesi: İbn Hişâm c. 1, İbn Sa'd c. 1, Taberî c. 2).
 5. Aynı PDF'leri depoda `kaynaklar/` klasörüne de koy (git'e girmez). MCP bağlantısı koparsa Claude Code doğrudan dosyadan okuyabilir.
 
-Kurulum adımları: `docs/NOTEBOOK_KURULUM.md`.
+
