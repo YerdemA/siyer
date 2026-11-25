@@ -312,4 +312,24 @@ class MetinlerEn extends Metinler {
 
   @override
   String get uygulamaylaGelir => 'Included with the app';
+
+  @override
+  String get hataBildir => 'Report a problem';
+
+  @override
+  String get hataBildirAciklama =>
+      'Seen a factual error, or an image or sound problem? Tell us by e-mail.';
+
+  @override
+  String get hataBildirKonu => 'The Life of the Prophet: problem report';
+
+  @override
+  String hataBildirGovde(String bilgi) {
+    return 'What did you notice? (wrong information, image, sound, app error)\n\n\n---\nPlease keep these lines, they help us find the problem:\n$bilgi';
+  }
+
+  @override
+  String hataBildirAcilamadi(String adres) {
+    return 'No e-mail app could be opened. You can send your report to $adres.';
+  }
 }

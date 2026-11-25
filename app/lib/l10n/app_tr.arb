@@ -3,27 +3,69 @@
   "uygulamaAdi": "Resulü Ekrem'in Hayatı",
   "bolumler": "Bölümler",
   "bolumNo": "Bölüm {no}",
-  "@bolumNo": { "placeholders": { "no": { "type": "int" } } },
+  "@bolumNo": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
   "taslak": "Taslak",
   "oynat": "Oynat",
   "duraklat": "Duraklat",
   "oncekiSahne": "Önceki sahne",
   "sonrakiSahne": "Sonraki sahne",
   "kartSahne": "Sahne {no}/{toplam}",
-  "@kartSahne": {"placeholders": {"no": {"type": "int"}, "toplam": {"type": "int"}}},
+  "@kartSahne": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      },
+      "toplam": {
+        "type": "int"
+      }
+    }
+  },
   "kartKanali": "Bölüm oynatma",
   "geri": "Geri",
   "tarifGoster": "Sahne tarifi",
   "oynatmaHizi": "Oynatma hızı",
   "saniyeIleri": "{sn} saniye ileri",
-  "@saniyeIleri": { "placeholders": { "sn": { "type": "int" } } },
+  "@saniyeIleri": {
+    "placeholders": {
+      "sn": {
+        "type": "int"
+      }
+    }
+  },
   "saniyeGeri": "{sn} saniye geri",
-  "@saniyeGeri": { "placeholders": { "sn": { "type": "int" } } },
+  "@saniyeGeri": {
+    "placeholders": {
+      "sn": {
+        "type": "int"
+      }
+    }
+  },
   "saniyeKisa": "{sn} sn",
-  "@saniyeKisa": { "placeholders": { "sn": { "type": "int" } } },
+  "@saniyeKisa": {
+    "placeholders": {
+      "sn": {
+        "type": "int"
+      }
+    }
+  },
   "altyazi": "Altyazı",
   "sahneSayaci": "Sahne {no} / {toplam}",
-  "@sahneSayaci": { "placeholders": { "no": { "type": "int" }, "toplam": { "type": "int" } } },
+  "@sahneSayaci": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      },
+      "toplam": {
+        "type": "int"
+      }
+    }
+  },
   "sesYok": "Anlatım sesi henüz yok; süre metinden tahmin ediliyor.",
   "yerTutucuUyari": "Görseller geçici yer tutucudur.",
   "bolumSonu": "Bölüm sonu",
@@ -31,18 +73,39 @@
   "dogrulamaBekliyor": "doğrulama bekliyor",
   "yenidenOynat": "Yeniden oynat",
   "yuklemeHatasi": "İçerik yüklenemedi: {hata}",
-  "@yuklemeHatasi": { "placeholders": { "hata": { "type": "String" } } },
+  "@yuklemeHatasi": {
+    "placeholders": {
+      "hata": {
+        "type": "String"
+      }
+    }
+  },
   "bolumYok": "Henüz bölüm yok. İçeriği kopyalamak için depo kökünde `dart run tools/icerik_esitle.dart` çalıştır.",
   "kamera": "Kamera",
   "katmanlar": "Katmanlar",
   "saat": "Saat",
   "tamamlandi": "Tamamlandı",
   "kaldiginYer": "Sahne {no} / {toplam} · kaldığın yerden devam",
-  "@kaldiginYer": { "placeholders": { "no": { "type": "int" }, "toplam": { "type": "int" } } },
+  "@kaldiginYer": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      },
+      "toplam": {
+        "type": "int"
+      }
+    }
+  },
   "ayarlar": "Ayarlar",
   "kaynakca": "Kaynakça",
   "kaynakKatmani": "Kaynak katmanı {katman}",
-  "@kaynakKatmani": { "placeholders": { "katman": { "type": "String" } } },
+  "@kaynakKatmani": {
+    "placeholders": {
+      "katman": {
+        "type": "String"
+      }
+    }
+  },
   "sahislar": "Şahıslar",
   "zamanCizelgesi": "Zaman çizelgesi",
   "kaynakBekliyor": "Kaynak bekliyor",
@@ -54,9 +117,21 @@
   "hakkindaMetni": "Ücretsizdir. Hesap, reklam ve analitik yoktur; ilerlemen yalnız bu cihazda saklanır. Uygulamadaki her tarihî bilgi kaynağına bağlıdır; kaynaklar bölüm sonlarında ve aşağıdaki kaynakçada listelenir.",
   "bulunamadi": "Kayıt bulunamadı.",
   "yil": "{yil}",
-  "@yil": { "placeholders": { "yil": { "type": "int" } } },
+  "@yil": {
+    "placeholders": {
+      "yil": {
+        "type": "int"
+      }
+    }
+  },
   "yilYaklasik": "yakl. {yil}",
-  "@yilYaklasik": { "placeholders": { "yil": { "type": "int" } } },
+  "@yilYaklasik": {
+    "placeholders": {
+      "yil": {
+        "type": "int"
+      }
+    }
+  },
   "bolumeGit": "Bölüme git",
   "harita": "Harita",
   "konumYaklasik": "Konum yaklaşıktır; harita ölçekli değildir.",
@@ -65,13 +140,25 @@
   "pusulaKuzey": "K",
   "sahisAra": "Şahıs ara",
   "sahisKilitNotu": "Bölümleri izledikçe {sayi} şahıs daha burada açılacak.",
-  "@sahisKilitNotu": { "placeholders": { "sayi": { "type": "int" } } },
+  "@sahisKilitNotu": {
+    "placeholders": {
+      "sayi": {
+        "type": "int"
+      }
+    }
+  },
   "sahisAramaBos": "Aramaya uyan şahıs yok.",
   "izlendi": "İzlendi",
   "yolAltBaslik": "Peygamberlik öncesi",
   "haritaGec": "Geç",
   "bolumEtiketi": "Bölüm {no}",
-  "@bolumEtiketi": { "placeholders": { "no": { "type": "int" } } },
+  "@bolumEtiketi": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      }
+    }
+  },
   "yolBaslik": "Resulü Ekrem'in Hayatı",
   "altyaziBoyutu": "Altyazı boyutu",
   "altyaziAciklama": "Anlatım sesli sahnelerde metni de göster. Sesi olmayan sahnelerde metin her zaman görünür.",
@@ -81,19 +168,49 @@
   "efektSesleri": "Efekt sesleri",
   "efektSesleriAciklama": "Bölüm kartı ve harita geçişinde kısa sesler",
   "siradakiBolum": "Sıradaki bölüm: {baslik}",
-  "@siradakiBolum": { "placeholders": { "baslik": { "type": "String" } } },
+  "@siradakiBolum": {
+    "placeholders": {
+      "baslik": {
+        "type": "String"
+      }
+    }
+  },
   "siradaki": "Sıradaki",
   "ilkGorundugu": "İlk göründüğü yer",
   "ilkGorunduguAyrinti": "{bolum}, {sahne}. sahne",
-  "@ilkGorunduguAyrinti": { "placeholders": { "bolum": { "type": "String" }, "sahne": { "type": "int" } } },
+  "@ilkGorunduguAyrinti": {
+    "placeholders": {
+      "bolum": {
+        "type": "String"
+      },
+      "sahne": {
+        "type": "int"
+      }
+    }
+  },
   "devamEt": "Kaldığın yerden devam et",
   "hareketiAzalt": "Hareketi azalt",
   "hareketiAzaltAciklama": "Kart ve harita animasyonları kısalır",
   "indiriliyor": "Bölüm indiriliyor",
   "indirmeIlerleme": "{inen} / {toplam} MB",
-  "@indirmeIlerleme": {"placeholders": {"inen": {"type": "String"}, "toplam": {"type": "String"}}},
+  "@indirmeIlerleme": {
+    "placeholders": {
+      "inen": {
+        "type": "String"
+      },
+      "toplam": {
+        "type": "String"
+      }
+    }
+  },
   "indirmeBoyutu": "{boyut} MB",
-  "@indirmeBoyutu": {"placeholders": {"boyut": {"type": "String"}}},
+  "@indirmeBoyutu": {
+    "placeholders": {
+      "boyut": {
+        "type": "String"
+      }
+    }
+  },
   "indirmeBekliyor": "İndirme Wi-Fi ya da onay bekliyor",
   "indirmeHatasi": "Bölüm indirilemedi. İnternet bağlantını denetleyip tekrar dene.",
   "tekrarDene": "Tekrar dene",
@@ -103,5 +220,24 @@
   "indirilenBolumlerAciklama": "İlk bölüm uygulamayla gelir; diğerleri açılınca indirilir ve internetsiz de izlenir.",
   "indirilenYok": "Henüz indirilen bölüm yok.",
   "sil": "Sil",
-  "uygulamaylaGelir": "Uygulamayla gelir"
+  "uygulamaylaGelir": "Uygulamayla gelir",
+  "hataBildir": "Hata bildir",
+  "hataBildirAciklama": "Yanlış bilgi, görsel ya da ses sorunu gördüysen e-postayla bildir.",
+  "hataBildirKonu": "Resulü Ekrem'in Hayatı: hata bildirimi",
+  "hataBildirGovde": "Ne gördün? (yanlış bilgi, görsel, ses, uygulama hatası)\n\n\n---\nBu satırları silme, sorunu bulmamıza yardım eder:\n{bilgi}",
+  "@hataBildirGovde": {
+    "placeholders": {
+      "bilgi": {
+        "type": "String"
+      }
+    }
+  },
+  "hataBildirAcilamadi": "E-posta uygulaması açılamadı. Bildirimini {adres} adresine gönderebilirsin.",
+  "@hataBildirAcilamadi": {
+    "placeholders": {
+      "adres": {
+        "type": "String"
+      }
+    }
+  }
 }

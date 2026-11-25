@@ -618,6 +618,36 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'Uygulamayla gelir'**
   String get uygulamaylaGelir;
+
+  /// No description provided for @hataBildir.
+  ///
+  /// In tr, this message translates to:
+  /// **'Hata bildir'**
+  String get hataBildir;
+
+  /// No description provided for @hataBildirAciklama.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yanlış bilgi, görsel ya da ses sorunu gördüysen e-postayla bildir.'**
+  String get hataBildirAciklama;
+
+  /// No description provided for @hataBildirKonu.
+  ///
+  /// In tr, this message translates to:
+  /// **'Resulü Ekrem\'in Hayatı: hata bildirimi'**
+  String get hataBildirKonu;
+
+  /// No description provided for @hataBildirGovde.
+  ///
+  /// In tr, this message translates to:
+  /// **'Ne gördün? (yanlış bilgi, görsel, ses, uygulama hatası)\n\n\n---\nBu satırları silme, sorunu bulmamıza yardım eder:\n{bilgi}'**
+  String hataBildirGovde(String bilgi);
+
+  /// No description provided for @hataBildirAcilamadi.
+  ///
+  /// In tr, this message translates to:
+  /// **'E-posta uygulaması açılamadı. Bildirimini {adres} adresine gönderebilirsin.'**
+  String hataBildirAcilamadi(String adres);
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

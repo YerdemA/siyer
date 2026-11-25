@@ -310,4 +310,24 @@ class MetinlerTr extends Metinler {
 
   @override
   String get uygulamaylaGelir => 'Uygulamayla gelir';
+
+  @override
+  String get hataBildir => 'Hata bildir';
+
+  @override
+  String get hataBildirAciklama =>
+      'Yanlış bilgi, görsel ya da ses sorunu gördüysen e-postayla bildir.';
+
+  @override
+  String get hataBildirKonu => 'Resulü Ekrem\'in Hayatı: hata bildirimi';
+
+  @override
+  String hataBildirGovde(String bilgi) {
+    return 'Ne gördün? (yanlış bilgi, görsel, ses, uygulama hatası)\n\n\n---\nBu satırları silme, sorunu bulmamıza yardım eder:\n$bilgi';
+  }
+
+  @override
+  String hataBildirAcilamadi(String adres) {
+    return 'E-posta uygulaması açılamadı. Bildirimini $adres adresine gönderebilirsin.';
+  }
 }

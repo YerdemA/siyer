@@ -9,7 +9,16 @@
   "oncekiSahne": "Previous scene",
   "sonrakiSahne": "Next scene",
   "kartSahne": "Scene {no}/{toplam}",
-  "@kartSahne": {"placeholders": {"no": {"type": "int"}, "toplam": {"type": "int"}}},
+  "@kartSahne": {
+    "placeholders": {
+      "no": {
+        "type": "int"
+      },
+      "toplam": {
+        "type": "int"
+      }
+    }
+  },
   "kartKanali": "Chapter playback",
   "geri": "Back",
   "tarifGoster": "Scene brief",
@@ -87,5 +96,10 @@
   "indirilenBolumlerAciklama": "The first episode comes with the app; others download when opened and then work offline.",
   "indirilenYok": "No episodes downloaded yet.",
   "sil": "Delete",
-  "uygulamaylaGelir": "Included with the app"
+  "uygulamaylaGelir": "Included with the app",
+  "hataBildir": "Report a problem",
+  "hataBildirAciklama": "Seen a factual error, or an image or sound problem? Tell us by e-mail.",
+  "hataBildirKonu": "The Life of the Prophet: problem report",
+  "hataBildirGovde": "What did you notice? (wrong information, image, sound, app error)\n\n\n---\nPlease keep these lines, they help us find the problem:\n{bilgi}",
+  "hataBildirAcilamadi": "No e-mail app could be opened. You can send your report to {adres}."
 }

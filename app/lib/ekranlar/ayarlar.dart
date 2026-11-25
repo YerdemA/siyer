@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../ayarlar/tercihler.dart';
 import '../icerik/depo.dart';
 import '../icerik/model.dart';
+import '../hata_bildir.dart';
 import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
 import '../l10n/app_localizations.dart';
@@ -68,6 +69,13 @@ class AyarlarEkrani extends ConsumerWidget {
           ),
           const Divider(),
           const _IndirilenBolumler(),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.flag_outlined),
+            title: Text(m.hataBildir),
+            subtitle: Text(m.hataBildirAciklama),
+            onTap: () => hataBildir(context),
+          ),
           const Divider(),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),

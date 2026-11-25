@@ -14,6 +14,7 @@ import '../icerik/depo.dart';
 import '../icerik/model.dart';
 import '../icerik/paketler.dart';
 import '../ilerleme/ilerleme.dart';
+import '../hata_bildir.dart';
 import '../l10n/app_localizations.dart';
 import 'anlatim_sesi.dart';
 import 'ekran.dart';
@@ -820,6 +821,16 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                 ),
+              ),
+              IconButton(
+                tooltip: m.hataBildir,
+                color: Colors.white70,
+                icon: const Icon(Icons.flag_outlined),
+                onPressed: () {
+                  // E-posta yazılırken anlatım sürmesin.
+                  setState(() => _oynuyor = false);
+                  hataBildir(context, bolum: widget.bolum.id, sahne: konum.sahne.sahne.id, saniye: _an);
+                },
               ),
             ],
           ),
