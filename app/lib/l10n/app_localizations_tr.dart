@@ -238,8 +238,7 @@ class MetinlerTr extends Metinler {
   String get efektSesleri => 'Efekt sesleri';
 
   @override
-  String get efektSesleriAciklama =>
-      'Bölüm kartı ve harita geçişinde kısa sesler';
+  String get efektSesleriAciklama => 'Harita geçişinde kısa kâğıt sesi';
 
   @override
   String siradakiBolum(String baslik) {
@@ -264,7 +263,8 @@ class MetinlerTr extends Metinler {
   String get hareketiAzalt => 'Hareketi azalt';
 
   @override
-  String get hareketiAzaltAciklama => 'Kart ve harita animasyonları kısalır';
+  String get hareketiAzaltAciklama =>
+      'Harita animasyonu kısalır, kartlar basılınca küçülmez';
 
   @override
   String get indiriliyor => 'Bölüm indiriliyor';

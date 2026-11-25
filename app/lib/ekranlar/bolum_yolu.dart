@@ -24,8 +24,8 @@ class BolumYolu extends ConsumerStatefulWidget {
 
 /// Kartların yeri ve açısı; ekran genişliğine göre hesaplanır.
 class YolYerlesimi {
-  YolYerlesimi(this.genislik, int sayi, {this.devamKarti = false})
-      : ust = devamKarti ? baslikAlani + devamYuksekligi + 46 : 150 {
+  YolYerlesimi(this.genislik, int sayi, {this.devamKarti = false, this.ustPay = 0})
+      : ust = ustPay + (devamKarti ? baslikAlani + devamYuksekligi + 46 : 150) {
     for (var i = 0; i < sayi; i++) {
       final serbest = math.max(0.0, genislik - kartGenisligi - 2 * kenar);
       // Sola ve sağa salınan, her seferinde biraz farklı bir yol.
@@ -50,6 +50,9 @@ class YolYerlesimi {
 
   /// Yarım bölüm varsa en üstte "kaldığın yerden devam et" kartı.
   final bool devamKarti;
+
+  /// Durum çubuğunun payı: başlık ve altındakiler bu kadar aşağı iner.
+  final double ustPay;
 
   /// İlk bölüm kartının üstü.
   final double ust;
@@ -92,7 +95,12 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
       data: (liste) => LayoutBuilder(builder: (context, k) {
         final yarimId = sonYarimBolum(ilerleme);
         final yarim = liste.where((b) => b.id == yarimId).firstOrNull;
-        final y = YolYerlesimi(k.maxWidth, liste.length, devamKarti: yarim != null);
+        final y = YolYerlesimi(
+          k.maxWidth,
+          liste.length,
+          devamKarti: yarim != null,
+          ustPay: MediaQuery.paddingOf(context).top,
+        );
         // Sıradaki: bitirilmemiş ilk bölüm. Ondan sonrakiler soluk (yine açılabilir).
         final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
         final azHareket = hareketAz(context, ref);
@@ -108,15 +116,15 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                 Positioned(
                   left: 0,
                   right: 0,
-                  top: 0,
+                  top: y.ustPay,
                   height: YolYerlesimi.baslikAlani,
-                  child: SafeArea(bottom: false, child: _Baslik(m: m)),
+                  child: _Baslik(m: m),
                 ),
                 if (yarim != null)
                   Positioned(
                     left: YolYerlesimi.kenar,
                     right: YolYerlesimi.kenar,
-                    top: YolYerlesimi.baslikAlani,
+                    top: y.ustPay + YolYerlesimi.baslikAlani,
                     height: YolYerlesimi.devamYuksekligi,
                     child: DevamKarti(bolum: yarim, ilerleme: ilerleme[yarim.id]!),
                   ),

@@ -166,7 +166,7 @@
   "boyutOrta": "Orta",
   "boyutBuyuk": "Büyük",
   "efektSesleri": "Efekt sesleri",
-  "efektSesleriAciklama": "Bölüm kartı ve harita geçişinde kısa sesler",
+  "efektSesleriAciklama": "Harita geçişinde kısa kâğıt sesi",
   "siradakiBolum": "Sıradaki bölüm: {baslik}",
   "@siradakiBolum": {
     "placeholders": {
@@ -190,7 +190,7 @@
   },
   "devamEt": "Kaldığın yerden devam et",
   "hareketiAzalt": "Hareketi azalt",
-  "hareketiAzaltAciklama": "Kart ve harita animasyonları kısalır",
+  "hareketiAzaltAciklama": "Harita animasyonu kısalır, kartlar basılınca küçülmez",
   "indiriliyor": "Bölüm indiriliyor",
   "indirmeIlerleme": "{inen} / {toplam} MB",
   "@indirmeIlerleme": {

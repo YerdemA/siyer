@@ -240,8 +240,7 @@ class MetinlerEn extends Metinler {
   String get efektSesleri => 'Sound effects';
 
   @override
-  String get efektSesleriAciklama =>
-      'Short sounds on episode cards and map transitions';
+  String get efektSesleriAciklama => 'A short paper sound on map transitions';
 
   @override
   String siradakiBolum(String baslik) {
@@ -266,7 +265,8 @@ class MetinlerEn extends Metinler {
   String get hareketiAzalt => 'Reduce motion';
 
   @override
-  String get hareketiAzaltAciklama => 'Shorter card and map animations';
+  String get hareketiAzaltAciklama =>
+      'Shorter map animation; cards do not shrink when pressed';
 
   @override
   String get indiriliyor => 'Downloading episode';

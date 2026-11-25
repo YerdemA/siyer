@@ -843,7 +843,9 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               Expanded(
                 flex: 3,
                 child: Text(
-                  '${widget.bolum.baslik} · ${m.sahneSayaci(sahneNo, _plan.sahneler.length)} · ${konum.sahne.sahne.id}',
+                  '${widget.bolum.baslik} · ${m.sahneSayaci(sahneNo, _plan.sahneler.length)}'
+                  // Sahne kimliği yalnız revize derlemelerinde (hata bildirimine zaten eklenir).
+                  '${revizeAraclari ? ' · ${konum.sahne.sahne.id}' : ''}',
                   style: const TextStyle(color: beyaz, fontSize: 13),
                   overflow: TextOverflow.ellipsis,
                 ),

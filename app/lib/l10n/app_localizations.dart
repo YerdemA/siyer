@@ -496,7 +496,7 @@ abstract class Metinler {
   /// No description provided for @efektSesleriAciklama.
   ///
   /// In tr, this message translates to:
-  /// **'Bölüm kartı ve harita geçişinde kısa sesler'**
+  /// **'Harita geçişinde kısa kâğıt sesi'**
   String get efektSesleriAciklama;
 
   /// No description provided for @siradakiBolum.
@@ -538,7 +538,7 @@ abstract class Metinler {
   /// No description provided for @hareketiAzaltAciklama.
   ///
   /// In tr, this message translates to:
-  /// **'Kart ve harita animasyonları kısalır'**
+  /// **'Harita animasyonu kısalır, kartlar basılınca küçülmez'**
   String get hareketiAzaltAciklama;
 
   /// No description provided for @indiriliyor.
