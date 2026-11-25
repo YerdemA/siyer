@@ -5,7 +5,7 @@ import 'l10n/app_localizations.dart';
 
 /// Uygulamanın sürümü; `pubspec.yaml`'daki `version` ile aynı olmalı
 /// (test denetler). Hata bildirimine eklenir.
-const uygulamaSurumu = '1.0.0+1';
+const uygulamaSurumu = '1.0.0+2';
 
 /// Bildirimlerin gittiği adres (gizlilik sayfasındaki iletişim adresi).
 const hataBildirimAdresi = 'yusuferdemaykacc@gmail.com';

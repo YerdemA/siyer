@@ -6,6 +6,8 @@ Son güncelleme: 2026-11-25.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
+**Play AAB 1.0.0+2 (2026-11-25): `İndirilenler\siyer\siyer-1.0.0+2.aab` (121 MB), kapalı teste yüklenecek.** v11'i Erdem onayladı. Sürüm kodu 2; b02–b10 on-demand paket; REVIZE yok (sahne tarifi paneli gizli); `--obfuscate`, semboller `~/siyer-araclar/semboller/1.0.0+2/`. Komut: `flutter build appbundle --release --obfuscate --split-debug-info=build/semboller --android-project-arg=kapaliTest=true`. bundletool ölçümü (arm64): ilk indirme 23,6 MB, bütün bölümlerle 81 MB. Play Console'da yüklerken: ön plan servisi beyanı "medya oynatma" (kilit ekranı kartı), sürüm notu. Kurulu 1.0.0+1'in üstüne güncelleme olarak gelir, ilerleme korunur.
+
 **Test APK'sı v11 (2026-11-25, beşinci oturum): `İndirilenler\siyer\siyer-test-v11.apk` (129 MB; v10 145 MB), Erdem telefonda deneyecek.** v10 Erdem'de sorunsuz geçti. Bu oturumda (Erdem istedi):
 - **Çarpı animasyonu kaldırıldı:** karta dokununca kart hafifçe basılır, bölüm beklemeden açılır (oynatıcıya 280 ms kararma geçişi, `main.dart`). `kalem.wav` silindi (efekt_sesleri.py artık yazmıyor).
 - **Bölüme özgü kart:** her kartın üstünde bölümün kendi sahnesinden 4:1 kapak şeridi (`app/assets/kartlar/bXX.webp`, toplam ~270 KB, gömülü). Üreten araç `tools/kart_kapagi.py` (sahne katmanlarını oynatıcıdaki yerleşim ve saat tonuyla birleştirir; seçilen sahneler dosyada). Sırası gelmemiş bölümde kapak sepya. Kart 136 → 200 px.
