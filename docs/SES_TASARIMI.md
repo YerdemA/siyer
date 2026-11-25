@@ -21,6 +21,13 @@ Kararlar (Erdem, 2026-11-25): müzik MVP'de; çalgılı, sade belgesel müziği;
 
 ElevenLabs ücretli planlarında üretilen sesin ticari kullanım hakkı var; uygulama ücretsiz ve reklamsız olsa da Play'de yayımlandığı için **üretimden önce planın müzik kullanım koşulu kontrol edilecek** (Starter planda Music için kısıt olabilir). Kaynakça gibi Ayarlar → Hakkında'da "Müzik ve ortam sesleri: ElevenLabs ile üretildi" satırı.
 
+## Kredi hesabı (2026-11-25, ElevenLabs fiyat sayfasına göre)
+
+- Müzik ~900 kredi/dk; ses efekti süre verilince 40 kredi/sn. Her deneme ayrı ücretlenir.
+- Tablodaki süreler (müzik 8×90 + 3×120 sn = 18 dk; ortam 13×30 sn): müzik ~16.200 + ortam ~15.600 = **~31.800 kredi** (tek deneme). Yeniden üretimlerle ~45.000.
+- Tasarruflu plan (öneri): müzik 60 sn (11 dk ≈ 9.900), ortam 15 sn döngü (13×15×40 ≈ 7.800) = **~17.700 kredi**; yeniden üretim payıyla ~25.000, Starter'ın bir aylık kredisine sığar. Starter'da aylık müzik indirme sınırı 30 dk (18 dk yeter).
+- Eleven Music koşulları (Starter): çevrimiçi/çevrimdışı ticari kullanım izinli, film/TV/radyo/stüdyo oyunları hariç; dağıtımda "Eleven Music" ile üretildiği belirtilmeli → Ayarlar → Hakkında'ya satır. Yayından önce güncel koşul sayfası yeniden okunacak.
+
 ## Kredi
 
 2026-11-25: Starter plan, 39.331 kredinin 39.107'si kullanılmış; yenilenme ~2026-12-21. Üretim yenilenmeden sonra ya da plan yükseltilince. Her parçayı tek tek üret, dinlet, onay al (`generations_count` 1).
