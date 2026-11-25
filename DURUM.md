@@ -6,6 +6,8 @@ Son güncelleme: 2026-11-25.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
+**Test APK'sı v10 (2026-11-25): `İndirilenler\siyer\siyer-test-v10.apk` (145 MB), Erdem telefonda deneyecek.** v9'dan sonraki her şey içinde: hata bildir, Yakında kartı, fon sesi altyapısı (ses dosyası yok, sessiz), uygulama dili ve İngilizce altyazı (10 bölüm + yan veriler), oynatıcıda TR/EN, Pickthall atıfları, b04-s01 kafile; `REVIZE=true` ile derlendi (sahne tarifi paneli görünür). Kilit kartı simgeleri APK'da doğrulandı. Derleme yolu: `flutter clean` → `flutter build appbundle --release --android-project-arg=kapaliTest=true --android-project-arg=paketTeslimi=install-time --dart-define=REVIZE=true` → bundletool (Android Studio Java'sı) `build-apks --mode=universal` yükleme anahtarıyla. Not: kapalı test denetimi eksik fon seslerini artık uyarı sayıyor (yayında hata).
+
 **Kaldığımız yer (2026-11-25, dördüncü oturum): Yakında kartı ve fon sesi altyapısı.**
 - **Ana sayfada "Peygamberlik Dönemi · Yakında" kartı** (Erdem istedi): 10. bölümden sonra yol soluklaşarak kesik çizgili, soluk kâğıt bir karta varır; "Sıradaki dönem", başlık, altın çizgiler arasında kum saati, "Yakında". `YakindaKarti` (`bolum_yolu.dart`). Gerçek yazı tipleriyle test görüntüsü `İndirilenler\siyer\_onizleme-yakinda.png`; telefonda denenmedi.
 - **Fon müziği ve ortam sesi altyapısı yapıldı** (`lib/oynatici/fon_sesi.dart`, `docs/SES_TASARIMI.md`): iki kanal, döngü, sahne değişince 1,8 sn yumuşak geçiş, aynı ad kesintisiz, duraklayınca susar; Ayarlar'da "Müzik ve ortam sesi". Dosyalar `content/fon/muzik|ortam/<ad>.mp3` → uygulamaya gömülür. İçerik adları 11 müzik + 13 ortama indirildi. **Ses dosyası yok**; doğrulama eksikleri uyarı olarak listeler (yayında hata). Testler 107/107.
