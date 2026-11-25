@@ -88,6 +88,23 @@ Kural: İçinde tarihî bilgi olan her `anlatim` parçasının `iddialar` listes
 - `yerler.json`: `{ id, ad, harita: { x, y }, ozet, bolumler[], iddialar[] }` — harita gerçek harita değil, ahşap/parşömen illüstrasyonudur. `x`, `y` parşömen üzerindeki yaklaşık konumdur (0–1, sol üst köşe 0,0); yeni yer eklerken enlem-boylamdan `docs/GORSEL_USLUP.md` → Harita'daki izdüşümle hesaplanır, yoksa kıyıyla örtüşmez. Konum göreli olduğundan atıf gerektirmez, ama yerlerin birbirine göre durumu (ör. Cidde'nin Mekke'nin batısında, kıyıda olması) kaynaklarla çelişmemelidir. `ozet` içindeki tarihî bilgi `iddialar` ile bağlanır. İsteğe bağlı `konumKaynagi` (atıf biçiminde: `eser`, `konum`, `dogrulama`), konumun kaynaktaki yön/uzaklıkla uyumunu kontrol etmek içindir; konum yine yaklaşıktır. Kaynakta konumu bulunmayan yer haritaya konmaz.
 - `zaman-cizelgesi.json`: `{ id, yil (miladî, yaklaşık ise "yaklasik": true), hicriOncesi, olay, bolum, iddia }`
 
+## Altyazı çevirileri
+
+MVP'de anlatım sesi Türkçe; altyazı Ayarlar → "Altyazı dili" ile İngilizce seçilebilir (Erdem, 2026-11-25). Çeviri, bölümün kopyası değildir; yalnız metin:
+
+`content/<dil>/altyazi/<bölüm dosya adı>.json`
+```json
+{
+  "baslik": "Mecca before Islam",
+  "ozet": "…",
+  "sahneler": { "b01-s01": ["1. parça", "2. parça", "3. parça"] }
+}
+```
+- Her sahnenin dizisi Türkçe bölümdeki `anlatim` parçalarıyla aynı sayıda ve sırada (zamanlama Türkçe sesten gelir). İddia bağları Türkçe kayıttadır, çeviri yeni bilgi eklemez.
+- Çeviri Türkçe metnin kendi cümlelerimizle aktarımıdır; kaynak metinden çevrilmez. Âyet alıntıları Pickthall 1930'un uyarlanmış metnidir (`docs/KAYNAK_POLITIKASI.md` → "Başka dillerde âyet meali").
+- Ad yazımı: peygamberler İngilizce yerleşik adlarıyla (Abraham, Ishmael, Hagar; Pickthall'la uyumlu), diğer Arap adları yaygın çevriyazıyla ('Abd al-Muttalib, Qusayy ibn Kilab, Quraysh). İlk anışta "the Prophet Muhammad (peace be upon him)", sonra "the Prophet" ya da "the Messenger of Allah".
+- Eksik parça ya da sahnede Türkçesi gösterilir. Doğrulama: parça sayısı ve sahne kimlikleri hata; çevrilmemiş bölüm/sahne geliştirmede uyarı, yayında hata.
+
 ## Bölüm paketleri (indirme)
 
 Bölüm JSON'ları, kaynakça, sözlük, harita ve zaman çizelgesi her zaman uygulamayla gelir. Ses ve görsellerde ise:
