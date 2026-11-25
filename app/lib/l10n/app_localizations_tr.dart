@@ -36,6 +36,14 @@ class MetinlerTr extends Metinler {
   String get sonrakiSahne => 'Sonraki sahne';
 
   @override
+  String kartSahne(int no, int toplam) {
+    return 'Sahne $no/$toplam';
+  }
+
+  @override
+  String get kartKanali => 'Bölüm oynatma';
+
+  @override
   String get geri => 'Geri';
 
   @override

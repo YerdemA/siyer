@@ -1,6 +1,12 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <!-- Ekran kapalıyken bölüm sürsün: sahne aralarındaki sessizlikte işlemci uyumasın (MainActivity.uyanikTut). -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Bölüm oynarken kilit ekranı/bildirim medya kartı ve ön plan servisi (audio_service).
+         Play Console beyanı: ön plan servisi türü "medya oynatma". Medya oturumu bildirimi
+         Android 13+ bildirim izninden muaftır; izin istenmez. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <application
         android:label="@string/app_name"
         android:name="${applicationName}"
@@ -27,6 +33,21 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- Kilit ekranı kartı (lib/oynatici/medya_karti.dart). -->
+        <service android:name="com.ryanheise.audioservice.AudioService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true" tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+        <!-- Kulaklık ve Bluetooth tuşları. -->
+        <receiver android:name="com.ryanheise.audioservice.MediaButtonReceiver"
+            android:exported="true" tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

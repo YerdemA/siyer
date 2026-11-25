@@ -45,7 +45,9 @@ class JustAudioSesi implements AnlatimSesi {
   JustAudioSesi([this.dosyalar]);
 
   final BolumDosyalari? dosyalar;
-  final _oynatici = AudioPlayer();
+  // Kesinti ve kulaklık çıkması oynatıcıda ele alınır (medya_karti.dart): ses
+  // kendi başına durursa saat onu yeniden başlatırdı.
+  final _oynatici = AudioPlayer(handleInterruptions: false);
   String? _etkin;
 
   /// Gömülüyse varlıktan, değilse indirilen paketten yükler.

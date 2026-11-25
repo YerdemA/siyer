@@ -36,6 +36,14 @@ class MetinlerEn extends Metinler {
   String get sonrakiSahne => 'Next scene';
 
   @override
+  String kartSahne(int no, int toplam) {
+    return 'Scene $no/$toplam';
+  }
+
+  @override
+  String get kartKanali => 'Chapter playback';
+
+  @override
   String get geri => 'Back';
 
   @override

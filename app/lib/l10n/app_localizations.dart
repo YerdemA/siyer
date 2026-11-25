@@ -145,6 +145,18 @@ abstract class Metinler {
   /// **'Sonraki sahne'**
   String get sonrakiSahne;
 
+  /// No description provided for @kartSahne.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sahne {no}/{toplam}'**
+  String kartSahne(int no, int toplam);
+
+  /// No description provided for @kartKanali.
+  ///
+  /// In tr, this message translates to:
+  /// **'Bölüm oynatma'**
+  String get kartKanali;
+
   /// No description provided for @geri.
   ///
   /// In tr, this message translates to:

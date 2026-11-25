@@ -1,5 +1,7 @@
 import 'dart:async';
+import 'dart:io';
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -18,6 +20,7 @@ import 'ekran.dart';
 import 'bolum_indirme.dart';
 import 'gorsel_onbellek.dart';
 import 'harita_gecisi.dart';
+import 'medya_karti.dart';
 import 'sahne_cizici.dart';
 import 'zaman_plani.dart';
 import '../tema.dart';
@@ -87,6 +90,7 @@ class OynaticiEkrani extends ConsumerWidget {
             baslangicSahnesi: baslangicSahnesi ?? ref.read(ilerlemeProvider).value?[bolumId]?.devamSahnesi ?? 1,
             baslangicCekimi: baslangicCekimi,
             duraklatilmis: duraklatilmis,
+            medyaKarti: ref.read(medyaKartiProvider),
             sahneDegisti: (no) => notifier.sahneKaydet(bolumId, no),
             bitti: () => notifier.bitir(bolumId),
           ),
@@ -130,7 +134,11 @@ class Oynatici extends StatefulWidget {
     this.sonrakiBolum,
     this.azHareket = false,
     this.ekran = const Ekran(),
+    this.medyaKarti = const SessizMedyaKarti(),
   });
+
+  /// Kilit ekranı/bildirim kartı ve kulaklık tuşları; testlerde sessiz.
+  final MedyaKarti medyaKarti;
 
   /// Hareketi azalt: harita geçişi kısa ve kamerasız.
   final bool azHareket;
@@ -235,8 +243,24 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     // kapandıysa sürer: kullanıcı yalnız anlatımı dinlemek isteyebilir
     // (Erdem, 2026-11-22). Ekran kapalıyken kare çizilmez, saati
     // [_arkaPlanSaati] ilerletir.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      widget.medyaKarti.baglan(
+        MedyaKomutlari(
+          oynat: _karttanOynat,
+          duraklat: () => _karttanDurum(false),
+          onceki: () => _karttan(() => _sahneyeGit(-1)),
+          sonraki: () => _karttan(() => _sahneyeGit(1)),
+          git: (an) => _karttan(() => _git(an)),
+          kapat: () => _karttanDurum(false),
+        ),
+        kanalAdi: Metinler.of(context).kartKanali,
+      );
+      _kartiGuncelle();
+    });
     _yasamDongusu = AppLifecycleListener(
       onHide: () async {
+        _gizli = true;
         final ekranAcik = await widget.ekran.acikMi();
         if (!mounted) return;
         if (ekranAcik) {
@@ -245,13 +269,17 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
           _arkaPlanaGec();
         }
       },
-      onShow: _onPlanaDon,
+      onShow: () {
+        _gizli = false;
+        _onPlanaDon();
+      },
     );
   }
 
   @override
   void dispose() {
     _yasamDongusu.dispose();
+    widget.medyaKarti.birak();
     _arkaPlanSaati?.cancel();
     _sarmaSayaci?.cancel();
     _ses?.kapat();
@@ -322,13 +350,105 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
   void _ilerle(double dt) {
     _sesiEsitle();
     if (_arkaPlanda) _ilerlemeBildir(_plan.sahneSirasi(_an) + 1, hemen: true);
-    if (!_oynuyor || _gecis != null) return;
-    final sesAni = _sesSaati(dt);
-    setState(() {
-      _an = math.min(sesAni ?? _an + dt * _hiz, _plan.toplam);
-      if (_an >= _plan.toplam) _oynuyor = false;
-      _yerDegistiMi();
-    });
+    if (_oynuyor && _gecis == null) {
+      final sesAni = _sesSaati(dt);
+      setState(() {
+        _an = math.min(sesAni ?? _an + dt * _hiz, _plan.toplam);
+        if (_an >= _plan.toplam) _oynuyor = false;
+        _yerDegistiMi();
+      });
+    }
+    _kartiGuncelle();
+  }
+
+  /// Uygulama görünmüyor (ekran kapalı ya da başka uygulama önde).
+  bool _gizli = false;
+
+  /// Karttan ya da kulaklıktan gelen bir isteği uygular. Uygulama
+  /// görünmüyorsa kare çizilmez: ilerleme hemen kaydedilir, kart hemen yenilenir.
+  void _karttan(VoidCallback istek) {
+    if (!mounted) return;
+    istek();
+    if (_gizli) _ilerlemeBildir(_plan.sahneSirasi(_an) + 1, hemen: true);
+    _kartiGuncelle();
+  }
+
+  void _karttanDurum(bool oynuyor) => _karttan(() => setState(() => _oynuyor = oynuyor));
+
+  /// Görünmezken (ör. kilit ekranından) sürdürülürse saati zamanlayıcı ilerletir.
+  void _karttanOynat() {
+    if (_bitti) return;
+    _karttanDurum(true);
+    if (_gizli) _arkaPlanaGec();
+  }
+
+  /// Kartta son gösterilen durum ve o andan beri geçen süre. Kart konumu
+  /// kendisi ilerletir; yalnız durum değişince ya da 1 sn'den çok kayınca yenilenir.
+  MedyaDurumu? _kartDurumu;
+  final _kartSaati = Stopwatch();
+
+  void _kartiGuncelle() {
+    if (!mounted) return;
+    final sira = _plan.sahneSirasi(_an);
+    final oynuyor = _oynuyor && _gecis == null && !_bitti;
+    final kimlik = _plan.sahneler[sira].sahne.id;
+    _kapakHazirla(sira);
+    final o = _kartDurumu;
+    if (o != null && o.oynuyor == oynuyor && o.kimlik == kimlik && o.kapak == _kapak && o.hiz == _hiz) {
+      final beklenen = o.konum + (oynuyor ? _kartSaati.elapsedMicroseconds / 1e6 * _hiz : 0);
+      if ((beklenen - _an).abs() < 1) return;
+    }
+    _kartSaati
+      ..reset()
+      ..start();
+    _kartDurumu = MedyaDurumu(
+      kimlik: kimlik,
+      baslik: widget.bolum.baslik,
+      altBaslik: Metinler.of(context).kartSahne(sira + 1, _plan.sahneler.length),
+      toplam: _plan.toplam,
+      konum: _an,
+      oynuyor: oynuyor,
+      hiz: _hiz,
+      kapak: _kapak,
+    );
+    widget.medyaKarti.guncelle(_kartDurumu!);
+  }
+
+  /// Kartın kapak resmi: sahnenin ilk çekimi, oynatıcının kendi çizimiyle.
+  Uri? _kapak;
+  int _kapakSahnesi = -1;
+  bool _kapakCiziliyor = false;
+
+  void _kapakHazirla(int sira) {
+    if (!widget.medyaKarti.kapakIster || sira == _kapakSahnesi || _kapakCiziliyor) return;
+    final cekim = _plan.sahneler[sira].cekimler.first;
+    final bekleyen = cekim.gorsel.katmanlar.where(
+        (k) => k.dosya.isNotEmpty && _gorseller.al(k.dosya) == null && !_gorseller.bulunamadi(k.dosya));
+    if (bekleyen.isNotEmpty) return; // al() yüklemeyi başlattı; sonraki adımda yeniden denenir
+    _kapakCiziliyor = true;
+    _kapakCiz(sira, cekim).whenComplete(() => _kapakCiziliyor = false);
+  }
+
+  Future<void> _kapakCiz(int sira, CekimZamani cekim) async {
+    try {
+      const boyut = Size(512, 288);
+      final kayit = ui.PictureRecorder();
+      SahneCizici(gorsel: cekim.gorsel, ilerleme: 0.5, zaman: (cekim.bas + cekim.son) / 2, gorseller: _gorseller)
+          .paint(Canvas(kayit), boyut);
+      final resim = await kayit.endRecording().toImage(boyut.width.toInt(), boyut.height.toInt());
+      final png = await resim.toByteData(format: ui.ImageByteFormat.png);
+      resim.dispose();
+      if (png == null || !mounted) return;
+      final dosya = File('${Directory.systemTemp.path}/kapak-${_plan.sahneler[sira].sahne.id}.png');
+      await dosya.writeAsBytes(png.buffer.asUint8List());
+      if (!mounted) return;
+      _kapakSahnesi = sira;
+      _kapak = dosya.uri;
+      _kartiGuncelle();
+    } catch (hata) {
+      debugPrint('Kart kapağı çizilemedi: $hata');
+      _kapakSahnesi = sira; // her adımda yeniden denenmesin
+    }
   }
 
   void _git(double an) => setState(() {

@@ -3,11 +3,12 @@ package com.yerdema.siyer
 import android.content.Context
 import android.os.PowerManager
 import android.view.WindowManager
-import io.flutter.embedding.android.FlutterActivity
+import com.ryanheise.audioservice.AudioServiceActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
-class MainActivity : FlutterActivity() {
+// AudioServiceActivity: Flutter motoru kilit ekranı kartının servisiyle paylaşılır.
+class MainActivity : AudioServiceActivity() {
     private var paketler: BolumPaketleri? = null
     private var uyanik: PowerManager.WakeLock? = null
 
