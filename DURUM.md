@@ -11,6 +11,8 @@ Son güncelleme: 2026-11-25.
 - **Fon müziği ve ortam sesi altyapısı yapıldı** (`lib/oynatici/fon_sesi.dart`, `docs/SES_TASARIMI.md`): iki kanal, döngü, sahne değişince 1,8 sn yumuşak geçiş, aynı ad kesintisiz, duraklayınca susar; Ayarlar'da "Müzik ve ortam sesi". Dosyalar `content/fon/muzik|ortam/<ad>.mp3` → uygulamaya gömülür. İçerik adları 11 müzik + 13 ortama indirildi. **Ses dosyası yok**; doğrulama eksikleri uyarı olarak listeler (yayında hata). Testler 107/107.
 - **ElevenLabs kredisi bitmek üzere:** Starter, 39.331'in 39.107'si kullanılmış, yenilenme ~2026-12-21. Üretim yenilenmeden sonra ya da plan yükseltilince; önce planın müzik için ticari kullanım koşuluna bakılacak. İstemler `docs/SES_TASARIMI.md`'de, her parça tek tek üretilip Erdem'e dinletilecek.
 - Anlatıcı: Seyfullah Kartal (Erdem doğruladı).
+- **İngilizce âyet meali: Pickthall 1930** (Erdem: telifsiz güvenli meal varsa izinle uğraşmayalım; Diyanet'in İngilizcesi telifli görünüyor). Tarama PDF'i ve 6 atıflı âyetin metni + basılı sayfaları `kaynaklar/kuran/kuran-meal-pickthall.md` (İbrâhîm 14/37 Wikisource'ta yok, taramadan; Kureyş Pickthall'da 5 âyet). `docs/KAYNAKLAR.md` A listesine eklendi. İngilizce içerikte kaynakçaya `kuran-meal-pickthall` girdisi açılacak.
+- Fon sesi kredi hesabı: belgelenen süreler ~31.800 kredi, kısa süreler (müzik 60 sn, ortam 15 sn) ~17.700; öneri kısa (`docs/SES_TASARIMI.md`).
 
 **Önceki (2026-11-25, üçüncü oturum): Erdem'in v9 notları işlendi, kararlar alındı.**
 - Telefonda onaylananlar: kilit kartı (düğmeler var), b09-s09, b09-s07, b04-s07 göz dizisi, anlatıcı sesi, Xiaomi'de ekran kapalıyken durma görülmedi. b04-s01 kafile büyütüldü (`x .25, y .687, olcek .36`; ayak çizgisi aynı, Kâbe'yle çakışmıyor).

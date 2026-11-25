@@ -20,6 +20,12 @@ Bu listedekiler Scrapling ile toplu edinilebilir: `docs/SCRAPLING_KURULUM.md`.
 
 Kontrol et: Diyanet'in 2025'te çıkan 3 ciltlik **Eşsiz Rehber Hazreti Muhammed ve Asr-ı Saâdet (Konulu Siyer)** eseri dijital kitaplıkta ücretsiz açılmış olabilir. Açıksa listenin en değerli çağdaş kaynağı olur; değilse satın alınacaklar listesine geçer.
 
+### İngilizce
+
+| #   | Eser | Nereden | Not |
+| --- | ---- | ------- | --- |
+| 12  | **Pickthall, _The Meaning of the Glorious Koran_** (Knopf, 1930) | https://en.wikisource.org/wiki/The_Meaning_of_the_Glorious_Koran_(1930) · tarama: Wikimedia Commons `File:The Meaning of the Glorious Koran (1930).pdf` | İngilizce altyazıdaki âyet mealleri (Erdem, 2026-11-25: telifsiz olduğu için; Diyanet'in İngilizce meali telifli). ABD'de 2026'dan, ölüm+70 ülkelerinde 2007'den beri kamu malı. Yerel: `kaynaklar/kuran/kuran-meal-pickthall.md`. |
+
 ### Arapça (asıl metinler, telifsiz klasikler)
 
 | #   | Eser                                   | Nereden                                                                           |

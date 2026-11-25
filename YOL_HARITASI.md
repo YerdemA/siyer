@@ -85,7 +85,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
 - [x] Ana sayfada yolun sonunda "Peygamberlik Dönemi · Yakında" kartı (Erdem, 2026-11-25; kesik çizgili soluk kâğıt, soluklaşan yol)
 - [x] "Hata bildir" (2026-11-25): oynatıcı üst çubuğu ve Ayarlar → e-posta (bölüm, sahne, zaman, sürüm eklenir; `url_launcher`)
-- [ ] **İngilizce altyazı** (Erdem, 2026-11-25: MVP'de): anlatım Türkçe kalır, altyazı ve arayüz İngilizce seçilebilir. `content/en/` metinleri (aynı kimlikler), âyet mealleri için İngilizce meal kararı ve atıfı gerekir.
+- [ ] **İngilizce altyazı** (Erdem, 2026-11-25: MVP'de): anlatım Türkçe kalır, altyazı ve arayüz İngilizce seçilebilir. `content/en/` metinleri (aynı kimlikler). Âyetler Pickthall 1930 mealinden (telifsiz; Erdem, 2026-11-25), `kaynaklar/kuran/kuran-meal-pickthall.md`.
 - [ ] Mağaza görselleri (simge ve açılış hazır)
 - [x] Android imzalama (`key.properties`) ve Play Store kaydı (2026-11-23: ilk sürüm kapalı test incelemesinde)
 - [ ] Kapalı test: 12 test eden, 14 gün; gerçek ağda bölüm indirme denemesi
