@@ -95,6 +95,37 @@ void main() {
     expect(acik, [true]);
   });
 
+  for (final (dil, gorunur) in [('tr', false), ('en', true)]) {
+    testWidgets('İngilizce meal atıfı bölüm sonunda yalnız altyazı İngilizceyken görünür ($dil)', (tester) async {
+      final o = ornekBolum();
+      final b = Bolum(
+        id: o.id,
+        sira: o.sira,
+        baslik: o.baslik,
+        ozet: o.ozet,
+        durum: o.durum,
+        sahneler: o.sahneler,
+        iddialar: const [
+          Iddia(id: 'i-b99-001', kaynaklar: [
+            Atif(eser: 'eser-a', konum: 's. 1', dogrulandi: false),
+            Atif(eser: 'meal-en', konum: 'XIV:37', dogrulandi: false),
+          ]),
+        ],
+      );
+      const k = {
+        ...kaynakca,
+        'meal-en': Eser(id: 'meal-en', yazar: 'Pickthall', ad: 'Koran', dil: 'en'),
+      };
+      await tester.pumpWidget(_sar(Oynatici(bolum: b, kaynakca: k, altyaziDili: dil)));
+      await tester.pump(const Duration(milliseconds: 100));
+      for (var i = 0; i < 25; i++) {
+        await tester.pump(const Duration(seconds: 1));
+      }
+      expect(find.textContaining('Yazar, Eser, s. 1'), findsOneWidget);
+      expect(find.textContaining('XIV:37'), gorunur ? findsOneWidget : findsNothing);
+    });
+  }
+
   testWidgets('duraklatınca zaman durur', (tester) async {
     await tester.pumpWidget(_sar(Oynatici(bolum: ornekBolum(), kaynakca: kaynakca)));
     await tester.pump(const Duration(milliseconds: 100));

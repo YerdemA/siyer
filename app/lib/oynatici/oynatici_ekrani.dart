@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
@@ -762,7 +763,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
               ),
             ),
             if (_sarma case final s?) _SarmaGostergesi(ileri: s.ileri, saniye: s.saniye),
-            if (_tarif) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
+            if (_tarif && revizeAraclari) _TarifPaneli(sahne: konum.sahne.sahne, cekim: konum.cekim),
             if (_kontroller && !_bitti) _kontrolCubugu(context, konum),
             if (_gecis case final g?)
               HaritaGecisi(
@@ -779,6 +780,7 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                 azHareket: widget.azHareket,
                 bolum: widget.bolum,
                 kaynakca: widget.kaynakca,
+                altyaziDili: widget.altyaziDili,
                 sonraki: widget.sonrakiBolum,
                 yenidenOynat: () => setState(() {
                   _an = 0;
@@ -962,12 +964,13 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
                       icon: const Icon(Icons.people_outline),
                       onPressed: () => _sahislariGoster(context, konum.sahne.sahne.sahislar),
                     ),
-                  IconButton(
-                    tooltip: m.tarifGoster,
-                    color: _tarif ? const Color(0xFFF2C46B) : beyaz,
-                    icon: const Icon(Icons.description_outlined),
-                    onPressed: () => setState(() => _tarif = !_tarif),
-                  ),
+                  if (revizeAraclari)
+                    IconButton(
+                      tooltip: m.tarifGoster,
+                      color: _tarif ? const Color(0xFFF2C46B) : beyaz,
+                      icon: const Icon(Icons.description_outlined),
+                      onPressed: () => setState(() => _tarif = !_tarif),
+                    ),
                 ],
               ),
             ),
@@ -982,6 +985,11 @@ class _OynaticiState extends State<Oynatici> with SingleTickerProviderStateMixin
     return '${s ~/ 60}:${(s % 60).toString().padLeft(2, '0')}';
   }
 }
+
+/// Sahne tarifi paneli (kamera, katmanlar, üretim notları) revize aracıdır:
+/// yalnız geliştirme derlemesinde ve `--dart-define=REVIZE=true` ile
+/// derlenen test sürümlerinde görünür; herkese açık sürümde yok (Erdem, 2026-11-25).
+const revizeAraclari = kDebugMode || bool.fromEnvironment('REVIZE');
 
 /// Hız düğmesinin metni: `1×`, `1,5×` (Türkçe), `1.5×` (İngilizce).
 String hizMetni(double hiz, String dilKodu) {
@@ -1178,6 +1186,7 @@ class _BolumSonu extends StatefulWidget {
     required this.yenidenOynat,
     this.sonraki,
     this.azHareket = false,
+    this.altyaziDili = 'tr',
   });
 
   final Bolum bolum;
@@ -1185,6 +1194,7 @@ class _BolumSonu extends StatefulWidget {
   final Map<String, Eser> kaynakca;
   final VoidCallback yenidenOynat;
   final bool azHareket;
+  final String altyaziDili;
 
   @override
   State<_BolumSonu> createState() => _BolumSonuState();
@@ -1247,6 +1257,7 @@ class _BolumSonuState extends State<_BolumSonu> with SingleTickerProviderStateMi
               kaynakca: widget.kaynakca,
               sonraki: widget.sonraki,
               yenidenOynat: widget.yenidenOynat,
+              altyaziDili: widget.altyaziDili,
             ),
           ),
         ],
@@ -1256,7 +1267,17 @@ class _BolumSonuState extends State<_BolumSonu> with SingleTickerProviderStateMi
 }
 
 class _BolumSonuListesi extends StatelessWidget {
-  const _BolumSonuListesi({required this.bolum, required this.kaynakca, required this.yenidenOynat, this.sonraki});
+  const _BolumSonuListesi({
+    required this.bolum,
+    required this.kaynakca,
+    required this.yenidenOynat,
+    this.sonraki,
+    this.altyaziDili = 'tr',
+  });
+
+  /// İngilizce esere (Pickthall meali) atıf yalnız altyazı İngilizceyken
+  /// gösterilir; diğer kaynaklar her zaman.
+  final String altyaziDili;
 
   final Bolum bolum;
   final Bolum? sonraki;
@@ -1266,7 +1287,10 @@ class _BolumSonuListesi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final m = Metinler.of(context);
-    final atiflar = bolum.tumAtiflar;
+    final atiflar = [
+      for (final a in bolum.tumAtiflar)
+        if (kaynakca[a.eser]?.dil != 'en' || altyaziDili == 'en') a,
+    ];
     return ColoredBox(
       color: const Color(0xE6120E0B),
       child: Padding(
