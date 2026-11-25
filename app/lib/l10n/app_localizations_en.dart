@@ -332,4 +332,13 @@ class MetinlerEn extends Metinler {
   String hataBildirAcilamadi(String adres) {
     return 'No e-mail app could be opened. You can send your report to $adres.';
   }
+
+  @override
+  String get yakindaUst => 'Next period';
+
+  @override
+  String get yakindaBaslik => 'The Prophethood';
+
+  @override
+  String get yakindaAlt => 'Coming soon';
 }

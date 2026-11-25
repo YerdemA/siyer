@@ -239,5 +239,8 @@
         "type": "String"
       }
     }
-  }
+  },
+  "yakindaUst": "Sıradaki dönem",
+  "yakindaBaslik": "Peygamberlik Dönemi",
+  "yakindaAlt": "Yakında"
 }

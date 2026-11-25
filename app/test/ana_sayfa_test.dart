@@ -362,6 +362,14 @@ void main() {
     expect(find.byType(DevamKarti), findsNothing);
   });
 
+  testWidgets('yolun sonunda sıradaki dönem "Yakında" kartı', (tester) async {
+    await tester.pumpWidget(_sar(const Scaffold(body: BolumYolu())));
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.byType(YakindaKarti), 200);
+    expect(find.text('Peygamberlik Dönemi'), findsOneWidget);
+    expect(find.text('Yakında'), findsOneWidget);
+  });
+
   testWidgets('hareketi azalt: harita geçişi kısa sürer, ayar saklanır', (tester) async {
     await tester.pumpWidget(_sar(Oynatici(
       bolum: _bolum(),

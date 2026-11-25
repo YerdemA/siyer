@@ -33,6 +33,11 @@ class YolYerlesimi {
       kartlar.add(Rect.fromLTWH(sol, ust + i * adim, kartGenisligi, kartYuksekligi));
       acilar.add(0.05 * math.sin(i * 2.3 + 1.1));
     }
+    // Yolun sonunda, ortada: henüz gelmemiş dönemin kartı.
+    if (sayi > 0) {
+      final gen = math.min(genislik - 2 * kenar, kartGenisligi + 40);
+      yakinda = Rect.fromLTWH((genislik - gen) / 2, ust + sayi * adim + 14, gen, yakindaYuksekligi);
+    }
   }
 
   final double genislik;
@@ -55,8 +60,12 @@ class YolYerlesimi {
   final kartlar = <Rect>[];
   final acilar = <double>[];
 
+  /// "Yakında" kartı (sonraki dönem); bölüm yoksa null.
+  Rect? yakinda;
+  static const yakindaYuksekligi = 150.0;
+
   double get kartGenisligi => math.min(genislik * 0.68, 330);
-  double get yukseklik => (kartlar.isEmpty ? ust : kartlar.last.bottom) + 140;
+  double get yukseklik => (yakinda?.bottom ?? (kartlar.isEmpty ? ust : kartlar.last.bottom)) + 140;
 }
 
 class _BolumYoluState extends ConsumerState<BolumYolu> {
@@ -116,6 +125,8 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                     top: y.ust + 40,
                     child: Text(m.bolumYok, textAlign: TextAlign.center),
                   ),
+                if (y.yakinda != null)
+                  Positioned.fromRect(rect: y.yakinda!, child: YakindaKarti(m: m)),
                 for (final i in sira)
                   // Anahtar dışta: sıra değişince kartın durumu (animasyon) korunsun.
                   Positioned.fromRect(
@@ -619,14 +630,31 @@ class YolCizici extends CustomPainter {
       yol(k[i].bottomCenter + Offset(k[i].width * 0.12 * (i.isEven ? 1 : -1), 0),
           k[i + 1].topCenter + Offset(k[i + 1].width * 0.12 * (i.isEven ? -1 : 1), 0));
     }
-    if (k.isNotEmpty) {
-      // Yolun sonu: aşağıda solan birkaç nokta (devamı sonraki dönemlerde).
-      final son = k.last.bottomCenter;
-      for (var i = 1; i <= 6; i++) {
+    final yakinda = yerlesim.yakinda;
+    if (k.isNotEmpty && yakinda != null) {
+      // Son bölümden "Yakında" kartına giden yol soluklaşır: henüz yürünmedi.
+      final a = k.last.bottomCenter + Offset(k.last.width * 0.12 * (k.length.isOdd ? 1 : -1), 0);
+      final b = yakinda.topCenter;
+      final p = Path()
+        ..moveTo(a.dx, a.dy)
+        ..cubicTo(a.dx, a.dy + 46, b.dx, b.dy - 46, b.dx, b.dy);
+      for (final olcu in p.computeMetrics()) {
+        for (var d = 6.0; d < olcu.length - 4; d += 11) {
+          final oran = d / olcu.length;
+          canvas.drawCircle(
+            olcu.getTangentForOffset(d)!.position,
+            2.3 - oran * 0.8,
+            Paint()..color = Palet.murekkep.withValues(alpha: 0.5 - oran * 0.3),
+          );
+        }
+      }
+      // Kartın altında, aşağıda solan birkaç nokta (sonraki dönemler).
+      final son = yakinda.bottomCenter;
+      for (var i = 1; i <= 5; i++) {
         canvas.drawCircle(
           son + Offset(math.sin(i * 0.7) * 10, i * 12.0),
-          2.3,
-          Paint()..color = Palet.murekkep.withValues(alpha: 0.5 * (1 - i / 7)),
+          1.6,
+          Paint()..color = Palet.murekkep.withValues(alpha: 0.25 * (1 - i / 6)),
         );
       }
     }
@@ -641,7 +669,7 @@ class YolCizici extends CustomPainter {
     for (var i = 0; i < k.length * 2; i++) {
       final p = Offset(20 + rt.nextDouble() * (size.width - 40), yerlesim.ust + rt.nextDouble() * (size.height - yerlesim.ust - 60));
       final r = Rect.fromCenter(center: p, width: 44, height: 22);
-      if (k.any((x) => x.inflate(14).overlaps(r))) continue;
+      if ([...k, ?yakinda].any((x) => x.inflate(14).overlaps(r))) continue;
       canvas.drawPath(
         Path()
           ..moveTo(p.dx - 14, p.dy)
@@ -662,6 +690,103 @@ class YolCizici extends CustomPainter {
       eski.yerlesim.genislik != yerlesim.genislik ||
       eski.yerlesim.kartlar.length != yerlesim.kartlar.length ||
       eski.yerlesim.ust != yerlesim.ust;
+}
+
+/// Yolun sonundaki, henüz gelmemiş dönemin kartı: kesik çizgili kenar,
+/// soluk kâğıt, kum saati mührü. Dokunulmaz.
+class YakindaKarti extends StatelessWidget {
+  const YakindaKarti({super.key, required this.m});
+
+  final Metinler m;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: '${m.yakindaBaslik}. ${m.yakindaAlt}',
+      excludeSemantics: true,
+      child: Transform.rotate(
+        angle: -0.015,
+        child: CustomPaint(
+          painter: const _KesikCerceve(),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(20, 16, 20, 14),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  m.yakindaUst.toUpperCase(),
+                  style: const TextStyle(
+                    fontSize: 11,
+                    letterSpacing: 2.2,
+                    fontWeight: FontWeight.w600,
+                    color: Palet.murekkepSoluk,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    m.yakindaBaslik,
+                    maxLines: 1,
+                    style: const TextStyle(
+                      fontFamily: baslikYazisi,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                      color: Palet.murekkep,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(width: 28, height: 1, color: Palet.altin),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 8),
+                      child: Icon(Icons.hourglass_empty_rounded, size: 16, color: Palet.altin),
+                    ),
+                    Container(width: 28, height: 1, color: Palet.altin),
+                  ],
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  m.yakindaAlt,
+                  style: const TextStyle(
+                    fontFamily: baslikYazisi,
+                    fontSize: 16,
+                    fontStyle: FontStyle.italic,
+                    color: Palet.murekkepSoluk,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _KesikCerceve extends CustomPainter {
+  const _KesikCerceve();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rr = RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(8));
+    canvas.drawRRect(rr, Paint()..color = Palet.kagitAcik.withValues(alpha: 0.45));
+    final kalem = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.3
+      ..color = Palet.murekkep.withValues(alpha: 0.45);
+    for (final olcu in (Path()..addRRect(rr)).computeMetrics()) {
+      for (var d = 0.0; d < olcu.length; d += 12) {
+        canvas.drawPath(olcu.extractPath(d, math.min(d + 6, olcu.length)), kalem);
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(_KesikCerceve eski) => false;
 }
 
 /// Ana sayfanın en üstünde, yarım bırakılmış son bölüme dönüş kartı.

@@ -330,4 +330,13 @@ class MetinlerTr extends Metinler {
   String hataBildirAcilamadi(String adres) {
     return 'E-posta uygulaması açılamadı. Bildirimini $adres adresine gönderebilirsin.';
   }
+
+  @override
+  String get yakindaUst => 'Sıradaki dönem';
+
+  @override
+  String get yakindaBaslik => 'Peygamberlik Dönemi';
+
+  @override
+  String get yakindaAlt => 'Yakında';
 }

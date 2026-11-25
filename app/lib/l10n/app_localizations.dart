@@ -648,6 +648,24 @@ abstract class Metinler {
   /// In tr, this message translates to:
   /// **'E-posta uygulaması açılamadı. Bildirimini {adres} adresine gönderebilirsin.'**
   String hataBildirAcilamadi(String adres);
+
+  /// No description provided for @yakindaUst.
+  ///
+  /// In tr, this message translates to:
+  /// **'Sıradaki dönem'**
+  String get yakindaUst;
+
+  /// No description provided for @yakindaBaslik.
+  ///
+  /// In tr, this message translates to:
+  /// **'Peygamberlik Dönemi'**
+  String get yakindaBaslik;
+
+  /// No description provided for @yakindaAlt.
+  ///
+  /// In tr, this message translates to:
+  /// **'Yakında'**
+  String get yakindaAlt;
 }
 
 class _MetinlerDelegate extends LocalizationsDelegate<Metinler> {

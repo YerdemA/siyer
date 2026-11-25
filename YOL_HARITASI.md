@@ -83,6 +83,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
   - Gerekenler: `audio_service` paketi (Erdem onayladı, 2026-11-25; yalnız Android ve iOS sistem medya oturumu, internet yok), manifestte `FOREGROUND_SERVICE` ve `FOREGROUND_SERVICE_MEDIA_PLAYBACK` izinleri (Play Console'da ön plan servisi beyanı: "medya oynatma"), Android 13+ bildirim izni gerekmedi (medya oturumu bildirimi muaf). Gizlilik metni değişmez (veri toplanmaz). Ana sayfa/oynatıcı akışında saat hâlâ asıl; servis yalnız sesi ve kartı yönetir.
 - [x] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (Play Asset Delivery; gerçek ağda deneme kapalı testte)
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
+- [x] Ana sayfada yolun sonunda "Peygamberlik Dönemi · Yakında" kartı (Erdem, 2026-11-25; kesik çizgili soluk kâğıt, soluklaşan yol)
 - [x] "Hata bildir" (2026-11-25): oynatıcı üst çubuğu ve Ayarlar → e-posta (bölüm, sahne, zaman, sürüm eklenir; `url_launcher`)
 - [ ] **İngilizce altyazı** (Erdem, 2026-11-25: MVP'de): anlatım Türkçe kalır, altyazı ve arayüz İngilizce seçilebilir. `content/en/` metinleri (aynı kimlikler), âyet mealleri için İngilizce meal kararı ve atıfı gerekir.
 - [ ] Mağaza görselleri (simge ve açılış hazır)

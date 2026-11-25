@@ -101,5 +101,8 @@
   "hataBildirAciklama": "Seen a factual error, or an image or sound problem? Tell us by e-mail.",
   "hataBildirKonu": "The Life of the Prophet: problem report",
   "hataBildirGovde": "What did you notice? (wrong information, image, sound, app error)\n\n\n---\nPlease keep these lines, they help us find the problem:\n{bilgi}",
-  "hataBildirAcilamadi": "No e-mail app could be opened. You can send your report to {adres}."
+  "hataBildirAcilamadi": "No e-mail app could be opened. You can send your report to {adres}.",
+  "yakindaUst": "Next period",
+  "yakindaBaslik": "The Prophethood",
+  "yakindaAlt": "Coming soon"
 }
