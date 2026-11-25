@@ -6,7 +6,13 @@ Son güncelleme: 2026-11-25.
 
 ## Sıradaki adımlar (öncelik sırasıyla)
 
-**Kaldığımız yer (2026-11-25, üçüncü oturum): Erdem'in v9 notları işlendi, kararlar alındı.**
+**Kaldığımız yer (2026-11-25, dördüncü oturum): Yakında kartı ve fon sesi altyapısı.**
+- **Ana sayfada "Peygamberlik Dönemi · Yakında" kartı** (Erdem istedi): 10. bölümden sonra yol soluklaşarak kesik çizgili, soluk kâğıt bir karta varır; "Sıradaki dönem", başlık, altın çizgiler arasında kum saati, "Yakında". `YakindaKarti` (`bolum_yolu.dart`). Gerçek yazı tipleriyle test görüntüsü `İndirilenler\siyer\_onizleme-yakinda.png`; telefonda denenmedi.
+- **Fon müziği ve ortam sesi altyapısı yapıldı** (`lib/oynatici/fon_sesi.dart`, `docs/SES_TASARIMI.md`): iki kanal, döngü, sahne değişince 1,8 sn yumuşak geçiş, aynı ad kesintisiz, duraklayınca susar; Ayarlar'da "Müzik ve ortam sesi". Dosyalar `content/fon/muzik|ortam/<ad>.mp3` → uygulamaya gömülür. İçerik adları 11 müzik + 13 ortama indirildi. **Ses dosyası yok**; doğrulama eksikleri uyarı olarak listeler (yayında hata). Testler 107/107.
+- **ElevenLabs kredisi bitmek üzere:** Starter, 39.331'in 39.107'si kullanılmış, yenilenme ~2026-12-21. Üretim yenilenmeden sonra ya da plan yükseltilince; önce planın müzik için ticari kullanım koşuluna bakılacak. İstemler `docs/SES_TASARIMI.md`'de, her parça tek tek üretilip Erdem'e dinletilecek.
+- Anlatıcı: Seyfullah Kartal (Erdem doğruladı).
+
+**Önceki (2026-11-25, üçüncü oturum): Erdem'in v9 notları işlendi, kararlar alındı.**
 - Telefonda onaylananlar: kilit kartı (düğmeler var), b09-s09, b09-s07, b04-s07 göz dizisi, anlatıcı sesi, Xiaomi'de ekran kapalıyken durma görülmedi. b04-s01 kafile büyütüldü (`x .25, y .687, olcek .36`; ayak çizgisi aynı, Kâbe'yle çakışmıyor).
 - **Hata bildir yapıldı:** oynatıcı üst çubuğunda bayrak düğmesi (anlatımı durdurur) ve Ayarlar'da satır → e-posta uygulaması; konu hazır, gövdede sürüm, dil, bölüm, sahne, bölüm zamanı. Adres gizlilik sayfasındakiyle aynı. `lib/hata_bildir.dart`; `uygulamaSurumu` sabiti `pubspec.yaml` sürümüyle aynı olmalı (test denetler; **sürüm `+2` yapılınca ikisi birlikte**). Manifestte `mailto` sorgusu. Testler 105/105. Telefonda denenmedi.
 - **Erdem'in kararları (2026-11-25):** müzik ve ortam sesi MVP'de (çalgılı, sade, Ayarlar'da kapatılabilir; ElevenLabs'te üretim, her parçayı Erdem onaylar, toplu üretimden önce sor); İngilizce **altyazı** MVP'de (anlatım Türkçe); güncellemesiz yeni bölüm altyapısı MVP sonrası, GitHub Releases (`docs/UZAK_BOLUM.md`); tablet testi ve zorunlu işler (582 atıf, kapalı test, kaynakça) en sona.

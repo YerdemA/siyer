@@ -73,7 +73,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Anlatım sesi altyapısı
 - [x] Saat tonu (deneme; akşam ve şafak)
 - [x] Anlatım sesiyle gerçek cihazda deneme (10 bölüm seslendirildi, 2026-11-21)
-- [ ] **Müzik ve ortam sesi** (Erdem, 2026-11-25: MVP'de olacak). Çalgılı, sade belgesel müziği (ney, ud, yaylı drone); Ayarlar'da "Müzik" açma-kapama. Sesler ElevenLabs ile üretilir, her parçayı Erdem dinleyip onaylar; toplu üretimden önce sorulur. İçerikteki 21 müzik ve 26 ortam adı ~10 müzik + ~12 ortama indirgenir. Oynatıcıda anlatımın altında kısık, sahne geçişinde yumuşak geçiş.
+- [ ] **Müzik ve ortam sesi** (Erdem, 2026-11-25: MVP'de olacak; oynatıcı ve Ayarlar hazır, ses dosyaları ElevenLabs kredisi yenilenince, `docs/SES_TASARIMI.md`). Çalgılı, sade belgesel müziği (ney, ud, yaylı drone); Ayarlar'da "Müzik" açma-kapama. Sesler ElevenLabs ile üretilir, her parçayı Erdem dinleyip onaylar; toplu üretimden önce sorulur. İçerikteki 21 müzik ve 26 ortam adı ~10 müzik + ~12 ortama indirgenir. Oynatıcıda anlatımın altında kısık, sahne geçişinde yumuşak geçiş.
 - [x] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25; yapıldı; v8 telefonda: kart göründü ama düğmeler yoktu, simgeler küçültmede siliniyordu, v9'da düzeltildi, Erdem telefonda onayladı): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
   - bölüm adı ve sahne (ör. "Süt Anne · 7/10"), sahnenin görseli kapak resmi olarak;
   - durdur/devam, önceki sahne, sonraki sahne;
