@@ -73,7 +73,7 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 - [x] Anlatım sesi altyapısı
 - [x] Saat tonu (deneme; akşam ve şafak)
 - [x] Anlatım sesiyle gerçek cihazda deneme (10 bölüm seslendirildi, 2026-11-21)
-- [ ] Müzik ve ortam sesi çalma
+- [ ] **Müzik ve ortam sesi** (Erdem, 2026-11-25: MVP'de olacak). Çalgılı, sade belgesel müziği (ney, ud, yaylı drone); Ayarlar'da "Müzik" açma-kapama. Sesler ElevenLabs ile üretilir, her parçayı Erdem dinleyip onaylar; toplu üretimden önce sorulur. İçerikteki 21 müzik ve 26 ortam adı ~10 müzik + ~12 ortama indirgenir. Oynatıcıda anlatımın altında kısık, sahne geçişinde yumuşak geçiş.
 - [x] **Kilit ekranı / bildirim kartı** (Erdem, 2026-11-25; yapıldı; v8 telefonda: kart göründü ama düğmeler yoktu, simgeler küçültmede siliniyordu, v9'da düzeltildi, Erdem telefonda onayladı): bölüm açıkken ekran kilitlenince kilit ekranında ve bildirim panelinde bir medya kartı. İçerik:
   - bölüm adı ve sahne (ör. "Süt Anne · 7/10"), sahnenin görseli kapak resmi olarak;
   - durdur/devam, önceki sahne, sonraki sahne;
@@ -81,9 +81,10 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
   - kartı kapatınca (kaydırınca) oynatma durur, ilerleme kaydedilir.
   - Ayrıca (Claude ekledi): kulaklık/Bluetooth tuşları ve kulaklık çıkınca otomatik durma; telefon araması ya da başka bir ses başlayınca durma (ses odağı); ekran kapalıyken sistemin uygulamayı öldürmemesi (ön plan medya servisi, Xiaomi sorunu da çözülür); kilit ekranından dönünce görüntünün kaldığı sahnede olması.
   - Gerekenler: `audio_service` paketi (Erdem onayladı, 2026-11-25; yalnız Android ve iOS sistem medya oturumu, internet yok), manifestte `FOREGROUND_SERVICE` ve `FOREGROUND_SERVICE_MEDIA_PLAYBACK` izinleri (Play Console'da ön plan servisi beyanı: "medya oynatma"), Android 13+ bildirim izni gerekmedi (medya oturumu bildirimi muaf). Gizlilik metni değişmez (veri toplanmaz). Ana sayfa/oynatıcı akışında saat hâlâ asıl; servis yalnız sesi ve kartı yönetir.
-- [ ] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (barındırma kararı bekliyor)
+- [x] Bölümlerin tek tek indirilmesi ve çevrimdışı çalışması (Play Asset Delivery; gerçek ağda deneme kapalı testte)
 - [x] Parşömen harita (kodla: kıyı, dağlar, kervan yolları, pusula, Mekke çevresi ayrıntısı; 2026-11-19)
-- [ ] "Hata bildir" bağlantısı
+- [x] "Hata bildir" (2026-11-25): oynatıcı üst çubuğu ve Ayarlar → e-posta (bölüm, sahne, zaman, sürüm eklenir; `url_launcher`)
+- [ ] **İngilizce altyazı** (Erdem, 2026-11-25: MVP'de): anlatım Türkçe kalır, altyazı ve arayüz İngilizce seçilebilir. `content/en/` metinleri (aynı kimlikler), âyet mealleri için İngilizce meal kararı ve atıfı gerekir.
 - [ ] Mağaza görselleri (simge ve açılış hazır)
 - [x] Android imzalama (`key.properties`) ve Play Store kaydı (2026-11-23: ilk sürüm kapalı test incelemesinde)
 - [ ] Kapalı test: 12 test eden, 14 gün; gerçek ağda bölüm indirme denemesi
@@ -99,7 +100,8 @@ Bölüm başına sıra: taslak → görseller → atıf doğrulama → ses → u
 
 ## Tam sürüm (MVP sonrası)
 
-- **İngilizce:** İçerik (`content/en/`, aynı kimlikler) ve İngilizce anlatım sesi; Ayarlar'da dil seçimi. Arayüz metinleri zaten iki dilde. Görseller dilden bağımsız, yeniden üretilmez.
+- **Güncellemesiz yeni bölüm** (Erdem, 2026-11-25): uzak katalog, GitHub Releases; tasarım `docs/UZAK_BOLUM.md`.
+- **İngilizce anlatım sesi** (altyazı MVP'de): Ayarlar'da dil seçimi. Arayüz metinleri zaten iki dilde. Görseller dilden bağımsız, yeniden üretilmez.
 - **Dönemler** (`docs/BOLUM_HARITASI.md`): Mekke dönemi (ilk vahiy → hicret), Medine dönemi (hicret → Hudeybiye), Fetih ve vedâ. Her dönem ayrı sürüm ve ayrı not defteri. Bütün siyer için tahminen ~1.500 görsel üretimi (100–200 dolar).
 - **Bağış bağlantısı:** İsteğe bağlı; MVP'de yok (Erdem, 2026-11-19).
 - **iOS:** Derleme, test, App Store; yayın kapısının iOS karşılığı.
