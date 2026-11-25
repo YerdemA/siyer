@@ -120,7 +120,7 @@
       },
       "ses": {
         "anlatim": "b08-s01.mp3",
-        "muzik": "acilis-sakin",
+        "muzik": "acilis",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -167,8 +167,8 @@
       },
       "ses": {
         "anlatim": "b08-s02.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "avlu-mirildanma"
+        "muzik": "dusunceli",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hatice"
@@ -239,8 +239,8 @@
       },
       "ses": {
         "anlatim": "b08-s03.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "avlu-mirildanma"
+        "muzik": "umut",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed",
@@ -306,8 +306,8 @@
       },
       "ses": {
         "anlatim": "b08-s04.mp3",
-        "muzik": "yolculuk-01",
-        "ortam": "kervan-uzak"
+        "muzik": "yolculuk",
+        "ortam": "kervan"
       },
       "sahislar": [
         "hz-muhammed",
@@ -486,7 +486,7 @@
       },
       "ses": {
         "anlatim": "b08-s06.mp3",
-        "muzik": "huzur-dusuk",
+        "muzik": "sakin-isik",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -556,7 +556,7 @@
       },
       "ses": {
         "anlatim": "b08-s07.mp3",
-        "muzik": "umut-sicak",
+        "muzik": "umut",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -674,7 +674,7 @@
       },
       "ses": {
         "anlatim": "b08-s08.mp3",
-        "muzik": "umut-sicak",
+        "muzik": "umut",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -736,8 +736,8 @@
       },
       "ses": {
         "anlatim": "b08-s09.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "avlu-mirildanma"
+        "muzik": "umut",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed",
@@ -876,7 +876,7 @@
       "ses": {
         "anlatim": "b08-s10.mp3",
         "muzik": "sicak-ev",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "hz-muhammed",
@@ -1018,7 +1018,7 @@
       },
       "ses": {
         "anlatim": "b08-s11.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -1160,7 +1160,7 @@
       },
       "ses": {
         "anlatim": "b08-s12.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -1302,7 +1302,7 @@
       },
       "ses": {
         "anlatim": "b08-s13.mp3",
-        "muzik": "umut-sicak",
+        "muzik": "umut",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -1471,7 +1471,7 @@
       },
       "ses": {
         "anlatim": "b08-s14.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [

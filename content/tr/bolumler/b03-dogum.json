@@ -188,8 +188,8 @@
       },
       "ses": {
         "anlatim": "b03-s01.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "safak-ruzgar"
+        "muzik": "dusunceli",
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed"
@@ -288,7 +288,7 @@
       },
       "ses": {
         "anlatim": "b03-s02.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -446,7 +446,7 @@
       "ses": {
         "anlatim": "b03-s03.mp3",
         "muzik": "gerilim",
-        "ortam": "kalabalik-uzak"
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -546,8 +546,8 @@
       },
       "ses": {
         "anlatim": "b03-s04.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "ruzgar-hafif"
+        "muzik": "dusunceli",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "abdulmuttalib"
@@ -665,7 +665,7 @@
       "ses": {
         "anlatim": "b03-s05.mp3",
         "muzik": "sakin-isik",
-        "ortam": "kalabalik-uzak"
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -835,7 +835,7 @@
       "ses": {
         "anlatim": "b03-s07.mp3",
         "muzik": "sakin-isik",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "amine"
@@ -944,7 +944,7 @@
       "ses": {
         "anlatim": "b03-s08.mp3",
         "muzik": "yalnizlik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "abdullah"
@@ -983,7 +983,7 @@
       "ses": {
         "anlatim": "b03-s09.mp3",
         "muzik": "yalnizlik",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "abdullah"
@@ -1040,7 +1040,7 @@
       "ses": {
         "anlatim": "b03-s10.mp3",
         "muzik": "sakin-isik",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed",
@@ -1099,7 +1099,7 @@
       "ses": {
         "anlatim": "b03-s11.mp3",
         "muzik": "sicak-ev",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -1237,7 +1237,7 @@
       "ses": {
         "anlatim": "b03-s12.mp3",
         "muzik": "sakin-isik",
-        "ortam": "safak-ruzgar"
+        "ortam": "safak"
       },
       "sahislar": [
         "abdulmuttalib",

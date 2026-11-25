@@ -82,7 +82,7 @@
       },
       "ses": {
         "anlatim": "b01-s01.mp3",
-        "muzik": "acilis-01",
+        "muzik": "acilis",
         "ortam": "col-ruzgari"
       },
       "sahislar": [],
@@ -222,8 +222,8 @@
       },
       "ses": {
         "anlatim": "b01-s02.mp3",
-        "muzik": "dua-01",
-        "ortam": "safak-ruzgar"
+        "muzik": "husu",
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-ibrahim",
@@ -322,8 +322,8 @@
       },
       "ses": {
         "anlatim": "b01-s03.mp3",
-        "muzik": "acilis-01",
-        "ortam": "kervan-uzak"
+        "muzik": "acilis",
+        "ortam": "kervan"
       },
       "sahislar": [
         "hacer",
@@ -467,7 +467,7 @@
       },
       "ses": {
         "anlatim": "b01-s04.mp3",
-        "muzik": "dua-01",
+        "muzik": "husu",
         "ortam": "col-ruzgari"
       },
       "sahislar": [
@@ -692,7 +692,7 @@
       "ses": {
         "anlatim": "b01-s06.mp3",
         "muzik": "gerilim-hafif",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "amr-b-luhay"
@@ -1015,7 +1015,7 @@
       },
       "ses": {
         "anlatim": "b01-s08.mp3",
-        "muzik": "sehir-01",
+        "muzik": "dusunceli",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -1317,8 +1317,8 @@
       },
       "ses": {
         "anlatim": "b01-s10.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "safak-ruzgar"
+        "muzik": "dusunceli",
+        "ortam": "safak"
       },
       "sahislar": [],
       "yer": "mekke"
@@ -1512,8 +1512,8 @@
       },
       "ses": {
         "anlatim": "b01-s11.mp3",
-        "muzik": "yolculuk-01",
-        "ortam": "kervan-uzak"
+        "muzik": "yolculuk",
+        "ortam": "kervan"
       },
       "sahislar": [
         "hasim-b-abdumenaf"
@@ -1687,7 +1687,7 @@
       "ses": {
         "anlatim": "b01-s12.mp3",
         "muzik": "gerilim-hafif",
-        "ortam": "col-gece"
+        "ortam": "gece"
       },
       "sahislar": [
         "cafer-b-ebu-talib"
@@ -1842,7 +1842,7 @@
       },
       "ses": {
         "anlatim": "b01-s13.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "aksam-sehir"
       },
       "sahislar": [

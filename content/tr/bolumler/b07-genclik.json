@@ -82,8 +82,8 @@
       },
       "ses": {
         "anlatim": "b07-s01.mp3",
-        "muzik": "acilis-sakin",
-        "ortam": "kalabalik-uzak"
+        "muzik": "acilis",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed",
@@ -165,8 +165,8 @@
       },
       "ses": {
         "anlatim": "b07-s02.mp3",
-        "muzik": "sehir-01",
-        "ortam": "kalabalik-uzak"
+        "muzik": "dusunceli",
+        "ortam": "kalabalik"
       },
       "sahislar": [],
       "yer": "ukaz"
@@ -433,7 +433,7 @@
       },
       "ses": {
         "anlatim": "b07-s04.mp3",
-        "muzik": "gerilim-uzak",
+        "muzik": "gerilim-hafif",
         "ortam": "col-ruzgari"
       },
       "sahislar": [
@@ -628,7 +628,7 @@
       },
       "ses": {
         "anlatim": "b07-s06.mp3",
-        "muzik": "ciddi-dusuk",
+        "muzik": "gerilim-hafif",
         "ortam": "sehir-gunduz"
       },
       "sahislar": [
@@ -710,7 +710,7 @@
       },
       "ses": {
         "anlatim": "b07-s07.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "col-ruzgari"
       },
       "sahislar": [
@@ -763,8 +763,8 @@
       },
       "ses": {
         "anlatim": "b07-s08.mp3",
-        "muzik": "gerilim-dusuk",
-        "ortam": "ordu-yuruyus"
+        "muzik": "gerilim-hafif",
+        "ortam": "ordu"
       },
       "sahislar": [
         "hz-muhammed"
@@ -834,8 +834,8 @@
       },
       "ses": {
         "anlatim": "b07-s09.mp3",
-        "muzik": "huzur-dusuk",
-        "ortam": "aksam-ruzgar"
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar"
       },
       "sahislar": [],
       "yer": ""
@@ -993,7 +993,7 @@
       "ses": {
         "anlatim": "b07-s11.mp3",
         "muzik": "yalnizlik",
-        "ortam": "safak-ruzgar"
+        "ortam": "safak"
       },
       "sahislar": [],
       "yer": "mekke"
@@ -1060,8 +1060,8 @@
       },
       "ses": {
         "anlatim": "b07-s12.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "avlu-mirildanma"
+        "muzik": "dusunceli",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "zubeyr-b-abdulmuttalib",
@@ -1184,8 +1184,8 @@
       },
       "ses": {
         "anlatim": "b07-s13.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "avlu-mirildanma"
+        "muzik": "umut",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed",

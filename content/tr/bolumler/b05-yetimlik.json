@@ -115,7 +115,7 @@
       "ses": {
         "anlatim": "b05-s01.mp3",
         "muzik": "sakin-isik",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed",
@@ -238,7 +238,7 @@
       "ses": {
         "anlatim": "b05-s02.mp3",
         "muzik": "yalnizlik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "amine",
@@ -290,7 +290,7 @@
       "ses": {
         "anlatim": "b05-s03.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "amine"
@@ -378,7 +378,7 @@
       "ses": {
         "anlatim": "b05-s04.mp3",
         "muzik": "yalnizlik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "amine",
@@ -485,7 +485,7 @@
       "ses": {
         "anlatim": "b05-s05.mp3",
         "muzik": "sicak-ev",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "ummu-eymen",
@@ -543,8 +543,8 @@
       },
       "ses": {
         "anlatim": "b05-s06.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "ruzgar-hafif"
+        "muzik": "dusunceli",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "hz-muhammed",
@@ -658,7 +658,7 @@
       "ses": {
         "anlatim": "b05-s07.mp3",
         "muzik": "sicak-ev",
-        "ortam": "kalabalik-uzak"
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "abdulmuttalib"
@@ -777,7 +777,7 @@
       "ses": {
         "anlatim": "b05-s08.mp3",
         "muzik": "sicak-ev",
-        "ortam": "kalabalik-uzak"
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -819,7 +819,7 @@
       "ses": {
         "anlatim": "b05-s09.mp3",
         "muzik": "yalnizlik",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "abdulmuttalib"

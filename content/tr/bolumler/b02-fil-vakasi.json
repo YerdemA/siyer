@@ -95,8 +95,8 @@
       },
       "ses": {
         "anlatim": "b02-s01.mp3",
-        "muzik": "gerilim-uzak",
-        "ortam": "saray"
+        "muzik": "gerilim-hafif",
+        "ortam": "ic-mekan"
       },
       "sahislar": [
         "ebrehe"
@@ -201,8 +201,8 @@
       },
       "ses": {
         "anlatim": "b02-s02.mp3",
-        "muzik": "gerilim-uzak",
-        "ortam": "kalabalik-uzak"
+        "muzik": "gerilim-hafif",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "ebrehe"
@@ -314,7 +314,7 @@
       },
       "ses": {
         "anlatim": "b02-s03.mp3",
-        "muzik": "gerilim-uzak",
+        "muzik": "gerilim-hafif",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -416,7 +416,7 @@
       "ses": {
         "anlatim": "b02-s04.mp3",
         "muzik": "gerilim",
-        "ortam": "ordu-yuruyus"
+        "ortam": "ordu"
       },
       "sahislar": [
         "ebrehe"
@@ -502,7 +502,7 @@
       "ses": {
         "anlatim": "b02-s05.mp3",
         "muzik": "gerilim",
-        "ortam": "ordu-yuruyus"
+        "ortam": "ordu"
       },
       "sahislar": [
         "ebrehe",
@@ -624,7 +624,7 @@
       "ses": {
         "anlatim": "b02-s06.mp3",
         "muzik": "gerilim",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "ebrehe",
@@ -740,7 +740,7 @@
       "ses": {
         "anlatim": "b02-s07.mp3",
         "muzik": "gerilim",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "abdulmuttalib"
@@ -891,8 +891,8 @@
       },
       "ses": {
         "anlatim": "b02-s08.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "ruzgar-hafif"
+        "muzik": "dusunceli",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -1034,8 +1034,8 @@
       },
       "ses": {
         "anlatim": "b02-s09.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "ordugah"
+        "muzik": "dusunceli",
+        "ortam": "ordu"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -1195,8 +1195,8 @@
       },
       "ses": {
         "anlatim": "b02-s10.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "ordugah"
+        "muzik": "dusunceli",
+        "ortam": "ordu"
       },
       "sahislar": [
         "abdulmuttalib",
@@ -1293,7 +1293,7 @@
       },
       "ses": {
         "anlatim": "b02-s11.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -1451,7 +1451,7 @@
       "ses": {
         "anlatim": "b02-s12.mp3",
         "muzik": "gerilim",
-        "ortam": "ordu-yuruyus"
+        "ortam": "ordu"
       },
       "sahislar": [
         "nufeyl-b-habib",
@@ -1586,7 +1586,7 @@
       "ses": {
         "anlatim": "b02-s13.mp3",
         "muzik": "gerilim",
-        "ortam": "kuslar"
+        "ortam": "safak"
       },
       "sahislar": []
     },
@@ -1769,7 +1769,7 @@
       "ses": {
         "anlatim": "b02-s14.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": []
     },
@@ -1867,7 +1867,7 @@
       "ses": {
         "anlatim": "b02-s15.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "ebrehe",
@@ -2063,7 +2063,7 @@
       "ses": {
         "anlatim": "b02-s16.mp3",
         "muzik": "sakin-isik",
-        "ortam": "safak-ruzgar"
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed"

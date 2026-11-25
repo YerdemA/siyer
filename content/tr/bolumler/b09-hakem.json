@@ -102,8 +102,8 @@
       },
       "ses": {
         "anlatim": "b09-s01.mp3",
-        "muzik": "acilis-sakin",
-        "ortam": "safak-ruzgar"
+        "muzik": "acilis",
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed"
@@ -201,8 +201,8 @@
       },
       "ses": {
         "anlatim": "b09-s02.mp3",
-        "muzik": "acilis-sakin",
-        "ortam": "ruzgar-hafif"
+        "muzik": "acilis",
+        "ortam": "ruzgar"
       },
       "sahislar": [],
       "yer": "mekke"
@@ -276,7 +276,7 @@
       "ses": {
         "anlatim": "b09-s03.mp3",
         "muzik": "",
-        "ortam": "deniz-dalga"
+        "ortam": "deniz"
       },
       "sahislar": [],
       "yer": ""
@@ -365,8 +365,8 @@
       },
       "ses": {
         "anlatim": "b09-s04.mp3",
-        "muzik": "ciddi-dusuk",
-        "ortam": "avlu-ugultu"
+        "muzik": "gerilim-hafif",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "ebu-vehb-b-amr"
@@ -483,8 +483,8 @@
       },
       "ses": {
         "anlatim": "b09-s05.mp3",
-        "muzik": "gerilim-dusuk",
-        "ortam": "kazma-tas"
+        "muzik": "gerilim-hafif",
+        "ortam": "insaat"
       },
       "sahislar": [
         "velid-b-mugire"
@@ -528,8 +528,8 @@
       },
       "ses": {
         "anlatim": "b09-s06.mp3",
-        "muzik": "huzur-dusuk",
-        "ortam": "sessiz-ruzgar"
+        "muzik": "sakin-isik",
+        "ortam": "ruzgar"
       },
       "sahislar": [],
       "yer": "mekke"
@@ -626,8 +626,8 @@
       },
       "ses": {
         "anlatim": "b09-s07.mp3",
-        "muzik": "emek-sicak",
-        "ortam": "insaat-uzak"
+        "muzik": "sicak-ev",
+        "ortam": "insaat"
       },
       "sahislar": [
         "hz-muhammed",
@@ -819,7 +819,7 @@
       "ses": {
         "anlatim": "b09-s09.mp3",
         "muzik": "gerilim",
-        "ortam": "gece-mesale"
+        "ortam": "gece"
       },
       "sahislar": [],
       "yer": "mekke"
@@ -889,8 +889,8 @@
       },
       "ses": {
         "anlatim": "b09-s10.mp3",
-        "muzik": "bekleyis",
-        "ortam": "avlu-sessiz"
+        "muzik": "dusunceli",
+        "ortam": "ic-mekan"
       },
       "sahislar": [
         "ebu-umeyye-b-mugire"
@@ -983,8 +983,8 @@
       },
       "ses": {
         "anlatim": "b09-s11.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "avlu-mirildanma"
+        "muzik": "umut",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed"
@@ -1033,8 +1033,8 @@
       },
       "ses": {
         "anlatim": "b09-s12.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "kumas-hisirti"
+        "muzik": "umut",
+        "ortam": "ic-mekan"
       },
       "sahislar": [
         "hz-muhammed"
@@ -1092,8 +1092,8 @@
       },
       "ses": {
         "anlatim": "b09-s13.mp3",
-        "muzik": "huzur-sicak",
-        "ortam": "avlu-dagilan"
+        "muzik": "sakin-isik",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "hz-muhammed"
@@ -1235,7 +1235,7 @@
       "ses": {
         "anlatim": "b09-s14.mp3",
         "muzik": "kapanis",
-        "ortam": "aksam-ruzgar"
+        "ortam": "ruzgar"
       },
       "sahislar": [],
       "yer": "mekke"

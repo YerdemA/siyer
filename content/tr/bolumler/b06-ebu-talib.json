@@ -121,7 +121,7 @@
       "ses": {
         "anlatim": "b06-s01.mp3",
         "muzik": "sakin-isik",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed",
@@ -168,8 +168,8 @@
       },
       "ses": {
         "anlatim": "b06-s02.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "sabah-sessiz"
+        "muzik": "dusunceli",
+        "ortam": "safak"
       },
       "sahislar": [
         "ebu-talib"
@@ -264,7 +264,7 @@
       "ses": {
         "anlatim": "b06-s04.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "hz-muhammed",
@@ -359,8 +359,8 @@
       },
       "ses": {
         "anlatim": "b06-s05.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "aksam-ruzgar"
+        "muzik": "dusunceli",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "hz-muhammed"
@@ -460,8 +460,8 @@
       },
       "ses": {
         "anlatim": "b06-s06.mp3",
-        "muzik": "yolculuk-01",
-        "ortam": "kalabalik-uzak"
+        "muzik": "yolculuk",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "ebu-talib"
@@ -543,8 +543,8 @@
       },
       "ses": {
         "anlatim": "b06-s07.mp3",
-        "muzik": "umut-sicak",
-        "ortam": "kervan-uzak"
+        "muzik": "umut",
+        "ortam": "kervan"
       },
       "sahislar": [
         "hz-muhammed",
@@ -637,7 +637,7 @@
       },
       "ses": {
         "anlatim": "b06-s08.mp3",
-        "muzik": "yolculuk-01",
+        "muzik": "yolculuk",
         "ortam": "col-ruzgari"
       },
       "sahislar": [
@@ -733,8 +733,8 @@
       },
       "ses": {
         "anlatim": "b06-s09.mp3",
-        "muzik": "esik",
-        "ortam": "ruzgar-hafif"
+        "muzik": "husu",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "bahira",
@@ -806,8 +806,8 @@
       },
       "ses": {
         "anlatim": "b06-s10.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "kalabalik-uzak"
+        "muzik": "dusunceli",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "bahira",
@@ -987,8 +987,8 @@
       },
       "ses": {
         "anlatim": "b06-s11.mp3",
-        "muzik": "esik",
-        "ortam": "ruzgar-hafif"
+        "muzik": "husu",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "bahira",
@@ -1102,7 +1102,7 @@
       "ses": {
         "anlatim": "b06-s12.mp3",
         "muzik": "gerilim-hafif",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "bahira",

@@ -121,7 +121,7 @@
       "ses": {
         "anlatim": "b04-s01.mp3",
         "muzik": "sakin-isik",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "hz-muhammed",
@@ -244,7 +244,7 @@
       "ses": {
         "anlatim": "b04-s02.mp3",
         "muzik": "yalnizlik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "halime",
@@ -349,8 +349,8 @@
       },
       "ses": {
         "anlatim": "b04-s03.mp3",
-        "muzik": "dusunceli-01",
-        "ortam": "kalabalik-uzak"
+        "muzik": "dusunceli",
+        "ortam": "kalabalik"
       },
       "sahislar": [
         "halime",
@@ -459,7 +459,7 @@
       "ses": {
         "anlatim": "b04-s04.mp3",
         "muzik": "sicak-ev",
-        "ortam": "gece-sessiz"
+        "ortam": "gece"
       },
       "sahislar": [
         "halime",
@@ -523,7 +523,7 @@
       "ses": {
         "anlatim": "b04-s05.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "halime"
@@ -632,7 +632,7 @@
       "ses": {
         "anlatim": "b04-s06.mp3",
         "muzik": "sicak-ev",
-        "ortam": "sabah-sessiz"
+        "ortam": "safak"
       },
       "sahislar": [
         "halime",
@@ -2558,8 +2558,8 @@
       },
       "ses": {
         "anlatim": "b04-s07.mp3",
-        "muzik": "esik",
-        "ortam": "ruzgar-hafif"
+        "muzik": "husu",
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "hz-muhammed",
@@ -2659,7 +2659,7 @@
       "ses": {
         "anlatim": "b04-s08.mp3",
         "muzik": "sakin-isik",
-        "ortam": "ruzgar-hafif"
+        "ortam": "ruzgar"
       },
       "sahislar": [
         "halime"
@@ -2871,7 +2871,7 @@
       },
       "ses": {
         "anlatim": "b04-s09.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
@@ -2920,7 +2920,7 @@
       },
       "ses": {
         "anlatim": "b04-s10.mp3",
-        "muzik": "dusunceli-01",
+        "muzik": "dusunceli",
         "ortam": "aksam-sehir"
       },
       "sahislar": [
