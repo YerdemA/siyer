@@ -1,0 +1,13 @@
+[
+  {"id": "mekke", "ad": "Mecca"},
+  {"id": "hira", "ad": "Hira (Mount of Light)", "ozet": "A mountain north-east of Mecca. Every year in the month of Ramadan, the Prophet withdrew to the cave here to worship alone."},
+  {"id": "suaybe", "ad": "al-Shu'ayba"},
+  {"id": "nahle", "ad": "Nakhla"},
+  {"id": "ukaz", "ad": "'Ukaz", "ozet": "A valley south-east of Mecca, between Ta'if and Nakhla. Every year in the month of Dhu al-Qa'da the greatest fair of the Arabs was held here."},
+  {"id": "taif", "ad": "Ta'if"},
+  {"id": "ebva", "ad": "al-Abwa"},
+  {"id": "yesrib", "ad": "Yathrib (Medina)"},
+  {"id": "busra", "ad": "Busra", "ozet": "A market town south of Damascus; the caravans of Quraysh often stopped here. The Prophet halted here on the journey he made with his uncle Abu Talib at the age of twelve. According to a report, on the journey he made with Khadija's caravan at the age of twenty-five, a monk also spoke about him."},
+  {"id": "sam", "ad": "Damascus"},
+  {"id": "sana", "ad": "San'a (Yemen)"}
+]

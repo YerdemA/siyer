@@ -105,6 +105,12 @@ MVP'de anlatım sesi Türkçe; altyazı Ayarlar → "Altyazı dili" ile İngiliz
 - Ad yazımı: peygamberler İngilizce yerleşik adlarıyla (Abraham, Ishmael, Hagar; Pickthall'la uyumlu), diğer Arap adları yaygın çevriyazıyla ('Abd al-Muttalib, Qusayy ibn Kilab, Quraysh). İlk anışta "the Prophet Muhammad (peace be upon him)", sonra "the Prophet" ya da "the Messenger of Allah".
 - Eksik parça ya da sahnede Türkçesi gösterilir. Doğrulama: parça sayısı ve sahne kimlikleri hata; çevrilmemiş bölüm/sahne geliştirmede uyarı, yayında hata.
 
+### Yan verilerin çevirisi
+
+Uygulama dili İngilizce seçilince `content/<dil>/sahislar.json`, `yerler.json`, `zaman-cizelgesi.json`, `kaynakca.json` okunur: her öğe `id` + yalnız çevrilen metin alanları (`sahislar`: ad, lakap, yakinlik, ozet; `yerler`: ad, ozet; `zaman-cizelgesi`: olay; `kaynakca`: yazar, eser, baski). Uygulama bunları kimliğe göre Türkçe kaydın üstüne yazar; iddia bağları, konumlar, yıllar Türkçe kayıttan gelir. Doğrulama: bilinmeyen kimlik ya da izinsiz alan hata, eksik kayıt geliştirmede uyarı, yayında hata.
+
+Uygulama dili değişince altyazı dili de ona geçer; oynatıcıda alt çubuktaki TR/EN düğmesi yalnız altyazıyı değiştirir.
+
 ## Bölüm paketleri (indirme)
 
 Bölüm JSON'ları, kaynakça, sözlük, harita ve zaman çizelgesi her zaman uygulamayla gelir. Ses ve görsellerde ise:
