@@ -79,6 +79,8 @@ flutter:
     - assets/icerik/fon/muzik/
     - assets/icerik/fon/ortam/
     - assets/sesler/
+    # Bölüm kartlarının kapak şeritleri (tools/kart_kapagi.py).
+    - assets/kartlar/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

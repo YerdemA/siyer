@@ -3,12 +3,12 @@
 Kullanım (depo kökünden, projenin sanal ortamıyla):
   .venv\\Scripts\\python.exe -I tools/efekt_sesleri.py
 
-Çıktı: app/assets/sesler/kalem.wav, app/assets/sesler/parsomen.wav
+Çıktı: app/assets/sesler/parsomen.wav
 (22 050 Hz, 16 bit, tek kanal).
 
-- kalem: bölüm kartına çizilen çarpının iki fırça darbesi. Zamanlama
-  bolum_yolu.dart'taki animasyonla aynıdır (1,3 sn'lik animasyonun
-  0,38–0,58 ve 0,58–0,78 aralıkları; kaydırma payıyla birlikte).
+- kalem: eskiden bölüm kartına çizilen çarpının sesiydi; çarpı kaldırıldı
+  (2026-11-25), ses yazılmıyor. Üretimi yalnız parşömenin aynı çıkması
+  için (aynı rastgele dizi) yapılır.
 - parsomen: harita açılırken kâğıt hışırtısı.
 """
 import wave
@@ -74,5 +74,5 @@ def yaz(ad: str, x: np.ndarray, tepe: float) -> None:
 
 if __name__ == "__main__":
     rng = np.random.default_rng(605)
-    yaz("kalem", kalem(rng), 0.45)
+    kalem(rng)  # yazılmaz; parşömen sesi eskisiyle aynı çıksın diye dizide kalır
     yaz("parsomen", parsomen(rng), 0.35)

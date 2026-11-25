@@ -301,7 +301,7 @@ def main(argv):
     if yaz:
         for k in hazir:
             img = gk.kirp_olcekle(Image.open(YENI / f"{k['id']}.png").convert("RGB"))
-            img.save(GORSEL / k["dosya"], "WEBP", quality=72, method=6)
+            img.save(GORSEL / k["dosya"], "WEBP", quality=80, method=6)
         bolum_yolu.write_text(json.dumps(b, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"yazıldı: {len(hazir)} görsel, {bolum_yolu.name}")
     return 0

@@ -40,13 +40,23 @@ final _yonlendirici = GoRouter(
     GoRoute(
       path: '/bolum/:id',
       // ?sahne=7 → doğrudan 7. sahneden başlar (revize için).
-      builder: (_, durum) => OynaticiEkrani(
-        bolumId: durum.pathParameters['id']!,
-        // Verilmezse kayıtlı ilerlemeden başlanır.
-        baslangicSahnesi: int.tryParse(durum.uri.queryParameters['sahne'] ?? ''),
-        // ?cekim=2 → sahnenin 2. çekiminden; ?dur=1 → durmuş açılır.
-        baslangicCekimi: int.tryParse(durum.uri.queryParameters['cekim'] ?? '') ?? 1,
-        duraklatilmis: durum.uri.queryParameters['dur'] == '1',
+      // Kısa bir kararma geçişiyle açılır; ekran bu arada yataya döner.
+      pageBuilder: (_, durum) => CustomTransitionPage(
+        key: durum.pageKey,
+        transitionDuration: const Duration(milliseconds: 280),
+        reverseTransitionDuration: const Duration(milliseconds: 220),
+        transitionsBuilder: (_, animasyon, _, cocuk) => FadeTransition(
+          opacity: CurvedAnimation(parent: animasyon, curve: Curves.easeOut),
+          child: cocuk,
+        ),
+        child: OynaticiEkrani(
+          bolumId: durum.pathParameters['id']!,
+          // Verilmezse kayıtlı ilerlemeden başlanır.
+          baslangicSahnesi: int.tryParse(durum.uri.queryParameters['sahne'] ?? ''),
+          // ?cekim=2 → sahnenin 2. çekiminden; ?dur=1 → durmuş açılır.
+          baslangicCekimi: int.tryParse(durum.uri.queryParameters['cekim'] ?? '') ?? 1,
+          duraklatilmis: durum.uri.queryParameters['dur'] == '1',
+        ),
       ),
     ),
   ],

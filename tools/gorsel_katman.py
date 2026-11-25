@@ -10,7 +10,9 @@ Kullanım (depo kökünden, projenin sanal ortamıyla):
 - --sigdir: kırpmadan sığdırır, kalan yer şeffaf kalır. Kâbe gibi tek nesne
   katmanları için; oynatıcıda `ayar.gorsel` ile konumlanırlar.
 
-Çıktı 2304×1296 olur: 16:9 kadraj + her yönde %10 taşma (docs/GORSEL_USLUP.md).
+Çıktı 1536×864 olur: 16:9 kadraj + her yönde %10 taşma (docs/GORSEL_USLUP.md).
+Bu, üretilen 1536×1024 görselin kendi çözünürlüğüdür; eskiden 2304×1296'ya
+büyütülüyordu, ayrıntı katmadan dosyayı büyüttüğü için bırakıldı (2026-11-25).
 Görsel bu orana ortadan kırpılarak (cover) ölçeklenir. Çıktı yolu verilmezse
 `content/gorseller/` altına yazılır.
 """
@@ -20,7 +22,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-HEDEF = (2304, 1296)
+HEDEF = (1536, 864)
 
 # Yeşillik = G − max(R, B). Bu eşiğin altı tamamen opak, üstü tamamen şeffaf;
 # aradaki geçiş kenarları yumuşatır.
@@ -94,7 +96,7 @@ def main(argv: list[str]) -> int:
         if seffaf < 0.05:
             print(f"UYARI: görselin yalnız %{seffaf * 100:.0f}'i silindi; {perde} perde zemin yok gibi.")
     cikti.parent.mkdir(parents=True, exist_ok=True)
-    img.save(cikti, "WEBP", quality=72, method=6)  # 86 → 72: ~%35 küçük, fark görünmüyor (2026-11-22)
+    img.save(cikti, "WEBP", quality=80, method=6)  # 1536×864 + kalite 80: 2304×1296 + 72'den ~%30 küçük, fark görünmüyor (2026-11-25)
     print(f"{cikti} ({img.width}×{img.height}, {'opak' if opak else 'şeffaf'}, {cikti.stat().st_size // 1024} KB)")
     return 0
 

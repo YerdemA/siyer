@@ -13,8 +13,8 @@ import '../l10n/app_localizations.dart';
 import '../tema.dart';
 
 /// Ana sayfa: bölümler eski bir yol haritası gibi aşağı doğru, farklı açılarla
-/// birbirini izler; aralarında noktalı yol. Bir bölüme dokununca kart
-/// büyür, üstüne kına kırmızısı bir çarpı düşer, sonra bölüm açılır.
+/// birbirini izler; aralarında noktalı yol. Son bölümden sonra zemin
+/// yumuşakça geceye döner: oradan sonrası peygamberlik dönemi.
 class BolumYolu extends ConsumerStatefulWidget {
   const BolumYolu({super.key});
 
@@ -33,10 +33,12 @@ class YolYerlesimi {
       kartlar.add(Rect.fromLTWH(sol, ust + i * adim, kartGenisligi, kartYuksekligi));
       acilar.add(0.05 * math.sin(i * 2.3 + 1.1));
     }
-    // Yolun sonunda, ortada: henüz gelmemiş dönemin kartı.
+    // Yolun sonunda zemin geceye döner; gecenin içinde, ortada, henüz
+    // gelmemiş dönemin kartı.
     if (sayi > 0) {
+      donemGecisi = kartlar.last.bottom + 30;
       final gen = math.min(genislik - 2 * kenar, kartGenisligi + 40);
-      yakinda = Rect.fromLTWH((genislik - gen) / 2, ust + sayi * adim + 14, gen, yakindaYuksekligi);
+      yakinda = Rect.fromLTWH((genislik - gen) / 2, donemGecisi! + gecisBoyu + 10, gen, yakindaYuksekligi);
     }
   }
 
@@ -51,7 +53,10 @@ class YolYerlesimi {
 
   /// İlk bölüm kartının üstü.
   final double ust;
-  static const kartYuksekligi = 136.0;
+  static const kartYuksekligi = 200.0;
+
+  /// Kartın üstündeki görsel şeridin yüksekliği.
+  static const kapakYuksekligi = 74.0;
   static const adim = kartYuksekligi + 76;
 
   /// Kartların yatay yeri (0 sol, 1 sağ): düzenli zikzak değil, elle
@@ -62,16 +67,19 @@ class YolYerlesimi {
 
   /// "Yakında" kartı (sonraki dönem); bölüm yoksa null.
   Rect? yakinda;
+
+  /// Parşömenin geceye dönmeye başladığı yükseklik; bölüm yoksa null.
+  double? donemGecisi;
+
+  /// Parşömenden geceye geçişin boyu.
+  static const gecisBoyu = 400.0;
   static const yakindaYuksekligi = 150.0;
 
   double get kartGenisligi => math.min(genislik * 0.68, 330);
-  double get yukseklik => (yakinda?.bottom ?? (kartlar.isEmpty ? ust : kartlar.last.bottom)) + 140;
+  double get yukseklik => (yakinda?.bottom ?? (kartlar.isEmpty ? ust : kartlar.last.bottom)) + 200;
 }
 
 class _BolumYoluState extends ConsumerState<BolumYolu> {
-  /// Büyüyen kart en üstte çizilsin diye seçili bölümün kimliği.
-  String? _secili;
-
   @override
   Widget build(BuildContext context) {
     final m = Metinler.of(context);
@@ -87,19 +95,13 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
         final y = YolYerlesimi(k.maxWidth, liste.length, devamKarti: yarim != null);
         // Sıradaki: bitirilmemiş ilk bölüm. Ondan sonrakiler soluk (yine açılabilir).
         final siradaki = liste.indexWhere((b) => ilerleme[b.id]?.bitti != true);
-        final efekt = ref.read(efektCalProvider);
         final azHareket = hareketAz(context, ref);
         final boyutlar = ref.watch(paketBoyutlariProvider).value ?? const {};
-        final sira = [
-          for (var i = 0; i < liste.length; i++)
-            if (liste[i].id != _secili) i,
-          for (var i = 0; i < liste.length; i++)
-            if (liste[i].id == _secili) i,
-        ];
         return SingleChildScrollView(
-          padding: altPayli(context),
+          // Alt boşluk ayrı bir dolgu olsaydı gecenin altında parşömen şerit
+          // kalırdı; çizim alanı gezinme çubuğunun altına kadar uzanır.
           child: SizedBox(
-            height: y.yukseklik,
+            height: y.yukseklik + MediaQuery.paddingOf(context).bottom,
             child: Stack(
               children: [
                 Positioned.fill(child: CustomPaint(painter: YolCizici(y))),
@@ -127,8 +129,7 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                   ),
                 if (y.yakinda != null)
                   Positioned.fromRect(rect: y.yakinda!, child: YakindaKarti(m: m)),
-                for (final i in sira)
-                  // Anahtar dışta: sıra değişince kartın durumu (animasyon) korunsun.
+                for (var i = 0; i < liste.length; i++)
                   Positioned.fromRect(
                     key: ValueKey(liste[i].id),
                     rect: y.kartlar[i],
@@ -139,11 +140,9 @@ class _BolumYoluState extends ConsumerState<BolumYolu> {
                       siradaki: i == siradaki,
                       // Başlanmış bölüm (yarım ya da bitmiş) sırası gelmese de soluk değil.
                       soluk: siradaki >= 0 && i > siradaki && ilerleme[liste[i].id] == null,
-                      efekt: efekt,
                       azHareket: azHareket,
                       paket: ref.watch(paketDurumuProvider(liste[i].id)),
                       paketBoyutu: boyutlar[paketAdi(liste[i].id)],
-                      secildi: () => setState(() => _secili = liste[i].id),
                     ),
                   ),
               ],
@@ -218,8 +217,9 @@ class _Baslik extends StatelessWidget {
   }
 }
 
-/// Bir bölüm kartı. Dokununca: kart görünür alana kaydırılır, büyüyüp
-/// düzleşir, üstüne çarpı çizilir, bölüm açılır; dönüşte eski hâline gelir.
+/// Bir bölüm kartı: üstte bölümün kendi sahnesinden bir şerit (kapak),
+/// altında numara, ad ve özet. Dokununca kart hafifçe basılır ve bölüm
+/// beklemeden açılır (eski çarpı animasyonu her açılışta bekletiyordu).
 class BolumKarti extends StatefulWidget {
   const BolumKarti({
     super.key,
@@ -229,7 +229,6 @@ class BolumKarti extends StatefulWidget {
     this.secildi,
     this.siradaki = false,
     this.soluk = false,
-    this.efekt,
     this.azHareket = false,
     this.paket = const PaketHazir(),
     this.paketBoyutu,
@@ -241,7 +240,7 @@ class BolumKarti extends StatefulWidget {
   /// İndirme boyutu (bayt).
   final int? paketBoyutu;
 
-  /// Hareketi azalt: kart büyümez, kaydırma anında, çarpı kısa sürede.
+  /// Hareketi azalt: kart basılınca küçülmez.
   final bool azHareket;
 
   /// İzlenecek sıradaki bölüm: köşesinde "Sıradaki" yazar.
@@ -249,9 +248,6 @@ class BolumKarti extends StatefulWidget {
 
   /// Sırası henüz gelmemiş bölüm: soluk görünür ama açılabilir.
   final bool soluk;
-
-  /// Çarpı çizilirken `kalem` sesi.
-  final void Function(String ad)? efekt;
 
   final Bolum bolum;
   final BolumIlerlemesi? ilerleme;
@@ -264,32 +260,20 @@ class BolumKarti extends StatefulWidget {
   State<BolumKarti> createState() => _BolumKartiState();
 }
 
-class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateMixin {
-  late final _ac = AnimationController(vsync: this, duration: const Duration(milliseconds: 1300));
+/// Kart kapağının dosyası: `assets/kartlar/b01.webp` (bölüm kimliğinin ilk üç harfi).
+String kartKapagi(String bolumId) => 'assets/kartlar/${bolumId.split('-').first}.webp';
 
-  @override
-  void dispose() {
-    _ac.dispose();
-    super.dispose();
-  }
+class _BolumKartiState extends State<BolumKarti> {
+  bool _basili = false;
+  bool _aciliyor = false;
 
   Future<void> _sec() async {
-    if (_ac.isAnimating) return;
+    if (_aciliyor) return;
+    _aciliyor = true;
     widget.secildi?.call();
-    widget.efekt?.call('kalem');
-    await Scrollable.ensureVisible(
-      context,
-      alignment: 0.4,
-      duration: widget.azHareket ? Duration.zero : const Duration(milliseconds: 380),
-      curve: Curves.easeInOut,
-    );
-    if (!mounted) return;
-    _ac.duration = Duration(milliseconds: widget.azHareket ? 500 : 1300);
-    await _ac.forward(from: 0);
-    if (!mounted) return;
     // Sahne verilmez: oynatıcı kayıtlı ilerlemeden başlar.
     await context.push('/bolum/${widget.bolum.id}');
-    if (mounted) _ac.reset();
+    _aciliyor = false;
   }
 
   @override
@@ -300,30 +284,39 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
     final bitti = il?.bitti == true;
     final toplam = b.sahneler.length;
     final devam = il != null && !bitti && il.sonSahne > 1 && toplam > 0;
-    final kart = Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: _sec,
-        borderRadius: BorderRadius.circular(6),
-        child: Ink(
-          decoration: BoxDecoration(
-            color: Palet.kagitAcik,
-            borderRadius: BorderRadius.circular(6),
-            border: Border.all(color: Palet.murekkep.withValues(alpha: 0.55), width: 1.2),
-            boxShadow: [
-              BoxShadow(
-                color: Palet.murekkep.withValues(alpha: 0.18),
-                blurRadius: 10,
-                offset: const Offset(2, 5),
-              ),
-            ],
+    final ekSatir = devam || widget.paket is PaketYok || widget.paket is PaketIniyor;
+    const kose = BorderRadius.all(Radius.circular(6));
+    final kart = DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: kose,
+        boxShadow: [
+          BoxShadow(
+            color: Palet.murekkep.withValues(alpha: 0.2),
+            blurRadius: 10,
+            offset: const Offset(2, 5),
           ),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
+        ],
+      ),
+      child: Material(
+        color: Palet.kagitAcik,
+        clipBehavior: Clip.antiAlias,
+        shape: RoundedRectangleBorder(
+          borderRadius: kose,
+          side: BorderSide(color: Palet.murekkep.withValues(alpha: 0.55), width: 1.2),
+        ),
+        child: InkWell(
+          onTap: _sec,
+          onHighlightChanged: (b) => setState(() => _basili = b),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              SizedBox(
+                height: YolYerlesimi.kapakYuksekligi,
+                child: _Kapak(dosya: kartKapagi(b.id), soluk: widget.soluk),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -341,33 +334,27 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                             ),
                           ),
                           if (widget.siradaki && !bitti)
-                            Padding(
-                              padding: const EdgeInsets.only(right: 30),
-                              child: Text(
-                                m.siradaki,
-                                style: const TextStyle(
-                                  fontSize: 11,
-                                  letterSpacing: 1.2,
-                                  fontWeight: FontWeight.w700,
-                                  color: Palet.kina,
-                                ),
+                            Text(
+                              m.siradaki,
+                              style: const TextStyle(
+                                fontSize: 11,
+                                letterSpacing: 1.2,
+                                fontWeight: FontWeight.w700,
+                                color: Palet.kina,
                               ),
                             ),
                           if (bitti)
-                            Padding(
-                              padding: const EdgeInsets.only(right: 30),
-                              child: Text(
-                                m.izlendi,
-                                style: const TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w700,
-                                  color: Palet.zeytin,
-                                ),
+                            Text(
+                              m.izlendi,
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                color: Palet.zeytin,
                               ),
                             ),
                         ],
                       ),
-                      const SizedBox(height: 2),
+                      const SizedBox(height: 1),
                       Text(
                         b.baslik,
                         maxLines: 1,
@@ -380,13 +367,12 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                           color: Palet.murekkep,
                         ),
                       ),
-                      const SizedBox(height: 6),
+                      const SizedBox(height: 4),
                       Flexible(
                         child: Text(
                           b.ozet,
-                          // Alttaki ilerleme ya da indirme satırı yer kaplar;
-                          // üç satır sığmayıp satır ortasından kesiliyordu.
-                          maxLines: devam || widget.paket is PaketYok || widget.paket is PaketIniyor ? 2 : 3,
+                          // Alttaki ilerleme ya da indirme satırı yer kaplar.
+                          maxLines: ekSatir ? 2 : 3,
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(fontSize: 13, height: 1.3, color: Palet.murekkepSoluk),
                         ),
@@ -396,7 +382,7 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                         _IndirmeIsareti(paket: widget.paket, boyut: widget.paketBoyutu),
                       ],
                       if (devam) ...[
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 6),
                         LinearProgressIndicator(
                           value: (il.sonSahne - 1) / toplam,
                           minHeight: 3,
@@ -411,62 +397,92 @@ class _BolumKartiState extends State<BolumKarti> with SingleTickerProviderStateM
                     ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
     );
-    return AnimatedBuilder(
-      animation: _ac,
-      builder: (context, cocuk) {
-        final t = _ac.value;
-        final yakin = widget.azHareket ? 0.0 : Curves.easeOutBack.transform((t / 0.35).clamp(0.0, 1.0));
-        return Transform.rotate(
-          angle: widget.aci * (1 - yakin.clamp(0.0, 1.0)),
-          child: Transform.scale(
-            scale: 1 + 0.12 * yakin,
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                Positioned.fill(child: cocuk!),
-                // Numara mührü kartın sağ üst köşesine basılmış gibi.
-                Positioned(
-                  right: -14,
-                  top: -16,
-                  child: IgnorePointer(
-                    child: Opacity(
-                      opacity: widget.soluk && t == 0 ? 0.55 : 1,
-                      child: _NumaraMuhru(sira: b.sira, bitti: bitti),
-                    ),
+    return Semantics(
+      button: true,
+      label: '${m.bolumNo(b.sira)}: ${b.baslik}',
+      child: Transform.rotate(
+        angle: widget.aci,
+        child: AnimatedScale(
+          scale: _basili && !widget.azHareket ? 0.97 : 1,
+          duration: const Duration(milliseconds: 90),
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              // Sırası gelmemiş bölüm soluk.
+              Positioned.fill(child: Opacity(opacity: widget.soluk ? 0.6 : 1, child: kart)),
+              // Numara mührü kartın sağ üst köşesine basılmış gibi.
+              Positioned(
+                right: -14,
+                top: -16,
+                child: IgnorePointer(
+                  child: Opacity(
+                    opacity: widget.soluk ? 0.6 : 1,
+                    child: _NumaraMuhru(sira: b.sira, bitti: bitti),
                   ),
                 ),
-                if (t > 0)
-                  Positioned.fill(
-                    child: IgnorePointer(
-                      child: CustomPaint(
-                        painter: CarpiCizici(
-                          ((t - 0.38) / 0.2).clamp(0.0, 1.0),
-                          ((t - 0.58) / 0.2).clamp(0.0, 1.0),
-                        ),
-                      ),
-                    ),
-                  ),
-              ],
-            ),
+              ),
+            ],
           ),
-        );
-      },
-      child: Semantics(
-        button: true,
-        label: '${m.bolumNo(b.sira)}: ${b.baslik}',
-        // Sırası gelmemiş bölüm soluk; dokununca (büyürken) canlanır.
-        child: AnimatedBuilder(
-          animation: _ac,
-          builder: (context, c) => Opacity(opacity: widget.soluk && _ac.value == 0 ? 0.55 : 1, child: c),
-          child: kart,
         ),
       ),
+    );
+  }
+}
+
+/// Kartın üstündeki görsel şerit: bölümün kendi sahnesinden bir kesit; alt
+/// kenarı kâğıda karışır. Sırası gelmemiş bölümde soluk, sepya tonlu.
+/// Dosya yoksa (testler, eksik kapak) düz koyu parşömen.
+class _Kapak extends StatelessWidget {
+  const _Kapak({required this.dosya, this.soluk = false});
+
+  final String dosya;
+  final bool soluk;
+
+  /// Gri + sıcak ton: eski bir gravür gibi.
+  static const _sepya = ColorFilter.matrix([
+    0.39, 0.77, 0.19, 0, 0, //
+    0.35, 0.69, 0.17, 0, 0,
+    0.27, 0.53, 0.13, 0, 0,
+    0, 0, 0, 1, 0,
+  ]);
+
+  @override
+  Widget build(BuildContext context) {
+    // Kapaklar küçüktür (1000×250, tools/kart_kapagi.py); ayrıca küçültülmez.
+    Widget resim = Image.asset(
+      dosya,
+      fit: BoxFit.cover,
+      filterQuality: FilterQuality.medium,
+      errorBuilder: (_, _, _) => const ColoredBox(color: Palet.kagitKoyu),
+    );
+    if (soluk) resim = ColorFiltered(colorFilter: _sepya, child: resim);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        resim,
+        // Alt kenar kâğıda karışır; üstte hafif gölge mührü öne çıkarır.
+        DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Palet.murekkep.withValues(alpha: 0.12),
+                Palet.kagitAcik.withValues(alpha: 0),
+                Palet.kagitAcik.withValues(alpha: 0),
+                Palet.kagitAcik,
+              ],
+              stops: const [0, 0.3, 0.62, 1],
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -541,44 +557,21 @@ class _NumaraMuhru extends StatelessWidget {
   }
 }
 
-/// Kartın ortasına iki fırça darbesiyle çizilen çarpı (eski haritalardaki
-/// "burası" işareti). [birinci] ve [ikinci] darbelerin ne kadarının
-/// çizildiği (0–1).
-class CarpiCizici extends CustomPainter {
-  const CarpiCizici(this.birinci, this.ikinci);
+/// Gece tarafının renkleri: peygamberlik dönemi.
+abstract final class DonemRengi {
+  /// Alacakaranlık: parşömenden geceye geçişin ortası.
+  static const alacakaranlik = Color(0xFF6B4A4E);
 
-  final double birinci;
-  final double ikinci;
+  /// Geceye inerken mor-lacivert.
+  static const lacivert = Color(0xFF2B2A48);
 
-  @override
-  void paint(Canvas canvas, Size size) {
-    if (birinci <= 0) return;
-    final m = size.center(Offset.zero);
-    final r = math.min(size.width, size.height) * 0.36;
-    final kalem = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeCap = StrokeCap.round
-      ..strokeWidth = math.max(6, r * 0.14)
-      ..color = Palet.kina.withValues(alpha: 0.88);
-    void darbe(Offset a, Offset b, Offset bukum, double oran) {
-      if (oran <= 0) return;
-      final p = Path()
-        ..moveTo(a.dx, a.dy)
-        ..quadraticBezierTo(bukum.dx, bukum.dy, b.dx, b.dy);
-      for (final olcu in p.computeMetrics()) {
-        canvas.drawPath(olcu.extractPath(0, olcu.length * oran), kalem);
-      }
-    }
-
-    darbe(m + Offset(-r, -r), m + Offset(r, r), m + Offset(r * 0.12, -r * 0.1), birinci);
-    darbe(m + Offset(r, -r), m + Offset(-r, r), m + Offset(r * 0.08, r * 0.12), ikinci);
-  }
-
-  @override
-  bool shouldRepaint(CarpiCizici eski) => eski.birinci != birinci || eski.ikinci != ikinci;
+  /// Gecenin dibi.
+  static const gece = Color(0xFF161A2A);
 }
 
-/// Sayfanın parşömen zemini ve kartları bağlayan noktalı yol.
+/// Sayfanın zemini ve kartları bağlayan noktalı yol. Üst taraf eski bir
+/// parşömen; son bölümden sonra zemin alacakaranlıktan geceye döner, yıldızlar
+/// belirir ve yol altın noktalarla sürer.
 class YolCizici extends CustomPainter {
   const YolCizici(this.yerlesim);
 
@@ -587,18 +580,87 @@ class YolCizici extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final alan = Offset.zero & size;
-    canvas.drawRect(alan, Paint()..color = Palet.kagit);
+    final gecis = yerlesim.donemGecisi;
+    final gecisSonu = gecis == null ? null : gecis + YolYerlesimi.gecisBoyu;
+    // Gecenin başladığı yere kadar parşömen ve lekeleri.
+    final kagitAlani = gecisSonu == null ? alan : Rect.fromLTRB(0, 0, size.width, gecisSonu);
+    canvas.drawRect(kagitAlani, Paint()..color = Palet.kagit);
+    canvas.save();
+    canvas.clipRect(kagitAlani);
     // Hafif lekeler (sabit tohum): eski kâğıt.
     final rnd = math.Random(605);
     final leke = Paint()..maskFilter = const MaskFilter.blur(BlurStyle.normal, 24);
-    for (var i = 0; i < (size.height / 120).ceil(); i++) {
+    for (var i = 0; i < (kagitAlani.height / 120).ceil(); i++) {
       leke.color = Color.fromARGB(10 + rnd.nextInt(14), 120, 80, 40);
       canvas.drawCircle(
-        Offset(rnd.nextDouble() * size.width, rnd.nextDouble() * size.height),
+        Offset(rnd.nextDouble() * size.width, rnd.nextDouble() * kagitAlani.height),
         size.width * (0.08 + rnd.nextDouble() * 0.16),
         leke,
       );
     }
+    canvas.restore();
+
+    if (gecis != null && gecisSonu != null) {
+      // Parşömen → alacakaranlık → gece: yumuşak, uzun bir geçiş.
+      final gecisAlani = Rect.fromLTRB(0, gecis, size.width, gecisSonu);
+      canvas.drawRect(
+        gecisAlani,
+        Paint()
+          // Saydamdan başlar: üstteki lekeli parşömenle arasında basamak olmasın.
+          ..shader = LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Palet.kagit.withValues(alpha: 0),
+              Palet.kagitKoyu.withValues(alpha: 0.7),
+              DonemRengi.alacakaranlik,
+              DonemRengi.lacivert,
+            ],
+            stops: const [0, 0.3, 0.66, 1],
+          ).createShader(gecisAlani),
+      );
+      final geceAlani = Rect.fromLTRB(0, gecisSonu, size.width, size.height);
+      canvas.drawRect(
+        geceAlani,
+        Paint()
+          ..shader = const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [DonemRengi.lacivert, DonemRengi.gece],
+          ).createShader(geceAlani),
+      );
+      // Yıldızlar: geçişin ortasından itibaren yavaş yavaş belirir.
+      final ry = math.Random(610);
+      final yildizBasi = gecis + YolYerlesimi.gecisBoyu * 0.45;
+      final sayi = ((size.height - yildizBasi) * size.width / 2600).round();
+      for (var i = 0; i < sayi; i++) {
+        final p = Offset(ry.nextDouble() * size.width, yildizBasi + ry.nextDouble() * (size.height - yildizBasi));
+        final belir = ((p.dy - yildizBasi) / (YolYerlesimi.gecisBoyu * 0.7)).clamp(0.0, 1.0);
+        final parlak = ry.nextDouble();
+        canvas.drawCircle(
+          p,
+          0.6 + parlak * 1.1,
+          Paint()..color = Palet.kagitAcik.withValues(alpha: belir * (0.25 + parlak * 0.55)),
+        );
+      }
+      // "Yakında" kartının çevresinde, yukarıdan inen hafif bir ışık.
+      final yakinda = yerlesim.yakinda;
+      if (yakinda != null) {
+        final merkez = yakinda.center - Offset(0, yakinda.height * 0.25);
+        final r = size.width * 0.75;
+        canvas.drawCircle(
+          merkez,
+          r,
+          Paint()
+            ..shader = RadialGradient(colors: [
+              Palet.altin.withValues(alpha: 0.24),
+              Palet.altin.withValues(alpha: 0.07),
+              Palet.altin.withValues(alpha: 0),
+            ], stops: const [0, 0.45, 1]).createShader(Rect.fromCircle(center: merkez, radius: r)),
+        );
+      }
+    }
+
     // Kenarlarda kararma.
     final kenar = Paint()
       ..shader = LinearGradient(colors: [
@@ -609,7 +671,7 @@ class YolCizici extends CustomPainter {
       ], stops: const [0, 0.12, 0.88, 1]).createShader(alan);
     canvas.drawRect(alan, kenar);
 
-    // Noktalı yol: başlıktan ilk karta, kartlar arasında ve sondan aşağı.
+    // Noktalı yol: başlıktan ilk karta ve kartlar arasında.
     final nokta = Paint()..color = Palet.murekkep.withValues(alpha: 0.5);
     void yol(Offset a, Offset b) {
       final p = Path()
@@ -632,42 +694,47 @@ class YolCizici extends CustomPainter {
     }
     final yakinda = yerlesim.yakinda;
     if (k.isNotEmpty && yakinda != null) {
-      // Son bölümden "Yakında" kartına giden yol soluklaşır: henüz yürünmedi.
+      // Son bölümden "Yakında" kartına giden yol: mürekkep noktalar geceye
+      // girdikçe altına döner.
       final a = k.last.bottomCenter + Offset(k.last.width * 0.12 * (k.length.isOdd ? 1 : -1), 0);
       final b = yakinda.topCenter;
       final p = Path()
         ..moveTo(a.dx, a.dy)
-        ..cubicTo(a.dx, a.dy + 46, b.dx, b.dy - 46, b.dx, b.dy);
+        ..cubicTo(a.dx, a.dy + 140, b.dx, b.dy - 160, b.dx, b.dy);
       for (final olcu in p.computeMetrics()) {
         for (var d = 6.0; d < olcu.length - 4; d += 11) {
           final oran = d / olcu.length;
-          canvas.drawCircle(
-            olcu.getTangentForOffset(d)!.position,
-            2.3 - oran * 0.8,
-            Paint()..color = Palet.murekkep.withValues(alpha: 0.5 - oran * 0.3),
-          );
+          final renk = Color.lerp(
+            Palet.murekkep.withValues(alpha: 0.5),
+            Palet.altin.withValues(alpha: 0.85),
+            ((oran - 0.35) / 0.4).clamp(0.0, 1.0),
+          )!;
+          canvas.drawCircle(olcu.getTangentForOffset(d)!.position, 2.3, Paint()..color = renk);
         }
       }
-      // Kartın altında, aşağıda solan birkaç nokta (sonraki dönemler).
+      // Kartın altında, aşağıda solan birkaç altın nokta (sonraki dönemler).
       final son = yakinda.bottomCenter;
-      for (var i = 1; i <= 5; i++) {
+      for (var i = 1; i <= 6; i++) {
         canvas.drawCircle(
-          son + Offset(math.sin(i * 0.7) * 10, i * 12.0),
-          1.6,
-          Paint()..color = Palet.murekkep.withValues(alpha: 0.25 * (1 - i / 6)),
+          son + Offset(math.sin(i * 0.7) * 10, i * 13.0),
+          1.8,
+          Paint()..color = Palet.altin.withValues(alpha: 0.6 * (1 - i / 7)),
         );
       }
     }
 
-    // Kenar süsleri: kartların boş bıraktığı yanlarda küçük kum tepeleri.
+    // Kenar süsleri: kartların boş bıraktığı yanlarda küçük kum tepeleri
+    // (yalnız parşömen tarafında).
     final kalem = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1
       ..strokeCap = StrokeCap.round
       ..color = Palet.murekkep.withValues(alpha: 0.3);
     final rt = math.Random(17);
+    final susSonu = gecis ?? size.height - 60;
     for (var i = 0; i < k.length * 2; i++) {
       final p = Offset(20 + rt.nextDouble() * (size.width - 40), yerlesim.ust + rt.nextDouble() * (size.height - yerlesim.ust - 60));
+      if (p.dy > susSonu) continue;
       final r = Rect.fromCenter(center: p, width: 44, height: 22);
       if ([...k, ?yakinda].any((x) => x.inflate(14).overlaps(r))) continue;
       canvas.drawPath(
@@ -692,8 +759,8 @@ class YolCizici extends CustomPainter {
       eski.yerlesim.ust != yerlesim.ust;
 }
 
-/// Yolun sonundaki, henüz gelmemiş dönemin kartı: kesik çizgili kenar,
-/// soluk kâğıt, kum saati mührü. Dokunulmaz.
+/// Yolun sonundaki, henüz gelmemiş dönemin kartı: gecenin içinde altın
+/// kesik çizgili kenar, kum saati. Dokunulmaz.
 class YakindaKarti extends StatelessWidget {
   const YakindaKarti({super.key, required this.m});
 
@@ -719,7 +786,7 @@ class YakindaKarti extends StatelessWidget {
                     fontSize: 11,
                     letterSpacing: 2.2,
                     fontWeight: FontWeight.w600,
-                    color: Palet.murekkepSoluk,
+                    color: Palet.altin,
                   ),
                 ),
                 const SizedBox(height: 6),
@@ -732,7 +799,7 @@ class YakindaKarti extends StatelessWidget {
                       fontFamily: baslikYazisi,
                       fontSize: 24,
                       fontWeight: FontWeight.w700,
-                      color: Palet.murekkep,
+                      color: Palet.kagitAcik,
                     ),
                   ),
                 ),
@@ -755,7 +822,7 @@ class YakindaKarti extends StatelessWidget {
                     fontFamily: baslikYazisi,
                     fontSize: 16,
                     fontStyle: FontStyle.italic,
-                    color: Palet.murekkepSoluk,
+                    color: Color(0xFFD9C9A8),
                   ),
                 ),
               ],
@@ -773,11 +840,11 @@ class _KesikCerceve extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final rr = RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(8));
-    canvas.drawRRect(rr, Paint()..color = Palet.kagitAcik.withValues(alpha: 0.45));
+    canvas.drawRRect(rr, Paint()..color = DonemRengi.gece.withValues(alpha: 0.55));
     final kalem = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.3
-      ..color = Palet.murekkep.withValues(alpha: 0.45);
+      ..color = Palet.altin.withValues(alpha: 0.75);
     for (final olcu in (Path()..addRRect(rr)).computeMetrics()) {
       for (var d = 0.0; d < olcu.length; d += 12) {
         canvas.drawPath(olcu.extractPath(d, math.min(d + 6, olcu.length)), kalem);

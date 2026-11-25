@@ -11,7 +11,7 @@ import '../icerik/model.dart';
 /// bitince dinleyicilere haber verilir, sahne yeniden çizilir. O arada (ya da
 /// dosya bulunamazsa) oynatıcı yer tutucuyu çizer.
 ///
-/// Çözülmüş bir katman yaklaşık 12 MB tutar (2304×1296×4); bütün bölümü
+/// Çözülmüş bir katman yaklaşık 5 MB tutar (1536×864×4); bütün bölümü
 /// bellekte tutmamak için [sinirla] yalnız yakın sahnelerin görsellerini bırakır.
 ///
 /// [okuyucu] verilirse dosya baytları ondan okunur (indirilen bölüm paketleri);

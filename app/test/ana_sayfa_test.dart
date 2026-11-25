@@ -164,7 +164,7 @@ void main() {
     expect(find.text('Hz. Muhammed (s.a.v.)'), findsNothing);
   });
 
-  testWidgets('bölüm kartına dokununca çarpı çizilir ve bölüm açılır', (tester) async {
+  testWidgets('bölüm kartına dokununca bölüm beklemeden açılır', (tester) async {
     tester.view.physicalSize = const Size(1080, 2200);
     tester.view.devicePixelRatio = 2.6;
     addTearDown(tester.view.reset);
@@ -174,7 +174,7 @@ void main() {
       GoRoute(path: '/bolum/:id', builder: (_, d) => Text('açıldı ${d.pathParameters['id']}')),
     ]);
     await tester.pumpWidget(ProviderScope(
-      // Birden çok bölüm: dokunulan kart üste alınırken durumu korunmalı.
+      // Birden çok bölüm: ikincisi soluk görünür.
       overrides: [
         efektSesiProvider.overrideWithValue(efekt),
         bolumListesiProvider.overrideWith((_) async {
@@ -208,13 +208,11 @@ void main() {
     expect(find.text('Kısa açıklama.'), findsOneWidget);
     // Hiç izlenmemiş: ilk bölüm sıradaki, ikincisi soluk.
     expect(find.text('Sıradaki'), findsOneWidget);
+    // Dokununca bölüm beklemeden açılır; efekt sesi çalınmaz.
     await tester.tap(find.text('Deneme Bölümü'));
-    await tester.pump(const Duration(milliseconds: 500));
-    await tester.pump(const Duration(milliseconds: 700));
-    expect(find.byWidgetPredicate((w) => w is CustomPaint && w.painter is CarpiCizici), findsOneWidget);
     await tester.pumpAndSettle();
     expect(find.text('açıldı b99-deneme'), findsOneWidget);
-    expect(efekt.calinan, ['kalem']);
+    expect(efekt.calinan, isEmpty);
   });
 
   testWidgets('bölüm açılınca harita gösterilir, uzak yere geçişte yine', (tester) async {
