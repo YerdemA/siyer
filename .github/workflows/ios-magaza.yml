@@ -59,6 +59,8 @@ jobs:
           else
             goruntu="--skip_screenshots true"
           fi
+          # Deliverfile yoksa deliver kurulum sorusu sorup durur; boşu yeter.
+          touch Deliverfile
           fastlane deliver \
             --api_key_path "$RUNNER_TEMP/asc.json" \
             --app_identifier com.yerdema.siyer \
