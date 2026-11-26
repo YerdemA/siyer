@@ -1,0 +1,75 @@
+# App Store mağaza girişini (metinler, kategoriler, URL'ler, inceleme notu,
+# ekran görüntüleri) App Store Connect'e yazar; fastlane deliver ile, elle
+# çalıştırılır (Actions → iOS mağaza girişi → Run workflow). Derleme
+# yüklemez, incelemeye göndermez.
+#
+# Kaynaklar:
+#   magaza/app-store/metadata/            metinler (tr, en-US), kategori, telif
+#   magaza/ekran-goruntuleri/app-store/   6,9 inç görüntüler (tools/app_store_gorselleri.py)
+#
+# Uygulama App Store Connect'te önceden oluşturulmuş olmalı. Elle kalanlar:
+# App Privacy ("Data Not Collected"), yaş derecelendirmesi, fiyat ve bölgeler,
+# inceleme iletişim bilgileri. Secret'lar ios-release.yml'deki ASC_*.
+name: iOS mağaza girişi
+
+on:
+  workflow_dispatch:
+    inputs:
+      ekran-goruntuleri:
+        description: 'Ekran görüntülerini de yükle (eskileri değiştirir)'
+        type: boolean
+        default: true
+
+jobs:
+  magaza:
+    runs-on: macos-26
+    timeout-minutes: 30
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Hazırlık
+        run: |
+          for name in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8; do
+            [ -n "${!name}" ] || { echo "::error::$name secret'ı yok"; exit 1; }
+          done
+          python3 - <<'PY'
+          import json, os
+          json.dump({
+              "key_id": os.environ["ASC_KEY_ID"],
+              "issuer_id": os.environ["ASC_ISSUER_ID"],
+              "key": os.environ["ASC_KEY_P8"],
+              "in_house": False,
+          }, open(os.path.join(os.environ["RUNNER_TEMP"], "asc.json"), "w"))
+          PY
+          # fastlane dil klasörleri: tr, en-US
+          mkdir -p "$RUNNER_TEMP/goruntu/tr" "$RUNNER_TEMP/goruntu/en-US"
+          cp magaza/ekran-goruntuleri/app-store/tr/*.jpg "$RUNNER_TEMP/goruntu/tr/"
+          cp magaza/ekran-goruntuleri/app-store/en/*.jpg "$RUNNER_TEMP/goruntu/en-US/"
+          gem install fastlane --no-document
+          fastlane --version
+
+      - name: Yükle
+        run: |
+          if [ "${{ inputs.ekran-goruntuleri }}" = "true" ]; then
+            goruntu="--screenshots_path $RUNNER_TEMP/goruntu --overwrite_screenshots true"
+          else
+            goruntu="--skip_screenshots true"
+          fi
+          fastlane deliver \
+            --api_key_path "$RUNNER_TEMP/asc.json" \
+            --app_identifier com.yerdema.siyer \
+            --platform ios \
+            --metadata_path magaza/app-store/metadata \
+            $goruntu \
+            --skip_binary_upload true \
+            --submit_for_review false \
+            --run_precheck_before_submit false \
+            --force true
+
+      - name: Temizlik
+        if: always()
+        run: rm -f "$RUNNER_TEMP/asc.json"
