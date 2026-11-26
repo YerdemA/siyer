@@ -1,0 +1,2 @@
+/* Ana ekrandaki uygulama adı; Android karşılığı strings.xml içindeki app_name. */
+"CFBundleDisplayName" = "The Life of the Prophet";

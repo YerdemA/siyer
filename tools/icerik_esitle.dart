@@ -130,7 +130,12 @@ void main() {
   }
 
   // Her paket bir Gradle asset pack modülüdür (settings.gradle.kts bunları bulur).
+  // Aynı klasör iOS'ta Apple'da barındırılan pakete de kaynaktır
+  // (.github/workflows/ios-paketler.yml, `ba-package`). iOS bütün paketleri
+  // tek ad alanında birleştirir; `<paket>/` öneki yolları ayırır, `paket.json`
+  // da yerel tarafın paket klasörünü bulduğu işarettir.
   for (final p in paketSayilari.keys) {
+    File('${paketler.path}/$p/src/main/assets/$p/paket.json').writeAsStringSync('{"ad": "$p"}\n');
     File('${paketler.path}/$p/build.gradle.kts').writeAsStringSync('''
 // tools/icerik_esitle.dart üretir; elle değiştirme.
 plugins {

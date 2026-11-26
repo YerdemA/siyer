@@ -1,0 +1,7 @@
+// Bölüm paketi indirici eklentisinin temel ayarları.
+// Sürüm uygulamanınkiyle aynı olmalı (App Store bunu denetler): Flutter'ın
+// ürettiği FLUTTER_BUILD_NAME / FLUTTER_BUILD_NUMBER buradan gelir.
+#include "../Flutter/Generated.xcconfig"
+MARKETING_VERSION = $(FLUTTER_BUILD_NAME)
+CURRENT_PROJECT_VERSION = $(FLUTTER_BUILD_NUMBER)
+// Yayın imzası (profil adı) GitHub Actions'ta bu dosyanın sonuna eklenir.

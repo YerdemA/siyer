@@ -9,9 +9,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'depo.dart';
 
 /// Bölüm paketleri: ilk bölüm dışındaki bölümlerin ses ve görselleri
-/// uygulamayla gelmez, Google Play'den (Play Asset Delivery) isteğe bağlı
-/// indirilir. Paketleri `tools/icerik_esitle.dart` hazırlar; Android tarafı
-/// `android/app/src/main/kotlin/.../BolumPaketleri.kt`.
+/// uygulamayla gelmez, isteğe bağlı indirilir: Android'de Google Play'den
+/// (Play Asset Delivery), iOS'ta App Store'dan (Apple'da barındırılan
+/// Background Assets paketleri). Paketleri `tools/icerik_esitle.dart`
+/// hazırlar; yerel taraf `android/app/src/main/kotlin/.../BolumPaketleri.kt`
+/// ve `ios/Runner/BolumPaketleri.swift` (aynı kanal, aynı yanıtlar).
 
 /// Uygulamayla gelen bölümler (paket adıyla); `tools/icerik_esitle.dart` ile aynı.
 const gomuluPaketler = {'b01'};
@@ -77,8 +79,10 @@ class PlatformPaketKanali implements PaketKanali {
   static const _kanal = MethodChannel('siyer/paketler');
   static const _olay = EventChannel('siyer/paketler/olay');
 
+  static bool get _destekli => Platform.isAndroid || Platform.isIOS;
+
   Future<PaketDurumu> _cagir(String yontem, String ad) async {
-    if (!Platform.isAndroid) return const PaketHatasi('Bu platformda bölüm indirme henüz yok.');
+    if (!_destekli) return const PaketHatasi('Bu platformda bölüm indirme henüz yok.');
     try {
       final c = await _kanal.invokeMapMethod<String, Object?>(yontem, {'ad': ad});
       return c == null ? const PaketHatasi('boş yanıt') : _coz(c);
@@ -107,7 +111,7 @@ class PlatformPaketKanali implements PaketKanali {
   Future<PaketDurumu> sil(String ad) => _cagir('sil', ad);
 
   @override
-  Stream<(String, PaketDurumu)> get olaylar => Platform.isAndroid
+  Stream<(String, PaketDurumu)> get olaylar => _destekli
       ? _olay.receiveBroadcastStream().map((e) {
           final c = e as Map<Object?, Object?>;
           return ((c['ad'] as String?) ?? '', _coz(c));

@@ -12,5 +12,9 @@ import UIKit
 
   func didInitializeImplicitFlutterEngine(_ engineBridge: FlutterImplicitEngineBridge) {
     GeneratedPluginRegistrant.register(with: engineBridge.pluginRegistry)
+    // Bölüm paketleri (Background Assets): lib/icerik/paketler.dart.
+    if let registrar = engineBridge.pluginRegistry.registrar(forPlugin: "BolumPaketleri") {
+      BolumPaketleri.register(with: registrar)
+    }
   }
 }

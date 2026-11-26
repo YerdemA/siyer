@@ -1,0 +1,98 @@
+# Bölüm paketleri (b02–b10) için Apple'da barındırılan Background Assets
+# arşivleri (.aar). İçerik değişince elle çalıştırılır (Actions → iOS bölüm
+# paketleri → Run workflow). Kaynak, Android paketleriyle aynı klasördür:
+# tools/icerik_esitle.dart → app/android/paketler/<paket>/src/main/assets/<paket>/.
+# Her pakette dosyalar `<paket>/` önekiyle durur (iOS bütün paketleri tek ad
+# alanında birleştirir); uygulama tarafı app/ios/Runner/BolumPaketleri.swift.
+#
+# Yükleme için secret'lar ios-release.yml'deki ASC_KEY_ID, ASC_ISSUER_ID,
+# ASC_KEY_P8; ayrıca uygulamanın sayısal Apple ID'si (App Store Connect →
+# Uygulama Bilgileri → Apple ID) girdi olarak verilir. Yüklenen paketler
+# App Store Connect'te işlenir, sonra incelemeye gönderilir.
+name: iOS bölüm paketleri
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: 'App Store Connect’e yükle'
+        type: boolean
+        default: false
+      apple-id:
+        description: 'Uygulamanın sayısal Apple ID’si (yüklemek için)'
+        required: false
+        default: ''
+      paketler:
+        description: 'Yalnız bu paketler (boşluklu, ör. "b02 b05"); boş: hepsi'
+        required: false
+        default: ''
+
+jobs:
+  paketle:
+    runs-on: macos-26
+    timeout-minutes: 45
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.6'
+          channel: stable
+          cache: true
+
+      - name: İçerik
+        run: dart run tools/icerik_esitle.dart
+
+      - name: Paketle
+        run: |
+          set -euo pipefail
+          cikti="$RUNNER_TEMP/aar"; mkdir -p "$cikti"
+          secili="${{ inputs.paketler }}"
+          for klasor in app/android/paketler/*/src/main/assets/*/; do
+            ad=$(basename "$klasor")
+            if [ -n "$secili" ] && ! grep -qw "$ad" <<<"$secili"; then continue; fi
+            kok=$(dirname "$klasor")
+            cat > "$RUNNER_TEMP/$ad.json" <<JSON
+          {
+            "assetPackID": "$ad",
+            "downloadPolicy": { "onDemand": {} },
+            "fileSelectors": [ { "directory": "$ad" } ],
+            "platforms": [ "iOS" ]
+          }
+          JSON
+            (cd "$kok" && xcrun ba-package "$RUNNER_TEMP/$ad.json" -o "$cikti/$ad.aar")
+            echo "$ad: $(du -h "$cikti/$ad.aar" | cut -f1)"
+          done
+          echo "CIKTI=$cikti" >> "$GITHUB_ENV"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bolum-paketleri
+          path: ${{ env.CIKTI }}/*.aar
+          retention-days: 14
+
+      - name: App Store Connect'e yükle
+        if: inputs.upload
+        run: |
+          set -euo pipefail
+          [ -n "${{ inputs.apple-id }}" ] || { echo "::error::apple-id girilmedi"; exit 1; }
+          for name in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8; do
+            [ -n "${!name}" ] || { echo "::error::$name secret'ı yok"; exit 1; }
+          done
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          printf '%s\n' "$ASC_KEY_P8" > "$HOME/.appstoreconnect/private_keys/AuthKey_$ASC_KEY_ID.p8"
+          # altool'un bu sürümdeki paket yükleme seçenekleri (sorun olursa günlükte görünsün).
+          xcrun altool --help 2>&1 | grep -i -A3 "asset" || true
+          for aar in "$CIKTI"/*.aar; do
+            echo "Yükleniyor: $aar"
+            xcrun altool --upload-asset-pack "$aar" --apple-id "${{ inputs.apple-id }}" \
+              --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER_ID"
+          done
+
+      - name: Temizlik
+        if: always()
+        run: rm -f "$HOME/.appstoreconnect/private_keys/"*.p8
