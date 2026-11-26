@@ -1,9 +1,10 @@
-"""App Store ekran görüntülerini üretir (6,9 inç iPhone).
+"""App Store ekran görüntülerini üretir (6,3 inç iPhone).
 
 Play görüntüleriyle aynı ham ekranlar ve başlıklar (`magaza_gorselleri.py`),
 iPhone ölçüsünde:
   magaza/ekran-goruntuleri/app-store/tr|en/NN-ad.jpg
-  1320×2868 (dikey) ya da 2868×1320 (yatay); JPEG (alfa kanalı yok: App Store
+  1206×2622 (dikey) ya da 2622×1206 (yatay; App Store Connect'in istediği
+  6,1"/6,3" ölçüsü, büyük ekranlara kendisi ölçekler); JPEG (alfa kanalı yok: App Store
   Connect alfa kanallı PNG'yi reddeder), 72 DPI, PNG'nin dörtte biri boyutunda.
 
 Ham ekranlar Android emülatöründen: üstteki Android durum çubuğu (saat,
@@ -25,6 +26,7 @@ from magaza_gorselleri import (  # noqa: E402
 )
 
 HEDEF = CIKTI / "app-store"
+DIKEY, YATAY = (1206, 2622), (2622, 1206)  # çizim 1320×2868 tuvalde, sonra küçültülür
 DURUM_CUBUGU = 120  # ham dikey ekranda Android durum çubuğunun yüksekliği (px)
 
 
@@ -125,7 +127,8 @@ def main() -> int:
                 img = cerceveli_yatay(ham, baslik, alt)
             else:
                 img = yatay(ham, baslik, alt)
-            assert img.mode == "RGB" and img.size in ((1320, 2868), (2868, 1320)), img.size
+            img = img.resize(DIKEY if img.height > img.width else YATAY, Image.LANCZOS)
+            assert img.mode == "RGB" and img.size in (DIKEY, YATAY), img.size
             img.save(klasor / f"{ad}.jpg", quality=93, optimize=True, dpi=(72, 72))
             print(f"app-store/{dil}/{ad}.jpg {img.size}")
     return 0

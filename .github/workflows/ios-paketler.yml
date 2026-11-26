@@ -21,7 +21,7 @@ on:
       apple-id:
         description: 'Uygulamanın sayısal Apple ID’si (yüklemek için)'
         required: false
-        default: ''
+        default: '6839682186'
       paketler:
         description: 'Yalnız bu paketler (boşluklu, ör. "b02 b05"); boş: hepsi'
         required: false

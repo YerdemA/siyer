@@ -5,7 +5,7 @@
 #
 # Kaynaklar:
 #   magaza/app-store/metadata/            metinler (tr, en-US), kategori, telif
-#   magaza/ekran-goruntuleri/app-store/   6,9 inç görüntüler (tools/app_store_gorselleri.py)
+#   magaza/ekran-goruntuleri/app-store/   6,3 inç (1206×2622) görüntüler (tools/app_store_gorselleri.py)
 #
 # Uygulama App Store Connect'te önceden oluşturulmuş olmalı. Elle kalanlar:
 # App Privacy ("Data Not Collected"), yaş derecelendirmesi, fiyat ve bölgeler,
