@@ -1,6 +1,6 @@
 # iOS uygulamasını imzalayıp App Store Connect'e (TestFlight) yükler; Mac
 # olmadığı için GitHub'ın macOS makinesinde. Elle çalıştırılır (Actions →
-# iOS yayın → Run workflow). Kurulum ve secret'lar: magaza/APP_STORE.md.
+# iOS yayın → Run workflow). Sertifika ve profiller: tools/ios/imza.py.
 #
 # İmza elle (dağıtım sertifikası + iki App Store profili: uygulama ve
 # bölüm paketi indirici eklentisi), Xcode'un otomatik imzası değil: temiz
